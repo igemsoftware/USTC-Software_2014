@@ -26,11 +26,11 @@ If anything goes south, you will get a error response:
 	#GET    /user/<uid>
 	
 	
-	GET		/project/project  # list my project
-	POST	/project/project  # add
+	GET		/project/  # list my project
+	POST	/project/  # add
 	
 	GET		/project/<pid>  # login
-	PUT     /project<pid>  # modify
+	PUT     /project/<pid>  # modify
 	DELETE  /project<pid>  # delete
 	
 	POST	/project/<pid>/collaborator/<uid> 
@@ -61,11 +61,11 @@ request:
 
 	POST /auth/oauth/(baidu|google)/login
 
-When the user login in sucessfully, the pages will redict to the /auth/oauth/<baidu|google>/complete
+When the user login in successfully, the pages will redict to the /auth/oauth/<baidu|google>/complete
 
 ## OAUTH COMPLETE
 
-request(automaticlly):
+request(automatically):
 
 	GET /auth/oauth/(baidu|google)/complete&....
 
@@ -83,7 +83,7 @@ success :
 
 request:
 
-	GET .org/project/project (**没有s**)
+	GET .org/project/ (**没有s**)
 
 response:
 
@@ -100,7 +100,7 @@ response:
 
 request:
 
-	POST .org/project/project
+	POST .org/project/
 	
 	prj_name:<string>
 	[species:<string>]
