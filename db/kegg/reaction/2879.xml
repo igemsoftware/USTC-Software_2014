@@ -1,0 +1,10 @@
+ENTRY       R02879                      Reaction
+NAME        Octane,reduced-rubredoxin:oxygen 1-oxidoreductase
+DEFINITION  Octane + Reduced rubredoxin + Oxygen <=> 1-Octanol + Oxidized rubredoxin + H2O
+EQUATION    C01387 + C00340 + C00007 <=> C00756 + C00435 + C00001
+COMMENT     Oxidized rubredoxin is re-reduced by NAD(P)H (see R02000, R02002)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP02569  C00756_C01387 main [RC:RC00797]
+            RP07222  C00007_C00756 leave
+ENZYME      1.14.15.3
+///

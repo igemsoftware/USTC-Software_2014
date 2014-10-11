@@ -1,0 +1,16 @@
+ENTRY       R02253                      Reaction
+NAME        trans-cinnamate,NADPH:oxygen oxidoreductase (4-hydroxylating)
+DEFINITION  trans-Cinnamate + Oxygen + NADPH + H+ <=> 4-Coumarate + NADP+ + H2O
+EQUATION    C00423 + C00007 + C00005 + C00080 <=> C00811 + C00006 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP02071  C00423_C00811 main [RC:RC00490]
+            RP06917  C00007_C00811 leave
+ENZYME      1.14.13.11
+PATHWAY     rn00360  Phenylalanine metabolism
+            rn00940  Phenylpropanoid biosynthesis
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K00487  trans-cinnamate 4-monooxygenase [EC:1.14.13.11]
+///

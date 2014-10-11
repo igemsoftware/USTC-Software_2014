@@ -1,0 +1,14 @@
+ENTRY       R08225                      Reaction
+DEFINITION  Tegafur + Reduced flavoprotein + Oxygen <=> 5-FU + Succinic aldehyde + Oxidized flavoprotein + H2O
+EQUATION    C12673 + C03024 + C00007 <=> C07649 + C16835 + C03161 + C00001
+COMMENT     CYP2A6
+            multi-step reaction
+            intermediate (5'-hydroxytegafur)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP13153  C07649_C12673 main [RC:RC00063]
+            RP13298  C00007_C16835 leave
+            RP13299  C12673_C16835 main [RC:RC02297]
+ENZYME      1.14.13.-
+PATHWAY     rn00983  Drug metabolism - other enzymes
+ORTHOLOGY   K17683  cytochrome P450, family 2, subfamily A, polypeptide 6 [EC:1.14.13.-]
+///

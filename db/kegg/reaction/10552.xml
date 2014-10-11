@@ -1,0 +1,12 @@
+ENTRY       R10552                      Reaction
+NAME        tRNA(Phe)-N1-methylguanine,pyruvate acetaldehyde-lyase [tRNA(Phe)-4-demethylwyosine-forming, decarboxylating, dehydrating]
+DEFINITION  N1-Methylguanine in tRNA(Phe) + Pyruvate + S-Adenosyl-L-methionine <=> 4-Demethylwyosine in tRNA(Phe) + L-Methionine + 5'-Deoxyadenosine + CO2 + H2O
+EQUATION    C20688 + C00022 + C00019 <=> C20691 + C00073 + C05198 + C00011 + C00001
+RPAIR       RP03934  C00019_C00073 cofac [RC:RC00021]
+            RP04346  C00019_C05198 cofac
+            RP05698  C00011_C00022 leave
+            RP10324  C00001_C00022 leave
+            RP16641  C20688_C20691 main [RC:RC03198]
+            RP16642  C00022_C20691 trans
+ENZYME      4.1.3.44
+///

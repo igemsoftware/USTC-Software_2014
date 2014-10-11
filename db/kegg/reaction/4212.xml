@@ -1,0 +1,16 @@
+ENTRY       R04212                      Reaction
+NAME        Asp-tRNA(Asn):L-glutamine amido-ligase (ADP-forming)
+DEFINITION  L-Asparaginyl-tRNA(Asn) + L-Glutamate + Orthophosphate + ADP <=> L-Aspartyl-tRNA(Asn) + L-Glutamine + ATP + H2O
+EQUATION    C03402 + C00025 + C00009 + C00008 <=> C06113 + C00064 + C00002 + C00001
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00024  C00025_C00064 main [RC:RC00010]
+            RP03842  C03402_C06113 main [RC:RC00010]
+            RP05695  C00001_C00025 leave
+            RP07978  C00064_C03402 trans
+ENZYME      6.3.5.6
+PATHWAY     rn00970  Aminoacyl-tRNA biosynthesis
+ORTHOLOGY   K02433  aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit A [EC:6.3.5.6 6.3.5.7]
+            K02434  aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit B [EC:6.3.5.6 6.3.5.7]
+            K02435  aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit C [EC:6.3.5.6 6.3.5.7]
+///

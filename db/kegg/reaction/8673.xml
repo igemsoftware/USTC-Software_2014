@@ -1,0 +1,15 @@
+ENTRY       R08673                      Reaction
+NAME        tetrahomomethionine,NADPH:oxygen oxidoreductase (N-hydroxylating, decarboxylating)
+DEFINITION  Tetrahomomethionine + 2 Oxygen + 2 NADPH + 2 H+ <=> 7-Methylthioheptanaldoxime + 3 H2O + 2 NADP+ + CO2
+EQUATION    C17225 + 2 C00007 + 2 C00005 + 2 C00080 <=> C17249 + 3 C00001 + 2 C00006 + C00011
+COMMENT     multi-step reaction (similar to R08656, R00730+R04460+R07190)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP13671  C17225_C17249 main [RC:RC02295]
+            RP13672  C00007_C17249 leave
+            RP13673  C00011_C17225 leave
+ENZYME      1.14.13.-
+PATHWAY     rn00966  Glucosinolate biosynthesis
+            rn01210  2-Oxocarboxylic acid metabolism
+ORTHOLOGY   K12154  cytochrome P450, family 79, subfamily F, polypeptide 1 [EC:1.14.13.-]
+///

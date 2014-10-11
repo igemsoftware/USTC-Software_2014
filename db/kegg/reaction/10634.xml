@@ -1,0 +1,10 @@
+ENTRY       R10634                      Reaction
+DEFINITION  NAD+ + Protein N6-acetyl-L-lysine + H2O <=> Nicotinamide + Protein lysine + O-Acetyl-ADP-ribose + H+
+EQUATION    C00003 + C20743 + C00001 <=> C00153 + C02188 + C20658 + C00080
+COMMENT     Sirtuin
+RPAIR       RP00082  C00003_C00153 main [RC:RC00033]
+            RP16729  C00003_C20658 trans
+            RP16731  C00001_C20658 leave
+            RP16744  C02188_C20743 main [RC:RC00096]
+            RP16760  C20658_C20743 trans
+///

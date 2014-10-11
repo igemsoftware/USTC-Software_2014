@@ -1,0 +1,16 @@
+ENTRY       R00425                      Reaction
+NAME        GTP 7,8-8,9-dihydrolase (diphosphate-forming)
+DEFINITION  GTP + 3 H2O <=> Formate + 2,5-Diamino-6-(5-phospho-D-ribosylamino)pyrimidin-4(3H)-one + Diphosphate
+EQUATION    C00044 + 3 C00001 <=> C00058 + C01304 + C00013
+COMMENT     multi-step reaction
+RPAIR       RP00199  C00013_C00044 leave
+            RP00389  C00044_C00058 main [RC:RC02504]
+            RP00892  C00044_C01304 main [RC:RC00293]
+            RP05683  C00001_C00058 leave
+            RP05686  C00001_C00013 leave
+ENZYME      3.5.4.25
+PATHWAY     rn00740  Riboflavin metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01497  GTP cyclohydrolase II [EC:3.5.4.25]
+            K14652  3,4-dihydroxy 2-butanone 4-phosphate synthase / GTP cyclohydrolase II [EC:4.1.99.12 3.5.4.25]
+///

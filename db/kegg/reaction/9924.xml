@@ -1,0 +1,13 @@
+ENTRY       R09924                      Reaction
+NAME        8-hydroxylinalool,NADH:oxygen 8-oxidoreductase
+DEFINITION  (E)-3,7-Dimethylocta-1,6-diene-3,8-diol + NADH + H+ + Oxygen <=> (6E)-8-Oxolinalool + NAD+ + 2 H2O
+EQUATION    C04433 + C00004 + C00080 + C00007 <=> C20221 + C00003 + 2 C00001
+COMMENT     second step of two-step reaction (see R09925, R04366+R09924)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP15570  C04433_C20221 main [RC:RC02561]
+ENZYME      1.14.13.151
+PATHWAY     rn00902  Monoterpenoid biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K05525  linalool 8-monooxygenase [EC:1.14.13.151]
+///

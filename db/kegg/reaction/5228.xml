@@ -1,0 +1,12 @@
+ENTRY       R05228                      Reaction
+NAME        Penicillin-N,2-oxoglutarate:oxygen oxidoreductase (ring-expanding)
+DEFINITION  Deacetylcephalosporin C + H2O + 2 Succinate + 2 CO2 <=> Penicillin N + 2 2-Oxoglutarate + 2 Oxygen
+EQUATION    C03112 + C00001 + 2 C00042 + 2 C00011 <=> C06564 + 2 C00026 + 2 C00007
+COMMENT     multi-step reaction (see R05301 + R05229)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00015  C00026_C00042 cofac
+            RP04829  C03112_C06564 main [RC:RC02474]
+            RP05677  C00011_C00026 leave
+            RP05690  C00007_C00042 leave
+            RP10298  C00007_C03112 leave
+///

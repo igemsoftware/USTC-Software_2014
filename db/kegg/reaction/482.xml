@@ -1,0 +1,10 @@
+ENTRY       R00482                      Reaction
+NAME        L-Aspartate:ammonia ligase (ADP-forming)
+DEFINITION  ATP + L-Aspartate + Ammonia <=> ADP + Orthophosphate + L-Asparagine
+EQUATION    C00002 + C00049 + C00014 <=> C00008 + C00009 + C00152
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00116  C00049_C00152 main [RC:RC00010]
+            RP13399  C00014_C00152 leave [RC:RC02798]
+ENZYME      6.3.1.4
+///

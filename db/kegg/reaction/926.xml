@@ -1,0 +1,15 @@
+ENTRY       R00926                      Reaction
+NAME        Propionyladenylate:CoA propionyltransferase
+DEFINITION  Propionyladenylate + CoA <=> AMP + Propanoyl-CoA
+EQUATION    C05983 + C00010 <=> C00020 + C00100
+COMMENT     the second step of two-step reaction (see R00925, R01354+R00926)
+            following after R01354
+RPAIR       RP00034  C00010_C00100 main [RC:RC00004]
+            RP01179  C00020_C05983 main [RC:RC00070]
+            RP06366  C00100_C05983 main [RC:RC02816]
+ENZYME      6.2.1.1         6.2.1.17
+PATHWAY     rn00640  Propanoate metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01895  acetyl-CoA synthetase [EC:6.2.1.1]
+            K01908  propionyl-CoA synthetase [EC:6.2.1.17]
+///

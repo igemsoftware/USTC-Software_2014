@@ -1,0 +1,19 @@
+ENTRY       R02505                      Reaction
+NAME        Malonyl-CoA:cinnamoyl-CoA malonyltransferase (cyclizing)
+DEFINITION  3 Malonyl-CoA + Cinnamoyl-CoA <=> 4 CoA + Pinosylvin + 4 CO2
+EQUATION    3 C00083 + C00540 <=> 4 C00010 + C01745 + 4 C00011
+COMMENT     multi-step reaction
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP00481  C00010_C00540 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP07054  C00011_C00540 leave
+            RP07056  C00540_C01745 main [RC:RC02855]
+            RP07057  C00083_C01745 trans
+            RP12787  C00083_C01745 trans
+            RP12788  C00083_C01745 trans
+            RP12789  C00011_C00083 leave
+ENZYME      2.3.1.146
+PATHWAY     rn00945  Stilbenoid, diarylheptanoid and gingerol biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13231  pinosylvin synthase [EC:2.3.1.146]
+///

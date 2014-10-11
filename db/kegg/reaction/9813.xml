@@ -1,0 +1,10 @@
+ENTRY       R09813                      Reaction
+NAME        pentalen-13-ol,NADPH:oxygen 13-oxidoreductase
+DEFINITION  Pentalen-13-ol + NADPH + H+ + Oxygen <=> Pentalen-13-al + NADP+ + 2 H2O
+EQUATION    C19938 + C00005 + C00080 + C00007 <=> C19939 + C00006 + 2 C00001
+COMMENT     second step of two-step reaction (see R09814, R09812+R09813)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP15405  C19938_C19939 main [RC:RC01033]
+ENZYME      1.14.13.133
+///

@@ -1,0 +1,72 @@
+ENTRY       EC 1.4.99.5                 Enzyme
+NAME        glycine dehydrogenase (cyanide-forming);
+            hydrogen cyanide synthase;
+            HCN synthase
+CLASS       Oxidoreductases;
+            Acting on the CH-NH2 group of donors;
+            With other acceptors
+SYSNAME     glycine:acceptor oxidoreductase (hydrogen-cyanide-forming)
+REACTION    glycine + 2 A = hydrogen cyanide + CO2 + 2 AH2 [RN:R05704]
+ALL_REAC    R05704 > R00374
+SUBSTRATE   glycine [CPD:C00037];
+            A [CPD:C00028]
+PRODUCT     hydrogen cyanide [CPD:C01326];
+            CO2 [CPD:C00011];
+            AH2 [CPD:C00030]
+COMMENT     The enzyme from Pseudomonas sp. contains FAD. The enzyme is membrane-bound, and the 2-electron acceptor is a component of the respiratory chain. The enzyme can act with various artificial electron acceptors, including phenazine methosulfate.
+HISTORY     EC 1.4.99.5 created 2002
+REFERENCE   1  [PMID:234422]
+  AUTHORS   Wissing F.
+  TITLE     Cyanide production from glycine by a homogenate from a Pseudomonas species.
+  JOURNAL   J. Bacteriol. 121 (1975) 695-9.
+  ORGANISM  Pseudomonas sp.
+REFERENCE   2  [PMID:233722]
+  AUTHORS   Castric PA.
+  TITLE     Glycine metabolism by Pseudomonas aeruginosa: hydrogen cyanide biosynthesis.
+  JOURNAL   J. Bacteriol. 130 (1977) 826-31.
+  ORGANISM  Pseudomonas aeruginosa
+  SEQUENCE  [pae:PA2193 PA2194 PA2195]
+REFERENCE   3  [PMID:9620970]
+  AUTHORS   Laville J, Blumer C, Von Schroetter C, Gaia V, Defago G, Keel C, Haas D.
+  TITLE     Characterization of the hcnABC gene cluster encoding hydrogen cyanide synthase and anaerobic regulation by ANR in the strictly aerobic biocontrol agent Pseudomonas fluorescens CHA0.
+  JOURNAL   J. Bacteriol. 180 (1998) 3187-96.
+  ORGANISM  Pseudomonas fluorescens
+  SEQUENCE  [up:O85226 O85227 O85228]
+REFERENCE   4  [PMID:10763748]
+  AUTHORS   Blumer C, Haas D.
+  TITLE     Mechanism, regulation, and ecological role of bacterial cyanide biosynthesis.
+  JOURNAL   Arch. Microbiol. 173 (2000) 170-7.
+  ORGANISM  Pseudomonas aeruginosa, Pseudomonas fluorescens
+PATHWAY     ec00460  Cyanoamino acid metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K10814  hydrogen cyanide synthase HcnA
+            K10815  hydrogen cyanide synthase HcnB
+            K10816  hydrogen cyanide synthase HcnC
+GENES       PAE: PA2193(hcnA) PA2194(hcnB) PA2195(hcnC)
+            PAU: PA14_36310(hcnC) PA14_36320(hcnB) PA14_36330(hcnA)
+            PAP: PSPA7_3101(hcnC) PSPA7_3102(hcnB) PSPA7_3103(hcnA)
+            PAG: PLES_31301(hcnC) PLES_31311(hcnB) PLES_31321(hcnA)
+            PAF: PAM18_2840(hcnC) PAM18_2841(hcnB) PAM18_2842(hcnA)
+            PNC: NCGM2_3175(hcnA) NCGM2_3176(hcnB) NCGM2_3177(hcnC)
+            PDK: PADK2_14680 PADK2_14685 PADK2_14690
+            PSG: G655_14175 G655_14180 G655_14185
+            PRP: M062_11375 M062_11380 M062_11385
+            PAEP: PA1S_gp5851 PA1S_gp5852 PA1S_gp5853
+            PAER: PA1R_gp5664 PA1R_gp5665 PA1R_gp5666
+            PAEM: U769_14355 U769_14360 U769_14365
+            PAEL: T223_15985 T223_15990 T223_15995
+            PAES: SCV20265_3179 SCV20265_3180 SCV20265_3181
+            PAEU: BN889_02406(hcnA) BN889_02407(hcnB) BN889_02408(hcnC)
+            PAEG: AI22_19020 AI22_19025 AI22_19030
+            PFL: PFL_2577(hcnA) PFL_2578(hcnB) PFL_2579(hcnC)
+            PPRC: PFLCHA0_c26420(hcnA) PFLCHA0_c26430(ooxA) PFLCHA0_c26440
+            PFO: Pfl01_3514 Pfl01_3515 Pfl01_3516
+            PFE: PSF113_2367(hcnA) PSF113_2368(hcnB) PSF113_2369(hcnC)
+            PEN: PSEEN5520(hcnC) PSEEN5521(hcnB) PSEEN5522(hcnA)
+            PBA: PSEBR_a3359 PSEBR_a3360 PSEBR_a3361
+            CVI: CV_1682(hcnC) CV_1683(hcnB) CV_1684(hcnA)
+DBLINKS     ExplorEnz - The Enzyme Database: 1.4.99.5
+            IUBMB Enzyme Nomenclature: 1.4.99.5
+            ExPASy - ENZYME nomenclature database: 1.4.99.5
+            BRENDA, the Enzyme Database: 1.4.99.5
+///

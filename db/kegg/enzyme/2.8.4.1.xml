@@ -1,0 +1,105 @@
+ENTRY       EC 2.8.4.1                  Enzyme
+NAME        coenzyme-B sulfoethylthiotransferase;
+            methyl-CoM reductase;
+            methyl coenzyme M reductase
+CLASS       Transferases;
+            Transferring sulfur-containing groups;
+            Transferring alkylthio groups
+SYSNAME     methyl-CoM:CoB S-(2-sulfoethyl)thiotransferase
+REACTION    methyl-CoM + CoB = CoM-S-S-CoB + methane [RN:R04541]
+ALL_REAC    R04541
+SUBSTRATE   methyl-CoM [CPD:C03920];
+            CoB
+PRODUCT     CoM-S-S-CoB [CPD:C04832];
+            methane [CPD:C01438]
+COMMENT     This enzyme catalyses the final step in methanogenesis, the biological production of methane. This important anaerobic process is carried out only by methanogenic archaea. The enzyme can also function in reverse, for anaerobic oxidation of methane.
+            The enzyme requires the hydroporphinoid nickel complex coenzyme F430. Highly specific for coenzyme B with a heptanoyl chain; ethyl CoM and difluoromethyl CoM are poor substrates. The sulfide sulfur can be replaced by selenium but not by oxygen.
+HISTORY     EC 2.8.4.1 created 2001, modified 2011
+REFERENCE   1  [PMID:3122735]
+  AUTHORS   Bobik TA, Olson KD, Noll KM, Wolfe RS.
+  TITLE     Evidence that the heterodisulfide of coenzyme M and 7-mercaptoheptanoylthreonine phosphate is a product of the methylreductase reaction in Methanobacterium.
+  JOURNAL   Biochem. Biophys. Res. Commun. 149 (1987) 455-60.
+  ORGANISM  Methanobacterium thermoautotrophicum
+REFERENCE   2
+  AUTHORS   Ellermann, J., Hedderich, R., Boecher, R. and Thauer, R.K.
+  TITLE     The final step in methane formation: investigations with highly purified methyl coenzyme M reductase component C from Methanobacterium thermoautotrophicum (strain Marburg).
+  JOURNAL   Eur. J. Biochem. 184 (1988) 63-68.
+REFERENCE   3  [PMID:9367957]
+  AUTHORS   Ermler U, Grabarse W, Shima S, Goubeaud M, Thauer RK.
+  TITLE     Crystal structure of methyl-coenzyme M reductase: the key enzyme of biological methane formation.
+  JOURNAL   Science. 278 (1997) 1457-62.
+  ORGANISM  Methanobacterium thermoautotrophicum
+REFERENCE   4  [PMID:11072815]
+  AUTHORS   Signor L, Knuppe C, Hug R, Schweizer B, Pfaltz A, Jaun B.
+  TITLE     Methane formation by reaction of a methyl thioether with a photo-excited nickel thiolate--a process mimicking methanogenesis in archaea.
+  JOURNAL   Chemistry. 6 (2000) 3508-16.
+  ORGANISM  methanogenic archaea
+REFERENCE   5  [PMID:20520712]
+  AUTHORS   Scheller S, Goenrich M, Boecher R, Thauer RK, Jaun B
+  TITLE     The key nickel enzyme of methanogenesis catalyses the anaerobic oxidation of methane.
+  JOURNAL   Nature. 465 (2010) 606-8.
+PATHWAY     ec00680  Methane metabolism
+            ec01100  Metabolic pathways
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K00399  methyl-coenzyme M reductase alpha subunit
+            K00401  methyl-coenzyme M reductase beta subunit
+            K00402  methyl-coenzyme M reductase gamma subunit
+GENES       MJA: MJ_0081 MJ_0082 MJ_0083 MJ_0842 MJ_0845 MJ_0846
+            MFE: Mefer_0934 Mefer_0937 Mefer_0938
+            MVU: Metvu_0145 Metvu_0148 Metvu_0149 Metvu_1192 Metvu_1193 Metvu_1194
+            MFS: MFS40622_0424 MFS40622_0425 MFS40622_0426 MFS40622_1315 MFS40622_1316 MFS40622_1319
+            MIF: Metin_0281 Metin_0282 Metin_0285
+            MIG: Metig_0442 Metig_0444 Metig_0445 Metig_1233 Metig_1236 Metig_1237
+            MMP: MMP1555(mcrB) MMP1558(mcrG) MMP1559(mcrA)
+            MMQ: MmarC5_0017 MmarC5_0018 MmarC5_0021
+            MMX: MmarC6_1111 MmarC6_1112 MmarC6_1115
+            MMZ: MmarC7_0802 MmarC7_0805 MmarC7_0806
+            MMD: GYY_08625 GYY_08640 GYY_08645
+            MAE: Maeo_1264 Maeo_1267 Maeo_1268
+            MVN: Mevan_0868 Mevan_0871 Mevan_0872
+            MVO: Mvol_1124 Mvol_1127 Mvol_1128
+            MOK: Metok_0956 Metok_0957 Metok_0960
+            MAC: MA4546 MA4547 MA4550
+            MBA: Mbar_A0893 Mbar_A0894 Mbar_A0897
+            MMA: MM_1240 MM_1241 MM_1244
+            MMAZ: MmTuc01_1281 MmTuc01_1282 MmTuc01_1285
+            MBU: Mbur_2417 Mbur_2418 Mbur_2421
+            MMH: Mmah_0612 Mmah_0613 Mmah_0616
+            MEV: Metev_0902 Metev_0903 Metev_0906
+            MZH: Mzhil_0853 Mzhil_0856 Mzhil_0857
+            MPY: Mpsy_0828 Mpsy_0829 Mpsy_0832
+            MHZ: Metho_1666 Metho_1669 Metho_1670
+            MTP: Mthe_0569 Mthe_0570 Mthe_0572
+            MCJ: MCON_0759(mcrA) MCON_0760(mcrG) MCON_0762(mcrB)
+            MHI: Mhar_0495 Mhar_0497 Mhar_0498
+            MHU: Mhun_2144 Mhun_2147 Mhun_2148
+            MLA: Mlab_1066 Mlab_1067 Mlab_1068 Mlab_1561 Mlab_1562 Mlab_1565
+            MEM: Memar_0375 Memar_0377 Memar_0378 Memar_0613 Memar_0614 Memar_0617
+            MBG: BN140_1521(mcrA1) BN140_1522(mcrG1) BN140_1524(mcrB1) BN140_1734(mcrB3) BN140_1737(mcrG3) BN140_1738(mcrA3)
+            MPI: Mpet_1991 Mpet_1992 Mpet_1993 Mpet_2415 Mpet_2416 Mpet_2419
+            MBN: Mboo_0582 Mboo_0583 Mboo_0586
+            MFO: Metfor_0871 Metfor_0873 Metfor_0874 Metfor_2605 Metfor_2608 Metfor_2609
+            MPL: Mpal_2305 Mpal_2308 Mpal_2309
+            MPD: MCP_0512(mcrB) MCP_0515(mcrG) MCP_0516(mcrA)
+            MEZ: Mtc_0904(mcrB) Mtc_0907(mcrG) Mtc_0908(mcrA)
+            RCI: RCIX2059(mcrB) RCIX2062(mcrG) RCIX2063(mcrA)
+            MER: H729_07305 H729_07310 H729_07320
+            MTH: MTH1129 MTH1130 MTH1132 MTH1164 MTH1165 MTH1168
+            MMG: MTBMA_c15120(mrtA) MTBMA_c15130(mrtG) MTBMA_c15150(mrtB) MTBMA_c15480(mcrA) MTBMA_c15490(mcrG) MTBMA_c15520(mcrB)
+            MST: Msp_0318(mrtB) Msp_0320(mrtG) Msp_0321(mrtA)
+            MSI: Msm_0902 Msm_0903 Msm_0905 Msm_1015 Msm_1016 Msm_1019
+            MRU: mru_1924(mcrA) mru_1925(mcrG) mru_1928(mcrB)
+            MEB: Abm4_1526(mcrA) Abm4_1527(mcrG) Abm4_1530(mcrB)
+            MEL: Metbo_0349 Metbo_0352 Metbo_0353 Metbo_2278 Metbo_2280 Metbo_2281
+            MEW: MSWAN_2056 MSWAN_2057 MSWAN_2060
+            METH: MBMB1_1682(mcrA) MBMB1_1683(mcrG) MBMB1_1686(mcrB) MBMB1_1822(mrtB) MBMB1_1824(mrtG) MBMB1_1825(mrtA)
+            MFV: Mfer_0731 Mfer_0733 Mfer_0734 Mfer_0784 Mfer_0785 Mfer_0788
+            MKA: MK0651(McrB) MK0654(McrG) MK0655(McrA)
+            MAX: MMALV_03970 MMALV_03990 MMALV_04000
+            TAR: TALC_00469 TALC_00471 TALC_00472
+DBLINKS     ExplorEnz - The Enzyme Database: 2.8.4.1
+            IUBMB Enzyme Nomenclature: 2.8.4.1
+            ExPASy - ENZYME nomenclature database: 2.8.4.1
+            UM-BBD (Biocatalysis/Biodegradation Database): 2.8.4.1
+            BRENDA, the Enzyme Database: 2.8.4.1
+///

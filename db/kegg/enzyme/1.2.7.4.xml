@@ -1,0 +1,230 @@
+ENTRY       EC 1.2.7.4                  Enzyme
+NAME        carbon-monoxide dehydrogenase (ferredoxin)
+CLASS       Oxidoreductases;
+            Acting on the aldehyde or oxo group of donors;
+            With an iron-sulfur protein as acceptor
+SYSNAME     carbon-monoxide,water:ferredoxin oxidoreductase
+REACTION    CO + H2O + 2 oxidized ferredoxin = CO2 + 2 reduced ferredoxin + 2 H+ [RN:R07157]
+ALL_REAC    R07157;
+            (other) R09317
+SUBSTRATE   CO [CPD:C00237];
+            H2O [CPD:C00001];
+            oxidized ferredoxin [CPD:C00139]
+PRODUCT     CO2 [CPD:C00011];
+            reduced ferredoxin [CPD:C00138];
+            H+ [CPD:C00080]
+COMMENT     Contains nickel, zinc and non-heme iron. Methyl viologen can act as acceptor. The enzyme from Moorella thermoacetica exists as a complex with EC 2.3.1.169, CO-methylating acetyl CoA synthase, which catalyses the overall reaction:methylcorrinoid protein + CoA + CO2 + reduced ferredoxin = acetyl-CoA + corrinoid protein + H2O + oxidized ferredoxin.
+HISTORY     EC 1.2.7.4 created 2003
+REFERENCE   1  [PMID:7354006]
+  AUTHORS   Meyer O, Schlegel HG.
+  TITLE     Carbon monoxide:methylene blue oxidoreductase from Pseudomonas carboxydovorans.
+  JOURNAL   J. Bacteriol. 141 (1980) 74-80.
+  ORGANISM  Pseudomonas carboxydovorans
+REFERENCE   2  [PMID:6687389]
+  AUTHORS   Ragsdale SW, Clark JE, Ljungdahl LG, Lundie LL, Drake HL.
+  TITLE     Properties of purified carbon monoxide dehydrogenase from Clostridium thermoaceticum, a nickel, iron-sulfur protein.
+  JOURNAL   J. Biol. Chem. 258 (1983) 2364-9.
+  ORGANISM  Moorella thermoacetica
+REFERENCE   3  [PMID:12386327]
+  AUTHORS   Doukov TI, Iverson TM, Seravalli J, Ragsdale SW, Drennan CL.
+  TITLE     A Ni-Fe-Cu center in a bifunctional carbon monoxide dehydrogenase/acetyl-CoA synthase.
+  JOURNAL   Science. 298 (2002) 567-72.
+  ORGANISM  Moorella thermoacetica
+  SEQUENCE  [mta:Moth_1203]
+PATHWAY     ec00680  Methane metabolism
+            ec00720  Carbon fixation pathways in prokaryotes
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K00192  acetyl-CoA decarbonylase/synthase complex subunit alpha
+            K00198  carbon-monoxide dehydrogenase catalytic subunit
+GENES       AVN: Avin_04490(cooS)
+            AVL: AvCA_04490(cooS)
+            AVD: AvCA6_04490(cooS)
+            TMB: Thimo_0223
+            CCV: CCV52592_1131(cooS)
+            CCO: CCC13826_0236(cooS)
+            GSU: GSU2098(cooS)
+            GME: Gmet_1902(cooS)
+            GUR: Gura_0618
+            GBM: Gbem_0072(cooS-2) Gbem_1736(cooS-1)
+            GEO: Geob_0362 Geob_1046
+            PCA: Pcar_0057(cooS-2) Pcar_0888(cooS-1)
+            DVU: DVU2098(cooS)
+            DVL: Dvul_1133
+            DVM: DvMF_2233
+            DVG: Deval_1949
+            DDE: Dde_3028
+            DDS: Ddes_0382
+            DDN: DND132_2520
+            DMA: DMR_25780
+            DSA: Desal_2508
+            DAS: Daes_0529
+            DAF: Desaf_2842
+            DPI: BN4_11760(cooS) BN4_20190(cooS)
+            DBA: Dbac_0934
+            DRT: Dret_1234
+            DAK: DaAHT2_0337 DaAHT2_0827
+            DSF: UWK_01293 UWK_03164
+            DOL: Dole_1461 Dole_3185
+            DAL: Dalk_0680 Dalk_2379
+            DAT: HRM2_16670(cdhA) HRM2_41010(cdh1) HRM2_43440(cdh2)
+            DTO: TOL2_C00990(cdh1) TOL2_C11820(cdhA) TOL2_C38110(cooS)
+            DAO: Desac_0166 Desac_1966 Desac_2050
+            DTI: Desti_0232
+            SFU: Sfum_2566 Sfum_2875
+            DBR: Deba_0241
+            RPC: RPC_4498
+            RRU: Rru_A1427
+            RRF: F11_07370
+            GTH: Geoth_1875
+            GMC: GY4MC1_1807
+            CAC: CA_C0116 CA_C2498
+            CAE: SMB_G0117(cooS) SMB_G2533
+            CAY: CEA_G0117 CEA_G2512
+            CTC: CTC01156
+            CTET: BN906_01229
+            CNO: NT01CX_0669(cooS)
+            CBO: CBO1331 CBO2218
+            CBA: CLB_1359 CLB_2157
+            CBH: CLC_1369
+            CBY: CLM_1506 CLM_2421
+            CBL: CLK_0775 CLK_1658
+            CBB: CLD_2358 CLD_3226
+            CBI: CLJ_B1446 CLJ_B2428
+            CBN: CbC4_2402(cooS)
+            CBF: CLI_1426 CLI_2267
+            CBM: CBF_1402 CBF_2255
+            CBJ: H04402_01401 H04402_02230
+            CBE: Cbei_3020 Cbei_5054
+            CKL: CKL_2148
+            CKR: CKR_1887
+            CCE: Ccel_0438 Ccel_2918
+            CLJ: CLJU_c09110(cooS1) CLJU_c17910(cooS2) CLJU_c37670(codH)
+            CCB: Clocel_0365 Clocel_1516 Clocel_2587 Clocel_4231
+            CLB: Clo1100_1430 Clo1100_3687
+            CSR: Cspa_c16740(cooS1) Cspa_c21120(cooS2) Cspa_c57670(cooS3)
+            CPAS: Clopa_0057 Clopa_1484 Clopa_2128 Clopa_3232
+            CSB: CLSA_c11710(cooS1) CLSA_c14830(cooS2)
+            CAH: CAETHG_1620 CAETHG_1621 CAETHG_3005 CAETHG_3899
+            AMT: Amet_1177 Amet_2016 Amet_3764
+            CTH: Cthe_2801
+            CTX: Clo1313_0390
+            CCL: Clocl_0520 Clocl_0806
+            CSS: Cst_c19650(cooS1)
+            CSD: Clst_1883
+            RAL: Rumal_3736
+            RUM: CK1_12690 CK1_12700
+            ROB: CK5_28700
+            CSH: Closa_0921
+            CAD: Curi_c06440(cooS)
+            CDF: CD630_01740(cooS) CD630_07160(cooS)
+            CDC: CD196_0188 CD196_0661(cooS)
+            CDL: CDR20291_0175 CDR20291_0643(cooS)
+            CDG: CDBI1_00950 CDBI1_03420
+            CST: CLOST_1160
+            DSY: DSY1653 DSY2630 DSY4173 DSY4442
+            DHD: Dhaf_0882 Dhaf_1166 Dhaf_2798 Dhaf_3792
+            DDH: Desde_1134 Desde_2256 Desde_3264
+            DDL: Desdi_0655 Desdi_0934 Desdi_1922
+            DRM: Dred_0652
+            DAE: Dtox_1270 Dtox_2327 Dtox_2933 Dtox_3780
+            DCA: Desca_0349 Desca_1148 Desca_1990
+            DKU: Desku_1492 Desku_2150 Desku_2787
+            DRU: Desru_0859 Desru_3320
+            DGI: Desgi_0522 Desgi_1185 Desgi_2052 Desgi_2753 Desgi_3080
+            DAU: Daud_0105 Daud_0870
+            TJR: TherJR_1157 TherJR_1937 TherJR_2144 TherJR_2959
+            SGY: Sgly_2814
+            DOR: Desor_0421 Desor_3274 Desor_4181 Desor_4446
+            DAI: Desaci_0260 Desaci_0709 Desaci_2975
+            DMI: Desmer_0456 Desmer_1790 Desmer_2536 Desmer_3209 Desmer_3478
+            DED: DHBDCA_p230(cooS1)
+            DEC: DCF50_p290(cooS1)
+            DRS: DEHRE_00735
+            ELM: ELI_3603
+            AWO: Awo_c10740(acsA) Awo_c19050(cooS)
+            TTE: TTE1708
+            CHY: CHY_0034(cooSV) CHY_0085(cooSII) CHY_0736(cooSIV) CHY_1824(cooSI)
+            TEP: TepRe1_0548
+            TAE: TepiRe1_0598(cooS)
+            MTA: Moth_1203 Moth_1972
+            ADG: Adeg_0335
+            TPZ: Tph_c05730(cooS1) Tph_c13580(cooS) Tph_c15180(acsB)
+            CSC: Csac_0400
+            CHD: Calhy_0239
+            CKI: Calkr_0175
+            CLC: Calla_2155
+            TOC: Toce_0335 Toce_0761 Toce_0800
+            TNR: Thena_0036
+            NTH: Nther_0860
+            AAR: Acear_0983 Acear_1305
+            HHL: Halha_1234
+            VPR: Vpar_0209
+            SSG: Selsp_2016
+            SRI: SELR_14500
+            TAZ: TREAZ_1535(cooS_2) TREAZ_1650(cooS_1)
+            TPI: TREPR_3069(cooS)
+            CPC: Cpar_1193
+            CPH: Cpha266_0149
+            PMX: PERMA_0106(cooS)
+            TAM: Theam_1337
+            DTE: Dester_0417 Dester_0833
+            DIN: Selin_2012
+            TID: Thein_1422 Thein_2190
+            TOP: TOPB45_0398
+            MJA: MJ_0152 MJ_0153 MJ_0728
+            MFE: Mefer_0203
+            MVU: Metvu_0628 Metvu_0967 Metvu_1187
+            MFS: MFS40622_0120 MFS40622_0121 MFS40622_1444
+            MIF: Metin_1030 Metin_1228
+            MIG: Metig_0288 Metig_0357 Metig_1381 Metig_1382
+            MMP: MMP0985(cdhA)
+            MMQ: MmarC5_0805
+            MMX: MmarC6_1673
+            MMZ: MmarC7_0227
+            MMD: GYY_05750
+            MAE: Maeo_0475 Maeo_1171 Maeo_1174
+            MVN: Mevan_0311
+            MVO: Mvol_0200
+            MOK: Metok_0743 Metok_0747
+            MAC: MA1016(cdhA) MA1309(cooS) MA3282(cooS) MA3860(cdhA) MA4399(cdhA)
+            MBA: Mbar_A0204 Mbar_A0434 Mbar_A3525 Mbar_A3717
+            MMA: MM_0121 MM_0684 MM_2089 MM_2301
+            MMAZ: MmTuc01_0129 MmTuc01_0700 MmTuc01_2347
+            MBU: Mbur_0858
+            MMH: Mmah_1166
+            MEV: Metev_0426
+            MZH: Mzhil_1137
+            MPY: Mpsy_0694 Mpsy_2895
+            MHZ: Metho_0975 Metho_1412
+            MTP: Mthe_0292 Mthe_1216 Mthe_1341
+            MCJ: MCON_1332(cdhA) MCON_2865(cooS)
+            MHI: Mhar_0789 Mhar_1630 Mhar_2328
+            MHU: Mhun_0690 Mhun_1272
+            MBG: BN140_2260(cooS)
+            MPI: Mpet_0907
+            MBN: Mboo_0884 Mboo_1373
+            MFO: Metfor_1721
+            MPL: Mpal_0842
+            RCI: LRC456(cdhA)
+            MTH: MTH1708
+            MMG: MTBMA_c02870(cdhA1) MTBMA_c14200(cdhA2) MTBMA_c14210(cdhA3)
+            MEL: Metbo_0462
+            MEW: MSWAN_1934
+            METH: MBMB1_1565(cdhA)
+            MFV: Mfer_0527
+            MKA: MK0536 MK0717(CdhA_1) MK0719(CdhA_1)
+            AFU: AF1100(cdhA-1) AF1849(cooS) AF2397(cdhA-2)
+            AVE: Arcve_1121
+            AST: Asulf_01231 Asulf_02029
+            FPL: Ferp_0731 Ferp_2369 Ferp_2562
+            TON: TON_1018
+            TGA: TGAM_0824(cooS)
+            TBA: TERMP_01153
+            THA: TAM4_1067 TAM4_582
+            THS: TES1_1211
+            KCR: Kcr_0762
+DBLINKS     ExplorEnz - The Enzyme Database: 1.2.7.4
+            IUBMB Enzyme Nomenclature: 1.2.7.4
+            ExPASy - ENZYME nomenclature database: 1.2.7.4
+            BRENDA, the Enzyme Database: 1.2.7.4
+///

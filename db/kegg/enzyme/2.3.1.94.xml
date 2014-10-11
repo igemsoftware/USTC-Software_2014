@@ -1,0 +1,59 @@
+ENTRY       EC 2.3.1.94                 Enzyme
+NAME        6-deoxyerythronolide-B synthase;
+            erythronolide condensing enzyme;
+            malonyl-CoA:propionyl-CoA malonyltransferase (cyclizing);
+            erythronolide synthase;
+            malonyl-CoA:propanoyl-CoA malonyltransferase (cyclizing);
+            deoxyerythronolide B synthase;
+            6-deoxyerythronolide B synthase;
+            DEBS
+CLASS       Transferases;
+            Acyltransferases;
+            Transferring groups other than aminoacyl groups
+SYSNAME     propanoyl-CoA:(2S)-methylmalonyl-CoA malonyltransferase (cyclizing)
+REACTION    propanoyl-CoA + 6 (2S)-methylmalonyl-CoA + 6 NADPH + 6 H+ = 6-deoxyerythronolide B + 7 CoA + 6 CO2 + H2O + 6 NADP+ [RN:R00918]
+ALL_REAC    R00918
+SUBSTRATE   propanoyl-CoA [CPD:C00100];
+            (2S)-methylmalonyl-CoA [CPD:C00683];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080]
+PRODUCT     6-deoxyerythronolide B [CPD:C03240];
+            CoA [CPD:C00010];
+            CO2 [CPD:C00011];
+            H2O [CPD:C00001];
+            NADP+ [CPD:C00006]
+COMMENT     The product, 6-deoxyerythronolide B, contains a 14-membered lactone ring and is an intermediate in the biosynthesis of erythromycin antibiotics. Biosynthesis of 6-deoxyerythronolide B requires 28 active sites that are precisely arranged along three large polypeptides, denoted DEBS1, -2 and -3 [6]. The polyketide product is synthesized by the processive action of a loading didomain, six extension modules and a terminal thioesterase domain [5]. Each extension module contains a minimum of a ketosynthase (KS), an acyltransferase (AT) and an acyl-carrier protein (ACP). The KS domain both accepts the growing polyketide chain from the previous module and catalyses the subsequent decarboxylative condensation between this substrate and an ACP-bound methylmalonyl extender unit, introduce by the AT domain. This combined effort gives rise to a new polyketide intermediate that has been extended by two carbon atoms [5].
+HISTORY     EC 2.3.1.94 created 1989, modified 2008
+REFERENCE   1
+  AUTHORS   Omura, S. and Nakagawa, A.
+  TITLE     Biosynthesis of 16-membered macrolide antibiotics.
+  JOURNAL   Antibiotics 4 (1981) 175-192.
+REFERENCE   2
+  AUTHORS   Roberts, G. and Leadley, P.F.
+  TITLE     Use of [3H]tetrahydrocerulenin to assay condensing enzyme activity in Streptomyces erythreus.
+  JOURNAL   Biochem. Soc. Trans. 12 (1984) 642-643.
+REFERENCE   3  [PMID:11230695]
+  AUTHORS   Pfeifer BA, Admiraal SJ, Gramajo H, Cane DE, Khosla C
+  TITLE     Biosynthesis of complex polyketides in a metabolically engineered strain of E. coli.
+  JOURNAL   Science. 291 (2001) 1790-2.
+  ORGANISM  Saccharopolyspora erythraea
+REFERENCE   4  [PMID:11752428]
+  AUTHORS   Tsai SC, Miercke LJ, Krucinski J, Gokhale R, Chen JC, Foster PG, Cane DE, Khosla C, Stroud RM
+  TITLE     Crystal structure of the macrocycle-forming thioesterase domain of the erythromycin polyketide synthase: versatility from a unique substrate channel.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 98 (2001) 14808-13.
+  ORGANISM  Saccharopolyspora erythraea
+  SEQUENCE  [up:Q03133]
+REFERENCE   5  [PMID:17328673]
+  AUTHORS   Khosla C, Tang Y, Chen AY, Schnarr NA, Cane DE
+  TITLE     Structure and mechanism of the 6-deoxyerythronolide B synthase.
+  JOURNAL   Annu. Rev. Biochem. 76 (2007) 195-221.
+PATHWAY     ec00522  Biosynthesis of 12-, 14- and 16-membered macrolides
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K10817  erythronolide synthase
+GENES       SEN: SACE_0721(eryAI) SACE_0723(eryAII) SACE_0724(eryAIII)
+DBLINKS     ExplorEnz - The Enzyme Database: 2.3.1.94
+            IUBMB Enzyme Nomenclature: 2.3.1.94
+            ExPASy - ENZYME nomenclature database: 2.3.1.94
+            BRENDA, the Enzyme Database: 2.3.1.94
+            CAS: 87683-77-0
+///

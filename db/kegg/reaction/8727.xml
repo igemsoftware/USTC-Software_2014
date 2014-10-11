@@ -1,0 +1,12 @@
+ENTRY       R08727                      Reaction
+NAME        3beta-hydroxy-5-cholestenoate,NADPH:oxygen oxidoreductase (7alpha-hydroxylating)
+DEFINITION  3beta-Hydroxy-5-cholestenoate + Oxygen + NADPH + H+ <=> 3beta,7alpha-Dihydroxy-5-cholestenoate + NADP+ + H2O
+EQUATION    C17333 + C00007 + C00005 + C00080 <=> C17335 + C00006 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP13726  C17333_C17335 main [RC:RC00524]
+            RP13727  C00007_C17335 leave
+ENZYME      1.14.13.100
+PATHWAY     rn00120  Primary bile acid biosynthesis
+ORTHOLOGY   K07430  oxysterol 7-alpha-hydroxylase [EC:1.14.13.100]
+///

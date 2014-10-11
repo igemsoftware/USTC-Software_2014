@@ -1,0 +1,53 @@
+ENTRY       EC 1.14.12.18               Enzyme
+NAME        biphenyl 2,3-dioxygenase;
+            biphenyl dioxygenase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of two atoms of oxygen into the other donor
+SYSNAME     biphenyl,NADH:oxygen oxidoreductase (2,3-hydroxylating)
+REACTION    biphenyl + NADH + H+ + O2 = (1S,2R)-3-phenylcyclohexa-3,5-diene-1,2-diol + NAD+ [RN:R05263]
+ALL_REAC    R05263;
+            (other) R05261 R05262 R05264
+SUBSTRATE   biphenyl [CPD:C06588];
+            NADH [CPD:C00004];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007]
+PRODUCT     (1S,2R)-3-phenylcyclohexa-3,5-diene-1,2-diol [CPD:C06589];
+            NAD+ [CPD:C00003]
+COMMENT     Requires Fe2+. The enzyme from Burkholderia fungorum LB400 (previously Pseudomonas sp.) is part of a multicomponent system composed of an NADH:ferredoxin oxidoreductase (FAD cofactor), a [2Fe-2S] Rieske-type ferredoxin, and a terminal oxygenase that contains a [2Fe-2S] Rieske-type iron-sulfur cluster and a catalytic mononuclear nonheme iron centre. Chlorine-substituted biphenyls can also act as substrates. Similar to the three-component enzyme systems EC 1.14.12.3 (benzene 1,2-dioxygenase) and EC 1.14.12.11 (toluene dioxygenase).
+HISTORY     EC 1.14.12.18 created 2001
+REFERENCE   1  [PMID:7592331]
+  AUTHORS   Haddock JD, Gibson DT.
+  TITLE     Purification and characterization of the oxygenase component of biphenyl 2,3-dioxygenase from Pseudomonas sp. strain LB400.
+  JOURNAL   J. Bacteriol. 177 (1995) 5834-9.
+  ORGANISM  Burkholderia xenovorans
+  SEQUENCE  [bxe:Bxe_C1197 Bxe_C1196]
+REFERENCE   2  [PMID:9451832]
+  AUTHORS   Haddock JD, Pelletier DA, Gibson DT.
+  TITLE     Purification and properties of ferredoxinBPH, a component of biphenyl 2,3-dioxygenase of Pseudomonas sp strain LB400.
+  JOURNAL   J. Ind. Microbiol. Biotechnol. 19 (1997) 355-9.
+  ORGANISM  Pseudomonas sp.
+REFERENCE   3  [PMID:9683647]
+  AUTHORS   Broadus RM, Haddock JD.
+  TITLE     Purification and characterization of the NADH:ferredoxinBPH oxidoreductase component of biphenyl 2,3-dioxygenase from Pseudomonas sp. strain LB400.
+  JOURNAL   Arch. Microbiol. 170 (1998) 106-12.
+  ORGANISM  Pseudomonas sp.
+PATHWAY     ec00621  Dioxin degradation
+            ec01100  Metabolic pathways
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K08689  biphenyl 2,3-dioxygenase alpha subunit
+            K15750  biphenyl 2,3-dioxygenase beta subunit
+GENES       PSD: DSC_08750 DSC_08755 DSC_09320
+            BXE: Bxe_C1196(bphA2) Bxe_C1197(bphA1)
+            PNA: Pnap_4151 Pnap_4152
+            ACK: C380_15925(bphA1) C380_15930(bphA2)
+            PGV: SL003B_4095(bphAa) SL003B_4096(bphAb)
+            RHA: RHA1_ro08059(bphAb) RHA1_ro08060(bphAa)
+            ROP: ROP_pROB02-01580(bnzA1) ROP_pROB02-01590(bnzA2)
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.12.18
+            IUBMB Enzyme Nomenclature: 1.14.12.18
+            ExPASy - ENZYME nomenclature database: 1.14.12.18
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.14.12.18
+            BRENDA, the Enzyme Database: 1.14.12.18
+            CAS: 103289-55-0
+///

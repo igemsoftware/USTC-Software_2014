@@ -1,0 +1,118 @@
+ENTRY       EC 2.3.1.65                 Enzyme
+NAME        bile acid-CoA:amino acid N-acyltransferase;
+            glycine---taurine N-acyltransferase;
+            amino acid N-choloyltransferase;
+            BAT;
+            glycine N-choloyltransferase;
+            BACAT;
+            cholyl-CoA glycine-taurine N-acyltransferase;
+            cholyl-CoA:taurine N-acyltransferase
+CLASS       Transferases;
+            Acyltransferases;
+            Transferring groups other than aminoacyl groups
+SYSNAME     choloyl-CoA:glycine N-choloyltransferase
+REACTION    choloyl-CoA + glycine = CoA + glycocholate [RN:R03718]
+ALL_REAC    R03718;
+            (other) R03720 R08744 R08745
+SUBSTRATE   choloyl-CoA [CPD:C01794];
+            glycine [CPD:C00037]
+PRODUCT     CoA [CPD:C00010];
+            glycocholate [CPD:C01921]
+COMMENT     Also acts on CoA derivatives of other bile acids. Taurine and 2-fluoro-beta-alanine can act as substrates, but more slowly [4]. The enzyme can also conjugate fatty acids to glycine and can act as a very-long-chain acyl-CoA thioesterase [7]. Bile-acid---amino-acid conjugates serve as detergents in the gastrointestinal tract, solubilizing long chain fatty acids, mono- and diglycerides, fat-soluble vitamins and cholesterol [4]. This is the second enzyme in a two-step process leading to the conjugation of bile acids with amino acids; the first step is the conversion of bile acids into their acyl-CoA thioesters, which is catalysed by EC 6.2.1.7, cholate---CoA ligase.
+HISTORY     EC 2.3.1.65 created 1983, modified 2005
+REFERENCE   1  [PMID:7372637]
+  AUTHORS   Czuba B, Vessey DA.
+  TITLE     Kinetic characterization of cholyl-CoA glycine-taurine N-acyltransferase from bovine liver.
+  JOURNAL   J. Biol. Chem. 255 (1980) 5296-9.
+  ORGANISM  Bos taurus
+REFERENCE   2
+  AUTHORS   Jordan, T.W., Lee, R. and Lim, W.C.
+  TITLE     Isoelectric focussing of soluble and particulate benzoyl-CoA and cholyl-CoA:amino acid N-acyltransferases from rat liver.
+  JOURNAL   Biochem. Int. 1 (1980) 325-330.
+REFERENCE   3  [PMID:422567]
+  AUTHORS   Vessey DA.
+  TITLE     The co-purification and common identity of cholyl CoA:glycine- and cholyl CoA:taurine-N-acyltransferase activities from bovine liver.
+  JOURNAL   J. Biol. Chem. 254 (1979) 2059-63.
+  ORGANISM  Bos taurus
+REFERENCE   4  [PMID:2037576]
+  AUTHORS   Johnson MR, Barnes S, Kwakye JB, Diasio RB.
+  TITLE     Purification and characterization of bile acid-CoA:amino acid N-acyltransferase from human liver.
+  JOURNAL   J. Biol. Chem. 266 (1991) 10227-33.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:570]
+REFERENCE   5  [PMID:12454267]
+  AUTHORS   Falany CN, Xie X, Wheeler JB, Wang J, Smith M, He D, Barnes S.
+  TITLE     Molecular cloning and expression of rat liver bile acid CoA ligase.
+  JOURNAL   J. Lipid. Res. 43 (2002) 2062-71.
+  ORGANISM  Rattus norvegicus
+REFERENCE   6  [PMID:12951368]
+  AUTHORS   He D, Barnes S, Falany CN.
+  TITLE     Rat liver bile acid CoA:amino acid N-acyltransferase: expression, characterization, and peroxisomal localization.
+  JOURNAL   J. Lipid. Res. 44 (2003) 2242-9.
+  ORGANISM  Rattus norvegicus
+  SEQUENCE  [rno:29725]
+REFERENCE   7  [PMID:12810727]
+  AUTHORS   O'Byrne J, Hunt MC, Rai DK, Saeki M, Alexson SE.
+  TITLE     The human bile acid-CoA:amino acid N-acyltransferase functions in the conjugation of fatty acids to glycine.
+  JOURNAL   J. Biol. Chem. 278 (2003) 34237-44.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:570]
+PATHWAY     ec00120  Primary bile acid biosynthesis
+            ec00430  Taurine and hypotaurine metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00659  bile acid-CoA:amino acid N-acyltransferase
+GENES       HSA: 570(BAAT)
+            PTR: 472997(BAAT)
+            PPS: 100992429(BAAT)
+            GGO: 101140183(BAAT)
+            PON: 100431907(BAAT)
+            MCC: 100429419(BAAT)
+            MCF: 102132073(BAAT)
+            MMU: 12012(Baat)
+            RNO: 29725(Baat)
+            CGE: 100756252(Baat)
+            HGL: 101716142(Baat) 101717293 101727686
+            TUP: 102472797 102473647(BAAT)
+            CFA: 481635(BAAT)
+            AML: 100476252
+            FCA: 101095691 101096116(BAAT)
+            PTG: 102969591(BAAT)
+            BTA: 530653 786798(BAAT)
+            BOM: 102268176(BAAT) 102268462
+            PHD: 102325859 102326210(BAAT)
+            CHX: 102174570
+            SSC: 100515185
+            CFR: 102523415
+            ECB: 100054567(BAAT)
+            MYB: 102248360 102262596 102263115
+            MYD: 102764048 102764710
+            PALE: 102892341(BAAT) 102897591
+            MDO: 100023136(BAAT)
+            SHR: 100918014 100924464(BAAT) 100925244
+            GGA: 769879(BAAT)
+            MGP: 100539658
+            TGU: 100223876
+            FAB: 101815920
+            PHI: 102101793
+            APLA: 101797844
+            FPG: 101924136
+            FCH: 102059453
+            CLV: 102094683
+            ASN: 102368085 102376159 102383708
+            PSS: 102447700 102461463 102461871
+            CMY: 102939533 102947935
+            ACS: 100566890
+            XLA: 100137716
+            XTR: 100125079(baat) 100497580
+            TRU: 101071207
+            OLA: 101166298
+            XMA: 102226402
+            LCM: 102356569 102363365 102363627
+            BFO: BRAFLDRAFT_72249
+            CIN: 100175018
+DBLINKS     ExplorEnz - The Enzyme Database: 2.3.1.65
+            IUBMB Enzyme Nomenclature: 2.3.1.65
+            ExPASy - ENZYME nomenclature database: 2.3.1.65
+            BRENDA, the Enzyme Database: 2.3.1.65
+            CAS: 65979-40-0
+///

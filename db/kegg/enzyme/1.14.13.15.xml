@@ -1,0 +1,140 @@
+ENTRY       EC 1.14.13.15               Enzyme
+NAME        cholestanetriol 26-monooxygenase;
+            5beta-cholestane-3alpha,7alpha,12alpha-triol 26-hydroxylase;
+            5beta-cholestane-3alpha,7alpha,12alpha-triol hydroxylase;
+            cholestanetriol 26-hydroxylase;
+            sterol 27-hydroxylase;
+            sterol 26-hydroxylase;
+            cholesterol 27-hydroxylase;
+            CYP27A;
+            CYP27A1;
+            cytochrome P450 27A1'
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     5beta-cholestane-3alpha,7alpha,12alpha-triol,NADPH:oxygen oxidoreductase (26-hydroxylating)
+REACTION    5beta-cholestane-3alpha,7alpha,12alpha-triol + 3 NADPH + 3 H+ + 3 O2 = (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oate + 3 NADP+ + 4 H2O (overall reaction) [RN:R04807];
+            (1a) 5beta-cholestane-3alpha,7alpha,12alpha-triol + NADPH + H+ + O2 = (25R)-5beta-cholestane-3alpha,7alpha,12alpha,26-tetraol + NADP+ + H2O;
+            (1b) (25R)-5beta-cholestane-3alpha,7alpha,12alpha,26-tetraol + NADPH + H+ + O2 = (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-al + NADP+ + 2 H2O;
+            (1c) (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-al + NADPH + H+ + O2 = (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oate + NADP+ + H2O
+ALL_REAC    R04807;
+            (other) R04806 R08505 R08725 R08726 R08758 R08759 R08760 R08761
+SUBSTRATE   5beta-cholestane-3alpha,7alpha,12alpha-triol [CPD:C05454];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            (25R)-5beta-cholestane-3alpha,7alpha,12alpha,26-tetraol;
+            (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-al
+PRODUCT     (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oate;
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            (25R)-5beta-cholestane-3alpha,7alpha,12alpha,26-tetraol;
+            (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-al
+COMMENT     The enzyme requires ferredoxin and ferredoxin reductase. It catalyses the first three sterol side chain oxidations in bile acid biosynthesis via the neutral (classic) pathway. Can also act on cholesterol, cholest-5-en-3beta,7alpha-diol, 7alpha-hydroxycholest-4-en-3-one, and 5beta-cholestane-3alpha,7alpha-diol. The enzyme can also hydroxylate cholesterol at positions 24 and 25.
+HISTORY     EC 1.14.13.15 created 1976, modified 2005, modified 2012
+REFERENCE   1  [PMID:5914340]
+  AUTHORS   Masui T, Herman R, Staple E.
+  TITLE     The oxidation of 5-beta-cholestane-3-alpha, 7-alpha, 12-alpha, 26-tetraol to 5-beta-cholestane-3-alpha, 7-alpha, 12-alpha-triol-26-oic acid via 5-beta-cholestane-3-alpha, 7-alpha, 12-alpha-triol-26-al by rat liver.
+  JOURNAL   Biochim. Biophys. Acta. 117 (1966) 266-8.
+REFERENCE   2  [PMID:4388637]
+  AUTHORS   Okuda K, Hoshita N.
+  TITLE     Oxidation of 5-beta-cholestane-3 alpha, 7 alpha, 12 alpha-triol by rat-liver mitochondria.
+  JOURNAL   Biochim. Biophys. Acta. 164 (1968) 381-8.
+  ORGANISM  Rattus norvegicus
+REFERENCE   3  [PMID:6423637]
+  AUTHORS   Wikvall K.
+  TITLE     Hydroxylations in biosynthesis of bile acids. Isolation of a cytochrome P-450 from rabbit liver mitochondria catalyzing 26-hydroxylation of C27-steroids.
+  JOURNAL   J. Biol. Chem. 259 (1984) 3800-4.
+  ORGANISM  Oryctolagus cuniculus
+REFERENCE   4  [PMID:2722778]
+  AUTHORS   Andersson S, Davis DL, Dahlback H, Jornvall H, Russell DW.
+  TITLE     Cloning, structure, and expression of the mitochondrial cytochrome P-450 sterol 26-hydroxylase, a bile acid biosynthetic enzyme.
+  JOURNAL   J. Biol. Chem. 264 (1989) 8222-9.
+  ORGANISM  Oryctolagus cuniculus
+  SEQUENCE  [up:P17177]
+REFERENCE   5  [PMID:2322231]
+  AUTHORS   Dahlback H, Holmberg I
+  TITLE     Oxidation of 5 beta-cholestane-3 alpha,7 alpha, 12 alpha-triol into 3 alpha,7 alpha,12 alpha-trihydroxy-5 beta-cholestanoic acid by cytochrome P-450(26) from rabbit liver mitochondria.
+  JOURNAL   Biochem. Biophys. Res. Commun. 167 (1990) 391-5.
+REFERENCE   6  [PMID:8496170]
+  AUTHORS   Holmberg-Betsholtz I, Lund E, Bjorkhem I, Wikvall K.
+  TITLE     Sterol 27-hydroxylase in bile acid biosynthesis. Mechanism of oxidation of 5 beta-cholestane-3 alpha,7 alpha,12 alpha,27-tetrol into 3 alpha,7 alpha,12 alpha-trihydroxy-5 beta-cholestanoic acid.
+  JOURNAL   J. Biol. Chem. 268 (1993) 11079-85.
+  ORGANISM  Oryctolagus cuniculus
+REFERENCE   7  [PMID:9660774]
+  AUTHORS   Pikuleva IA, Babiker A, Waterman MR, Bjorkhem I
+  TITLE     Activities of recombinant human cytochrome P450c27 (CYP27) which produce intermediates of alternative bile acid biosynthetic pathways.
+  JOURNAL   J. Biol. Chem. 273 (1998) 18153-60.
+REFERENCE   8  [PMID:10512735]
+  AUTHORS   Furster C, Bergman T, Wikvall K.
+  TITLE     Biochemical characterization of a truncated form of CYP27A purified from rabbit liver mitochondria.
+  JOURNAL   Biochem. Biophys. Res. Commun. 263 (1999) 663-6.
+  ORGANISM  Oryctolagus cuniculus
+REFERENCE   9  [PMID:11412116]
+  AUTHORS   Pikuleva IA, Puchkaev A, Bjorkhem I.
+  TITLE     Putative helix F contributes to regioselectivity of hydroxylation in mitochondrial cytochrome P450 27A1.
+  JOURNAL   Biochemistry. 40 (2001) 7621-9.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:1593]
+PATHWAY     ec00120  Primary bile acid biosynthesis
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00488  cholestanetriol 26-monooxygenase
+GENES       HSA: 1593(CYP27A1)
+            PTR: 459951
+            PPS: 100989602
+            GGO: 101131774
+            PON: 100439910
+            MCC: 700192(CYP27A1)
+            MCF: 102129822
+            MMU: 104086(Cyp27a1)
+            RNO: 301517(Cyp27a1)
+            CGE: 100751584
+            HGL: 101700018
+            TUP: 102471009
+            CFA: 610489(CYP27A1)
+            AML: 100480153
+            FCA: 101091962
+            PTG: 102958835
+            BTA: 511960(CYP27A1)
+            BOM: 102275770
+            PHD: 102319907
+            CHX: 102177672
+            SSC: 100126282(CYP27A1)
+            CFR: 102517717
+            ECB: 100055936
+            MYB: 102255768
+            MYD: 102761397
+            PALE: 102883032
+            MDO: 100011045(CYP27A1)
+            SHR: 100918281
+            OAA: 100093207
+            GGA: 431683(CYP27A1)
+            MGP: 100539204
+            TGU: 100232323
+            FAB: 101815213
+            PHI: 102102670
+            APLA: 101802865
+            FPG: 101912381
+            FCH: 102046779
+            CLV: 102085729
+            ASN: 102377709 102387057
+            CMY: 102937044
+            ACS: 100565025
+            XLA: 446987(cyp27a1)
+            XTR: 100145331(cyp27a1) 100496109
+            DRE: 322341(cyp27a1.4) 565876 795106(cyp27a1.2)
+            TRU: 101062671 101063777 101069976
+            MZE: 101465003 101473743 101478374
+            OLA: 101156051 101160538 101175691
+            XMA: 102225514 102230910 102234678 102234938
+            LCM: 102347924 102352926 102355859 102357152
+            BFO: BRAFLDRAFT_69828
+            AQU: 100635882 100640453
+            EHX: EMIHUDRAFT_111143
+            NGR: NAEGRDRAFT_79810
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.15
+            IUBMB Enzyme Nomenclature: 1.14.13.15
+            ExPASy - ENZYME nomenclature database: 1.14.13.15
+            BRENDA, the Enzyme Database: 1.14.13.15
+            CAS: 52227-77-7
+///

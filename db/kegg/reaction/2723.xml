@@ -1,0 +1,12 @@
+ENTRY       R02723                      Reaction
+DEFINITION  Cholesterol + Oxygen + 2 Reduced adrenal ferredoxin + 2 H+ <=> 22(R)-Hydroxycholesterol + H2O + 2 Oxidized adrenal ferredoxin
+EQUATION    C00187 + C00007 + 2 C00662 + 2 C00080 <=> C05502 + C00001 + 2 C00667
+COMMENT     first step of R02724 (R02723+R04855+R03933)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP02436  C00187_C05502 main [RC:RC00773]
+            RP07158  C00007_C05502 leave
+ENZYME      1.14.15.6
+PATHWAY     rn00140  Steroid hormone biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00498  cholesterol monooxygenase (side-chain-cleaving) [EC:1.14.15.6]
+///

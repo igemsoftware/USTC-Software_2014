@@ -1,0 +1,11 @@
+ENTRY       R10515                      Reaction
+NAME        androst-4-ene-3,17-dione monooxygenase (estrone-forming)
+DEFINITION  Androstenedione + 3 Oxygen + 3 Reduced flavoprotein <=> Estrone + Formate + 4 H2O + 3 Oxidized flavoprotein
+EQUATION    C00280 + 3 C00007 + 3 C03024 <=> C00468 + C00058 + 4 C00001 + 3 C03161
+COMMENT     three-step reaction (see R01840+R4759+R02351)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP05742  C00007_C00058 leave
+            RP16559  C00058_C00280 main [RC:RC03183]
+            RP16560  C00280_C00468 main [RC:RC03184]
+ENZYME      1.14.14.14
+///

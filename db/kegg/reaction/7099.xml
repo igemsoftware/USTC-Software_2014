@@ -1,0 +1,15 @@
+ENTRY       R07099                      Reaction
+NAME        trichloroethene, NADPH:oxygen oxidoreductase (RH-hydroxylating or -epoxidizing)
+DEFINITION  Trichloroethene + NADPH + Oxygen + H+ <=> Chloral + NADP+ + H2O
+EQUATION    C06790 + C00005 + C00007 + C00080 <=> C14866 + C00006 + C00001
+COMMENT     CYP2E1, CYP2F2/4, CYP2B1, CYP1A1/2
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP10064  C00007_C14866 leave
+            RP10189  C06790_C14866 main [RC:RC01733]
+ENZYME      1.14.13.-       1.14.14.1
+PATHWAY     rn00980  Metabolism of xenobiotics by cytochrome P450
+ORTHOLOGY   K07408  cytochrome P450, family 1, subfamily A, polypeptide 1 [EC:1.14.14.1]
+            K07409  cytochrome P450, family 1, subfamily A, polypeptide 2 [EC:1.14.14.1]
+            K07415  cytochrome P450, family 2, subfamily E, polypeptide 1 [EC:1.14.13.-]
+///

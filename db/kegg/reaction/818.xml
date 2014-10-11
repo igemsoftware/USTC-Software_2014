@@ -1,0 +1,18 @@
+ENTRY       R00818                      Reaction
+NAME        salicylate,NADH:oxygen oxidoreductase (1-hydroxylating, decarboxylating)
+DEFINITION  Salicylate + Oxygen + NADH + H+ <=> Catechol + CO2 + NAD+ + H2O
+EQUATION    C00805 + C00007 + C00004 + C00080 <=> C00090 + C00011 + C00003 + C00001
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP01120  C00090_C00805 main [RC:RC00389]
+            RP05745  C00007_C00090 leave
+            RP06324  C00011_C00805 leave
+ENZYME      1.14.13.1
+PATHWAY     rn00621  Dioxin degradation
+            rn00624  Polycyclic aromatic hydrocarbon degradation
+            rn00626  Naphthalene degradation
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K00480  salicylate hydroxylase [EC:1.14.13.1]
+///

@@ -1,0 +1,17 @@
+ENTRY       R00472                      Reaction
+NAME        acetyl-CoA:glyoxylate C-acetyltransferase (thioester-hydrolysing, carboxymethyl-forming);
+            L-Malate glyoxylate-lyase (CoA-acetylating)
+DEFINITION  (S)-Malate + CoA <=> Acetyl-CoA + H2O + Glyoxylate
+EQUATION    C00149 + C00010 <=> C00024 + C00001 + C00048
+RPAIR       RP00007  C00010_C00024 main [RC:RC00004]
+            RP00921  C00048_C00149 main [RC:RC00308]
+            RP06172  C00024_C00149 main [RC:RC02747]
+            RP13474  C00001_C00149 leave
+ENZYME      2.3.3.9
+PATHWAY     rn00620  Pyruvate metabolism
+            rn00630  Glyoxylate and dicarboxylate metabolism
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+ORTHOLOGY   K01638  malate synthase [EC:2.3.3.9]
+///

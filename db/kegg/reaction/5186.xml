@@ -1,0 +1,14 @@
+ENTRY       R05186                      Reaction
+NAME        reduced flavodoxin:dinitrogen oxidoreductase (ATP-hydrolysing)
+DEFINITION  n ATP + Nitrogen + 6 Reduced flavodoxin + n H2O <=> n Orthophosphate + n ADP + 6 Oxidized flavodoxin + 2 Ammonia
+EQUATION    n C00002 + C00697 + 6 C02745 + n C00001 <=> n C00009 + n C00008 + 6 C02869 + 2 C00014
+COMMENT     multi-step reaction (similar to R05185)
+RPAIR       RP00003  C00002_C00008 main [RC:RC00002]
+            RP00010  C00002_C00009 leave
+            RP05676  C00001_C00009 leave
+            RP05829  C00014_C00697 main [RC:RC02891]
+ENZYME      1.19.6.1
+PATHWAY     rn00910  Nitrogen metabolism
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+///

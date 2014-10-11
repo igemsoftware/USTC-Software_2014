@@ -1,0 +1,14 @@
+ENTRY       R00730                      Reaction
+NAME        L-tyrosine,NADPH:oxygen oxidoreductase (N-hydroxylating)
+DEFINITION  L-Tyrosine + Oxygen + NADPH + H+ <=> N-Hydroxy-L-tyrosine + NADP+ + H2O
+EQUATION    C00082 + C00007 + C00005 + C00080 <=> C03004 + C00006 + C00001
+COMMENT     a part of multi-step reaction (see R08656)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP01070  C00082_C03004 main [RC:RC00365]
+            RP06288  C00007_C03004 leave
+ENZYME      1.14.13.41
+PATHWAY     rn00460  Cyanoamino acid metabolism
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13027  tyrosine N-monooxygenase [EC:1.14.13.41]
+///

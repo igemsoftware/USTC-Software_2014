@@ -1,0 +1,114 @@
+ENTRY       EC 4.2.3.22                 Enzyme
+NAME        germacradienol synthase;
+            germacradienol/germacrene-D synthase;
+            2-trans,6-trans-farnesyl-diphosphate diphosphate-lyase [(1E,4S,5E,7R)-germacra-1(10),5-dien-11-ol-forming]
+CLASS       Lyases;
+            Carbon-oxygen lyases;
+            Acting on phosphates
+SYSNAME     (2E,6E)-farnesyl-diphosphate diphosphate-lyase [(1E,4S,5E,7R)-germacra-1(10),5-dien-11-ol-forming]
+REACTION    (2E,6E)-farnesyl diphosphate + H2O = (1E,4S,5E,7R)-germacra-1(10),5-dien-11-ol + diphosphate [RN:R07647]
+ALL_REAC    R07647;
+            (other) R08543
+SUBSTRATE   (2E,6E)-farnesyl diphosphate [CPD:C00448];
+            H2O [CPD:C00001]
+PRODUCT     (1E,4S,5E,7R)-germacra-1(10),5-dien-11-ol [CPD:C16143];
+            diphosphate [CPD:C00013]
+COMMENT     Requires Mg2+ for activity. H-1si of farnesyl diphosphate is lost in the formation of (1E,4S,5E,7R)-germacra-1(10),5-dien-11-ol. Formation of (-)-germacrene D involves a stereospecific 1,3-hydride shift of H-1si of farnesyl diphosphate. Both products are formed from a common intermediate [2]. Other enzymes produce germacrene D as the sole product using a different mechanism. The enzyme mediates a key step in the biosynthesis of geosmin (see EC 4.1.99.16 geosmin synthase), a widely occurring metabolite of many streptomycetes, bacteria and fungi [2]. Also catalyses the reaction of EC 4.2.3.75, (-)-germacrene D synthase.
+HISTORY     EC 4.2.3.22 created 2006, modified 2011
+REFERENCE   1  [PMID:12556563]
+  AUTHORS   Cane DE, Watt RM.
+  TITLE     Expression and mechanistic analysis of a germacradienol synthase from Streptomyces coelicolor implicated in geosmin biosynthesis.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 100 (2003) 1547-51.
+  ORGANISM  Streptomyces coelicolor
+  SEQUENCE  [sco:SCO6073]
+REFERENCE   2  [PMID:14995166]
+  AUTHORS   He X, Cane DE.
+  TITLE     Mechanism and stereochemistry of the germacradienol/germacrene D synthase of Streptomyces coelicolor A3(2).
+  JOURNAL   J. Am. Chem. Soc. 126 (2004) 2678-9.
+  ORGANISM  Streptomyces coelicolor
+  SEQUENCE  [sco:SCO6073]
+REFERENCE   3  [PMID:12563033]
+  AUTHORS   Gust B, Challis GL, Fowler K, Kieser T, Chater KF.
+  TITLE     PCR-targeted Streptomyces gene replacement identifies a protein domain needed for biosynthesis of the sesquiterpene soil odor geosmin.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 100 (2003) 1541-6.
+  ORGANISM  Streptomyces coelicolor
+PATHWAY     ec00909  Sesquiterpenoid and triterpenoid biosynthesis
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K10187  germacradienol/geosmin synthase
+            K15803  (-)-germacrene D synthase
+GENES       CIT: 102577959(TPS1) 102606641 102606948 102608621 102610689 102610978 102612761 102612857 102613448 102613731 102614035 102614537 102614827 102616874 102620430 102622256 102623066 102623643 102624557 102627944 102630607 102631432
+            TCC: TCM_023774 TCM_031106 TCM_031134 TCM_031137 TCM_031140 TCM_031143 TCM_031354 TCM_041391
+            GMX: 100798701 100802427 100813095
+            MTR: MTR_5g062230 MTR_5g073200 MTR_5g094620
+            CAM: 101490280 101490596 101492760 101497067 101501402 101511182 101513674
+            FVE: 101290764 101291476 101302497 101303103 101306242 101307161 101311088 101312536 101312825 101314066
+            CSV: 101203434 101207046 101207286 101209789 101210313 101211540 101211697 101219443 101227657
+            RCU: RCOM_0179780 RCOM_0890850 RCOM_1045160
+            POP: POPTR_0001s44080g POPTR_0005s09830g(POPTRDRAFT_558724) POPTR_0011s14600g(POPTRDRAFT_727191) POPTR_0015s09710g(POPTRDRAFT_575250) POPTR_0170s002001
+            VVI: 100232954 100255553 100257265 100260629 100260714 100264159 100267137 100267145 100267551
+            SLY: 100529132(CAHS) 100820702(TPS17) 100820703(TPS16) 101245838 101249861 101251484(TPS36) 101257190 101264071(TPS32)
+            SOT: 102580832 102582072 102582179 102584119 102584779 102584838 102587916 102589473 102590669 102592231 102594859 102595064 102596935 102597215 102597519 102598796 102603252 102605846
+            DOSA: Os04t0344100-01(Os04g0344100) Os08t0139700-01(Os08g0139700)
+            BDI: 100825533 100825846 100826509 100831867 100837513 100842044
+            SBI: SORBI_01g034700(SORBIDRAFT_01g034700) SORBI_01g035460(SORBIDRAFT_01g035460) SORBI_03g041000(SORBIDRAFT_03g041000) SORBI_05g019210(SORBIDRAFT_05g019210) SORBI_07g003080(SORBIDRAFT_07g003080) SORBI_07g005130(SORBIDRAFT_07g005130)
+            ZMA: 100125649(tps26) 100273678 542689(IDP70)
+            SITA: 101753547 101756584 101760345 101763978 101765454 101765863 101769965 101778695
+            FAU: Fraau_1242
+            MXA: MXAN_6247
+            MFU: LILAB_15255
+            MSD: MYSTI_06763
+            CCX: COCOR_07379(cyc2)
+            SUR: STAUR_1114(geoA2)
+            SCL: sce1440
+            SCU: SCE1572_16350
+            HOH: Hoch_1257
+            NBR: O3I_014240
+            NNO: NONO_c26340
+            SCO: SCO6073(SC9B1.20)
+            SMA: SAV_2163(geoA)
+            SGR: SGR_6839(geoA)
+            SCB: SCAB_20121(geoA)
+            SSX: SACTE_0245
+            SVL: Strvi_9069
+            SCT: SCAT_2953(cyc)
+            SCY: SCATT_29440
+            SFA: Sfla_4535 Sfla_6028
+            SBH: SBI_02068
+            SHY: SHJG_7148
+            SHO: SHJGH_6908
+            SVE: SVEN_0269 SVEN_0552
+            SDV: BN159_2274(cyc2)
+            SALB: XNR_1297
+            STRP: F750_0540 F750_2155
+            SFI: SFUL_319
+            SCI: B446_28510
+            SRC: M271_26075
+            SALU: DC74_4443
+            KSK: KSE_46080(geoA)
+            KFL: Kfla_4247
+            SRO: Sros_0075
+            FRA: Francci3_4231
+            FRE: Franean1_5559
+            FRI: FraEuI1c_3502
+            FAL: FRAAL6507
+            SEN: SACE_3187 SACE_4907
+            AMD: AMED_1325
+            AMN: RAM_06720
+            AMM: AMES_1317
+            AMZ: B737_1318
+            AOI: AORI_7417
+            AMI: Amir_0977
+            SESP: BN6_11180(geoA)
+            KAL: KALB_676 KALB_677
+            CAI: Caci_6200
+            SNA: Snas_1127
+            NPU: Npun_R2756
+            CSG: Cylst_4391
+            CALO: Cal7507_2995
+DBLINKS     ExplorEnz - The Enzyme Database: 4.2.3.22
+            IUBMB Enzyme Nomenclature: 4.2.3.22
+            ExPASy - ENZYME nomenclature database: 4.2.3.22
+            BRENDA, the Enzyme Database: 4.2.3.22
+            CAS: 211049-88-6
+///

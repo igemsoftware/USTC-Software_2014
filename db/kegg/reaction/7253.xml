@@ -1,0 +1,15 @@
+ENTRY       R07253                      Reaction
+NAME        acyl-CoA:malonyl-CoA C-acyltransferase (decarboxylating, oxoacyl-reducing, thioester-hydrolysing and cyclizing)
+DEFINITION  Acetyl-CoA + 3 Malonyl-CoA + NADPH + H+ <=> 6-Methylsalicylate + 4 CoA + 3 CO2 + NADP+ + H2O
+EQUATION    C00024 + 3 C00083 + C00005 + C00080 <=> C02657 + 4 C00010 + 3 C00011 + C00006 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00007  C00010_C00024 main [RC:RC00004]
+            RP00051  C00010_C00083 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP08518  C00001_C00083 leave
+            RP10733  C00024_C02657 trans
+            RP10880  C00083_C02657 trans
+            RP12327  C00083_C02657 trans
+            RP12328  C00083_C02657 trans
+ENZYME      2.3.1.165
+///

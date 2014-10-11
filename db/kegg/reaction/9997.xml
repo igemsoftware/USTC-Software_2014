@@ -1,0 +1,13 @@
+ENTRY       R09997                      Reaction
+NAME        methanethiol:coenzyme M methyltransferase
+DEFINITION  Methanethiol + 2-Mercaptoethanesulfonate <=> 2-(Methylthio)ethanesulfonate + Hydrogen sulfide
+EQUATION    C00409 + C03576 <=> C03920 + C00283
+COMMENT     two-step reaction (see R10001+R10000)
+RPAIR       RP01799  C00283_C00409 leave
+            RP03981  C03576_C03920 main [RC:RC00035]
+            RP15695  C00409_C03920 trans
+ENZYME      2.1.1.251
+PATHWAY     rn00920  Sulfur metabolism
+ORTHOLOGY   K16954  methylthiol:coenzyme M methyltransferase [EC:2.1.1.251]
+            K16955  methylated-thiol--corrinoid protein
+///

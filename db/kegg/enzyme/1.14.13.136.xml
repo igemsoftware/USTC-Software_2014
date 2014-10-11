@@ -1,0 +1,61 @@
+ENTRY       EC 1.14.13.136              Enzyme
+NAME        2-hydroxyisoflavanone synthase;
+            CYP93C;
+            IFS;
+            isoflavonoid synthase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     liquiritigenin,NADPH:oxygen oxidoreductase (hydroxylating, aryl migration)
+REACTION    (1) liquiritigenin + O2 + NADPH + H+ = 2,4',7-trihydroxyisoflavanone + H2O + NADP+ [RN:R07777];
+            (2) (2S)-naringenin + O2 + NADPH + H+ = 2,4',5,7-tetrahydroxyisoflavanone + H2O + NADP+ [RN:R07778]
+ALL_REAC    R07777 R07778;
+            (other) R07715
+SUBSTRATE   liquiritigenin [CPD:C09762];
+            O2 [CPD:C00007];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            (2S)-naringenin [CPD:C00509]
+PRODUCT     2,4',7-trihydroxyisoflavanone;
+            H2O [CPD:C00001];
+            NADP+ [CPD:C00006];
+            2,4',5,7-tetrahydroxyisoflavanone
+COMMENT     Requires cytochrome P-450. The reaction involves the migration of the 2-phenyl group of the flavanone to the 3-position of the isoflavanone. The 2-hydroxyl group is derived from the oxygen molecule. EC 4.2.1.105, 2-hydroxyisoflavanone dehydratase, acts on the products with loss of water and formation of genistein and daidzein, respectively.
+HISTORY     EC 1.14.13.136 created 2011, modified 2013
+REFERENCE   1  [PMID:3956488]
+  AUTHORS   Kochs G, Grisebach H.
+  TITLE     Enzymic synthesis of isoflavones.
+  JOURNAL   Eur. J. Biochem. 155 (1986) 311-8.
+REFERENCE   2  [PMID:2226805]
+  AUTHORS   Hashim MF, Hakamatsuka T, Ebizuka Y, Sankawa U
+  TITLE     Reaction mechanism of oxidative rearrangement of flavanone in isoflavone biosynthesis.
+  JOURNAL   FEBS. Lett. 271 (1990) 219-22.
+  ORGANISM  Pueraria lobata
+REFERENCE   3  [PMID:10375412]
+  AUTHORS   Steele CL, Gijzen M, Qutob D, Dixon RA.
+  TITLE     Molecular characterization of the enzyme catalyzing the aryl migration reaction of isoflavonoid biosynthesis in soybean.
+  JOURNAL   Arch. Biochem. Biophys. 367 (1999) 146-50.
+  ORGANISM  Glycine max
+  SEQUENCE  [up:Q9SWR5] [gmx:606705]
+REFERENCE   4  [PMID:12207646]
+  AUTHORS   Sawada Y, Kinoshita K, Akashi T, Aoki T, Ayabe S
+  TITLE     Key amino acid residues required for aryl migration catalysed by the cytochrome P450 2-hydroxyisoflavanone synthase.
+  JOURNAL   Plant. J. 31 (2002) 555-64.
+  ORGANISM  Glycyrrhiza echinata
+  SEQUENCE  [up:Q9SXS3]
+REFERENCE   5  [PMID:15809082]
+  AUTHORS   Sawada Y, Ayabe S
+  TITLE     Multiple mutagenesis of P450 isoflavonoid synthase reveals a key active-site residue.
+  JOURNAL   Biochem. Biophys. Res. Commun. 330 (2005) 907-13.
+  ORGANISM  Glycyrrhiza echinata
+  SEQUENCE  [up:Q9SXS3]
+PATHWAY     ec00943  Isoflavonoid biosynthesis
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13257  2-hydroxyisoflavanone synthase
+GENES       GMX: 100037450(IFS1) 606705(IFS2)
+            CAM: 101495474
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.136
+            IUBMB Enzyme Nomenclature: 1.14.13.136
+            ExPASy - ENZYME nomenclature database: 1.14.13.136
+            BRENDA, the Enzyme Database: 1.14.13.136
+///

@@ -1,0 +1,42 @@
+ENTRY       EC 1.14.13.144              Enzyme
+NAME        9beta-pimara-7,15-diene oxidase;
+            CYP99A3
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     9beta-pimara-7,15-diene,NADPH:oxygen 19-oxidoreductase
+REACTION    9beta-pimara-7,15-diene + 3 O2 + 3 NADPH + 3 H+ = 9beta-pimara-7,15-dien-19-oate + 3 NADP+ + 4 H2O (overall reaction) [RN:R09865];
+            (1a) 9beta-pimara-7,15-diene + O2 + NADPH + H+ = 9beta-pimara-7,15-dien-19-ol + NADP+ + H2O [RN:R09862];
+            (1b) 9beta-pimara-7,15-dien-19-ol + O2 + NADPH + H+ = 9beta-pimara-7,15-dien-19-al + NADP+ + 2 H2O [RN:R09863];
+            (1c) 9beta-pimara-7,15-dien-19-al + O2 + NADPH + H+ = 9beta-pimara-7,15-dien-19-oate + NADP+ + H2O [RN:R09864]
+ALL_REAC    R09862 R09863 R09864 R09865;
+            (other) R09921
+SUBSTRATE   9beta-pimara-7,15-diene [CPD:C18225];
+            O2 [CPD:C00007];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            9beta-pimara-7,15-dien-19-ol [CPD:C20147];
+            9beta-pimara-7,15-dien-19-al [CPD:C20148]
+PRODUCT     9beta-pimara-7,15-dien-19-oate [CPD:C20149];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            9beta-pimara-7,15-dien-19-ol [CPD:C20147];
+            9beta-pimara-7,15-dien-19-al [CPD:C20148]
+COMMENT     Requires cytochrome P450. A rice, Oryza sativa, enzyme involved in the phytoalexin momilactone biosynthesis. It also acts similarly on 9beta-stemod-13(17)-ene.
+HISTORY     EC 1.14.13.144 created 2012
+REFERENCE   1  [PMID:21175892]
+  AUTHORS   Wang Q, Hillwig ML, Peters RJ
+  TITLE     CYP99A3: functional identification of a diterpene oxidase from the momilactone biosynthetic gene cluster in rice.
+  JOURNAL   Plant. J. 65 (2011) 87-95.
+  ORGANISM  Oryza sativa
+  SEQUENCE  [osa:4335091]
+PATHWAY     ec00904  Diterpenoid biosynthesis
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K16085  9beta-pimara-7,15-diene oxidase
+GENES       OSA: 4335091
+            DOSA: Os04t0178400-01(Os04g0178400)
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.144
+            IUBMB Enzyme Nomenclature: 1.14.13.144
+            ExPASy - ENZYME nomenclature database: 1.14.13.144
+            BRENDA, the Enzyme Database: 1.14.13.144
+///

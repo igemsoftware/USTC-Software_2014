@@ -1,0 +1,13 @@
+ENTRY       R03762                      Reaction
+NAME        biotin:CoA ligase (AMP-forming);
+            biotinyl-5'-AMP:CoA biotinyltransferase
+DEFINITION  Biotinyl-5'-AMP + CoA <=> AMP + Biotinyl-CoA
+EQUATION    C05921 + C00010 <=> C00020 + C01894
+COMMENT     second step of two-step reaction (R01075, R01074+R03762)
+            followng after R01074
+RPAIR       RP00409  C00010_C01894 main [RC:RC00004]
+            RP00709  C00020_C05921 main [RC:RC00070]
+            RP07708  C01894_C05921 main [RC:RC02816]
+ENZYME      6.2.1.11
+PATHWAY     rn00780  Biotin metabolism
+///

@@ -1,0 +1,12 @@
+ENTRY       R02355                      Reaction
+DEFINITION  Estrone + H+ + Oxygen + NADPH <=> 2-Hydroxyestrone + NADP+ + H2O
+EQUATION    C00468 + C00080 + C00007 + C00005 <=> C05298 + C00006 + C00001
+COMMENT     NADH (see R02354)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP00359  C00468_C05298 main [RC:RC00046]
+            RP06035  C00007_C05298 leave
+ENZYME      1.14.14.1
+PATHWAY     rn00140  Steroid hormone biosynthesis
+ORTHOLOGY   K07408  cytochrome P450, family 1, subfamily A, polypeptide 1 [EC:1.14.14.1]
+///

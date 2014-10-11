@@ -1,0 +1,19 @@
+ENTRY       R06625                      Reaction
+DEFINITION  4 Malonyl-CoA <=> 3,5-Dihydroxyphenylacetyl-CoA + 3 CoA + 4 CO2 + H2O
+EQUATION    4 C00083 <=> C12324 + 3 C00010 + 4 C00011 + C00001
+COMMENT     typeIII polyketide synthase, DpgA
+            dehydratase/isomerase, DpgB+DpgD
+            multi-step reaction
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP08518  C00001_C00083 leave
+            RP15349  C00083_C12324 main [RC:RC02933]
+            RP15350  C00083_C12324 trans
+            RP15351  C00083_C12324 trans
+            RP15352  C00083_C12324 trans
+PATHWAY     rn01055  Biosynthesis of vancomycin group antibiotics
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K16424  polyketide synthase Type III
+            K16425  isomerase DpgB
+            K16426  dehydration protein DpgD
+///

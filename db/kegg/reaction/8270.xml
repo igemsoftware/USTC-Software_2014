@@ -1,0 +1,12 @@
+ENTRY       R08270                      Reaction
+DEFINITION  N-Desmethyltamoxifen + NADPH + Oxygen + H+ <=> Endoxifen + NADP+ + H2O
+EQUATION    C16546 + C00005 + C00007 + C00080 <=> C16547 + C00006 + C00001
+COMMENT     CYP2D6
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP12844  C00007_C16547 leave
+            RP13210  C16546_C16547 main [RC:RC00490]
+ENZYME      1.14.14.1
+PATHWAY     rn00982  Drug metabolism - cytochrome P450
+ORTHOLOGY   K17712  cytochrome P450, family 2, subfamily D, polypeptide 6 [EC:1.14.14.1]
+///

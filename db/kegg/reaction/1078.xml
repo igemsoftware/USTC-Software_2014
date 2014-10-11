@@ -1,0 +1,14 @@
+ENTRY       R01078                      Reaction
+NAME        dethiobiotin:sulfur sulfurtransferase
+DEFINITION  Dethiobiotin + Sulfur donor + 2 S-Adenosyl-L-methionine + 2 e- + 2 H+ <=> Biotin + 2 L-Methionine + 2 5'-Deoxyadenosine
+EQUATION    C01909 + C17023 + 2 C00019 + 2 C05359 + 2 C00080 <=> C00120 + 2 C00073 + 2 C05198
+COMMENT     the reactant sulfur is not elemental sulfur, but it may be from the enzyme itself ([2Fe-2S] iron-sulfur centre)
+            multi-step reaction
+RPAIR       RP01288  C00120_C01909 main [RC:RC00441]
+            RP03934  C00019_C00073 cofac [RC:RC00021]
+            RP04346  C00019_C05198 cofac
+ENZYME      2.8.1.6
+PATHWAY     rn00780  Biotin metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01012  biotin synthase [EC:2.8.1.6]
+///

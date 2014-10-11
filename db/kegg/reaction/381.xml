@@ -1,0 +1,9 @@
+ENTRY       R00381                      Reaction
+NAME        (Deoxyribonucleotide)n:5'-phospho-(deoxyribonucleotide)m ligase (AMP-forming)
+DEFINITION  ATP + DNA(n) + 5'-Phospho-DNA(m) <=> AMP + Diphosphate + DNA(n+m)
+EQUATION    C00002 + C00039(n) + C02128(m) <=> C00020 + C00013 + C00039(n+m)
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP13483  C00039_C02128 main [RC:RC00005]
+ENZYME      6.5.1.1
+///

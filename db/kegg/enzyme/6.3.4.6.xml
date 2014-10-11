@@ -1,0 +1,373 @@
+ENTRY       EC 6.3.4.6                  Enzyme
+NAME        urea carboxylase;
+            urease (ATP-hydrolysing);
+            urea carboxylase (hydrolysing);
+            ATP---urea amidolyase;
+            urea amidolyase;
+            UALase;
+            UCA
+CLASS       Ligases;
+            Forming carbon-nitrogen bonds;
+            Other carbon-nitrogen ligases
+SYSNAME     urea:carbon-dioxide ligase (ADP-forming)
+REACTION    ATP + urea + HCO3- = ADP + phosphate + urea-1-carboxylate [RN:R00774]
+ALL_REAC    R00774
+SUBSTRATE   ATP [CPD:C00002];
+            urea [CPD:C00086];
+            HCO3- [CPD:C00288]
+PRODUCT     ADP [CPD:C00008];
+            phosphate [CPD:C00009];
+            urea-1-carboxylate [CPD:C01010]
+COMMENT     A biotinyl-protein. The yeast enzyme (but not that from green algae) also catalyses the reaction of EC 3.5.1.54 allophanate hydrolase, thus bringing about the hydrolysis of urea to CO2 and NH3. Previously also listed as EC 3.5.1.45. The enzyme from the prokaryotic bacterium Oleomonas sagaranensis can also use acetamide and formamide as substrates [4].
+HISTORY     EC 6.3.4.6 created 1972, modified 1986 (EC 3.5.1.45 created 1978, incorporated 1986)
+REFERENCE   1
+  AUTHORS   Roon, R.J. and Levenberg, B.
+  TITLE     ATP-Urea amidolyase (ADP) (Candida utilis).
+  JOURNAL   Methods Enzymol. 17A (1970) 317-324.
+REFERENCE   2  [PMID:4556303]
+  AUTHORS   Roon RJ, Levenberg B.
+  TITLE     Urea amidolyase. I. Properties of the enzyme from Candida utilis.
+  JOURNAL   J. Biol. Chem. 247 (1972) 4107-13.
+  ORGANISM  Candida utilis
+REFERENCE   3  [PMID:6124544]
+  AUTHORS   Sumrada RA, Cooper TG.
+  TITLE     Urea carboxylase and allophanate hydrolase are components of a multifunctional protein in yeast.
+  JOURNAL   J. Biol. Chem. 257 (1982) 9119-27.
+  ORGANISM  Candida utilis, Saccharomyces cerevisiae
+REFERENCE   4  [PMID:15090492]
+  AUTHORS   Kanamori T, Kanou N, Atomi H, Imanaka T.
+  TITLE     Enzymatic characterization of a prokaryotic urea carboxylase.
+  JOURNAL   J. Bacteriol. 186 (2004) 2532-9.
+  ORGANISM  Oleomonas sagaranensis
+  SEQUENCE  [up:Q75RY4]
+PATHWAY     ec00330  Arginine and proline metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K01941  urea carboxylase
+            K14541  urea carboxylase / allophanate hydrolase
+GENES       SCE: YBR208C(DUR1)
+            AGO: AGOS_ADR051C
+            ERC: Ecym_1184
+            KLA: KLLA0E08119g
+            LTH: KLTH0E12078g
+            PPA: PAS_chr4_0173
+            VPO: Kpol_299p2
+            ZRO: ZYRO0F08976g
+            CGR: CAGL0M05533g
+            NCS: NCAS_0B02280(NCAS0B02280)
+            NDI: NDAI_0C05400(NDAI0C05400)
+            TPF: TPHA_0L01560(TPHA0L01560)
+            TDL: TDEL_0B03290(TDEL0B03290)
+            DHA: DEHA2D07040g
+            PIC: PICST_28452(DUR1)
+            PGU: PGUG_02451 PGUG_02452 PGUG_02453
+            LEL: LELG_01799
+            CAL: CaO19.780(DUR1) CaO19.8402(DUR1)
+            CTP: CTRG_04692
+            CDU: CD36_04410
+            COT: CORT_0B06740
+            YLI: YALI0E07271g
+            CLU: CLUG_00442
+            FGR: FG10913.1
+            NHE: NECHADRAFT_79968
+            VAL: VDBG_05273
+            SEX: STBHUCCB_p2240
+            ECA: ECA1917 ECA2142
+            PCT: PC1_2163 PC1_2393
+            PCC: PCC21_022420 PCC21_025000
+            PWA: Pecwa_2502 Pecwa_2680
+            PEC: W5S_2476 W5S_2659
+            ETA: ETA_06880(uahA)
+            EBI: EbC_06390
+            ENC: ECL_02194
+            EEC: EcWSU1_02002(accC)
+            ENL: A3UG_10150
+            EAS: Entas_1995
+            ESA: ESA_01768
+            CSK: ES15_1950
+            CSZ: CSSP291_08615
+            CSI: P262_02858
+            CTU: CTU_21860(DUR1)
+            KPE: KPK_2626(uca)
+            KVA: Kvar_2572
+            KOX: KOX_20285
+            KOE: A225_2924
+            SPE: Spro_1419
+            SRR: SerAS9_1395
+            SRL: SOD_c13050(accA1)
+            SRY: M621_07265
+            SRS: SerAS12_1395
+            SRA: SerAS13_1396
+            SMAF: D781_1328
+            SMW: SMWW4_v1c13910
+            SLQ: M495_06575
+            SERR: Ser39006_0666
+            DDC: Dd586_0054
+            DDD: Dda3937_01002
+            DZE: Dd1591_0045 Dd1591_2748
+            PAM: PANA_4072
+            PLF: PANA5342_3669(uca) PANA5342_p10223(uca)
+            PAJ: PAJ_3781 PAJ_p0218
+            PAQ: PAGR_g3552 PAGR_p152
+            PVA: Pvag_0052(uaha1) Pvag_pPag30288(uahA)
+            PAO: Pat9b_0101 Pat9b_0598
+            RAH: Rahaq_0075
+            RAQ: Rahaq2_0096
+            RAA: Q7S_00365
+            ROR: RORB6_06490
+            EBF: D782_1861 D782_2761
+            PSTS: E05_21390
+            XAC: XAC4326(uahA)
+            XCI: XCAW_04698(accC)
+            XAO: XAC29_21785
+            PSD: DSC_01225
+            PPUU: PputUW4_01257(uca)
+            PST: PSPTO_4243
+            PSB: Psyr_3977
+            PSYR: N018_05605
+            PSP: PSPPH_3975
+            PCI: PCH70_40850
+            PFO: Pfl01_1338
+            PFE: PSF113_1393(uahA)
+            PMY: Pmen_0703 Pmen_1358
+            PMK: MDS_1390
+            PSZ: PSTAB_1905
+            PSR: PSTAA_2036
+            PSC: A458_10770
+            PSH: Psest_2351
+            PBA: PSEBR_a1318
+            PFV: Psefu_3274 Psefu_4073
+            PRE: PCA10_43090
+            PSK: U771_08315
+            PKC: PKB_4201(DUR1)
+            CJA: CJA_1243 CJA_2723
+            ACD: AOLE_12400
+            ACB: A1S_1277
+            ABY: ABAYE2428
+            ABC: ACICU_01283
+            ABN: AB57_1466 AB57_1467
+            ABB: ABBFA_002251(uca)
+            ABX: ABK1_1729
+            ABZ: ABZJ_01440
+            ABR: ABTJ_02426
+            ABD: ABTW07_1457
+            ABH: M3Q_1653
+            ABAD: ABD1_13050
+            ABJ: BJAB07104_01447
+            ABAB: BJAB0715_01455
+            ABAJ: BJAB0868_01396
+            ABAZ: P795_11020
+            ACC: BDGL_000613
+            SAZ: Sama_0022
+            SLO: Shew_0007
+            SDE: Sde_1127
+            MAD: HP15_3149
+            MBS: MRBBS_3240
+            TTU: TERTU_3485(uca)
+            TCX: Tcr_1792
+            HHA: Hhal_2361
+            TGR: Tgr7_3089
+            HNA: Hneap_0798 Hneap_1105
+            ABO: ABO_1892(uahA)
+            ADI: B5T_00740 B5T_01163(uahA)
+            MPC: Mar181_3319
+            TOL: TOL_2418
+            TOR: R615_05600
+            TAU: Tola_2899
+            REU: Reut_B4883
+            BMA: BMAA1883
+            BMV: BMASAVP1_0896
+            BML: BMA10229_1182
+            BMN: BMA10247_A2159
+            BPS: BPSS0195
+            BPM: BURPS1710b_A1720
+            BPL: BURPS1106A_A0271
+            BPD: BURPS668_A0363
+            BPSE: BDL_6086
+            BPSU: BBN_3577
+            BPZ: BP1026B_II0218
+            BPQ: BPC006_II0259
+            BPK: BBK_5389
+            BVI: Bcep1808_5578
+            BCN: Bcen_5558
+            BCH: Bcen2424_5923
+            BCM: Bcenmc03_2954 Bcenmc03_6430
+            BCJ: BCAL0659 BCAS0272
+            BMU: Bmul_0366
+            BMJ: BMULJ_02888
+            BXE: Bxe_B1384
+            BPH: Bphy_3979
+            BPY: Bphyt_5228
+            BGL: bglu_2g13090
+            BUG: BC1001_4524
+            BGE: BC1002_2567
+            BGD: bgla_1g26960 bgla_2g25600
+            BYI: BYI23_C008280
+            BUK: MYA_3512 MYA_5126
+            BPX: BUPH_01087
+            BUO: BRPE64_CCDS00550
+            BPT: Bpet0293
+            AXY: AXYL_04917 AXYL_05232(uca)
+            AXO: NH44784_019861 NH44784_033381
+            AXN: AX27061_0216 AX27061_5021
+            PNA: Pnap_0036
+            VEI: Veis_0373 Veis_3792 Veis_4580 Veis_4581
+            HSE: Hsero_4471
+            THI: THI_3696
+            NEU: NE2420
+            NET: Neut_2470 Neut_2475
+            NIT: NAL212_0208
+            NII: Nit79A3_0666
+            NMU: Nmul_A0943
+            DAR: Daro_0074
+            MEH: M301_2218
+            MEI: Msip34_0953
+            MEP: MPQ_0992
+            SLT: Slit_0080
+            GCA: Galf_0781
+            WSU: WS1115(UAHA)
+            SKU: Sulku_0129
+            ABL: A7H1H_1430
+            ARC: ABLL_1820
+            SMUL: SMUL_2950
+            SCL: sce4915
+            SCU: SCE1572_29580
+            PLA: Plav_1892
+            ARA: Arad_10038(uca)
+            AVI: Avi_2502(pccA)
+            RET: RHE_PE00118
+            REC: RHECIAT_PC0000103
+            REL: REMIM1_PD00120
+            RLE: pRL120151 pRL90293
+            RLT: Rleg2_6517
+            RLG: Rleg_6105
+            RLB: RLEG3_00865
+            RLU: RLEG12_10040
+            RTR: RTCIAT899_PC07770(uca)
+            RHL: LPU83_pLPU83d0571
+            BBT: BBta_2438
+            RPA: RPA1405
+            RPC: RPC_4531
+            RPD: RPD_2188
+            RPE: RPE_1219
+            RPT: Rpal_1588
+            RPX: Rpdx1_1127
+            XAU: Xaut_1222
+            AZC: AZC_4402
+            MEX: Mext_3722
+            MEA: Mex_1p4094
+            MDI: METDI4686
+            MCH: Mchl_4017
+            MPO: Mpop_3900
+            MSL: Msil_2606
+            HMC: HYPMC_2344
+            CCR: CC_1829
+            CCS: CCNA_01905
+            CAK: Caul_4449
+            AEX: Astex_3643
+            SIT: TM1040_3255
+            NAR: Saro_0606
+            NPP: PP1Y_Mpl2309
+            SJP: SJA_C2-01390
+            GOH: B932_3129
+            GBE: GbCGDNIH1_1745
+            GBH: GbCGDNIH2_1745
+            ACR: Acry_2727
+            AMV: ACMV_30560
+            APT: APA01_13990
+            APF: APA03_13990
+            APU: APA07_13990
+            APG: APA12_13990
+            APQ: APA22_13990
+            APX: APA26_13990
+            APZ: APA32_13990
+            APK: APA386B_218
+            MGY: MGMSR_0110(duR)
+            AZL: AZL_b03890
+            BMD: BMD_0982(uca)
+            BMH: BMWSH_4263
+            BAG: Bcoa_0867
+            BACI: B1NLA3E_10040
+            PJD: Pjdr2_2805
+            PMS: KNP414_00846
+            PMQ: PM3016_743
+            PMW: B2K_38450
+            AAC: Aaci_0766
+            AAD: TC41_0744
+            EHA: Ethha_2410
+            CLE: Clole_0431
+            RIX: RO1_30980
+            RIM: ROI_33660
+            SGY: Sgly_0807
+            SAY: TPY_2884
+            SAP: Sulac_1003
+            MSM: MSMEG_2187
+            MSG: MSMEI_2134
+            MSA: Mycsm_03942
+            MABB: MASS_4103
+            MMV: MYCMA_2278(kipA)
+            MMC: Mmcs_1840
+            MKM: Mkms_1887
+            MJL: Mjls_1821
+            MJD: JDM601_2661
+            MNE: D174_09325
+            ASD: AS9A_1077
+            CEF: CE0713
+            CGY: CGLY_10555 CGLY_10940
+            NFA: nfa22190
+            NCY: NOCYR_0306
+            NBR: O3I_037850
+            NNO: NONO_c11910
+            RHA: RHA1_ro02135
+            RER: RER_29550
+            REY: O5Y_13495
+            ROP: ROP_18530 ROP_68910
+            ROA: Pd630_LPD03538 Pd630_LPD06315
+            REQ: REQ_21080 REQ_38370
+            RPY: Y013_23460
+            GBR: Gbro_3888
+            GPO: GPOL_c37390
+            GOR: KTR9_3823 KTR9_3824
+            TPR: Tpau_1594
+            SMA: SAV_6698(uahA)
+            SCB: SCAB_73641
+            SBH: SBI_01438(uahA)
+            SHY: SHJG_1246
+            SHO: SHJGH_1081
+            SCI: B446_01065 B446_34230
+            KSK: KSE_50750
+            CMI: CMM_0120(uahA)
+            CMS: CMS_2364
+            CMC: CMN_02369
+            ART: Arth_3669
+            AAU: AAur_0187(uca)
+            APN: Asphe3_03130
+            ARR: ARUE_c01810
+            CFL: Cfla_0710
+            FRI: FraEuI1c_3830
+            KRA: Krad_0904
+            AMD: AMED_2635
+            AMN: RAM_13390
+            AMM: AMES_2607
+            AMZ: B737_2608
+            AOI: AORI_2622
+            ASE: ACPL_6108(lamA)
+            CAI: Caci_3728
+            RRD: RradSPS_0919
+            CAA: Caka_2069
+            ACM: AciX9_2314
+            GMA: AciX8_2293
+            SUS: Acid_0866 Acid_3428
+            SYNP: Syn7502_00716
+            CYN: Cyan7425_2304
+            GLP: Glo7428_1907
+            CMP: Cha6605_4533
+            ONI: Osc7112_1631
+            GVI: gll0958
+            GLJ: GKIL_2274
+            CALO: Cal7507_4155
+DBLINKS     ExplorEnz - The Enzyme Database: 6.3.4.6
+            IUBMB Enzyme Nomenclature: 6.3.4.6
+            ExPASy - ENZYME nomenclature database: 6.3.4.6
+            BRENDA, the Enzyme Database: 6.3.4.6
+            CAS: 9058-98-4
+///

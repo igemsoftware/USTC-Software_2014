@@ -1,0 +1,16 @@
+ENTRY       R04292                      Reaction
+NAME        glycerone phosphate:iminosuccinate alkyltransferase (cyclizing)
+DEFINITION  Quinolinate + 2 H2O + Orthophosphate <=> Iminoaspartate + Glycerone phosphate
+EQUATION    C03722 + 2 C00001 + C00009 <=> C05840 + C00111
+COMMENT     quinolinate synthetase, NadA
+            multi-step reaction
+RPAIR       RP03922  C00009_C00111 leave
+            RP03923  C03722_C05840 main [RC:RC01119]
+            RP08015  C00001_C00111 leave
+            RP08016  C00001_C00111 leave
+            RP08017  C00111_C03722 trans
+ENZYME      2.5.1.72
+PATHWAY     rn00760  Nicotinate and nicotinamide metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K03517  quinolinate synthase [EC:2.5.1.72]
+///

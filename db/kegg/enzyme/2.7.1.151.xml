@@ -1,0 +1,212 @@
+ENTRY       EC 2.7.1.151                Enzyme
+NAME        inositol-polyphosphate multikinase;
+            IpK2;
+            IP3/IP4 6-/3-kinase;
+            IP3/IP4 dual-specificity 6-/3-kinase;
+            IpmK;
+            ArgRIII;
+            AtIpk2alpha;
+            AtIpk2beta;
+            inositol polyphosphate 6-/3-/5-kinase
+CLASS       Transferases;
+            Transferring phosphorus-containing groups;
+            Phosphotransferases with an alcohol group as acceptor
+SYSNAME     ATP:1D-myo-inositol-1,4,5-trisphosphate 6-phosphotransferase
+REACTION    2 ATP + 1D-myo-inositol 1,4,5-trisphosphate = 2 ADP + 1D-myo-inositol 1,3,4,5,6-pentakisphosphate (overall reaction) [RN:R10065];
+            (1a) ATP + 1D-myo-inositol 1,4,5-trisphosphate = ADP + 1D-myo-inositol 1,4,5,6-tetrakisphosphate [RN:R05800];
+            (1b) ATP + 1D-myo-inositol 1,4,5,6-tetrakisphosphate = ADP + 1D-myo-inositol 1,3,4,5,6-pentakisphosphate [RN:R05801]
+ALL_REAC    R05800 R05801 R10065
+SUBSTRATE   ATP [CPD:C00002];
+            1D-myo-inositol 1,4,5-trisphosphate [CPD:C01245];
+            1D-myo-inositol 1,4,5,6-tetrakisphosphate [CPD:C11555]
+PRODUCT     ADP [CPD:C00008];
+            1D-myo-inositol 1,3,4,5,6-pentakisphosphate [CPD:C01284];
+            1D-myo-inositol 1,4,5,6-tetrakisphosphate [CPD:C11555]
+COMMENT     This enzyme also phosphorylates Ins(1,4,5)P3 to Ins(1,3,4,5)P4, Ins(1,3,4,5)P4 to Ins(1,3,4,5,6)P5, and Ins(1,3,4,5,6)P4 to Ins(PP)P4, isomer unknown. The enzyme from the plant Arabidopsis thaliana can also phosphorylate Ins(1,3,4,6)P4 and Ins(1,2,3,4,6)P5 at the D-5-position to produce 1,3,4,5,6-pentakisphosphate and inositol hexakisphosphate (InsP6), respectively [3]. Yeast produce InsP6 from Ins(1,4,5)P3 by the actions of this enzyme and EC 2.7.1.158, inositol-pentakisphosphate 2-kinase [4].
+HISTORY     EC 2.7.1.151 created 2002, modified 2006
+REFERENCE   1  [PMID:10574768]
+  AUTHORS   Saiardi A, Erdjument-Bromage H, Snowman AM, Tempst P, Snyder SH.
+  TITLE     Synthesis of diphosphoinositol pentakisphosphate by a newly identified family of higher inositol polyphosphate kinases.
+  JOURNAL   Curr. Biol. 9 (1999) 1323-6.
+  ORGANISM  Saccharomyces cerevisiae
+  SEQUENCE  [sce:YDR173C]
+REFERENCE   2  [PMID:10720331]
+  AUTHORS   Odom AR, Stahlberg A, Wente SR, York JD.
+  TITLE     A role for nuclear inositol 1,4,5-trisphosphate kinase in transcriptional control.
+  JOURNAL   Science. 287 (2000) 2026-9.
+  ORGANISM  Saccharomyces cerevisiae
+REFERENCE   3  [PMID:12226109]
+  AUTHORS   Stevenson-Paulik J, Odom AR, York JD.
+  TITLE     Molecular and biochemical characterization of two plant inositol polyphosphate 6-/3-/5-kinases.
+  JOURNAL   J. Biol. Chem. 277 (2002) 42711-8.
+  ORGANISM  Arabidopsis thaliana
+  SEQUENCE  [ath:AT5G07370 AT5G61760]
+REFERENCE   4  [PMID:15531582]
+  AUTHORS   Verbsky JW, Chang SC, Wilson MP, Mochizuki Y, Majerus PW.
+  TITLE     The pathway for the production of inositol hexakisphosphate in human cells.
+  JOURNAL   J. Biol. Chem. 280 (2005) 1911-20.
+  ORGANISM  Homo sapiens
+PATHWAY     ec00562  Inositol phosphate metabolism
+ORTHOLOGY   K00328  inositol-polyphosphate multikinase
+            K00915  1D-myo-Inositol-tetrakisphosphate 5-kinase / inositol-polyphosphate multikinase
+GENES       HSA: 253430(IPMK)
+            PTR: 450471(IPMK)
+            PPS: 100973083(IPMK)
+            GGO: 101154364(IPMK)
+            PON: 100462505(IPMK)
+            MCC: 703630(IPMK)
+            MCF: 102143477(IPMK)
+            MMU: 69718(Ipmk)
+            RNO: 171458(Ipmk)
+            CGE: 100772629
+            HGL: 101700113(Ipmk)
+            TUP: 102483332(IPMK)
+            AML: 100478367(IPMK)
+            FCA: 101098448 101098826(IPMK)
+            PTG: 102959812(IPMK)
+            BTA: 615135(IPMK)
+            BOM: 102287037(IPMK)
+            PHD: 102317812(IPMK)
+            CHX: 102177585(IPMK)
+            SSC: 100623323
+            CFR: 102520396(IPMK)
+            ECB: 100072153(IPMK)
+            MYB: 102254091(IPMK)
+            MYD: 102755711(IPMK)
+            PALE: 102888012(IPMK)
+            MDO: 100024450(IPMK)
+            SHR: 100931610(IPMK)
+            OAA: 100076322(IPMK)
+            GGA: 101751177(IPMK)
+            MGP: 100539865
+            TGU: 100225175(IPMK)
+            FAB: 101808343(IPMK)
+            PHI: 102102225(IPMK)
+            APLA: 101804228(IPMK)
+            FPG: 101922653(IPMK)
+            FCH: 102053151(IPMK)
+            CLV: 102098297(IPMK)
+            ASN: 102379224(IPMK)
+            PSS: 102448749(IPMK)
+            CMY: 102934554(IPMK)
+            ACS: 100560539
+            XLA: 447535(ipmk)
+            XTR: 100485175(ipmk)
+            DRE: 790916(ipmkb)
+            TRU: 101068659
+            MZE: 101484766
+            OLA: 101168158
+            XMA: 102236019
+            LCM: 102351435(IPMK)
+            BFO: BRAFLDRAFT_120494 BRAFLDRAFT_251377
+            CIN: 100181124
+            SPU: 576026
+            DAN: Dana_GF14878
+            DER: Dere_GG24638
+            DSE: Dsec_GM16655
+            DWI: Dwil_GK24631
+            DYA: Dyak_GE16007
+            DGR: Dgri_GH10503
+            DMO: Dmoj_GI18022
+            DVI: Dvir_GJ19687
+            AAG: AaeL_AAEL002846
+            CQU: CpipJ_CPIJ016779
+            AME: 724909(Ipk2)
+            NVI: 100121919
+            TCA: 661775
+            BMOR: 101740910
+            API: 100166192
+            PHU: Phum_PHUM268930
+            ISC: IscW_ISCW017482
+            LOA: LOAG_05109
+            TSP: Tsp_05937
+            SMM: Smp_125650
+            NVE: NEMVE_v1g219446
+            TAD: TRIADDRAFT_55735
+            AQU: 100639173
+            ATH: AT5G07370(IPK2a) AT5G61760(IPK2BETA)
+            ALY: ARALYDRAFT_487562 ARALYDRAFT_496342
+            CRB: CARUB_v10001635mg CARUB_v10026865mg
+            EUS: EUTSA_v10004707mg EUTSA_v10013933mg
+            CIT: 102615927
+            CIC: CICLE_v10032104mg
+            TCC: TCM_014788
+            GMX: 100127407(IPK2)
+            MTR: MTR_8g032240 MTR_8g039530
+            CAM: 101499122
+            FVE: 101314526
+            CSV: 101222676 101228467
+            RCU: RCOM_1503020
+            POP: POPTR_0012s11320g(POPTRDRAFT_423081) POPTR_0015s12100g(POPTRDRAFT_253088)
+            VVI: 100250912
+            SLY: 101247600 101253363
+            SOT: 102577543(IPMK) 102589871 102599548
+            OSA: 4329509
+            DOSA: Os02t0523800-01(Os02g0523800)
+            OBR: 102703374
+            BDI: 100838319
+            SBI: SORBI_04g021290(SORBIDRAFT_04g021290)
+            ZMA: 100280570
+            SITA: 101764096
+            ATR: s00016p00249320(AMTR_s00016p00249320)
+            SMO: SELMODRAFT_102174 SELMODRAFT_79570
+            PPP: PHYPADRAFT_178211
+            CRE: CHLREDRAFT_205696
+            VCN: VOLCADRAFT_96388
+            CSL: COCSUDRAFT_48149
+            SCE: YDR173C(ARG82)
+            AGO: AGOS_AGL144C
+            ERC: Ecym_4203
+            KLA: KLLA0D17402g
+            LTH: KLTH0F09086g
+            PPA: PAS_chr1-4_0293
+            VPO: Kpol_1024p25
+            ZRO: ZYRO0F14542g
+            CGR: CAGL0E00759g
+            NCS: NCAS_0B03200(NCAS0B03200)
+            NDI: NDAI_0A01200(NDAI0A01200)
+            TPF: TPHA_0C02470(TPHA0C02470)
+            TBL: TBLA_0H01030(TBLA0H01030)
+            TDL: TDEL_0F04950(TDEL0F04950)
+            KAF: KAFR_0B06020(KAFR0B06020)
+            DHA: DEHA2B09548g
+            PGU: PGUG_02125
+            LEL: LELG_02511
+            CAL: CaO19.1377(ARG82) CaO19.8957(ARG82)
+            CTP: CTRG_02006
+            CDU: CD36_23810
+            COT: CORT_0C05360
+            CLU: CLUG_04176
+            SMP: SMAC_01035
+            PAN: PODANS72p193
+            TTT: THITE_2114658
+            MTM: MYCTH_2310810
+            NHE: NECHADRAFT_46324
+            TRE: TRIREDRAFT_123655
+            VAL: VDBG_01275
+            PBL: PAAG_02384
+            ABE: ARB_03060
+            TVE: TRV_06092
+            PNO: SNOG_14069
+            PTE: PTT_17736
+            ZTR: MYCGRDRAFT_47390
+            TML: GSTUM_00004386001
+            CNE: CNN02250
+            CNB: CNBN2290
+            CGI: CGB_N3340W
+            LBC: LACBIDRAFT_246465 LACBIDRAFT_315595
+            CCI: CC1G_06147
+            SCM: SCHCODRAFT_70406
+            UMA: UM04962.1
+            PGR: PGTG_06735 PGTG_14727 PGTG_17699
+            DDI: DDB_G0281737
+            DPP: DICPUDRAFT_94541
+            TPS: THAPSDRAFT_8726
+            PIF: PITG_04822
+            TVA: TVAG_403580
+DBLINKS     ExplorEnz - The Enzyme Database: 2.7.1.151
+            IUBMB Enzyme Nomenclature: 2.7.1.151
+            ExPASy - ENZYME nomenclature database: 2.7.1.151
+            BRENDA, the Enzyme Database: 2.7.1.151
+            CAS: 9077-69-4
+///

@@ -1,0 +1,19 @@
+ENTRY       R01074                      Reaction
+NAME        biotin:CoA ligase (AMP-forming);
+            biotin:apo-[carboxylase] ligase (AMP-forming);
+            ATP:biotin adenylyltransferase
+DEFINITION  ATP + Biotin <=> Diphosphate + Biotinyl-5'-AMP
+EQUATION    C00002 + C00120 <=> C00013 + C05921
+COMMENT     first step of two-step reaction (R01075, R04562, R04563, R04582 or R04604)
+            subsequently R05145 or R03762
+RPAIR       RP00009  C00002_C00013 leave
+            RP01281  C00002_C05921 trans
+            RP01282  C00120_C05921 main [RC:RC00043]
+ENZYME      6.2.1.11        6.3.4.9         6.3.4.10        6.3.4.11        
+            6.3.4.15
+PATHWAY     rn00780  Biotin metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01942  biotin--protein ligase [EC:6.3.4.9 6.3.4.10 6.3.4.11 6.3.4.15]
+            K01947  biotin-[acetyl-CoA-carboxylase] ligase / type III pantothenate kinase [EC:6.3.4.15 2.7.1.33]
+            K03524  BirA family transcriptional regulator, biotin operon repressor / biotin-[acetyl-CoA-carboxylase] ligase [EC:6.3.4.15]
+///

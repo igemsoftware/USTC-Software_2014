@@ -1,0 +1,14 @@
+ENTRY       R05449                      Reaction
+DEFINITION  2,4,6-Trichlorophenol + 2 NADH + Oxygen <=> 2,6-Dichlorohydroquinone + 2 NAD+ + HO- + Cl-
+EQUATION    C07098 + 2 C00004 + C00007 <=> C07097 + 2 C00003 + C01328 + C00698
+COMMENT     chlorophenol 4-monooxygenase
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP05059  C00698_C07098 leave
+            RP08684  C07097_C07098 main [RC:RC00492]
+            RP08685  C00007_C07097 leave
+ENZYME      1.14.13.-
+PATHWAY     rn00361  Chlorocyclohexane and chlorobenzene degradation
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K15245  chlorophenol-4-monooxygenase component 1 [EC:1.5.1.37]
+            K15246  chlorophenol-4-monooxygenase component 2 [EC:1.14.13.-]
+///

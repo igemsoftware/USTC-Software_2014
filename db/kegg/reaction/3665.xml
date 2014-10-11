@@ -1,0 +1,12 @@
+ENTRY       R03665                      Reaction
+NAME        L-Valine:tRNAVal ligase (AMP-forming)
+DEFINITION  ATP + L-Valine + tRNA(Val) <=> AMP + Diphosphate + L-Valyl-tRNA(Val)
+EQUATION    C00002 + C00183 + C01653 <=> C00020 + C00013 + C02554
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP03293  C00183_C02554 main [RC:RC00523]
+            RP03294  C01653_C02554 main [RC:RC00055]
+ENZYME      6.1.1.9
+PATHWAY     rn00970  Aminoacyl-tRNA biosynthesis
+ORTHOLOGY   K01873  valyl-tRNA synthetase [EC:6.1.1.9]
+///

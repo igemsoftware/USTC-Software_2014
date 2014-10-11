@@ -1,0 +1,43 @@
+ENTRY       EC 1.14.13.165              Enzyme
+NAME        nitric-oxide synthase [NAD(P)H-dependent];
+            nitric oxide synthetase;
+            NO synthase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     L-arginine,NAD(P)H:oxygen oxidoreductase (nitric-oxide-forming)
+REACTION    2 L-arginine + 3 NAD(P)H + 3 H+ + 4 O2 = 2 L-citrulline + 2 nitric oxide + 3 NAD(P)+ + 4 H2O (overall reaction) [RN:R00557 R10106];
+            (1a) 2 L-arginine + 2 NAD(P)H + 2 H+ + 2 O2 = 2 Nomega-hydroxy-L-arginine + 2 NAD(P)+ + 2 H2O  [RN:R00558 R10107];
+            (1b) 2 Nomega-hydroxy-L-arginine + NAD(P)H + H+ + 2 O2 = 2 L-citrulline + 2 nitric oxide + NAD(P)+ + 2 H2O [RN:R00111 R10108]
+ALL_REAC    R00111 R00557 R00558 R10106 R10107 R10108
+SUBSTRATE   L-arginine [CPD:C00062];
+            NADH [CPD:C00004];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            Nomega-hydroxy-L-arginine
+PRODUCT     L-citrulline [CPD:C00327];
+            nitric oxide [CPD:C00533];
+            NAD+ [CPD:C00003];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            Nomega-hydroxy-L-arginine
+COMMENT     Binds heme (iron protoporphyrin IX) and tetrahydrobiopterin. Most of the bacterial and archaeal enzymes consist of only an oxidase domain and function together with bacterial ferredoxins [1-2]. The enzyme from the delta-proteobacterium Sorangium cellulosum also includes a reductase domain that binds FAD, FMN and a [2Fe-2S] cluster [3]. The similar enzymes from plants and animals use only NADPH as acceptor (cf. EC 1.14.13.39).
+HISTORY     EC 1.14.13.165 created 2012
+REFERENCE   1  [PMID:17127770]
+  AUTHORS   Wang ZQ, Lawson RJ, Buddha MR, Wei CC, Crane BR, Munro AW, Stuehr DJ
+  TITLE     Bacterial flavodoxins support nitric oxide production by Bacillus subtilis nitric-oxide synthase.
+  JOURNAL   J. Biol. Chem. 282 (2007) 2196-202.
+REFERENCE   2  [PMID:18316370]
+  AUTHORS   Gusarov I, Starodubtseva M, Wang ZQ, McQuade L, Lippard SJ, Stuehr DJ, Nudler E
+  TITLE     Bacterial nitric-oxide synthases operate without a dedicated redox partner.
+  JOURNAL   J. Biol. Chem. 283 (2008) 13140-7.
+REFERENCE   3  [PMID:19805284]
+  AUTHORS   Agapie T, Suseno S, Woodward JJ, Stoll S, Britt RD, Marletta MA
+  TITLE     NO formation by a catalytically self-sufficient bacterial nitric oxide synthase from Sorangium cellulosum.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 106 (2009) 16221-6.
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.165
+            IUBMB Enzyme Nomenclature: 1.14.13.165
+            ExPASy - ENZYME nomenclature database: 1.14.13.165
+            BRENDA, the Enzyme Database: 1.14.13.165
+///

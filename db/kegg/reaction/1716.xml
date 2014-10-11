@@ -1,0 +1,20 @@
+ENTRY       R01716                      Reaction
+NAME        chorismate:L-glutamine aminotransferase
+DEFINITION  Chorismate + L-Glutamine <=> 4-Amino-4-deoxychorismate + L-Glutamate
+EQUATION    C00251 + C00064 <=> C11355 + C00025
+COMMENT     two-step reaction (see R00256 + R05552)
+RPAIR       RP00024  C00025_C00064 main [RC:RC00010]
+            RP05138  C00251_C11355 main [RC:RC01418]
+            RP06394  C00025_C00251 trans
+            RP10851  C00064_C11355 trans
+ENZYME      2.6.1.85
+PATHWAY     rn00790  Folate biosynthesis
+ORTHOLOGY   K01664  para-aminobenzoate synthetase component II [EC:2.6.1.85]
+            K01665  para-aminobenzoate synthetase component I [EC:2.6.1.85]
+            K03342  para-aminobenzoate synthetase / 4-amino-4-deoxychorismate lyase [EC:2.6.1.85 4.1.3.38]
+            K13950  para-aminobenzoate synthetase [EC:2.6.1.85]
+REFERENCE   1  [PMID:11975992]
+            Tewari YB, Jensen PY, Kishore N, Mayhew MP, Parsons JF, Eisenstein E, Goldberg RN.
+            Thermodynamics of reactions catalyzed by PABA synthase.
+            Biophys. Chem. 96 (2002) 33-51.
+///

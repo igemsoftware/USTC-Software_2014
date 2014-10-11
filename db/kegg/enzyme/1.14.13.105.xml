@@ -1,0 +1,56 @@
+ENTRY       EC 1.14.13.105              Enzyme
+NAME        monocyclic monoterpene ketone monooxygenase;
+            1-hydroxy-2-oxolimonene 1,2-monooxygenase;
+            dihydrocarvone 1,2-monooxygenase;
+            MMKMO
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     (-)-menthone,NADPH:oxygen oxidoreductase
+REACTION    (1) (-)-menthone + NADPH + H+ + O2 = (4R,7S)-7-isopropyl-4-methyloxepan-2-one + NADP+ + H2O [RN:R08925];
+            (2) dihydrocarvone + NADPH + H+ + O2 = 4-isopropenyl-7-methyloxepan-2-one + NADP+ + H2O [RN:R06386];
+            (3) (iso)-dihydrocarvone + NADPH + H+ + O2 = 6-isopropenyl-3-methyloxepan-2-one + NADP+ + H2O [RN:R06388 R06389];
+            (4a) 1-hydroxymenth-8-en-2-one + NADPH + H+ + O2 = 7-hydroxy-4-isopropenyl-7-methyloxepan-2-one + NADP+ + H2O [RN:R06400 R09390];
+            (4b) 7-hydroxy-4-isopropenyl-7-methyloxepan-2-one = 3-isopropenyl-6-oxoheptanoate (spontaneous) [RN:R09391 R09392]
+ALL_REAC    R06386 R06388 R06389 R06400 R08925 R09390 R09391 R09392;
+            (other) R06387
+SUBSTRATE   (-)-menthone [CPD:C00843];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            dihydrocarvone;
+            (iso)-dihydrocarvone;
+            1-hydroxymenth-8-en-2-one [CPD:C18019];
+            7-hydroxy-4-isopropenyl-7-methyloxepan-2-one
+PRODUCT     (4R,7S)-7-isopropyl-4-methyloxepan-2-one [CPD:C18027];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            4-isopropenyl-7-methyloxepan-2-one [CPD:C11414];
+            6-isopropenyl-3-methyloxepan-2-one;
+            7-hydroxy-4-isopropenyl-7-methyloxepan-2-one;
+            3-isopropenyl-6-oxoheptanoate (spontaneous)
+COMMENT     A flavoprotein (FAD). This Baeyer-Villiger monooxygenase enzyme from the Gram-positive bacterium Rhodococcus erythropolis DCL14 has wide substrate specificity, catalysing the lactonization of a large number of monocyclic monoterpene ketones and substituted cyclohexanones [2]. Both (1R,4S)- and (1S,4R)-1-hydroxymenth-8-en-2-one are metabolized, with the lactone product spontaneously rearranging to form 3-isopropenyl-6-oxoheptanoate [1].
+HISTORY     EC 1.14.13.105 created 2008
+REFERENCE   1  [PMID:10224006]
+  AUTHORS   van der Werf MJ, Swarts HJ, de Bont JA.
+  TITLE     Rhodococcus erythropolis DCL14 contains a novel degradation pathway for limonene.
+  JOURNAL   Appl. Environ. Microbiol. 65 (1999) 2092-102.
+  ORGANISM  Rhodococcus erythropolis
+REFERENCE   2  [PMID:10769172]
+  AUTHORS   Van Der Werf MJ.
+  TITLE     Purification and characterization of a Baeyer-Villiger mono-oxygenase from Rhodococcus erythropolis DCL14 involved in three different monocyclic monoterpene degradation pathways.
+  JOURNAL   Biochem. J. 347 Pt 3 (2000) 693-701.
+  ORGANISM  Rhodococcus erythropolis
+REFERENCE   3  [PMID:10832640]
+  AUTHORS   van der Werf MJ, Boot AM.
+  TITLE     Metabolism of carveol and dihydrocarveol in Rhodococcus erythropolis DCL14.
+  JOURNAL   Microbiology. 146 ( Pt 5) (2000) 1129-41.
+  ORGANISM  Rhodococcus erythropolis
+PATHWAY     ec00902  Monoterpenoid biosynthesis
+            ec00903  Limonene and pinene degradation
+            ec01110  Biosynthesis of secondary metabolites
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.105
+            IUBMB Enzyme Nomenclature: 1.14.13.105
+            ExPASy - ENZYME nomenclature database: 1.14.13.105
+            BRENDA, the Enzyme Database: 1.14.13.105
+///

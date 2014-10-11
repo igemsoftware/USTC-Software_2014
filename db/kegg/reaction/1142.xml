@@ -1,0 +1,22 @@
+ENTRY       R01142                      Reaction
+NAME        Methane,NADH:oxygen oxidoreductase (hydroxylating)
+DEFINITION  Methane + Oxygen + NADH + H+ <=> Methanol + NAD+ + H2O
+EQUATION    C01438 + C00007 + C00004 + C00080 <=> C00132 + C00003 + C00001
+COMMENT     NADPH (see R01143)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP00478  C00132_C01438 main [RC:RC00173]
+            RP05845  C00007_C00132 leave
+ENZYME      1.14.13.25
+PATHWAY     rn00680  Methane metabolism
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K16157  methane monooxygenase component A alpha chain [EC:1.14.13.25]
+            K16158  methane monooxygenase component A beta chain [EC:1.14.13.25]
+            K16159  methane monooxygenase component A gamma chain [EC:1.14.13.25]
+            K16160  methane monooxygenase regulatory protein B
+            K16161  methane monooxygenase component C [EC:1.14.13.25]
+            K16162  methane monooxygenase component D
+///

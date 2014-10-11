@@ -1,0 +1,12 @@
+ENTRY       R09798                      Reaction
+NAME        nitrilotriacetate,FMNH2:oxygen oxidoreductase (glyoxylate-forming)
+DEFINITION  Nitrilotriacetic acid + Reduced FMN + Oxygen <=> Iminodiacetate + Glyoxylate + FMN + H2O
+EQUATION    C14695 + C01847 + C00007 <=> C19911 + C00048 + C00061 + C00001
+COMMENT     FMN is re-reduced by NADH (see R05705)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00852  C00061_C01847 cofac [RC:RC00126]
+            RP08692  C00007_C00048 leave
+            RP15383  C14695_C19911 main [RC:RC01349]
+            RP15384  C00048_C14695 main [RC:RC02660]
+ENZYME      1.14.14.10
+///

@@ -1,0 +1,43 @@
+ENTRY       EC 1.14.13.133              Enzyme
+NAME        pentalenene oxygenase;
+            PtlI
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     pentalenene,NADPH:oxygen 13-oxidoreductase
+REACTION    pentalenene + 2 NADPH + 2 H+ + 2 O2 = pentalen-13-al + 2 NADP+ + 3 H2O (overall reaction) [RN:R09814];
+            (1a) pentalenene + NADPH + H+ + O2 = pentalen-13-ol + NADP+ + H2O [RN:R09812];
+            (1b) pentalen-13-ol + NADPH + H+ + O2 = pentalen-13-al + NADP+ + 2 H2O [RN:R09813]
+ALL_REAC    R09812 R09813 R09814
+SUBSTRATE   pentalenene [CPD:C01841];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            pentalen-13-ol [CPD:C19938]
+PRODUCT     pentalen-13-al [CPD:C19939];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            pentalen-13-ol [CPD:C19938]
+COMMENT     A heme-thiolate protein (P-450). The enzyme is involved in the biosynthesis of pentalenolactone and related antibiotics.
+HISTORY     EC 1.14.13.133 created 2011
+REFERENCE   1  [PMID:17017767]
+  AUTHORS   Quaderer R, Omura S, Ikeda H, Cane DE
+  TITLE     Pentalenolactone biosynthesis. Molecular cloning and assignment of biochemical function to PtlI, a cytochrome P450 of Streptomyces avermitilis.
+  JOURNAL   J. Am. Chem. Soc. 128 (2006) 13036-7.
+  ORGANISM  Streptomyces avermitilis
+  SEQUENCE  [sma:SAV_2999]
+PATHWAY     ec00909  Sesquiterpenoid and triterpenoid biosynthesis
+ORTHOLOGY   K15907  pentalenene oxygenase
+GENES       MMI: MMAR_0281(cyp183B1)
+            SMA: SAV_2999(ptlI)
+            SVL: Strvi_5781
+            SCT: SCAT_p0090(ptlI)
+            SBH: SBI_09680(cyp48)
+            KSK: KSE_03600
+            AMD: AMED_7819
+            CAI: Caci_4969
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.133
+            IUBMB Enzyme Nomenclature: 1.14.13.133
+            ExPASy - ENZYME nomenclature database: 1.14.13.133
+            BRENDA, the Enzyme Database: 1.14.13.133
+///

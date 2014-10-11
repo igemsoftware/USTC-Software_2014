@@ -1,0 +1,95 @@
+ENTRY       EC 1.13.11.51               Enzyme
+NAME        9-cis-epoxycarotenoid dioxygenase;
+            nine-cis-epoxycarotenoid dioxygenase;
+            NCED;
+            AtNCED3;
+            PvNCED1;
+            VP14
+CLASS       Oxidoreductases;
+            Acting on single donors with incorporation of molecular oxygen (oxygenases);
+            With incorporation of two atoms of oxygen
+SYSNAME     9-cis-epoxycarotenoid 11,12-dioxygenase
+REACTION    (1) a 9-cis-epoxycarotenoid + O2 = 2-cis,4-trans-xanthoxin + a 12'-apo-carotenal [RN:R09682];
+            (2) 9-cis-violaxanthin + O2 = 2-cis,4-trans-xanthoxin + (3S,5R,6S)-5,6-epoxy-3-hydroxy-5,6-dihydro-12'-apo-beta-caroten-12'-al [RN:R06953];
+            (3) 9'-cis-neoxanthin + O2 = 2-cis,4-trans-xanthoxin + (3S,5R,6R)-5,6-dihydroxy-6,7-didehydro-5,6-dihydro-12'-apo-beta-caroten-12'-al [RN:R06952]
+ALL_REAC    R06952 R06953 R09682
+SUBSTRATE   9-cis-epoxycarotenoid [CPD:C19811];
+            O2 [CPD:C00007];
+            9-cis-violaxanthin [CPD:C13433];
+            9'-cis-neoxanthin [CPD:C13431]
+PRODUCT     2-cis,4-trans-xanthoxin [CPD:C13453];
+            12'-apo-carotenal [CPD:C19812];
+            (3S,5R,6S)-5,6-epoxy-3-hydroxy-5,6-dihydro-12'-apo-beta-caroten-12'-al [CPD:C14045];
+            (3S,5R,6R)-5,6-dihydroxy-6,7-didehydro-5,6-dihydro-12'-apo-beta-caroten-12'-al
+COMMENT     Requires iron(II). Acts on 9-cis-violaxanthin and 9'-cis-neoxanthin but not on the all-trans isomers [2,3]. In vitro, it will cleave 9-cis-zeaxanthin. Catalyses the first step of abscisic-acid biosynthesis from carotenoids in chloroplasts, in response to water stress. The other enzymes involved in the abscisic-acid biosynthesis pathway are EC 1.1.1.288 (xanthoxin dehydrogenase), EC 1.2.3.14 (abscisic-aldehyde oxidase) and EC 1.14.13.93 [(+)-abscisic acid 8'-hydroxylase].
+HISTORY     EC 1.13.11.51 created 2005
+REFERENCE   1  [PMID:9188535]
+  AUTHORS   Schwartz SH, Tan BC, Gage DA, Zeevaart JA, McCarty DR.
+  TITLE     Specific oxidative cleavage of carotenoids by VP14 of maize.
+  JOURNAL   Science. 276 (1997) 1872-4.
+  ORGANISM  Zea mays
+  SEQUENCE  [zma:732819]
+REFERENCE   2  [PMID:9342392]
+  AUTHORS   Tan BC, Schwartz SH, Zeevaart JA, McCarty DR.
+  TITLE     Genetic control of abscisic acid biosynthesis in maize.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 94 (1997) 12235-40.
+  ORGANISM  Zea mays
+  SEQUENCE  [zma:732819]
+REFERENCE   3  [PMID:10611388]
+  AUTHORS   Qin X, Zeevaart JA.
+  TITLE     The 9-cis-epoxycarotenoid cleavage reaction is the key regulatory step of abscisic acid biosynthesis in water-stressed bean.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 96 (1999) 15354-61.
+  ORGANISM  Phaseolus vulgaris
+  SEQUENCE  [up:Q9M6E8]
+REFERENCE   4  [PMID:10929129]
+  AUTHORS   Thompson AJ, Jackson AC, Symonds RC, Mulholland BJ, Dadswell AR, Blake PS, Burbidge A, Taylor IB.
+  TITLE     Ectopic expression of a tomato 9-cis-epoxycarotenoid dioxygenase gene causes over-production of abscisic acid.
+  JOURNAL   Plant. J. 23 (2000) 363-74.
+  ORGANISM  Zea mays
+REFERENCE   5  [PMID:11532178]
+  AUTHORS   Iuchi S, Kobayashi M, Taji T, Naramoto M, Seki M, Kato T, Tabata S, Kakubari Y, Yamaguchi-Shinozaki K, Shinozaki K.
+  TITLE     Regulation of drought tolerance by gene manipulation of 9-cis-epoxycarotenoid dioxygenase, a key enzyme in abscisic acid biosynthesis in Arabidopsis.
+  JOURNAL   Plant. J. 27 (2001) 325-33.
+  ORGANISM  Arabidopsis thaliana
+  SEQUENCE  [ath:AT3G14440]
+REFERENCE   6
+  AUTHORS   Iuchi, S., Kobayashi, M., Taji, T., Naramoto, M., Seki, M., Kato, T., Tabata, S., Kakubari, Y., Yamaguchi-Shinozaki, K. and Shinozaki, K.
+  TITLE     Regulation of drought tolerance by gene manipulation of 9-cis-epoxycarotenoid dioxygenase, a key enzyme in abscisic acid biosynthesis in Arabidopsis.
+  JOURNAL   Plant J. 30 (2002) 611.
+PATHWAY     ec00906  Carotenoid biosynthesis
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K09840  9-cis-epoxycarotenoid dioxygenase
+GENES       ATH: AT1G30100(NCED5) AT1G78390(NCED9) AT3G14440(NCED3) AT3G24220(NCED6) AT4G18350(NCED2) AT4G19170(NCED4)
+            ALY: ARALYDRAFT_356894 ARALYDRAFT_473228(NCED5) ARALYDRAFT_478868(NCED3) ARALYDRAFT_493030(NCED2) ARALYDRAFT_898946(NCED6) ARALYDRAFT_914743(NCED4) ARALYDRAFT_920825(NCED9)
+            CRB: CARUB_v10006410mg CARUB_v10006815mg CARUB_v10008647mg CARUB_v10013279mg CARUB_v10016319mg CARUB_v10019990mg
+            EUS: EUTSA_v10002459mg EUTSA_v10007160mg EUTSA_v10019707mg EUTSA_v10020337mg EUTSA_v10024711mg EUTSA_v10027182mg
+            CIT: 102578064(NCED) 102578070 102612016 102612995 102621234 102627376
+            CIC: CICLE_v10006710mg CICLE_v10011335mg CICLE_v10013726mg CICLE_v10014639mg CICLE_v10019364mg CICLE_v10028113mg CICLE_v10030384mg CICLE_v10031003mg
+            TCC: TCM_016684 TCM_016685 TCM_016694 TCM_020388 TCM_027810 TCM_029468 TCM_032343 TCM_041192
+            GMX: 100776737 100777875 100780284 100797882
+            MTR: MTR_5g025230 MTR_5g025250 MTR_5g025270
+            CAM: 101492033 101496280 101505040 101511615
+            FVE: 101292752 101293791 101311757 101315210
+            CSV: 101204647 101214535 101219505 101220226 101221572 101225025 101225769 101230550
+            RCU: RCOM_0632160 RCOM_0867890 RCOM_1021470 RCOM_1716910
+            POP: POPTR_0001s40420g POPTR_0003s17490g(POPTRDRAFT_757941) POPTR_0009s15400g POPTR_0009s15430g(POPTRDRAFT_879748) POPTR_0011s02230g(POPTRDRAFT_805840) POPTR_0011s08240g POPTR_0011s11370g(POPTRDRAFT_568831) POPTR_0019s12320g(POPTRDRAFT_913328)
+            VVI: 100232942(NCED1) 100232943(NCED2) 100244362 100251100 100252859 100254497 100267016
+            SLY: 100316877(NCED2) 101246826 101250535 101250828 544163
+            SOT: 102577733 102577783 102579540 102581808 102589614
+            OSA: 4330451 4333566 4342424 4352125 9270250
+            DOSA: Os02t0704000-01(Os02g0704000) Os03t0645900-00(Os03g0645900) Os07t0154100-01(Os07g0154100) Os12t0435200-01(Os12g0435200) Os12t0617400-01(Os12g0617400)
+            OBR: 102709247 102710691 102717690 102719350 102719521
+            BDI: 100822305 100835478 100836107 100845393
+            SBI: SORBI_01g013520(SORBIDRAFT_01g013520) SORBI_02g003230(SORBIDRAFT_02g003230) SORBI_02g003240(SORBIDRAFT_02g003240)
+            ZMA: 100281136 100281391 100501444 732819(vp14)
+            SITA: 101766978 101770668 101778945 101783411
+            ATR: s00011p00255760(AMTR_s00011p00255760) s00039p00194530(AMTR_s00039p00194530) s00092p00172590(AMTR_s00092p00172590)
+            SMO: SELMODRAFT_113788(NCED-1) SELMODRAFT_116420(NCED-2) SELMODRAFT_411585 SELMODRAFT_75383 SELMODRAFT_80651 SELMODRAFT_91815 SELMODRAFT_94523
+            PPP: PHYPADRAFT_173118 PHYPADRAFT_57876
+DBLINKS     ExplorEnz - The Enzyme Database: 1.13.11.51
+            IUBMB Enzyme Nomenclature: 1.13.11.51
+            ExPASy - ENZYME nomenclature database: 1.13.11.51
+            BRENDA, the Enzyme Database: 1.13.11.51
+            CAS: 199877-10-6
+///

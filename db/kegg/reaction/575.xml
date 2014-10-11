@@ -1,0 +1,22 @@
+ENTRY       R00575                      Reaction
+NAME        hydrogen-carbonate:L-glutamine amido-ligase (ADP-forming, carbamate-phosphorylating)
+DEFINITION  2 ATP + L-Glutamine + HCO3- + H2O <=> 2 ADP + Orthophosphate + L-Glutamate + Carbamoyl phosphate
+EQUATION    2 C00002 + C00064 + C00288 + C00001 <=> 2 C00008 + C00009 + C00025 + C00169
+COMMENT     two-step reaction (see R00575+R00256)
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00024  C00025_C00064 main [RC:RC00010]
+            RP03826  C00002_C00169 trans
+            RP05695  C00001_C00025 leave
+            RP06217  C00064_C00169 main [RC:RC02750]
+            RP10992  C00169_C00288 leave
+ENZYME      6.3.5.5
+PATHWAY     rn00240  Pyrimidine metabolism
+            rn00250  Alanine, aspartate and glutamate metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01954  carbamoyl-phosphate synthase [EC:6.3.5.5]
+            K01955  carbamoyl-phosphate synthase large subunit [EC:6.3.5.5]
+            K01956  carbamoyl-phosphate synthase small subunit [EC:6.3.5.5]
+            K11540  carbamoyl-phosphate synthase / aspartate carbamoyltransferase / dihydroorotase [EC:6.3.5.5 2.1.3.2 3.5.2.3]
+            K11541  carbamoyl-phosphate synthase / aspartate carbamoyltransferase [EC:6.3.5.5 2.1.3.2]
+///

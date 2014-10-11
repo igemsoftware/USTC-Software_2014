@@ -1,0 +1,21 @@
+ENTRY       R00111                      Reaction
+NAME        N-(omega)-Hydroxyarginine,NADPH:oxygen oxidoreductase (nitric-oxide-forming)
+DEFINITION  NADPH + 2 N(omega)-Hydroxyarginine + 2 Oxygen + H+ <=> NADP+ + 2 Nitric oxide + 2 L-Citrulline + 2 H2O
+EQUATION    C00005 + 2 C05933 + 2 C00007 + C00080 <=> C00006 + 2 C00533 + 2 C00327 + 2 C00001
+COMMENT     the latter part of multi-step reaction (see R00557, R00558+R00111)
+            following after R00558
+            NADH (see R10108)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 leave
+            RP03609  C00327_C05933 main [RC:RC01044]
+            RP05964  C00007_C00327 leave
+            RP07630  C00533_C05933 main [RC:RC02757]
+ENZYME      1.14.13.39      1.14.13.165
+PATHWAY     rn00330  Arginine and proline metabolism
+ORTHOLOGY   K00491  nitric-oxide synthase, bacterial [EC:1.14.13.39]
+            K13240  nitric-oxide synthase, brain [EC:1.14.13.39]
+            K13241  nitric-oxide synthase, inducible [EC:1.14.13.39]
+            K13242  nitric-oxide synthase, endothelial [EC:1.14.13.39]
+            K13253  nitric-oxide synthase, invertebrate [EC:1.14.13.39]
+            K13427  nitric-oxide synthase, plant [EC:1.14.13.39]
+///

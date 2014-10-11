@@ -1,0 +1,13 @@
+ENTRY       R05219                      Reaction
+DEFINITION  Precorrin 6X + Acetate + S-Adenosyl-L-homocysteine <=> Precorrin 5 + S-Adenosyl-L-methionine + H2O
+EQUATION    C06320 + C00033 + C00021 <=> C06416 + C00019 + C00001
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP04817  C06320_C06416 main [RC:RC02890]
+            RP05678  C00001_C00033 leave
+            RP08529  C00033_C06416 main [RC:RC00923]
+            RP08530  C00019_C06320 trans
+ENZYME      2.1.1.152
+PATHWAY     rn00860  Porphyrin and chlorophyll metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K02228  precorrin-6A synthase [EC:2.1.1.152]
+///

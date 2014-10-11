@@ -1,0 +1,11 @@
+ENTRY       R07644                      Reaction
+NAME        2,3-dihydroxybenzoate:L-serine ligase
+DEFINITION  6 ATP + 3 2,3-Dihydroxybenzoate + 3 L-Serine <=> Enterochelin + 6 AMP + 6 Diphosphate
+EQUATION    6 C00002 + 3 C00196 + 3 C00065 <=> C05821 + 6 C00020 + 6 C00013
+COMMENT     multi-step reaction
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP15868  C00196_C05821 main [RC:RC00162]
+            RP15869  C00065_C05821 main [RC:RC03046]
+ENZYME      6.3.2.14
+///

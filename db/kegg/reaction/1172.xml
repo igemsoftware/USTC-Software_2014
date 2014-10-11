@@ -1,0 +1,15 @@
+ENTRY       R01172                      Reaction
+NAME        butanal:NAD+ oxidoreductase (CoA-acylating)
+DEFINITION  Butanal + CoA + NAD+ <=> Butanoyl-CoA + NADH + H+
+EQUATION    C01412 + C00010 + C00003 <=> C00136 + C00004 + C00080
+COMMENT     NADP+ (ec 1.2.1.57, see R01173)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00093  C00010_C00136 main [RC:RC00004]
+            RP00515  C00136_C01412 main [RC:RC00184]
+ENZYME      1.2.1.10        1.2.1.57        1.2.1.87
+PATHWAY     rn00650  Butanoate metabolism
+ORTHOLOGY   K00132  acetaldehyde dehydrogenase (acetylating) [EC:1.2.1.10]
+            K04072  acetaldehyde dehydrogenase / alcohol dehydrogenase [EC:1.2.1.10 1.1.1.1]
+            K04073  acetaldehyde dehydrogenase [EC:1.2.1.10]
+            K18366  acetaldehyde/propanal dehydrogenase [EC:1.2.1.10 1.2.1.87]
+///

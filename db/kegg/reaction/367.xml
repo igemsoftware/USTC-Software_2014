@@ -1,0 +1,12 @@
+ENTRY       R00367                      Reaction
+NAME        S-Adenosyl-L-methionine:glycine N-methyltransferase
+DEFINITION  S-Adenosyl-L-methionine + Glycine <=> S-Adenosyl-L-homocysteine + Sarcosine
+EQUATION    C00019 + C00037 <=> C00021 + C00213
+COMMENT     further methylation of sarcosine to N,N-dimethylglycine (ec 2.1.1.156, see R07243)
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP00161  C00037_C00213 main [RC:RC00060]
+            RP08818  C00019_C00213 trans
+ENZYME      2.1.1.20        2.1.1.156       2.1.1.162
+PATHWAY     rn00260  Glycine, serine and threonine metabolism
+ORTHOLOGY   K00552  glycine N-methyltransferase [EC:2.1.1.20]
+///

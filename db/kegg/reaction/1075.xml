@@ -1,0 +1,11 @@
+ENTRY       R01075                      Reaction
+NAME        biotin:CoA ligase (AMP-forming)
+DEFINITION  ATP + Biotin + CoA <=> AMP + Diphosphate + Biotinyl-CoA
+EQUATION    C00002 + C00120 + C00010 <=> C00020 + C00013 + C01894
+COMMENT     two-step reaction (see R01074+R03762)
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00409  C00010_C01894 main [RC:RC00004]
+            RP01283  C00120_C01894 main [RC:RC00014]
+ENZYME      6.2.1.11
+///

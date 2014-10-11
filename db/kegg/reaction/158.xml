@@ -1,0 +1,16 @@
+ENTRY       R00158                      Reaction
+NAME        ATP:UMP phosphotransferase
+DEFINITION  ATP + UMP <=> ADP + UDP
+EQUATION    C00002 + C00105 <=> C00008 + C00015
+RPAIR       RP00003  C00002_C00008 main [RC:RC00002]
+            RP00721  C00015_C00105 main [RC:RC00002]
+            RP07970  C00002_C00015 trans
+ENZYME      2.7.4.4         2.7.4.14        2.7.4.22
+PATHWAY     rn00240  Pyrimidine metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00945  cytidylate kinase [EC:2.7.4.14]
+            K09903  uridylate kinase [EC:2.7.4.22]
+            K13799  pantoate ligase / cytidylate kinase [EC:6.3.2.1 2.7.4.14]
+            K13800  UMP-CMP kinase [EC:2.7.4.- 2.7.4.14]
+            K13809  UMP-CMP kinase 2, mitochondrial [EC:2.7.4.14]
+///

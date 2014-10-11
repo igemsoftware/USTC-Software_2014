@@ -1,0 +1,10 @@
+ENTRY       R10054                      Reaction
+NAME        L-lysine:NAD+ 6-oxidoreductase (deaminating)
+DEFINITION  L-Lysine + NAD+ <=> (S)-2,3,4,5-Tetrahydropyridine-2-carboxylate + NADH + H+ + Ammonia
+EQUATION    C00047 + C00003 <=> C00450 + C00004 + C00080 + C00014
+COMMENT     two-step reaction (see R00446+R02317)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP12294  C00014_C00047 leave
+            RP15845  C00047_C00450 main [RC:RC00353]
+ENZYME      1.4.1.18
+///

@@ -1,0 +1,12 @@
+ENTRY       R06223                      Reaction
+NAME        squalene synthase
+DEFINITION  2 trans,trans-Farnesyl diphosphate + NADPH + H+ <=> Squalene + 2 Diphosphate + NADP+
+EQUATION    2 C00448 + C00005 + C00080 <=> C00751 + 2 C00013 + C00006
+COMMENT     two-step reaction (see R00702+R02872)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP05713  C00013_C00448 leave
+            RP11138  C00448_C00751 main [RC:RC02839]
+ENZYME      2.5.1.21
+PATHWAY     rn01100  Metabolic pathways
+ORTHOLOGY   K00801  farnesyl-diphosphate farnesyltransferase [EC:2.5.1.21]
+///

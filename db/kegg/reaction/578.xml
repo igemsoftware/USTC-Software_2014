@@ -1,0 +1,17 @@
+ENTRY       R00578                      Reaction
+NAME        L-aspartate:L-glutamine amido-ligase (AMP-forming)
+DEFINITION  ATP + L-Aspartate + L-Glutamine + H2O <=> AMP + Diphosphate + L-Asparagine + L-Glutamate
+EQUATION    C00002 + C00049 + C00064 + C00001 <=> C00020 + C00013 + C00152 + C00025
+COMMENT     two-step reaction (see R00256+R00483)
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00024  C00025_C00064 main [RC:RC00010]
+            RP00116  C00049_C00152 main [RC:RC00010]
+            RP05695  C00001_C00025 leave
+            RP06221  C00064_C00152 trans
+ENZYME      6.3.5.4
+PATHWAY     rn00250  Alanine, aspartate and glutamate metabolism
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K01953  asparagine synthase (glutamine-hydrolysing) [EC:6.3.5.4]
+///

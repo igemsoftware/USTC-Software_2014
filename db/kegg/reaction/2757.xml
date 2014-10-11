@@ -1,0 +1,13 @@
+ENTRY       R02757                      Reaction
+NAME        ATP:acylglycerol 3-phosphotransferase
+DEFINITION  ATP + 1-Acylglycerol <=> ADP + 1-Acyl-sn-glycerol 3-phosphate
+EQUATION    C00002 + C01885 <=> C00008 + C00681
+COMMENT     see R02758 (2-acyl type reaction)
+RPAIR       RP00003  C00002_C00008 main [RC:RC00002]
+            RP02476  C00681_C01885 main [RC:RC00017]
+            RP05919  C00002_C00681 trans
+ENZYME      2.7.1.94
+PATHWAY     rn00561  Glycerolipid metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K09881  acylglycerol kinase [EC:2.7.1.94]
+///

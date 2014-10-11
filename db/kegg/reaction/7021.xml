@@ -1,0 +1,15 @@
+ENTRY       R07021                      Reaction
+NAME        1-nitronaphthalene, NADPH:oxygen oxidoreductase (RH-hydroxylating or -epoxidizing)
+DEFINITION  1-Nitronaphthalene + NADPH + Oxygen + H+ <=> 1-Nitronaphthalene-7,8-oxide + NADP+ + H2O
+EQUATION    C14040 + C00005 + C00007 + C00080 <=> C14802 + C00006 + C00001
+COMMENT     CYP1A1/2, CYP2E1
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP10044  C00007_C14802 leave
+            RP10225  C14040_C14802 main [RC:RC01445]
+ENZYME      1.14.13.-       1.14.14.1
+PATHWAY     rn00980  Metabolism of xenobiotics by cytochrome P450
+ORTHOLOGY   K07408  cytochrome P450, family 1, subfamily A, polypeptide 1 [EC:1.14.14.1]
+            K07409  cytochrome P450, family 1, subfamily A, polypeptide 2 [EC:1.14.14.1]
+            K07415  cytochrome P450, family 2, subfamily E, polypeptide 1 [EC:1.14.13.-]
+///

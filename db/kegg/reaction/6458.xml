@@ -1,0 +1,21 @@
+ENTRY       R06458                      Reaction
+DEFINITION  5 Methylmalonyl-CoA + Malonyl-CoA + 5 NADPH + 5 H+ <=> 10-Deoxymethynolide + 6 CoA + 6 CO2 + 2 H2O + 5 NADP+
+EQUATION    5 C02557 + C00083 + 5 C00005 + 5 C00080 <=> C11993 + 6 C00010 + 6 C00011 + 2 C00001 + 5 C00006
+COMMENT     type I polyketide synthase,PikA1-3
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00051  C00010_C00083 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP05961  C00010_C02557 main [RC:RC00004]
+            RP06096  C00011_C02557 leave
+            RP08515  C00001_C02557 leave
+            RP10621  C02557_C11993 main [RC:RC02910]
+            RP10892  C00083_C11993 main [RC:RC02911]
+            RP11415  C02557_C11993 main [RC:RC02915]
+            RP13959  C02557_C11993 main [RC:RC02829]
+            RP13960  C02557_C11993 main [RC:RC02830]
+            RP13961  C02557_C11993 main [RC:RC02831]
+PATHWAY     rn00522  Biosynthesis of 12-, 14- and 16-membered macrolides
+ORTHOLOGY   K16000  type I polyketide synthase PikAI
+            K16001  type I polyketide synthase PikAII
+            K16002  type I polyketide synthase PikAIII
+///

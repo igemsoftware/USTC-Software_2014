@@ -1,0 +1,14 @@
+ENTRY       R01933                      Reaction
+NAME        2-oxoadipate dehydrogenase complex
+DEFINITION  2-Oxoadipate + CoA + NAD+ <=> Glutaryl-CoA + CO2 + NADH + H+
+EQUATION    C00322 + C00010 + C00003 <=> C00527 + C00011 + C00004 + C00080
+COMMENT     2-oxoglutarate dehydrogenase complex (see R08549)
+            multi-step reaction (see R01940+R02571+R07618)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00103  C00010_C00527 main [RC:RC00004]
+            RP01856  C00322_C00527 main [RC:RC02833]
+            RP05938  C00011_C00322 leave
+ENZYME      1.2.4.2         1.8.1.4         2.3.1.61
+PATHWAY     rn00380  Tryptophan metabolism
+ORTHOLOGY   K00164  2-oxoglutarate dehydrogenase E1 component [EC:1.2.4.2]
+///

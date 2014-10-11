@@ -1,0 +1,17 @@
+ENTRY       R00024                      Reaction
+NAME        3-phospho-D-glycerate carboxy-lyase (dimerizing; D-ribulose-1,5-bisphosphate-forming)
+DEFINITION  D-Ribulose 1,5-bisphosphate + CO2 + H2O <=> 2 3-Phospho-D-glycerate
+EQUATION    C01182 + C00011 + C00001 <=> 2 C00197
+COMMENT     multi-step reaction (isomerization, carboxylation, hydration and cleavage)
+RPAIR       RP00477  C00197_C01182 main [RC:RC00172]
+            RP05914  C00001_C00197 leave
+            RP07387  C00011_C00197 leave
+            RP13524  C00197_C01182 trans
+ENZYME      4.1.1.39
+PATHWAY     rn00710  Carbon fixation in photosynthetic organisms
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+ORTHOLOGY   K01601  ribulose-bisphosphate carboxylase large chain [EC:4.1.1.39]
+            K01602  ribulose-bisphosphate carboxylase small chain [EC:4.1.1.39]
+///

@@ -1,0 +1,34 @@
+ENTRY       EC 2.3.1.219                Enzyme
+NAME        demethoxycurcumin synthase;
+            CURS3
+CLASS       Transferases;
+            Acyltransferases;
+            Transferring groups other than aminoacyl groups
+SYSNAME     4-coumaroyl-CoA:feruloylacetyl-CoA feruloyltransferase (demethoxycurcumin-forming)
+REACTION    (1) 4-coumaroyl-CoA + feruloylacetyl-CoA + H2O = 2 CoA + demethoxycurcumin + CO2 [RN:R08809];
+            (2) 4-coumaroyl-CoA + (4-coumaroyl)acetyl-CoA + H2O = 2 CoA + bisdemethoxycurcumin + CO2 [RN:R08807]
+ALL_REAC    R08807 R08809
+SUBSTRATE   4-coumaroyl-CoA [CPD:C00223];
+            feruloylacetyl-CoA [CPD:C17741];
+            H2O [CPD:C00001];
+            (4-coumaroyl)acetyl-CoA [CPD:C17740]
+PRODUCT     CoA [CPD:C00010];
+            demethoxycurcumin [CPD:C17742];
+            CO2 [CPD:C00011];
+            bisdemethoxycurcumin [CPD:C17743]
+COMMENT     A polyketide synthase from the plant Curcuma longa (turmeric). Three isoforms exist, CURS1, CURS2 and CURS3. While CURS1 and CURS2 prefer feruloyl-CoA as a starter substrate (cf. EC 2.3.1.217, curcumin synthase), CURS3 can accept 4-coumaroyl-CoA equally well [1].
+HISTORY     EC 2.3.1.219 created 2013
+REFERENCE   1  [PMID:19622354]
+  AUTHORS   Katsuyama Y, Kita T, Horinouchi S
+  TITLE     Identification and characterization of multiple curcumin synthases from the herb  Curcuma longa.
+  JOURNAL   FEBS. Lett. 583 (2009) 2799-803.
+  ORGANISM  Curcuma longa
+  SEQUENCE  [up:C6L7V8 C6L7V9]
+PATHWAY     ec00945  Stilbenoid, diarylheptanoid and gingerol biosynthesis
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K17211  curcumin/demethoxycurcumin synthase
+DBLINKS     ExplorEnz - The Enzyme Database: 2.3.1.219
+            IUBMB Enzyme Nomenclature: 2.3.1.219
+            ExPASy - ENZYME nomenclature database: 2.3.1.219
+            BRENDA, the Enzyme Database: 2.3.1.219
+///

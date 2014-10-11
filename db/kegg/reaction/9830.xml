@@ -1,0 +1,13 @@
+ENTRY       R09830                      Reaction
+NAME        L-Tyrosine:NAD+ oxidoreductase (deaminating)
+DEFINITION  L-Tyrosine + H2O + NAD+ <=> 3-(4-Hydroxyphenyl)pyruvate + Ammonia + NADH + H+
+EQUATION    C00082 + C00001 + C00003 <=> C01179 + C00014 + C00004 + C00080
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00621  C00082_C01179 main [RC:RC00006]
+            RP05795  C00014_C00082 leave
+            RP06287  C00001_C01179 leave
+ENZYME      1.4.1.20
+PATHWAY     rn00350  Tyrosine metabolism
+            rn00400  Phenylalanine, tyrosine and tryptophan biosynthesis
+ORTHOLOGY   K00270  phenylalanine dehydrogenase [EC:1.4.1.20]
+///

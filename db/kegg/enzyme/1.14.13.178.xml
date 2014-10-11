@@ -1,0 +1,49 @@
+ENTRY       EC 1.14.13.178              Enzyme
+NAME        methylxanthine N1-demethylase;
+            ndmA (gene name)
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     caffeine:oxygen oxidoreductase (N1-demethylating)
+REACTION    (1) caffeine + O2 + NAD(P)H + H+ = theobromine + NAD(P)+ + H2O + formaldehyde [RN:R07955 R07956];
+            (2) theophylline + O2 + NAD(P)H + H+ = 3-methylxanthine + NAD(P)+ + H2O + formaldehyde [RN:R07973 R07974];
+            (3) paraxanthine + O2 + NAD(P)H + H+ = 7-methylxanthine + NAD(P)+ + H2O + formaldehyde [RN:R07957 R07958]
+ALL_REAC    R07955 R07956 R07957 R07958 R07973 R07974;
+            (other) R07969 R07970
+SUBSTRATE   caffeine [CPD:C07481];
+            O2 [CPD:C00007];
+            NADH [CPD:C00004];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            theophylline [CPD:C07130];
+            paraxanthine [CPD:C13747]
+PRODUCT     theobromine [CPD:C07480];
+            NAD+ [CPD:C00003];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            formaldehyde [CPD:C00067];
+            3-methylxanthine [CPD:C16357];
+            7-methylxanthine [CPD:C16353]
+COMMENT     A non-heme iron oxygenase. The enzyme from the bacterium Pseudomonas putida shares an NAD(P)H-FMN reductase subunit with EC 1.14.13.179, methylxanthine N3-demethylase, and has a 5-fold higher activity with NADH than with NADPH [2]. Also demethylate 1-methylxantine with lower efficiency. Forms part of the degradation pathway of methylxanthines.
+HISTORY     EC 1.14.13.178 created 2013
+REFERENCE   1  [PMID:20966097]
+  AUTHORS   Summers RM, Louie TM, Yu CL, Subramanian M
+  TITLE     Characterization of a broad-specificity non-haem iron N-demethylase from Pseudomonas putida CBB5 capable of utilizing several purine alkaloids as sole carbon and nitrogen source.
+  JOURNAL   Microbiology. 157 (2011) 583-92.
+  ORGANISM  Pseudomonas putida
+  SEQUENCE  [up:H9N289]
+REFERENCE   2  [PMID:22328667]
+  AUTHORS   Summers RM, Louie TM, Yu CL, Gakhar L, Louie KC, Subramanian M
+  TITLE     Novel, highly specific N-demethylases enable bacteria to live on caffeine and related purine alkaloids.
+  JOURNAL   J. Bacteriol. 194 (2012) 2041-9.
+  ORGANISM  Pseudomonas putida
+  SEQUENCE  [up:H9N289]
+PATHWAY     ec00232  Caffeine metabolism
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+            ec01120  Microbial metabolism in diverse environments
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.178
+            IUBMB Enzyme Nomenclature: 1.14.13.178
+            ExPASy - ENZYME nomenclature database: 1.14.13.178
+            BRENDA, the Enzyme Database: 1.14.13.178
+///

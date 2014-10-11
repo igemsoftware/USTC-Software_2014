@@ -1,0 +1,104 @@
+ENTRY       EC 1.7.1.4                  Enzyme
+NAME        nitrite reductase [NAD(P)H];
+            nitrite reductase (reduced nicotinamide adenine dinucleotide (phosphate));
+            assimilatory nitrite reductase (ambiguous);
+            nitrite reductase [NAD(P)H2];
+            NAD(P)H2:nitrite oxidoreductase;
+            nit-6 (gene name)
+CLASS       Oxidoreductases;
+            Acting on other nitrogenous compounds as donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     ammonia:NAD(P)+ oxidoreductase
+REACTION    ammonia + 3 NAD(P)+ + 2 H2O = nitrite + 3 NAD(P)H + 5 H+ [RN:R00787 R00789]
+ALL_REAC    R00787 R00789
+SUBSTRATE   ammonia [CPD:C00014];
+            NAD+ [CPD:C00003];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001]
+PRODUCT     nitrite [CPD:C00088];
+            NADH [CPD:C00004];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080]
+COMMENT     An iron-sulfur flavoprotein (FAD) containing siroheme. The enzymes from the fungi Neurospora crassa [1], Emericella nidulans [2] and Candida nitratophila [4] and the bacterium Aliivibrio fischeri [3] can use either NADPH or NADH as electron donor. cf. EC 1.7.1.15, nitrite reductase (NADH).
+HISTORY     EC 1.7.1.4 created 1961 as EC 1.6.6.4, transferred 2002 to EC 1.7.1.4, modified 2013
+REFERENCE   1
+  AUTHORS   Nicholas, D.J.D., Medina, A. and Jones, O.T.G.
+  TITLE     A nitrite reductase from Neurospora crassa.
+  JOURNAL   Biochim. Biophys. Acta 37 (1960) 468-476.
+REFERENCE   2  [PMID:4382427]
+  AUTHORS   Pateman JA, Rever BM, Cove DJ
+  TITLE     Genetic and biochemical studies of nitrate reduction in Aspergillus nidulans.
+  JOURNAL   Biochem. J. 104 (1967) 103-11.
+REFERENCE   3  [PMID:4401695]
+  AUTHORS   Prakash OM, Sadana JC
+  TITLE     Purification, characterization and properties of nitrite reductase of Achromobacter fischeri.
+  JOURNAL   Arch. Biochem. Biophys. 148 (1972) 614-32.
+REFERENCE   4
+  AUTHORS   Rivas, J., Guerrero, M. G., Paneque, A. and Losada, M.
+  TITLE     Characterization of the nitrate-reducing system of the yeast Torulopsis nitratophila.
+  JOURNAL   Plant Sci. Lett. 1 (1973) 105-113.
+REFERENCE   5  [PMID:4154942]
+  AUTHORS   Lafferty MA, Garrett RH
+  TITLE     Purification and properties of the Neurospora crassa assimilatory nitrite reductase.
+  JOURNAL   J. Biol. Chem. 249 (1974) 7555-67.
+REFERENCE   6  [PMID:126995]
+  AUTHORS   Vega JM, Garrett RH
+  TITLE     Siroheme: a prosthetic group of the Neurospora crassa assimilatory nitrite reductase.
+  JOURNAL   J. Biol. Chem. 250 (1975) 7980-9.
+REFERENCE   7  [PMID:150863]
+  AUTHORS   Greenbaum P, Prodouz KN, Garrett RH
+  TITLE     Preparation and some properties of homogeneous Neurospora crassa assimilatory NADPH-nitrite reductase.
+  JOURNAL   Biochim. Biophys. Acta. 526 (1978) 52-64.
+REFERENCE   8  [PMID:6457037]
+  AUTHORS   Prodouz KN, Garrett RH
+  TITLE     Neurospora crassa NAD(P)H-nitrite reductase. Studies on its composition and structure.
+  JOURNAL   J. Biol. Chem. 256 (1981) 9711-7.
+REFERENCE   9  [PMID:8096840]
+  AUTHORS   Exley GE, Colandene JD, Garrett RH
+  TITLE     Molecular cloning, characterization, and nucleotide sequence of nit-6, the structural gene for nitrite reductase in Neurospora crassa.
+  JOURNAL   J. Bacteriol. 175 (1993) 2379-92.
+  ORGANISM  Neurospora crassa
+  SEQUENCE  [ncr:NCU04720]
+REFERENCE   10 [PMID:8798648]
+  AUTHORS   Colandene JD, Garrett RH.
+  TITLE     Functional dissection and site-directed mutagenesis of the structural gene for NAD(P)H-nitrite reductase in Neurospora crassa.
+  JOURNAL   J. Biol. Chem. 271 (1996) 24096-104.
+  ORGANISM  Neurospora crassa
+PATHWAY     ec00910  Nitrogen metabolism
+ORTHOLOGY   K17877  nitrite reductase (NAD(P)H)
+GENES       DHA: DEHA2G21890g
+            NCR: NCU04720
+            SMP: SMAC_03842
+            PAN: PODANSg3187
+            TTT: THITE_2110175
+            MTM: MYCTH_2306799
+            MGR: MGG_00634
+            FGR: FG08402.1
+            NHE: NECHADRAFT_77775
+            TRE: TRIREDRAFT_69210 TRIREDRAFT_69291
+            VAL: VDBG_08065
+            SSL: SS1G_04479
+            BFU: BC1G_00437
+            ANI: AN1007.2
+            AFM: AFUA_1G12840
+            AOR: AOR_1_1090194(AO090012000624)
+            ANG: ANI_1_804074(An08g05640)
+            AFV: AFLA_018800
+            ACT: ACLA_022630
+            NFI: NFIA_012720
+            PCS: Pc13g11420
+            PNO: SNOG_06023
+            PTE: PTT_08193
+            ZTR: MYCGRDRAFT_76215
+            TML: GSTUM_00010229001
+            LBC: LACBIDRAFT_291348
+            CCI: CC1G_07228
+            UMA: UM03848.1
+            PIF: PITG_13013
+DBLINKS     ExplorEnz - The Enzyme Database: 1.7.1.4
+            IUBMB Enzyme Nomenclature: 1.7.1.4
+            ExPASy - ENZYME nomenclature database: 1.7.1.4
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.7.1.4
+            BRENDA, the Enzyme Database: 1.7.1.4
+            CAS: 9029-29-2
+///

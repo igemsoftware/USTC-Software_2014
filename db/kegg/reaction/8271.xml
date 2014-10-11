@@ -1,0 +1,12 @@
+ENTRY       R08271                      Reaction
+DEFINITION  Tamoxifen + NADPH + Oxygen + H+ <=> alpha-Hydroxytamoxifen + NADP+ + H2O
+EQUATION    C07108 + C00005 + C00007 + C00080 <=> C16544 + C00006 + C00001
+COMMENT     CYP3A4
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP12842  C00007_C16544 leave
+            RP13116  C07108_C16544 main [RC:RC02232]
+ENZYME      1.14.13.-
+PATHWAY     rn00982  Drug metabolism - cytochrome P450
+ORTHOLOGY   K17689  cytochrome P450, family 3, subfamily A, polypeptide 4 [EC:1.14.13.32 1.14.13.67 1.14.13.97 1.14.13.157 1.14.13.-]
+///

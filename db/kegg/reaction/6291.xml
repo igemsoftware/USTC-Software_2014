@@ -1,0 +1,15 @@
+ENTRY       R06291                      Reaction
+NAME        ent-kaur-16-ene,NADPH:oxygen oxidoreductase (hydroxylating)
+DEFINITION  ent-Kaurene + Oxygen + NADPH + H+ <=> Kaur-16-en-18-ol + H2O + NADP+
+EQUATION    C06090 + C00007 + C00005 + C00080 <=> C11872 + C00001 + C00006
+COMMENT     first step of three-step reaction (see R10066, R06291+R06292+R06293)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP09368  C06090_C11872 main [RC:RC00257]
+            RP09698  C00007_C11872 leave
+ENZYME      1.14.13.78
+PATHWAY     rn00904  Diterpenoid biosynthesis
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K04122  ent-kaurene oxidase [EC:1.14.13.78]
+///

@@ -1,0 +1,13 @@
+ENTRY       R02539                      Reaction
+NAME        Phenylacetate:CoA ligase
+DEFINITION  ATP + Phenylacetic acid + CoA <=> AMP + Diphosphate + Phenylacetyl-CoA
+EQUATION    C00002 + C07086 + C00010 <=> C00020 + C00013 + C00582
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00105  C00010_C00582 main [RC:RC00004]
+            RP02286  C00582_C07086 main [RC:RC00014]
+ENZYME      6.2.1.30
+PATHWAY     rn00360  Phenylalanine metabolism
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K01912  phenylacetate-CoA ligase [EC:6.2.1.30]
+///

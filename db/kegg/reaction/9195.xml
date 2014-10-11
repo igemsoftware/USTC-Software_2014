@@ -1,0 +1,16 @@
+ENTRY       R09195                      Reaction
+NAME        malonyl-CoA:L-glutamine amido-ligase (AMP-forming)
+DEFINITION  ATP + Malonyl-CoA + L-Glutamine + H2O <=> AMP + Diphosphate + Malonamoyl-CoA + L-Glutamate
+EQUATION    C00002 + C00083 + C00064 + C00001 <=> C00020 + C00013 + C06625 + C00025
+COMMENT     The substrate of OxyD can be either malonyl-CoA or malonyl-ACP.
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00024  C00025_C00064 main [RC:RC00010]
+            RP05695  C00001_C00025 leave
+            RP14457  C00083_C06625 main [RC:RC00010]
+            RP14458  C00064_C06625 trans
+ENZYME      6.3.5.-
+PATHWAY     rn00253  Tetracycline biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K14244  amidotransferase [EC:6.3.5.-]
+///

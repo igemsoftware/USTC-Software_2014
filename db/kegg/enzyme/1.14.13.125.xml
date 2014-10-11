@@ -1,0 +1,65 @@
+ENTRY       EC 1.14.13.125              Enzyme
+NAME        tryptophan N-monooxygenase;
+            tryptophan N-hydroxylase;
+            CYP79B1;
+            CYP79B2;
+            CYP79B3
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     L-tryptophan,NADPH:oxygen oxidoreductase (N-hydroxylating)
+REACTION    L-tryptophan + 2 O2 + 2 NADPH + 2 H+ = (E)-indol-3-ylacetaldoxime + 2 NADP+ + CO2 + 3 H2O (overall reaction) [RN:R08160];
+            (1a) L-tryptophan + O2 + NADPH + H+ = N-hydroxy-L-tryptophan + NADP+ + H2O [RN:R09583];
+            (1b) N-hydroxy-L-tryptophan + O2 + NADPH + H+ = N,N-dihydroxy-L-tryptophan + NADP+ + H2O [RN:R09584];
+            (1c) N,N-dihydroxy-L-tryptophan = (E)-indol-3-ylacetaldoxime + CO2 + H2O [RN:R09585]
+ALL_REAC    R08160 R09583 R09584 R09585
+SUBSTRATE   L-tryptophan [CPD:C00078];
+            O2 [CPD:C00007];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            N-hydroxy-L-tryptophan [CPD:C19716];
+            N,N-dihydroxy-L-tryptophan [CPD:C19717]
+PRODUCT     (E)-indol-3-ylacetaldoxime [CPD:C02937];
+            NADP+ [CPD:C00006];
+            CO2 [CPD:C00011];
+            H2O [CPD:C00001];
+            N-hydroxy-L-tryptophan [CPD:C19716];
+            N,N-dihydroxy-L-tryptophan [CPD:C19717]
+COMMENT     A heme-thiolate protein (P-450). This enzyme catalyses two successive N-hydroxylations of L-tryptophan, the first steps in the biosynthesis of the both auxin and the indole alkaloid phytoalexin camalexin. The product of the two hydroxylations, N,N-dihydroxy-L-tryptophan, is extremely labile and dehydrates spontaneously.The dehydrated product is then subject to a decarboxylation that produces the oxime. It is still not known whether the decarboxylation is spontaneous or catalysed by the enzyme. The product, (E)-indol-3-ylacetaldoxime, undergoes a spontaneous isomerization to the (Z) form.
+HISTORY     EC 1.14.13.125 created 2011
+REFERENCE   1  [PMID:10922360]
+  AUTHORS   Mikkelsen MD, Hansen CH, Wittstock U, Halkier BA
+  TITLE     Cytochrome P450 CYP79B2 from Arabidopsis catalyzes the conversion of tryptophan to indole-3-acetaldoxime, a precursor of indole glucosinolates and indole-3-acetic acid.
+  JOURNAL   J. Biol. Chem. 275 (2000) 33712-7.
+  ORGANISM  Arabidopsis thaliana
+  SEQUENCE  [ath:AT4G39950]
+REFERENCE   2  [PMID:10681464]
+  AUTHORS   Hull AK, Vij R, Celenza JL
+  TITLE     Arabidopsis cytochrome P450s that catalyze the first step of tryptophan-dependent indole-3-acetic acid biosynthesis.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 97 (2000) 2379-84.
+  ORGANISM  Arabidopsis thaliana
+  SEQUENCE  [ath:AT4G39950 AT2G22330]
+REFERENCE   3  [PMID:12464638]
+  AUTHORS   Zhao Y, Hull AK, Gupta NR, Goss KA, Alonso J, Ecker JR, Normanly J, Chory J, Celenza JL
+  TITLE     Trp-dependent auxin biosynthesis in Arabidopsis: involvement of cytochrome P450s  CYP79B2 and CYP79B3.
+  JOURNAL   Genes. Dev. 16 (2002) 3100-12.
+  ORGANISM  Arabidopsis thaliana
+REFERENCE   4  [PMID:12464264]
+  AUTHORS   Naur P, Hansen CH, Bak S, Hansen BG, Jensen NB, Nielsen HL, Halkier BA
+  TITLE     CYP79B1 from Sinapis alba converts tryptophan to indole-3-acetaldoxime.
+  JOURNAL   Arch. Biochem. Biophys. 409 (2003) 235-41.
+  ORGANISM  Sinapis alba
+PATHWAY     ec00380  Tryptophan metabolism
+            ec00966  Glucosinolate biosynthesis
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K11812  tryptophan N-monooxygenase
+            K11813  tryptophan N-monooxygenase
+GENES       ATH: AT2G22330(CYP79B3) AT4G39950(CYP79B2)
+            ALY: ARALYDRAFT_481097 ARALYDRAFT_490780
+            CRB: CARUB_v10004524mg CARUB_v10025388mg
+            EUS: EUTSA_v10000114mg EUTSA_v10024861mg
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.125
+            IUBMB Enzyme Nomenclature: 1.14.13.125
+            ExPASy - ENZYME nomenclature database: 1.14.13.125
+            BRENDA, the Enzyme Database: 1.14.13.125
+///

@@ -1,0 +1,28 @@
+ENTRY       R00742                      Reaction
+NAME        Acetyl-CoA:carbon-dioxide ligase (ADP-forming)
+DEFINITION  ATP + Acetyl-CoA + HCO3- <=> ADP + Orthophosphate + Malonyl-CoA
+EQUATION    C00002 + C00024 + C00288 <=> C00008 + C00009 + C00083
+COMMENT     two-step reaction (see R04385 + R04386)
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00124  C00024_C00083 main [RC:RC00040]
+            RP01077  C00083_C00288 main [RC:RC00367]
+ENZYME      6.4.1.2
+PATHWAY     rn00253  Tetracycline biosynthesis
+            rn00254  Aflatoxin biosynthesis
+            rn00620  Pyruvate metabolism
+            rn00640  Propanoate metabolism
+            rn00720  Carbon fixation pathways in prokaryotes
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+ORTHOLOGY   K01961  acetyl-CoA carboxylase, biotin carboxylase subunit [EC:6.4.1.2 6.3.4.14]
+            K01962  acetyl-CoA carboxylase carboxyl transferase subunit alpha [EC:6.4.1.2]
+            K01963  acetyl-CoA carboxylase carboxyl transferase subunit beta [EC:6.4.1.2]
+            K01964  acetyl-CoA/propionyl-CoA carboxylase [EC:6.4.1.2 6.4.1.3]
+            K02160  acetyl-CoA carboxylase biotin carboxyl carrier protein
+            K11262  acetyl-CoA carboxylase / biotin carboxylase [EC:6.4.1.2 6.3.4.14]
+            K15036  acetyl-CoA/propionyl-CoA carboxylase [EC:6.4.1.2 6.4.1.3]
+            K15037  biotin carboxyl carrier protein
+///

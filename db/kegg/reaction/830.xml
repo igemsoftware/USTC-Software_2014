@@ -1,0 +1,14 @@
+ENTRY       R00830                      Reaction
+NAME        succinyl-CoA:glycine C-succinyltransferase (decarboxylating)
+DEFINITION  Succinyl-CoA + Glycine <=> 5-Aminolevulinate + CoA + CO2
+EQUATION    C00091 + C00037 <=> C00430 + C00010 + C00011
+RPAIR       RP00035  C00010_C00091 main [RC:RC00004]
+            RP01128  C00037_C00430 main [RC:RC02815]
+            RP05769  C00011_C00037 leave
+            RP06331  C00091_C00430 trans
+ENZYME      2.3.1.37
+PATHWAY     rn00260  Glycine, serine and threonine metabolism
+            rn00860  Porphyrin and chlorophyll metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00643  5-aminolevulinate synthase [EC:2.3.1.37]
+///

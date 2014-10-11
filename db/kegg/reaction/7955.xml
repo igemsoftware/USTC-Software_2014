@@ -1,0 +1,15 @@
+ENTRY       R07955                      Reaction
+NAME        caffeine:oxygen oxidoreductase (N1-demethylating)
+DEFINITION  Caffeine + NADH + H+ + Oxygen <=> Theobromine + NAD+ + Formaldehyde + H2O
+EQUATION    C07481 + C00004 + C00080 + C00007 <=> C07480 + C00003 + C00067 + C00001
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP00502  C00007_C00067 leave
+            RP11716  C07480_C07481 main [RC:RC00334]
+            RP12271  C00067_C07481 main [RC:RC01797]
+ENZYME      1.14.13.178
+PATHWAY     rn00232  Caffeine metabolism
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+            rn01120  Microbial metabolism in diverse environments
+///

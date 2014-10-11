@@ -1,0 +1,12 @@
+ENTRY       R02281                      Reaction
+NAME        Alkane,reduced-rubredoxin:oxygen 1-oxidoreductase
+DEFINITION  Alkane + Reduced rubredoxin + Oxygen <=> Oxidized rubredoxin + Primary alcohol + H2O
+EQUATION    C01371 + C00340 + C00007 <=> C00435 + C00226 + C00001
+COMMENT     general reaction (see R02879)
+            Oxidized rubredoxin is re-reduced by NAD(P)H (see R02000, R02002)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP06933  C00007_C00226 leave
+ENZYME      1.14.15.3
+PATHWAY     rn00071  Fatty acid degradation
+ORTHOLOGY   K00496  alkane 1-monooxygenase [EC:1.14.15.3]
+///

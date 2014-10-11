@@ -1,0 +1,13 @@
+ENTRY       R07836                      Reaction
+DEFINITION  Thiobenzamide + Oxygen + NADPH + H+ <=> Thiobenzamide S-oxide + NADP+ + H2O
+EQUATION    C16281 + C00007 + C00005 + C00080 <=> C16283 + C00006 + C00001
+COMMENT     monooxygenase: EthA
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP10579  C00007_C16283 leave
+            RP12139  C16281_C16283 main [RC:RC02100]
+ENZYME      1.14.13.-
+PATHWAY     rn00627  Aminobenzoate degradation
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K10215  monooxygenase [EC:1.14.13.-]
+///

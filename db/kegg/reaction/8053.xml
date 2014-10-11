@@ -1,0 +1,13 @@
+ENTRY       R08053                      Reaction
+DEFINITION  Isopentenyladenosine-5'-triphosphate + Reduced flavoprotein + Oxygen <=> trans-Zeatin riboside triphosphate + Oxidized flavoprotein + H2O
+EQUATION    C16424 + C03024 + C00007 <=> C16428 + C03161 + C00001
+COMMENT     CYP735A
+            P-450 reductase (ec 1.6.2.4) is the flavoprotein and re-reduced by NADPH (see R08551)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP10480  C00007_C16428 leave
+            RP12213  C16424_C16428 main [RC:RC01137]
+PATHWAY     rn00908  Zeatin biosynthesis
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K10717  cytokinin trans-hydroxylase
+///

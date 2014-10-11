@@ -1,0 +1,12 @@
+ENTRY       R02986                      Reaction
+NAME        2-furoate:CoA ligase (AMP-forming)
+DEFINITION  ATP + 2-Furoate + CoA <=> AMP + Diphosphate + 2-Furoyl-CoA
+EQUATION    C00002 + C01546 + C00010 <=> C00020 + C00013 + C00845
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP02662  C00010_C00845 main [RC:RC00004]
+            RP02663  C00845_C01546 main [RC:RC00174]
+ENZYME      6.2.1.31
+PATHWAY     rn00365  Furfural degradation
+ORTHOLOGY   K16876  2-furoate---CoA ligase [EC:6.2.1.31]
+///

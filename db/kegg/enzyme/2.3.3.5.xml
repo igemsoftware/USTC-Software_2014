@@ -1,0 +1,602 @@
+ENTRY       EC 2.3.3.5                  Enzyme
+NAME        2-methylcitrate synthase;
+            2-methylcitrate oxaloacetate-lyase;
+            MCS;
+            methylcitrate synthase;
+            methylcitrate synthetase
+CLASS       Transferases;
+            Acyltransferases;
+            Acyl groups converted into alkyl groups on transfer
+SYSNAME     propanoyl-CoA:oxaloacetate C-propanoyltransferase (thioester-hydrolysing, 1-carboxyethyl-forming)
+REACTION    propanoyl-CoA + H2O + oxaloacetate = (2R,3S)-2-hydroxybutane-1,2,3-tricarboxylate + CoA [RN:R00931]
+ALL_REAC    R00931
+SUBSTRATE   propanoyl-CoA [CPD:C00100];
+            H2O [CPD:C00001];
+            oxaloacetate [CPD:C00036]
+PRODUCT     (2R,3S)-2-hydroxybutane-1,2,3-tricarboxylate [CPD:C02225];
+            CoA [CPD:C00010]
+COMMENT     The enzyme acts on acetyl-CoA, propanoyl-CoA, butanoyl-CoA and pentanoyl-CoA. The relative rate of condensation of acetyl-CoA and oxaloacetate is 140% of that of propanoyl-CoA and oxaloacetate, but the enzyme has been separated from EC 2.3.3.1 citrate (Si)-synthase. Oxaloacetate cannot be replaced by glyoxylate, pyruvate or 2-oxoglutarate.
+HISTORY     EC 2.3.3.5 created 1978 as EC 4.1.3.31, transferred 2002 to EC 2.3.3.5
+REFERENCE   1
+  AUTHORS   Uchiyama, H. and Tabuchi, T.
+  TITLE     Properties of methylcitrate synthase from Candida lipolytica.
+  JOURNAL   Agric. Biol. Chem. 40 (1976) 1411-1418.
+REFERENCE   2  [PMID:9325432]
+  AUTHORS   Textor S, Wendisch VF, De Graaf AA, Muller U, Linder MI, Linder D, Buckel W.
+  TITLE     Propionate oxidation in Escherichia coli: evidence for operation of a methylcitrate cycle in bacteria.
+  JOURNAL   Arch. Microbiol. 168 (1997) 428-36.
+  ORGANISM  Escherichia coli
+  SEQUENCE  [eco:b0333]
+REFERENCE   3  [PMID:10482501]
+  AUTHORS   Horswill AR, Escalante-Semerena JC.
+  TITLE     Salmonella typhimurium LT2 catabolizes propionate via the 2-methylcitric acid cycle.
+  JOURNAL   J. Bacteriol. 181 (1999) 5615-23.
+  ORGANISM  Salmonella typhimurium
+  SEQUENCE  [stm:STM0369]
+REFERENCE   4  [PMID:7707698]
+  AUTHORS   van Rooyen JP, Mienie LJ, Erasmus E, De Wet WJ, Ketting D, Duran M, Wadman SK.
+  TITLE     Identification of the stereoisomeric configurations of methylcitric acid produced by si-citrate synthase and methylcitrate synthase using capillary gas chromatography-mass spectrometry.
+  JOURNAL   J. Inherit. Metab. Dis. 17 (1994) 738-47.
+  ORGANISM  Candida lipolytica
+PATHWAY     ec00640  Propanoate metabolism
+ORTHOLOGY   K01659  2-methylcitrate synthase
+GENES       DDI: DDB_G0287281
+            DPP: DICPUDRAFT_50092
+            TGO: TGME49_063130
+            TET: TTHERM_00537060
+            PTM: GSPATT00014981001
+            ECO: b0333(prpC)
+            ECJ: Y75_p0322(prpC)
+            ECOK: ECMDS42_0255(prpC)
+            ECE: Z0428(prpC)
+            ECS: ECs0386
+            ECF: ECH74115_0404(prpC)
+            ETW: ECSP_0394(prpC)
+            ELX: CDCO157_0374
+            EOJ: ECO26_0370(prpC)
+            EOI: ECO111_0370(prpC)
+            EOH: ECO103_0315(prpC)
+            ECG: E2348C_0292(prpC)
+            EOK: G2583_0443(prpC)
+            ELR: ECO55CA74_02120
+            ECC: c0452(prpC)
+            ECP: ECP_0408
+            ECI: UTI89_C0364(prpC)
+            ECV: APECO1_1656(prpC)
+            ECX: EcHS_A0398(prpC)
+            ECW: EcE24377A_0357(prpC)
+            ECM: EcSMS35_0364(prpC)
+            ECY: ECSE_0357
+            ECR: ECIAI1_0334(prpC)
+            ECQ: ECED1_0365(prpC)
+            ECK: EC55989_0339(prpC)
+            ECT: ECIAI39_0347(prpC)
+            EOC: CE10_0300(prpC)
+            EUM: ECUMN_0376(prpC)
+            ECZ: ECS88_0344(prpC)
+            ELO: EC042_0369(prpC)
+            ELN: NRG857_01630
+            ELH: ETEC_0389
+            ESE: ECSF_0308
+            ESO: O3O_05485
+            ESM: O3M_19795
+            ESL: O3K_19810
+            ECL: EcolC_3292
+            EBR: ECB_00287(prpC)
+            EBD: ECBD_3324
+            EKO: EKO11_3509
+            EKF: KO11_21915(prpC)
+            EAB: ECABU_c04270(prpC)
+            EDH: EcDH1_3273
+            EDJ: ECDH1ME8569_0320(prpC)
+            EIH: ECOK1_0329(prpC)
+            ENA: ECNA114_0320(prpC)
+            ELU: UM146_15620
+            EUN: UMNK88_381
+            ELW: ECW_m0411(prpC)
+            ELL: WFL_02020(prpC)
+            ELC: i14_0436(prpC)
+            ELD: i02_0436(prpC)
+            ELP: P12B_c0350(prpC)
+            EBL: ECD_00287(prpC)
+            EBE: B21_00291(prpC)
+            ELF: LF82_1740(prpC)
+            ECOA: APECO78_05185
+            ECOL: LY180_02055
+            ECOI: ECOPMV1_00339(prpC)
+            ECOJ: P423_01775
+            ECOO: ECRM13514_0518(prpC)
+            EFE: EFER_2659(prpC)
+            STY: STY0401(prpC)
+            STT: t2495(prpC)
+            SEX: STBHUCCB_26440
+            SENT: TY21A_12670
+            STM: STM0369(prpC)
+            SEO: STM14_0432(prpC)
+            SEV: STMMW_04391
+            SEY: SL1344_0364(prpC)
+            SEM: STMDT12_C04310
+            SEJ: STMUK_0375(prpC)
+            SEB: STM474_0384(prpC)
+            SEF: UMN798_0404(prpC)
+            SETU: STU288_12545
+            SETC: CFSAN001921_15200
+            SEEN: SE451236_07855
+            SENR: STMDT2_03651(prpC)
+            SEND: DT104_04131(prpC)
+            SPT: SPA2354(prpC)
+            SEK: SSPA2196
+            SPQ: SPAB_03228
+            SEI: SPC_0379(prpC)
+            SEC: SC0410(prpC)
+            SEH: SeHA_C0463(prpC)
+            SHB: SU5_01061
+            SENH: CFSAN002069_07005
+            SEEH: SEEH1578_11265
+            SEE: SNSL254_A0409(prpC)
+            SENN: SN31241_13650
+            SEW: SeSA_A0421(prpC)
+            SEA: SeAg_B0403(prpC)
+            SENS: Q786_01810
+            SED: SeD_A0401(prpC)
+            SEG: SG0381(prpC)
+            SEL: SPUL_2604(prpC)
+            SEGA: SPUCDC_2590(prpC)
+            SET: SEN0352(prpC)
+            SENJ: CFSAN001992_09350
+            SEEC: CFSAN002050_08435
+            SEEB: SEEB0189_17465
+            SEEP: I137_11850
+            SENB: BN855_3610(SBOV03161)
+            SENE: IA1_01980
+            SES: SARI_02556
+            SBG: SBG_0321(prpC)
+            SBZ: A464_319
+            PLU: plu3541(prpC)
+            PAY: PAU_01235(prpC)
+            ESC: Entcl_1378
+            CKO: CKO_02829
+            CRO: ROD_03951(prpC)
+            CFD: CFNIH1_11730
+            SRR: SerAS9_4249
+            SRS: SerAS12_4250
+            SRA: SerAS13_4250
+            SMW: SMWW4_v1c14450(prpC)
+            XBO: XBJ1_1345(prpC)
+            XNE: XNC1_1229(prpC)
+            PSI: S70_03425
+            EBT: EBL_c21280(prpC)
+            MMK: MU9_2232
+            EBF: D782_1871
+            GAN: UMN179_00523
+            XCC: XCC1032(prpC)
+            XCB: XC_3214
+            XCA: xccb100_3313(prpC)
+            XCP: XCR_1231
+            XCV: XCV1157
+            XAC: XAC1138(prpC)
+            XCI: XCAW_01238(gltA)
+            XAX: XACM_1104
+            XAO: XAC29_05715
+            XOO: XOO0893(prpC)
+            XOM: XOO_0818
+            XOP: PXO_02719
+            XOR: XOC_1187
+            XAL: XALc_0640(prpC)
+            SML: Smlt3609(prpC)
+            SMT: Smal_3029
+            BUJ: BurJV3_3057
+            SMZ: SMD_3181(prpC)
+            PSU: Psesu_2281
+            PSD: DSC_12640
+            RHD: R2APBS1_1547
+            DJI: CH75_12445
+            VCH: VC1337
+            VCE: Vch1786_I0839(prpC)
+            VCJ: VCD_003002
+            VCO: VC0395_A0953(prpC)
+            VCR: VC395_1456(prpC)
+            VCM: VCM66_1292(prpC)
+            VCI: O3Y_06220
+            VVU: VV1_2731
+            VVY: VV1530
+            VVM: VVMO6_01689
+            VPA: VP1647
+            VPB: VPBB_1507
+            VPK: M636_13830
+            VPF: M634_09230
+            VHA: VIBHAR_02396
+            VCA: M892_01435
+            VAG: N646_0712
+            VSP: VS_1344
+            VEX: VEA_003389
+            VEJ: VEJY3_07850
+            VFU: vfu_A01815
+            VNI: VIBNI_A1831(prpC)
+            VAN: VAA_02058
+            LAG: N175_08785
+            PPR: PBPRA1247 PBPRB0236
+            PAE: PA0795(prpC)
+            PAU: PA14_53950(prpC)
+            PAP: PSPA7_4723(prpC)
+            PAG: PLES_45471(prpC)
+            PAF: PAM18_4242(prpC)
+            PNC: NCGM2_1524(prpC)
+            PDK: PADK2_21705
+            PSG: G655_21380
+            PRP: M062_03875
+            PAEP: PA1S_gp4289
+            PAER: PA1R_gp4289
+            PAEM: U769_22180
+            PAEL: T223_23195
+            PAES: SCV20265_4728
+            PAEU: BN889_00825(prpC)
+            PAEG: AI22_11485
+            PPU: PP_2335
+            PPF: Pput_3435
+            PPG: PputGB1_1936
+            PPW: PputW619_1776
+            PPT: PPS_1917 PPS_2392
+            PPB: PPUBIRD1_3351
+            PPI: YSA_01158
+            PPX: T1E_5347(prpC)
+            PPUH: B479_09490
+            PPUT: L483_09435
+            PPUN: PP4_34840(prpC)
+            PPUU: PputUW4_03657(prpC)
+            PST: PSPTO_2288(prpC)
+            PSB: Psyr_2086
+            PSYR: N018_09750 N018_17610
+            PSP: PSPPH_2057(prpC)
+            PCI: PCH70_29940
+            PFL: PFL_1862(prpC)
+            PPRC: PFLCHA0_c18930(prpC1)
+            PFO: Pfl01_1765
+            PFS: PFLU4631
+            PFE: PSF113_4055(prpC)
+            PFC: PflA506_3934(prpC)
+            PPZ: H045_14050
+            PEN: PSEEN1903(prpC)
+            PMY: Pmen_2081
+            PMK: MDS_2639
+            PSA: PST_2035(prpC)
+            PSZ: PSTAB_1935(prpC)
+            PSR: PSTAA_2066(prpC)
+            PSC: A458_10625
+            PSJ: PSJM300_11015
+            PSH: Psest_2320
+            PBA: PSEBR_a3957
+            PFV: Psefu_2540
+            PDR: H681_04115
+            PRE: PCA10_37220(prpC)
+            PSV: PVLB_08385
+            PSK: U771_24080
+            PMON: X969_07545
+            PMOT: X970_07520
+            PKC: PKB_4870(prpC)
+            AVN: Avin_23220(prpC)
+            AVL: AvCA_23220(prpC)
+            AVD: AvCA6_23220(prpC)
+            PAR: Psyc_1111(prpC)
+            PCR: Pcryo_1310
+            PRW: PsycPRwf_1198
+            PSO: PSYCG_06890
+            ACI: ACIAD2756(prpC)
+            ACD: AOLE_19000
+            ABM: ABSDF0092(prpC)
+            ABY: ABAYE3792(prpC)
+            ABC: ACICU_00100
+            ABN: AB57_0123
+            ABB: ABBFA_003438
+            ABX: ABK1_0113
+            ABZ: ABZJ_00106
+            ABR: ABTJ_03735
+            ABD: ABTW07_0108
+            ABH: M3Q_219 M3Q_311
+            ABAD: ABD1_00770(prpC)
+            ABJ: BJAB07104_00115
+            ABAB: BJAB0715_00123
+            ABAJ: BJAB0868_00121
+            ABAZ: P795_16835
+            ACC: BDGL_002999(prpC)
+            SON: SO_0344(prpC)
+            SDN: Sden_1665
+            SFR: Sfri_1858
+            SAZ: Sama_3295
+            SBL: Sbal_4048
+            SBM: Shew185_4022
+            SBN: Sbal195_4141
+            SBP: Sbal223_3946
+            SBT: Sbal678_4175
+            SBS: Sbal117_4205
+            SBB: Sbal175_0363
+            SLO: Shew_1821
+            SPC: Sputcn32_3645
+            SHP: Sput200_3657
+            SSE: Ssed_2112
+            SPL: Spea_2321
+            SHE: Shewmr4_3630
+            SHM: Shewmr7_0314
+            SHN: Shewana3_3826
+            SHW: Sputw3181_3785
+            SHL: Shal_1962
+            SWD: Swoo_2498
+            SWP: swp_2429
+            SVO: SVI_3080(prpC)
+            ILO: IL1426(prpC)
+            ILI: K734_07165
+            CPS: CPS_2821
+            PHA: PSHAa1774(prpC)
+            PAT: Patl_1420
+            PSM: PSM_A1292(prpC)
+            MAQ: Maqu_1665
+            MHC: MARHY1631(prpC)
+            MAD: HP15_1931
+            MBS: MRBBS_2224(prpC)
+            AMC: MADE_1015705
+            AMAC: MASE_14780
+            AMB: AMBAS45_15295
+            AMG: AMEC673_15050
+            AMH: I633_16155
+            AMK: AMBLS11_14565
+            AMAA: amad1_15635
+            AMAL: I607_14925
+            AMAE: I876_15225
+            AMAO: I634_15170
+            AMAD: I636_15030
+            AMAI: I635_15605
+            AMAG: I533_14745
+            ALT: ambt_01725
+            GAG: Glaag_2976
+            GNI: GNIT_3155
+            GPS: C427_2937
+            PIN: Ping_1868
+            FBL: Fbal_3658
+            CBU: CBU_0772(prpC)
+            CBS: COXBURSA331_A1176(prpC)
+            CBD: CBUD_0820(prpC)
+            CBG: CbuG_1229(prpC)
+            CBC: CbuK_0642(prpC)
+            LPN: lpg1530
+            LPU: LPE509_01672
+            LPH: LPV_1662(prpC)
+            LPO: LPO_1543(prpC)
+            LPM: LP6_1508
+            LPF: lpl1496(prpC)
+            LPP: lpp1487(prpC)
+            LPC: LPC_0951(prpC)
+            LPA: lpa_02226(gltA)
+            LPE: lp12_1468
+            LLO: LLO_1556(prpC)
+            CYQ: Q91_0262
+            CZA: CYCME_2405
+            NOC: Noc_2208
+            NHL: Nhal_1207
+            NWA: Nwat_0881
+            ALV: Alvin_0096
+            TVI: Thivi_3241
+            TMB: Thimo_2678
+            AEH: Mlg_2604
+            HHA: Hhal_1071
+            HHC: M911_07945 M911_07950
+            TGR: Tgr7_1508
+            TNI: TVNIR_3341(prpC_[H])
+            SSAL: SPISAL_00390
+            SPIU: SPICUR_04455
+            HCH: HCH_02711
+            CSA: Csal_2420
+            HEL: HELO_1741(prpC)
+            ABO: ABO_1432(prpC)
+            ADI: B5T_02361(prpC)
+            KKO: Kkor_0999
+            MMW: Mmwyl1_0924
+            MPC: Mar181_2887
+            TOL: TOL_1636
+            TOR: R615_09365
+            AHA: AHA_2266
+            AHY: AHML_11605
+            ASA: ASA_2040(prpC)
+            AVR: B565_1982
+            AMED: B224_2927
+            OCE: GU3_08855 GU3_09925
+            NMA: NMA2054(prpC)
+            NME: NMB0431(pprC)
+            NMP: NMBB_0473(prpC)
+            NMH: NMBH4476_0424
+            NMC: NMC1732(prpC)
+            NMN: NMCC_1714(prpC)
+            NMT: NMV_0473(prpC)
+            NMI: NMO_1610(prpC)
+            NMD: NMBG2136_1670
+            NMM: NMBM01240149_1658
+            NMS: NMBM01240355_0439
+            NMQ: NMBM04240196_0438(prpC)
+            NMW: NMAA_1505(prpC)
+            NMZ: NMBNZ0533_1819(prpC)
+            NGO: NGO1525
+            NGK: NGK_1813
+            NGT: NGTW08_1428
+            CVI: CV_2056(prpC)
+            LHK: LHK_02308
+            PSE: NH8B_1569
+            RSO: RSp0121(prpC)
+            RSC: RCFBP_11384(prpC)
+            RSL: RPSI07_1428(prpC) RPSI07_mp0086(prpC)
+            RSN: RSPO_c01436(prpC) RSPO_m00104(prpC)
+            RSM: CMR15_mp10090(prpC)
+            RSE: F504_3572
+            RPI: Rpic_3860
+            RPF: Rpic12D_3974
+            REU: Reut_A1809 Reut_A2329
+            REH: H16_A1906(prpC1) H16_A2636(prpC2)
+            CNC: CNE_1c18850(prpC1) CNE_1c25190(prpC2)
+            RME: Rmet_1586(prpC)
+            CTI: RALTA_A1600(prpC) RALTA_A2135(prpC2)
+            BMA: BMAA1869
+            BMV: BMASAVP1_0878
+            BML: BMA10229_1165
+            BMN: BMA10247_A2142
+            BPS: BPSS0207(prpC)
+            BPM: BURPS1710b_A1737(prpC)
+            BPL: BURPS1106A_A0289(prpC)
+            BPD: BURPS668_A0383(prpC)
+            BPSE: BDL_6099
+            BPSU: BBN_3589
+            BPZ: BP1026B_II0230(prpC)
+            BPQ: BPC006_II0276
+            BPK: BBK_5401
+            BTE: BTH_II2188
+            BTD: BTI_4522
+            BVI: Bcep1808_3679
+            BUR: Bcep18194_B0142
+            BCN: Bcen_5345
+            BCH: Bcen2424_5516
+            BCM: Bcenmc03_4756
+            BCJ: BCAM2702(prpC)
+            BAM: Bamb_4841
+            BAC: BamMC406_5388
+            BMU: Bmul_3288
+            BMJ: BMULJ_05237(prpC)
+            BCT: GEM_5707
+            BXE: Bxe_B2302 Bxe_B2900
+            BPH: Bphy_4355 Bphy_6707
+            BPY: Bphyt_6081 Bphyt_6860
+            BGL: bglu_2g21700
+            BUG: BC1001_4883 BC1001_5155
+            BGE: BC1002_3338 BC1002_5193
+            BGF: BC1003_4324 BC1003_4610
+            BRH: RBRH_00392
+            BGD: bgla_2g28770
+            BYI: BYI23_B009450 BYI23_B011910
+            BUK: MYA_3314
+            BPX: BUPH_05924 BUPH_06418
+            BUO: BRPE64_BCDS03630 BRPE64_BCDS13010
+            PPK: U875_08335
+            PPNO: DA70_01065
+            PRB: X636_01275
+            BPE: BP2368(prpC)
+            BPC: BPTD_2325(prpC)
+            BPER: BN118_2574(prpC)
+            BPA: BPP3234(prpC)
+            BPAR: BN117_3198(prpC)
+            BBR: BB3686(prpC)
+            BBM: BN115_3357(prpC)
+            BBH: BN112_4730(prpC)
+            BPT: Bpet1816(prpC)
+            BAV: BAV1178(prpC)
+            BHO: D560_2383
+            AXY: AXYL_01625(prpC)
+            AXO: NH44784_004541
+            AXN: AX27061_1532
+            PUT: PT7_0414
+            AKA: TKWG_16615 TKWG_19980
+            AMIM: MIM_c13200(prpC1) MIM_c31350(prpC2)
+            CDN: BN940_13156
+            AJS: Ajs_1635
+            DIA: Dtpsy_2079
+            AAA: Acav_2473
+            ACK: C380_12370
+            VEI: Veis_4451
+            DAC: Daci_5862
+            DEL: DelCs14_0737
+            VPE: Varpa_3646
+            VPD: VAPA_1c33530(prpC)
+            CTT: CtCNB1_1269
+            ADN: Alide_1904
+            ADK: Alide2_2103
+            HAR: HEAR3267(prpC)
+            MMS: mma_3488(prpC)
+            HSE: Hsero_3119(prpC)
+            CFU: CFU_3533
+            TIN: Tint_2344
+            THI: THI_2719(prpC)
+            NMU: Nmul_A0866
+            SDR: SCD_n01490
+            MMB: Mmol_0749
+            MEH: M301_0687
+            APP: CAP2UW1_0708
+            SLT: Slit_1189
+            GCA: Galf_0094
+            HHE: HH0398(prpC)
+            HFE: HFELIS_09400
+            HBI: HBZC1_01560
+            HCP: HCN_1558
+            HCB: HCBAA847_1785
+            CCOL: BN865_01470c
+            CCC: G157_07340
+            CCQ: N149_0270
+            ABU: Abu_0277(prpC)
+            ABT: ABED_0260
+            ABL: A7H1H_0280(prpC)
+            ANT: Arnit_2728
+            ARC: ABLL_0422
+            SMUL: SMUL_2197
+            GUR: Gura_0072
+            BBA: Bd2511(cit)
+            RPA: RPA2394(prpC)
+            RPC: RPC_3511
+            RPT: Rpal_2647
+            OCA: OCAR_7075
+            OCG: OCA5_c10230(prpC)
+            OCO: OCA4_c10230(prpC)
+            HDN: Hden_0810
+            RVA: Rvan_1831
+            AEX: Astex_1022
+            RCP: RCAP_rcc03348(prpC)
+            PDE: Pden_1347
+            PAMI: JCM7686_pAMI6p128
+            SWI: Swit_4790
+            ACR: Acry_0621
+            AMV: ACMV_12480(prpC)
+            GXL: H845_1604
+            APT: APA01_03600
+            APW: APA42C_03600
+            APF: APA03_03600
+            APU: APA07_03600
+            APG: APA12_03600
+            APQ: APA22_03600
+            APX: APA26_03600
+            APZ: APA32_03600
+            APK: APA386B_1841(prpC)
+            RRU: Rru_A2319
+            RRF: F11_11925
+            RCE: RC1_3805(prpC)
+            ABS: AZOBR_p270029(prpC)
+            TMO: TMO_2414(prpC)
+            MAI: MICA_868
+            MAN: A11S_785
+            PUB: SAR11_1156(prpC)
+            PJD: Pjdr2_2770
+            DSY: DSY4425
+            CGL: NCgl0630(Cgl0659) NCgl0666(Cgl0696)
+            CGB: cg0762(prpC2)
+            CGT: cgR_0779 cgR_0816
+            CEF: CE0718
+            CJK: jk1665(prpC)
+            CUR: cur_0448
+            CRD: CRES_1755(prpC)
+            CMI: CMM_2371(gltA1)
+            CMS: CMS_2312
+            AAU: AAur_1660(gltA) AAur_pTC20150(gltA)
+            ACH: Achl_1523
+            RSA: RSal33209_0824
+            KRH: KRH_15320(prpC)
+            ACE: Acel_1658
+            KRA: Krad_0109
+            RXY: Rxyl_2401
+            PUV: PUV_22480(prpC-B)
+            WCH: wcw_1475(prpC)
+            MIN: Minf_0334(gltA)
+            ACM: AciX9_2187
+            GMA: AciX8_0338
+            RMR: Rmar_0100
+            SHG: Sph21_4145
+            ATM: ANT_04810(prpC)
+            NDE: NIDE3127(prpC)
+            PTO: PTO0169
+DBLINKS     ExplorEnz - The Enzyme Database: 2.3.3.5
+            IUBMB Enzyme Nomenclature: 2.3.3.5
+            ExPASy - ENZYME nomenclature database: 2.3.3.5
+            BRENDA, the Enzyme Database: 2.3.3.5
+            CAS: 57827-78-8
+///

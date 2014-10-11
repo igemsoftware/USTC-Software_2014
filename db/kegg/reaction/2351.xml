@@ -1,0 +1,16 @@
+ENTRY       R02351                      Reaction
+NAME        19-oxoandrostenedione,reduced-flavoprotein:oxygen oxidoreductase (aromatizing, formate-forming)
+DEFINITION  Estrone + Formate + Oxidized flavoprotein + H2O <=> 19-Oxoandrost-4-ene-3,17-dione + Oxygen + Reduced flavoprotein
+EQUATION    C00468 + C00058 + C03161 + C00001 <=> C05297 + C00007 + C03024
+COMMENT     aromatase, ARO
+            P-450 reductase (ec 1.6.2.4) is the flavoprotein and re-reduced by NADPH (see R08551)
+            following after R04759
+RPAIR       RP00013  C00001_C00007 cofac
+            RP02146  C00468_C05297 main [RC:RC02649]
+            RP05742  C00007_C00058 leave
+            RP06976  C00058_C05297 main [RC:RC01535]
+ENZYME      1.14.14.14
+PATHWAY     rn00140  Steroid hormone biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K07434  aromatase [EC:1.14.14.14]
+///

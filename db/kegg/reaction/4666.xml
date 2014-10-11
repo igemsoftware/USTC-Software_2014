@@ -1,0 +1,13 @@
+ENTRY       R04666                      Reaction
+NAME        3-Ureidoisobutyrate amidohydrolase
+DEFINITION  3-Ureidoisobutyrate + H2O <=> 3-Aminoisobutyric acid + CO2 + Ammonia
+EQUATION    C05100 + C00001 <=> C05145 + C00011 + C00014
+RPAIR       RP04308  C05100_C05145 main [RC:RC00096]
+            RP05682  C00001_C00011 leave
+            RP08248  C00011_C05100 leave
+            RP08249  C00014_C05100 leave
+ENZYME      3.5.1.6
+PATHWAY     rn00240  Pyrimidine metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01431  beta-ureidopropionase [EC:3.5.1.6]
+///

@@ -1,0 +1,13 @@
+ENTRY       R05258                      Reaction
+NAME        4-nitrophenol,NADPH:oxygen 4-oxidoreductase (4-hydroxylating, nitrite-forming)
+DEFINITION  p-Benzoquinone + Nitrite + NADP+ + H2O <=> 4-Nitrophenol + Oxygen + NADPH + H+
+EQUATION    C00472 + C00088 + C00006 + C00001 <=> C00870 + C00007 + C00005 + C00080
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP04857  C00088_C00870 leave
+            RP04858  C00007_C00472 leave
+            RP08553  C00472_C00870 main [RC:RC02677]
+ENZYME      1.14.13.167
+PATHWAY     rn00627  Aminobenzoate degradation
+            rn01120  Microbial metabolism in diverse environments
+///

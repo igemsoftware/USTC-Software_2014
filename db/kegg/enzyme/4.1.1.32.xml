@@ -1,0 +1,779 @@
+ENTRY       EC 4.1.1.32                 Enzyme
+NAME        phosphoenolpyruvate carboxykinase (GTP);
+            phosphoenolpyruvate carboxylase;
+            phosphopyruvate carboxylase;
+            phosphopyruvate (guanosine triphosphate) carboxykinase;
+            phosphoenolpyruvic carboxykinase (GTP);
+            phosphopyruvate carboxylase (GTP);
+            phosphoenolpyruvic carboxylase (GTP);
+            phosphoenolpyruvic carboxykinase;
+            phosphoenolpyruvate carboxykinase;
+            PEP carboxylase;
+            GTP:oxaloacetate carboxy-lyase (transphosphorylating)
+CLASS       Lyases;
+            Carbon-carbon lyases;
+            Carboxy-lyases
+SYSNAME     GTP:oxaloacetate carboxy-lyase (adding GTP; phosphoenolpyruvate-forming)
+REACTION    GTP + oxaloacetate = GDP + phosphoenolpyruvate + CO2 [RN:R00431]
+ALL_REAC    R00431;
+            (other) R00726
+SUBSTRATE   GTP [CPD:C00044];
+            oxaloacetate [CPD:C00036]
+PRODUCT     GDP [CPD:C00035];
+            phosphoenolpyruvate [CPD:C00074];
+            CO2 [CPD:C00011]
+COMMENT     ITP can act as phosphate donor.
+HISTORY     EC 4.1.1.32 created 1961
+REFERENCE   1  [PMID:5911620]
+  AUTHORS   Chang HC, Lane MD.
+  TITLE     The enzymatic carboxylation of phosphoenolpyruvate. II. Purification and properties of liver mitochondrial phosphoenolpyruvate carboxykinase.
+  JOURNAL   J. Biol. Chem. 241 (1966) 2413-20.
+  ORGANISM  Sus scofa
+REFERENCE   2  [PMID:13438893]
+  AUTHORS   KURAHASHI K, PENNINGTON RJ, UTTER MF.
+  TITLE     Nucleotide specificity of oxalacetic carboxylase.
+  JOURNAL   J. Biol. Chem. 226 (1957) 1059-75.
+  ORGANISM  Gallus gallus
+PATHWAY     ec00010  Glycolysis / Gluconeogenesis
+            ec00020  Citrate cycle (TCA cycle)
+            ec00620  Pyruvate metabolism
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K01596  phosphoenolpyruvate carboxykinase (GTP)
+GENES       HSA: 5105(PCK1) 5106(PCK2)
+            PTR: 452807(PCK2) 458362(PCK1)
+            PPS: 100973241(PCK2) 100982462(PCK1)
+            GGO: 101124608(PCK1) 101146244(PCK2)
+            PON: 100172601(PCK2) 100173760(PCK1) 100189820
+            MCC: 696207(PCK1) 714922(PCK2)
+            MCF: 102134909(PCK1) 102135856(PCK2)
+            MMU: 18534(Pck1) 74551(Pck2)
+            RNO: 361042(Pck2) 362282(Pck1)
+            CGE: 100758749 100762618(Pck2)
+            HGL: 101706336(Pck2) 101708730(Pck1)
+            TUP: 102488757(PCK2) 102496619(PCK1)
+            CFA: 403560(PCK1) 480255(PCK2)
+            AML: 100467669(PCK2) 100470754
+            FCA: 101089256(PCK1) 101098874(PCK2)
+            PTG: 102955973(PCK2) 102967618(PCK1)
+            BTA: 282855(PCK1) 282856(PCK2)
+            BOM: 102265930(PCK2) 102271756(PCK1)
+            PHD: 102317840(PCK2) 102340101(PCK1)
+            CHX: 102168742(PCK1) 102179952(PCK2)
+            SSC: 100144531(PCK1) 403165(PCK2)
+            CFR: 102512293(PCK1) 102517725(PCK2)
+            ECB: 100054903(PCK2) 100055710(PCK1)
+            MYB: 102240270 102256852(PCK2) 102262025(PCK1)
+            MYD: 102754608(PCK1) 102771630(PCK2)
+            PALE: 102888528(PCK1) 102897596(PCK2)
+            MDO: 100027540(PCK1) 100030700(PCK2)
+            SHR: 100927720(PCK2) 100933453(PCK1)
+            OAA: 100073969(PCK1) 100088404(PCK2)
+            GGA: 396457(PCK2) 396458(PCK1)
+            MGP: 100549136
+            TGU: 100224850(PCK1)
+            FAB: 101812323(PCK1)
+            PHI: 102105806(PCK1)
+            APLA: 101793637(PCK1)
+            FPG: 101919274(PCK1)
+            FCH: 102052060(PCK1)
+            CLV: 102096352(PCK1)
+            ASN: 102377413(PCK1) 102384985(PCK2)
+            PSS: 102462679(PCK1)
+            CMY: 102934020(PCK1) 102943510(PCK2)
+            ACS: 100553923 100557794
+            XLA: 379637(pck1) 379844(pck1) 399424(pck2)
+            XTR: 394790(pck2) 733907(pck1)
+            DRE: 378727(pck1) 406473(pck2)
+            TRU: 101070903 101071000
+            MZE: 101468054 101482306
+            OLA: 101156403 101158145
+            XMA: 102229513 102237618
+            LCM: 102345191(PCK1) 102354904(PCK2)
+            BFO: BRAFLDRAFT_68589
+            CIN: 100177066(pck1)
+            SPU: 752532(pck1)
+            DME: Dmel_CG10924 Dmel_CG17725(Pepck)
+            DPO: Dpse_GA10647 Dpse_GA14628
+            DAN: Dana_GF11970 Dana_GF11971
+            DER: Dere_GG21903 Dere_GG21904
+            DPE: Dper_GL17082 Dper_GL17083
+            DSE: Dsec_GM21894 Dsec_GM21895
+            DSI: Dsim_GD11391 Dsim_GD11392
+            DWI: Dwil_GK17956 Dwil_GK17957
+            DYA: Dyak_GE11979 Dyak_GE11980
+            DGR: Dgri_GH22961 Dgri_GH22963
+            DMO: Dmoj_GI18449 Dmoj_GI18450
+            DVI: Dvir_GJ21534 Dvir_GJ21535
+            AGA: AgaP_AGAP003350
+            AAG: AaeL_AAEL000006 AaeL_AAEL000025 AaeL_AAEL000080
+            CQU: CpipJ_CPIJ010515 CpipJ_CPIJ010516 CpipJ_CPIJ010518
+            AME: 412843(Pepck)
+            NVI: 100115526
+            TCA: 661705
+            BMOR: 733130
+            API: 100160700
+            PHU: Phum_PHUM368600
+            ISC: IscW_ISCW000524 IscW_ISCW001902 IscW_ISCW001905
+            CEL: CELE_R11A5.4(pck-2) CELE_W05G11.6(pck-1)
+            CBR: CBG00466 CBG08279
+            BMY: Bm1_17155 Bm1_25195
+            LOA: LOAG_01890 LOAG_07217 LOAG_10229
+            TSP: Tsp_07989
+            SMM: Smp_005880
+            NVE: NEMVE_v1g103590 NEMVE_v1g166171
+            HMG: 100199843
+            TAD: TRIADDRAFT_49773
+            AQU: 100634531(Pck1)
+            DDI: DDB_G0271904
+            DPP: DICPUDRAFT_152772
+            DFA: DFA_02056
+            TVA: TVAG_139300 TVAG_213710 TVAG_310250 TVAG_479540
+            GLA: GL50803_10623
+            RHD: R2APBS1_0612
+            DJI: CH75_01280 CH75_24360
+            ACI: ACIAD2842(pckG)
+            ACD: AOLE_03890
+            ACB: A1S_2668
+            ABM: ABSDF0809(pckG)
+            ABY: ABAYE0818(pckG)
+            ABC: ACICU_02913
+            ABN: AB57_3085
+            ABB: ABBFA_000807
+            ABX: ABK1_2967
+            ABZ: ABZJ_03099
+            ABR: ABTJ_00800
+            ABD: ABTW07_3133
+            ABH: M3Q_3144
+            ABAD: ABD1_26210(pckG)
+            ABJ: BJAB07104_03004
+            ABAB: BJAB0715_03043
+            ABAJ: BJAB0868_02888
+            ABAZ: P795_3785
+            ACC: BDGL_002111(pckG)
+            MCT: MCR_1001(pckA)
+            TVI: Thivi_0237
+            HHA: Hhal_1673
+            HHC: M911_08720
+            TNI: TVNIR_0107(pckG_[H])
+            RSO: RSc0017(pckA)
+            RSC: RCFBP_21430(pckG)
+            RSL: RPSI07_3363(pckG)
+            RSN: RSPO_c03347(pckG)
+            RSM: CMR15_30895(pckG)
+            RSE: F504_19
+            RPI: Rpic_3739
+            RPF: Rpic12D_3416
+            REU: Reut_A3420
+            REH: H16_A3711(pepck)
+            CNC: CNE_1c36630
+            RME: Rmet_3577(pckG)
+            CTI: RALTA_A3167(pckG)
+            BMA: BMA3042(pckA)
+            BMV: BMASAVP1_A1250(pckG)
+            BML: BMA10229_A0620(pckG)
+            BMN: BMA10247_0533(pckG)
+            BPS: BPSL1324(pckG)
+            BPM: BURPS1710b_1574
+            BPL: BURPS1106A_1475(pckG)
+            BPD: BURPS668_1446(pckG)
+            BPR: GBP346_A1478
+            BPSE: BDL_693
+            BPSU: BBN_2246
+            BPZ: BP1026B_I2215(pckG)
+            BPQ: BPC006_I1521
+            BPK: BBK_197
+            BTE: BTH_I2808
+            BTD: BTI_2507
+            BVI: Bcep1808_4996
+            BUR: Bcep18194_B1511
+            BCN: Bcen_3922
+            BCH: Bcen2424_4445
+            BCM: Bcenmc03_5861
+            BCJ: BCAM1581(pckG)
+            BAM: Bamb_3877
+            BAC: BamMC406_4337
+            BMU: Bmul_4179
+            BMJ: BMULJ_04326(pckA)
+            BCT: GEM_4146
+            BXE: Bxe_A4422
+            BPH: Bphy_0030
+            BPY: Bphyt_0304
+            BGL: bglu_1g11130
+            BUG: BC1001_0045
+            BGE: BC1002_0020
+            BGF: BC1003_0065
+            BRH: RBRH_01276
+            BGD: bgla_1g13120
+            BYI: BYI23_A000150
+            BUK: MYA_4216
+            BPX: BUPH_03951
+            BUO: BRPE64_ACDS00190
+            PNU: Pnuc_2083
+            PNE: Pnec_1782
+            PPK: U875_22995
+            PPNO: DA70_15670
+            PRB: X636_11185
+            BPA: BPP1368(pckG)
+            BPAR: BN117_2348(pckG)
+            BBR: BB2434(pckG)
+            BBM: BN115_2680(pckG)
+            BBH: BN112_0259(pckG)
+            BPT: Bpet2915(pckA)
+            BAV: BAV1626(pckG)
+            BHO: D560_3776
+            AXY: AXYL_02410(pckG)
+            AXO: NH44784_040201
+            AXN: AX27061_2203
+            AKA: TKWG_22485
+            AMIM: MIM_c36500(pckG)
+            POL: Bpro_0160
+            PNA: Pnap_0102
+            AAV: Aave_0138
+            AJS: Ajs_0078
+            DIA: Dtpsy_0097
+            AAA: Acav_0172
+            ACK: C380_00900
+            DAC: Daci_0114
+            DEL: DelCs14_0116
+            VAP: Vapar_0147
+            VPE: Varpa_0172
+            VPD: VAPA_1c01800(pckG)
+            CTT: CtCNB1_0071
+            ADN: Alide_0112
+            ADK: Alide2_0103
+            RTA: Rta_01270(ppcK)
+            CBX: Cenrod_1021(pckA)
+            MPT: Mpe_A3705
+            HSE: Hsero_4312(pckA)
+            CFU: CFU_4426(pckG)
+            LCH: Lcho_3945
+            RGE: RGE_01070(pckG)
+            EBA: ebA4040(ppcK)
+            AZO: azo0820(pckG)
+            AZA: AZKH_0632(pckA)
+            DAR: Daro_0665
+            TMZ: Tmz1t_1092
+            DSU: Dsui_0131
+            APP: CAP2UW1_0771 CAP2UW1_1298
+            BPRC: D521_2114
+            GSU: GSU3385(pckA)
+            GSK: KN400_3329(pckA)
+            GME: Gmet_2638(pckA)
+            GUR: Gura_0870
+            GLO: Glov_3462
+            GBM: Gbem_0734(pckA)
+            GEO: Geob_1021
+            GEM: GM21_0749
+            GEB: GM18_3618
+            PCA: Pcar_1766(pckA)
+            DPS: DP1093
+            DPR: Despr_3255
+            DOL: Dole_0376
+            DAT: HRM2_41160(pckG)
+            DTO: TOL2_C36440(pckG)
+            ADE: Adeh_3676
+            ACP: A2cp1_3817
+            AFW: Anae109_3803
+            ANK: AnaeK_3734
+            MXA: MXAN_1264(pckG)
+            MFU: LILAB_02405
+            MSD: MYSTI_01286
+            CCX: COCOR_01172(pckG)
+            SUR: STAUR_1890(pckG)
+            SCL: sce3007(pckA1) sce4201(pckG) sce4794(pckA2)
+            SCU: SCE1572_18270 SCE1572_25460
+            DTI: Desti_0357
+            SFU: Sfum_0901
+            HNI: W911_00070
+            PZU: PHZ_c2232
+            BSB: Bresu_1476
+            SWI: Swit_5171
+            RRU: Rru_A3419
+            RRF: F11_17520
+            RPM: RSPPHO_00347
+            MAG: amb0785
+            MGY: MGMSR_1769(pckG)
+            AZL: AZL_000620(pepCK)
+            ALI: AZOLI_2969(pckG)
+            ABS: AZOBR_p430062(pckG)
+            CCE: Ccel_0212
+            CLB: Clo1100_0221
+            CTH: Cthe_2874
+            CTX: Clo1313_0415
+            CCL: Clocl_0992
+            ESR: ES1_23860
+            ESU: EUS_18220
+            CSS: Cst_c10100(pckG)
+            CSD: Clst_0968(pck)
+            RCH: RUM_22700
+            CSC: Csac_0274
+            ATE: Athe_0393
+            COB: COB47_0351
+            CHD: Calhy_2257
+            COW: Calow_0249
+            CKI: Calkr_0337
+            CKN: Calkro_2242
+            MAS: Mahau_2356
+            MTU: Rv0211(pckA)
+            MTV: RVBD_0211
+            MTC: MT0221(pckA)
+            MRA: MRA_0219(pckA)
+            MTF: TBFG_10213
+            MTB: TBMG_00212
+            MTK: TBSG_00214
+            MTZ: TBXG_000213
+            MTG: MRGA327_01335
+            MTE: CCDC5079_0196
+            MTUR: CFBS_0227(pckA)
+            MTL: CCDC5180_0194
+            MTO: MTCTRI2_0215(pckA)
+            MTD: UDA_0211(pckA)
+            MTN: ERDMAN_0238(pckA)
+            MTJ: J112_01155
+            MTUB: MT7199_0215
+            MTUC: J113_01510
+            MTUE: J114_01160
+            MTX: M943_01130
+            MTUH: I917_01520
+            MTUL: TBHG_00211
+            MBO: Mb0217(pckA)
+            MBB: BCG_0248(pckA)
+            MBT: JTY_0217(pckA)
+            MBM: BCGMEX_0217(pckA)
+            MBK: K60_002320
+            MAF: MAF_02120(pckA)
+            MCE: MCAN_02171(pckA)
+            MCQ: BN44_10245
+            MCV: BN43_10239
+            MCX: BN42_10255
+            MCZ: BN45_10233
+            MLE: ML2624(pckA)
+            MLB: MLBr_02624(pckA)
+            MPA: MAP3646(pckA)
+            MAO: MAP4_0128
+            MAV: MAV_4963 MAV_5106
+            MIT: OCO_48880
+            MIR: OCQ_49890
+            MIA: OCU_48820
+            MID: MIP_07395
+            MYO: OEM_49030
+            MSM: MSMEG_0255
+            MSG: MSMEI_0248(pckG)
+            MSA: Mycsm_00143
+            MUL: MUL_1101(pckA)
+            MVA: Mvan_0201
+            MGI: Mflv_0451
+            MSP: Mspyr1_03040
+            MAB: MAB_2561c MAB_4502c
+            MABB: MASS_4523
+            MMV: MYCMA_1380(pckG) MYCMA_2495(pckG)
+            MMC: Mmcs_0176
+            MKM: Mkms_0185
+            MJL: Mjls_0165
+            MJD: JDM601_0174(pckA)
+            MMI: MMAR_0451(pckA)
+            MRH: MycrhN_1529
+            MMM: W7S_24470
+            MCB: Mycch_0190
+            MLI: MULP_00443(pckG)
+            MKN: MKAN_16535
+            MNE: D174_02810
+            ASD: AS9A_4130(pckA)
+            CGL: NCgl2765(Cgl2863)
+            CGB: cg3169(pck)
+            CGU: WA5_2765(Pck)
+            CGT: cgR_2751
+            CGS: C624_14040
+            CGG: C629_14045
+            CGM: cgp_3169(pck)
+            CEF: CE2691(pck)
+            CDI: DIP2180(pckG)
+            CDP: CD241_2066(pck)
+            CDH: CDB402_2040(pck)
+            CDT: CDHC01_2067(pck)
+            CDE: CDHC02_2064(pck)
+            CDR: CDHC03_2063(pck)
+            CDA: CDHC04_2094(pck)
+            CDZ: CD31A_2197(pck)
+            CDB: CDBH8_2151(pck)
+            CDS: CDC7B_2157(pck)
+            CDD: CDCE8392_2079(pck)
+            CDW: CDPW8_2142(pck)
+            CDV: CDVA01_1989(pck)
+            CJK: jk0151(pck)
+            CUR: cur_0173
+            CUA: CU7111_0179(pck)
+            CAR: cauri_2359(pck)
+            CKP: ckrop_0253(pck)
+            CPU: cpfrc_01945(pckA)
+            CPL: Cp3995_1997(pckG)
+            CPG: Cp316_2000(pckG)
+            CPP: CpP54B96_1973(pckG)
+            CPK: Cp1002_1942(pckG)
+            CPQ: CpC231_1936(pckG)
+            CPX: CpI19_1957(pckG)
+            CPZ: CpPAT10_1949(pckG)
+            COR: Cp267_2016(pckG)
+            COP: Cp31_1933(pckG)
+            COD: Cp106_1899(pckG)
+            COS: Cp4202_1936(pckG)
+            COI: CpCIP5297_1970(pckG)
+            COE: Cp258_1960(pckG)
+            COU: Cp162_1918(pckG)
+            CRD: CRES_0553(pck)
+            CUL: CULC22_02177(pckA)
+            CUC: CULC809_02025(pckA)
+            CUE: CULC0102_2169(pckA)
+            CVA: CVAR_0267(pck)
+            CHN: A605_12990
+            CCN: H924_12030
+            CTER: A606_01115
+            CMD: B841_11915
+            CAZ: CARG_09150
+            CFN: CFAL_00935
+            CCG: CCASEI_13075
+            CVT: B843_11970
+            CGY: CGLY_14985(pck)
+            NFA: nfa54790(pckA)
+            NCY: NOCYR_5342(pckA)
+            NBR: O3I_018000 O3I_040785
+            NNO: NONO_c31000(pck1) NONO_c74450(pck2)
+            RHA: RHA1_ro05180
+            RER: RER_10900(pckG)
+            REY: O5Y_04925
+            ROP: ROP_52300(pckG)
+            ROA: Pd630_LPD01702
+            REQ: REQ_41280(pckA)
+            RPY: Y013_11615
+            GBR: Gbro_4475
+            GPO: GPOL_c05710(pckG)
+            GOR: KTR9_4320
+            TPR: Tpau_0372
+            SRT: Srot_2829
+            SCO: SCO4979(2SCK36.02)
+            SMA: SAV_3287(pck)
+            SGR: SGR_2556
+            SCB: SCAB_34111
+            SSX: SACTE_4224
+            SVL: Strvi_1283
+            SCT: SCAT_3865(pckG)
+            SCY: SCATT_38510
+            SFA: Sfla_2284
+            SBH: SBI_04261
+            SHY: SHJG_6080
+            SHO: SHJGH_5842
+            SVE: SVEN_4658
+            SDV: BN159_3419(pckG)
+            SALB: XNR_4062
+            STRP: F750_4521
+            SFI: SFUL_4776
+            SCI: B446_23320
+            SRC: M271_19085
+            SALU: DC74_5161
+            KSK: KSE_47630(pckG)
+            LXX: Lxx04240(pckG)
+            LXY: O159_04360
+            CMI: CMM_1473(pckA)
+            CMS: CMS_1507(pckG)
+            CMC: CMN_01450(pckG)
+            MTS: MTES_0639(pckG)
+            ART: Arth_0667
+            AAU: AAur_0832
+            ACH: Achl_0814
+            AAI: AARI_05030(pckG)
+            APN: Asphe3_07200
+            ARR: ARUE_c07830(pckG)
+            RSA: RSal33209_0029
+            KRH: KRH_03260(pckG)
+            MLU: Mlut_03380
+            RMU: RMDY18_17460
+            RDN: HMPREF0733_11249(pckA)
+            BCV: Bcav_3601
+            XCE: Xcel_0386
+            IVA: Isova_0528
+            SKE: Sked_06760
+            CFL: Cfla_0476
+            CFI: Celf_0124
+            CGA: Celgi_0626
+            ICA: Intca_0310
+            PPC: HMPREF9154_0889
+            NCA: Noca_0190 Noca_4168 Noca_4472
+            KFL: Kfla_0279
+            TFU: Tfu_0083
+            NDA: Ndas_4143
+            NAL: B005_1293(pckG)
+            TCU: Tcur_2819
+            SRO: Sros_8530
+            FRA: Francci3_3897
+            FRE: Franean1_0833 Franean1_4382
+            FRI: FraEuI1c_0673
+            FAL: FRAAL6204(pckG)
+            FSY: FsymDg_0785
+            NML: Namu_5314
+            GOB: Gobs_4876
+            BSD: BLASA_4736(pckG)
+            MMAR: MODMU_2911(pckG) MODMU_5267(pckG)
+            KRA: Krad_3537
+            SEN: SACE_7274(pckA)
+            SVI: Svir_39080
+            TBI: Tbis_3094
+            AMD: AMED_9253(pckA)
+            AMN: RAM_47455
+            AMM: AMES_9115(pckA)
+            AMZ: B737_9116(pckA)
+            AOI: AORI_7998(pckA)
+            PDX: Psed_6619
+            AMI: Amir_6994
+            SESP: BN6_84020(pckG)
+            KAL: KALB_5455 KALB_8718
+            STP: Strop_0861
+            SAQ: Sare_0807
+            MAU: Micau_0854
+            MIL: ML5_1097
+            VMA: VAB18032_08965
+            AMS: AMIS_74370
+            ASE: ACPL_7711(pckG)
+            ACTN: L083_7470(pckG)
+            AFS: AFR_39290
+            CAI: Caci_0734
+            SNA: Snas_0731
+            AHE: Arch_0200
+            MCU: HMPREF0573_10801(pckG)
+            TPY: CQ11_04785 CQ11_08810
+            CWO: Cwoe_4211
+            AFO: Afer_0693
+            AYM: YM304_18480(pckG)
+            CTR: CT_710(pckA)
+            CTD: CTDEC_0710(pckA)
+            CTF: CTDLC_0710(pckA)
+            CTRD: SOTOND1_00757
+            CTRO: SOTOND5_00755
+            CTRT: SOTOND6_00755
+            CTA: CTA_0772(pckA)
+            CTY: CTR_7141(pckA)
+            CRA: CTO_0772
+            CTRQ: A363_00764
+            CTRX: A5291_00763
+            CTRZ: A7249_00762
+            CTRP: L11322_00751
+            CTLJ: L1115_00751
+            CTLX: L1224_00751
+            CTLL: L1440_00754
+            CTB: CTL0079(pckA)
+            CTRR: L225667R_00752
+            CTLF: CTLFINAL_00420
+            CTLI: CTLINITIAL_00420
+            CTL: CTLon_0079(pckA)
+            CTRU: L2BUCH2_00750
+            CTRL: L2BLST_00750
+            CTRV: L2BCV204_00750
+            CTRM: L2BAMS1_00750
+            CTLA: L2BAMS2_00750
+            CTLM: L2BAMS3_00750
+            CTLS: L2BAMS4_00750
+            CTLZ: L2BAMS5_00751
+            CTLC: L2BCAN1_00752
+            CTLN: L2BCAN2_00751
+            CTLB: L2B795_00750
+            CTLQ: L2B8200_00750
+            CTO: CTL2C_958
+            CTRN: L3404_00750
+            CTJ: JALI_7151(pckA)
+            CTZ: CTB_7151(pckA)
+            CTG: E11023_03745
+            CTK: E150_03780
+            CSW: SW2_7221(pckA)
+            CES: ESW3_7221(pckA)
+            CTRB: BOUR_00759
+            CTRE: SOTONE4_00754
+            CTRS: SOTONE8_00761
+            CFS: FSW4_7221(pckA)
+            CFW: FSW5_7221(pckA)
+            CTRF: SOTONF3_00755
+            CTCH: O173_03940
+            CTN: G11074_03755
+            CTQ: G11222_03780
+            CTV: CTG9301_03770
+            CTW: G9768_03760
+            CTRG: SOTONG1_00756
+            CTRI: BN197_7201(pckA)
+            CTRA: BN442_7201(pckA)
+            CTRH: SOTONIA1_00758
+            CTRJ: SOTONIA3_00758
+            CTRK: SOTONK1_00755
+            CTJT: CTJTET1_03800
+            CTCF: CTRC69_03785
+            CTFS: CTRC342_03820
+            CTHF: CTRC852_03840
+            CTCJ: CTRC943_03750
+            CTHJ: CTRC953_03745
+            CTMJ: CTRC966_03755
+            CTTJ: CTRC971_03760
+            CTJS: CTRC122_03805
+            CTRC: CTRC55_03760
+            CTRW: CTRC3_03790
+            CTRY: CTRC46_03760
+            CTCT: CTW3_03965
+            CMU: TC_0083(pckA)
+            CPN: CPn0851(pckA)
+            CPA: CP1018
+            CPJ: CPj0851(pckA)
+            CPT: CpB0880
+            CLP: CPK_ORF00257
+            CPM: G5S_0191
+            CPEC: CPE3_0875(pckA)
+            CPEO: CPE1_0874(pckA)
+            CPER: CPE2_0875(pckA)
+            CHP: CPSIT_0970
+            CHB: G5O_0963
+            CHS: CPS0A_0993
+            CHI: CPS0B_0979
+            CHT: CPS0D_0988
+            CHC: CPS0C_0988
+            CHR: Cpsi_9011
+            CPSC: B711_1044
+            CPSN: B712_0983
+            CPSB: B595_1049 B595_1050
+            CPSG: B598_0981
+            CPSM: B602_0984 B602_0985
+            CPSI: B599_0980 B599_0981
+            CPSV: B600_1043
+            CPSW: B603_0987 B603_0988
+            CPST: B601_0988
+            CPSD: BN356_9051
+            CPSA: AO9_04705
+            CAV: M832_06960(pckG)
+            CCA: CCA00916(pckA)
+            CAB: CAB884
+            CFE: CF0098(pckA)
+            PCU: pc1371(pckG)
+            PUV: PUV_10590(pckG)
+            WCH: wcw_1593(pck)
+            SNG: SNE_A19550(pckG)
+            OTE: Oter_0718
+            CAA: Caka_0740
+            AMU: Amuc_1210
+            TPA: TP0122
+            TPW: TPANIC_0122(pckG)
+            TPP: TPASS_0122(pckA)
+            TPU: TPADAL_0122(pckG)
+            TPH: TPChic_0122
+            TPO: TPAMA_0122(pckG)
+            TPC: TPECDC2_0122(pckG)
+            TPG: TPEGAU_0122(pckG)
+            TPM: TPESAMD_0122(pckG)
+            TPB: TPFB_0122(pckG)
+            TSU: Tresu_2076
+            TBE: Trebr_2102
+            TAZ: TREAZ_1312
+            TPI: TREPR_3050
+            TPL: TPCCA_0122(pckG)
+            SCD: Spica_2387
+            SSM: Spirs_4022
+            STA: STHERM_c21600
+            STQ: Spith_2203
+            SBU: SpiBuddy_2721
+            SCC: Spico_1316
+            SGP: SpiGrapes_2231 SpiGrapes_2322
+            TPX: Turpa_2824
+            BHY: BHWA1_01100
+            BRM: Bmur_2479
+            BPO: BP951000_2020
+            BPJ: B2904_orf1815
+            BPIP: BPP43_05050
+            BPW: WESB_0921
+            BIP: Bint_2124
+            ABA: Acid345_0537
+            ACM: AciX9_2691
+            GMA: AciX8_0596
+            TSA: AciPR4_0804
+            TRS: Terro_4338
+            FSU: Fisuc_2949
+            FSC: FSU_0213(pckG)
+            RSD: TGRD_334
+            SCN: Solca_2779
+            HHY: Halhy_2322
+            CTE: CT2232(pckA)
+            CPC: Cpar_0047
+            CCH: Cag_2012
+            CPH: Cpha266_0051
+            CPB: Cphamn1_0033
+            CLI: Clim_0031
+            PVI: Cvib_0027
+            PLT: Plut_0023
+            PPH: Ppha_0050
+            PAA: Paes_0052
+            CTS: Ctha_1390
+            RRS: RoseRS_2496
+            RCA: Rcas_2846
+            CAU: Caur_2331
+            CAG: Cagg_3060
+            CHL: Chy400_2513
+            HAU: Haur_0429
+            CAP: CLDAP_06210(pckG)
+            MRB: Mrub_2799
+            MRE: K649_08530
+            MSV: Mesil_0621
+            CEX: CSE_06720(pckG)
+            MOX: DAMO_2938(pckG)
+            TAC: Ta0123
+            TVO: TVN0200
+            FAC: FACI_IFERC01G0126
+            PHO: PH0312
+            PAB: PAB1253
+            PFU: PF0289
+            PFI: PFC_00510
+            PYN: PNA2_0930
+            PYA: PYCH_14070
+            PYS: Py04_0438
+            TKO: TK1405
+            TON: TON_0192
+            TGA: TGAM_1771(pckG)
+            TSI: TSIB_0151
+            TBA: TERMP_00208
+            THE: GQS_03810
+            THA: TAM4_1562
+            THM: CL1_0413
+            TLT: OCC_11542
+            THS: TES1_0296
+            TNU: BD01_0027
+            ABI: Aboo_0887
+            ACF: AciM339_0120
+            DKA: DKAM_1379
+            DMU: Desmu_0004
+            DFD: Desfe_0003
+            TAG: Tagg_0003
+            THG: TCELL_1080
+            HBU: Hbut_1445
+            SSO: SSO2537
+            SOL: Ssol_0343
+            STO: ST1058
+            SAI: Saci_1100
+            SACN: SacN8_05350
+            SACR: SacRon12I_05340
+            SACS: SUSAZ_05130
+            SIS: LS215_0433
+            SIA: M1425_0395
+            SIM: M1627_0409
+            SID: M164_0433
+            SIY: YG5714_0393
+            SIN: YN1551_2639
+            SII: LD85_0424
+            SIH: SiH_0993
+            SIR: SiRe_0398
+            SIC: SiL_0427
+            MSE: Msed_1452
+            MCN: Mcup_0741
+            CMA: Cmaq_0716
+            VDI: Vdis_0741
+            VMO: VMUT_1588
+            TPE: Tpen_1532
+            THB: N186_08925
+DBLINKS     ExplorEnz - The Enzyme Database: 4.1.1.32
+            IUBMB Enzyme Nomenclature: 4.1.1.32
+            ExPASy - ENZYME nomenclature database: 4.1.1.32
+            BRENDA, the Enzyme Database: 4.1.1.32
+            CAS: 9013-08-5
+///

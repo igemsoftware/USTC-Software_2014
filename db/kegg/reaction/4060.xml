@@ -1,0 +1,14 @@
+ENTRY       R04060                      Reaction
+NAME        anhydrotetracycline,NADPH:oxygen oxidoreductase (6-hydroxylating)
+DEFINITION  Anhydrotetracycline + Oxygen + NADPH + H+ <=> 5a,11a-Dehydrotetracycline + NADP+ + H2O
+EQUATION    C02811 + C00007 + C00005 + C00080 <=> C03206 + C00006 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP03686  C02811_C03206 main [RC:RC01062]
+            RP07879  C00007_C03206 leave
+ENZYME      1.14.13.38
+PATHWAY     rn00253  Tetracycline biosynthesis
+            rn01057  Biosynthesis of type II polyketide products
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K14256  anhydrotetracycline monooxygenase [EC:1.14.13.38]
+///

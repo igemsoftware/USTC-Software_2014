@@ -1,0 +1,12 @@
+ENTRY       R08327                      Reaction
+DEFINITION  Valproic acid + NADPH + H+ + Oxygen <=> 3-Hydroxyvalproic acid + NADP+ + H2O
+EQUATION    C07185 + C00005 + C00080 + C00007 <=> C16651 + C00006 + C00001
+COMMENT     CYP2A6
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP12853  C00007_C16651 leave
+            RP13123  C07185_C16651 main [RC:RC00773]
+ENZYME      1.14.13.-
+PATHWAY     rn00982  Drug metabolism - cytochrome P450
+ORTHOLOGY   K17683  cytochrome P450, family 2, subfamily A, polypeptide 6 [EC:1.14.13.-]
+///

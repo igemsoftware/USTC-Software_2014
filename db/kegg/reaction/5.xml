@@ -1,0 +1,22 @@
+ENTRY       R00005                      Reaction
+NAME        urea-1-carboxylate amidohydrolase
+DEFINITION  Urea-1-carboxylate + H2O <=> 2 CO2 + 2 Ammonia
+EQUATION    C01010 + C00001 <=> 2 C00011 + 2 C00014
+COMMENT     The yeast enzyme (but not that from green algae) also catalyses the 
+            reaction of EC 6.3.4.6 urea carboxylase, thus bringing about the 
+            hydrolysis of urea to CO2 and NH3 in the presence of ATP and 
+            bicarbonate.
+            R00774 (6.3.4.6)
+RPAIR       RP05682  C00001_C00011 leave
+            RP07361  C00011_C01010 main [RC:RC02756]
+            RP07385  C00014_C01010 leave
+            RP13530  C00011_C01010 leave
+            RP13531  C00014_C01010 leave
+ENZYME      3.5.1.54
+PATHWAY     rn00330  Arginine and proline metabolism
+            rn00791  Atrazine degradation
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K01457  allophanate hydrolase [EC:3.5.1.54]
+            K14541  urea carboxylase / allophanate hydrolase [EC:6.3.4.6 3.5.1.54]
+///

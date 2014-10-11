@@ -1,0 +1,14 @@
+ENTRY       R08862                      Reaction
+NAME        methylcobalamin:2-hydroxyethylphosphonate C-methyltransferase
+DEFINITION  2-Hydroxyethylphosphonate + Methylcobalamin + S-Adenosyl-L-methionine + H+ + e- <=> (S)-2-Hydroxypropylphosphonate + Cob(II)alamin + 5'-Deoxyadenosine + L-Methionine
+EQUATION    C06451 + C06453 + C00019 + C00080 + C05359 <=> C06452 + C00541 + C05198 + C00073
+COMMENT     HEP C-methyltransferase
+            radical SAM
+RPAIR       RP03934  C00019_C00073 cofac [RC:RC00021]
+            RP04346  C00019_C05198 cofac
+            RP11664  C06452_C06453 trans
+            RP14053  C06451_C06452 main [RC:RC02370]
+            RP14054  C00541_C06453 main [RC:RC01144]
+PATHWAY     rn00440  Phosphonate and phosphinate metabolism
+ORTHOLOGY   K12902  phosphonoacetaldehyde methylase
+///

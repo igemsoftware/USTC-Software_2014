@@ -1,0 +1,14 @@
+ENTRY       R08211                      Reaction
+NAME        betaine aldehyde:oxygen oxidoreductase
+DEFINITION  Betaine aldehyde + Oxygen + H2O <=> Betaine + Hydrogen peroxide
+EQUATION    C00576 + C00007 + C00001 <=> C00719 + C00027
+COMMENT     second step of two-step reaction (see R08212, R01022+R08211)
+            following after R01022
+RPAIR       RP00006  C00007_C00027 cofac [RC:RC02755]
+            RP00218  C00576_C00719 main [RC:RC00080]
+            RP05816  C00001_C00719 leave
+ENZYME      1.1.3.17
+PATHWAY     rn00260  Glycine, serine and threonine metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K17755  choline oxidase [EC:1.1.3.17]
+///

@@ -1,0 +1,116 @@
+ENTRY       EC 2.3.1.85                 Enzyme
+NAME        fatty-acid synthase;
+            FASN (gene name)
+CLASS       Transferases;
+            Acyltransferases;
+            Transferring groups other than aminoacyl groups
+SYSNAME     acyl-CoA:malonyl-CoA C-acyltransferase (decarboxylating, oxoacyl- and enoyl-reducing and thioester-hydrolysing)
+REACTION    acetyl-CoA + n malonyl-CoA + 2n NADPH + 2n H+ = a long-chain fatty acid + (n+1) CoA + n CO2 + 2n NADP+ [RN:R05188]
+ALL_REAC    R05188;
+            (other) R01624 R01626 R01706 R04355 R04533 R04534 R04535 R04536 R04537 R04543 R04544 R04566 R04568 R04725 R04726 R04952 R04953 R04954 R04956 R04957 R04959 R04960 R04962 R04963 R04964 R04965 R04967 R04968 R04970
+SUBSTRATE   acetyl-CoA [CPD:C00024];
+            malonyl-CoA [CPD:C00083];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080]
+PRODUCT     long-chain fatty acid [CPD:C00638];
+            CoA [CPD:C00010];
+            CO2 [CPD:C00011];
+            NADP+ [CPD:C00006]
+COMMENT     The animal enzyme is a multi-functional protein catalysing the reactions of EC 2.3.1.38 [acyl-carrier-protein] S-acetyltransferase, EC 2.3.1.39 [acyl-carrier-protein] S-malonyltransferase, EC 2.3.1.41 3-oxoacyl-[acyl-carrier-protein] synthase, EC 1.1.1.100 3-oxoacyl-[acyl-carrier-protein] reductase, EC 4.2.1.59 3-hydroxyacyl-[acyl-carrier-protein] dehydratase, EC 1.3.1.39 enoyl-[acyl-carrier-protein] reductase (NADPH, Re-specific) and EC 3.1.2.14 oleoyl-[acyl-carrier-protein] hydrolase. cf. EC 2.3.1.86, fatty-acyl-CoA synthase.
+HISTORY     EC 2.3.1.85 created 1984
+REFERENCE   1  [PMID:457689]
+  AUTHORS   Stoops JK, Ross P, Arslanian MJ, Aune KC, Wakil SJ, Oliver RM.
+  TITLE     Physicochemical studies of the rat liver and adipose fatty acid synthetases.
+  JOURNAL   J. Biol. Chem. 254 (1979) 7418-26.
+  ORGANISM  Rattus norvegicus
+REFERENCE   2  [PMID:6137188]
+  AUTHORS   Wakil SJ, Stoops JK, Joshi VC.
+  TITLE     Fatty acid synthesis and its regulation.
+  JOURNAL   Annu. Rev. Biochem. 52 (1983) 537-79.
+PATHWAY     ec00061  Fatty acid biosynthesis
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00665  fatty acid synthase, animal type
+GENES       HSA: 2194(FASN)
+            PTR: 454986(FASN)
+            PPS: 100985873(FASN)
+            GGO: 101151060(FASN)
+            PON: 100456558(FASN)
+            MCC: 715708(FASN)
+            MCF: 102119674(FASN)
+            MMU: 14104(Fasn)
+            RNO: 50671(Fasn)
+            CGE: 100689207(Fasn)
+            HGL: 101698314(Fasn)
+            TUP: 102481635(FASN)
+            CFA: 483378(FASN)
+            AML: 100468470
+            FCA: 100270775(FASN)
+            PTG: 102956933(FASN)
+            BTA: 281152(FASN)
+            BOM: 102278267(FASN)
+            PHD: 102336161(FASN)
+            CHX: 100861286(FASN)
+            SSC: 397561(FASN)
+            CFR: 102509439(FASN)
+            ECB: 100057311(FASN)
+            MYB: 102251003(FASN)
+            MYD: 102761714(FASN)
+            PALE: 102887167(FASN)
+            MDO: 100025176(FASN)
+            SHR: 100924144(FASN)
+            GGA: 396061(FASN)
+            MGP: 100542651
+            TGU: 100226957(FASN)
+            FAB: 101820764(FASN)
+            PHI: 102102393(FASN)
+            APLA: 101796973(FASN)
+            FPG: 101924649(FASN)
+            FCH: 102046127(FASN)
+            CLV: 102086015(FASN)
+            ASN: 102384493(FASN)
+            PSS: 102458578(FASN)
+            CMY: 102933656(FASN)
+            ACS: 100563002
+            XTR: 100487052(fasn)
+            DRE: 335859(fasn) 559001
+            TRU: 101069108
+            MZE: 101485706
+            OLA: 101171365
+            XMA: 102232393
+            LCM: 102352909(FASN)
+            CIN: 100181277
+            DME: Dmel_CG17374 Dmel_CG3523 Dmel_CG3524(v(2)k05816)
+            DPO: Dpse_GA17497 Dpse_GA17498 Dpse_GA26263
+            DAN: Dana_GF14400 Dana_GF14401
+            DER: Dere_GG24919 Dere_GG24920
+            DPE: Dper_GL12292 Dper_GL18554
+            DSE: Dsec_GM18393
+            DSI: Dsim_GD23207
+            DWI: Dwil_GK12914 Dwil_GK18430 Dwil_GK18431
+            DYA: Dyak_GE18209 Dyak_GE18210
+            DGR: Dgri_GH10962 Dgri_GH10963 Dgri_GH20680
+            DMO: Dmoj_GI10509 Dmoj_GI10520 Dmoj_GI23207
+            DVI: Dvir_GJ21725 Dvir_GJ21736 Dvir_GJ22868
+            AGA: AgaP_AGAP001899 AgaP_AGAP008468 AgaP_AGAP009176
+            AAG: AaeL_AAEL001194 AaeL_AAEL002204 AaeL_AAEL002228 AaeL_AAEL002237 AaeL_AAEL008160
+            CQU: CpipJ_CPIJ003494 CpipJ_CPIJ003495 CpipJ_CPIJ005595 CpipJ_CPIJ008367
+            AME: 411959(GB16883) 412815(GB12198)
+            NVI: 100121447 100122083 100122099
+            TCA: 658024 658944 658978 659016 659179 660113 660178 662899
+            BMOR: 101742625 101743735 693037 693038
+            API: 100158855 100158857 100159146 100160015 100160920 100162692 100163154 100164777 100166426 100166618 100167255 100168893
+            PHU: Phum_PHUM080440 Phum_PHUM448390 Phum_PHUM565830
+            ISC: IscW_ISCW009053 IscW_ISCW014149
+            CEL: CELE_F32H2.5(fasn-1)
+            CBR: CBG12408(Cbr-fasn-1)
+            BMY: Bm1_35180
+            LOA: LOAG_05695 LOAG_12856 LOAG_12875
+            TSP: Tsp_06638
+            TAD: TRIADDRAFT_31339 TRIADDRAFT_34034 TRIADDRAFT_34041
+            CSL: COCSUDRAFT_42572 COCSUDRAFT_44339 COCSUDRAFT_47508 COCSUDRAFT_49000 COCSUDRAFT_58178 COCSUDRAFT_58179 COCSUDRAFT_58181
+DBLINKS     ExplorEnz - The Enzyme Database: 2.3.1.85
+            IUBMB Enzyme Nomenclature: 2.3.1.85
+            ExPASy - ENZYME nomenclature database: 2.3.1.85
+            BRENDA, the Enzyme Database: 2.3.1.85
+            CAS: 9045-77-6
+///

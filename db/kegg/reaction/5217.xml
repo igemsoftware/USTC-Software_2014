@@ -1,0 +1,14 @@
+ENTRY       R05217                      Reaction
+NAME        precorrin-3A,NADH:oxygen oxidoreductase (20-hydroxylating)
+DEFINITION  Precorrin 3A + Oxygen + NADH + H+ <=> Precorrin 3B + NAD+ + H2O
+EQUATION    C05772 + C00007 + C00004 + C00080 <=> C06406 + C00003 + C00001
+COMMENT     oxidoreduction, CobG, [Fe-S]
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP08528  C00007_C06406 leave
+            RP11603  C05772_C06406 main [RC:RC01979]
+ENZYME      1.14.13.83
+PATHWAY     rn00860  Porphyrin and chlorophyll metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K02229  precorrin-3B synthase [EC:1.14.13.83]
+///

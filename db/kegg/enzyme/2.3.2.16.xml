@@ -1,0 +1,94 @@
+ENTRY       EC 2.3.2.16                 Enzyme
+NAME        lipid II:glycine glycyltransferase;
+            N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine-diphosphoundecaprenyl-N-acetylglucosamine:N6-glycine transferase;
+            femX (gene name);
+            alanyl-D-alanine-diphospho-ditrans,octacis-undecaprenyl-N-acetylglucosamine:glycine N6-glycyltransferase
+CLASS       Transferases;
+            Acyltransferases;
+            Aminoacyltransferases
+SYSNAME     MurNAc-L-Ala-D-isoglutaminyl-L-Lys-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc:glycine N6-glycyltransferase
+REACTION    MurNAc-L-Ala-D-isoglutaminyl-L-Lys-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc + glycyl-tRNAGly = MurNAc-L-Ala-D-isoglutaminyl-L-Lys-(N6-Gly)-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc + tRNAGly [RN:R08776]
+ALL_REAC    R08776
+SUBSTRATE   MurNAc-L-Ala-D-isoglutaminyl-L-Lys-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc;
+            glycyl-tRNA(Gly) [CPD:C02412]
+PRODUCT     MurNAc-L-Ala-D-isoglutaminyl-L-Lys-(N6-Gly)-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc;
+            tRNA(Gly) [CPD:C01642]
+COMMENT     The enzyme from Staphylococcus aureus catalyses the transfer of glycine from a charged tRNA to MurNAc-L-Ala-D-isoglutaminyl-L-Lys-D-Ala-D-Ala-diphosphoundecaprenyl-GlcNAc (lipid II), attaching it to the N6 of the L-Lys at position 3 of the pentapeptide. This is the first step in the synthesis of the pentaglycine interpeptide bridge that is used in S. aureus for the crosslinking of different glycan strands to each other. Four additional Gly residues are subsequently attached by EC 2.3.2.17 (N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-(N6-glycyl)-D-alanyl-D-alanine-diphosphoundecaprenyl-N-acetylglucosamine:glycine glycyltransferase) and EC 2.3.2.18 (N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-(N6-triglycine)-D-alanyl-D-alanine-diphosphoundecaprenyl-N-acetylglucosamine:glycine glycyltransferase).
+HISTORY     EC 2.3.2.16 created 2010
+REFERENCE   1  [PMID:15228543]
+  AUTHORS   Schneider T, Senn MM, Berger-Bachi B, Tossi A, Sahl HG, Wiedemann I
+  TITLE     In vitro assembly of a complete, pentaglycine interpeptide bridge containing cell wall precursor (lipid II-Gly5) of Staphylococcus aureus.
+  JOURNAL   Mol. Microbiol. 53 (2004) 675-85.
+  ORGANISM  Staphylococcus aureus
+  SEQUENCE  [sao:SAOUHSC_02527]
+PATHWAY     ec00550  Peptidoglycan biosynthesis
+            ec01100  Metabolic pathways
+ORTHOLOGY   K11693  peptidoglycan pentaglycine glycine transferase (the first glycine)
+GENES       SAU: SA2057(fmhB)
+            SAV: SAV2262(fmhB)
+            SAW: SAHV_2246(fmhB)
+            SAH: SaurJH1_2329
+            SAJ: SaurJH9_2288
+            SAM: MW2180(fmhB)
+            SAS: SAS2152
+            SAR: SAR2346(fmhB)
+            SAC: SACOL2253(femX)
+            SAX: USA300HOU_2244(fmhB)
+            SAA: SAUSA300_2214
+            SAO: SAOUHSC_02527
+            SAE: NWMN_2163(fmhB)
+            SAD: SAAV_2326(femX)
+            SUU: M013TW_2220
+            SUV: SAVC_10175
+            SUH: SAMSHR1132_20870
+            SUE: SAOV_2300c
+            SUJ: SAA6159_02168(fmhB)
+            SUK: SAA6008_02299(fmhB)
+            SUC: ECTR2_2124
+            SUT: SAT0131_02437(ctaA)
+            SUQ: HMPREF0772_10937(femX)
+            SUZ: MS7_2282(femX)
+            SUD: ST398NM01_2314
+            SUX: SAEMRSA15_21600(fmhB)
+            SUW: SATW20_23950(fmhB)
+            SUG: SAPIG2314
+            SUF: SARLGA251_20470(fmhB)
+            SAUA: SAAG_00090
+            SAUE: RSAU_002097(femX)
+            SAUN: SAKOR_02225
+            SAUS: SA40_2008(fmhB)
+            SAUU: SA957_2092(fmhB)
+            SAUZ: SAZ172_2361(fmhB)
+            SAB: SAB2134c(fmhB)
+            SUY: SA2981_2200(fmhB)
+            SAUB: C248_2299(fmhB)
+            SAUM: BN843_23000
+            SAUC: CA347_2342(femX)
+            SAUR: SABB_01408(femX)
+            SEP: SE1835
+            SER: SERP1844(femX)
+            SHA: SH0790(fmtB)
+            SSP: SSP0651
+            SCA: Sca_1750(fmhB)
+            SLG: SLGD_00762
+            SLN: SLUG_07600(fmhB)
+            SSD: SPSINT_1923
+            SDT: SPSE_0559(femX)
+            SWA: A284_03255
+            SPAS: STP1_0738(femX)
+            ESI: Exig_1829
+            EAT: EAT1b_2964
+            EAN: Eab7_1680
+            EXM: U719_10375
+            MCL: MCCL_0176
+            PLV: ERIC2_c17540(femX)
+            AUR: HMPREF9243_0081(femX)
+            ASM: MOUSESFB_0039
+            ASB: RATSFB_0040
+            FMA: FMG_0801
+            CLO: HMPREF0868_0028
+DBLINKS     ExplorEnz - The Enzyme Database: 2.3.2.16
+            IUBMB Enzyme Nomenclature: 2.3.2.16
+            ExPASy - ENZYME nomenclature database: 2.3.2.16
+            BRENDA, the Enzyme Database: 2.3.2.16
+///

@@ -1,0 +1,69 @@
+ENTRY       EC 1.7.1.14                 Enzyme
+NAME        nitric oxide reductase [NAD(P)+, nitrous oxide-forming];
+            fungal nitric oxide reductase;
+            cytochrome P450nor;
+            NOR (ambiguous)
+CLASS       Oxidoreductases;
+            Acting on other nitrogenous compounds as donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     nitrous oxide:NAD(P) oxidoreductase
+REACTION    N2O + NAD(P)+ + H2O = 2 NO + NAD(P)H + H+ [RN:R02492 R09446]
+ALL_REAC    R02492 R09446;
+            (other) R09808 R09809
+SUBSTRATE   N2O [CPD:C00887];
+            NAD+ [CPD:C00003];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001]
+PRODUCT     NO [CPD:C00533];
+            NADH [CPD:C00004];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080]
+COMMENT     A heme-thiolate protein (P-450). The enzyme from Fusarium oxysporum utilizes only NADH, but the isozyme from Trichosporon cutaneum utilizes both NADH and NADPH. The electron transfer from NAD(P)H to heme occurs directly, not requiring flavin or other redox cofactors.
+HISTORY     EC 1.7.1.14 created 2011
+REFERENCE   1  [PMID:2040619]
+  AUTHORS   Shoun H, Tanimoto T
+  TITLE     Denitrification by the fungus Fusarium oxysporum and involvement of cytochrome P-450 in the respiratory nitrite reduction.
+  JOURNAL   J. Biol. Chem. 266 (1991) 11078-82.
+  ORGANISM  Fusarium oxysporum
+  SEQUENCE  [up:P23295]
+REFERENCE   2  [PMID:7829493]
+  AUTHORS   Shiro Y, Fujii M, Iizuka T, Adachi S, Tsukamoto K, Nakahara K, Shoun H
+  TITLE     Spectroscopic and kinetic studies on reaction of cytochrome P450nor with nitric oxide. Implication for its nitric oxide reduction mechanism.
+  JOURNAL   J. Biol. Chem. 270 (1995) 1617-23.
+  ORGANISM  Fusarium oxysporum
+  SEQUENCE  [up:P23295]
+REFERENCE   3  [PMID:12105197]
+  AUTHORS   Zhang L, Kudo T, Takaya N, Shoun H
+  TITLE     The B' helix determines cytochrome P450nor specificity for the electron donors NADH and NADPH.
+  JOURNAL   J. Biol. Chem. 277 (2002) 33842-7.
+  ORGANISM  Fusarium oxysporum
+  SEQUENCE  [up:P23295]
+REFERENCE   4  [PMID:15313618]
+  AUTHORS   Oshima R, Fushinobu S, Su F, Zhang L, Takaya N, Shoun H
+  TITLE     Structural evidence for direct hydride transfer from NADH to cytochrome P450nor.
+  JOURNAL   J. Mol. Biol. 342 (2004) 207-17.
+  ORGANISM  Fusarium oxysporum
+  SEQUENCE  [up:P23295]
+PATHWAY     ec00910  Nitrogen metabolism
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K15877  fungal nitric oxide reductase
+GENES       CRE: CHLREDRAFT_196664(CYP55B1)
+            NCR: NCU06137
+            SMP: SMAC_06378
+            PAN: PODANSg1411
+            TTT: THITE_2117644
+            NHE: NECHADRAFT_41997 NECHADRAFT_89386 NECHADRAFT_97205
+            SSL: SS1G_00406
+            AOR: AOR_1_94124(AO090166000070)
+            ANG: ANI_1_2092064(An07g08930)
+            AFV: AFLA_001010
+            PBL: PAAG_02515
+            URE: UREG_06342
+            ABE: ARB_00546
+            TVE: TRV_00378
+            AJE: HCAG_02570
+DBLINKS     ExplorEnz - The Enzyme Database: 1.7.1.14
+            IUBMB Enzyme Nomenclature: 1.7.1.14
+            ExPASy - ENZYME nomenclature database: 1.7.1.14
+            BRENDA, the Enzyme Database: 1.7.1.14
+///

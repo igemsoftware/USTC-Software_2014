@@ -1,0 +1,16 @@
+ENTRY       R09190                      Reaction
+DEFINITION  6-Methylpretetramide + 2 NADPH + 2 H+ + 2 Oxygen <=> 4-Keto-anhydrotetracycline + 2 NADP+ + 2 H2O
+EQUATION    C06629 + 2 C00005 + 2 C00080 + 2 C00007 <=> C06627 + 2 C00006 + 2 C00001
+COMMENT     two-step reaction (see R05463+R05462)
+            dioxygenase, OxyL
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP14098  C00007_C06627 leave
+            RP14448  C06627_C06629 main [RC:RC02460]
+            RP14449  C00007_C06627 leave
+ENZYME      1.14.-.-
+PATHWAY     rn00253  Tetracycline biosynthesis
+            rn01057  Biosynthesis of type II polyketide products
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K14252  NADPH-dependent dioxygenase [EC:1.14.-.-]
+///

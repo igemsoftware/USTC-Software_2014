@@ -1,0 +1,11 @@
+ENTRY       R08522                      Reaction
+DEFINITION  [Thyroglobulin]-3,5-diiodo-L-tyrosine + [Thyroglobulin]-3-iodo-L-tyrosine + Hydrogen peroxide <=> Thyroglobulin triiodothyronine + Thyroglobulin dehydroalanine + 2 H2O
+EQUATION    C16731 + C16732 + C00027 <=> C16730 + C16734 + 2 C00001
+COMMENT     thyroid peroxidase, TPO
+            following after R08520 and R08521
+RPAIR       RP00130  C00001_C00027 cofac
+            RP12720  C16730_C16731 main [RC:RC00878]
+            RP12721  C16732_C16734 main [RC:RC02138]
+            RP12722  C16730_C16732 trans
+ENZYME      1.11.1.8
+///

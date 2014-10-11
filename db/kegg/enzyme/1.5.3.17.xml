@@ -1,0 +1,101 @@
+ENTRY       EC 1.5.3.17                 Enzyme
+NAME        non-specific polyamine oxidase;
+            polyamine oxidase (ambiguous);
+            Fms1;
+            AtPAO3
+CLASS       Oxidoreductases;
+            Acting on the CH-NH group of donors;
+            With oxygen as acceptor
+SYSNAME     polyamine:oxygen oxidoreductase (3-aminopropanal or 3-acetamidopropanal-forming)
+REACTION    (1) spermine + O2 + H2O = spermidine + 3-aminopropanal + H2O2 [RN:R09076];
+            (2) spermidine + O2 + H2O = putrescine + 3-aminopropanal + H2O2 [RN:R09077];
+            (3) N1-acetylspermine + O2 + H2O = spermidine + 3-acetamidopropanal + H2O2 [RN:R03899];
+            (4) N1-acetylspermidine + O2 + H2O = putrescine + 3-acetamidopropanal + H2O2 [RN:R09074]
+ALL_REAC    R03899 R09074 R09076 R09077
+SUBSTRATE   spermine [CPD:C00750];
+            O2 [CPD:C00007];
+            H2O [CPD:C00001];
+            spermidine [CPD:C00315];
+            N1-acetylspermine [CPD:C02567];
+            N1-acetylspermidine [CPD:C00612]
+PRODUCT     spermidine [CPD:C00315];
+            3-aminopropanal [CPD:C05665];
+            H2O2 [CPD:C00027];
+            putrescine [CPD:C00134];
+            3-acetamidopropanal [CPD:C18170]
+COMMENT     A flavoprotein (FAD). The non-specific polyamine oxidases may differ from each other considerably. The enzyme from Saccharomyces cerevisiae shows a rather broad specificity and also oxidizes N8-acetylspermidine [3]. The enzyme from Ascaris suum shows high activity with spermine and spermidine, but also oxidizes norspermine [2]. The enzyme from Arabidopsis thaliana shows high activity with spermidine, but also oxidizes other polyamines [1].
+            The specific polyamine oxidases are classified as EC 1.5.3.13 (N1-acetylpolyamine oxidase), EC 1.5.3.14 (polyamine oxidase (propane-1,3-diamine-forming)), EC 1.5.3.15 (N8-acetylspermidine oxidase (propane-1,3-diamine-forming)) and EC 1.5.3.16 (spermine oxidase).
+HISTORY     EC 1.5.3.17 created 2009
+REFERENCE   1  [PMID:18583528]
+  AUTHORS   Moschou PN, Sanmartin M, Andriopoulou AH, Rojo E, Sanchez-Serrano JJ, Roubelakis-Angelakis KA
+  TITLE     Bridging the gap between plant and mammalian polyamine catabolism: a novel peroxisomal polyamine oxidase responsible for a full back-conversion pathway in Arabidopsis.
+  JOURNAL   Plant. Physiol. 147 (2008) 1845-57.
+  ORGANISM  Arabidopsis thaliana
+  SEQUENCE  [ath:AT3G59050]
+REFERENCE   2  [PMID:1567380]
+  AUTHORS   Muller S, Walter RD
+  TITLE     Purification and characterization of polyamine oxidase from Ascaris suum.
+  JOURNAL   Biochem. J. 283 ( Pt 1) (1992) 75-80.
+REFERENCE   3  [PMID:12670477]
+  AUTHORS   Landry J, Sternglanz R
+  TITLE     Yeast Fms1 is a FAD-utilizing polyamine oxidase.
+  JOURNAL   Biochem. Biophys. Res. Commun. 303 (2003) 771-6.
+  ORGANISM  Saccharomyces cerevisiae
+  SEQUENCE  [sce:YMR020W]
+PATHWAY     ec00330  Arginine and proline metabolism
+            ec00410  beta-Alanine metabolism
+ORTHOLOGY   K13367  polyamine oxidase
+            K17839  polyamine oxidase
+GENES       ATH: AT1G65840(PAO4) AT2G43020(PAO2) AT3G59050(PAO3)
+            ALY: ARALYDRAFT_483403 ARALYDRAFT_486367 ARALYDRAFT_894198
+            CRB: CARUB_v10019588mg CARUB_v10020181mg CARUB_v10023090mg
+            EUS: EUTSA_v10005954mg EUTSA_v10016573mg EUTSA_v10018447mg
+            CIT: 102624788 102625282 102627867
+            CIC: CICLE_v10011567mg CICLE_v10031239mg
+            TCC: TCM_001909
+            GMX: 100782576 100785056 100790521 100791090 100798561 100799631 100806878 100811255
+            MTR: MTR_3g064370 MTR_5g090300
+            CAM: 101488772 101489745 101514322
+            FVE: 101293234 101293991
+            CSV: 101205765 101213852
+            RCU: RCOM_0536450 RCOM_0763470
+            POP: POPTR_0002s05620g(POPTRDRAFT_1071346) POPTR_0004s07430g(POPTRDRAFT_817951) POPTR_0005s22880g(POPTRDRAFT_831582) POPTR_0017s01520g
+            VVI: 100245491 100250153 100853688
+            SLY: 101252005 101258232 101260014 101264170
+            SOT: 102591553 102594410 102598184 102605222
+            OSA: 4337046 4337360
+            DOSA: Os04t0623300-01(Os04g0623300) Os04t0671200-01(Os04g0671200) Os04t0671300-01(Os04g0671300)
+            OBR: 102710582 102711526 102711798
+            BDI: 100824039 100840588 100841193
+            SBI: SORBI_06g028970(SORBIDRAFT_06g028970) SORBI_06g032450(SORBIDRAFT_06g032450) SORBI_06g032460(SORBIDRAFT_06g032460)
+            ZMA: 100191603(pco077065) 100384102 100384522(TIDP3366) 101027113
+            SITA: 101753072 101753473 101768863
+            ATR: s00029p00167410(AMTR_s00029p00167410) s00092p00082510(AMTR_s00092p00082510)
+            SMO: SELMODRAFT_22558 SELMODRAFT_22584 SELMODRAFT_270153 SELMODRAFT_271685 SELMODRAFT_439374 SELMODRAFT_440258
+            PPP: PHYPADRAFT_205047 PHYPADRAFT_221086
+            SCE: YMR020W(FMS1)
+            AGO: AGOS_ABR057W
+            ERC: Ecym_4580
+            KLA: KLLA0E07789g
+            LTH: KLTH0D07942g
+            ZRO: ZYRO0E06314g
+            CGR: CAGL0M07612g
+            NCS: NCAS_0A12730(NCAS0A12730)
+            NDI: NDAI_0B01530(NDAI0B01530)
+            TDL: TDEL_0B06550(TDEL0B06550)
+            KAF: KAFR_0A02140(KAFR0A02140)
+            DHA: DEHA2A02552g
+            PIC: PICST_28515(CPB2) PICST_57813
+            PGU: PGUG_01595
+            LEL: LELG_04349
+            CAL: CaO19.12058(FMS1) CaO19.4589(FMS1) CaO19.7323(CBP1)
+            CTP: CTRG_00245 CTRG_05911
+            CDU: CD36_34620(CBP1) CD36_41930
+            COT: CORT_0G01470 CORT_0G01480
+            CLU: CLUG_02138 CLUG_02198
+            ZTR: MYCGRDRAFT_110027
+DBLINKS     ExplorEnz - The Enzyme Database: 1.5.3.17
+            IUBMB Enzyme Nomenclature: 1.5.3.17
+            ExPASy - ENZYME nomenclature database: 1.5.3.17
+            BRENDA, the Enzyme Database: 1.5.3.17
+///

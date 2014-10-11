@@ -1,0 +1,19 @@
+ENTRY       R00199                      Reaction
+NAME        ATP:pyruvate,water phosphotransferase
+DEFINITION  ATP + Pyruvate + H2O <=> AMP + Phosphoenolpyruvate + Orthophosphate
+EQUATION    C00002 + C00022 + C00001 <=> C00020 + C00074 + C00009
+COMMENT     multi-step reaction
+RPAIR       RP00010  C00002_C00009 leave
+            RP00036  C00022_C00074 main [RC:RC00015]
+            RP05676  C00001_C00009 leave
+            RP12346  C00002_C00020 main [RC:RC00002]
+            RP12347  C00002_C00074 trans
+ENZYME      2.7.9.2
+PATHWAY     rn00620  Pyruvate metabolism
+            rn00680  Methane metabolism
+            rn00720  Carbon fixation pathways in prokaryotes
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+ORTHOLOGY   K01007  pyruvate, water dikinase [EC:2.7.9.2]
+///

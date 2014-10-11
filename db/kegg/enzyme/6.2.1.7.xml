@@ -1,0 +1,111 @@
+ENTRY       EC 6.2.1.7                  Enzyme
+NAME        cholate---CoA ligase;
+            BAL;
+            bile acid CoA ligase;
+            bile acid coenzyme A ligase;
+            choloyl-CoA synthetase;
+            choloyl coenzyme A synthetase;
+            cholic thiokinase;
+            cholate thiokinase;
+            cholic acid:CoA ligase;
+            3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl coenzyme A synthetase;
+            3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoate-CoA ligase;
+            3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoate-CoA synthetase;
+            THCA-CoA ligase;
+            3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanate---CoA ligase;
+            3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanate:CoA ligase (AMP-forming);
+            cholyl-CoA synthetase;
+            trihydroxycoprostanoyl-CoA synthetase
+CLASS       Ligases;
+            Forming carbon-sulfur bonds;
+            Acid-thiol ligases
+SYSNAME     cholate:CoA ligase (AMP-forming)
+REACTION    (1) ATP + cholate + CoA = AMP + diphosphate + choloyl-CoA [RN:R02794];
+            (2) ATP + (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oate + CoA = AMP + diphosphate + (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl-CoA [RN:R04580]
+ALL_REAC    R02794 R04580;
+            (other) R04507 R08733 R08738 R08743
+SUBSTRATE   ATP [CPD:C00002];
+            cholate [CPD:C00695];
+            CoA [CPD:C00010];
+            (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oate
+PRODUCT     AMP [CPD:C00020];
+            diphosphate [CPD:C00013];
+            choloyl-CoA [CPD:C01794];
+            (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl-CoA
+COMMENT     Requires Mg2+ for activity. The mammalian enzyme is membrane-bound and catalyses the first step in the conjugation of bile acids with amino acids, converting bile acids into their acyl-CoA thioesters. Chenodeoxycholate, deoxycholate, lithocholate and trihydroxycoprostanoate can also act as substrates [7]. The bacterial enzyme is soluble and participates in an anaerobic bile acid 7 alpha-dehydroxylation pathway [5].
+HISTORY     EC 6.2.1.7 created 1961 (EC 6.2.1.29 created 1992, incorporated 2005), modified 2005
+REFERENCE   1  [PMID:13303991]
+  AUTHORS   ELLIOTT WH.
+  TITLE     The enzymic activation of cholic acid by guinea-pig-liver microsomes.
+  JOURNAL   Biochem. J. 62 (1956) 427-33.
+  ORGANISM  Cavia porcellus
+REFERENCE   2  [PMID:13403911]
+  AUTHORS   ELLIOTT WH.
+  TITLE     The breakdown of adenosine triphosphate accompanying cholic acid activation by guinea-pig liver microsomes.
+  JOURNAL   Biochem. J. 65 (1957) 315-21.
+  ORGANISM  Cavia porcellus
+REFERENCE   3  [PMID:3183523]
+  AUTHORS   Prydz K, Kase BF, Bjorkhem I, Pedersen JI.
+  TITLE     Subcellular localization of 3 alpha, 7 alpha-dihydroxy- and 3 alpha,7 alpha,12 alpha-trihydroxy-5 beta-cholestanoyl-coenzyme A ligase(s) in rat liver.
+  JOURNAL   J. Lipid. Res. 29 (1988) 997-1004.
+  ORGANISM  Rattus norvegicus
+REFERENCE   4  [PMID:2521999]
+  AUTHORS   Schepers L, Casteels M, Verheyden K, Parmentier G, Asselberghs S, Eyssen HJ, Mannaerts GP.
+  TITLE     Subcellular distribution and characteristics of trihydroxycoprostanoyl-CoA synthetase in rat liver.
+  JOURNAL   Biochem. J. 257 (1989) 221-9.
+  ORGANISM  Rattus norvegicus
+REFERENCE   5  [PMID:1551828]
+  AUTHORS   Mallonee DH, Adams JL, Hylemon PB
+  TITLE     The bile acid-inducible baiB gene from Eubacterium sp. strain VPI 12708 encodes a bile acid-coenzyme A ligase.
+  JOURNAL   J. Bacteriol. 174 (1992) 2065-71.
+  ORGANISM  Clostridium scindens
+  SEQUENCE  [up:P19409]
+REFERENCE   6  [PMID:9390170]
+  AUTHORS   Wheeler JB, Shaw DR, Barnes S.
+  TITLE     Purification and characterization of a rat liver bile acid coenzyme A ligase from rat liver microsomes.
+  JOURNAL   Arch. Biochem. Biophys. 348 (1997) 15-24.
+  ORGANISM  Rattus norvegicus
+REFERENCE   7  [PMID:12454267]
+  AUTHORS   Falany CN, Xie X, Wheeler JB, Wang J, Smith M, He D, Barnes S.
+  TITLE     Molecular cloning and expression of rat liver bile acid CoA ligase.
+  JOURNAL   J. Lipid. Res. 43 (2002) 2062-71.
+  ORGANISM  Rattus norvegicus
+  SEQUENCE  [rno:79111]
+PATHWAY     ec00120  Primary bile acid biosynthesis
+            ec01100  Metabolic pathways
+ORTHOLOGY   K08748  solute carrier family 27 (fatty acid transporter), member 5
+GENES       HSA: 10998(SLC27A5)
+            PTR: 456351(SLC27A5)
+            PPS: 100973518(SLC27A5)
+            GGO: 101141402(SLC27A5)
+            PON: 100450572(SLC27A5) 100450937
+            MCC: 713713
+            MCF: 102139611(SLC27A5)
+            MMU: 26459(Slc27a5)
+            RNO: 79111(Slc27a5)
+            CGE: 100765567
+            HGL: 101724180(Slc27a5)
+            TUP: 102483776(SLC27A5)
+            CFA: 484223(SLC27A5) 608675(SLC27A5)
+            AML: 100478693(SLC27A5)
+            FCA: 101086686(SLC27A5)
+            PTG: 102948587(SLC27A5)
+            BTA: 533016(SLC27A5)
+            BOM: 102285844(SLC27A5)
+            PHD: 102331039(SLC27A5)
+            CHX: 102172839(SLC27A5)
+            SSC: 100620603
+            CFR: 102519177(SLC27A5)
+            ECB: 100051678(SLC27A5)
+            MYB: 102261821(SLC27A5)
+            MYD: 102751593(SLC27A5)
+            PALE: 102890200(SLC27A5)
+            MDO: 100029941(SLC27A5)
+            SHR: 100916639
+            OAA: 100090562(SLC27A5)
+DBLINKS     ExplorEnz - The Enzyme Database: 6.2.1.7
+            IUBMB Enzyme Nomenclature: 6.2.1.7
+            ExPASy - ENZYME nomenclature database: 6.2.1.7
+            BRENDA, the Enzyme Database: 6.2.1.7
+            CAS: 9027-90-1
+///

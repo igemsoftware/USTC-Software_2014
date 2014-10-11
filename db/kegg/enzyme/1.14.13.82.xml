@@ -1,0 +1,366 @@
+ENTRY       EC 1.14.13.82               Enzyme
+NAME        vanillate monooxygenase;
+            4-hydroxy-3-methoxybenzoate demethylase;
+            vanillate demethylase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     vanillate:oxygen oxidoreductase (demethylating)
+REACTION    vanillate + O2 + NADH + H+ = 3,4-dihydroxybenzoate + NAD+ + H2O + formaldehyde [RN:R05274]
+ALL_REAC    R05274
+SUBSTRATE   vanillate [CPD:C06672];
+            O2 [CPD:C00007];
+            NADH [CPD:C00004];
+            H+ [CPD:C00080]
+PRODUCT     3,4-dihydroxybenzoate [CPD:C00230];
+            NAD+ [CPD:C00003];
+            H2O [CPD:C00001];
+            formaldehyde [CPD:C00067]
+COMMENT     Forms part of the vanillin degradation pathway in Arthrobacter sp.
+HISTORY     EC 1.14.13.82 created 2000 as EC 1.2.3.12, transferred 2003 to EC 1.14.13.82
+REFERENCE   1  [PMID:3170489]
+  AUTHORS   Brunel F, Davison J.
+  TITLE     Cloning and sequencing of Pseudomonas genes encoding vanillate demethylase.
+  JOURNAL   J. Bacteriol. 170 (1988) 4924-30.
+  ORGANISM  Pseudomonas sp.
+  SEQUENCE  [up:P12609]
+REFERENCE   2  [PMID:9098058]
+  AUTHORS   Priefert H, Rabenhorst J, Steinbuchel A.
+  TITLE     Molecular characterization of genes of Pseudomonas sp. strain HR199 involved in bioconversion of vanillin to protocatechuate.
+  JOURNAL   J. Bacteriol. 179 (1997) 2595-607.
+  ORGANISM  Pseudomonas sp.
+  SEQUENCE  [up:O05616]
+PATHWAY     ec00627  Aminobenzoate degradation
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K03862  vanillate O-demethylase monooxygenase subunit
+            K03863  vanillate O-demethylase ferredoxin subunit
+GENES       EFE: EFER_0801
+            ETA: ETA_33390(vanB) ETA_33400(vanA)
+            EPY: EpC_35460(vanB) EpC_35470(vanA)
+            EPR: EPYR_03813(vanB) EPYR_03814(vanA)
+            EAM: EAMY_3548(vanB) EAMY_3549(vanA)
+            EAY: EAM_3339 EAM_3340
+            EBI: EbC_27100
+            ERJ: EJP617_10300(vanB) EJP617_10310(vanA)
+            SOD: Sant_0963(vanB)
+            ENC: ECL_02669 ECL_02670
+            ENO: ECENHK_07985 ECENHK_07990
+            EEC: EcWSU1_01563(vanB) EcWSU1_01564(vanA)
+            ENL: A3UG_07935 A3UG_07940
+            EAS: Entas_1492 Entas_1493 Entas_2476
+            EAU: DI57_10875 DI57_10880
+            EAE: EAE_02340 EAE_19225 EAE_19230
+            EAR: ST548_p3539 ST548_p7021 ST548_p7022
+            KPN: KPN_01661
+            KPU: KP1_2706 KP1_2707(vanA) KP1_3110
+            KPM: KPHS_25940 KPHS_25950 KPHS_30180
+            KPP: A79E_2214 A79E_2565 A79E_2566
+            KPE: KPK_2298(vanB) KPK_2713 KPK_2715
+            KPO: KPN2242_11200 KPN2242_11205 KPN2242_13135
+            KPR: KPR_2560 KPR_2561 KPR_3076
+            KPJ: N559_2647 N559_2648
+            KPI: D364_08500 D364_08505 D364_10480
+            KVA: Kvar_2242 Kvar_2667 Kvar_2668
+            KOX: KOX_16720 KOX_16725
+            KOE: A225_2191 A225_2192
+            SRL: SOD_c30630(vanB)
+            SRY: M621_16685
+            SERR: Ser39006_4370 Ser39006_4371
+            DZE: Dd1591_3566 Dd1591_3567
+            PAO: Pat9b_0412 Pat9b_5867 Pat9b_5868
+            RAH: Rahaq_1890
+            RAQ: Rahaq2_1936
+            RAA: Q7S_09280
+            ROR: RORB6_03555 RORB6_09735 RORB6_09740 RORB6_23095
+            EBF: D782_1309
+            PSTS: E05_24530 E05_24550 E05_38150
+            XCC: XCC0296(vanB) XCC0297(vanA) XCC0362(pobB) XCC0363(vanA)
+            XCB: XC_0307 XC_0308 XC_0374 XC_0375
+            XCA: xccb100_0322 xccb100_0323 xccb100_0388 xccb100_0389
+            XCP: XCR_4152 XCR_4153 XCR_4213 XCR_4214
+            XCV: XCV0319 XCV0320 XCV0376 XCV0377
+            XAC: XAC0310(vanB) XAC0311(vanA) XAC0362(pobB) XAC0363(vanA)
+            XCI: XCAW_00712(hmp) XCAW_00713(vanA) XCAW_00769(hmp) XCAW_00770(vanA)
+            XAX: XACM_0295 XACM_0296 XACM_0350 XACM_0351
+            XAO: XAC29_01595 XAC29_01600 XAC29_01870 XAC29_01875
+            XOR: XOC_4549 XOC_4550
+            XAL: XALc_3034(vanA) XALc_3036(vanB)
+            PSD: DSC_09845 DSC_09850
+            FAU: Fraau_3037
+            PAE: PA4904(vanA) PA4905(vanB)
+            PAU: PA14_10960 PA14_64800(vanA) PA14_64810(vanB)
+            PAP: PSPA7_5628(vanA) PSPA7_5630(vanB)
+            PAG: PLES_08811 PLES_52901(vanA) PLES_52911(vanB)
+            PAF: PAM18_5015(vanA) PAM18_5016(vanB)
+            PNC: NCGM2_0619(vanB) NCGM2_0620(vanA) NCGM2_5296
+            PDK: PADK2_26010 PADK2_26015
+            PSG: G655_25860 G655_25865
+            PRP: M062_25870 M062_25875
+            PAEP: PA1S_gp2826 PA1S_gp2827
+            PAER: PA1R_gp2826 PA1R_gp2827
+            PAEM: U769_04365 U769_26885 U769_26890
+            PAEL: T223_04305 T223_27080 T223_27085
+            PAES: SCV20265_5564 SCV20265_5565
+            PAEU: BN889_03196(vanA) BN889_03197(vanB) BN889_04545
+            PAEG: AI22_07370 AI22_07375
+            PPU: PP_3736(vanA) PP_3737(vanB)
+            PPF: Pput_2026 Pput_2027
+            PPG: PputGB1_2169 PputGB1_2170 PputGB1_2212
+            PPW: PputW619_2044 PputW619_2045 PputW619_2586 PputW619_3118 PputW619_3119
+            PPB: PPUBIRD1_2025 PPUBIRD1_2026 PPUBIRD1_2545
+            PPI: YSA_09406 YSA_09409
+            PPX: T1E_1716(vanB) T1E_1717(vanA) T1E_5646
+            PPUT: L483_17490 L483_19445 L483_19450
+            PPUN: PP4_20840(vanB) PP4_20850(vanA)
+            PST: PSPTO_2904(vanA) PSPTO_2905(vanB)
+            PSB: Psyr_2708 Psyr_2709
+            PSYR: N018_13720 N018_13725
+            PSP: PSPPH_2474(vanB) PSPPH_2475(vanA)
+            PFL: PFL_3471(vanA) PFL_3472(vanB)
+            PPRC: PFLCHA0_c35050(vanA) PFLCHA0_c35060(vanB)
+            PFS: PFLU3293 PFLU3294
+            PFE: PSF113_2571 PSF113_2801 PSF113_2802
+            PPZ: H045_05720 H045_05725 H045_08850 H045_08995
+            PMK: MDS_4193
+            PBA: PSEBR_a2138 PSEBR_a2139 PSEBR_a2140 PSEBR_a2987 PSEBR_a2988
+            PFV: Psefu_4050 Psefu_4051
+            PDR: H681_21940 H681_21945
+            PRE: PCA10_14790 PCA10_25550 PCA10_25600(vanA) PCA10_25610(vanB) PCA10_25810(vanB) PCA10_25830(vanA) PCA10_51390(vanA) PCA10_51400(vanB) PCA10_p0170
+            PSV: PVLB_10605 PVLB_10610 PVLB_14165
+            PSK: U771_11460 U771_11465 U771_11800 U771_11805
+            PKC: PKB_2668(cbaB) PKB_3281(vanb1) PKB_3630(vanb3)
+            ACI: ACIAD0459 ACIAD0979(vanB) ACIAD0980(vanA)
+            ACD: AOLE_08555 AOLE_13720 AOLE_13725 AOLE_19420
+            ACB: A1S_1115 A1S_1116 A1S_1857 A1S_2971
+            ABM: ABSDF3671
+            ABY: ABAYE1707 ABAYE2623(vanA) ABAYE2624(vanB) ABAYE3884
+            ABC: ACICU_00017 ACICU_01969
+            ABN: AB57_0034 AB57_1199 AB57_1200 AB57_2192
+            ABB: ABBFA_001595 ABBFA_002428 ABBFA_002429 ABBFA_003519
+            ABX: ABK1_0026 ABK1_2437
+            ABZ: ABZJ_00017 ABZJ_02150
+            ABR: ABTJ_01739 ABTJ_03826
+            ABD: ABTW07_0024 ABTW07_2181
+            ABH: M3Q_2317 M3Q_234
+            ABAD: ABD1_18800 ABD1_33870
+            ABJ: BJAB07104_00029 BJAB07104_01770
+            ABAB: BJAB0715_00029 BJAB0715_01305 BJAB0715_01306 BJAB0715_02115
+            ABAJ: BJAB0868_00029 BJAB0868_02108
+            ABAZ: P795_11745 P795_11750 P795_17265 P795_7495
+            ACC: BDGL_000395(vanB) BDGL_000396(vanA) BDGL_001337(vanB) BDGL_002419(vanA)
+            PAT: Patl_0844 Patl_0869
+            TTU: TERTU_1284
+            CSA: Csal_0336 Csal_0343 Csal_0344
+            HEL: HELO_3940(vanA) HELO_3941(vanB)
+            ADI: B5T_01492 B5T_01493 B5T_04413
+            MMW: Mmwyl1_1296 Mmwyl1_1297
+            MME: Marme_1172 Marme_1173 Marme_3614
+            MPC: Mar181_1322 Mar181_2608 Mar181_2609
+            RSO: RSp0222(vanA) RSp0223(vanB)
+            RSL: RPSI07_mp0173(vanA) RPSI07_mp0174
+            RSN: RSPO_m00210(vanA) RSPO_m00211(vanB)
+            RSM: CMR15_mp10192(vanA) CMR15_mp10193
+            RSE: F504_3661 F504_3662
+            REU: Reut_B3579 Reut_B4340 Reut_B4341 Reut_B4797 Reut_D6483
+            CNC: CNE_1c00140(vanB) CNE_2c17650 CNE_BB1p08720(vanB1) CNE_BB1p12280(vanA) CNE_BB1p12290(vanB2)
+            RME: Rmet_5517(vanB) Rmet_5546(vanA)
+            BTE: BTH_II0329
+            BVI: Bcep1808_3498 Bcep1808_3499 Bcep1808_4005
+            BUR: Bcep18194_B0418 Bcep18194_B0419 Bcep18194_B0420 Bcep18194_B0787 Bcep18194_C6765 Bcep18194_C7074
+            BCN: Bcen_3123 Bcen_3124
+            BCH: Bcen2424_5243 Bcen2424_5244
+            BCM: Bcenmc03_5028 Bcenmc03_5029
+            BCJ: BCAL1775 BCAM0650 BCAM2436(vanA) BCAM2437(vanB)
+            BAM: Bamb_4329 Bamb_4330 Bamb_4591 Bamb_4592 Bamb_4593
+            BAC: BamMC406_3527 BamMC406_5124 BamMC406_5125 BamMC406_5126 BamMC406_5676
+            BMU: Bmul_3213 Bmul_3214 Bmul_5072
+            BMJ: BMULJ_03444 BMULJ_05311(vanA) BMULJ_05312(vanB)
+            BCT: GEM_3251 GEM_3252 GEM_3253
+            BXE: Bxe_A1100 Bxe_A2111 Bxe_A3542 Bxe_B0057 Bxe_C0406 Bxe_C0803 Bxe_C0999 Bxe_C1009 Bxe_C1389
+            BPH: Bphy_3200 Bphy_4880
+            BPY: Bphyt_2150 Bphyt_4245
+            BGL: bglu_2g01010 bglu_2g14540 bglu_2g14550
+            BUG: BC1001_6041
+            BGE: BC1002_3291 BC1002_3292 BC1002_3597 BC1002_4167 BC1002_4168 BC1002_5118
+            BGF: BC1003_3627 BC1003_3879 BC1003_5009
+            BGD: bgla_1g15350
+            BYI: BYI23_B005980 BYI23_C000250 BYI23_C002460 BYI23_C002830 BYI23_C002840 BYI23_C005390 BYI23_C005410
+            BUK: MYA_3124 MYA_3125 MYA_3686
+            BPX: BUPH_00143 BUPH_02507 BUPH_02514 BUPH_02517 BUPH_06449(vanA) BUPH_06625 BUPH_08136 BUPH_08141
+            BUO: BRPE64_BCDS11120 BRPE64_CCDS02220
+            PPK: U875_05205 U875_22470 U875_22475
+            PPNO: DA70_15150 DA70_15155 DA70_22275
+            PRB: X636_11690 X636_11695
+            BPC: BPTD_3657
+            BPER: BN118_0236
+            BPAR: BN117_3923 BN117_4318(vanB)
+            BBR: BB4317 BB4772(vanB)
+            BBM: BN115_3981 BN115_3998 BN115_4449(vanB)
+            BBH: BN112_3650(vanB) BN112_4100 BN112_4117
+            BPT: Bpet1542
+            BHO: D560_0423
+            AXY: AXYL_00961 AXYL_02987 AXYL_03544 AXYL_04966
+            AXO: NH44784_011681
+            AXN: AX27061_0989 AX27061_3644
+            PUT: PT7_2776
+            AKA: TKWG_05675 TKWG_09275 TKWG_16940
+            AMIM: MIM_c08810 MIM_c12690(vanB) MIM_c32780
+            CDN: BN940_08501 BN940_08506
+            RFR: Rfer_0280 Rfer_0281
+            POL: Bpro_0993 Bpro_0995 Bpro_3385 Bpro_3387
+            PNA: Pnap_2724 Pnap_2725
+            ACK: C380_05235 C380_22780 C380_22785
+            VEI: Veis_1367 Veis_1368 Veis_1370 Veis_1485 Veis_2680
+            DAC: Daci_1352 Daci_1355 Daci_1356
+            DEL: DelCs14_4304 DelCs14_5157 DelCs14_5158 DelCs14_5161
+            VAP: Vapar_1492 Vapar_5693 Vapar_5694 Vapar_6309
+            VPE: Varpa_1648 Varpa_1917 Varpa_1919 Varpa_2589 Varpa_5857
+            VPD: VAPA_1c15840 VAPA_1c22380 VAPA_1c53290 VAPA_2c01940(vanB) VAPA_2c01950(vanA) VAPA_2c07800
+            CTT: CtCNB1_0015 CtCNB1_1837 CtCNB1_4188 CtCNB1_4189 CtCNB1_4192
+            MPT: Mpe_A0963 Mpe_A1001 Mpe_A1003 Mpe_A1004 Mpe_A3671 Mpe_B0554
+            MMS: mma_0227 mma_0889 mma_1222(vanB3) mma_1223(vanA) mma_1673 mma_2506
+            HSE: Hsero_3991(vanB) Hsero_3992(vanA)
+            CFU: CFU_1086(vanA)
+            LCH: Lcho_1334 Lcho_1335
+            RGE: RGE_11670(vanB)
+            AZO: azo1982(vanB2)
+            AZA: AZKH_2283(vanB) AZKH_2553(vanB) AZKH_p0314
+            MXA: MXAN_1610 MXAN_7205
+            MFU: LILAB_00680 LILAB_10335
+            MSD: MYSTI_01735 MYSTI_07842
+            CCX: COCOR_00182(hmp)
+            SUR: STAUR_0769(jerP)
+            MCI: Mesci_2599
+            SFD: USDA257_c19930(ophA)
+            EAD: OV14_a1787
+            AGR: AGROH133_08645(vanA)
+            RLU: RLEG12_00380
+            RIR: BN877_p0351
+            BJA: bll5527 blr2390(vanA) blr2392 blr3399
+            BJU: BJ6T_62500 BJ6T_74440 BJ6T_74460
+            BRA: BRADO1851(vanB) BRADO1867 BRADO1869
+            BBT: BBta_2173(vanB) BBta_2184 BBta_2186 BBta_3234
+            BRS: S23_56160 S23_56180(vanA)
+            AOL: S58_56880 S58_56900 S58_57020
+            RPA: RPA3619(vanA) RPA3621(vanB)
+            RPB: RPB_0127 RPB_1906 RPB_1908
+            RPT: Rpal_4139 Rpal_4141
+            RPX: Rpdx1_1728 Rpdx1_1730
+            SNO: Snov_0237
+            MRD: Mrad2831_5925
+            MET: M446_4832
+            MNO: Mnod_7104 Mnod_7105
+            HMC: HYPMC_3444(vanB)
+            MSC: BN69_2686
+            CCR: CC_2393 CC_2394
+            CCS: CCNA_02476(vanA) CCNA_02477(vanB)
+            CAK: Caul_1137 Caul_1139 Caul_3246
+            CSE: Cseg_2340 Cseg_2341
+            AEX: Astex_2477
+            SIL: SPO1452 SPOA0133
+            JAN: Jann_1342 Jann_1575 Jann_3952
+            RDE: RD1_2360(van) RD1_3683(van)
+            RLI: RLO149_c007670 RLO149_c021020
+            PAMI: JCM7686_1953 JCM7686_pAMI4p262 JCM7686_pAMI4p263
+            PSF: PSE_2829(vanB) PSE_4177(vanB)
+            PGA: PGA1_262p01350
+            PGL: PGA2_239p1530
+            PGD: Gal_03871
+            OAT: OAN307_c42090
+            OAR: OA238_c03600 OA238_c39030
+            ZMO: ZMO0456
+            ZMN: Za10_0794
+            ZMM: Zmob_0987
+            ZMB: ZZ6_0805
+            ZMP: Zymop_0758
+            NAR: Saro_0707 Saro_1487 Saro_1488 Saro_1872
+            NPP: PP1Y_AT11936 PP1Y_Mpl10434
+            SWI: Swit_1067 Swit_1541 Swit_1543 Swit_1549 Swit_1552 Swit_1559 Swit_1687 Swit_2285 Swit_2310 Swit_3024 Swit_3264 Swit_3265 Swit_3266 Swit_3396 Swit_3409 Swit_3413 Swit_3416 Swit_4269 Swit_4273 Swit_4861
+            SPHM: G432_21680
+            SJP: SJA_C1-11830 SJA_P1-01380(vanB) SJA_P1-01460(vanA)
+            SCH: Sphch_2158 Sphch_2159
+            SSY: SLG_05220 SLG_18370 SLG_18530 SLG_18730 SLG_18880 SLG_32620
+            GOX: GOX2373
+            GOH: B932_0424
+            GBE: GbCGDNIH1_0668
+            GBH: GbCGDNIH2_0668
+            GXY: GLX_11760
+            APT: APA01_22020 APA01_22330
+            APW: APA42C_22020 APA42C_22330
+            APF: APA03_22020 APA03_22330
+            APU: APA07_22020 APA07_22330
+            APG: APA12_22020 APA12_22330
+            APQ: APA22_22020 APA22_22330
+            APX: APA26_22020 APA26_22330
+            APZ: APA32_22020 APA32_22330
+            APK: APA386B_1062(vanB) APA386B_1089(vanA)
+            AZL: AZL_b03620(vanB) AZL_b03640(vanA) AZL_c03700(vanB) AZL_c03710(vanA)
+            ALI: AZOLI_p10989(vanB)
+            PGV: SL003B_2861 SL003B_2863
+            APB: SAR116_0341 SAR116_1717
+            BMQ: BMQ_3928
+            BMD: BMD_3917
+            BMH: BMWSH_1298
+            PJD: Pjdr2_3009
+            PSAB: PSAB_10145
+            MSA: Mycsm_04701 Mycsm_06609
+            ASD: AS9A_2393
+            CGL: NCgl2300(Cgl2383) NCgl2301(Cgl2384)
+            CGB: cg2616(vanA) cg2617(vanB)
+            CGU: WA5_2300(VanA) WA5_2301(VanB)
+            CGT: cgR_2265 cgR_2266
+            CGS: C624_11570 C624_11575 C624_11735
+            CGG: C629_11580 C629_11585 C629_11745
+            CGM: cgp_2616(vanA) cgp_2617(vanB)
+            CEF: CE0634 CE0635
+            CVA: CVAR_2695(vanB) CVAR_2696(vanA)
+            CHN: A605_00715 A605_00720 A605_13555
+            CTER: A606_11145 A606_11150
+            CFN: CFAL_00575 CFAL_00580
+            CGY: CGLY_01375(vanA) CGLY_01380(vanB) CGLY_10740
+            NFA: nfa28480
+            RHA: RHA1_ro02845 RHA1_ro04165
+            ROP: ROP_25700 ROP_40940(vanA)
+            ROA: Pd630_LPD00565 Pd630_LPD07008 Pd630_LPD07225
+            RPY: Y013_03790 Y013_13470 Y013_13475
+            GPO: GPOL_c13810 GPOL_c13820 GPOL_c43810
+            GOR: KTR9_1761
+            SCO: SCO6680(SC5A7.30c)
+            SCB: SCAB_15301
+            SVL: Strvi_1074
+            SBH: SBI_06460 SBI_09696
+            SHY: SHJG_0203 SHJG_0204 SHJG_8623
+            SHO: SHJGH_8383
+            SDV: BN159_1752
+            SRC: M271_20080
+            SALU: DC74_7883 DC74_7884
+            KSK: KSE_73990(vanA)
+            MTS: MTES_2133 MTES_2134
+            AAU: AAur_2255
+            ARR: ARUE_c24100 ARUE_c24110(vanA)
+            FRE: Franean1_5685
+            FRI: FraEuI1c_3614 FraEuI1c_3959
+            FAL: FRAAL0416(vanA) FRAAL1456
+            GOB: Gobs_2826
+            SEN: SACE_2821
+            SVI: Svir_26070 Svir_26080
+            TBI: Tbis_1111
+            AMD: AMED_4115
+            AMN: RAM_20970
+            AMM: AMES_4067
+            AMZ: B737_4067
+            AOI: AORI_4217(vanB)
+            PDX: Psed_2966
+            VMA: VAB18032_10855
+            CAI: Caci_4895
+            MIN: Minf_1778(hcaE)
+            ACM: AciX9_2176
+            GMA: AciX8_0017
+            TSA: AciPR4_3554
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.82
+            IUBMB Enzyme Nomenclature: 1.14.13.82
+            ExPASy - ENZYME nomenclature database: 1.14.13.82
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.14.13.82
+            BRENDA, the Enzyme Database: 1.14.13.82
+            CAS: 39307-11-4
+///

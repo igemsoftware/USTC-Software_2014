@@ -1,0 +1,20 @@
+ENTRY       R07000                      Reaction
+NAME        naphthalene, NADPH:oxygen oxidoreductase (RH-hydroxylating or -epoxidizing)
+DEFINITION  Naphthalene + NADPH + Oxygen + H+ <=> (1R,2S)-Naphthalene 1,2-oxide + NADP+ + H2O
+EQUATION    C00829 + C00005 + C00007 + C00080 <=> C14786 + C00006 + C00001
+COMMENT     CYP1A1/2, CYP2B, CYP2E1, CYP2F, CYP2S1, CYP3A4, CYP2A6
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP10041  C00007_C14786 leave
+            RP10130  C00829_C14786 main [RC:RC01445]
+ENZYME      1.14.13.-       1.14.14.1
+PATHWAY     rn00980  Metabolism of xenobiotics by cytochrome P450
+ORTHOLOGY   K07408  cytochrome P450, family 1, subfamily A, polypeptide 1 [EC:1.14.14.1]
+            K07409  cytochrome P450, family 1, subfamily A, polypeptide 2 [EC:1.14.14.1]
+            K07415  cytochrome P450, family 2, subfamily E, polypeptide 1 [EC:1.14.13.-]
+            K07416  cytochrome P450, family 2, subfamily F [EC:1.14.14.1]
+            K07420  cytochrome P450, family 2, subfamily S, polypeptide 1 [EC:1.14.14.1]
+            K17683  cytochrome P450, family 2, subfamily A, polypeptide 6 [EC:1.14.13.-]
+            K17689  cytochrome P450, family 3, subfamily A, polypeptide 4 [EC:1.14.13.32 1.14.13.67 1.14.13.97 1.14.13.157 1.14.13.-]
+            K17709  cytochrome P450, family 2, subfamily B, polypeptide 6 [EC:1.14.13.-]
+///

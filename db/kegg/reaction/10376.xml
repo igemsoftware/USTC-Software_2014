@@ -1,0 +1,14 @@
+ENTRY       R10376                      Reaction
+DEFINITION  Terpendole E + 4 NADPH + 4 Oxygen + 4 H+ <=> 13-Desoxyterpendole I + Formate + 4 NADP+ + 5 H2O
+EQUATION    C20536 + 4 C00005 + 4 C00007 + 4 C00080 <=> C20542 + C00058 + 4 C00006 + 5 C00001
+COMMENT     P450 monooxygenase, TerP
+            multi-step reaction
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP05742  C00007_C00058 leave
+            RP16329  C20536_C20542 main [RC:RC03143]
+ENZYME      1.14.13.-
+PATHWAY     rn00403  Indole diterpene alkaloid biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K18392  cytochrome P450 monooxygenase [EC:1.14.13.-]
+///

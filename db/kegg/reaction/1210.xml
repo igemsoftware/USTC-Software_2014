@@ -1,0 +1,12 @@
+ENTRY       R01210                      Reaction
+NAME        3-methyl-2-oxobutanoate:NAD+ oxidoreductase (CoA-mehtylpropanoylating)
+DEFINITION  3-Methyl-2-oxobutanoic acid + CoA + NAD+ <=> 2-Methylpropanoyl-CoA + CO2 + NADH + H+
+EQUATION    C00141 + C00010 + C00003 <=> C00630 + C00011 + C00004 + C00080
+COMMENT     multi-step reaction
+            possibly identical to branched-chain alpha-keto acid dehydrogenase complex (see R01701+R02662+R07618)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00556  C00010_C00630 main [RC:RC00004]
+            RP01364  C00141_C00630 trans [RC:RC02856]
+            RP05923  C00011_C00141 leave
+ENZYME      1.2.1.25
+///

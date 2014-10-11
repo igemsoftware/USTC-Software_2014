@@ -1,0 +1,14 @@
+ENTRY       R09991                      Reaction
+NAME        peptidyl-glutamate 4-carboxylase (menaquinone-epoxidizing)
+DEFINITION  2,3-Epoxymenaquinone + Gla protein + H2O <=> Menaquinol + Gla protein precursor + CO2 + Oxygen
+EQUATION    C20265 + C06246 + C00001 <=> C05819 + C06247 + C00011 + C00007
+RPAIR       RP00013  C00001_C00007 cofac
+            RP12599  C00011_C06246 leave
+            RP12600  C06246_C06247 main [RC:RC02133]
+            RP15691  C05819_C20265 main [RC:RC01278]
+            RP15692  C00007_C20265 leave
+ENZYME      4.1.1.90
+PATHWAY     rn00130  Ubiquinone and other terpenoid-quinone biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K10106  vitamin K-dependent gamma-carboxylase [EC:4.1.1.90]
+///

@@ -1,0 +1,12 @@
+ENTRY       R01669                      Reaction
+NAME        5,10-Methylenetetrahydrofolate:deoxycytidylate 5-hydroxymethyltransferase
+DEFINITION  5,10-Methylenetetrahydrofolate + H2O + dCMP <=> Tetrahydrofolate + 5-Hydroxymethyldeoxycytidylate
+EQUATION    C00143 + C00001 + C00239 <=> C00101 + C03997
+RPAIR       RP00061  C00101_C00143 main [RC:RC00022]
+            RP01679  C00239_C03997 main [RC:RC00209]
+            RP06667  C00001_C03997 leave
+            RP06668  C00143_C03997 trans
+ENZYME      2.1.2.8
+PATHWAY     rn00240  Pyrimidine metabolism
+            rn00670  One carbon pool by folate
+///

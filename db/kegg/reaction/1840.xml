@@ -1,0 +1,16 @@
+ENTRY       R01840                      Reaction
+NAME        androstenedione,reduced-flavoprotein:oxygen 19-oxidoreductase
+DEFINITION  Androstenedione + Reduced flavoprotein + Oxygen <=> 19-Hydroxyandrost-4-ene-3,17-dione + Oxidized flavoprotein + H2O
+EQUATION    C00280 + C03024 + C00007 <=> C05290 + C03161 + C00001
+COMMENT     aromatase, ARO
+            P-450 reductase (ec 1.6.2.4) is the flavoprotein and re-reduced by NADPH (see R08551)
+            three successive reactions (R01840+R04759+R02351)
+            subsequently R04759
+RPAIR       RP00013  C00001_C00007 cofac
+            RP01794  C00280_C05290 main [RC:RC00257]
+            RP06729  C00007_C05290 leave
+ENZYME      1.14.14.14
+PATHWAY     rn00140  Steroid hormone biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K07434  aromatase [EC:1.14.14.14]
+///

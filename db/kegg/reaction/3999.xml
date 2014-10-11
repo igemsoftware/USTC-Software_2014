@@ -1,0 +1,14 @@
+ENTRY       R03999                      Reaction
+NAME        anthranilyl-CoA,NADH:oxygen oxidoreductase (de-aromatizing)
+DEFINITION  Anthraniloyl-CoA + Oxygen + 2 NADPH + 2 H+ <=> 2-Amino-5-oxocyclohex-1-enecarbonyl-CoA + H2O + 2 NADP+
+EQUATION    C02247 + C00007 + 2 C00005 + 2 C00080 <=> C05165 + C00001 + 2 C00006
+COMMENT     NADH (see R03998)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 leave
+            RP00722  C02247_C05165 main [RC:RC00244]
+            RP06047  C00007_C05165 leave
+ENZYME      1.14.13.40
+PATHWAY     rn00627  Aminobenzoate degradation
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K09461  anthraniloyl-CoA monooxygenase [EC:1.14.13.40]
+///

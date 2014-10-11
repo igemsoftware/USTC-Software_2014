@@ -1,0 +1,18 @@
+ENTRY       R01256                      Reaction
+NAME        (S)-Malate:CoA ligase (ADP-forming)
+DEFINITION  ATP + (S)-Malate + CoA <=> ADP + Orthophosphate + L-Malyl-CoA
+EQUATION    C00002 + C00149 + C00010 <=> C00008 + C00009 + C04348
+COMMENT     reversible
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00378  C00149_C04348 main [RC:RC00014]
+            RP01388  C00010_C04348 main [RC:RC00004]
+ENZYME      6.2.1.9
+PATHWAY     rn00630  Glyoxylate and dicarboxylate metabolism
+            rn00680  Methane metabolism
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+ORTHOLOGY   K08692  malate-CoA ligase subunit alpha [EC:6.2.1.9]
+            K14067  malate-CoA ligase subunit beta [EC:6.2.1.9]
+            K14451  (3S)-malyl-CoA thioesterase
+///

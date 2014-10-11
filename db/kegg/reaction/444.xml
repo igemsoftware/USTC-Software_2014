@@ -1,0 +1,11 @@
+ENTRY       R00444                      Reaction
+NAME        nucleoside-triphosphate:RNA nucleotidyltransferase (DNA-directed);
+            nucleoside-triphosphate:RNA nucleotidyltransferase (RNA-directed)
+DEFINITION  Nucleoside triphosphate + RNA <=> Diphosphate + RNA
+EQUATION    C00201 + C00046 <=> C00013 + C00046
+COMMENT     DNA-directed (ec 2.7.7.6)
+            RNA-directed (ec 2.7.7.48)
+RPAIR       RP05750  C00013_C00201 leave
+            RP06158  C00046_C00201 trans
+ENZYME      2.7.7.6         2.7.7.48
+///

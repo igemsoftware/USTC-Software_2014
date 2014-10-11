@@ -1,0 +1,11 @@
+ENTRY       R00676                      Reaction
+NAME        L-Tryptophan:NADP+ oxidoreductase (deaminating)
+DEFINITION  L-Tryptophan + NADP+ + H2O <=> Indolepyruvate + Ammonia + NADPH + H+
+EQUATION    C00078 + C00006 + C00001 <=> C00331 + C00014 + C00005 + C00080
+COMMENT     see R00675 (NADH)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00101  C00078_C00331 main [RC:RC00006]
+            RP05748  C00014_C00078 leave
+            RP05827  C00001_C00331 leave
+ENZYME      1.4.1.19
+///

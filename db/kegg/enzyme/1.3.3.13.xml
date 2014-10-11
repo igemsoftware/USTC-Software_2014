@@ -1,0 +1,38 @@
+ENTRY       EC 1.3.3.13                 Enzyme
+NAME        albonoursin synthase;
+            cyclo(dipeptide):oxygen oxidoreductase;
+            cyclic dipeptide oxidase;
+            AlbA
+CLASS       Oxidoreductases;
+            Acting on the CH-CH group of donors;
+            With oxygen as acceptor
+SYSNAME     cyclo(L-leucyl-L-phenylalanyl):oxygen oxidoreductase
+REACTION    cyclo(L-leucyl-L-phenylalanyl) + 2 O2 = albonoursin + 2 H2O2 (overall reaction) [RN:R10329];
+            (1a) cyclo(L-leucyl-L-phenylalanyl) + O2 = cyclo[(Z)-alpha,beta-didehydrophenylalanyl-L-leucyl] + H2O2 [RN:R10327];
+            (1b) cyclo[(Z)-alpha,beta-didehydrophenylalanyl-L-leucyl] + O2 = albonoursin + H2O2 [RN:R10328]
+ALL_REAC    R10327 R10328 R10329
+SUBSTRATE   cyclo(L-leucyl-L-phenylalanyl) [CPD:C20519];
+            O2 [CPD:C00007];
+            cyclo[(Z)-alpha,beta-didehydrophenylalanyl-L-leucyl] [CPD:C20521]
+PRODUCT     albonoursin [CPD:C20520];
+            H2O2 [CPD:C00027];
+            cyclo[(Z)-alpha,beta-didehydrophenylalanyl-L-leucyl] [CPD:C20521]
+COMMENT     A flavoprotein from the bacterium Streptomyces noursei. The enzyme can also oxidize several other cyclo dipeptides, the best being cyclo(L-tryptophyl-L-tryptophyl) and cyclo(L-phenylalanyl-L-phenylalanyl) [1,2].
+HISTORY     EC 1.3.3.13 created 2013
+REFERENCE   1  [PMID:11248691]
+  AUTHORS   Gondry M, Lautru S, Fusai G, Meunier G, Menez A, Genet R
+  TITLE     Cyclic dipeptide oxidase from Streptomyces noursei. Isolation, purification and partial characterization of a novel, amino acyl alpha,beta-dehydrogenase.
+  JOURNAL   Eur. J. Biochem. 268 (2001) 1712-21.
+  ORGANISM  Streptomyces noursei
+  SEQUENCE  [up:Q8GED9]
+REFERENCE   2  [PMID:12498889]
+  AUTHORS   Lautru S, Gondry M, Genet R, Pernodet JL
+  TITLE     The albonoursin gene Cluster of S noursei biosynthesis of diketopiperazine metabolites independent of nonribosomal peptide synthetases.
+  JOURNAL   Chem. Biol. 9 (2002) 1355-64.
+  ORGANISM  Streptomyces noursei
+  SEQUENCE  [up:Q8GED9]
+DBLINKS     ExplorEnz - The Enzyme Database: 1.3.3.13
+            IUBMB Enzyme Nomenclature: 1.3.3.13
+            ExPASy - ENZYME nomenclature database: 1.3.3.13
+            BRENDA, the Enzyme Database: 1.3.3.13
+///

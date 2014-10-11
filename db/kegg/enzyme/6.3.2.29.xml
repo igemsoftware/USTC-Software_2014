@@ -1,0 +1,327 @@
+ENTRY       EC 6.3.2.29                 Enzyme
+NAME        cyanophycin synthase (L-aspartate-adding);
+            CphA (ambiguous);
+            CphA1 (ambiguous);
+            CphA2 (ambiguous);
+            cyanophycin synthetase (ambiguous);
+            multi-L-arginyl-poly-L-aspartate synthase (ambiguous)
+CLASS       Ligases;
+            Forming carbon-nitrogen bonds;
+            Acid-D-amino-acid ligases (peptide synthases)
+SYSNAME     cyanophycin:L-aspartate ligase (ADP-forming)
+REACTION    ATP + [L-Asp(4-L-Arg)]n + L-Asp = ADP + phosphate + [L-Asp(4-L-Arg)]n-L-Asp [RN:R09592]
+ALL_REAC    R09592
+SUBSTRATE   ATP [CPD:C00002];
+            [L-Asp(4-L-Arg)]n [CPD:C19709];
+            L-Asp [CPD:C00049]
+PRODUCT     ADP [CPD:C00008];
+            phosphate [CPD:C00009];
+            [L-Asp(4-L-Arg)]n-L-Asp [CPD:C19710]
+COMMENT     Requires Mg2+ for activity. Both this enzyme and EC 6.3.2.30, cyanophycin synthase (L-arginine-adding), are required for the elongation of cyanophycin, which is a protein-like cell inclusion that is unique to cyanobacteria and acts as a temporary nitrogen store [2]. Both enzymes are found in the same protein but have different active sites [2,4]. Both L-Asp and L-Arg must be present before either enzyme will display significant activity [2].
+HISTORY     EC 6.3.2.29 created 2007
+REFERENCE   1  [PMID:11131019]
+  AUTHORS   Aboulmagd E, Oppermann-Sanio FB, Steinbuchel A.
+  TITLE     Molecular characterization of the cyanophycin synthetase from Synechocystis sp. strain PCC6308.
+  JOURNAL   Arch. Microbiol. 174 (2000) 297-306.
+  ORGANISM  Synechocystis sp.
+  SEQUENCE  [syn:slr2002]
+REFERENCE   2  [PMID:11319097]
+  AUTHORS   Aboulmagd E, Oppermann-Sanio FB, Steinbuchel A.
+  TITLE     Purification of Synechocystis sp. strain PCC6308 cyanophycin synthetase and its characterization with respect to substrate and primer specificity.
+  JOURNAL   Appl. Environ. Microbiol. 67 (2001) 2176-82.
+  ORGANISM  Synechocystis sp.
+  SEQUENCE  [syn:slr2002]
+REFERENCE   3  [PMID:6767688]
+  AUTHORS   Allen MM, Hutchison F, Weathers PJ.
+  TITLE     Cyanophycin granule polypeptide formation and degradation in the cyanobacterium Aphanocapsa 6308.
+  JOURNAL   J. Bacteriol. 141 (1980) 687-93.
+REFERENCE   4  [PMID:10951215]
+  AUTHORS   Berg H, Ziegler K, Piotukh K, Baier K, Lockau W, Volkmer-Engert R.
+  TITLE     Biosynthesis of the cyanobacterial reserve polymer multi-L-arginyl-poly-L-aspartic acid (cyanophycin): mechanism of the cyanophycin synthetase reaction studied with synthetic primers.
+  JOURNAL   Eur. J. Biochem. 267 (2000) 5561-70.
+  ORGANISM  Synechococcus elongatus
+REFERENCE   5  [PMID:12132696]
+  AUTHORS   Ziegler K, Deutzmann R, Lockau W.
+  TITLE     Cyanophycin synthetase-like enzymes of non-cyanobacterial eubacteria: characterization of the polymer produced by a recombinant synthetase of Desulfitobacterium hafniense.
+  JOURNAL   Z. Naturforsch. [C]. 57 (2002) 522-9.
+REFERENCE   6  [PMID:9652408]
+  AUTHORS   Ziegler K, Diener A, Herpin C, Richter R, Deutzmann R, Lockau W.
+  TITLE     Molecular characterization of cyanophycin synthetase, the enzyme catalyzing the biosynthesis of the cyanobacterial reserve material multi-L-arginyl-poly-L-aspartate (cyanophycin).
+  JOURNAL   Eur. J. Biochem. 254 (1998) 154-9.
+  ORGANISM  Anabaena variabilis
+  SEQUENCE  [ava:Ava_1814]
+ORTHOLOGY   K03802  cyanophycin synthetase
+GENES       PSD: DSC_11330
+            ACI: ACIAD1279
+            CPS: CPS_1871
+            GNI: GNIT_3034(cphA)
+            GPS: C427_4660(cphA)
+            LLO: LLO_2537(cphA)
+            FTU: FTT_1130c(cphA)
+            FTF: FTF1130c(cphA)
+            FTW: FTW_1163(cphA)
+            FTR: NE061598_06515
+            FTT: FTV_1080(cphA)
+            FTG: FTU_1164(cphA)
+            FTL: FTL_0831
+            FTH: FTH_0821(cphA)
+            FTA: FTA_0880
+            FTS: F92_04580
+            FTI: FTS_0821(cphA)
+            FTO: X557_04400
+            FTM: FTM_1298(cphA)
+            FTN: FTN_1112(cphA)
+            FCF: FNFX1_1159
+            FCN: FN3523_0757
+            FPH: Fphi_1494
+            FRT: F7308_1614
+            FNA: OOM_1291
+            FNL: M973_04135
+            MEC: Q7C_408
+            TVI: Thivi_0044 Thivi_0045
+            CSA: Csal_1114
+            GPB: HDN1F_11890
+            LHK: LHK_01968 LHK_01970
+            RPI: Rpic_3968 Rpic_3969
+            RPF: Rpic12D_4081 Rpic12D_4082
+            REU: Reut_A2585 Reut_A2586
+            REH: H16_A0774(cphA) H16_A0775(cphA')
+            CNC: CNE_1c07850(cphA1) CNE_1c07860(cphA2)
+            RME: Rmet_0703(cphA1) Rmet_0704(cphA2)
+            CTI: RALTA_A0761 RALTA_A0762
+            PNU: Pnuc_0670 Pnuc_0671
+            PPK: U875_10300 U875_10305
+            PPNO: DA70_02730 DA70_02735
+            PRB: X636_24380 X636_24385
+            BPE: BP1739(cphA) BP1740(cphA)
+            BPC: BPTD_1717(cphA) BPTD_1718(cphA)
+            BPER: BN118_2118(cphA) BN118_2119(cphA)
+            BPA: BPP3184(cphA)
+            BPAR: BN117_3147(cphA) BN117_3148(cphA)
+            BBR: BB3584(cphA) BB3585(cphA)
+            BBM: BN115_3307(cphA) BN115_3308(cphA)
+            BBH: BN112_4779(cphA) BN112_4780(cphA)
+            BPT: Bpet1860(cphA1) Bpet1861(cphA2)
+            BAV: BAV1232(cphA1) BAV1233(cphA2)
+            BHO: D560_2449 D560_2450(cphA1) D560_2451
+            AXY: AXYL_01677(cphA1) AXYL_01678(cphA2)
+            AXO: NH44784_004001 NH44784_004011
+            AXN: AX27061_1584 AX27061_1585
+            CDN: BN940_01946 BN940_01951
+            RFR: Rfer_1314 Rfer_1315
+            POL: Bpro_1415 Bpro_1416
+            PNA: Pnap_1005 Pnap_1006
+            AAV: Aave_3980 Aave_3981
+            AJS: Ajs_0656 Ajs_0657
+            DIA: Dtpsy_0635 Dtpsy_0636
+            AAA: Acav_3886 Acav_3887
+            ACK: C380_20030 C380_20035
+            VEI: Veis_4989 Veis_4990
+            DAC: Daci_5709 Daci_5710
+            DEL: DelCs14_0891 DelCs14_0892
+            VAP: Vapar_1058 Vapar_1059
+            VPE: Varpa_1127 Varpa_1128
+            VPD: VAPA_1c11110(cphA1) VAPA_1c11120(cphA2)
+            CTT: CtCNB1_0609 CtCNB1_0610
+            ADN: Alide_0781 Alide_0782
+            ADK: Alide2_0737 Alide2_0738
+            MPT: Mpe_A1022 Mpe_A1023
+            HAR: HEAR3322 HEAR3323
+            MMS: mma_3555(cphA1) mma_3556(cphA2)
+            HSE: Hsero_2170(cphA2) Hsero_2171(cphA1)
+            CFU: CFU_1324(cphA1) CFU_1325(cphA2)
+            LCH: Lcho_4039 Lcho_4040
+            RGE: RGE_40110(cphA) RGE_40120(cphA)
+            NEU: NE0922(cphA) NE0923
+            NET: Neut_1401 Neut_1402
+            NIT: NAL212_0456 NAL212_0457
+            NII: Nit79A3_0136 Nit79A3_0137
+            NMU: Nmul_A2250 Nmul_A2251
+            DAR: Daro_3264 Daro_3265
+            DSU: Dsui_2750 Dsui_2751
+            SDR: SCD_n00680(cphA1) SCD_n00681
+            MEH: M301_1452 M301_1453
+            APP: CAP2UW1_3887 CAP2UW1_3888
+            GCA: Galf_1604 Galf_1605
+            BPRC: D521_0534 D521_0535
+            PPD: Ppro_1989
+            DTO: TOL2_C09850(cphA)
+            SCU: SCE1572_41560
+            MCI: Mesci_6096
+            RLG: Rleg_5803
+            RLB: RLEG3_27800
+            PAMI: JCM7686_1126
+            OAR: OA238_c34280(cphA)
+            SCH: Sphch_3426
+            ALI: AZOLI_p10758
+            BSUB: BEST7613_2712
+            BIF: N288_08080
+            LGY: T479_22405
+            PPOL: X809_04480
+            AAC: Aaci_0173
+            AAD: TC41_0240(cphA)
+            BTS: Btus_0063
+            CPE: CPE2213(cphA)
+            CPF: CPF_2477(cphA)
+            CPR: CPR_2187(cphA)
+            CTC: CTC00282
+            CTET: BN906_00295
+            CBO: CBO0120(cphA)
+            CBA: CLB_0156(cphA)
+            CBH: CLC_0168(cphA)
+            CBY: CLM_0163(cphA)
+            CBL: CLK_3295(cphA)
+            CBK: CLL_A0470(cphA)
+            CBB: CLD_0666(cphA)
+            CBI: CLJ_B0158(cphA)
+            CBT: CLH_0462(cphA)
+            CBF: CLI_0175(cphA)
+            CBM: CBF_0148(cphA)
+            CBJ: H04402_00112
+            CBE: Cbei_0393
+            CKL: CKL_3725(cphA)
+            CKR: CKR_3289
+            CCE: Ccel_0132
+            CLJ: CLJU_c02100(cphA)
+            CLB: Clo1100_0130
+            CSR: Cspa_c05990(cphA)
+            CSB: CLSA_c04890
+            CAH: CAETHG_2315
+            AMT: Amet_1227
+            AOE: Clos_2106
+            ASF: SFBM_1294
+            ASM: MOUSESFB_1203(cphA)
+            ASB: RATSFB_1122(cphA)
+            CTH: Cthe_2204
+            CTX: Clo1313_2877
+            CCL: Clocl_4056
+            CAD: Curi_c07930(cphA)
+            SWO: Swol_1350
+            DSY: DSY0146
+            DHD: Dhaf_0085
+            DDH: Desde_0074
+            DDL: Desdi_0050
+            DKU: Desku_0152
+            TJR: TherJR_0126
+            SGY: Sgly_0189
+            DOR: Desor_0052
+            DAI: Desaci_0051
+            DMI: Desmer_0049
+            DED: DHBDCA_p256(cphA)
+            DEC: DCF50_p316(cphA)
+            DRS: DEHRE_00930
+            SAY: TPY_0184(cphA)
+            SAP: Sulac_0163
+            TTE: TTE2785(MurE3)
+            TEX: Teth514_2398
+            THX: Thet_2447
+            TPD: Teth39_2279
+            TIT: Thit_2390
+            TMT: Tmath_2270
+            TBO: Thebr_2324
+            TWI: Thewi_2708
+            TPZ: Tph_c28390(cphA)
+            CSC: Csac_0753
+            ATE: Athe_0527
+            COB: COB47_0472
+            CHD: Calhy_2128
+            COW: Calow_0382
+            CKI: Calkr_1783
+            CKN: Calkro_2106
+            CLC: Calla_1181
+            TOC: Toce_0042
+            TTM: Tthe_2740
+            TTO: Thethe_02760
+            TXY: Thexy_2398
+            TSH: Tsac_0535
+            MAS: Mahau_1147
+            NTH: Nther_0055
+            HHL: Halha_0091
+            MMI: MMAR_2406
+            CCG: CCASEI_04855
+            KSE: Ksed_13530
+            MPH: MLP_14760(cphA)
+            KFL: Kfla_3708
+            NML: Namu_4854
+            AMS: AMIS_62660
+            ASE: ACPL_6520(cphA)
+            ACTN: L083_6049(cphA)
+            AFS: AFR_30950
+            PLM: Plim_2671 Plim_2672
+            SACI: Sinac_0564 Sinac_4976 Sinac_6155
+            SYN: slr2002
+            SYZ: MYO_113260
+            SYY: SYNGTS_1314(cphA)
+            SYT: SYNGTI_1314(cphA)
+            SYS: SYNPCCN_1313(cphA)
+            SYQ: SYNPCCP_1313(cphA)
+            SYR: SynRCC307_1724(cphA)
+            SYX: SynWH7803_1936(cphA)
+            SYP: SYNPCC7002_A2405(cphA)
+            CYB: CYB_0911(cphA) CYB_2909
+            SYNE: Syn6312_1287
+            SYNP: Syn7502_00265
+            TEL: tlr2170
+            THN: NK55_07505(cphA)
+            MAR: MAE_27460(cphA)
+            CYT: cce_2237(cphA)
+            CYP: PCC8801_0960
+            CYC: PCC7424_0612 PCC7424_0873
+            CYN: Cyan7425_4446 Cyan7425_4852
+            CYH: Cyan8802_0987
+            CYJ: Cyan7822_2710 Cyan7822_2816
+            CAN: Cyan10605_2875
+            CSN: Cyast_1640
+            GLP: Glo7428_1238 Glo7428_1454
+            CMP: Cha6605_4525
+            TER: Tery_1965
+            LEP: Lepto7376_2228
+            GEI: GEI7407_0857
+            OAC: Oscil6304_5422
+            ONI: Osc7112_1526 Osc7112_4717
+            PSEU: Pse7367_0899
+            CEP: Cri9333_1335 Cri9333_2270
+            MIC: Mic7113_1084 Mic7113_5769
+            ARP: NIES39_D05270(cphA)
+            GVI: gvip562(cphA)
+            GLJ: GKIL_2419(cphA)
+            ANA: all3879(cphA) alr0573(cphA)
+            NPU: Npun_R1819 Npun_R5823
+            NOS: Nos7107_4003 Nos7107_5063
+            NOP: Nos7524_0358 Nos7524_4852
+            AVA: Ava_0335 Ava_1814
+            ANB: ANA_C11930
+            ACY: Anacy_2649 Anacy_4330 Anacy_4581
+            NAZ: Aazo_1178
+            CSG: Cylst_3345 Cylst_5120
+            CALO: Cal7507_0828 Cal7507_5142
+            CALT: Cal6303_5141
+            RIV: Riv7116_0804
+            CTHE: Chro_0038 Chro_1064 Chro_3358 Chro_5290
+            PLP: Ple7327_2163
+            SCS: Sta7437_0575 Sta7437_2843
+            NKO: Niako_3195
+            DFE: Dfer_0515
+            SLI: Slin_4152
+            RSI: Runsl_4259
+            HSW: Hsw_3070
+            GFO: GFO_0745(cphA)
+            FPS: FP1111(cphA)
+            ASL: Aeqsu_0960
+            NDO: DDD_3459(cphA)
+            FBA: FIC_01365
+            CCH: Cag_0947
+            CPB: Cphamn1_2081
+            HAU: Haur_0617
+            TRO: trd_0739
+            STI: Sthe_1298
+            DDR: Deide_2p01260
+            DMR: Deima_1715 Deima_3132
+            DPD: Deipe_1283
+            SRB: P148_SR1C001G0554
+DBLINKS     ExplorEnz - The Enzyme Database: 6.3.2.29
+            IUBMB Enzyme Nomenclature: 6.3.2.29
+            ExPASy - ENZYME nomenclature database: 6.3.2.29
+            BRENDA, the Enzyme Database: 6.3.2.29
+            CAS: 131554-17-1
+///

@@ -1,0 +1,15 @@
+ENTRY       R02788                      Reaction
+NAME        UDP-N-acetylmuramoyl-L-alanyl-D-glutamate:(L)-meso-2,6-diaminoheptanedioate gamma-ligase (ADP-forming);
+            UDP-N-acetylmuramoyl-L-alanyl-D-glutamate:meso-2,6-diaminoheptanedioate ligase (ADP-forming)
+DEFINITION  ATP + UDP-N-acetylmuramoyl-L-alanyl-D-glutamate + meso-2,6-Diaminoheptanedioate <=> ADP + Orthophosphate + UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-meso-2,6-diaminopimelate
+EQUATION    C00002 + C00692 + C00680 <=> C00008 + C00009 + C04877
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP02500  C00680_C04877 main [RC:RC00064]
+            RP02501  C00692_C04877 main [RC:RC00090]
+ENZYME      6.3.2.13
+PATHWAY     rn00300  Lysine biosynthesis
+            rn00550  Peptidoglycan biosynthesis
+ORTHOLOGY   K01928  UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase [EC:6.3.2.13]
+            K15792  murE/murF fusion protein [EC:6.3.2.13 6.3.2.10]
+///

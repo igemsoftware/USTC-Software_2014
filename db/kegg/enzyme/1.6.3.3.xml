@@ -1,0 +1,120 @@
+ENTRY       EC 1.6.3.3                  Enzyme
+NAME        NADH oxidase (H2O2-forming);
+            NOX-1;
+            H2O2-forming NADH oxidase
+CLASS       Oxidoreductases;
+            Acting on NADH or NADPH;
+            With oxygen as acceptor
+SYSNAME     NADH:oxygen oxidoreductase (H2O2-forming)
+REACTION    NADH + H+ + O2 = NAD+ + H2O2 [RN:R07171]
+ALL_REAC    R07171
+SUBSTRATE   NADH [CPD:C00004];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007]
+PRODUCT     NAD+ [CPD:C00003];
+            H2O2 [CPD:C00027]
+COMMENT     A flavoprotein (FAD). The bacterium Streptococcus mutans contains two distinct NADH oxidases, a H2O2-forming enzyme and a H2O-forming enzyme (cf. EC 1.6.3.4, NADH oxidase (H2O-forming)) [1]. The enzymes from the anaerobic archaea Methanocaldococcus jannaschii [6] and Pyrococcus furiosus [3] also produce low amounts of H2O. Unlike EC 1.6.3.1 (NAD(P)H oxidase) it has no activity towards NADPH.
+HISTORY     EC 1.6.3.3 created 2013
+REFERENCE   1  [PMID:8254304]
+  AUTHORS   Higuchi M, Shimada M, Yamamoto Y, Hayashi T, Koga T, Kamio Y
+  TITLE     Identification of two distinct NADH oxidases corresponding to H2O2-forming oxidase and H2O-forming oxidase induced in Streptococcus mutans.
+  JOURNAL   J. Gen. Microbiol. 139 (1993) 2343-51.
+  ORGANISM  Streptococcus mutans
+  SEQUENCE  [smu:SMU_765]
+REFERENCE   2  [PMID:11722568]
+  AUTHORS   Ward DE, Donnelly CJ, Mullendore ME, van der Oost J, de Vos WM, Crane EJ 3rd
+  TITLE     The NADH oxidase from Pyrococcus furiosus. Implications for the protection of anaerobic hyperthermophiles against oxidative stress.
+  JOURNAL   Eur. J. Biochem. 268 (2001) 5816-23.
+  ORGANISM  Pyrococcus furiosus DSM 3638
+  SEQUENCE  [pfu:PF1532]
+REFERENCE   3  [PMID:12823559]
+  AUTHORS   Kengen SW, van der Oost J, de Vos WM
+  TITLE     Molecular characterization of H2O2-forming NADH oxidases from Archaeoglobus fulgidus.
+  JOURNAL   Eur. J. Biochem. 270 (2003) 2885-94.
+  ORGANISM  Archaeoglobus fulgidus
+  SEQUENCE  [afu:AF0254 AF0455]
+REFERENCE   4  [PMID:17293421]
+  AUTHORS   Yang X, Ma K
+  TITLE     Characterization of an exceedingly active NADH oxidase from the anaerobic hyperthermophilic bacterium Thermotoga maritima.
+  JOURNAL   J. Bacteriol. 189 (2007) 3312-7.
+  ORGANISM  Thermotoga maritima
+  SEQUENCE  [tma:TM1432 TM1433]
+REFERENCE   5  [PMID:18521590]
+  AUTHORS   Hirano J, Miyamoto K, Ohta H
+  TITLE     Purification and characterization of thermostable H2O2-forming NADH oxidase from  2-phenylethanol-assimilating Brevibacterium sp. KU1309.
+  JOURNAL   Appl. Microbiol. Biotechnol. 80 (2008) 71-8.
+  ORGANISM  Brevibacterium sp. KU1309
+REFERENCE   6  [PMID:19118348]
+  AUTHORS   Case CL, Rodriguez JR, Mukhopadhyay B
+  TITLE     Characterization of an NADH oxidase of the flavin-dependent disulfide reductase family from Methanocaldococcus jannaschii.
+  JOURNAL   Microbiology. 155 (2009) 69-79.
+  ORGANISM  Methanocaldococcus jannaschii
+  SEQUENCE  [mja:MJ_0649]
+ORTHOLOGY   K17870  NADH oxidase (H2O2-forming)
+GENES       TLI: Tlie_1355
+            MJA: MJ_0649
+            MFE: Mefer_0567
+            MVU: Metvu_1320
+            MFS: MFS40622_1061
+            MIF: Metin_1169
+            MIG: Metig_1551
+            MMP: MMP1259
+            MMQ: MmarC5_0332
+            MMX: MmarC6_1414
+            MMZ: MmarC7_0505
+            MMD: GYY_07130
+            MAE: Maeo_0747
+            MVN: Mevan_0572
+            MVO: Mvol_0824
+            MOK: Metok_0198
+            MAC: MA4636(ndh)
+            MBA: Mbar_A0960
+            MMA: MM_1296
+            MMAZ: MmTuc01_1344
+            MBU: Mbur_1767
+            MEV: Metev_0030
+            MPY: Mpsy_1794
+            MHZ: Metho_2414
+            MCJ: MCON_0597
+            MPD: MCP_2598
+            MEZ: Mtc_0825(ndh)
+            RCI: RCIX501(ndh)
+            MER: H729_01965
+            MTH: MTH1354
+            MMG: MTBMA_c17440
+            MST: Msp_1460
+            MSI: Msm_0046
+            MRU: mru_0958(nox)
+            MEB: Abm4_1204(nox)
+            MEL: Metbo_0139
+            MEW: MSWAN_2349
+            METH: MBMB1_1976
+            MFV: Mfer_0405
+            MKA: MK0881
+            MAX: MMALV_14290
+            TAR: TALC_01339
+            PHO: PH1509
+            PAB: PAB1931
+            PFU: PF1532
+            PFI: PFC_06890
+            PYN: PNA2_0095
+            PYA: PYCH_10130
+            PYS: Py04_1402
+            TKO: TK0304
+            TON: TON_1271
+            TGA: TGAM_0364(nox)
+            TSI: TSIB_1323
+            TBA: TERMP_00960
+            THE: GQS_04555 GQS_08820
+            THA: TAM4_1450
+            THM: CL1_1373
+            TLT: OCC_08789
+            THS: TES1_1046
+            TNU: BD01_1539
+            ACF: AciM339_1012
+            KCR: Kcr_1220
+DBLINKS     ExplorEnz - The Enzyme Database: 1.6.3.3
+            IUBMB Enzyme Nomenclature: 1.6.3.3
+            ExPASy - ENZYME nomenclature database: 1.6.3.3
+            BRENDA, the Enzyme Database: 1.6.3.3
+///

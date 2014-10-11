@@ -1,0 +1,15 @@
+ENTRY       R06915                      Reaction
+NAME        salicylate,NADH:oxygen oxidoreductase (1-hydroxylating,decarboxylating)
+DEFINITION  3-Methylsalicylate + Oxygen + NADH + H+ <=> 2,3-Dihydroxytoluene + NAD+ + CO2 + H2O
+EQUATION    C14088 + C00007 + C00004 + C00080 <=> C02923 + C00003 + C00011 + C00001
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP09216  C00007_C02923 leave
+            RP09286  C02923_C14088 main [RC:RC00389]
+            RP09740  C00011_C14088 leave
+ENZYME      1.14.13.1
+PATHWAY     rn00626  Naphthalene degradation
+            rn01120  Microbial metabolism in diverse environments
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K00480  salicylate hydroxylase [EC:1.14.13.1]
+///

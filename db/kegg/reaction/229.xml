@@ -1,0 +1,15 @@
+ENTRY       R00229                      Reaction
+NAME        Acetate:CoA ligase (ADP-forming)
+DEFINITION  ATP + Acetate + CoA <=> ADP + Acetyl-CoA + Orthophosphate
+EQUATION    C00002 + C00033 + C00010 <=> C00008 + C00024 + C00009
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00007  C00010_C00024 main [RC:RC00004]
+            RP00010  C00002_C00009 ligase
+            RP00026  C00024_C00033 main [RC:RC00012]
+ENZYME      6.2.1.13
+PATHWAY     rn00010  Glycolysis / Gluconeogenesis
+            rn00620  Pyruvate metabolism
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K01905  acetyl-CoA synthetase (ADP-forming) [EC:6.2.1.13]
+///

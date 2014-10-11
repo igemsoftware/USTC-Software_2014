@@ -1,0 +1,15 @@
+ENTRY       R01226                      Reaction
+NAME        5,10-Methylenetetrahydrofolate:3-methyl-2-oxobutanoate hydroxymethyltransferase
+DEFINITION  5,10-Methylenetetrahydrofolate + 3-Methyl-2-oxobutanoic acid + H2O <=> Tetrahydrofolate + 2-Dehydropantoate
+EQUATION    C00143 + C00141 + C00001 <=> C00101 + C00966
+COMMENT     multi-step reaction
+RPAIR       RP00061  C00101_C00143 main [RC:RC00022]
+            RP00566  C00141_C00966 main [RC:RC00200]
+            RP06491  C00001_C00966 leave
+            RP06492  C00143_C00966 trans
+ENZYME      2.1.2.11
+PATHWAY     rn00770  Pantothenate and CoA biosynthesis
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K00606  3-methyl-2-oxobutanoate hydroxymethyltransferase [EC:2.1.2.11]
+///

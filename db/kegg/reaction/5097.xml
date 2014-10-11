@@ -1,0 +1,15 @@
+ENTRY       R05097                      Reaction
+NAME        (gibberellin-44),2-oxoglutarate:oxygen oxidoreductase
+DEFINITION  Gibberellin A53 + 2-Oxoglutarate + Oxygen <=> Gibberellin A44 diacid + Succinate + CO2
+EQUATION    C06094 + C00026 + C00007 <=> C06095 + C00042 + C00011
+COMMENT     GA 20-oxidase (2-oxoglutarate dependent dioxygenase)
+            Ref.: 1. Plant Cell Physiol. 41(3): 251-257 (2000)
+RPAIR       RP00015  C00026_C00042 cofac
+            RP05677  C00011_C00026 leave
+            RP05690  C00007_C00042 leave
+            RP09370  C06094_C06095 main [RC:RC00257]
+            RP09693  C00007_C06095 leave
+ENZYME      1.14.11.12
+PATHWAY     rn00904  Diterpenoid biosynthesis
+ORTHOLOGY   K05282  gibberellin 20-oxidase [EC:1.14.11.12]
+///

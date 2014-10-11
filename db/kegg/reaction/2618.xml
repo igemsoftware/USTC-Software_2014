@@ -1,0 +1,11 @@
+ENTRY       R02618                      Reaction
+DEFINITION  3-Sulfino-L-alanine + NAD+ + H2O <=> 3-Sulfinylpyruvate + Ammonia + NADH + H+
+EQUATION    C00606 + C00003 + C00001 <=> C05527 + C00014 + C00004 + C00080
+COMMENT     cysteine sulfinic acid deaminase
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00622  C00606_C05527 main [RC:RC00006]
+            RP07102  C00001_C05527 leave
+            RP07103  C00014_C00606 leave
+ENZYME      1.4.1.-
+PATHWAY     rn00270  Cysteine and methionine metabolism
+///

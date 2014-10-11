@@ -1,0 +1,142 @@
+ENTRY       EC 2.4.1.175                Enzyme
+NAME        glucuronosyl-N-acetylgalactosaminyl-proteoglycan 4-beta-N-acetylgalactosaminyltransferase;
+            N-acetylgalactosaminyltransferase II;
+            UDP-N-acetyl-D-galactosamine:D-glucuronyl-N-acetyl-1,3-beta-D-galactosaminylproteoglycan beta-1,4-N-acetylgalactosaminyltransferase;
+            chondroitin synthase;
+            glucuronyl-N-acetylgalactosaminylproteoglycan beta-1,4-N-acetylgalactosaminyltransferase;
+            uridine diphosphoacetylgalactosamine-chondroitin acetylgalactosaminyltransferase II;
+            UDP-N-acetyl-D-galactosamine:beta-D-glucuronosyl-(1->3)-N-acetyl-beta-D-galactosaminyl-proteoglycan 4-beta-N-acetylgalactosaminyltransferase
+CLASS       Transferases;
+            Glycosyltransferases;
+            Hexosyltransferases
+SYSNAME     UDP-N-acetyl-alpha-D-galactosamine:beta-D-glucuronosyl-(1->3)-N-acetyl-beta-D-galactosaminyl-proteoglycan 4-beta-N-acetylgalactosaminyltransferase
+REACTION    UDP-N-acetyl-alpha-D-galactosamine + beta-D-glucuronosyl-(1->3)-N-acetyl-beta-D-galactosaminyl-proteoglycan = UDP + N-acetyl-beta-D-galactosaminyl-(1->4)-beta-D-glucuronosyl-(1->3)-N-acetyl-beta-D-galactosaminyl-proteoglycan [RN:R04603]
+ALL_REAC    R04603 > R05932(G) R05934(G)
+SUBSTRATE   UDP-N-acetyl-alpha-D-galactosamine [CPD:C00203];
+            beta-D-glucuronosyl-(1->3)-N-acetyl-beta-D-galactosaminyl-proteoglycan
+PRODUCT     UDP [CPD:C00015];
+            N-acetyl-beta-D-galactosaminyl-(1->4)-beta-D-glucuronosyl-(1->3)-N-acetyl-beta-D-galactosaminyl-proteoglycan
+COMMENT     Involved in the biosynthesis of chondroitin sulfate. The human form of this enzyme is a bifunctional glycosyltransferase, which also has the 3-beta-glucuronosyltransferase (EC 2.4.1.226, N-acetylgalactosaminyl-proteoglycan 3-beta-glucuronosyltransferase) activity required for the synthesis of the chondroitin sulfate disaccharide repeats. Similar chondroitin synthase 'co-polymerases' can be found in Pasteurella multocida and Escherichia coli.
+HISTORY     EC 2.4.1.175 created 1989, modified 2002
+REFERENCE   1  [PMID:3922754]
+  AUTHORS   Rohrmann K, Niemann R, Buddecke E.
+  TITLE     Two N-acetylgalactosaminyltransferase are involved in the biosynthesis of chondroitin sulfate.
+  JOURNAL   Eur. J. Biochem. 148 (1985) 463-9.
+  ORGANISM  Bos taurus
+REFERENCE   2  [PMID:11514575]
+  AUTHORS   Kitagawa H, Uyama T, Sugahara K.
+  TITLE     Molecular cloning and expression of a human chondroitin synthase.
+  JOURNAL   J. Biol. Chem. 276 (2001) 38721-6.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:22856]
+REFERENCE   3  [PMID:10818104]
+  AUTHORS   DeAngelis PL, Padgett-McCue AJ.
+  TITLE     Identification and molecular cloning of a chondroitin synthase from Pasteurella multocida type F.
+  JOURNAL   J. Biol. Chem. 275 (2000) 24124-9.
+  ORGANISM  Pasteurella multocida
+  SEQUENCE  [pmu:PM0775]
+REFERENCE   4  [PMID:11943778]
+  AUTHORS   Ninomiya T, Sugiura N, Tawada A, Sugimoto K, Watanabe H, Kimata K.
+  TITLE     Molecular cloning and characterization of chondroitin polymerase from Escherichia coli strain K4.
+  JOURNAL   J. Biol. Chem. 277 (2002) 21567-75.
+  ORGANISM  Escherichia coli
+  SEQUENCE  [up:Q8L0V4]
+PATHWAY     ec00532  Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00746  chondroitin sulfate N-acetylgalactosaminyltransferase 1/2
+            K00747  chondroitin polymerizing factor
+            K13499  chondroitin sulfate synthase
+            K13500  chondroitin synthase
+GENES       HSA: 22856(CHSY1) 337876(CHSY3) 55454(CSGALNACT2) 55790(CSGALNACT1) 79586(CHPF)
+            PTR: 450416(CSGALNACT2) 464030(CSGALNACT1) 467777(CHSY1) 471623(CHSY3) 743513(CHPF)
+            PPS: 100968775(CHSY1) 100971582(CHPF) 100972801 100987599(CSGALNACT1) 100994377(CSGALNACT2)
+            GGO: 101126045(CHSY3) 101136357(CHSY1) 101144411(CHPF) 101151962(CSGALNACT2) 101154228(CSGALNACT1)
+            PON: 100172853(CSGALNACT2) 100442293(CSGALNACT1) 100449809(CHSY1) 100455730(CHPF)
+            MCC: 100423555(CHSY3) 694481(CHSY1) 703703(CSGALNACT2) 703860(CHPF) 704901(CSGALNACT1)
+            MCF: 101866114 102125913(CSGALNACT1) 102136125(CHSY1) 102136240(CHSY3) 102136560(CSGALNACT2)
+            MMU: 234356(Csgalnact1) 269941(Chsy1) 74241(Chpf) 78752(Csgalnact2) 78923(Chsy3)
+            RNO: 291577(Chsy3) 292999(Chsy1) 297554(Csgalnact2) 306375(Csgalnact1) 316533(Chpf)
+            CGE: 100754969(Csgalnact1) 100765856(Chpf) 100767985(Chsy3) 100770803(Chsy1) 100770830(Csgalnact2) 100772562
+            HGL: 101700301(Chsy1) 101700905(Csgalnact1) 101701741(Chsy3) 101707555(Chpf) 101719048(Csgalnact2)
+            TUP: 102468989(CSGALNACT2) 102488411(CHPF) 102490797(CSGALNACT1) 102491913(CHSY3) 102495682(CHSY1)
+            CFA: 481492(CHSY3) 482831(CSGALNACT1) 486786(CSGALNACT2) 488539(CHPF) 488704(CHSY1)
+            AML: 100466495(CHSY1) 100468746(CSGALNACT1) 100484507(CHSY3) 100484755(CSGALNACT2)
+            FCA: 101083179(CHSY1) 101092580(CHSY3) 101096311(CSGALNACT1) 101097752(CHPF) 101100841(CSGALNACT2)
+            PTG: 102952320(CHSY1) 102956824(CSGALNACT1) 102959394(CHPF) 102966347(CSGALNACT2) 102971026(CHSY3)
+            BTA: 281690(CHSY1) 509328(CSGALNACT2) 528057(CSGALNACT1) 528149(CHSY3) 540002(CHPF)
+            BOM: 102266543(CSGALNACT1) 102281638(CHSY1) 102281650(CHSY3) 102284379(CHPF) 102285203(CSGALNACT2)
+            PHD: 102319423(CHPF) 102326020 102327197 102330279(CSGALNACT2) 102333649(CSGALNACT1) 102334956 102344003(CHSY1)
+            CHX: 102170413(CHSY3) 102179324(CHSY1) 102179349(CSGALNACT1) 102181823(CHPF) 102185714(CSGALNACT2)
+            SSC: 100157878(CSGALNACT2) 100517735(CSGALNACT1) 100518720(CHSY3) 100520288(CHSY1) 100623047(CHPF)
+            CFR: 102504589(CHSY3) 102513810 102514190(CSGALNACT2) 102514921(CSGALNACT1) 102523829(CHSY1) 102524541(CHPF)
+            ECB: 100050200(CSGALNACT2) 100052192(CSGALNACT1) 100057477(CHSY1) 100059511(CHPF) 100072984(CHSY3)
+            MYB: 102240097(CHPF) 102240619(CHSY3) 102244364(CSGALNACT1) 102249440 102262652(CSGALNACT2)
+            MYD: 102761493(CHPF) 102764495(CSGALNACT2) 102767110(CHSY3) 102768473(CHSY1) 102768920(CSGALNACT1)
+            PALE: 102878385(CSGALNACT2) 102881434(CHPF) 102889741(CSGALNACT1) 102890373(CHSY1) 102895704 102897068(CHSY3)
+            MDO: 100010621(CHPF) 100012272(CSGALNACT2) 100020781(CHSY1) 100030310(CSGALNACT1)
+            SHR: 100913326(CHPF) 100923374(CHSY1) 100925396(CSGALNACT1) 100925905(CSGALNACT2)
+            OAA: 100076249(CSGALNACT2) 100078026(CSGALNACT1) 100680815
+            GGA: 415521(CHSY1) 415598(CHSY3) 422488(CSGALNACT1) 423632(CSGALNACT2) 769112(CHPF)
+            MGP: 100538576(CSGALNACT1) 100540185(CHSY1) 100550036 100550089(CSGALNACT2) 100550164(CHSY3)
+            TGU: 100222602(CHSY1) 100223510(CSGALNACT1) 100223757(CHSY3) 100225582(CHPF) 100231851(CSGALNACT2)
+            FAB: 101809918(CHPF) 101812240(CSGALNACT1) 101812932(CHSY3) 101818662(CHSY1) 101820745(CSGALNACT2)
+            PHI: 102104336(CHSY1) 102105051(CHPF) 102107624(CHSY3) 102113363(CSGALNACT2) 102113419(CSGALNACT1)
+            APLA: 101796158(CSGALNACT2) 101799131(CSGALNACT1) 101799372(CHSY3) 101800894(CHPF) 101801430(CHSY1)
+            FPG: 101910473(CSGALNACT1) 101919107(CSGALNACT2) 101919161(CHSY1) 101919353(CHSY3) 101923812(CHPF)
+            FCH: 102049509(CSGALNACT2) 102054731(CHSY1) 102054841(CHSY3) 102056391(CHPF) 102059429(CSGALNACT1)
+            CLV: 102088360(CHPF) 102088612(CSGALNACT1) 102090190(CHSY1) 102091017(CHSY3) 102097544(CSGALNACT2)
+            ASN: 102375772(CHSY1) 102384714(CHSY3) 102388579(CSGALNACT2) 102388616(CSGALNACT1) 102388640(CHPF)
+            PSS: 102444940(CHSY3) 102446783(CHPF) 102447091(CSGALNACT1) 102458703(CSGALNACT2) 102459255(CHSY1)
+            CMY: 102932901(CHPF) 102938881(CHSY1) 102939048(CHSY3) 102940405(CSGALNACT2) 102945055(CSGALNACT1)
+            ACS: 100554248(chsy1) 100556433(chsy3) 100558813(csgalnact2) 100560221 100560783(csgalnact1)
+            XTR: 100036707(chsy1) 100124741(csgalnact2) 100379780(chpf) 100494038(chsy3) 100497098(csgalnact1)
+            DRE: 100331155(chpfa) 324407(chsy1) 560826 793671
+            TRU: 101061544 101067591 101071007 101079035 101079052 101079135
+            MZE: 101469087 101469922 101473522 101474654 101476345 101478644
+            OLA: 101155099 101155793 101157180 101159591 101162617
+            XMA: 102221723 102232292 102233977 102237743 102237805
+            LCM: 102346351 102357727(CHSY3) 102358556(CSGALNACT2) 102363926(CHPF) 102366614(CSGALNACT1) 102366930(CHSY1)
+            BFO: BRAFLDRAFT_105747 BRAFLDRAFT_122052 BRAFLDRAFT_123885 BRAFLDRAFT_124328 BRAFLDRAFT_131193 BRAFLDRAFT_219265 BRAFLDRAFT_237324 BRAFLDRAFT_78479 BRAFLDRAFT_78480 BRAFLDRAFT_89106
+            CIN: 100177392 100177589
+            SPU: 579124 579341(CHSY1)
+            DME: Dmel_CG12913 Dmel_CG43313 Dmel_CG9220
+            DPO: Dpse_GA11904 Dpse_GA18127 Dpse_GA22578
+            DAN: Dana_GF12786 Dana_GF20873 Dana_GF22250
+            DER: Dere_GG19389 Dere_GG19525 Dere_GG24153
+            DPE: Dper_GL11584 Dper_GL16444 Dper_GL16491
+            DSE: Dsec_GM11517 Dsec_GM20871 Dsec_GM21196 Dsec_GM22544
+            DSI: Dsim_GD10724 Dsim_GD15794 Dsim_GD24523
+            DWI: Dwil_GK17784 Dwil_GK25019 Dwil_GK25624
+            DYA: Dyak_GE16036 Dyak_GE16179 Dyak_GE19348
+            DGR: Dgri_GH11859 Dgri_GH21775 Dgri_GH24548
+            DMO: Dmoj_GI15636 Dmoj_GI16262 Dmoj_GI19322
+            DVI: Dvir_GJ16903 Dvir_GJ19224 Dvir_GJ22200
+            AGA: AgaP_AGAP001010 AgaP_AGAP001050 AgaP_AGAP007720
+            AAG: AaeL_AAEL006466 AaeL_AAEL010569 AaeL_AAEL013572
+            CQU: CpipJ_CPIJ015759 CpipJ_CPIJ018456 CpipJ_CPIJ019283
+            AME: 413549(GB13893)
+            NVI: 100120051 100121958
+            TCA: 656073 656110 659298
+            BMOR: 101736840 101741187
+            API: 100166045
+            PHU: Phum_PHUM115050 Phum_PHUM539580 Phum_PHUM567440
+            ISC: IscW_ISCW013435
+            CEL: CELE_PAR2.4(mig-22) CELE_T24D1.1(sqv-5)
+            CBR: CBG03828(Cbr-sqv-5) CBG06915(Cbr-mig-22)
+            BMY: Bm1_19700 Bm1_44390
+            LOA: LOAG_10307 LOAG_12280 LOAG_14388
+            TSP: Tsp_00078 Tsp_10489
+            NVE: NEMVE_v1g177601 NEMVE_v1g240106
+            HMG: 100199409 100201765
+            AQU: 100634573 100634635 100635011 100636909 100641849
+            GSL: Gasu_24800
+            CCP: CHC_T00008612001 CHC_T00008980001
+            PMU: PM0775
+            FBL: Fbal_0446
+            CPH: Cpha266_2341
+DBLINKS     ExplorEnz - The Enzyme Database: 2.4.1.175
+            IUBMB Enzyme Nomenclature: 2.4.1.175
+            ExPASy - ENZYME nomenclature database: 2.4.1.175
+            BRENDA, the Enzyme Database: 2.4.1.175
+            CAS: 96189-40-1
+///

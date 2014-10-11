@@ -1,0 +1,29 @@
+ENTRY       R08390                      Reaction
+DEFINITION  Retinoate + NADPH + H+ + Oxygen <=> all-trans-18-Hydroxyretinoic acid + NADP+ + H2O
+EQUATION    C00777 + C00005 + C00080 + C00007 <=> C16679 + C00006 + C00001
+COMMENT     CYP1A1, CYP2A6, CYP2B6, CYP2C8/9/18, CYP3A4/5/7, CYP26, CYP4A11
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP12855  C00007_C16679 leave
+            RP12998  C00777_C16679 main [RC:RC00724]
+ENZYME      1.14.13.-       1.14.14.1       1.14.15.3
+PATHWAY     rn00830  Retinol metabolism
+ORTHOLOGY   K07408  cytochrome P450, family 1, subfamily A, polypeptide 1 [EC:1.14.14.1]
+            K07411  cytochrome P450, family 2, subfamily A [EC:1.14.14.1]
+            K07412  cytochrome P450, family 2, subfamily B [EC:1.14.14.1]
+            K07413  cytochrome P450, family 2, subfamily C [EC:1.14.14.1]
+            K07424  cytochrome P450, family 3, subfamily A [EC:1.14.14.1]
+            K07425  alkane 1-monooxygenase [EC:1.14.15.3]
+            K07437  cytochrome P450, family 26, subfamily A
+            K12664  cytochrome P450, family 26, subfamily B
+            K12665  cytochrome P450, family 26, subfamily C
+            K17683  cytochrome P450, family 2, subfamily A, polypeptide 6 [EC:1.14.13.-]
+            K17687  alkane 1-monooxygenase [EC:1.14.15.3]
+            K17689  cytochrome P450, family 3, subfamily A, polypeptide 4 [EC:1.14.13.32 1.14.13.67 1.14.13.97 1.14.13.157 1.14.13.-]
+            K17690  cytochrome P450, family 3, subfamily A, polypeptide 5 [EC:1.14.14.1]
+            K17691  cytochrome P450, family 3, subfamily A, polypeptide 7 [EC:1.14.14.1]
+            K17709  cytochrome P450, family 2, subfamily B, polypeptide 6 [EC:1.14.13.-]
+            K17718  cytochrome P450, family 2, subfamily C, polypeptide 8 [EC:1.14.14.1]
+            K17719  cytochrome P450, family 2, subfamily C, polypeptide 9 [EC:1.14.13.48 1.14.13.49 1.14.13.80 1.14.13.-]
+            K17720  cytochrome P450, family 2, subfamily C, polypeptide 18 [EC:1.14.14.1]
+///

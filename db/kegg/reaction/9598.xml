@@ -1,0 +1,12 @@
+ENTRY       R09598                      Reaction
+DEFINITION  Cobyrinate + L-Glutamine + ATP + H2O <=> Cobyrinate c-monamide + L-Glutamate + ADP + Orthophosphate
+EQUATION    C05773 + C00064 + C00002 + C00001 <=> C19724 + C00025 + C00008 + C00009
+COMMENT     first step of two-step reaction (see R05815, R09598+R09599)
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00024  C00025_C00064 main [RC:RC00010]
+            RP05695  C00001_C00025 leave
+            RP15023  C05773_C19724 main [RC:RC00010]
+            RP15024  C00064_C19724 trans
+ENZYME      6.3.5.11
+///

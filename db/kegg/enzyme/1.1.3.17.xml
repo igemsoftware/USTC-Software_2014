@@ -1,0 +1,75 @@
+ENTRY       EC 1.1.3.17                 Enzyme
+NAME        choline oxidase
+CLASS       Oxidoreductases;
+            Acting on the CH-OH group of donors;
+            With oxygen as acceptor
+SYSNAME     choline:oxygen 1-oxidoreductase
+REACTION    choline + 2 O2 + H2O = betaine + 2 H2O2 (overall reaction) [RN:R08212];
+            (1a) choline + O2 = betaine aldehyde + H2O2 [RN:R01022];
+            (1b) betaine aldehyde + O2 + H2O = betaine + H2O2 [RN:R08211]
+ALL_REAC    R01022 R08211 R08212
+SUBSTRATE   choline [CPD:C00114];
+            O2 [CPD:C00007];
+            H2O [CPD:C00001];
+            betaine aldehyde [CPD:C00576]
+PRODUCT     betaine [CPD:C00719];
+            H2O2 [CPD:C00027];
+            betaine aldehyde [CPD:C00576]
+COMMENT     A flavoprotein (FAD). In many bacteria, plants and animals, the osmoprotectant betaine is synthesized using different enzymes to catalyse the conversion of (1) choline into betaine aldehyde and (2) betaine aldehyde into betaine. In plants, the first reaction is catalysed by EC 1.14.15.7, choline monooxygenase, whereas in animals and many bacteria, it is catalysed by either membrane-bound choline dehydrogenase (EC 1.1.99.1) or soluble choline oxidase (EC 1.1.3.17) [6]. The enzyme involved in the second step, EC 1.2.1.8, betaine-aldehyde dehydrogenase, appears to be the same in those plants, animals and bacteria that use two separate enzymes.
+HISTORY     EC 1.1.3.17 created 1978, modified 2005, modified 2007
+REFERENCE   1  [PMID:599154]
+  AUTHORS   Ikuta S, Imamura S, Misaki H, Horiuti Y.
+  TITLE     Purification and characterization of choline oxidase from Arthrobacter globiformis.
+  JOURNAL   J. Biochem. (Tokyo). 82 (1977) 1741-9.
+  ORGANISM  Arthrobacter globiformis
+REFERENCE   2  [PMID:1987142]
+  AUTHORS   Rozwadowski KL, Khachatourians GG, Selvaraj G.
+  TITLE     Choline oxidase, a catabolic enzyme in Arthrobacter pascens, facilitates adaptation to osmotic stress in Escherichia coli.
+  JOURNAL   J. Bacteriol. 173 (1991) 472-8.
+  ORGANISM  Arthrobacter pascens
+REFERENCE   3  [PMID:12795615]
+  AUTHORS   Rand T, Halkier T, Hansen OC.
+  TITLE     Structural characterization and mapping of the covalently linked FAD cofactor in choline oxidase from Arthrobacter globiformis.
+  JOURNAL   Biochemistry. 42 (2003) 7188-94.
+  ORGANISM  Arthrobacter globiformis
+  SEQUENCE  [up:Q7X2H8] [arr:ARUE_c04830] (Arthrobacter sp.)
+REFERENCE   4  [PMID:15369826]
+  AUTHORS   Gadda G, Powell NL, Menon P.
+  TITLE     The trimethylammonium headgroup of choline is a major determinant for substrate binding and specificity in choline oxidase.
+  JOURNAL   Arch. Biochem. Biophys. 430 (2004) 264-73.
+  ORGANISM  Arthrobacter globiformis
+REFERENCE   5  [PMID:15713082]
+  AUTHORS   Fan F, Gadda G.
+  TITLE     On the catalytic mechanism of choline oxidase.
+  JOURNAL   J. Am. Chem. Soc. 127 (2005) 2067-74.
+  ORGANISM  Arthrobacter globiformis
+REFERENCE   6  [PMID:12466265]
+  AUTHORS   Waditee R, Tanaka Y, Aoki K, Hibino T, Jikuya H, Takano J, Takabe T, Takabe T.
+  TITLE     Isolation and functional characterization of N-methyltransferases that catalyze betaine synthesis from glycine in a halotolerant photosynthetic organism Aphanothece halophytica.
+  JOURNAL   J. Biol. Chem. 278 (2003) 4932-42.
+  ORGANISM  Aphanothece halophytica
+REFERENCE   7  [PMID:14678796]
+  AUTHORS   Fan F, Ghanem M, Gadda G.
+  TITLE     Cloning, sequence analysis, and purification of choline oxidase from Arthrobacter globiformis: a bacterial enzyme involved in osmotic stress tolerance.
+  JOURNAL   Arch. Biochem. Biophys. 421 (2004) 149-58.
+  ORGANISM  Arthrobacter globiformis
+  SEQUENCE  [up:Q7X2H8] [arr:ARUE_c04830] (Arthrobacter sp.)
+REFERENCE   8  [PMID:12637017]
+  AUTHORS   Gadda G.
+  TITLE     Kinetic mechanism of choline oxidase from Arthrobacter globiformis.
+  JOURNAL   Biochim. Biophys. Acta. 1646 (2003) 112-8.
+  ORGANISM  Arthrobacter globiformis
+PATHWAY     ec00260  Glycine, serine and threonine metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K17755  choline oxidase
+GENES       ART: Arth_3743
+            AAU: AAur_0512
+            ACH: Achl_3687
+            AAI: AARI_07270(codA)
+            ARR: ARUE_c04830
+DBLINKS     ExplorEnz - The Enzyme Database: 1.1.3.17
+            IUBMB Enzyme Nomenclature: 1.1.3.17
+            ExPASy - ENZYME nomenclature database: 1.1.3.17
+            BRENDA, the Enzyme Database: 1.1.3.17
+            CAS: 9028-67-5
+///

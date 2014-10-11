@@ -1,0 +1,111 @@
+ENTRY       EC 2.4.1.214                Enzyme
+NAME        glycoprotein 3-alpha-L-fucosyltransferase;
+            GDP-L-Fuc:N-acetyl-beta-D-glucosaminide alpha1,3-fucosyltransferase;
+            GDP-L-Fuc:Asn-linked GlcNAc alpha1,3-fucosyltransferase;
+            GDP-fucose:beta-N-acetylglucosamine (Fuc to (Fucalpha1->6GlcNAc)-Asn-peptide) alpha1->3-fucosyltransferase;
+            GDP-L-fucose:glycoprotein (L-fucose to asparagine-linked N-acetylglucosamine of 4-N-{N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->3)-[N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->6)]-beta-D-mannosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-(1->4)-N-acetyl-beta-D-glucosaminyl}asparagine) 3-alpha-L-fucosyl-transferase;
+            GDP-L-fucose:glycoprotein (L-fucose to asparagine-linked N-acetylglucosamine of N4-{N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->3)-[N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->6)]-beta-D-mannosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-(1->4)-N-acetyl-beta-D-glucosaminyl}asparagine) 3-alpha-L-fucosyl-transferase
+CLASS       Transferases;
+            Glycosyltransferases;
+            Hexosyltransferases
+SYSNAME     GDP-beta-L-fucose:glycoprotein (L-fucose to asparagine-linked N-acetylglucosamine of N4-{N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->3)-[N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->6)]-beta-D-mannosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-(1->4)-N-acetyl-beta-D-glucosaminyl}asparagine) 3-alpha-L-fucosyl-transferase
+REACTION    GDP-beta-L-fucose + N4-{N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->3)-[N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->6)]-beta-D-mannosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-(1->4)-N-acetyl-beta-D-glucosaminyl}asparagine = GDP + N4-{N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->3)-[N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->6)]-beta-D-mannosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-(1->4)-[alpha-L-fucosyl-(1->3)]-N-acetyl-beta-D-glucosaminyl}asparagine [RN:R06015]
+ALL_REAC    R06015(G) > R09318(G)
+SUBSTRATE   GDP-beta-L-fucose [CPD:C00325];
+            N4-{N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->3)-[N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->6)]-beta-D-mannosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-(1->4)-N-acetyl-beta-D-glucosaminyl}asparagine
+PRODUCT     GDP [CPD:C00035];
+            N4-{N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->3)-[N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->6)]-beta-D-mannosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-(1->4)-[alpha-L-fucosyl-(1->3)]-N-acetyl-beta-D-glucosaminyl}asparagine
+COMMENT     Requires Mn2+. The enzyme transfers to N-linked oligosaccharide structures (N-glycans), generally with a specificity for N-glycans with one unsubstituted non-reducing terminal GlcNAc residue. This enzyme catalyses a reaction similar to that of EC 2.4.1.68, glycoprotein 6-alpha-L-fucosyltransferase, but transferring the L-fucosyl group from GDP-beta-L-fucose to form an alpha1,3-linkage rather than an alpha1,6-linkage. The {iupac/misc/glycp#3.5::N-glycan} products of this enzyme are present in plants, insects and some other invertebrates (e.g., Schistosoma, Haemonchus, Lymnaea).
+HISTORY     EC 2.4.1.214 created 2001
+REFERENCE   1  [PMID:11420147]
+  AUTHORS   Wilson IB, Rendic D, Freilinger A, Dumic J, Altmann F, Mucha J, Muller S, Hauser MT.
+  TITLE     Cloning and expression of cDNAs encoding alpha1,3-fucosyltransferase homologues from Arabidopsis thaliana.
+  JOURNAL   Biochim. Biophys. Acta. 1527 (2001) 88-96.
+  ORGANISM  Arabidopsis thaliana
+  SEQUENCE  [ath:AT3G19280]
+REFERENCE   2  [PMID:11382750]
+  AUTHORS   Fabini G, Freilinger A, Altmann F, Wilson IB.
+  TITLE     Identification of core alpha 1,3-fucosylated glycans and cloning of the requisite fucosyltransferase cDNA from Drosophila melanogaster. Potential basis of the neural anti-horseadish peroxidase epitope.
+  JOURNAL   J. Biol. Chem. 276 (2001) 28058-67.
+  ORGANISM  Drosophila melanogaster
+  SEQUENCE  [dme:Dmel_CG6869]
+REFERENCE   3  [PMID:10419500]
+  AUTHORS   Leiter H, Mucha J, Staudacher E, Grimm R, Glossl J, Altmann F.
+  TITLE     Purification, cDNA cloning, and expression of GDP-L-Fuc:Asn-linked GlcNAc alpha1,3-fucosyltransferase from mung beans.
+  JOURNAL   J. Biol. Chem. 274 (1999) 21830-9.
+  ORGANISM  Vigna radiata
+REFERENCE   4  [PMID:10567717]
+  AUTHORS   van Tetering A, Schiphorst WE, van den Eijnden DH, van Die I.
+  TITLE     Characterization of a core alpha1--&gt;3-fucosyltransferase from the snail Lymnaea stagnalis that is involved in the synthesis of complex-type N-glycans.
+  JOURNAL   FEBS. Lett. 461 (1999) 311-4.
+  ORGANISM  Lymnaea stagnalis
+REFERENCE   5  [PMID:1868856]
+  AUTHORS   Staudacher E, Altmann F, Glossl J, Marz L, Schachter H, Kamerling JP, Hard K, Vliegenthart JF.
+  TITLE     GDP-fucose: beta-N-acetylglucosamine (Fuc to (Fuc alpha 1----6GlcNAc)-Asn-peptide)alpha 1----3-fucosyltransferase activity in honeybee (Apis mellifica) venom glands. The difucosylation of asparagine-bound N-acetylglucosamine.
+  JOURNAL   Eur. J. Biochem. 199 (1991) 745-51.
+  ORGANISM  Apis mellifera
+PATHWAY     ec00513  Various types of N-glycan biosynthesis
+ORTHOLOGY   K00753  glycoprotein 3-alpha-L-fucosyltransferase
+GENES       BFO: BRAFLDRAFT_118057 BRAFLDRAFT_126419 BRAFLDRAFT_148435 BRAFLDRAFT_157961 BRAFLDRAFT_158143 BRAFLDRAFT_168114 BRAFLDRAFT_168183 BRAFLDRAFT_168192 BRAFLDRAFT_196427 BRAFLDRAFT_217829 BRAFLDRAFT_228496 BRAFLDRAFT_249686 BRAFLDRAFT_273851 BRAFLDRAFT_82752 BRAFLDRAFT_82754 BRAFLDRAFT_87449 BRAFLDRAFT_91840
+            DME: Dmel_CG6869(FucTA)
+            DPO: Dpse_GA19918
+            DAN: Dana_GF23688
+            DER: Dere_GG15882
+            DPE: Dper_GL18621 Dper_GL24771
+            DSE: Dsec_GM25513
+            DSI: Dsim_GD14528
+            DWI: Dwil_GK20401
+            DYA: Dyak_GE22226
+            DGR: Dgri_GH14528
+            DMO: Dmoj_GI13099
+            DVI: Dvir_GJ13846
+            AGA: AgaP_AGAP003191
+            AAG: AaeL_AAEL011784
+            CQU: CpipJ_CPIJ013202
+            AME: 100578168
+            NVI: 100116394
+            TCA: 655857 656368
+            BMOR: 101742412
+            API: 100161726 100162456 100163995 100165601 100167629 100168794 100574117
+            PHU: Phum_PHUM491860
+            ISC: IscW_ISCW000880 IscW_ISCW003580 IscW_ISCW005012 IscW_ISCW024303 IscW_ISCW024461
+            TSP: Tsp_00082 Tsp_02347a Tsp_02348 Tsp_10322
+            SMM: Smp_154410
+            HMG: 100199046
+            TAD: TRIADDRAFT_20532
+            ATH: AT1G49710(FUT12) AT3G19280(FUT11)
+            ALY: ARALYDRAFT_479443 ARALYDRAFT_891881 ARALYDRAFT_891885
+            CRB: CARUB_v10008875mg CARUB_v10015682mg
+            EUS: EUTSA_v10011402mg EUTSA_v10022257mg
+            CIT: 102617014
+            CIC: CICLE_v10028212mg
+            TCC: TCM_007068
+            GMX: 100776065 100792811
+            MTR: MTR_4g086010
+            CAM: 101502044
+            FVE: 101293079
+            CSV: 101202837 101205170 101229903
+            RCU: RCOM_0813330
+            POP: POPTR_0009s10430g(POPTRDRAFT_1087083)
+            VVI: 100255469
+            SLY: 101251424 101264378
+            SOT: 102592560 102599085
+            OSA: 4345809
+            DOSA: Os08t0472600-01(Os08g0472600)
+            OBR: 102709390
+            BDI: 100834636
+            SBI: SORBI_07g022980(SORBIDRAFT_07g022980)
+            ZMA: 100273557 732741(core3ft) 778434
+            SITA: 101766834
+            ATR: s00132p00113370(AMTR_s00132p00113370)
+            SMO: SELMODRAFT_452935(FucTA)
+            PPP: PHYPADRAFT_206064
+            CSL: COCSUDRAFT_37671
+            DPP: DICPUDRAFT_157080
+            NGR: NAEGRDRAFT_74046
+DBLINKS     ExplorEnz - The Enzyme Database: 2.4.1.214
+            IUBMB Enzyme Nomenclature: 2.4.1.214
+            ExPASy - ENZYME nomenclature database: 2.4.1.214
+            BRENDA, the Enzyme Database: 2.4.1.214
+            CAS: 68247-53-0
+///

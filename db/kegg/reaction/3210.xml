@@ -1,0 +1,13 @@
+ENTRY       R03210                      Reaction
+NAME        6-Carboxyhexanoyl-CoA:L-alanine C-carboxyhexanoyltransferase (decarboxylating)
+DEFINITION  6-Carboxyhexanoyl-CoA + L-Alanine <=> 8-Amino-7-oxononanoate + CoA + CO2
+EQUATION    C01063 + C00041 <=> C01092 + C00010 + C00011
+RPAIR       RP00651  C00010_C01063 main [RC:RC00004]
+            RP02846  C00041_C01092 trans
+            RP07403  C00011_C00041 leave
+            RP07404  C01063_C01092 main [RC:RC02725]
+ENZYME      2.3.1.47
+PATHWAY     rn00780  Biotin metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00652  8-amino-7-oxononanoate synthase [EC:2.3.1.47]
+///

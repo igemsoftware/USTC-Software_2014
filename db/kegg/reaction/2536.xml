@@ -1,0 +1,16 @@
+ENTRY       R02536                      Reaction
+NAME        Phenylacetaldehyde:NAD+ oxidoreductase
+DEFINITION  Phenylacetaldehyde + NAD+ + H2O <=> Phenylacetic acid + NADH + H+
+EQUATION    C00601 + C00003 + C00001 <=> C07086 + C00004 + C00080
+COMMENT     NADP+ (see R02537)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00650  C00601_C07086 main [RC:RC00080]
+            RP05790  C00001_C07086 leave
+ENZYME      1.2.1.5         1.2.1.39
+PATHWAY     rn00360  Phenylalanine metabolism
+            rn00643  Styrene degradation
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K00129  aldehyde dehydrogenase (NAD(P)+) [EC:1.2.1.5]
+            K00146  phenylacetaldehyde dehydrogenase [EC:1.2.1.39]
+///

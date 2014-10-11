@@ -1,0 +1,13 @@
+ENTRY       R02380                      Reaction
+NAME        UDPglucose:sinapate D-glucosyltransferase
+DEFINITION  UDP-glucose + Sinapate <=> UDP + 1-O-Sinapoyl-beta-D-glucose
+EQUATION    C00029 + C00482 <=> C00015 + C01175
+COMMENT     ec 2.4.1.120 forms only glucose esters
+            ec 2.4.1.126 forms a mixture of glucose esters and 4-glucosides (see R08533)
+RPAIR       RP00012  C00015_C00029 main [RC:RC00005]
+            RP10775  C00029_C01175 trans
+            RP11155  C00482_C01175 main [RC:RC00523]
+ENZYME      2.4.1.120       2.4.1.126
+PATHWAY     rn00940  Phenylpropanoid biosynthesis
+ORTHOLOGY   K13068  sinapate 1-glucosyltransferase [EC:2.4.1.120]
+///

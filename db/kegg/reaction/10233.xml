@@ -1,0 +1,18 @@
+ENTRY       R10233                      Reaction
+NAME        4-coumaroyl-CoA:malonyl-CoA 4-coumaryltransferase (bisdemethoxycurcumin-forming)
+DEFINITION  2 p-Coumaroyl-CoA + Malonyl-CoA + H2O <=> 3 CoA + Bisdemethoxycurcumin + 2 CO2
+EQUATION    2 C00223 + C00083 + C00001 <=> 3 C00010 + C17743 + 2 C00011
+COMMENT     two-step reaction (see R08805+R08807)
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP00144  C00010_C00223 main [RC:RC00004]
+            RP05682  C00001_C00011 leave
+            RP05694  C00011_C00083 leave
+            RP12789  C00011_C00083 leave
+            RP13865  C00223_C17743 trans
+            RP16114  C00223_C17743 trans
+            RP16115  C00083_C17743 trans
+ENZYME      2.3.1.211
+PATHWAY     rn00945  Stilbenoid, diarylheptanoid and gingerol biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K17212  bisdemethoxycurcumin synthase [EC:2.3.1.211]
+///

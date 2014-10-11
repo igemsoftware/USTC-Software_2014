@@ -1,0 +1,16 @@
+ENTRY       R02501                      Reaction
+NAME        testosterone,reduced-flavoprotein:oxygen 19-oxidoreductase
+DEFINITION  Testosterone + Reduced flavoprotein + Oxygen <=> 19-Hydroxytestosterone + Oxidized flavoprotein + H2O
+EQUATION    C00535 + C03024 + C00007 <=> C05294 + C03161 + C00001
+COMMENT     aromatase, ARO
+            P-450 reductase (ec 1.6.2.4) is the flavoprotein and re-reduced by NADPH (see R08551)
+            three successive reactions (R02501+R04761+R03087)
+            subsequently R04761
+RPAIR       RP00013  C00001_C00007 cofac
+            RP02258  C00535_C05294 main [RC:RC00257]
+            RP07051  C00007_C05294 leave
+ENZYME      1.14.14.14
+PATHWAY     rn00140  Steroid hormone biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K07434  aromatase [EC:1.14.14.14]
+///

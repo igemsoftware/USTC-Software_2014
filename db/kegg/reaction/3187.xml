@@ -1,0 +1,15 @@
+ENTRY       R03187                      Reaction
+NAME        N-Methylimidazolidine-2,4-dione amidohydrolase (ATP-hydrolysing)
+DEFINITION  ATP + N-Methylhydantoin + 2 H2O <=> ADP + Orthophosphate + N-Carbamoylsarcosine
+EQUATION    C00002 + C02565 + 2 C00001 <=> C00008 + C00009 + C01043
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP02824  C01043_C02565 main [RC:RC00632]
+            RP05676  C00001_C00009 ligase
+            RP07391  C00001_C01043 leave
+ENZYME      3.5.2.14
+PATHWAY     rn00330  Arginine and proline metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01473  N-methylhydantoinase A [EC:3.5.2.14]
+            K01474  N-methylhydantoinase B [EC:3.5.2.14]
+///

@@ -1,0 +1,12 @@
+ENTRY       R06861                      Reaction
+NAME        D-xylulose-5-phosphate:thiamin diphosphate glycolaldehydetransferase;
+            alpha,beta-dihydroxyethyl-TPP:D-glyceraldehyde-3-phosphate glycolaldehydetransferase
+DEFINITION  D-Xylulose 5-phosphate + Thiamin diphosphate <=> alpha,beta-Dihydroxyethyl-TPP + D-Glyceraldehyde 3-phosphate
+EQUATION    C00231 + C00068 <=> C13378 + C00118
+COMMENT     TPP-dependent enzyme (see R01440), subsequently R06862
+            TPP-dependent enzyme (see R01641), following after R06863
+RPAIR       RP00080  C00118_C00231 main [RC:RC00032]
+            RP09128  C00068_C13378 main [RC:RC00027]
+            RP09657  C00231_C13378 trans
+ENZYME      2.2.1.1         2.2.1.3
+///

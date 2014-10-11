@@ -1,0 +1,15 @@
+ENTRY       R05728                      Reaction
+NAME        (Z)-4-hydroxyphenylacetaldehyde-oxime,NADPH:oxygen oxidoreductase
+DEFINITION  (Z)-4-Hydroxyphenylacetaldehyde oxime + NADPH + H+ + Oxygen <=> (S)-4-Hydroxymandelonitrile + NADP+ + 2 H2O
+EQUATION    C04353 + C00005 + C00080 + C00007 <=> C03742 + C00006 + 2 C00001
+COMMENT     two-step reaction (see R04306+R02708)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP10164  C03742_C04353 main [RC:RC01713]
+            RP12531  C00001_C04353 leave
+            RP12532  C00007_C03742 leave
+ENZYME      1.14.13.68
+PATHWAY     rn00460  Cyanoamino acid metabolism
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13029  4-hydroxyphenylacetaldehyde oxime monooxygenase [EC:1.14.13.68]
+///

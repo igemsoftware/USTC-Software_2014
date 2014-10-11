@@ -1,0 +1,11 @@
+ENTRY       R08015                      Reaction
+DEFINITION  4-Hydroxylamino-2,6-dinitrotoluene + 2 NADPH + 2 H+ <=> 2,4-Dihydroxylamino-6-nitrotoluene + 2 NADP+ + H2O
+EQUATION    C16392 + 2 C00005 + 2 C00080 <=> C16402 + 2 C00006 + C00001
+COMMENT     nitrobenzene nitroreductase
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP12188  C16392_C16402 main [RC:RC00250]
+            RP12659  C00001_C16392 leave
+ENZYME      1.7.1.-
+PATHWAY     rn00633  Nitrotoluene degradation
+            rn01120  Microbial metabolism in diverse environments
+///

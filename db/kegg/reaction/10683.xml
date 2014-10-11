@@ -1,0 +1,12 @@
+ENTRY       R10683                      Reaction
+DEFINITION  6-Deoxotyphasterol + 3 Oxygen + 3 Reduced flavoprotein <=> 7-Oxatyphasterol + 4 H2O + 3 Oxidized flavoprotein
+EQUATION    C15801 + 3 C00007 + 3 C03024 <=> C17735 + 4 C00001 + 3 C03161
+COMMENT     possibly three-step reaction (similar to R10682, R07450+R07451+R07471)
+            P-450 reductase (ec 1.6.2.4) is the flavoprotein and re-reduced by NADPH (see R08551)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP13887  C00007_C17735 leave
+            RP16845  C15801_C17735 main [RC:RC03235]
+            RP16846  C00007_C17735 leave
+ENZYME      1.14.-.-
+ORTHOLOGY   K12640  brassinosteroid-6-oxidase 2 [EC:1.14.-.-]
+///

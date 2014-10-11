@@ -1,0 +1,11 @@
+ENTRY       R09950                      Reaction
+NAME        (Z)-2-methylureidoacrylate peracid amidohydrolase
+DEFINITION  (Z)-2-Methylureidoacrylate peracid + H2O <=> (Z)-2-Methylperoxyaminoacrylate + CO2 + Ammonia
+EQUATION    C20232 + C00001 <=> C20250 + C00011 + C00014
+COMMENT     two-step reaction (see R09949+R07316)
+RPAIR       RP05682  C00001_C00011 leave
+            RP15608  C20232_C20250 main [RC:RC02737]
+            RP15610  C00011_C20232 leave
+            RP15611  C00014_C20232 leave
+ENZYME      3.5.1.110
+///

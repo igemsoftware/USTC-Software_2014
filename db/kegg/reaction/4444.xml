@@ -1,0 +1,16 @@
+ENTRY       R04444                      Reaction
+NAME        L-1-pyrroline-3-hydroxy-5-carboxylate:NAD+ oxidoreductase
+DEFINITION  L-1-Pyrroline-3-hydroxy-5-carboxylate + NAD+ + 2 H2O <=> L-erythro-4-Hydroxyglutamate + NADH + H+
+EQUATION    C04281 + C00003 + 2 C00001 <=> C05947 + C00004 + C00080
+COMMENT     possibly two-step reaction (R04443+R05051)
+            NADPH (see R04445)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00757  C04281_C05947 main [RC:RC00255]
+            RP05840  C00001_C05947 leave
+            RP12507  C00001_C05947 leave
+ENZYME      1.2.1.88
+PATHWAY     rn00330  Arginine and proline metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00294  1-pyrroline-5-carboxylate dehydrogenase [EC:1.2.1.88]
+            K13821  proline dehydrogenase / delta 1-pyrroline-5-carboxylate dehydrogenase [EC:1.5.5.2 1.2.1.88]
+///

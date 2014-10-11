@@ -1,0 +1,12 @@
+ENTRY       R03659                      Reaction
+NAME        L-Methionine:tRNAMet ligase (AMP-forming)
+DEFINITION  ATP + L-Methionine + tRNA(Met) <=> AMP + Diphosphate + L-Methionyl-tRNA
+EQUATION    C00002 + C00073 + C01647 <=> C00020 + C00013 + C02430
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP03281  C00073_C02430 main [RC:RC00523]
+            RP03282  C01647_C02430 main [RC:RC00055]
+ENZYME      6.1.1.10
+PATHWAY     rn00970  Aminoacyl-tRNA biosynthesis
+ORTHOLOGY   K01874  methionyl-tRNA synthetase [EC:6.1.1.10]
+///

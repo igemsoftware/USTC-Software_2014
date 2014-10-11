@@ -1,0 +1,191 @@
+ENTRY       EC 2.4.1.255                Enzyme
+NAME        protein O-GlcNAc transferase;
+            O-GlcNAc transferase;
+            OGTase;
+            O-linked N-acetylglucosaminyltransferase;
+            uridine diphospho-N-acetylglucosamine:polypeptide beta-N-acetylglucosaminyltransferase;
+            protein O-linked beta-N-acetylglucosamine transferase
+CLASS       Transferases;
+            Glycosyltransferases;
+            Hexosyltransferases
+SYSNAME     UDP-N-acetyl-D-glucosamine:protein-O-beta-N-acetyl-D-glucosaminyl transferase
+REACTION    (1) UDP-N-acetyl-D-glucosamine + [protein]-L-serine = UDP + [protein]-3-O-(N-acetyl-D-glucosaminyl)-L-serine [RN:R09676];
+            (2) UDP-N-acetyl-D-glucosamine + [protein]-L-threonine = UDP + [protein]-3-O-(N-acetyl-D-glucosaminyl)-L-threonine [RN:R09677]
+ALL_REAC    R09676 R09677;
+            (other) R09304(G)
+SUBSTRATE   UDP-N-acetyl-D-glucosamine [CPD:C00043];
+            [protein]-L-serine [CPD:C06395];
+            [protein]-L-threonine [CPD:C19803]
+PRODUCT     UDP [CPD:C00015];
+            [protein]-3-O-(N-acetyl-D-glucosaminyl)-L-serine [CPD:C19802];
+            [protein]-3-O-(N-acetyl-D-glucosaminyl)-L-threonine [CPD:C19804]
+COMMENT     Within higher eukaryotes post-translational modification of protein serines/threonines with N-acetylglucosamine (O-GlcNAc) is dynamic, inducible and abundant, regulating many cellular processes by interfering with protein phosphorylation. EC 2.4.1.255 (protein O-GlcNAc transferase) transfers GlcNAc onto substrate proteins and EC 3.2.1.169 (protein O-GlcNAcase) cleaves GlcNAc from the modified proteins.
+HISTORY     EC 2.4.1.255 created 2011
+REFERENCE   1  [PMID:18948359]
+  AUTHORS   Banerjee S, Robbins PW, Samuelson J
+  TITLE     Molecular characterization of nucleocytosolic O-GlcNAc transferases of Giardia lamblia and Cryptosporidium parvum.
+  JOURNAL   Glycobiology. 19 (2009) 331-6.
+  ORGANISM  Giardia lamblia
+  SEQUENCE  [gla:GL50803_12081]
+REFERENCE   2  [PMID:18818698]
+  AUTHORS   Clarke AJ, Hurtado-Guerrero R, Pathak S, Schuttelkopf AW, Borodkin V, Shepherd SM, Ibrahim AF, van Aalten DM
+  TITLE     Structural insights into mechanism and specificity of O-GlcNAc transferase.
+  JOURNAL   EMBO. J. 27 (2008) 2780-8.
+  ORGANISM  Xanthomonas campestris
+REFERENCE   3  [PMID:16541109]
+  AUTHORS   Rao FV, Dorfmueller HC, Villa F, Allwood M, Eggleston IM, van Aalten DM
+  TITLE     Structural insights into the mechanism and inhibition of eukaryotic O-GlcNAc hydrolysis.
+  JOURNAL   EMBO. J. 25 (2006) 1569-78.
+  ORGANISM  Clostridium perfringens
+REFERENCE   4  [PMID:1533623]
+  AUTHORS   Haltiwanger RS, Blomberg MA, Hart GW
+  TITLE     Glycosylation of nuclear and cytoplasmic proteins. Purification and characterization of a uridine diphospho-N-acetylglucosamine:polypeptide beta-N-acetylglucosaminyltransferase.
+  JOURNAL   J. Biol. Chem. 267 (1992) 9005-13.
+REFERENCE   5  [PMID:9083068]
+  AUTHORS   Lubas WA, Frank DW, Krause M, Hanover JA
+  TITLE     O-Linked GlcNAc transferase is a conserved nucleocytoplasmic protein containing tetratricopeptide repeats.
+  JOURNAL   J. Biol. Chem. 272 (1997) 9316-24.
+  ORGANISM  Caenorhabditis elegans, Homo sapiens, Oryctolagus cuniculus
+  SEQUENCE  [cel:CELE_K04G7.3] [hsa:8473] [up:P81436]
+REFERENCE   6  [PMID:21240259]
+  AUTHORS   Lazarus MB, Nam Y, Jiang J, Sliz P, Walker S
+  TITLE     Structure of human O-GlcNAc transferase and its complex with a peptide substrate.
+  JOURNAL   Nature. 469 (2011) 564-7.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:8473]
+PATHWAY     ec00514  Other types of O-glycan biosynthesis
+ORTHOLOGY   K09667  protein O-GlcNAc transferase
+            K18134  protein O-GlcNAc transferase
+GENES       HSA: 285203(EOGT) 8473(OGT)
+            PTR: 465702(OGT) 494220(EOGT)
+            PPS: 100970968(EOGT) 100989146(OGT)
+            GGO: 101130943(EOGT) 101140533(OGT)
+            PON: 100174354(OGT) 100440288(EOGT)
+            MCC: 696742(EOGT) 698268(OGT)
+            MCF: 101866582 102115709(EOGT)
+            MMU: 101351(Eogt) 108155(Ogt)
+            RNO: 26295(Ogt) 494219(Eogt)
+            CGE: 100757071(Eogt) 100768670(Ogt)
+            HGL: 101710902 101715607(Eogt) 101721730
+            TUP: 102479359(OGT) 102499112(EOGT)
+            CFA: 480955(OGT) 494221(EOGT)
+            AML: 100475282(OGT) 100479105
+            FCA: 101089680(EOGT) 101094162(OGT)
+            PTG: 102959921(EOGT) 102964072(OGT)
+            BTA: 508782(EOGT) 532053(OGT)
+            BOM: 102279900(EOGT) 102286677(OGT)
+            PHD: 102328809(EOGT) 102344387(OGT)
+            CHX: 102176741(EOGT) 102187305(OGT)
+            SSC: 100155485(EOGT) 664652(OGT)
+            CFR: 102516733(OGT) 102521209(EOGT)
+            ECB: 100053493(EOGT) 100056148(OGT)
+            MYB: 102245549(OGT) 102247874(EOGT)
+            MYD: 102751826(EOGT) 102773180(OGT)
+            PALE: 102879009(EOGT) 102890872(OGT)
+            MDO: 100011073(OGT) 100618477
+            SHR: 100929019(OGT) 100931735(EOGT)
+            OAA: 100078373(EOGT)
+            GGA: 422203(OGT) 426961(C3ORF64)
+            MGP: 100538830(OGT) 100550764
+            TGU: 100224237(OGT) 100225538(EOGT)
+            FAB: 101808611(OGT) 101809614(EOGT)
+            PHI: 102112943(OGT) 102113990(EOGT)
+            APLA: 101796788(EOGT) 101799851(OGT)
+            FPG: 101915918(OGT) 101923329(EOGT)
+            FCH: 102050428(EOGT) 102052264(OGT)
+            CLV: 102092523(OGT) 102092951(EOGT)
+            ASN: 102381905(EOGT) 102387350(OGT)
+            PSS: 102445994(OGT) 102448245(EOGT)
+            CMY: 102932353 102938516 102946700(EOGT)
+            ACS: 100554805 100561277(ogt)
+            XLA: 443983(eogt) 447694(ogt)
+            XTR: 553157(ogt) 780148(eogt)
+            DRE: 337685(ogt.1) 652952(ogt.2) 798087
+            TRU: 101076057 777950(aer61)
+            MZE: 101479094 101484112
+            OLA: 101164571 101170339
+            XMA: 102227742 102236401
+            LCM: 102352761(EOGT) 102361281(OGT)
+            BFO: BRAFLDRAFT_117202 BRAFLDRAFT_119381 BRAFLDRAFT_205581
+            CIN: 100176976 100181206(ogt) 497241(aer61)
+            SPU: 579289
+            DME: Dmel_CG10392(sxc) Dmel_CG9867(Eogt)
+            DPO: Dpse_GA22085 Dpse_GA29107
+            DAN: Dana_GF13981 Dana_GF15506
+            DER: Dere_GG24854
+            DPE: Dper_GL13214 Dper_GL18361 Dper_GL26553
+            DSE: Dsec_GM11101 Dsec_GM18337
+            DSI: Dsim_GD23152
+            DWI: Dwil_GK21381 Dwil_GK23934
+            DYA: Dyak_GE18152
+            DGR: Dgri_GH10258 Dgri_GH21711 Dgri_GH22221
+            DMO: Dmoj_GI15496 Dmoj_GI18858
+            DVI: Dvir_GJ17287 Dvir_GJ20442
+            AGA: AgaP_AGAP006254 AgaP_AGAP009279
+            AAG: AaeL_AAEL007982 AaeL_AAEL014746
+            CQU: CpipJ_CPIJ004572 CpipJ_CPIJ004574 CpipJ_CPIJ009121
+            AME: 408434(GB20085) 551425(sxc)
+            NVI: 100114611 100116809(Ogt)
+            TCA: 655363 655930
+            BMOR: 101737525 101744474
+            API: 100160880 100162996 100163033 100165765 100569179 100573584 100573799
+            PHU: Phum_PHUM137560 Phum_PHUM581590
+            ISC: IscW_ISCW001589
+            CEL: CELE_H12D21.10 CELE_K04G7.3(ogt-1)
+            CBR: CBG16605(Cbr-ogt-1)
+            BMY: Bm1_01735
+            LOA: LOAG_03076 LOAG_04468 LOAG_12183
+            TSP: Tsp_01535 Tsp_08546
+            SMM: Smp_046930
+            NVE: NEMVE_v1g239520 NEMVE_v1g79962
+            HMG: 100201589
+            TAD: TRIADDRAFT_32818 TRIADDRAFT_56833
+            AQU: 100633595 100639757 100641525
+            ATH: AT3G04240(SEC)
+            ALY: ARALYDRAFT_896453
+            CRB: CARUB_v10012900mg
+            EUS: EUTSA_v10008470mg EUTSA_v10019996mg
+            CIT: 102613752 102620090
+            CIC: CICLE_v10010510mg CICLE_v10018711mg CICLE_v10033317mg CICLE_v10033490mg
+            TCC: TCM_011607 TCM_011608 TCM_012547 TCM_020181 TCM_026107 TCM_030824
+            GMX: 100798815 100800935 100806661
+            MTR: MTR_1g079510 MTR_5g043220 MTR_5g043230
+            CAM: 101506182
+            FVE: 101295225 101295515 101300068 101309854
+            CSV: 101213872 101217983
+            RCU: RCOM_0611050 RCOM_1621910 RCOM_1622020
+            POP: POPTR_0006s04710g(POPTRDRAFT_652692) POPTR_0008s09220g(POPTRDRAFT_564268) POPTR_0010s16950g(POPTRDRAFT_226224) POPTR_0010s16960g(POPTRDRAFT_226227) POPTR_0013s04820g(POPTRDRAFT_895082) POPTR_0019s04230g(POPTRDRAFT_738316)
+            VVI: 100241096 100244912
+            SLY: 101243695 101244231 101255198 101264204
+            SOT: 102579515 102597898 102598231
+            DOSA: Os02t0489550-00(Os02g0489550) Os06t0311000-00(Os06g0311000)
+            OBR: 102706253 102717126
+            BDI: 100822082 100842542 100846315
+            SBI: SORBI_03g007900(SORBIDRAFT_03g007900) SORBI_04g019560(SORBIDRAFT_04g019560)
+            ZMA: 100381672(cl27878_1(278))
+            SITA: 101783798 101783948
+            ATR: s00013p00247130(AMTR_s00013p00247130) s00226p00018460(AMTR_s00226p00018460) s00226p00020270(AMTR_s00226p00020270)
+            SMO: SELMODRAFT_452925(SEC1)
+            PPP: PHYPADRAFT_192345 PHYPADRAFT_196321 PHYPADRAFT_207714
+            VCN: VOLCADRAFT_89865
+            CSL: COCSUDRAFT_52225 COCSUDRAFT_56558 COCSUDRAFT_66769
+            CVR: CHLNCDRAFT_134977
+            GSL: Gasu_09800 Gasu_14070 Gasu_20320
+            CCP: CHC_T00009057001
+            CCI: CC1G_09580
+            MBR: MONBRDRAFT_27585
+            ACAN: ACA1_093510 ACA1_203140
+            PTI: PHATR_44040
+            TPS: THAPSDRAFT_264240
+            PIF: PITG_14472 PITG_17928
+            NGD: NGA_2058100
+            EHX: EMIHUDRAFT_209419 EMIHUDRAFT_216824 EMIHUDRAFT_227396
+            GTT: GUITHDRAFT_101001 GUITHDRAFT_105934 GUITHDRAFT_106075 GUITHDRAFT_107237 GUITHDRAFT_108736 GUITHDRAFT_109295 GUITHDRAFT_110718 GUITHDRAFT_115669 GUITHDRAFT_121883 GUITHDRAFT_131413 GUITHDRAFT_131550 GUITHDRAFT_132290 GUITHDRAFT_132555 GUITHDRAFT_134689 GUITHDRAFT_135804 GUITHDRAFT_137259 GUITHDRAFT_139868 GUITHDRAFT_140027 GUITHDRAFT_144660 GUITHDRAFT_148138 GUITHDRAFT_160947 GUITHDRAFT_162101 GUITHDRAFT_162478 GUITHDRAFT_163259 GUITHDRAFT_163991 GUITHDRAFT_69463 GUITHDRAFT_81153 GUITHDRAFT_95096
+            LBZ: LBRM_24_1430
+            NGR: NAEGRDRAFT_54891 NAEGRDRAFT_73281 NAEGRDRAFT_73723 NAEGRDRAFT_74092 NAEGRDRAFT_76995
+            GLA: GL50803_12081
+DBLINKS     ExplorEnz - The Enzyme Database: 2.4.1.255
+            IUBMB Enzyme Nomenclature: 2.4.1.255
+            ExPASy - ENZYME nomenclature database: 2.4.1.255
+            BRENDA, the Enzyme Database: 2.4.1.255
+///

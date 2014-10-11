@@ -1,0 +1,15 @@
+ENTRY       R07450                      Reaction
+DEFINITION  6-Deoxocastasterone + Oxygen + Reduced flavoprotein <=> 6alpha-Hydroxy-castasterone + H2O + Oxidized flavoprotein
+EQUATION    C15802 + C00007 + C03024 <=> C15803 + C00001 + C03161
+COMMENT     P-450 reductase (ec 1.6.2.4) is the flavoprotein and re-reduced by NADPH (see R08551)
+            subsequently R07451
+RPAIR       RP00013  C00001_C00007 cofac
+            RP12007  C15802_C15803 main [RC:RC00661]
+            RP16776  C00007_C15803 leave
+ENZYME      1.14.-.-
+PATHWAY     rn00905  Brassinosteroid biosynthesis
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K09590  brassinosteroid-6-oxidase 1 [EC:1.14.-.-]
+            K12640  brassinosteroid-6-oxidase 2 [EC:1.14.-.-]
+///

@@ -1,0 +1,19 @@
+ENTRY       R09096                      Reaction
+NAME        acetyl-CoA decarbonylase / synthase (ACDS)
+DEFINITION  Acetyl-CoA + H+ + 5,6,7,8-Tetrahydromethanopterin <=> 5-Methyl-5,6,7,8-tetrahydromethanopterin + CO + CoA
+EQUATION    C00024 + C00080 + C01217 <=> C04488 + C00237 + C00010
+COMMENT     Carbon monoxide dehydrogenase/acetyl-CoA synthase (CODH/ACS) from Methanosarcina thermophila is a multifunctional enzyme, part of a five-subunit complex.
+            This enzyme complex catalyzes the reversible oxidation of Carbon monoxide to Carbon dioxide. 
+            It also catalyzes the cleavage (or synthesis) of acetyl-CoA to (or from) methyltetrahydromethanopterin, carbon monoxide, and Coenzyme A.
+RPAIR       RP00007  C00010_C00024 main [RC:RC00004]
+            RP09224  C01217_C04488 main [RC:RC00113]
+            RP12899  C00024_C00237 leave [RC:RC02963]
+            RP14342  C00024_C04488 main [RC:RC02977]
+ENZYME      2.3.1.-
+PATHWAY     rn00680  Methane metabolism
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+ORTHOLOGY   K00193  acetyl-CoA decarbonylase/synthase complex subunit beta [EC:2.3.1.-]
+            K00194  acetyl-CoA decarbonylase/synthase complex subunit delta [EC:2.1.1.245]
+            K00197  acetyl-CoA decarbonylase/synthase complex subunit gamma [EC:2.1.1.245]
+///

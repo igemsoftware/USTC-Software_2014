@@ -1,0 +1,10 @@
+ENTRY       R05329                      Reaction
+NAME        Spermidine:eIF5A-lysine 4-aminobutyltransferase (propane-1,3-diamine-forming)
+DEFINITION  [eIF5A-precursor]-lysine + Spermidine <=> [eIF5A-precursor]-deoxyhypusine + 1,3-Diaminopropane
+EQUATION    C07281 + C00315 <=> C07282 + C00986
+COMMENT     multi-step reaction (see R07477+R07479+R07480+R07478)
+RPAIR       RP00148  C00315_C00986 main [RC:RC00053]
+            RP04932  C07281_C07282 main [RC:RC00053]
+            RP08601  C00315_C07282 trans
+ENZYME      2.5.1.46
+///

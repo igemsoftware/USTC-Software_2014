@@ -1,0 +1,11 @@
+ENTRY       R07949                      Reaction
+DEFINITION  2,3,6-Trihydroxypyridine + Oxygen + H+ <=> Maleamate + 2 H+ + CO2
+EQUATION    C03458 + C00007 + C00080 <=> C01596 + 2 C00080 + C00011
+COMMENT     multi-step reaction
+RPAIR       RP05367  C00007_C00011 leave
+            RP07400  C00007_C01596 leave
+            RP11332  C01596_C03458 main [RC:RC02959]
+            RP12274  C00011_C03458 leave
+PATHWAY     rn00760  Nicotinate and nicotinamide metabolism
+            rn01120  Microbial metabolism in diverse environments
+///

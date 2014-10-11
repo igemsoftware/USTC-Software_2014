@@ -1,0 +1,17 @@
+ENTRY       R01322                      Reaction
+NAME        Citrate:CoA ligase (ADP-forming)
+DEFINITION  ATP + Citrate + CoA <=> ADP + Orthophosphate + (3S)-Citryl-CoA
+EQUATION    C00002 + C00158 + C00010 <=> C00008 + C00009 + C00566
+COMMENT     a part of multi-step reaction (see R00352, R01322+R00354)
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00562  C00158_C00566 main [RC:RC00014]
+            RP01430  C00010_C00566 main [RC:RC00004]
+ENZYME      6.2.1.18
+PATHWAY     rn00720  Carbon fixation pathways in prokaryotes
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+ORTHOLOGY   K15232  citryl-CoA synthetase large subunit [EC:6.2.1.18]
+            K15233  citryl-CoA synthetase small subunit
+///

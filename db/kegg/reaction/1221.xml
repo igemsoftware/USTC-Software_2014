@@ -1,0 +1,22 @@
+ENTRY       R01221                      Reaction
+NAME        glycine synthase;
+            glycine cleavage system
+DEFINITION  Glycine + Tetrahydrofolate + NAD+ <=> 5,10-Methylenetetrahydrofolate + Ammonia + CO2 + NADH + H+
+EQUATION    C00037 + C00101 + C00003 <=> C00143 + C00014 + C00011 + C00004 + C00080
+COMMENT     multienzyme system
+            multi-step reaction (see R03425+R04125+R03815)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00061  C00101_C00143 main [RC:RC00022]
+            RP05764  C00014_C00037 main [RC:RC02834]
+            RP05769  C00011_C00037 leave
+ENZYME      1.4.4.2         1.8.1.4         2.1.2.10
+PATHWAY     rn00630  Glyoxylate and dicarboxylate metabolism
+            rn01110  Biosynthesis of secondary metabolites
+            rn01200  Carbon metabolism
+ORTHOLOGY   K00281  glycine dehydrogenase [EC:1.4.4.2]
+            K00282  glycine dehydrogenase subunit 1 [EC:1.4.4.2]
+            K00283  glycine dehydrogenase subunit 2 [EC:1.4.4.2]
+            K00382  dihydrolipoamide dehydrogenase [EC:1.8.1.4]
+            K00605  aminomethyltransferase [EC:2.1.2.10]
+            K02437  glycine cleavage system H protein
+///

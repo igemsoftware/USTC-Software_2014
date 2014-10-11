@@ -1,0 +1,19 @@
+ENTRY       R03905                      Reaction
+NAME        Glu-tRNA(Gln):L-glutamine amido-ligase(ADP-forming)
+DEFINITION  Glutaminyl-tRNA + L-Glutamate + Orthophosphate + ADP <=> L-Glutamyl-tRNA(Gln) + L-Glutamine + ATP + H2O
+EQUATION    C02282 + C00025 + C00009 + C00008 <=> C06112 + C00064 + C00002 + C00001
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00024  C00025_C00064 main [RC:RC00010]
+            RP03523  C02282_C06112 main [RC:RC00010]
+            RP05695  C00001_C00025 leave
+            RP07778  C00064_C02282 trans
+ENZYME      6.3.5.7
+PATHWAY     rn00970  Aminoacyl-tRNA biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K02433  aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit A [EC:6.3.5.6 6.3.5.7]
+            K02434  aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit B [EC:6.3.5.6 6.3.5.7]
+            K02435  aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit C [EC:6.3.5.6 6.3.5.7]
+            K03330  glutamyl-tRNA(Gln) amidotransferase subunit E [EC:6.3.5.7]
+            K09482  glutamyl-tRNA(Gln) amidotransferase subunit D [EC:6.3.5.7]
+///

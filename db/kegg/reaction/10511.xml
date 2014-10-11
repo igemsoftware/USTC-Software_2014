@@ -1,0 +1,11 @@
+ENTRY       R10511                      Reaction
+NAME        testosterone monooxygenase (17beta-estradiol-forming)
+DEFINITION  Testosterone + 3 Oxygen + 3 Reduced flavoprotein <=> Estradiol-17beta + Formate + 4 H2O + 3 Oxidized flavoprotein
+EQUATION    C00535 + 3 C00007 + 3 C03024 <=> C00951 + C00058 + 4 C00001 + 3 C03161
+COMMENT     three-step reaction (see R02501+R04761+R03087)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP05742  C00007_C00058 leave
+            RP16557  C00058_C00535 main [RC:RC03183]
+            RP16558  C00535_C00951 main [RC:RC03184]
+ENZYME      1.14.14.14
+///

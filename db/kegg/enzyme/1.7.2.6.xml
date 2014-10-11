@@ -1,0 +1,64 @@
+ENTRY       EC 1.7.2.6                  Enzyme
+NAME        hydroxylamine dehydrogenase;
+            HAO (ambiguous);
+            hydroxylamine oxidoreductase (ambiguous);
+            hydroxylamine oxidase (misleading)
+CLASS       Oxidoreductases;
+            Acting on other nitrogenous compounds as donors;
+            With a cytochrome as acceptor
+SYSNAME     hydroxylamine:ferricytochrome-c oxidoreductase
+REACTION    (1) hydroxylamine + H2O + 2 ferricytochrome c = nitrite + 2 ferrocytochrome c + 5 H+ [RN:R10164];
+            (2) hydroxylamine + ferricytochrome c = nitric oxide + ferrocytochrome c + 3 H+ [RN:R10165]
+ALL_REAC    R10164 R10165
+SUBSTRATE   hydroxylamine [CPD:C00192];
+            H2O [CPD:C00001];
+            ferricytochrome c [CPD:C00125]
+PRODUCT     nitrite [CPD:C00088];
+            ferrocytochrome c [CPD:C00126];
+            H+ [CPD:C00080];
+            nitric oxide [CPD:C00533]
+COMMENT     The enzymes from the nitrifying bacterium Nitrosomonas europaea [1,4] and the methylotrophic bacterium Methylococcus capsulatus [5] are hemoproteins with seven c-type hemes and one specialized P-460-type heme per subunit. The enzyme converts hydroxylamine to nitrite via an enzyme-bound nitroxyl intermediate [3]. While nitrite is the main product, the enzyme from Nitrosomonas europaea can produce nitric oxide as well [2].
+HISTORY     EC 1.7.2.6 created 1972 as EC 1.7.3.4, part transferred 2012 to EC 1.7.2.6
+REFERENCE   1  [PMID:5758552]
+  AUTHORS   Rees MK.
+  TITLE     Studies of the hydroxylamine metabolism of Nitrosomonas europaea. I. Purification of hydroxylamine oxidase.
+  JOURNAL   Biochemistry. 7 (1968) 353-66.
+REFERENCE   2  [PMID:497235]
+  AUTHORS   Hooper AB, Terry KR
+  TITLE     Hydroxylamine oxidoreductase of Nitrosomonas. Production of nitric oxide from hydroxylamine.
+  JOURNAL   Biochim. Biophys. Acta. 571 (1979) 12-20.
+REFERENCE   3  [PMID:7117545]
+  AUTHORS   Hooper AB, Balny C.
+  TITLE     Reaction of oxygen with hydroxylamine oxidoreductase of Nitrosomonas: fast kinetics.
+  JOURNAL   FEBS. Lett. 144 (1982) 299-303.
+REFERENCE   4  [PMID:6289867]
+  AUTHORS   Lipscomb JD, Hooper AB.
+  TITLE     Resolution of multiple heme centers of hydroxylamine oxidoreductase from Nitrosomonas. 1. Electron paramagnetic resonance spectroscopy.
+  JOURNAL   Biochemistry. 21 (1982) 3965-72.
+REFERENCE   5  [PMID:18650926]
+  AUTHORS   Poret-Peterson AT, Graham JE, Gulledge J, Klotz MG
+  TITLE     Transcription of nitrification genes by the methane-oxidizing bacterium, Methylococcus capsulatus strain Bath.
+  JOURNAL   ISME. J. 2 (2008) 1213-20.
+PATHWAY     ec00910  Nitrogen metabolism
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K10535  hydroxylamine dehydrogenase
+GENES       MCA: MCA0956
+            MAH: MEALZ_1830(hao)
+            NOC: Noc_0892
+            NHL: Nhal_1085
+            NWA: Nwat_0758
+            NEU: NE0962(hao2) NE2044(hao1) NE2339(hao3)
+            NET: Neut_1672 Neut_1793 Neut_2335
+            NIT: NAL212_1807 NAL212_2138 NAL212_2750
+            NII: Nit79A3_0807 Nit79A3_0822 Nit79A3_2942
+            NMU: Nmul_A0805 Nmul_A1082 Nmul_A2662
+            MSC: BN69_3242
+            SIL: SPOA0201
+            MIN: Minf_2434(cccA)
+            MOX: DAMO_2473(hao)
+DBLINKS     ExplorEnz - The Enzyme Database: 1.7.2.6
+            IUBMB Enzyme Nomenclature: 1.7.2.6
+            ExPASy - ENZYME nomenclature database: 1.7.2.6
+            BRENDA, the Enzyme Database: 1.7.2.6
+            CAS: 9075-43-8
+///

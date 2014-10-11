@@ -1,0 +1,14 @@
+ENTRY       R07403                      Reaction
+NAME        indole,NADPH:oxygen oxidoreductase (2-hydroxylating)
+DEFINITION  Indole + NADPH + H+ + Oxygen <=> Indolin-2-one + NADP+ + H2O
+EQUATION    C00463 + C00005 + C00080 + C00007 <=> C12312 + C00006 + C00001
+COMMENT     Cytochrome P450 monooxygenase (CYP71C4), bx2
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP10534  C00007_C12312 leave
+            RP11149  C00463_C12312 main [RC:RC01834]
+ENZYME      1.14.13.137
+PATHWAY     rn00402  Benzoxazinoid biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13223  indole-2-monooxygenase [EC:1.14.13.137]
+///

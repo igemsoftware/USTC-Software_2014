@@ -1,0 +1,11 @@
+ENTRY       R06585                      Reaction
+DEFINITION  N-Hydroxy-L-tyrosine + Oxygen + NADPH + H+ <=> (Z)-4-Hydroxyphenylacetaldehyde oxime + CO2 + NADP+ + 2 H2O
+EQUATION    C03004 + C00007 + C00005 + C00080 <=> C04353 + C00011 + C00006 + 2 C00001
+COMMENT     two-step reaction (see R04460+R07190)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP07917  C00011_C03004 leave
+            RP10156  C03004_C04353 main [RC:RC01719]
+ENZYME      1.14.13.41
+ORTHOLOGY   K13027  tyrosine N-monooxygenase [EC:1.14.13.41]
+///

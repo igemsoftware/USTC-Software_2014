@@ -1,0 +1,12 @@
+ENTRY       R01225                      Reaction
+NAME        5,10-Methylenetetrahydrofolate:D-alanine 2-hydroxymethyltransferase
+DEFINITION  5,10-Methylenetetrahydrofolate + D-Alanine + H2O <=> Tetrahydrofolate + 2-Methylserine
+EQUATION    C00143 + C00133 + C00001 <=> C00101 + C02115
+RPAIR       RP00061  C00101_C00143 main [RC:RC00022]
+            RP01368  C00133_C02115 main [RC:RC00472]
+            RP06489  C00001_C02115 leave
+            RP06490  C00143_C02115 trans
+ENZYME      2.1.2.7
+PATHWAY     rn00670  One carbon pool by folate
+            rn01100  Metabolic pathways
+///

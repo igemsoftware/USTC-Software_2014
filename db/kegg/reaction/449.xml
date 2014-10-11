@@ -1,0 +1,11 @@
+ENTRY       R00449                      Reaction
+NAME        L-Lysine:oxygen 2-oxidoreductase (decarboxylating)
+DEFINITION  L-Lysine + Oxygen <=> 5-Aminopentanamide + CO2 + H2O
+EQUATION    C00047 + C00007 <=> C00990 + C00011 + C00001
+RPAIR       RP00013  C00001_C00007 leave
+            RP00906  C00047_C00990 main [RC:RC00213]
+            RP05927  C00011_C00047 leave
+            RP06161  C00007_C00990 leave
+ENZYME      1.13.12.2
+PATHWAY     rn00310  Lysine degradation
+///

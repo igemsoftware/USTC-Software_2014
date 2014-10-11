@@ -1,0 +1,17 @@
+ENTRY       R08700                      Reaction
+NAME        [enzyme]-S-sulfanylcysteine:tRNA-uridine sulfurtransferase (ATP-hydrolysing)
+DEFINITION  tRNA uridine + [Enzyme]-S-sulfanylcysteine + ATP <=> tRNA containing 2-thiouridine + [Enzyme]-cysteine + AMP + Diphosphate
+EQUATION    C00868 + C15812 + C00002 <=> C17322 + C15811 + C00020 + C00013
+COMMENT     multi-step reaction
+            incomplete reaction (donor is unidentified in vivo, dithiothreitol[CPD:C00265] in vitro)
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP13463  C15811_C15812 main [RC:RC02313]
+            RP13465  C15812_C17322 trans
+            RP13466  C00868_C17322 main [RC:RC02315]
+ENZYME      2.8.1.4
+REFERENCE   1  [PMID:12549933]
+            Kambampati R, Lauhon CT.
+            MnmA and IscS are required for in vitro 2-thiouridine biosynthesis in Escherichia coli.
+            Biochemistry. 42 (2003) 1109-17.
+///

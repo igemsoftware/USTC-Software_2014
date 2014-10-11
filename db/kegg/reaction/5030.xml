@@ -1,0 +1,13 @@
+ENTRY       R05030                      Reaction
+NAME        Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-gamma-D-glutamyl-L-lysyl-D-alanyl-D-alanine:ammonia ligase (ADP-forming)
+DEFINITION  ATP + Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-gamma-D-glutamyl-L-lysyl-D-alanyl-D-alanine + Ammonia <=> ADP + Orthophosphate + Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-isoglutaminyl-L-lysyl-D-alanyl-D-alanine
+EQUATION    C00002 + C05893 + C00014 <=> C00008 + C00009 + C05894
+COMMENT     L-glutamine can act instead of NH3 (see R08855)
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP04637  C05893_C05894 main [RC:RC00358]
+            RP08422  C00014_C05894 leave
+ENZYME      6.3.5.-
+PATHWAY     rn00550  Peptidoglycan biosynthesis
+            rn01100  Metabolic pathways
+///

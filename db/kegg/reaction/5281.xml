@@ -1,0 +1,14 @@
+ENTRY       R05281                      Reaction
+DEFINITION  Toluene-4-sulfonate + Oxygen + NADH + H+ <=> 4-Sulfobenzyl alcohol + NAD+ + H2O
+EQUATION    C06677 + C00007 + C00004 + C00080 <=> C06678 + C00003 + C00001
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 leave
+            RP04884  C06677_C06678 main [RC:RC00269]
+            RP08570  C00007_C06678 leave
+ENZYME      1.14.13.-
+PATHWAY     rn00623  Toluene degradation
+            rn01120  Microbial metabolism in diverse environments
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K15768  p-toluenesulfonate methyl-monooxygenase oxygenase component TsaM [EC:1.14.13.-]
+            K15769  p-toluenesulfonate methyl-monooxygenase reductase component TsaB [EC:1.14.13.-]
+///

@@ -1,0 +1,11 @@
+ENTRY       R10023                      Reaction
+NAME        amorpha-4,11-diene,NADPH:oxygen oxidoreductase (12-hydroxylating)
+DEFINITION  Amorpha-4,11-diene + Oxygen + NADPH + H+ <=> Artemisinic alcohol + NADP+ + H2O
+EQUATION    C16028 + C00007 + C00005 + C00080 <=> C20307 + C00006 + C00001
+COMMENT     first step of three-step reaction (see R10026, R10023+R10024+R10025)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP15763  C16028_C20307 main [RC:RC01137]
+            RP15764  C00007_C20307 leave
+ENZYME      1.14.13.158
+///

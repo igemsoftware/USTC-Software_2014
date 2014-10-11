@@ -1,0 +1,13 @@
+ENTRY       R10500                      Reaction
+NAME        acetyl-CoA:phenylpyruvate C-acetyltransferase (thioester-hydrolysing, carboxymethyl-forming)
+DEFINITION  Phenylpyruvate + Acetyl-CoA + H2O <=> 2-Benzylmalic acid + CoA
+EQUATION    C00166 + C00024 + C00001 <=> C20653 + C00010
+RPAIR       RP00007  C00010_C00024 main [RC:RC00004]
+            RP16434  C00166_C20653 main [RC:RC00067]
+            RP16435  C00024_C20653 trans
+            RP16436  C00001_C20653 leave
+ENZYME      2.3.3.-
+PATHWAY     rn00400  Phenylalanine, tyrosine and tryptophan biosynthesis
+            rn01210  2-Oxocarboxylic acid metabolism
+ORTHOLOGY   K17748  benzylmalate synthase [EC:2.3.3.-]
+///

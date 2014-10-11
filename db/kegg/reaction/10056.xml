@@ -1,0 +1,14 @@
+ENTRY       R10056                      Reaction
+NAME        protein-N6,N6-dimethyl-L-lysine,2-oxoglutarate:oxygen oxidoreductase
+DEFINITION  Protein N6,N6-dimethyl-L-lysine + 2 2-Oxoglutarate + 2 Oxygen <=> Protein lysine + 2 Succinate + 2 Formaldehyde + 2 CO2
+EQUATION    C05545 + 2 C00026 + 2 C00007 <=> C02188 + 2 C00042 + 2 C00067 + 2 C00011
+COMMENT     two-step reaction (see R09510+R09511)
+RPAIR       RP00015  C00026_C00042 cofac
+            RP00502  C00007_C00067 leave
+            RP05677  C00011_C00026 leave
+            RP05690  C00007_C00042 leave
+            RP14874  C00067_C05545 main [RC:RC00185]
+            RP15847  C02188_C05545 main [RC:RC03038]
+ENZYME      1.14.11.27
+ORTHOLOGY   K10276  F-box and leucine-rich repeat protein 10/11 [EC:1.14.11.27]
+///

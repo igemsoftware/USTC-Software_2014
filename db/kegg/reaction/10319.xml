@@ -1,0 +1,15 @@
+ENTRY       R10319                      Reaction
+NAME        8-O-methylsterigmatocystin,NADPH:O2 oxidoreductase (aflatoxin-B forming)
+DEFINITION  O-Methylsterigmatocystin + 2 NADPH + 2 H+ + 2 Oxygen <=> Aflatoxin B1 + 2 NADP+ + H2O + Methanol + CO2
+EQUATION    C03686 + 2 C00005 + 2 C00080 + 2 C00007 <=> C06800 + 2 C00006 + C00001 + C00132 + C00011
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP05367  C00007_C00011 leave
+            RP16259  C03686_C06800 main [RC:RC03113]
+            RP16260  C00132_C03686 main [RC:RC00233]
+            RP16261  C00011_C03686 leave
+            RP16262  C00007_C06800 leave
+ENZYME      1.14.13.175
+PATHWAY     rn00254  Aflatoxin biosynthesis
+ORTHOLOGY   K17651  aflatoxin B synthase [EC:1.14.13.175]
+///

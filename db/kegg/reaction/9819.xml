@@ -1,0 +1,16 @@
+ENTRY       R09819                      Reaction
+NAME        3-hydroxy-9,10-secoandrosta-1,3,5(10)-triene-9,17-dione,FMNH2:oxygen oxidoreductase
+DEFINITION  3-Hydroxy-9,10-secoandrosta-1,3,5(10)-triene-9,17-dione + Reduced FMN + Oxygen <=> 3,4-Dihydroxy-9,10-secoandrosta-1,3,5(10)-triene-9,17-dione + FMN + H2O
+EQUATION    C19944 + C01847 + C00007 <=> C04793 + C00061 + C00001
+COMMENT     FMN is re-reduced by NADH (see R05705)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00852  C00061_C01847 cofac [RC:RC00126]
+            RP15413  C04793_C19944 main [RC:RC00236]
+            RP15414  C00007_C04793 leave
+ENZYME      1.14.14.12
+PATHWAY     rn00984  Steroid degradation
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K16047  3-hydroxy-9,10-secoandrosta-1,3,5(10)-triene-9,17-dione monooxygenase [EC:1.14.14.12]
+            K16048  3-hydroxy-9,10-secoandrosta-1,3,5(10)-triene-9,17-dione monooxygenase reductase component [EC:1.5.1.-]
+///

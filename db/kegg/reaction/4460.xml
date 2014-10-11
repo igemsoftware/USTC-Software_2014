@@ -1,0 +1,15 @@
+ENTRY       R04460                      Reaction
+NAME        N-hydroxy-L-tyrosine,NADPH:oxygen oxidoreductase (N-hydroxylating)
+DEFINITION  N-Hydroxy-L-tyrosine + Oxygen + NADPH + H+ <=> N,N-Dihydroxy-L-tyrosine + NADP+ + H2O
+EQUATION    C03004 + C00007 + C00005 + C00080 <=> C15503 + C00006 + C00001
+COMMENT     first step of two-step reaction (R04460+R07190 or R06585), subsequently R07190
+            and a part of multi-step reaction (see R08656)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP10541  C00007_C15503 leave
+            RP11430  C03004_C15503 main [RC:RC01918]
+ENZYME      1.14.13.41
+PATHWAY     rn00460  Cyanoamino acid metabolism
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13027  tyrosine N-monooxygenase [EC:1.14.13.41]
+///

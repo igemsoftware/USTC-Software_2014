@@ -1,0 +1,112 @@
+ENTRY       EC 1.14.14.14               Enzyme
+NAME        aromatase;
+            CYP19A1 (gene name);
+            estrogen synthetase (incorrect)
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     testosterone monooxygenase (17beta-estradiol-forming)
+REACTION    (1) testosterone + 3 O2 + 3 reduced flavoproteins = 17beta-estradiol + formate + 4 H2O + 3 oxidized flavoproteins (overall reaction) [RN:R10511];
+            (1a) testosterone + O2 + a reduced flavoprotein = 19-hydroxytestosterone + H2O + an oxidized flavoprotein [RN:R02501];
+            (1b) 19-hydroxytestosterone + O2 + a reduced flavoprotein = 19-oxotestosterone + 2 H2O + an oxidized flavoprotein [RN:R04761];
+            (1c) 19-oxotestosterone + O2 + a reduced flavoprotein = 17beta-estradiol + formate + H2O + an oxidized flavoprotein [RN:R03087];
+            (2) androst-4-ene-3,17-dione + 3 O2 + 3 reduced flavoproteins = estrone + formate + 4 H2O + 3 oxidized flavoproteins (overall reaction) [RN:R10515];
+            (2a) androst-4-ene-3,17-dione + O2 + a reduced flavoprotein = 19-hydroxyandrost-4-ene-3,17-dione + H2O + an oxidized flavoprotein [RN:R01840];
+            (2b) 19-hydroxyandrost-4-ene-3,17-dione + O2 + a reduced flavoprotein = 19-oxo-androst-4-ene-3,17-dione + 2 H2O + an oxidized flavoprotein [RN:R04759];
+            (2c) 19-oxoandrost-4-ene-3,17-dione + O2 + a reduced flavoprotein = estrone + formate + H2O + an oxidized flavoprotein [RN:R02351]
+ALL_REAC    R01840 R02351 R02501 R03087 R04759 R04761 R10511 R10515
+SUBSTRATE   testosterone [CPD:C00535];
+            O2 [CPD:C00007];
+            reduced flavoprotein [CPD:C03024];
+            19-hydroxytestosterone [CPD:C05294];
+            19-oxotestosterone [CPD:C05295];
+            androst-4-ene-3,17-dione [CPD:C00280];
+            19-hydroxyandrost-4-ene-3,17-dione [CPD:C05290];
+            19-oxoandrost-4-ene-3,17-dione [CPD:C05297]
+PRODUCT     17beta-estradiol;
+            formate [CPD:C00058];
+            H2O [CPD:C00001];
+            oxidized flavoprotein [CPD:C03161];
+            19-hydroxytestosterone [CPD:C05294];
+            19-oxotestosterone [CPD:C05295];
+            estrone [CPD:C00468];
+            19-hydroxyandrost-4-ene-3,17-dione [CPD:C05290];
+            19-oxo-androst-4-ene-3,17-dione
+COMMENT     A cytochrome P450. The enzyme catalyses three sequential hydroxylations of the androgens androst-4-ene-3,17-dione and testosterone, resulting in their aromatization and forming the estrogens estrone and 17beta-estradiol, respectively.
+HISTORY     EC 1.14.14.14 created 2013
+REFERENCE   1  [PMID:4370479]
+  AUTHORS   Thompson EA Jr, Siiteri PK
+  TITLE     The involvement of human placental microsomal cytochrome P-450 in aromatization.
+  JOURNAL   J. Biol. Chem. 249 (1974) 5373-8.
+  ORGANISM  Homo sapiens
+REFERENCE   2  [PMID:7217091]
+  AUTHORS   Fishman J, Goto J
+  TITLE     Mechanism of estrogen biosynthesis. Participation of multiple enzyme sites in placental aromatase hydroxylations.
+  JOURNAL   J. Biol. Chem. 256 (1981) 4466-71.
+  ORGANISM  Homo sapiens
+REFERENCE   3  [PMID:3104339]
+  AUTHORS   Kellis JT Jr, Vickery LE
+  TITLE     Purification and characterization of human placental aromatase cytochrome P-450.
+  JOURNAL   J. Biol. Chem. 262 (1987) 4413-20.
+  ORGANISM  Homo sapiens
+REFERENCE   4  [PMID:19129847]
+  AUTHORS   Ghosh D, Griswold J, Erman M, Pangborn W
+  TITLE     Structural basis for androgen specificity and oestrogen synthesis in human aromatase.
+  JOURNAL   Nature. 457 (2009) 219-23.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:1588]
+PATHWAY     ec00140  Steroid hormone biosynthesis
+            ec01100  Metabolic pathways
+ORTHOLOGY   K07434  aromatase
+GENES       HSA: 1588(CYP19A1)
+            PTR: 453433(CYP19A1)
+            PPS: 100984744
+            GGO: 101137192
+            PON: 100439777
+            MCC: 678697(CYP19A1)
+            MCF: 102117886
+            MMU: 13075(Cyp19a1)
+            RNO: 25147(Cyp19a1)
+            CGE: 100769024
+            HGL: 101709897
+            TUP: 102503106
+            CFA: 494003(CYP19A1)
+            AML: 100464417
+            FCA: 101094932(CYP19A1)
+            PTG: 102962141
+            BTA: 281740(CYP19A1)
+            BOM: 102277416
+            PHD: 102343465
+            CHX: 100861413(CYP19A1)
+            SSC: 403331(CYP19A1) 403333(CYP19A3)
+            CFR: 102519005
+            ECB: 100009712(CYP19A1)
+            MYB: 102253564
+            MYD: 102753728
+            PALE: 102884354
+            MDO: 100031295
+            SHR: 100929873
+            OAA: 100078619
+            GGA: 414854(CYP19A1)
+            MGP: 100549427
+            TGU: 751777(CYP19A1)
+            FAB: 101821137
+            PHI: 102100785
+            PSS: 102459111
+            CMY: 102946653
+            ACS: 100565397(cyp19a1)
+            XLA: 373656(cyp19a1)
+            XTR: 100036594(cyp19a1)
+            DRE: 30390(cyp19a1a) 60640(cyp19a1b)
+            TRU: 100379639(pfcyp19b-tstr) 101076508(pfcyp19a)
+            MZE: 101468153 101468629
+            OLA: 100125815(cyp19b) 101174651(Aromatase)
+            XMA: 102231498 102236527
+            LCM: 102348763
+            BFO: BRAFLDRAFT_118015 BRAFLDRAFT_247066
+            CVR: CHLNCDRAFT_50614
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.14.14
+            IUBMB Enzyme Nomenclature: 1.14.14.14
+            ExPASy - ENZYME nomenclature database: 1.14.14.14
+            BRENDA, the Enzyme Database: 1.14.14.14
+///

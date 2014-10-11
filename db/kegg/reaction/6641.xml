@@ -1,0 +1,19 @@
+ENTRY       R06641                      Reaction
+DEFINITION  Malonamoyl-CoA + 8 Malonyl-CoA + Acyl-carrier protein <=> Nonaketamide + 8 CO2 + 9 CoA
+EQUATION    C06625 + 8 C00083 + C00229 <=> C12441 + 8 C00011 + 9 C00010
+COMMENT     minimal PKS, oxyABC (otcY1-2+otcY1-1+otcY1-3)
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP00843  C00010_C06625 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP09807  C00083_C12441 main [RC:RC02931]
+            RP09849  C06625_C12441 main [RC:RC02728]
+            RP12361  C00083_C12441 main [RC:RC02932]
+            RP14803  C00229_C12441 main [RC:RC00039]
+ENZYME      2.3.1.-
+PATHWAY     rn00253  Tetracycline biosynthesis
+            rn01056  Biosynthesis of type II polyketide backbone
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K14245  oxy minimal PKS ketosynthase (KS/KS alpha) [EC:2.3.1.-]
+            K14246  oxy minimal PKS chain-length factor (CLF/KS beta) [EC:2.3.1.-]
+            K14247  oxy minimal PKS acyl carrier protein
+///

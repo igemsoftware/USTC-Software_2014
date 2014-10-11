@@ -1,0 +1,17 @@
+ENTRY       R09543                      Reaction
+NAME        S-adenosyl-L-methionine:malonyl-[acyl-carrier protein] O-methyltransferase
+DEFINITION  S-Adenosyl-L-methionine + Malonyl-[acyl-carrier protein] <=> S-Adenosyl-L-homocysteine + Malonyl-[acp] methyl ester
+EQUATION    C00019 + C01209 <=> C00021 + C19673
+COMMENT     Malonyl-[acp] is a far better acceptor of methyl groups from S-adenosyl-L-methionine than was malonyl-CoA.
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP14909  C01209_C19673 main [RC:RC00460]
+            RP14910  C00019_C19673 trans
+ENZYME      2.1.1.197
+PATHWAY     rn00780  Biotin metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K02169  malonyl-CoA O-methyltransferase [EC:2.1.1.197]
+REFERENCE   1  [PMID:22965231]
+            Lin S, Cronan JE.
+            The BioC O-Methyltransferase Catalyzes Methyl Esterification of Malonyl-Acyl Carrier Protein, an Essential Step in Biotin Synthesis.
+            J. Biol. Chem. 287 (2012) 37010-20.
+///

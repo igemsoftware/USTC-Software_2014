@@ -1,0 +1,18 @@
+ENTRY       R06644                      Reaction
+DEFINITION  Propanoyl-CoA + 9 Malonyl-CoA + Acyl-carrier protein <=> 3,5,7,9,11,13,15,17,19-Nonaoxo-henicosanoyl-[acp] + 9 CO2 + 9 CoA
+EQUATION    C00100 + 9 C00083 + C00229 <=> C12355 + 9 C00011 + 9 C00010
+COMMENT     minimal PKS, aknBCD dpsABCDG
+RPAIR       RP00034  C00010_C00100 main [RC:RC00004]
+            RP00051  C00010_C00083 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP09805  C00083_C12355 main [RC:RC02931]
+            RP09817  C00100_C12355 main [RC:RC02728]
+            RP12359  C00083_C12355 main [RC:RC02932]
+            RP14805  C00229_C12355 main [RC:RC00039]
+ENZYME      2.3.1.-
+PATHWAY     rn01056  Biosynthesis of type II polyketide backbone
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K15880  minimal PKS ketosynthase (KS/KS alpha) [EC:2.3.1.-]
+            K15881  minimal PKS chain-length factor (CLF/KS beta) [EC:2.3.1.-]
+            K15882  minimal PKS acyl carrier protein
+///

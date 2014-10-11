@@ -1,0 +1,12 @@
+ENTRY       R09232                      Reaction
+DEFINITION  2,4-Dinitrotoluene + 3 NADH + 3 H+ <=> 4-Amino-2-nitrotoluene + 3 NAD+ + 2 H2O
+EQUATION    C11006 + 3 C00004 + 3 C00080 <=> C18320 + 3 C00003 + 2 C00001
+COMMENT     NADH nitroreductase
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP14511  C11006_C18320 main [RC:RC01333]
+            RP14512  C00001_C11006 leave
+            RP14513  C00001_C11006 leave
+ENZYME      1.7.1.-
+PATHWAY     rn00633  Nitrotoluene degradation
+            rn01120  Microbial metabolism in diverse environments
+///

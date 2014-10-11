@@ -1,0 +1,26 @@
+ENTRY       R00014                      Reaction
+NAME        pyruvate:thiamin diphosphate acetaldehydetransferase (decarboxylating)
+DEFINITION  Pyruvate + Thiamin diphosphate <=> 2-(alpha-Hydroxyethyl)thiamine diphosphate + CO2
+EQUATION    C00022 + C00068 <=> C05125 + C00011
+COMMENT     2-oxoglutarate dehydrogenase complex: pyruvate dehydrogenase (see R01699), subsequently R03270
+            TPP-dependent enzymatic reaction (see R00006), subsequently R03050
+            TPP-dependent enzymatic reaction (see R00226), subsequently R04672
+            TPP-dependent enzymatic reaction (see R00224), subsequently R00755
+            TPP-dependent enzymatic reaction (see R08648), subsequently R04673
+RPAIR       RP00074  C00068_C05125 main [RC:RC00027]
+            RP02918  C00022_C05125 main [RC:RC02744]
+            RP05698  C00011_C00022 leave
+ENZYME      1.2.4.1         2.2.1.6         4.1.1.1
+PATHWAY     rn00010  Glycolysis / Gluconeogenesis
+            rn00020  Citrate cycle (TCA cycle)
+            rn00620  Pyruvate metabolism
+            rn01110  Biosynthesis of secondary metabolites
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K00161  pyruvate dehydrogenase E1 component subunit alpha [EC:1.2.4.1]
+            K00162  pyruvate dehydrogenase E1 component subunit beta [EC:1.2.4.1]
+            K00163  pyruvate dehydrogenase E1 component [EC:1.2.4.1]
+            K01568  pyruvate decarboxylase [EC:4.1.1.1]
+            K01652  acetolactate synthase I/II/III large subunit [EC:2.2.1.6]
+            K01653  acetolactate synthase I/III small subunit [EC:2.2.1.6]
+            K11258  acetolactate synthase II small subunit [EC:2.2.1.6]
+///

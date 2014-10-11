@@ -1,0 +1,205 @@
+ENTRY       EC 1.14.11.27               Enzyme
+NAME        [histone-H3]-lysine-36 demethylase;
+            JHDM1A;
+            JmjC domain-containing histone demethylase 1A;
+            H3-K36-specific demethylase;
+            histone-lysine (H3-K36) demethylase;
+            histone demethylase;
+            protein-6-N,6-N-dimethyl-L-lysine,2-oxoglutarate:oxygen oxidoreductase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With 2-oxoglutarate as one donor, and incorporation of one atom of oxygen into each donor
+SYSNAME     protein-N6,N6-dimethyl-L-lysine,2-oxoglutarate:oxygen oxidoreductase
+REACTION    protein N6,N6-dimethyl-L-lysine + 2 2-oxoglutarate + 2 O2 = protein L-lysine + 2 succinate + 2 formaldehyde + 2 CO2 (overall reaction) [RN:R10056];
+            (1a) protein N6,N6-dimethyl-L-lysine + 2-oxoglutarate + O2 = protein N6-methyl-L-lysine + succinate + formaldehyde + CO2 [RN:R09510];
+            (1b) protein N6-methyl-L-lysine + 2-oxoglutarate + O2 = protein L-lysine + succinate + formaldehyde + CO2 [RN:R09511]
+ALL_REAC    R09510 R09511 R10056
+SUBSTRATE   protein N6,N6-dimethyl-L-lysine [CPD:C05545];
+            2-oxoglutarate [CPD:C00026];
+            O2 [CPD:C00007];
+            protein N6-methyl-L-lysine [CPD:C05544]
+PRODUCT     protein L-lysine;
+            succinate [CPD:C00042];
+            formaldehyde [CPD:C00067];
+            CO2 [CPD:C00011];
+            protein N6-methyl-L-lysine [CPD:C05544]
+COMMENT     Requires iron(II). Of the seven potential methylation sites in histones H3 (K4, K9, K27, K36, K79) and H4 (K20, R3) from HeLa cells, the enzyme is specific for Lys-36. Lysine residues exist in three methylation states (mono-, di- and trimethylated). The enzyme preferentially demethylates the dimethyl form of Lys-36 (K36me2), which is its natural substrate, to form the monomethyl and unmethylated forms of Lys-36. It can also demethylate the monomethyl- but not the trimethyl form of Lys-36.
+HISTORY     EC 1.14.11.27 created 2006
+REFERENCE   1  [PMID:16362057]
+  AUTHORS   Tsukada Y, Fang J, Erdjument-Bromage H, Warren ME, Borchers CH, Tempst P, Zhang Y.
+  TITLE     Histone demethylation by a family of JmjC domain-containing proteins.
+  JOURNAL   Nature. 439 (2006) 811-6.
+  ORGANISM  Homo sapiens, Saccharomyces cerevisiae
+  SEQUENCE  [hsa:22992 84678] [sce:YER051W]
+ORTHOLOGY   K10276  F-box and leucine-rich repeat protein 10/11
+            K16914  bifunctional lysine-specific demethylase and histidyl-hydroxylase NO66
+GENES       HSA: 22992(KDM2A) 79697(C14orf169) 84678(KDM2B)
+            PTR: 451362(KDM2A) 465184(KDM2B)
+            PPS: 100983162(KDM2A) 100988129(KDM2B)
+            GGO: 101134785(C14H14orf169) 101140212(KDM2A) 101154151(KDM2B)
+            PON: 100434567(KDM2A) 100462645
+            MCC: 696773(C7H14orf169) 699938(KDM2B) 712907(KDM2A)
+            MCF: 102125851(KDM2B) 102135352(C7H14orf169) 102142242(KDM2A)
+            MMU: 225876(Kdm2a) 30841(Kdm2b) 71952(2410016O06Rik)
+            RNO: 304495(Kdm2b) 314300(RGD1307704) 361700(Kdm2a)
+            CGE: 100763039(Kdm2a) 100767158(Kdm2b)
+            HGL: 101696346(Kdm2b) 101712659 101713712(Kdm2a)
+            TUP: 102482421(KDM2A) 102484507 102488934(KDM2B)
+            CFA: 102155553(C8H14orf169) 483702(KDM2A) 486262(KDM2B)
+            AML: 100467038 100469601(KDM2A)
+            FCA: 101090549(KDM2A) 101094455(KDM2B) 102900260(CB3H14orf169)
+            PTG: 102959050(KDM2A) 102960977 102971585(KDM2B)
+            BTA: 511031(NO66) 540141(KDM2A) 614487(KDM2B)
+            BOM: 102274509(KDM2B) 102285244 102286032(KDM2A)
+            PHD: 102316176(KDM2B) 102319685 102322396(KDM2A) 102329240
+            CHX: 102173094(C10H14orf169) 102180467(KDM2A) 102180525(KDM2B)
+            SSC: 100294703(KDM2A) 100512074(KDM2B) 100523074(C7H14orf169)
+            CFR: 102503719(KDM2B) 102505373 102523384(KDM2A)
+            ECB: 100052955(KDM2A) 100059690(KDM2B) 100146448(C24H14orf169)
+            MYB: 102249116(KDM2A) 102253219(KDM2B) 102256784
+            MYD: 102751904(KDM2B) 102757410 102768553(KDM2A)
+            PALE: 102883377(KDM2B) 102887644 102893981(KDM2A)
+            MDO: 100015947 100024523(C1H14orf169) 100029240(KDM2A)
+            SHR: 100924459(KDM2B) 100925042
+            OAA: 100084241(KDM2A) 100086314
+            GGA: 416844(KDM2B) 423249(C5H14ORF169) 425999(KDM2A)
+            MGP: 100545882 100551270
+            TGU: 100218907(KDM2B) 100219109(C5H14orf169) 100230512(KDM2A)
+            FAB: 101813982(KDM2B) 101818982(KDM2A) 101819482(C5H14orf169)
+            PHI: 102111633 102113870(KDM2B) 102114250(KDM2A)
+            APLA: 101791557(KDM2B) 101795359(KDM2A) 101796505
+            FPG: 101912390(KDM2B) 101914594(KDM2A) 101922675
+            FCH: 102050781(KDM2B) 102052310(KDM2A) 102052952
+            CLV: 102084883(KDM2B) 102085791 102096388(KDM2A)
+            ASN: 102376489 102379559(KDM2B) 102388715(KDM2A)
+            PSS: 102446014(KDM2B) 102450180 102452607 102454325 102464032(KDM2A)
+            CMY: 102933242 102933550(KDM2B) 102946953(KDM2A)
+            ACS: 100555582(kdm2a) 100557128 100557464
+            XLA: 444267(kdm2b)
+            XTR: 100488246 496596(kdm2a)
+            DRE: 560815(im:7141580) 562643(kdm2bb) 799441(kdm2a)
+            TRU: 101063174 101067040 101069081 101071235 101075964
+            MZE: 101465495 101466884 101468357 101486102 101487519
+            OLA: 101161646 101163098 101163704 101164160 101171056
+            XMA: 102224704 102226754 102237385
+            LCM: 102352369 102358334(KDM2A) 102363992(KDM2B)
+            BFO: BRAFLDRAFT_123918 BRAFLDRAFT_193716 BRAFLDRAFT_219161
+            CIN: 100179691 778852(zf(cxxc)-1)
+            SPU: 574799 577190
+            DME: Dmel_CG11033(Kdm2) Dmel_CG2982
+            DPO: Dpse_GA27866 Dpse_GA30197
+            DAN: Dana_GF16580 Dana_GF20792
+            DER: Dere_GG14981 Dere_GG18702
+            DPE: Dper_GL12933 Dper_GL22285
+            DSE: Dsec_GM12339 Dsec_GM23783
+            DSI: Dsim_GD16684 Dsim_GD17761 Dsim_GD18594
+            DWI: Dwil_GK10507 Dwil_GK11583 Dwil_GK15670
+            DYA: Dyak_GE16340 Dyak_GE25927 Dyak_GE25928
+            DGR: Dgri_GH19346 Dgri_GH24285
+            DMO: Dmoj_GI16410 Dmoj_GI22556
+            DVI: Dvir_GJ17031 Dvir_GJ23745
+            AGA: AgaP_AGAP001895 AgaP_AGAP001938
+            AAG: AaeL_AAEL008177 AaeL_AAEL009382
+            CQU: CpipJ_CPIJ008371 CpipJ_CPIJ008401
+            AME: 410848(GB19015) 411568(GB19248)
+            NVI: 100114113 100122421
+            TCA: 659466 663248
+            BMOR: 101739566 101739693
+            API: 100167047 100169407
+            PHU: Phum_PHUM117430 Phum_PHUM316810
+            ISC: IscW_ISCW006941 IscW_ISCW018631
+            CEL: CELE_T26A5.5(T26A5.5) CELE_T28F2.4(jmjc-1)
+            CBR: CBG11988 CBG19679
+            BMY: Bm1_07870 Bm1_53875
+            LOA: LOAG_00418
+            SMM: Smp_127230
+            NVE: NEMVE_v1g187706 NEMVE_v1g242923
+            HMG: 100198785 100209380 100212991
+            TAD: TRIADDRAFT_49824 TRIADDRAFT_50673
+            AQU: 100632164 100636565
+            OBR: 102718266
+            BDI: 100839961
+            SBI: SORBI_06g031470(SORBIDRAFT_06g031470)
+            SITA: 101785360
+            PPP: PHYPADRAFT_169675 PHYPADRAFT_91687
+            OLU: OSTLU_15879
+            OTA: Ot06g03810
+            MIS: MICPUN_68455
+            MPP: MICPUCDRAFT_55966
+            CSL: COCSUDRAFT_58358 COCSUDRAFT_64552
+            CVR: CHLNCDRAFT_140729 CHLNCDRAFT_142546
+            CME: CYME_CMB046C
+            GSL: Gasu_02670
+            CCP: CHC_T00004130001
+            SCE: YER051W(JHD1)
+            AGO: AGOS_ADL088W
+            ERC: Ecym_4349
+            KLA: KLLA0F27643g
+            LTH: KLTH0A03960g
+            PPA: PAS_chr1-1_0295
+            VPO: Kpol_1070p18
+            ZRO: ZYRO0D16588g
+            CGR: CAGL0J02860g
+            TPF: TPHA_0C01220(TPHA0C01220)
+            TDL: TDEL_0H02210(TDEL0H02210)
+            DHA: DEHA2B02464g
+            PIC: PICST_53771
+            PGU: PGUG_00053
+            LEL: LELG_00524
+            CAL: CaO19.10791 CaO19.3281
+            CTP: CTRG_01004
+            CDU: CD36_25830
+            COT: CORT_0A04120
+            YLI: YALI0E30393g
+            CLU: CLUG_04360
+            ANI: AN7455.2
+            AFM: AFUA_2G05970
+            AOR: AOR_1_1284164(AO090001000714)
+            ANG: ANI_1_3330024(An02g14310)
+            AFV: AFLA_130120
+            ACT: ACLA_068360
+            NFI: NFIA_082690
+            PCS: Pc22g08370
+            CIM: CIMG_00992
+            CPW: CPC735_053600
+            PBL: PAAG_01011
+            URE: UREG_00939
+            ABE: ARB_05068
+            TVE: TRV_06674
+            AJE: HCAG_03655
+            PNO: SNOG_15868
+            PTE: PTT_16007
+            ZTR: MYCGRDRAFT_43039
+            TML: GSTUM_00006749001
+            SPO: SPCC622.16c(epe1)
+            CNE: CNG00620
+            CNB: CNBG4160
+            CGI: CGB_G6080W
+            LBC: LACBIDRAFT_316140(JMJ16203)
+            CCI: CC1G_05206
+            SCM: SCHCODRAFT_74363
+            UMA: UM04522.1
+            MGL: MGL_3466
+            PGR: PGTG_15521
+            MBR: MONBRDRAFT_25364 MONBRDRAFT_25525
+            DDI: DDB_G0287513(jcdG)
+            DPP: DICPUDRAFT_32138
+            DFA: DFA_11703(jcdG)
+            ACAN: ACA1_116850 ACA1_163410 ACA1_392950
+            PTI: PHATRDRAFT_14981 PHATRDRAFT_42595
+            TPS: THAPSDRAFT_21082
+            PIF: PITG_15871
+            EHX: EMIHUDRAFT_204434 EMIHUDRAFT_251857 EMIHUDRAFT_468207
+            GTT: GUITHDRAFT_113900 GUITHDRAFT_137055 GUITHDRAFT_99731
+            TCR: 508141.30
+            LMA: LMJF_31_0240
+            LIF: LINJ_31_0250
+            LDO: LDBPK_310250
+            LMI: LMXM_30_0240
+            LBZ: LBRM_31_0350
+            NGR: NAEGRDRAFT_50047
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.11.27
+            IUBMB Enzyme Nomenclature: 1.14.11.27
+            ExPASy - ENZYME nomenclature database: 1.14.11.27
+            BRENDA, the Enzyme Database: 1.14.11.27
+///

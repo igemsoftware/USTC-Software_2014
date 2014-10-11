@@ -1,0 +1,310 @@
+ENTRY       EC 1.2.99.5                 Enzyme
+NAME        formylmethanofuran dehydrogenase;
+            formylmethanofuran:(acceptor) oxidoreductase
+CLASS       Oxidoreductases;
+            Acting on the aldehyde or oxo group of donors;
+            With other acceptors
+SYSNAME     formylmethanofuran:acceptor oxidoreductase
+REACTION    formylmethanofuran + H2O + acceptor = CO2 + methanofuran + reduced acceptor [RN:R03015]
+ALL_REAC    R03015;
+            (other) R08060
+SUBSTRATE   formylmethanofuran [CPD:C01001];
+            H2O [CPD:C00001];
+            acceptor [CPD:C00028]
+PRODUCT     CO2 [CPD:C00011];
+            methanofuran [CPD:C00862];
+            reduced acceptor [CPD:C00030]
+COMMENT     A molybdoprotein containing a pterin cofactor. Tungstate can substitute for molybdate. The enzyme catalyses a reversible reaction in methanogenic bacteria, and is involved in methanogenesis from CO2 as well as the oxidation of methyl-coenzyme M to CO2. Methyl viologen can act as acceptor. Also oxidizes N-furfurylformamide.
+HISTORY     EC 1.2.99.5 created 1992
+REFERENCE   1  [PMID:2125267]
+  AUTHORS   Karrasch M, Borner G, Enssle M, Thauer RK.
+  TITLE     The molybdoenzyme formylmethanofuran dehydrogenase from Methanosarcina barkeri contains a pterin cofactor.
+  JOURNAL   Eur. J. Biochem. 194 (1990) 367-72.
+  ORGANISM  Methanosarcina barkeri
+REFERENCE   2  [PMID:8161283]
+  AUTHORS   Bertram PA, Schmitz RA, Linder D, Thauer RK
+  TITLE     Tungstate can substitute for molybdate in sustaining growth of Methanobacterium thermoautotrophicum. Identification and characterization of a tungsten isoenzyme  of formylmethanofuran dehydrogenase.
+  JOURNAL   Arch. Microbiol. 161 (1994) 220-8.
+  ORGANISM  Methanothermobacter thermautotrophicus
+REFERENCE   3  [PMID:8125106]
+  AUTHORS   Bertram PA, Karrasch M, Schmitz RA, Bocher R, Albracht SP, Thauer RK
+  TITLE     Formylmethanofuran dehydrogenases from methanogenic Archaea. Substrate specificity, EPR properties and reversible inactivation by cyanide of the molybdenum or tungsten iron-sulfur proteins.
+  JOURNAL   Eur. J. Biochem. 220 (1994) 477-84.
+  ORGANISM  Methanosarcina barkeri
+  SEQUENCE  [mba:Mbar_A1290]
+REFERENCE   4  [PMID:9342247]
+  AUTHORS   Vorholt JA, Thauer RK
+  TITLE     The active species of 'CO2' utilized by formylmethanofuran dehydrogenase from methanogenic Archaea.
+  JOURNAL   Eur. J. Biochem. 248 (1997) 919-24.
+PATHWAY     ec00680  Methane metabolism
+            ec01100  Metabolic pathways
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K00200  formylmethanofuran dehydrogenase subunit A
+            K00201  formylmethanofuran dehydrogenase subunit B
+            K00202  formylmethanofuran dehydrogenase subunit C
+            K00203  formylmethanofuran dehydrogenase subunit D
+            K11261  formylmethanofuran dehydrogenase subunit E
+GENES       MCA: MCA2319 MCA2857 MCA2859 MCA2860
+            MMT: Metme_0667 Metme_0669 Metme_0670
+            MAH: MEALZ_0829 MEALZ_1262 MEALZ_1263(fhcA) MEALZ_1270
+            MEJ: Q7A_1714 Q7A_284 Q7A_286 Q7A_287
+            MEC: Q7C_1962 Q7C_1964 Q7C_1965 Q7C_759
+            NOC: Noc_0022 Noc_0024 Noc_0025
+            NHL: Nhal_0012 Nhal_0014 Nhal_0015
+            NWA: Nwat_0020 Nwat_0022 Nwat_0023
+            BXE: Bxe_B2461(fhcB) Bxe_B2462(fhcA) Bxe_B2464(fhcC)
+            BPH: Bphy_5932 Bphy_5934 Bphy_5935 Bphy_6504 Bphy_6505 Bphy_6507
+            BUG: BC1001_3971 BC1001_3972 BC1001_3974
+            BGE: BC1002_3197 BC1002_3199 BC1002_3200
+            BGF: BC1003_5428 BC1003_5430 BC1003_5431
+            BYI: BYI23_B014200 BYI23_B014220 BYI23_B014230
+            BPX: BUPH_00555 BUPH_00556 BUPH_00558
+            BUO: BRPE64_BCDS01280 BRPE64_BCDS01300 BRPE64_BCDS01310
+            VAP: Vapar_3064 Vapar_3066 Vapar_3067
+            VPD: VAPA_1c31290 VAPA_1c31310 VAPA_1c31320
+            MPT: Mpe_A2623 Mpe_A2624 Mpe_A2626
+            LCH: Lcho_3133 Lcho_3135 Lcho_3136
+            RGE: RGE_40380(fhcB) RGE_40400(fhcA) RGE_40420(fhcC)
+            AZA: AZKH_p0239(fhcC) AZKH_p0241(fhcA) AZKH_p0242(fhcB)
+            SDR: SCD_n03089
+            MFA: Mfla_1662 Mfla_1663 Mfla_1665
+            MMB: Mmol_0858 Mmol_0861 Mmol_0862
+            MEH: M301_0909 M301_0912 M301_0913
+            MEI: Msip34_1506 Msip34_1507 Msip34_1509
+            MEP: MPQ_1569(fwdB) MPQ_1570(fwdA) MPQ_1572(fwdC)
+            SDL: Sdel_0813
+            SBA: Sulba_2209
+            GBM: Gbem_1223
+            GEO: Geob_2201 Geob_2236
+            GEM: GM21_3052
+            PCA: Pcar_0156
+            PPD: Ppro_1464 Ppro_2088
+            DVM: DvMF_1613
+            DDE: Dde_0685 Dde_1625
+            DDS: Ddes_0554 Ddes_0994 Ddes_1508
+            DDN: DND132_1836 DND132_2998
+            DMA: DMR_08200(fmdE) DMR_21490(fwdE)
+            DSA: Desal_0072 Desal_0380
+            DAS: Daes_0366 Daes_0887
+            DAF: Desaf_1705 Desaf_2423
+            DHY: DESAM_20653
+            DPI: BN4_12496
+            DGG: DGI_0631 DGI_3088
+            DBA: Dbac_0025 Dbac_1566
+            DRT: Dret_1225 Dret_2150
+            DAK: DaAHT2_0551 DaAHT2_1575
+            DPR: Despr_0025
+            DSF: UWK_02749 UWK_03251
+            DOL: Dole_0190
+            DAL: Dalk_0157 Dalk_3123
+            DAT: HRM2_46130
+            DTO: TOL2_C00550(fwdE) TOL2_C05380(fwdE2) TOL2_C41650 TOL2_C43620
+            AFW: Anae109_0360
+            SAT: SYN_00638 SYN_01060 SYN_03842
+            DAO: Desac_0953 Desac_1099 Desac_1100
+            DTI: Desti_2211
+            SFU: Sfum_3700
+            DBR: Deba_0704 Deba_3073
+            HMR: Hipma_0551
+            MCI: Mesci_4252 Mesci_4254 Mesci_4255
+            XAU: Xaut_1793 Xaut_1795 Xaut_1796
+            SNO: Snov_0755 Snov_0756 Snov_0758
+            MEX: Mext_1824 Mext_1826 Mext_1827
+            MEA: Mex_1p1755(fhcC) Mex_1p1757(fhcA) Mex_1p1758(fhcB)
+            MDI: METDI2507(fhcC) METDI2509(fhcA) METDI2510(fhcB)
+            MCH: Mchl_2159 Mchl_2161 Mchl_2162
+            MRD: Mrad2831_0523 Mrad2831_0525 Mrad2831_0526
+            MET: M446_5773 M446_5775 M446_5776
+            MPO: Mpop_1775 Mpop_1777 Mpop_1778
+            MNO: Mnod_5997 Mnod_5999 Mnod_6000
+            MSL: Msil_2400 Msil_2401 Msil_2403
+            HDN: Hden_1608 Hden_1610 Hden_1611
+            HDT: HYPDE_29913 HYPDE_29923 HYPDE_29928
+            HMC: HYPMC_1886(fhcC) HYPMC_1888(fhcA) HYPMC_1889
+            HNI: W911_13330 W911_13335 W911_13345
+            MSC: BN69_0583 BN69_0585 BN69_0586
+            GBE: GbCGDNIH1_0778 GbCGDNIH1_0779 GbCGDNIH1_0781
+            GBH: GbCGDNIH2_0778 GbCGDNIH2_0779 GbCGDNIH2_0781
+            ALI: AZOLI_p10690 AZOLI_p10691(fwdA1) AZOLI_p10693 AZOLI_p10893 AZOLI_p10894(fwdA2) AZOLI_p10896
+            ABS: AZOBR_p270087 AZOBR_p270088(fwdA) AZOBR_p270090
+            CBO: CBO1674
+            CBA: CLB_1687
+            CBH: CLC_1695
+            CBY: CLM_1911
+            CBL: CLK_1133
+            CBB: CLD_2887
+            CBI: CLJ_B1863
+            CBJ: H04402_01745
+            CLJ: CLJU_c09000 CLJU_c38060
+            CLS: CXIVA_06170
+            CAH: CAETHG_2994
+            AMT: Amet_1509
+            CDF: CD630_01720
+            CDC: CD196_0185
+            CDL: CDR20291_0172
+            CDG: CDBI1_00935
+            CST: CLOST_2272
+            SWO: Swol_1664
+            SLP: Slip_0379
+            DSY: DSY0393
+            DHD: Dhaf_0346
+            DDH: Desde_0343
+            DDL: Desdi_2068
+            DAE: Dtox_1669
+            DKU: Desku_2167 Desku_2185 Desku_2187 Desku_2196
+            DRU: Desru_1712
+            DGI: Desgi_0910
+            PTH: PTH_1484
+            DAU: Daud_1104
+            TJR: TherJR_1238 TherJR_1737
+            SGY: Sgly_3097
+            DOR: Desor_0484
+            DAI: Desaci_3082
+            DMI: Desmer_0584 Desmer_2616
+            DED: DHBDCA_p2214
+            DEC: DCF50_p2223
+            DRS: DEHRE_01245 DEHRE_04915
+            HMO: HM1_1872
+            ELM: ELI_2254 ELI_4462
+            AWO: Awo_c09520 Awo_c10580(fwdE)
+            SAY: TPY_3706(fmdE) TPY_3733(fmdE)
+            SAP: Sulac_3403 Sulac_3429
+            TTE: TTE1865
+            TPD: Teth39_0651
+            TBO: Thebr_0667
+            CHY: CHY_2194
+            TEP: TepRe1_0330
+            TAE: TepiRe1_0367
+            MTA: Moth_1467
+            ADG: Adeg_1196
+            TPZ: Tph_c01530 Tph_c22380(ftsZ2)
+            CSC: Csac_0177
+            ATE: Athe_0277
+            COB: COB47_0266
+            CHD: Calhy_2322
+            COW: Calow_0196
+            CKI: Calkr_0261
+            CKN: Calkro_2319
+            CLC: Calla_2088
+            TNR: Thena_0383
+            HAS: Halsa_0942 Halsa_0943 Halsa_0944 Halsa_0946 Halsa_2209
+            AAR: Acear_0784
+            TPI: TREPR_3274
+            ABA: Acid345_0503
+            ACA: ACP_1857
+            TSA: AciPR4_3422
+            TRS: Terro_0677
+            SUS: Acid_6374
+            ACO: Amico_0056
+            TLI: Tlie_0301
+            AMO: Anamo_1136 Anamo_1143 Anamo_1144 Anamo_1145
+            RBA: RB9834(fwdA) RB9836(fwdC)
+            PSL: Psta_0060 Psta_0063 Psta_1617
+            PLM: Plim_1421 Plim_1687 Plim_2299
+            PBS: Plabr_1590 Plabr_2831 Plabr_4644
+            IPA: Isop_0326 Isop_0524 Isop_2115 Isop_2656
+            SACI: Sinac_1237 Sinac_1240 Sinac_1241
+            CTE: CT1717
+            IAL: IALB_2829(fmdE) IALB_2832(fmdE)
+            DET: DET1173
+            RRS: RoseRS_1795
+            RCA: Rcas_2175
+            CAU: Caur_0027
+            CAG: Cagg_3664
+            CHL: Chy400_0031
+            CAP: CLDAP_39970
+            DRA: DR_A0267
+            DPT: Deipr_1073
+            DIN: Selin_2190
+            DDF: DEFDS_0693
+            DTH: DICTH_1969
+            DTU: Dtur_0248
+            TYE: THEYE_A1399
+            TID: Thein_0235 Thein_0586
+            MOX: DAMO_0456 DAMO_0457(fhcB) DAMO_0458(fhcA) DAMO_0460(fhcC) DAMO_1134
+            MJA: MJ_0658 MJ_1168 MJ_1169 MJ_1171
+            MFE: Mefer_0153 Mefer_0155 Mefer_0156 Mefer_0243 Mefer_0555 Mefer_0950
+            MVU: Metvu_0708 Metvu_0713 Metvu_0797 Metvu_0799 Metvu_0800 Metvu_0919 Metvu_1491
+            MFS: MFS40622_0208 MFS40622_0300 MFS40622_0801 MFS40622_0802 MFS40622_0804 MFS40622_0826 MFS40622_1525 MFS40622_1780 MFS40622_1781 MFS40622_1782 MFS40622_1783
+            MIF: Metin_0387 Metin_1131 Metin_1132 Metin_1134
+            MIG: Metig_0293 Metig_0319 Metig_0320 Metig_0321 Metig_0322 Metig_0471 Metig_0472 Metig_0473 Metig_0931 Metig_1159 Metig_1194
+            MMP: MMP0070 MMP0200(fmdE) MMP0508(fmdE) MMP0509(fmdA) MMP0510(fmdC) MMP0511(fmdB) MMP0512(fmdB) MMP0965 MMP1247(fwdD) MMP1248(fwdA) MMP1249(fwdC) MMP1691(fwdB)
+            MMQ: MmarC5_0342 MmarC5_0343 MmarC5_0344 MmarC5_0788 MmarC5_1449 MmarC5_1450 MmarC5_1451 MmarC5_1452 MmarC5_1607 MmarC5_1715
+            MMX: MmarC6_0380 MmarC6_0381 MmarC6_0382 MmarC6_0383 MmarC6_0878 MmarC6_0980 MmarC6_1424 MmarC6_1425 MmarC6_1426 MmarC6_1690
+            MMZ: MmarC7_0210 MmarC7_0493 MmarC7_0494 MmarC7_0495 MmarC7_0966 MmarC7_1069 MmarC7_1529 MmarC7_1530 MmarC7_1531 MmarC7_1532
+            MMD: GYY_00355 GYY_01020 GYY_03945 GYY_03960 GYY_03965 GYY_03970 GYY_04790 GYY_05650 GYY_07070 GYY_07075 GYY_07080
+            MAE: Maeo_0082 Maeo_0083 Maeo_0084 Maeo_0085 Maeo_0100 Maeo_0101 Maeo_0860 Maeo_1442 Maeo_1443 Maeo_1462 Maeo_1463
+            MVN: Mevan_0067 Mevan_0146 Mevan_0561 Mevan_0562 Mevan_0563 Mevan_0993 Mevan_1083 Mevan_1661 Mevan_1662 Mevan_1663 Mevan_1664
+            MVO: Mvol_0726 Mvol_0740 Mvol_0741 Mvol_0742 Mvol_0743 Mvol_0873 Mvol_0874 Mvol_0875 Mvol_1269 Mvol_1439
+            MOK: Metok_0076 Metok_0187 Metok_0819 Metok_0870 Metok_0871 Metok_0872 Metok_1175 Metok_1176 Metok_1177 Metok_1281
+            MAC: MA0304(fmdE) MA0306(fmdA) MA0307(fmdC) MA0308(fmdD) MA0309(fmdB) MA0381(fwdE) MA0832(fwdC) MA0833(fwdA) MA0834(fwdB) MA0835(fwuD) MA1241(fmdB) MA2878(fwdB) MA2879(fwdD) MA4175(fmdA) MA4176(fmdC) MA4177(fmdD) MA4178(fmdB) MA4602(fwdE)
+            MBA: Mbar_A0795 Mbar_A0931 Mbar_A1287 Mbar_A1289 Mbar_A1290 Mbar_A1291 Mbar_A1292 Mbar_A1560 Mbar_A1763 Mbar_A2922 Mbar_A2923
+            MMA: MM_0059 MM_0060 MM_1564 MM_1566(fmdA) MM_1567(fmdC) MM_1568(fmdD) MM_1569(fmdB) MM_1604 MM_1978 MM_1979 MM_1980 MM_1981
+            MMAZ: MmTuc01_0067 MmTuc01_0068 MmTuc01_1629 MmTuc01_1630 MmTuc01_1631 MmTuc01_1632 MmTuc01_1674 MmTuc01_2059 MmTuc01_2060 MmTuc01_2061
+            MBU: Mbur_0281 Mbur_0282 Mbur_0283 Mbur_0284 Mbur_0286 Mbur_0336 Mbur_0337 Mbur_1159 Mbur_1478
+            MMH: Mmah_0590 Mmah_0950 Mmah_0951 Mmah_1266 Mmah_1268 Mmah_1269 Mmah_1270 Mmah_1271 Mmah_1821
+            MEV: Metev_0118 Metev_1433 Metev_1434 Metev_1747 Metev_1748 Metev_1749 Metev_1750
+            MZH: Mzhil_0203 Mzhil_0204 Mzhil_0205 Mzhil_0206 Mzhil_0650 Mzhil_0651
+            MPY: Mpsy_1039 Mpsy_2441 Mpsy_2757 Mpsy_2758 Mpsy_2759 Mpsy_2760(fmdA) Mpsy_2957 Mpsy_2958
+            MHZ: Metho_0729 Metho_0730 Metho_0731 Metho_0732 Metho_1571 Metho_1808 Metho_1809 Metho_1944
+            MTP: Mthe_0525 Mthe_0976 Mthe_0977 Mthe_1095 Mthe_1096 Mthe_1097 Mthe_1098 Mthe_1665
+            MCJ: MCON_0238(fmdB) MCON_0239(fmdD) MCON_0240(fmdC) MCON_0241(fmdA) MCON_0953(fwdE) MCON_1096 MCON_1166 MCON_1733(fwdB) MCON_1734(fwdD) MCON_2898(fwdE) MCON_3432
+            MHI: Mhar_0014 Mhar_0318 Mhar_0373 Mhar_0374 Mhar_0375 Mhar_0376 Mhar_0798 Mhar_1283 Mhar_1284 Mhar_1285 Mhar_1286 Mhar_1288 Mhar_1831 Mhar_2308 Mhar_2309
+            MHU: Mhun_0250 Mhun_1329 Mhun_1981 Mhun_1982 Mhun_1983 Mhun_1984 Mhun_1985 Mhun_1987 Mhun_1988 Mhun_1989 Mhun_1990 Mhun_1993 Mhun_1994 Mhun_2004 Mhun_2107 Mhun_2108 Mhun_2109 Mhun_2112
+            MLA: Mlab_0243 Mlab_0244 Mlab_0245 Mlab_0246 Mlab_0574 Mlab_0575 Mlab_1094 Mlab_1389
+            MEM: Memar_0370 Memar_0371 Memar_0372 Memar_0373 Memar_0618 Memar_0619 Memar_0620 Memar_0621 Memar_1046 Memar_1186 Memar_1187 Memar_1188 Memar_1829 Memar_2371
+            MBG: BN140_1254(fwdD1) BN140_1255(fwdB1) BN140_1256(fwdA1) BN140_1257(fwdC1) BN140_1525(fwdD3) BN140_1526(fwdB3) BN140_1527(fwdA3) BN140_1528(fwdC3) BN140_1730(fwdD5) BN140_1731(fwdB5) BN140_1732(fwdA5) BN140_1733(fwdC5) BN140_2199(fmdE) BN140_2508(fwdE)
+            MPI: Mpet_0030 Mpet_1512 Mpet_1630 Mpet_1631 Mpet_1632 Mpet_1633 Mpet_1634 Mpet_1635 Mpet_2421 Mpet_2435 Mpet_2436 Mpet_2466 Mpet_2467 Mpet_2468 Mpet_2469
+            MBN: Mboo_0875 Mboo_0876 Mboo_0877 Mboo_0878 Mboo_1309 Mboo_1470 Mboo_1471 Mboo_1472 Mboo_1473 Mboo_2051 Mboo_2359
+            MFO: Metfor_0619 Metfor_0634 Metfor_0635 Metfor_0636 Metfor_0637 Metfor_0645 Metfor_0655 Metfor_0656 Metfor_0657 Metfor_0658 Metfor_0683 Metfor_0684 Metfor_0685 Metfor_0686 Metfor_0930
+            MPL: Mpal_0197 Mpal_0201 Mpal_0202 Mpal_0203 Mpal_0204 Mpal_0425 Mpal_1589 Mpal_2233 Mpal_2234 Mpal_2235 Mpal_2236 Mpal_2237
+            MPD: MCP_1571(fwdC-1) MCP_1572(fwdA-1) MCP_1573(fwdB-1) MCP_1574(fwdD-1) MCP_2763(fwdC-2) MCP_2764(fwdA-2) MCP_2765(fwdB-2) MCP_2766(fwdD-2)
+            MEZ: Mtc_0156(fwdE-1) Mtc_0160(fmdE) Mtc_0163(fmdB) Mtc_0164(fmdD) Mtc_1818(fwdE-3) Mtc_2468(fwdC) Mtc_2469(fwdA) Mtc_2470(fwdB) Mtc_2471(fwdD)
+            RCI: RCIX1392(fwdE) RCIX1639(fmdE) RCIX1641(fmdB) RCIX1642(fmdD) RCIX598(fwdD-1) RCIX599(fwdB-1) RCIX600(fwdA-1) RCIX601(fwdC-1) RRC260(fwdD-2) RRC261(fwdB-2) RRC262(fwdA-2) RRC263(fwdC-2)
+            MER: H729_05765
+            MTH: MTH1345 MTH1556 MTH1557 MTH1558 MTH1559 MTH238 MTH917 MTH918 MTH919
+            MMG: MTBMA_c01420(fwdD) MTBMA_c01430(fwdA) MTBMA_c01440(fwdC) MTBMA_c01450(fwdB) MTBMA_c06880 MTBMA_c13050(fmdE) MTBMA_c13060(fmdC) MTBMA_c13070(fmdB) MTBMA_c17360
+            MST: Msp_0242(fwdD) Msp_0243(fwdB) Msp_0244(fwdA) Msp_0245(fwdC)
+            MSI: Msm_1396 Msm_1411 Msm_1412 Msm_1413 Msm_1414
+            MRU: mru_0254(fwdE) mru_0342(fwdD) mru_0343(fwdB) mru_0344(fwdA) mru_0345(fwdC)
+            MEB: Abm4_0140(fwdD) Abm4_0141(fwdB) Abm4_0142(fwdA) Abm4_0143(fwdC) Abm4_0145(fwdE)
+            MEL: Metbo_0634 Metbo_2052 Metbo_2487 Metbo_2505 Metbo_2508 Metbo_2509 Metbo_2510 Metbo_2511
+            MEW: MSWAN_0125 MSWAN_0126 MSWAN_0127 MSWAN_0128 MSWAN_0145 MSWAN_0148 MSWAN_0149 MSWAN_1723 MSWAN_2362
+            METH: MBMB1_0112 MBMB1_0113(fwdB) MBMB1_0114(fwdA) MBMB1_0115(fwdC) MBMB1_0134 MBMB1_0137 MBMB1_1349 MBMB1_1993(fwdE-3) MBMB1_1997(fwdE-4)
+            MFV: Mfer_0106 Mfer_0978 Mfer_0979 Mfer_0980 Mfer_0981 Mfer_1163 Mfer_1164 Mfer_1165
+            MKA: MK0259(FwdB_1) MK1526(FwdD) MK1527(FwdB_2) MK1529(FwdA) MK1530(FwdC)
+            AFU: AF0177(fwdE) AF0433 AF1650(fwdB-1) AF1928(fwdD-2) AF1929(fwdB-2) AF1930(fwdA) AF1931(fwdC)
+            AVE: Arcve_0371 Arcve_0372 Arcve_0373 Arcve_0374 Arcve_1110 Arcve_1113 Arcve_1114 Arcve_1115 Arcve_1859 Arcve_1860
+            AST: Asulf_00421 Asulf_00792 Asulf_01598 Asulf_01599 Asulf_01600 Asulf_01601
+            FPL: Ferp_0601 Ferp_0602 Ferp_0603 Ferp_0604 Ferp_0729
+            TAC: Ta1109
+            TVO: TVN0676
+            TAR: TALC_00166
+            PHO: PH1238
+            PAB: PAB0675
+            PFU: PF0913
+            PFI: PFC_03785
+            PYN: PNA2_1681
+            PYA: PYCH_11850
+            PYS: Py04_0831
+            TON: TON_0257
+            TSI: TSIB_1861
+            THE: GQS_08100
+            THM: CL1_1242
+            TLT: OCC_01179
+            DKA: DKAM_1436
+            DMU: Desmu_0655
+            DFD: Desfe_0059
+            IAG: Igag_0381 Igag_0382 Igag_0883
+            SIH: SiH_0907
+            PIS: Pisl_0219
+            TPE: Tpen_1423
+            THB: N186_04050
+            FFO: FFONT_1330
+DBLINKS     ExplorEnz - The Enzyme Database: 1.2.99.5
+            IUBMB Enzyme Nomenclature: 1.2.99.5
+            ExPASy - ENZYME nomenclature database: 1.2.99.5
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.2.99.5
+            BRENDA, the Enzyme Database: 1.2.99.5
+            CAS: 119940-12-4
+///

@@ -1,0 +1,23 @@
+ENTRY       R00557                      Reaction
+NAME        L-Arginine,NADPH:oxygen oxidoreductase (nitric-oxide-forming)
+DEFINITION  2 L-Arginine + 4 Oxygen + 3 NADPH + 3 H+ <=> 2 Nitric oxide + 2 L-Citrulline + 3 NADP+ + 4 H2O
+EQUATION    2 C00062 + 4 C00007 + 3 C00005 + 3 C00080 <=> 2 C00533 + 2 C00327 + 3 C00006 + 4 C00001
+COMMENT     multi-step reaction (see R00558+R00111)
+            NADH (see R10106)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 leave
+            RP00490  C00062_C00327 main [RC:RC00177]
+            RP05964  C00007_C00327 leave
+            RP06205  C00007_C00533 leave
+            RP06206  C00062_C00533 leave
+ENZYME      1.14.13.39      1.14.13.165
+PATHWAY     rn00330  Arginine and proline metabolism
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K00491  nitric-oxide synthase, bacterial [EC:1.14.13.39]
+            K13240  nitric-oxide synthase, brain [EC:1.14.13.39]
+            K13241  nitric-oxide synthase, inducible [EC:1.14.13.39]
+            K13242  nitric-oxide synthase, endothelial [EC:1.14.13.39]
+            K13253  nitric-oxide synthase, invertebrate [EC:1.14.13.39]
+            K13427  nitric-oxide synthase, plant [EC:1.14.13.39]
+///

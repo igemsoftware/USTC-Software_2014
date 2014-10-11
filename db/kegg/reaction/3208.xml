@@ -1,0 +1,14 @@
+ENTRY       R03208                      Reaction
+DEFINITION  2 3,5-Diiodo-L-tyrosine + Hydrogen peroxide <=> Thyroxine + Dehydroalanine + 2 H2O
+EQUATION    2 C01060 + C00027 <=> C01829 + C02218 + 2 C00001
+COMMENT     thyroid peroxidase, TPO
+            reaction on thyroglobulin [KO:K10809] (see R08523)
+RPAIR       RP00130  C00001_C00027 cofac
+            RP02842  C01060_C01829 main [RC:RC00878]
+            RP02843  C01060_C02218 main [RC:RC01037]
+            RP14649  C01060_C01829 trans
+ENZYME      1.11.1.8
+PATHWAY     rn00350  Tyrosine metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00431  thyroid peroxidase [EC:1.11.1.8]
+///

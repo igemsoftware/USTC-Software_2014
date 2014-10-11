@@ -1,0 +1,540 @@
+ENTRY       EC 1.1.1.41                 Enzyme
+NAME        isocitrate dehydrogenase (NAD+);
+            isocitric dehydrogenase;
+            beta-ketoglutaric-isocitric carboxylase;
+            isocitric acid dehydrogenase;
+            NAD dependent isocitrate dehydrogenase;
+            NAD isocitrate dehydrogenase;
+            NAD-linked isocitrate dehydrogenase;
+            NAD-specific isocitrate dehydrogenase;
+            NAD isocitric dehydrogenase;
+            isocitrate dehydrogenase (NAD);
+            IDH (ambiguous);
+            nicotinamide adenine dinucleotide isocitrate dehydrogenase
+CLASS       Oxidoreductases;
+            Acting on the CH-OH group of donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     isocitrate:NAD+ oxidoreductase (decarboxylating)
+REACTION    isocitrate + NAD+ = 2-oxoglutarate + CO2 + NADH [RN:R00709]
+ALL_REAC    R00709
+SUBSTRATE   isocitrate [CPD:C00311];
+            NAD+ [CPD:C00003]
+PRODUCT     2-oxoglutarate [CPD:C00026];
+            CO2 [CPD:C00011];
+            NADH [CPD:C00004]
+COMMENT     Requires Mn2+ or Mg2+ for activity. Unlike EC 1.1.1.42, isocitrate dehydrogenase (NADP+), oxalosuccinate cannot be used as a substrate. In eukaryotes, isocitrate dehydrogenase exists in two forms: an NAD+-linked enzyme found only in mitochondria and displaying allosteric properties, and a non-allosteric, NADP+-linked enzyme that is found in both mitochondria and cytoplasm [7]. The enzyme from some species can also use NADP+ but much more slowly [9].
+HISTORY     EC 1.1.1.41 created 1961, modified 2005
+REFERENCE   1  [PMID:14063317]
+  AUTHORS   HATHAWAY JA, ATKINSON DE.
+  TITLE     THE EFFECT OF ADENYLIC ACID ON YEAST NICOTINAMIDE ADENINE DINUCLEOTIDE ISOCITRATE DEHYDROGENASE, A POSSIBLE METABOLIC CONTROL MECHANISM.
+  JOURNAL   J. Biol. Chem. 238 (1963) 2875-81.
+  ORGANISM  Acetobacter peroxydans
+REFERENCE   2  [PMID:14832224]
+  AUTHORS   KORNBERG A, PRICER WE Jr.
+  TITLE     Di- and triphosphopyridine nucleotide isocitric dehydrogenases in yeast.
+  JOURNAL   J. Biol. Chem. 189 (1951) 123-36.
+  ORGANISM  Saccharomyces cerevisiae
+REFERENCE   3
+  AUTHORS   Plaut, G.W.E.
+  TITLE     Isocitrate dehydrogenases.
+  JOURNAL   In: Boyer, P.D., Lardy, H. and Myrback, K. (Eds.), The Enzymes, 2nd ed., vol. 7, Academic Press, New York, 1963, p. 105-126.
+REFERENCE   4  [PMID:13152105]
+  AUTHORS   PLAUT GW, SUNG SC.
+  TITLE     Diphosphopyridine nucleotide isocitric dehydrogenase from animal tissues.
+  JOURNAL   J. Biol. Chem. 207 (1954) 305-14.
+  ORGANISM  Cavia porcellus
+REFERENCE   5
+  AUTHORS   Ramakrishnan, C.V. and Martin, S.M.
+  TITLE     Isocitric dehydrogenase in Aspergillus niger.
+  JOURNAL   Arch. Biochem. Biophys. 55 (1955) 403-407.
+REFERENCE   6  [PMID:13925783]
+  AUTHORS   VICKERY HB.
+  TITLE     A suggested new nomenclature for the isomers of isocitric acid.
+  JOURNAL   J. Biol. Chem. 237 (1962) 1739-41.
+REFERENCE   7  [PMID:8593959]
+  AUTHORS   Camacho ML, Brown RA, Bonete MJ, Danson MJ, Hough DW.
+  TITLE     Isocitrate dehydrogenases from Haloferax volcanii and Sulfolobus solfataricus: enzyme purification, characterisation and N-terminal sequence.
+  JOURNAL   FEMS. Microbiol. Lett. 134 (1995) 85-90.
+  ORGANISM  Sulfolobus solfataricus, Haloferax volcanii
+REFERENCE   8  [PMID:10601238]
+  AUTHORS   Kim YO, Koh HJ, Kim SH, Jo SH, Huh JW, Jeong KS, Lee IJ, Song BJ, Huh TL.
+  TITLE     Identification and functional characterization of a novel, tissue-specific NAD(+)-dependent isocitrate dehydrogenase beta subunit isoform.
+  JOURNAL   J. Biol. Chem. 274 (1999) 36866-75.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:3420]
+REFERENCE   9  [PMID:12204383]
+  AUTHORS   Inoue H, Tamura T, Ehara N, Nishito A, Nakayama Y, Maekawa M, Imada K, Tanaka H, Inagaki K.
+  TITLE     Biochemical and molecular characterization of the NAD(+)-dependent isocitrate dehydrogenase from the chemolithotroph Acidithiobacillus thiooxidans.
+  JOURNAL   FEMS. Microbiol. Lett. 214 (2002) 127-32.
+  ORGANISM  Acidithiobacillus thiooxidans
+PATHWAY     ec00020  Citrate cycle (TCA cycle)
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K00030  isocitrate dehydrogenase (NAD+)
+GENES       HSA: 3419(IDH3A) 3420(IDH3B) 3421(IDH3G)
+            PTR: 453565(IDH3A) 458048(IDH3B) 741179(IDH3G)
+            PPS: 100968720(IDH3B) 100972968(IDH3G) 100987648(IDH3A)
+            GGO: 101126919(IDH3G) 101135027(IDH3A) 101141517(IDH3B)
+            PON: 100172089(IDH3A) 100172344(IDH3B) 100436005(IDH3G)
+            MCC: 677715(IDH3A) 698558(IDH3G) 716726(IDH3B)
+            MCF: 101865050(IDH3A) 102124727(IDH3G) 102129545(IDH3B)
+            MMU: 15929(Idh3g) 170718(Idh3b) 243996(4933405O20Rik) 67834(Idh3a)
+            RNO: 100125384 100909825 114096(Idh3a) 25179(Idh3g) 94173(Idh3B)
+            CGE: 100751753 100754480(Idh3a) 100771661 100772968
+            HGL: 101706503(Idh3a) 101709094(Idh3b) 101721638
+            TUP: 102475641(IDH3G) 102479509(IDH3A) 102493633(IDH3B)
+            CFA: 477177(IDH3B) 479066(IDH3A) 481081(IDH3G)
+            AML: 100466084 100482520 100483295
+            FCA: 101085721(IDH3A) 101099035(IDH3B) 102902308(IDH3G)
+            PTG: 102955736(IDH3B) 102968859(IDH3A) 102972038(IDH3G)
+            BTA: 282446(IDH3A) 613338(IDH3B) 614145(IDH3G)
+            BOM: 102269910(IDH3B) 102273099(IDH3G) 102281295(IDH3A)
+            PHD: 102318399(IDH3A) 102322009(IDH3G) 102324803(IDH3B)
+            CHX: 102172823(IDH3B) 102181480(IDH3G) 102181902(IDH3A)
+            SSC: 100157242(IDH3A) 100525850(IDH3G) 100624447 733641(IDH3B)
+            CFR: 102504528(IDH3A) 102504939(IDH3B) 102513449(IDH3G)
+            ECB: 100052969(IDH3B) 100057896(IDH3G) 100060114(IDH3A)
+            MYB: 102247279(IDH3A) 102248160(IDH3B) 102258465 102262688
+            MYD: 102759311(IDH3A) 102760750(IDH3G) 102762142 102771723
+            PALE: 102879783(IDH3B) 102885938(IDH3G) 102898135(IDH3A)
+            MDO: 100012825(IDH3A) 100027983(IDH3G)
+            SHR: 100914920 100926332(IDH3A) 100926870(IDH3G) 100927370(IDH3B) 100933912
+            OAA: 100080286(IDH3G) 100082669(IDH3A)
+            GGA: 415362(IDH3A) 426573(IDH3B)
+            MGP: 100538992 100549122
+            TGU: 100190682 100224627
+            FAB: 101812942(IDH3B) 101821410(IDH3A)
+            PHI: 102101435(IDH3G) 102102008(IDH3A) 102102923(IDH3B)
+            APLA: 101795551(IDH3A)
+            FPG: 101911234(IDH3A) 101917018 101924179
+            FCH: 102046523 102049683 102059274(IDH3A)
+            CLV: 102084068(IDH3A) 102089326(IDH3B)
+            ASN: 102376426(IDH3B) 102384371 102387605(IDH3A)
+            PSS: 102447300(IDH3B) 102452545(IDH3A)
+            CMY: 102940870 102946721(IDH3A)
+            ACS: 100558969 100566326 100567899
+            XLA: 443821(idh3b) 444419(idh3a) 444551(idh3g)
+            XTR: 100144949(idh3b) 394979(idh3a) 594985(idh3g)
+            DRE: 393926(idh3a) 415247(idh3b) 550579(wu:fa01b02)
+            TRU: 101066481 101068530 101078713
+            MZE: 101472079 101472301 101475963 101476539 101487578
+            OLA: 101156895 101164134 101166544 101169534
+            XMA: 102224210 102227101 102236069
+            LCM: 102349413(IDH3A) 102351121 102357101(IDH3B) 102362883
+            BFO: BRAFLDRAFT_124233 BRAFLDRAFT_280706
+            CIN: 100177499 100181307 100186950
+            SPU: 578131 584151 587700
+            DME: Dmel_CG12233(l(1)G0156) Dmel_CG32026 Dmel_CG3483 Dmel_CG5028 Dmel_CG6439
+            DPO: Dpse_GA11495 Dpse_GA16620 Dpse_GA17474 Dpse_GA18606 Dpse_GA19594
+            DAN: Dana_GF13612 Dana_GF16768 Dana_GF16953 Dana_GF20487 Dana_GF22695
+            DER: Dere_GG11421 Dere_GG12546 Dere_GG18052 Dere_GG22965
+            DPE: Dper_GL14780 Dper_GL20101 Dper_GL21529 Dper_GL23725
+            DSE: Dsec_GM10262 Dsec_GM11859 Dsec_GM22739 Dsec_GM23677
+            DSI: Dsim_GD11857 Dsim_GD14133 Dsim_GD15579 Dsim_GD18486 Dsim_GD21232
+            DWI: Dwil_GK12856 Dwil_GK13007 Dwil_GK19462 Dwil_GK25509
+            DYA: Dyak_GE14404 Dyak_GE17383 Dyak_GE23616 Dyak_GE24066
+            DGR: Dgri_GH16376 Dgri_GH17867 Dgri_GH18988 Dgri_GH19869 Dgri_GH20895
+            DMO: Dmoj_GI11568 Dmoj_GI16435 Dmoj_GI18905 Dmoj_GI22037 Dmoj_GI22415
+            DVI: Dvir_GJ10975 Dvir_GJ11248 Dvir_GJ15838 Dvir_GJ20729 Dvir_GJ24090
+            AGA: AgaP_AGAP002192 AgaP_AGAP002728 AgaP_AGAP007786
+            AAG: AaeL_AAEL000454 AaeL_AAEL010143 AaeL_AAEL010814
+            CQU: CpipJ_CPIJ002859 CpipJ_CPIJ009491
+            AME: 409292(GB19422) 410396(GB15716) 552128(GB18960)
+            NVI: 100114279 100115212 100115918 100123725
+            TCA: 657626 658559 662783 662903
+            BMOR: 100329146 101736806 101739016 101739164 101739299
+            API: 100161204 100161939 100162792 100163197 100163222
+            PHU: Phum_PHUM376810 Phum_PHUM417630 Phum_PHUM420870 Phum_PHUM425180
+            ISC: IscW_ISCW004116 IscW_ISCW017423 IscW_ISCW018585 IscW_ISCW022614 IscW_ISCW024346
+            CEL: CELE_C30F12.7(idhg-2) CELE_C37E2.1(idhb-1) CELE_F35G12.2(idhg-1) CELE_F43G9.1(idha-1)
+            CBR: CBG03937 CBG12504 CBG16309 CBG18040
+            BMY: Bm1_13415 Bm1_14945 Bm1_37675
+            LOA: LOAG_02269 LOAG_06771
+            TSP: Tsp_05617 Tsp_10049
+            SMM: Smp_018680 Smp_056200
+            NVE: NEMVE_v1g173016 NEMVE_v1g245762
+            HMG: 100201384 100203218 100204979
+            TAD: TRIADDRAFT_54615 TRIADDRAFT_63943
+            AQU: 100632637 100635555 100636381
+            ATH: AT1G32480(IDH-IV) AT2G17130(IDH2) AT3G09810(IDH-VI) AT4G35260(IDH1) AT4G35650(IDH-III) AT5G03290(IDH-V)
+            ALY: ARALYDRAFT_480594 ARALYDRAFT_487101 ARALYDRAFT_491082 ARALYDRAFT_890825 ARALYDRAFT_891956 ARALYDRAFT_897145 ARALYDRAFT_912853
+            CRB: CARUB_v10002950mg CARUB_v10005091mg CARUB_v10006256mg CARUB_v10013785mg CARUB_v10013986mg
+            EUS: EUTSA_v10009866mg EUTSA_v10013851mg EUTSA_v10020958mg EUTSA_v10022743mg EUTSA_v10025418mg EUTSA_v10025508mg EUTSA_v10027171mg
+            CIT: 102577933 102619899 102626057
+            CIC: CICLE_v10011936mg CICLE_v10025889mg CICLE_v10028714mg
+            TCC: TCM_000083 TCM_006462 TCM_022180
+            GMX: 100777867 100778831 100781465 100790110 100800050 100811326
+            MTR: MTR_1g064070 MTR_3g101470 MTR_5g023740 MTR_8g074030
+            CAM: 101491000 101493754 101507911 101513648
+            FVE: 101290789 101297305 101303449
+            CSV: 101213909 101214612 101219331 101223515 101230776
+            RCU: RCOM_0519460 RCOM_1355470
+            POP: POPTR_0004s21440g POPTR_0005s10260g(POPTRDRAFT_558763) POPTR_0006s12860g POPTR_0007s08590g(POPTRDRAFT_819931) POPTR_0009s16680g(POPTRDRAFT_832930) POPTR_0016s09240g(POPTRDRAFT_825258)
+            VVI: 100242228 100253697 100263635
+            SLY: 101246168 101246460 101251730 101253647 544137
+            SOT: 102589944 102592957 102602245 102603033
+            OSA: 4324442 4329858 4336169
+            DOSA: Os01t0276100-01(Os01g0276100) Os02t0595500-01(Os02g0595500) Os04t0479200-01(Os04g0479200)
+            OBR: 102710341 102715731
+            BDI: 100829621 100836887 100843832
+            SBI: SORBI_03g011050(SORBIDRAFT_03g011050) SORBI_04g024840(SORBIDRAFT_04g024840)
+            ZMA: 100191841 100272953 100274026 100283574 100382743
+            SITA: 101754268 101771779 101772655 101780948
+            ATR: s00001p00200380(AMTR_s00001p00200380) s00002p00262880(AMTR_s00002p00262880) s00003p00237430(AMTR_s00003p00237430) s00034p00097160(AMTR_s00034p00097160) s00040p00206830(AMTR_s00040p00206830)
+            SMO: SELMODRAFT_160113 SELMODRAFT_231507 SELMODRAFT_233612 SELMODRAFT_234763
+            PPP: PHYPADRAFT_129687 PHYPADRAFT_133156 PHYPADRAFT_144112 PHYPADRAFT_185348 PHYPADRAFT_193492 PHYPADRAFT_59205
+            CRE: CHLREDRAFT_196042(IDH1) CHLREDRAFT_196044(IDH2)
+            VCN: VOLCADRAFT_104752(idh2) VOLCADRAFT_119675(idh1)
+            CSL: COCSUDRAFT_47333 COCSUDRAFT_65965
+            CVR: CHLNCDRAFT_34882
+            CME: CYME_CMS272C CYME_CMT412C
+            GSL: Gasu_48810 Gasu_55090
+            CCP: CHC_T00008852001 CHC_T00009162001 CHC_T00009293001
+            SCE: YNL037C(IDH1) YOR136W(IDH2)
+            AGO: AGOS_ADL223W AGOS_AFR137C
+            ERC: Ecym_2313 Ecym_3316
+            KLA: KLLA0E03125g KLLA0F04103g
+            LTH: KLTH0F15048g KLTH0G10186g
+            PPA: PAS_chr2-1_0120 PAS_chr4_0580
+            VPO: Kpol_1039p35 Kpol_440p12 Kpol_543p8
+            ZRO: ZYRO0D02838g ZYRO0D11220g
+            CGR: CAGL0G02673g CAGL0I07227g
+            NCS: NCAS_0B06290(NCAS0B06290) NCAS_0H02250(NCAS0H02250)
+            NDI: NDAI_0B03590(NDAI0B03590) NDAI_0C01410(NDAI0C01410)
+            TPF: TPHA_0D01560(TPHA0D01560) TPHA_0E01480(TPHA0E01480) TPHA_0J02770(TPHA0J02770)
+            TBL: TBLA_0B02240(TBLA0B02240) TBLA_0B06910(TBLA0B06910)
+            TDL: TDEL_0A03370(TDEL0A03370) TDEL_0C03840(TDEL0C03840)
+            KAF: KAFR_0B06370(KAFR0B06370) KAFR_0J01410(KAFR0J01410)
+            DHA: DEHA2C10758g DEHA2G05786g
+            PIC: PICST_42313(IDH2) PICST_91057(IDH1)
+            PGU: PGUG_02910 PGUG_03146
+            LEL: LELG_00480 LELG_01294
+            CAL: CaO19.12289(IDH1) CaO19.13213(IDH2) CaO19.4826(IDH1) CaO19.5791(IDH2)
+            CTP: CTRG_01317 CTRG_03395
+            CDU: CD36_09070 CD36_17850
+            COT: CORT_0A03650 CORT_0A10950
+            YLI: YALI0D06303g YALI0E05137g
+            CLU: CLUG_05434 CLUG_05795
+            NCR: NCU00775 NCU07697
+            SMP: SMAC_00855 SMAC_01458
+            PAN: PODANSg09844 PODANSg7259
+            TTT: THITE_163734 THITE_2115201
+            MTM: MYCTH_2132657 MYCTH_2295514
+            MGR: MGG_01712 MGG_01995
+            FGR: FG05733.1 FG09580.1
+            NHE: NECHADRAFT_58307 NECHADRAFT_66098
+            TRE: TRIREDRAFT_120378 TRIREDRAFT_74983(idh2)
+            VAL: VDBG_00840 VDBG_02401
+            SSL: SS1G_04160 SS1G_09958
+            BFU: BC1G_00206 BC1G_07285
+            ANI: AN1003.2 AN5790.2
+            AFM: AFUA_1G12800 AFUA_6G06370
+            AOR: AOR_1_1098194(AO090012000629) AOR_1_14154(AO090003000008)
+            ANG: ANI_1_798074(An08g05580) ANI_1_906164(An18g06760)
+            AFV: AFLA_018850 AFLA_037910
+            ACT: ACLA_022670 ACLA_088150
+            NFI: NFIA_012760 NFIA_052000
+            PCS: Pc13g11380 Pc14g01170
+            CIM: CIMG_06836 CIMG_07263
+            CPW: CPC735_000710 CPC735_032440
+            PBL: PAAG_00856 PAAG_07729
+            URE: UREG_03641 UREG_07827
+            ABE: ARB_00979 ARB_06698
+            TVE: TRV_04041 TRV_06462
+            AJE: HCAG_04093
+            PNO: SNOG_03647 SNOG_06082
+            PTE: PTT_16305 PTT_19621
+            ZTR: MYCGRDRAFT_101434(IDH2) MYCGRDRAFT_105053(IDH1)
+            TML: GSTUM_00004106001 GSTUM_00009134001
+            SPO: SPAC11G7.03(idh1) SPBC902.05c(idh2)
+            CNE: CNA04610 CNJ02060
+            CNB: CNBA4420 CNBJ1400
+            CGI: CGB_A4730W CGB_I2710W
+            PPL: POSPLDRAFT_42718
+            LBC: LACBIDRAFT_311842 LACBIDRAFT_311861
+            MPR: MPER_05795
+            CCI: CC1G_00350 CC1G_00372
+            SCM: SCHCODRAFT_48000 SCHCODRAFT_80265
+            UMA: UM01328.1 UM01329.1
+            MGL: MGL_0301 MGL_0302
+            PGR: PGTG_01926
+            MBR: MONBRDRAFT_19354 MONBRDRAFT_37916 MONBRDRAFT_6048
+            DDI: DDB_G0271344(idhA) DDB_G0293872(idhB)
+            DPP: DICPUDRAFT_80730 DICPUDRAFT_98388
+            DFA: DFA_05642(idhA) DFA_10000(idhB)
+            ACAN: ACA1_376500
+            TET: TTHERM_00344030 TTHERM_00723390
+            PTM: GSPATT00012691001 GSPATT00013309001 GSPATT00017313001 GSPATT00023050001 GSPATT00025896001
+            EHX: EMIHUDRAFT_54130
+            NGR: NAEGRDRAFT_70009 NAEGRDRAFT_80807
+            EFE: EFER_3668
+            XFA: XF2596
+            XFT: PD1973(icdA)
+            XFM: Xfasm12_2166
+            XFN: XfasM23_2077
+            XFF: XFLM_04360
+            XCC: XCC0967(icd)
+            XCB: XC_3268
+            XCA: xccb100_3384(icd1)
+            XCP: XCR_1165
+            XCV: XCV1076
+            XAC: XAC1046(icd)
+            XCI: XCAW_03534(leuB)
+            XAX: XACM_1027
+            XAO: XAC29_05295
+            XOO: XOO1024(icd)
+            XOM: XOO_0926
+            XOP: PXO_02485
+            XOR: XOC_1121
+            XAL: XALc_0579
+            SML: Smlt0982
+            SMT: Smal_0828
+            BUJ: BurJV3_0833
+            SMZ: SMD_0856
+            PSU: Psesu_2047
+            PSD: DSC_12115
+            FAU: Fraau_2557
+            RHD: R2APBS1_2605
+            DJI: CH75_04140
+            SON: SO_1538
+            SDN: Sden_2561
+            SFR: Sfri_2779
+            SAZ: Sama_2423
+            SBL: Sbal_1368
+            SBM: Shew185_1354
+            SBN: Sbal195_1393
+            SBP: Sbal223_2992
+            SBT: Sbal678_1427
+            SBS: Sbal117_1475
+            SBB: Sbal175_2969
+            SLO: Shew_2760
+            SPC: Sputcn32_1286
+            SHP: Sput200_1292
+            SSE: Ssed_3318
+            SPL: Spea_2980
+            SHE: Shewmr4_2720
+            SHM: Shewmr7_2791
+            SHN: Shewana3_2890
+            SHW: Sputw3181_2820
+            SHL: Shal_3069
+            SWD: Swoo_3466
+            SWP: swp_3606
+            SVO: SVI_1132
+            ILO: IL0861
+            ILI: K734_04325
+            CPS: CPS_3540
+            PHA: PSHAb0465
+            PAT: Patl_3197
+            PSM: PSM_B0541
+            AMC: MADE_1004875
+            AMAC: MASE_04350
+            AMB: AMBAS45_04620
+            AMG: AMEC673_04470
+            AMH: I633_04860
+            AMK: AMBLS11_04455
+            AMAA: amad1_04740
+            AMAL: I607_04505
+            AMAE: I876_04715
+            AMAO: I634_04890
+            AMAD: I636_04735
+            AMAI: I635_04710
+            AMAG: I533_04470
+            ALT: ambt_13820
+            GAG: Glaag_1135
+            GNI: GNIT_2478
+            FBL: Fbal_2814
+            MCA: MCA3071
+            MMT: Metme_2550
+            MAH: MEALZ_3026(icd)
+            AEH: Mlg_0664
+            CSA: Csal_1434
+            ABO: ABO_0296(icd)
+            ADI: B5T_00711(icd)
+            AHA: AHA_1152
+            AHY: AHML_06140
+            ASA: ASA_3183
+            AVR: B565_3077
+            AMED: B224_4096
+            OCE: GU3_06935
+            REH: H16_B1016(icd3)
+            CNC: CNE_2c09750(leuB)
+            BXE: Bxe_C0665
+            RFR: Rfer_2380 Rfer_2411
+            VAP: Vapar_4079
+            VPE: Varpa_4752
+            VPD: VAPA_1c42340
+            HAR: HEAR3270
+            MMS: mma_3499(idh)
+            CFU: CFU_0031(citC)
+            LCH: Lcho_4250
+            TIN: Tint_2512
+            THI: THI_2911(idh2)
+            BBA: Bd1264(leuB)
+            BBAT: Bdt_1246(leuB)
+            BBW: BDW_04345
+            BBAC: EP01_16250
+            BEX: A11Q_1653
+            MXA: MXAN_6337
+            MFU: LILAB_14785
+            MSD: MYSTI_06958
+            CCX: COCOR_06955(leuB2)
+            SUR: STAUR_6918
+            SCL: sce5773(icd1) sce6432(leuB2)
+            SCU: SCE1572_34290 SCE1572_38080
+            HOH: Hoch_0287
+            MET: M446_0777
+            GOX: GOX1336
+            GOH: B932_1561
+            GBE: GbCGDNIH1_2050
+            GBH: GbCGDNIH2_2050
+            GDI: GDI_1991
+            GDJ: Gdia_0214
+            GXY: GLX_27020
+            GXL: H845_645
+            APT: APA01_10420
+            APW: APA42C_10420
+            APF: APA03_10420
+            APU: APA07_10420
+            APG: APA12_10420
+            APQ: APA22_10420
+            APX: APA26_10420
+            APZ: APA32_10420
+            APK: APA386B_2558(icd1)
+            THL: TEH_24000(icd)
+            CAC: CA_C0972(citC)
+            CAE: SMB_G0989(icd)
+            CAY: CEA_G0983(citC)
+            CNO: NT01CX_0139
+            CBO: CBO0419
+            CBA: CLB_0452
+            CBH: CLC_0485
+            CBY: CLM_0498
+            CBL: CLK_3621
+            CBB: CLD_0324
+            CBI: CLJ_B0487
+            CBN: CbC4_1895
+            CBF: CLI_0504
+            CBM: CBF_0471
+            CBJ: H04402_00436
+            CLJ: CLJU_c06630
+            CCB: Clocel_2469
+            CPAS: Clopa_3427
+            CAH: CAETHG_2753
+            AMT: Amet_1319
+            EHA: Ethha_1387
+            CLE: Clole_1326
+            CPY: Cphy_3096
+            CDF: CD630_08340(icd)
+            CDC: CD196_0783
+            CDL: CDR20291_0764
+            CDG: CDBI1_04015
+            CST: CLOST_1243(icd)
+            DCA: Desca_1726
+            DKU: Desku_1672 Desku_3123
+            DRU: Desru_1310
+            PTH: PTH_2517(LeuB)
+            DAU: Daud_1038
+            DAI: Desaci_1216
+            APR: Apre_1101
+            ELM: ELI_1525
+            AWO: Awo_c24380(icd)
+            TMR: Tmar_1163
+            BPRS: CK3_23360
+            CHY: CHY_1107
+            TEP: TepRe1_0156 TepRe1_2278
+            TAE: TepiRe1_0168(IDH) TepiRe1_2448
+            MTA: Moth_0993
+            ADG: Adeg_1102
+            TPZ: Tph_c09030(leuB1)
+            CSC: Csac_0751
+            ATE: Athe_0525
+            COB: COB47_0470
+            CHD: Calhy_2130
+            COW: Calow_0380
+            CKI: Calkr_1785
+            CKN: Calkro_2108
+            CLC: Calla_1183
+            MAS: Mahau_0320
+            HOR: Hore_08060
+            HAS: Halsa_2046
+            AAR: Acear_2053
+            HHL: Halha_2299
+            SSG: Selsp_2187
+            MED: MELS_0492
+            MHG: MHY_29150
+            AFN: Acfer_1968
+            AIN: Acin_1202(icd)
+            RXY: Rxyl_1297
+            RRD: RradSPS_1271
+            CCU: Ccur_02380
+            ELE: Elen_2334
+            ABA: Acid345_4042
+            ACA: ACP_1462
+            ACM: AciX9_2985
+            GMA: AciX8_3687
+            SUS: Acid_7350
+            CTM: Cabther_B0391
+            EMI: Emin_0404
+            IPO: Ilyop_0225 Ilyop_2086 Ilyop_2096
+            LBA: Lebu_1446
+            STR: Sterm_2154
+            GAU: GAU_2477(icd)
+            GBA: J421_3937
+            ACO: Amico_1301
+            PSL: Psta_0983
+            PLM: Plim_0079
+            PBS: Plabr_2312
+            IPA: Isop_1279
+            SACI: Sinac_3090 Sinac_7227
+            CYA: CYA_1467
+            CYB: CYB_1678
+            SYNE: Syn6312_2221
+            SYNP: Syn7502_00041
+            TEL: tlr0302
+            THN: NK55_00535
+            AMR: AM1_5753(icd)
+            PSEU: Pse7367_0767
+            GVI: gvip428(icd)
+            GLJ: GKIL_0806(icd)
+            SRU: SRU_1677
+            SRM: SRM_01881(icd)
+            HSW: Hsw_4120
+            CTS: Ctha_2161
+            DET: DET0450
+            DEH: cbdb_A408
+            DEB: DehaBAV1_0427
+            DEV: DhcVS_392
+            DEG: DehalGT_0391
+            DMC: btf_415(icd)
+            DMD: dcmb_461(icd)
+            DMG: GY50_0375
+            DLY: Dehly_0358
+            HAU: Haur_1453
+            STI: Sthe_1662
+            TTA: Theth_0201
+            PMO: Pmob_1706
+            CCZ: CCALI_00259 CCALI_00772
+            FGI: FGOP10_03173
+            TYE: THEYE_A1278
+            LFC: LFE_0769
+            LFI: LFML04_1212
+            TTR: Tter_0788
+            MTP: Mthe_0549
+            MCJ: MCON_1315(aksF)
+            MHI: Mhar_1328
+            MER: H729_02405
+            MAX: MMALV_04330 MMALV_05180
+            TAR: TALC_00573
+            ABI: Aboo_1463
+            ACF: AciM339_1042
+            IAG: Igag_1773
+            THG: TCELL_0777
+            PFM: Pyrfu_1059
+            KCR: Kcr_0970
+DBLINKS     ExplorEnz - The Enzyme Database: 1.1.1.41
+            IUBMB Enzyme Nomenclature: 1.1.1.41
+            ExPASy - ENZYME nomenclature database: 1.1.1.41
+            BRENDA, the Enzyme Database: 1.1.1.41
+            CAS: 9001-58-5
+///

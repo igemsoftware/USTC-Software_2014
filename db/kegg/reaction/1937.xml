@@ -1,0 +1,14 @@
+ENTRY       R01937                      Reaction
+DEFINITION  2-Oxoadipate + Ammonia + NAD+ <=> 2-Aminomuconate + NADH + H+ + H2O
+EQUATION    C00322 + C00014 + C00003 <=> C02220 + C00004 + C00080 + C00001
+COMMENT     NADPH (see R01938)
+            possibly multi-step reaction
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00582  C00322_C02220 main [RC:RC00208]
+            RP05803  C00014_C02220 leave
+            RP05951  C00001_C00322 leave
+ENZYME      1.5.1.-
+PATHWAY     rn00380  Tryptophan metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00300  
+///

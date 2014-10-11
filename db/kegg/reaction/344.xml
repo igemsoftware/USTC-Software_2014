@@ -1,0 +1,21 @@
+ENTRY       R00344                      Reaction
+NAME        Pyruvate:carbon-dioxide ligase (ADP-forming)
+DEFINITION  ATP + Pyruvate + HCO3- <=> ADP + Orthophosphate + Oxaloacetate
+EQUATION    C00002 + C00022 + C00288 <=> C00008 + C00009 + C00036
+COMMENT     intermediate (carboxybiotin-[enzyme])
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00109  C00022_C00036 main [RC:RC00040]
+            RP05067  C00036_C00288 main [RC:RC00367]
+ENZYME      6.4.1.1
+PATHWAY     rn00020  Citrate cycle (TCA cycle)
+            rn00620  Pyruvate metabolism
+            rn00720  Carbon fixation pathways in prokaryotes
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+            rn01230  Biosynthesis of amino acids
+ORTHOLOGY   K01958  pyruvate carboxylase [EC:6.4.1.1]
+            K01959  pyruvate carboxylase subunit A [EC:6.4.1.1]
+            K01960  pyruvate carboxylase subunit B [EC:6.4.1.1]
+///

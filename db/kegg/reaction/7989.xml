@@ -1,0 +1,15 @@
+ENTRY       R07989                      Reaction
+NAME        malonyl-CoA:feruloyl-CoA malonyltransferase (cyclizing)
+DEFINITION  Feruloyl-CoA + 3 Malonyl-CoA <=> Homoeriodictyol chalcone + 4 CoA + 3 CO2
+EQUATION    C00406 + 3 C00083 <=> C16405 + 4 C00010 + 3 C00011
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP00065  C00010_C00406 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP10912  C00083_C16405 trans
+            RP11128  C00406_C16405 main [RC:RC02726]
+            RP12262  C00083_C16405 trans
+            RP12263  C00083_C16405 trans
+ENZYME      2.3.1.74
+PATHWAY     rn00941  Flavonoid biosynthesis
+ORTHOLOGY   K00660  chalcone synthase [EC:2.3.1.74]
+///

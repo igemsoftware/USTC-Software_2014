@@ -1,0 +1,18 @@
+ENTRY       R00084                      Reaction
+NAME        porphobilinogen:(4-[2-carboxyethyl]-3-[carboxymethyl]pyrrol-2-yl)methyltransferase (hydrolysing);
+            porphobilinogen ammonia-lyase (polymerizing)
+DEFINITION  4 Porphobilinogen + H2O <=> Hydroxymethylbilane + 4 Ammonia
+EQUATION    4 C00931 + C00001 <=> C01024 + 4 C00014
+COMMENT     multi-step reaction
+RPAIR       RP02810  C00001_C01024 leave
+            RP03398  C00931_C01024 trans
+            RP07589  C00014_C00931 leave
+            RP13500  C00931_C01024 trans
+            RP13501  C00931_C01024 trans
+            RP13502  C00931_C01024 main [RC:RC02317]
+ENZYME      2.5.1.61
+PATHWAY     rn00860  Porphyrin and chlorophyll metabolism
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K01749  hydroxymethylbilane synthase [EC:2.5.1.61]
+///

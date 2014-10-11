@@ -1,0 +1,13 @@
+ENTRY       R00130                      Reaction
+NAME        ATP:dephospho-CoA 3'-phosphotransferase
+DEFINITION  ATP + Dephospho-CoA <=> ADP + CoA
+EQUATION    C00002 + C00882 <=> C00008 + C00010
+RPAIR       RP00003  C00002_C00008 main [RC:RC00002]
+            RP03722  C00010_C00882 main [RC:RC00078]
+            RP07719  C00002_C00010 trans
+ENZYME      2.7.1.24
+PATHWAY     rn00770  Pantothenate and CoA biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00859  dephospho-CoA kinase [EC:2.7.1.24]
+            K02318  phosphopantetheine adenylyltransferase / dephospho-CoA kinase [EC:2.7.7.3 2.7.1.24]
+///

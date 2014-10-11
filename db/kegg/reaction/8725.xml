@@ -1,0 +1,13 @@
+ENTRY       R08725                      Reaction
+NAME        7alpha,26-dihydroxy-4-cholesten-3-one,NADPH:oxygen oxidoreductase (26-hydroxylating)
+DEFINITION  7alpha,26-Dihydroxy-4-cholesten-3-one + 2 Oxygen + 2 NADPH + 2 H+ <=> 7alpha-Hydroxy-3-oxo-4-cholestenoate + 2 NADP+ + 3 H2O
+EQUATION    C17336 + 2 C00007 + 2 C00005 + 2 C00080 <=> C17337 + 2 C00006 + 3 C00001
+COMMENT     intermediate (26-aldehyde)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP13722  C17336_C17337 main [RC:RC00463]
+            RP13723  C00007_C17337 leave
+ENZYME      1.14.13.15
+PATHWAY     rn00120  Primary bile acid biosynthesis
+ORTHOLOGY   K00488  cholestanetriol 26-monooxygenase [EC:1.14.13.15]
+///

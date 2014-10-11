@@ -1,0 +1,18 @@
+ENTRY       R01826                      Reaction
+NAME        Phosphoenolpyruvate:D-erythrose-4-phosphate C-(1-carboxyvinyl)transferase (phosphate hydrolysing, 2-carboxy-2-oxoethyl-forming)
+DEFINITION  Phosphoenolpyruvate + D-Erythrose 4-phosphate + H2O <=> 2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate + Orthophosphate
+EQUATION    C00074 + C00279 + C00001 <=> C04691 + C00009
+COMMENT     multi-step reaction
+RPAIR       RP00122  C00009_C00074 leave
+            RP01784  C00074_C04691 trans
+            RP01785  C00279_C04691 main [RC:RC00435]
+            RP13378  C00001_C04691 leave
+ENZYME      2.5.1.54
+PATHWAY     rn00400  Phenylalanine, tyrosine and tryptophan biosynthesis
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+            rn01230  Biosynthesis of amino acids
+ORTHOLOGY   K01626  3-deoxy-7-phosphoheptulonate synthase [EC:2.5.1.54]
+            K03856  3-deoxy-7-phosphoheptulonate synthase [EC:2.5.1.54]
+            K13853  3-deoxy-7-phosphoheptulonate synthase / chorismate mutase [EC:2.5.1.54 5.4.99.5]
+///

@@ -1,0 +1,303 @@
+ENTRY       EC 1.4.1.21                 Enzyme
+NAME        aspartate dehydrogenase;
+            NAD-dependent aspartate dehydrogenase;
+            NADH2-dependent aspartate dehydrogenase;
+            NADP+-dependent aspartate dehydrogenase
+CLASS       Oxidoreductases;
+            Acting on the CH-NH2 group of donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     L-aspartate:NAD(P)+ oxidoreductase (deaminating)
+REACTION    L-aspartate + H2O + NAD(P)+ = oxaloacetate + NH3 + NAD(P)H + H+ [RN:R07164 R07165]
+ALL_REAC    R07164 R07165;
+            (other) R07407 R07410
+SUBSTRATE   L-aspartate [CPD:C00049];
+            H2O [CPD:C00001];
+            NAD+ [CPD:C00003];
+            NADP+ [CPD:C00006]
+PRODUCT     oxaloacetate [CPD:C00036];
+            NH3 [CPD:C00014];
+            NADH [CPD:C00004];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080]
+COMMENT     The enzyme is strictly specific for L-aspartate as substrate. Catalyses the first step in NAD biosynthesis from aspartate. The enzyme has a higher affinity for NAD+ than NADP+ [1].
+HISTORY     EC 1.4.1.21 created 2005
+REFERENCE   1  [PMID:12496312]
+  AUTHORS   Yang Z, Savchenko A, Yakunin A, Zhang R, Edwards A, Arrowsmith C, Tong L.
+  TITLE     Aspartate dehydrogenase, a novel enzyme identified from structural and functional studies of TM1643.
+  JOURNAL   J. Biol. Chem. 278 (2003) 8804-8.
+  ORGANISM  Thermotoga maritima
+  SEQUENCE  [tma:TM1643]
+REFERENCE   2  [PMID:9819709]
+  AUTHORS   Okamura T, Noda H, Fukuda S, Ohsugi M.
+  TITLE     Aspartate dehydrogenase in vitamin B12-producing Klebsiella pneumoniae IFO 13541.
+  JOURNAL   J. Nutr. Sci. Vitaminol. (Tokyo). 44 (1998) 483-90.
+  ORGANISM  Klebsiella pneumoniae
+REFERENCE   3
+  AUTHORS   Kretovich, W.L., Kariakina, T.I., Weinova, M.K., Sidelnikova, L.I. and Kazakova, O.W.
+  TITLE     The synthesis of aspartic acid in Rhizobium lupini bacteroids.
+  JOURNAL   Plant Soil 61 (1981) 145-156.
+PATHWAY     ec00760  Nicotinate and nicotinamide metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K06989  aspartate dehydrogenase
+GENES       YSI: BF17_03510
+            ENC: ECL_04254
+            ENO: ECENHK_18425
+            ECLO: ENC_31770
+            EEC: EcWSU1_03724(nadX)
+            ENL: A3UG_18775
+            EAE: EAE_03000
+            EAR: ST548_p3677
+            KPN: KPN_03362
+            KPM: KPHS_44280
+            KPR: KPR_4627(aspD)
+            KPJ: N559_0875
+            KPI: D364_17305
+            SPE: Spro_3958
+            SRR: SerAS9_4164
+            SRL: SOD_c39140(nadX)
+            SRY: M621_21025
+            SRS: SerAS12_4165
+            SRA: SerAS13_4165
+            SMAF: D781_3679
+            SMW: SMWW4_v1c40670
+            SLQ: M495_20670
+            SFO: Z042_06940
+            PSI: S70_18990
+            EBT: EBL_c05930
+            ROR: RORB6_22705
+            EBF: D782_0775
+            FAU: Fraau_1819
+            PAE: PA3505
+            PFC: PflA506_5348
+            PRE: PCA10_15620(nadX)
+            PSV: PVLB_18275
+            PCR: Pcryo_1256
+            PSO: PSYCG_06625
+            ACI: ACIAD0997
+            ACD: AOLE_14565
+            ACB: A1S_0956
+            ABY: ABAYE2838
+            ABC: ACICU_00917
+            ABN: AB57_1031
+            ABB: ABBFA_002656
+            ABX: ABK1_0941
+            ABZ: ABZJ_01057
+            ABR: ABTJ_02855
+            ABD: ABTW07_1046
+            ABH: M3Q_1254
+            ABAD: ABD1_09080
+            ABJ: BJAB07104_01051
+            ABAB: BJAB0715_01069
+            ABAJ: BJAB0868_01065
+            ABAZ: P795_12930
+            ACC: BDGL_000233(nadX)
+            PHA: PSHAb0019
+            TTU: TERTU_1273
+            CSA: Csal_0141
+            RSO: RS01727(RSp0722)
+            RSL: RPSI07_mp0621(nadX)
+            RSN: RSPO_m01055(nadX)
+            RSM: CMR15_mp10693(nadX)
+            RSE: F504_4495
+            RPI: Rpic_4503
+            RPF: Rpic12D_4635
+            REU: Reut_B3576
+            REH: H16_B0736
+            CNC: CNE_2c06790(nadX)
+            CTI: RALTA_B0572(nadX)
+            BMA: BMAA1329
+            BMV: BMASAVP1_0312
+            BML: BMA10229_0588
+            BMN: BMA10247_A0979
+            BPS: BPSS0903
+            BPM: BURPS1710b_A2501
+            BPL: BURPS1106A_A1241
+            BPD: BURPS668_A1314
+            BPSE: BDL_4191
+            BPSU: BBN_4362
+            BPZ: BP1026B_II0990
+            BPQ: BPC006_II1257
+            BPK: BBK_3535
+            BTE: BTH_II1494
+            BTD: BTI_5722
+            BUR: Bcep18194_B1112
+            BCN: Bcen_3665
+            BCH: Bcen2424_4702
+            BCM: Bcenmc03_5598
+            BCJ: BCAM1845
+            BAM: Bamb_4096
+            BAC: BamMC406_4561
+            BMU: Bmul_3991
+            BMJ: BMULJ_04511
+            BCT: GEM_3772
+            BXE: Bxe_B0182
+            BPH: Bphy_4240
+            BPY: Bphyt_7066
+            BUG: BC1001_4727
+            BGF: BC1003_5026
+            BGD: bgla_2g11350
+            BYI: BYI23_C011310
+            BPX: BUPH_01292 BUPH_08279
+            BUO: BRPE64_CCDS00980
+            PPK: U875_18035
+            PPNO: DA70_10545
+            PRB: X636_16085
+            BPE: BP0567 BP1922
+            BPC: BPTD_0576 BPTD_1894
+            BPER: BN118_0921 BN118_3500
+            BPA: BPP0257 BPP2295
+            BPAR: BN117_0255 BN117_1450 BN117_4327
+            BBR: BB0260 BB1747 BB4781
+            BBM: BN115_0245 BN115_1649 BN115_4458
+            BBH: BN112_1768 BN112_3157 BN112_3641
+            BAV: BAV2441
+            BHO: D560_2985
+            AXY: AXYL_04286
+            AXO: NH44784_057651
+            AXN: AX27061_4026
+            PUT: PT7_3205
+            AKA: TKWG_07660
+            POL: Bpro_3686
+            DAC: Daci_0952
+            DEL: DelCs14_5572
+            VAP: Vapar_3166
+            VPE: Varpa_3589
+            VPD: VAPA_1c32530(nadX)
+            CTT: CtCNB1_4615
+            HSE: Hsero_4681
+            MES: Meso_0824
+            AVI: Avi_9150
+            OAN: Oant_4396
+            BJA: bll6567
+            BJU: BJ6T_28610
+            BRS: S23_17600
+            RPB: RPB_0147 RPB_3108
+            AZC: AZC_4388
+            CAK: Caul_5291
+            SIL: SPO2880
+            SIT: TM1040_1595
+            JAN: Jann_1451
+            RDE: RD1_3642
+            RLI: RLO149_c008210
+            PDE: Pden_1041
+            DSH: Dshi_0239(nadX)
+            KVU: EIO_1806
+            KVL: KVU_1272
+            PSF: PSE_1841
+            PGD: Gal_04118
+            OAR: OA238_c02590
+            LMD: METH_15670
+            RED: roselon_02319
+            PGV: SL003B_1871
+            PSAB: PSAB_06900
+            SIV: SSIL_0567
+            FPA: FPR_28370
+            RHO: RHOM_09620
+            CPY: Cphy_2124
+            CSH: Closa_3242
+            FAA: HMPREF0389_00713
+            ERH: ERH_0204
+            ERS: K210_08205
+            CGT: cgR_1126
+            CGS: C624_06000
+            CGG: C629_06000
+            CAR: cauri_0710
+            CCG: CCASEI_09430
+            RPY: Y013_10970 Y013_15090
+            SALB: XNR_0361
+            AAU: AAur_1938
+            AAI: AARI_04360
+            ARR: ARUE_c20700(nadX)
+            RSA: RSal33209_3277
+            TPI: TREPR_0938
+            BVU: BVU_0071
+            BXY: BXY_25590
+            PSN: Pedsa_0313
+            CAO: Celal_0257
+            FBA: FIC_01249
+            STI: Sthe_2207
+            TMA: TM1643
+            TMM: Tmari_1652
+            TMI: THEMA_06030
+            TPT: Tpet_1148
+            TRQ: TRQ2_1186
+            TNA: CTN_0745
+            TNP: Tnap_1163
+            TTA: Theth_0476
+            TME: Tmel_1582
+            TAF: THA_1920
+            FPE: Ferpe_1742
+            MPZ: Marpi_1296
+            MJA: MJ_0915
+            MFE: Mefer_0063
+            MVU: Metvu_0079
+            MFS: MFS40622_1244
+            MIF: Metin_0200
+            MIG: Metig_0410
+            MMP: MMP0737
+            MMQ: MmarC5_0845
+            MMX: MmarC6_0148
+            MMZ: MmarC7_1758
+            MMD: GYY_02555
+            MAE: Maeo_0848
+            MVN: Mevan_1607
+            MVO: Mvol_0924
+            MOK: Metok_0075
+            MAC: MA0958
+            MBA: Mbar_A1866
+            MMA: MM_2072
+            MMAZ: MmTuc01_2140
+            MBU: Mbur_1681
+            MMH: Mmah_1981
+            MEV: Metev_1018
+            MZH: Mzhil_0389
+            MPY: Mpsy_1281
+            MHZ: Metho_0340
+            MCJ: MCON_1163
+            MHI: Mhar_0006
+            MHU: Mhun_2354
+            MLA: Mlab_0766
+            MEM: Memar_0819
+            MBG: BN140_0872
+            MPI: Mpet_2710
+            MBN: Mboo_0500
+            MFO: Metfor_2687
+            MPL: Mpal_1416 Mpal_2777
+            MPD: MCP_1121(nadX)
+            MEZ: Mtc_1071(nadX)
+            RCI: RCIX226(nadX)
+            MER: H729_06970
+            MTH: MTH973
+            MMG: MTBMA_c13590(nadX)
+            MST: Msp_1148
+            MSI: Msm_0464
+            MRU: mru_0675
+            MEB: Abm4_0406(nadX1) Abm4_1625(nadX2)
+            MEL: Metbo_0419
+            MEW: MSWAN_0861 MSWAN_1954
+            METH: MBMB1_1584(nadX)
+            MFV: Mfer_0043
+            MKA: MK0094
+            MAX: MMALV_15260
+            AFU: AF1838
+            AVE: Arcve_1622
+            FPL: Ferp_0170
+            TAR: TALC_01415
+            ABI: Aboo_0362
+            ACF: AciM339_0681
+            IHO: Igni_1349
+            HBU: Hbut_0678
+            PFM: Pyrfu_0280
+            PYR: P186_0988
+            NMR: Nmar_1240
+            NIR: NSED_06950
+            NKR: NKOR_07040
+            CSY: CENSYa_0959
+            NGA: Ngar_c18470(nadX)
+            HAH: Halar_1793
+DBLINKS     ExplorEnz - The Enzyme Database: 1.4.1.21
+            IUBMB Enzyme Nomenclature: 1.4.1.21
+            ExPASy - ENZYME nomenclature database: 1.4.1.21
+            BRENDA, the Enzyme Database: 1.4.1.21
+            CAS: 37278-97-0
+///

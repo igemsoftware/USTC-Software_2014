@@ -1,0 +1,15 @@
+ENTRY       R09062                      Reaction
+DEFINITION  3-Vinylbacteriochlorophyllide d + S-Adenosyl-L-methionine + H2O <=> Bacteriochlorophyllide d + S-Adenosyl-L-homocysteine
+EQUATION    C18157 + C00019 + C00001 <=> C18160 + C00021
+COMMENT     multi-step reaction
+            methyltransferase
+            hydratase
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP14298  C18157_C18160 main [RC:RC02412]
+            RP14299  C00001_C18160 leave
+PATHWAY     rn00860  Porphyrin and chlorophyll metabolism
+ORTHOLOGY   K11336  3-vinyl bacteriochlorophyllide hydratase [EC:4.2.1.-]
+            K13601  bacteriochlorophyll C8 methyltransferase [EC:2.1.1.-]
+            K13602  bacteriochlorophyll C12 methyltransferase [EC:2.1.1.-]
+            K13603  3-vinyl bacteriochlorophyllide hydratase [EC:4.2.1.-]
+///

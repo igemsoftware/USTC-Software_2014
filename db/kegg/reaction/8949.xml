@@ -1,0 +1,12 @@
+ENTRY       R08949                      Reaction
+NAME        11-deoxycorticosterone,reduced-adrenal-ferredoxin:oxygen oxidoreductase (11beta,18-hydroxylating)
+DEFINITION  11-Deoxycorticosterone + 3 Reduced adrenal ferredoxin + 3 Oxygen <=> Aldosterone + 3 Oxidized adrenal ferredoxin + 4 H2O
+EQUATION    C03205 + 3 C00662 + 3 C00007 <=> C01780 + 3 C00667 + 4 C00001
+COMMENT     three-step reaction (see R03851+R03262+R03263)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP14140  C01780_C03205 main [RC:RC02388]
+            RP14141  C00007_C01780 leave
+            RP14142  C00007_C01780 leave
+ENZYME      1.14.15.4
+ORTHOLOGY   K00497  steroid 11beta-monooxygenase [EC:1.14.15.4]
+///

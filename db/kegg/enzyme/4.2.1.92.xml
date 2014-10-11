@@ -1,0 +1,77 @@
+ENTRY       EC 4.2.1.92                 Enzyme
+NAME        hydroperoxide dehydratase;
+            hydroperoxide isomerase;
+            linoleate hydroperoxide isomerase;
+            linoleic acid hydroperoxide isomerase;
+            HPI;
+            (9Z,11E,14Z)-(13S)-hydroperoxyoctadeca-9,11,14-trienoate 12,13-hydro-lyase;
+            (9Z,11E,14Z)-(13S)-hydroperoxyoctadeca-9,11,14-trienoate 12,13-hydro-lyase [(9Z)-(13S)-12,13-epoxyoctadeca-9,11-dienoate-forming];
+            allene oxide synthase;
+            AOS
+CLASS       Lyases;
+            Carbon-oxygen lyases;
+            Hydro-lyases
+SYSNAME     (9Z,11E,15Z)-(13S)-hydroperoxyoctadeca-9,11,15-trienoate 12,13-hydro-lyase [(9Z,15Z)-(13S)-12,13-epoxyoctadeca-9,11,15-trienoate-forming]
+REACTION    (9Z,11E,15Z)-(13S)-hydroperoxyoctadeca-9,11,15-trienoate = (9Z,15Z)-(13S)-12,13-epoxyoctadeca-9,11,15-trienoate + H2O [RN:R07863]
+ALL_REAC    R07863;
+            (other) R07865
+SUBSTRATE   (9Z,11E,15Z)-(13S)-hydroperoxyoctadeca-9,11,15-trienoate [CPD:C04785]
+PRODUCT     (9Z,15Z)-(13S)-12,13-epoxyoctadeca-9,11,15-trienoate [CPD:C04672];
+            H2O [CPD:C00001]
+COMMENT     Acts on a number of unsaturated fatty-acid hydroperoxides, forming the corresponding allene oxides. The product of the above reaction is unstable and is acted upon by EC 5.3.99.6, allene-oxide cyclase, to form the cyclopentenone derivative (15Z)-12-oxophyto-10,15-dienoate (OPDA), which is the first cyclic and biologically active metabolite in the jasmonate biosynthesis pathway [3]. The enzyme from many plants belongs to the CYP-74 family of P450 monooxygenases [4].
+HISTORY     EC 4.2.1.92 created 1992, modified 2008
+REFERENCE   1  [PMID:4208994]
+  AUTHORS   Esselman WJ, Clagett CO.
+  TITLE     Products of linoleic hydroperoxide-decomposing enzyme of alfalfa seed.
+  JOURNAL   J. Lipid. Res. 15 (1974) 173-8.
+  ORGANISM  Medicago sativa
+REFERENCE   2
+  AUTHORS   Hamberg, M.
+  TITLE     Mechanism of corn hydroperoxide isomerase - detection of 12,13(S)-oxido-9(Z),11-octadecadienoic acid.
+  JOURNAL   Biochim. Biophys. Acta 920 (1987) 76-84.
+REFERENCE   3  [PMID:3178850]
+  AUTHORS   Hamberg M.
+  TITLE     Biosynthesis of 12-oxo-10,15(Z)-phytodienoic acid: identification of an allene oxide cyclase.
+  JOURNAL   Biochem. Biophys. Res. Commun. 156 (1988) 543-50.
+  ORGANISM  Zea mays
+REFERENCE   4  [PMID:8756596]
+  AUTHORS   Laudert D, Pfannschmidt U, Lottspeich F, Hollander-Czytko H, Weiler EW
+  TITLE     Cloning, molecular and functional characterization of Arabidopsis thaliana allene oxide synthase (CYP 74), the first enzyme of the octadecanoid pathway to jasmonates.
+  JOURNAL   Plant. Mol. Biol. 31 (1996) 323-35.
+  ORGANISM  Arabidopsis thaliana
+  SEQUENCE  [ath:AT5G42650]
+PATHWAY     ec00592  alpha-Linolenic acid metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K01723  hydroperoxide dehydratase
+GENES       ATH: AT5G42650(AOS)
+            ALY: ARALYDRAFT_494777 ARALYDRAFT_683996
+            CRB: CARUB_v10028569mg
+            EUS: EUTSA_v10003180mg
+            CIT: 102578025(AOS) 102614058
+            CIC: CICLE_v10000825mg CICLE_v10028333mg
+            TCC: TCM_006297 TCM_033962
+            GMX: 100037481(AOS1) 100037482(AOS2) 100801764(CYP74A1) 100807192 100810890
+            MTR: MTR_035s0006 MTR_4g068550
+            CAM: 101490167 101496543 101513500
+            FVE: 101292090 101312801
+            CSV: 101211324(HPL) 101211574 101221732(AOS) 101223726 101224577
+            RCU: RCOM_1593180
+            POP: POPTR_0002s13220g(POPTRDRAFT_644172) POPTR_0004s15590g(POPTRDRAFT_759609) POPTR_0004s15600g(POPTRDRAFT_556417) POPTR_0009s11280g(POPTRDRAFT_557312) POPTR_0014s03820g
+            VVI: 100241751 100252012 100253713 100264033 100267750 100526774
+            SLY: 100037496 100736436 101247264 101266902(AOS) 606711(aos)
+            SOT: 102577479(AOS) 102584249 102588225 102588560 102589003
+            OSA: 4332121 4334233
+            DOSA: Os02t0218700-01(Os02g0218700) Os02t0218800-01(Os02g0218800) Os03t0225900-01(Os03g0225900) Os03t0767000-01(Os03g0767000)
+            OBR: 102701808 102705981
+            BDI: 100839139 100842451 100844110
+            SBI: SORBI_01g007000(SORBIDRAFT_01g007000) SORBI_01g042270(SORBIDRAFT_01g042270) SORBI_04g007640(SORBIDRAFT_04g007640)
+            ZMA: 100279433 542150(aos1)
+            SITA: 101762057 101782604 101784451
+            ATR: s00059p00186400(AMTR_s00059p00186400)
+            SMO: SELMODRAFT_114146 SELMODRAFT_120083 SELMODRAFT_133317(CYP74J1) SELMODRAFT_177201(CYP74K3) SELMODRAFT_177485(CYP74M1) SELMODRAFT_181219 SELMODRAFT_183932 SELMODRAFT_228572(CYP74K2) SELMODRAFT_235463 SELMODRAFT_271334(CYP74K1) SELMODRAFT_413157(CYP74L3) SELMODRAFT_446021 SELMODRAFT_81998(CYP74M3) SELMODRAFT_88954 SELMODRAFT_92382(CYP74L1) SELMODRAFT_98212(CYP74M2) SELMODRAFT_98717(CYP74L2)
+            PPP: PHYPADRAFT_211721(HPL1) PHYPADRAFT_214061 PHYPADRAFT_72785
+DBLINKS     ExplorEnz - The Enzyme Database: 4.2.1.92
+            IUBMB Enzyme Nomenclature: 4.2.1.92
+            ExPASy - ENZYME nomenclature database: 4.2.1.92
+            BRENDA, the Enzyme Database: 4.2.1.92
+///

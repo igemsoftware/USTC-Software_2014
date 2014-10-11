@@ -1,0 +1,14 @@
+ENTRY       R02562                      Reaction
+NAME        4-aminobenzoate,NADPH:oxygen oxidoreductase (1-hydroxylating, decarboxylating)
+DEFINITION  4-Aminobenzoate + Oxygen + NADPH + H+ <=> 4-Hydroxyaniline + CO2 + NADP+ + H2O
+EQUATION    C00568 + C00007 + C00005 + C00080 <=> C02372 + C00011 + C00006 + C00001
+COMMENT     NADH (see R02561)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP00307  C00568_C02372 main [RC:RC00115]
+            RP00308  C00007_C02372 leave
+            RP05776  C00011_C00568 leave
+ENZYME      1.14.13.27
+PATHWAY     rn00627  Aminobenzoate degradation
+            rn01120  Microbial metabolism in diverse environments
+///

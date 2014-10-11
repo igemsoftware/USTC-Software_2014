@@ -1,0 +1,225 @@
+ENTRY       EC 2.5.1.41                 Enzyme
+NAME        phosphoglycerol geranylgeranyltransferase;
+            glycerol phosphate geranylgeranyltransferase;
+            geranylgeranyl-transferase;
+            prenyltransferase;
+            (S)-3-O-geranylgeranylglyceryl phosphate synthase;
+            (S)-geranylgeranylglyceryl phosphate synthase;
+            GGGP synthase;
+            (S)-GGGP synthase;
+            GGGPS;
+            geranylgeranyl diphosphate:sn-glyceryl phosphate geranylgeranyltransferase;
+            geranylgeranyl diphosphate:sn-glycerol-1-phosphate geranylgeranyltransferase
+CLASS       Transferases;
+            Transferring alkyl or aryl groups, other than methyl groups;
+            Transferring alkyl or aryl groups, other than methyl groups (only sub-subclass identified to date)
+SYSNAME     geranylgeranyl-diphosphate:sn-glycerol-1-phosphate geranylgeranyltransferase
+REACTION    geranylgeranyl diphosphate + sn-glycerol 1-phosphate = diphosphate + 3-(O-geranylgeranyl)-sn-glycerol 1-phosphate [RN:R04158]
+ALL_REAC    R04158
+SUBSTRATE   geranylgeranyl diphosphate [CPD:C00353];
+            sn-glycerol 1-phosphate [CPD:C00623]
+PRODUCT     diphosphate [CPD:C00013];
+            3-(O-geranylgeranyl)-sn-glycerol 1-phosphate [CPD:C04590]
+COMMENT     This cytosolic enzyme catalyses the first pathway-specific step in the biosynthesis of the core membrane diether lipids in archaebacteria [2]. Requires Mg2+ for maximal activity [2]. It catalyses the alkylation of the primary hydroxy group in sn-glycerol 1-phosphate by geranylgeranyl diphosphate (GGPP) in a prenyltransfer reaction where a hydroxy group is the nucleophile in the acceptor substrate [2]. The other enzymes involved in the biosynthesis of polar lipids in Archaea are EC 1.1.1.261 (sn-glycerol-1-phosphate dehydrogenase), EC 2.5.1.42 (geranylgeranylglycerol-phosphate geranylgeranyltransferase) and EC 2.7.7.67 (CDP-archaeol synthase), which lead to the formation of CDP-unsaturated archaeol. The final step in the pathway involves the addition of L-serine, with concomitant removal of CMP, leading to the production of unsaturated archaetidylserine [5].
+HISTORY     EC 2.5.1.41 created 1992, modified 2009
+REFERENCE   1
+  AUTHORS   Zhang, D.-L., Daniels, L. and Poulter, C.D.
+  TITLE     Biosynthesis of archaebacterial membranes. Formation of isoprene ethers by a prenyl transfer reaction.
+  JOURNAL   J. Am. Chem. Soc. 112 (1990) 1264-1265.
+REFERENCE   2  [PMID:8408023]
+  AUTHORS   Chen A, Zhang D, Poulter CD
+  TITLE     (S)-geranylgeranylglyceryl phosphate synthase. Purification and characterization of the first pathway-specific enzyme in archaebacterial membrane lipid biosynthesis.
+  JOURNAL   J. Biol. Chem. 268 (1993) 21701-5.
+  ORGANISM  Methanobacterium thermoautotrophicum
+  SEQUENCE  [mmg:MTBMA_c09410]
+REFERENCE   3  [PMID:12801917]
+  AUTHORS   Nemoto N, Oshima T, Yamagishi A
+  TITLE     Purification and characterization of geranylgeranylglyceryl phosphate synthase from a thermoacidophilic archaeon, Thermoplasma acidophilum.
+  JOURNAL   J. Biochem. 133 (2003) 651-7.
+  ORGANISM  Thermoplasma acidophilum
+  SEQUENCE  [tac:Ta0995]
+REFERENCE   4  [PMID:16377641]
+  AUTHORS   Payandeh J, Fujihashi M, Gillon W, Pai EF
+  TITLE     The crystal structure of (S)-3-O-geranylgeranylglyceryl phosphate synthase reveals an ancient fold for an ancient enzyme.
+  JOURNAL   J. Biol. Chem. 281 (2006) 6070-8.
+  ORGANISM  Archaeoglobus fulgidus
+  SEQUENCE  [afu:AF0403]
+REFERENCE   5  [PMID:10960477]
+  AUTHORS   Morii H, Nishihara M, Koga Y
+  TITLE     CTP:2,3-di-O-geranylgeranyl-sn-glycero-1-phosphate cytidyltransferase in the methanogenic archaeon Methanothermobacter thermoautotrophicus.
+  JOURNAL   J. Biol. Chem. 275 (2000) 36568-74.
+  ORGANISM  Methanobacterium thermoautotrophicum
+PATHWAY     ec00564  Glycerophospholipid metabolism
+ORTHOLOGY   K17104  phosphoglycerol geranylgeranyltransferase
+GENES       MJA: MJ_1250
+            MFE: Mefer_0372
+            MVU: Metvu_0909
+            MFS: MFS40622_0685
+            MIF: Metin_0740
+            MIG: Metig_1082
+            MMP: MMP0007
+            MMQ: MmarC5_1677
+            MMX: MmarC6_0942
+            MMZ: MmarC7_1004
+            MMD: GYY_00040
+            MAE: Maeo_1165
+            MVN: Mevan_1213
+            MVO: Mvol_1417
+            MOK: Metok_0736
+            MAC: MA3969
+            MBA: Mbar_A0675
+            MMA: MM_0943
+            MMAZ: MmTuc01_0970
+            MBU: Mbur_1652
+            MMH: Mmah_1962
+            MEV: Metev_1519
+            MZH: Mzhil_0369
+            MPY: Mpsy_1329
+            MHZ: Metho_0329
+            MTP: Mthe_1238
+            MCJ: MCON_1916
+            MHI: Mhar_0199
+            MHU: Mhun_1010
+            MLA: Mlab_1138
+            MEM: Memar_0769
+            MBG: BN140_2339
+            MPI: Mpet_1935
+            MBN: Mboo_0860
+            MFO: Metfor_2140
+            MPL: Mpal_1300
+            MPD: MCP_0258 MCP_2780
+            MEZ: Mtc_2486
+            RCI: RCIX581
+            MER: H729_02780
+            MTH: MTH552
+            MMG: MTBMA_c09410
+            MST: Msp_1291(pcrB)
+            MSI: Msm_0124
+            MRU: mru_1102
+            MEB: Abm4_0883
+            MEL: Metbo_2269
+            MEW: MSWAN_0376
+            METH: MBMB1_0428
+            MFV: Mfer_0282
+            MKA: MK0642
+            MAX: MMALV_02560
+            AFU: AF0403
+            APO: Arcpr_0988
+            AVE: Arcve_0345
+            AST: Asulf_00438
+            FPL: Ferp_2022
+            HAL: VNG0252C VNG1918C
+            HSL: OE1398R OE3699R
+            HMA: rrnAC1650(pcrB)
+            HHI: HAH_2191(pcrB)
+            HHN: HISP_11165
+            HWA: HQ1269A(pcrB)
+            HWC: Hqrw_1298(pcrB)
+            NPH: NP1224A
+            NMO: Nmlp_2072(pcrB)
+            HLA: Hlac_0199
+            HUT: Huta_2960
+            HTI: HTIA_2549
+            HMU: Hmuk_0293 Hmuk_3016
+            HTU: Htur_1301 Htur_2683
+            NMG: Nmag_1070 Nmag_2771
+            HVO: HVO_0680 HVO_1086
+            HME: HFX_0542 HFX_0642
+            HJE: HacjB3_13025 HacjB3_18758
+            HBO: Hbor_22430 Hbor_25380
+            HXA: Halxa_2474 Halxa_4034
+            NAT: NJ7G_1988
+            NPE: Natpe_0946
+            NGE: Natgr_0591 Natgr_1269 Natgr_2083
+            HRU: Halru_0157
+            NOU: Natoc_0656 Natoc_2675
+            SALI: L593_04125
+            TAC: Ta0995
+            TVO: TVN0734
+            PTO: PTO0183
+            FAC: FACI_IFERC01G0508
+            TAR: TALC_00272
+            PHO: PH1124
+            PAB: PAB0735
+            PFU: PF1039
+            PFI: PFC_04430
+            PYN: PNA2_1786
+            PYA: PYCH_06020
+            PYS: Py04_0956
+            TKO: TK1026
+            TON: TON_1065
+            TGA: TGAM_1175(gggPS)
+            TSI: TSIB_0683
+            TBA: TERMP_01020
+            THE: GQS_10240
+            THA: TAM4_2030
+            THM: CL1_1622
+            TLT: OCC_02732
+            THS: TES1_1095
+            TNU: BD01_0972
+            ABI: Aboo_0770
+            ACF: AciM339_0296
+            APE: APE_0621.1
+            ACJ: ACAM_0473
+            SMR: Smar_0993
+            SHC: Shell_1468
+            IHO: Igni_0425
+            DKA: DKAM_1191
+            DMU: Desmu_1195
+            DFD: Desfe_1302
+            TAG: Tagg_0823
+            IAG: Igag_0058
+            THG: TCELL_0313
+            HBU: Hbut_0005
+            PFM: Pyrfu_0154
+            SSO: SSO0259
+            SOL: Ssol_1237
+            STO: ST0310
+            SAI: Saci_0728
+            SACN: SacN8_03530
+            SACR: SacRon12I_03515
+            SACS: SUSAZ_03285
+            SIS: LS215_1988
+            SIA: M1425_1879
+            SIM: M1627_1956
+            SID: M164_1886
+            SIY: YG5714_1955
+            SIN: YN1551_0965
+            SII: LD85_2100
+            SIH: SiH_1816
+            SIR: SiRe_1736
+            SIC: SiL_1728
+            MSE: Msed_2291
+            MCN: Mcup_2034
+            AHO: Ahos_0786
+            PAI: PAE3045
+            PIS: Pisl_0443
+            PCL: Pcal_0985
+            PAS: Pars_1793
+            PYR: P186_1474
+            POG: Pogu_0338
+            TNE: Tneu_1677
+            CMA: Cmaq_0928
+            TUZ: TUZN_1798
+            TTN: TTX_1714
+            VDI: Vdis_0768
+            VMO: VMUT_1616
+            TPE: Tpen_0633
+            THB: N186_04510
+            ASC: ASAC_1045
+            CLG: Calag_0530
+            FFO: FFONT_0864
+            NMR: Nmar_1795
+            NIR: NSED_09615
+            NKR: NKOR_09545
+            CSY: CENSYa_1828
+            NGA: Ngar_c35980
+            CSU: CSUB_C1094
+            KCR: Kcr_1391
+            HAH: Halar_2377 Halar_3226
+DBLINKS     ExplorEnz - The Enzyme Database: 2.5.1.41
+            IUBMB Enzyme Nomenclature: 2.5.1.41
+            ExPASy - ENZYME nomenclature database: 2.5.1.41
+            BRENDA, the Enzyme Database: 2.5.1.41
+            CAS: 124650-69-7
+///

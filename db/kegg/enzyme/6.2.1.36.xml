@@ -1,0 +1,66 @@
+ENTRY       EC 6.2.1.36                 Enzyme
+NAME        3-hydroxypropionyl-CoA synthase;
+            3-hydroxypropionyl-CoA synthetase (AMP-forming);
+            3-hydroxypropionate---CoA ligase
+CLASS       Ligases;
+            Forming carbon-sulfur bonds;
+            Acid-thiol ligases
+SYSNAME     hydroxypropionate:CoA ligase (AMP-forming)
+REACTION    3-hydroxypropionate + ATP + CoA = 3-hydroxypropionyl-CoA + AMP + diphosphate [RN:R09286]
+ALL_REAC    R09286
+SUBSTRATE   3-hydroxypropionate [CPD:C01013];
+            ATP [CPD:C00002];
+            CoA [CPD:C00010]
+PRODUCT     3-hydroxypropionyl-CoA [CPD:C05668];
+            AMP [CPD:C00020];
+            diphosphate [CPD:C00013]
+COMMENT     Catalyses a step in the 3-hydroxypropionate/4-hydroxybutyrate cycle, an autotrophic CO2 fixation pathway found in some thermoacidophilic archaea [1,2].
+            The enzymes from Metallosphaera sedula and Sulfolobus tokodaii can also use propionate, acrylate, acetate, and butanoate as substrates [2], and are thus different from EC 6.2.1.17 (propionate---CoA ligase), which does not accept acetate or butanoate.
+HISTORY     EC 6.2.1.36 created 2009
+REFERENCE   1  [PMID:18079405]
+  AUTHORS   Berg IA, Kockelkorn D, Buckel W, Fuchs G
+  TITLE     A 3-hydroxypropionate/4-hydroxybutyrate autotrophic carbon dioxide assimilation pathway in Archaea.
+  JOURNAL   Science. 318 (2007) 1782-6.
+  ORGANISM  Metallosphaera sedula
+REFERENCE   2  [PMID:18165310]
+  AUTHORS   Alber BE, Kung JW, Fuchs G
+  TITLE     3-Hydroxypropionyl-coenzyme A synthetase from Metallosphaera sedula, an enzyme involved in autotrophic CO2 fixation.
+  JOURNAL   J. Bacteriol. 190 (2008) 1383-9.
+  ORGANISM  Metallosphaera sedula, Sulfolobus tokodaii
+  SEQUENCE  [mse:Msed_1456] [sto:ST0783]
+PATHWAY     ec00720  Carbon fixation pathways in prokaryotes
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K14469  acrylyl-CoA reductase (NADPH) / 3-hydroxypropionyl-CoA dehydratase / 3-hydroxypropionyl-CoA synthetase
+            K15018  3-hydroxypropionyl-coenzyme A synthetase
+GENES       CTM: Cabther_B0610
+            CTS: Ctha_1050
+            RRS: RoseRS_3202
+            RCA: Rcas_2930
+            CAU: Caur_0613
+            CAG: Cagg_3394
+            CHL: Chy400_0662
+            SSO: SSO3203(acsA-10)
+            SOL: Ssol_0940
+            STO: ST0783
+            SAI: Saci_1184
+            SACN: SacN8_05775
+            SACR: SacRon12I_05770
+            SACS: SUSAZ_05635
+            SIS: LS215_2320
+            SIA: M1425_2157
+            SIM: M1627_2237
+            SID: M164_2161
+            SIY: YG5714_2284
+            SIN: YN1551_0632
+            SII: LD85_2424
+            SIH: SiH_2103
+            SIR: SiRe_2035
+            SIC: SiL_2010
+            MSE: Msed_1456
+            MCN: Mcup_0744
+            AHO: Ahos_2066
+DBLINKS     ExplorEnz - The Enzyme Database: 6.2.1.36
+            IUBMB Enzyme Nomenclature: 6.2.1.36
+            ExPASy - ENZYME nomenclature database: 6.2.1.36
+            BRENDA, the Enzyme Database: 6.2.1.36
+///

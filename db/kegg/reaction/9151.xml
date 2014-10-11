@@ -1,0 +1,19 @@
+ENTRY       R09151                      Reaction
+NAME        trichloroethene,NADH:oxygen oxidoreductase (glyoxylate-forming)
+DEFINITION  Trichloroethene + Oxygen + H2O + NADH + H+ <=> Glyoxylate + 3 Hydrochloric acid + NAD+
+EQUATION    C06790 + C00007 + C00001 + C00004 + C00080 <=> C00048 + 3 C01327 + C00003
+COMMENT     dioxygenase (distinct from R09141+R09144)
+            requiring ferredoxin and ferredoxin reductase (ec 1.18.1.3)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP06115  C01327_C06790 leave
+            RP10350  C01327_C06790 leave
+            RP15785  C00048_C06790 main [RC:RC03011]
+            RP15786  C00007_C00048 leave
+            RP15787  C01327_C06790 leave
+ENZYME      1.14.12.11
+PATHWAY     rn00625  Chloroalkane and chloroalkene degradation
+ORTHOLOGY   K03268  benzene/toluene dioxygenase alpha subunit [EC:1.14.12.3 1.14.12.11]
+            K16268  benzene/toluene dioxygenase beta subunit [EC:1.14.12.3 1.14.12.11]
+            K18089  benzene/toluene dioxygenase ferredoxin subunit
+            K18090  benzene/toluene dioxygenase ferredoxin reductase subunit [EC:1.18.1.3]
+///

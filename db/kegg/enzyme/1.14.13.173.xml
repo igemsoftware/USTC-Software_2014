@@ -1,0 +1,39 @@
+ENTRY       EC 1.14.13.173              Enzyme
+NAME        11-oxo-beta-amyrin 30-oxidase;
+            CYP72A;
+            CYP72A154
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     11-oxo-beta-amyrin,NADPH:oxygen oxidoreductase (30-hydroxylating)
+REACTION    11-oxo-beta-amyrin + 3 O2 + 3 NADPH + 3 H+ = glycyrrhetinate + 3 NADP+ + 4 H2O (overall reaction) [RN:R10316];
+            (1a) 11-oxo-beta-amyrin + O2 + NADPH + H+ = 30-hydroxy-11-oxo-beta-amyrin + NADP+ + H2O [RN:R10313];
+            (1b) 30-hydroxy-11-oxo-beta-amyrin + O2 + NADPH + H+ = glycyrrhetaldehyde + NADP+ + 2 H2O [RN:R10314];
+            (1c) glycyrrhetaldehyde + O2 + NADPH + H+ = glycyrrhetinate + NADP+ + H2O [RN:R10315]
+ALL_REAC    R10313 R10314 R10315 R10316
+SUBSTRATE   11-oxo-beta-amyrin [CPD:C19943];
+            O2 [CPD:C00007];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            30-hydroxy-11-oxo-beta-amyrin [CPD:C20510];
+            glycyrrhetaldehyde [CPD:C20511]
+PRODUCT     glycyrrhetinate [CPD:C02283];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            30-hydroxy-11-oxo-beta-amyrin [CPD:C20510];
+            glycyrrhetaldehyde [CPD:C20511]
+COMMENT     A heme-thiolate protein (cytochrome P-450). The enzyme is involved in the biosynthesis of the triterpenoid saponin glycyrrhizin in the plant Glycyrrhiza uralensis (licorice). The enzyme from the plant Medicago truncatula can also hydroxylate beta-amyrin.
+HISTORY     EC 1.14.13.173 created 2013
+REFERENCE   1  [PMID:22128119]
+  AUTHORS   Seki H, Sawai S, Ohyama K, Mizutani M, Ohnishi T, Sudo H, Fukushima EO, Akashi T, Aoki T, Saito K, Muranaka T
+  TITLE     Triterpene functional genomics in licorice for identification of CYP72A154 involved in the biosynthesis of glycyrrhizin.
+  JOURNAL   Plant. Cell. 23 (2011) 4112-23.
+  ORGANISM  Glycyrrhiza uralensis, Medicago truncatula
+  SEQUENCE  [up:H1A988 H1A981]
+ORTHOLOGY   K17873  11-oxo-beta-amyrin 30-oxidase
+GENES       MTR: MTR_8g042040
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.173
+            IUBMB Enzyme Nomenclature: 1.14.13.173
+            ExPASy - ENZYME nomenclature database: 1.14.13.173
+            BRENDA, the Enzyme Database: 1.14.13.173
+///

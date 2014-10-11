@@ -1,0 +1,10 @@
+ENTRY       R08066                      Reaction
+DEFINITION  Isopentenyl adenosine + Reduced flavoprotein + Oxygen <=> trans-Zeatin riboside + Oxidized flavoprotein + H2O
+EQUATION    C16427 + C03024 + C00007 <=> C16431 + C03161 + C00001
+COMMENT     P-450 monooxygenase
+            P-450 reductase (ec 1.6.2.4) is the flavoprotein and re-reduced by NADPH (see R08551)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP10483  C00007_C16431 leave
+            RP12215  C16427_C16431 main [RC:RC01137]
+PATHWAY     rn00908  Zeatin biosynthesis
+///

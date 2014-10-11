@@ -1,0 +1,14 @@
+ENTRY       R01685                      Reaction
+NAME        taurine:ferricytochrome-c oxidoreductase (deaminating)
+DEFINITION  Taurine + H2O + 2 Ferricytochrome c <=> Sulfoacetaldehyde + Ammonia + 2 Ferrocytochrome c + 2 H+
+EQUATION    C00245 + C00001 + 2 C00125 <=> C00593 + C00014 + 2 C00126 + 2 C00080
+COMMENT     EC1.4.99.2: probably EC1.4.2.-, TauXY
+RPAIR       RP00038  C00125_C00126 cofac [RC:RC00016]
+            RP00163  C00245_C00593 main [RC:RC00062]
+            RP06677  C00001_C00593 leave
+            RP06678  C00014_C00245 leave
+ENZYME      1.4.2.-
+PATHWAY     rn00430  Taurine and hypotaurine metabolism
+ORTHOLOGY   K07255  taurine dehydrogenase small subunit [EC:1.4.2.-]
+            K07256  taurine dehydrogenase large subunit [EC:1.4.2.-]
+///

@@ -1,0 +1,13 @@
+ENTRY       R00251                      Reaction
+NAME        5-oxo-L-proline amidohydrolase (ATP-hydrolysing)
+DEFINITION  ATP + Pidolic acid + 2 H2O <=> ADP + Orthophosphate + L-Glutamate
+EQUATION    C00002 + C01879 + 2 C00001 <=> C00008 + C00009 + C00025
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP04455  C00025_C01879 main [RC:RC00553]
+            RP05676  C00001_C00009 ligase
+            RP05695  C00001_C00025 leave
+ENZYME      3.5.2.9
+PATHWAY     rn00480  Glutathione metabolism
+ORTHOLOGY   K01469  5-oxoprolinase (ATP-hydrolysing) [EC:3.5.2.9]
+///

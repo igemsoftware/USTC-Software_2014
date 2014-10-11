@@ -1,0 +1,110 @@
+ENTRY       EC 1.14.99.36               Enzyme
+NAME        beta-carotene 15,15'-monooxygenase;
+            beta-carotene 15,15'-dioxygenase (misleading);
+            carotene dioxygenase (misleading);
+            carotene 15,15'-dioxygenase (misleading);
+            BCMO1 (gene name);
+            BCDO (misleading)
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            Miscellaneous
+SYSNAME     beta-carotene:oxygen 15,15'-oxidoreductase (15,15'-epoxidizing, bond-cleaving)
+REACTION    beta-carotene + O2 = 2 all-trans-retinal (overall reaction) [RN:R00032];
+            (1a) beta-carotene + O2 + AH2 = beta-carotene 15,15'-epoxide + H2O + A [RN:R10083];
+            (1b) beta-carotene 15,15'-epoxide + H2O = 15,15'-dihydroxy-beta-carotene [RN:R10084];
+            (1c) 15,15'-dihydroxy-beta-carotene + A = 2 all-trans-retinal + AH2 [RN:R10085]
+ALL_REAC    R00032 R10083 R10084 R10085
+SUBSTRATE   beta-carotene [CPD:C02094];
+            O2 [CPD:C00007];
+            AH2 [CPD:C00030];
+            beta-carotene 15,15'-epoxide;
+            H2O [CPD:C00001];
+            15,15'-dihydroxy-beta-carotene [CPD:C20332];
+            A [CPD:C00028]
+PRODUCT     all-trans-retinal [CPD:C00376];
+            beta-carotene 15,15'-epoxide;
+            H2O [CPD:C00001];
+            A [CPD:C00028];
+            15,15'-dihydroxy-beta-carotene [CPD:C20332];
+            AH2 [CPD:C00030]
+COMMENT     Requires bile salts and Fe(II). This animal enzyme catalyses the reaction in three stages, epoxidation of the 15,15'-double bond, hydration of the epoxide leading to ring opening, and oxidative cleavage of the diol formed. Thus only one atom of the dioxygen is incorporated into each retinal molecule. The nature of the acceptor listed in reactions (1a) and (1c) is assumed to be iron within the active site. Formerly classified in EC 1.13.11 as it had been thought to be a dioxygenase. cf. EC 1.13.11.63, beta-carotene 15,15'-dioxygenase.
+HISTORY     EC 1.14.99.36 created 1972 as EC 1.13.11.21, transferred 2001 to EC 1.14.99.36
+REFERENCE   1  [PMID:5946623]
+  AUTHORS   Goodman DS, Huang HS, Shiratori T.
+  TITLE     Mechanism of the biosynthesis of vitamin A from beta-carotene.
+  JOURNAL   J. Biol. Chem. 241 (1966) 1929-32.
+  ORGANISM  Rattus norvegicus
+REFERENCE   2
+  AUTHORS   Goodman, D.S., Huang, H.S., Kanai, M. and Shiratori, T.
+  TITLE     The enzymatic conversion of all-trans beta-carotene into retinal.
+  JOURNAL   J. Biol. Chem. 242 (1967) 3543-3554.
+REFERENCE   3
+  AUTHORS   Leuenberger, M.G., Engeloch-Jarret, C. and Woggon, W.D.
+  TITLE     The reaction mechanism of the enzyme-catalysed central cleavage of beta-carotene to retinal.
+  JOURNAL   Angew. Chem. 40 (2001) 2614-2616.
+REFERENCE   4  [PMID:18979213]
+  AUTHORS   Kim YS, Oh DK
+  TITLE     Substrate specificity of a recombinant chicken beta-carotene 15,15'-monooxygenase that converts beta-carotene into retinal.
+  JOURNAL   Biotechnol. Lett. 31 (2009) 403-8.
+PATHWAY     ec00830  Retinol metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00515  beta-carotene 15,15'-monooxygenase
+GENES       HSA: 53630(BCMO1)
+            PTR: 468043(BCMO1)
+            PPS: 100987572(BCMO1)
+            GGO: 101132534(BCMO1)
+            PON: 100454129(BCMO1)
+            MCC: 721412
+            MCF: 102121880(BCMO1)
+            MMU: 63857(Bcmo1)
+            RNO: 114106(Bcmo1)
+            CGE: 100760350
+            HGL: 101724039(Bcmo1)
+            TUP: 102484616(BCMO1)
+            CFA: 489695(BCMO1)
+            AML: 100483748(BCMO1)
+            FCA: 101101606(BCMO1)
+            PTG: 102959940(BCMO1)
+            BTA: 534696(BCMO1)
+            BOM: 102266127(BCMO1)
+            PHD: 102315733(BCMO1)
+            CHX: 102179507(BCMO1)
+            SSC: 100192320(BCMO1)
+            CFR: 102513983(BCMO1)
+            ECB: 100069873(BCMO1)
+            MYB: 102263079(BCMO1)
+            MYD: 102771959(BCMO1)
+            PALE: 102897588(BCMO1)
+            MDO: 100031779(BCMO1)
+            SHR: 100920512(BCMO1)
+            GGA: 395346(BCMO1)
+            MGP: 100549225
+            TGU: 100228904(BCMO1)
+            FAB: 101812113(BCMO1)
+            PHI: 102103988(BCMO1)
+            APLA: 101798614(BCMO1)
+            FPG: 101914506(BCMO1)
+            FCH: 102058462(BCMO1)
+            CLV: 102086476(BCMO1)
+            ASN: 102378066(BCMO1)
+            PSS: 102455966(BCMO1)
+            CMY: 102929893(BCMO1)
+            ACS: 100563614
+            XTR: 100486582(bcmo1)
+            DRE: 393580(bcmo1l) 84039(bcmo1)
+            TRU: 101076274 101078539
+            MZE: 101482784 101486459
+            OLA: 100125487 100125495(bcmo1)
+            XMA: 102218318 102234994
+            LCM: 102362963(BCMO1)
+            BFO: BRAFLDRAFT_218241 BRAFLDRAFT_94883 BRAFLDRAFT_99974
+            CIN: 778841(bco)
+            SPU: 591892
+            ISC: IscW_ISCW021870
+            HWA: HQ2381A
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.99.36
+            IUBMB Enzyme Nomenclature: 1.14.99.36
+            ExPASy - ENZYME nomenclature database: 1.14.99.36
+            BRENDA, the Enzyme Database: 1.14.99.36
+            CAS: 37256-60-3
+///

@@ -1,0 +1,11 @@
+ENTRY       R10086                      Reaction
+NAME        L-glutamate:ferredoxin oxidoreductase (deaminating)
+DEFINITION  L-Glutamate + 2 Oxidized ferredoxin + H2O <=> Ammonia + 2-Oxoglutarate + 2 Reduced ferredoxin + 2 H+
+EQUATION    C00025 + 2 C00139 + C00001 <=> C00014 + C00026 + 2 C00138 + 2 C00080
+COMMENT     second step of two-step reaction (see R00021, R00256+R10086)
+RPAIR       RP00014  C00025_C00026 main [RC:RC00006]
+            RP05697  C00001_C00026 leave
+            RP05779  C00014_C00025 leave [RC:RC02799]
+ENZYME      1.4.7.1
+ORTHOLOGY   K00284  glutamate synthase (ferredoxin) [EC:1.4.7.1]
+///

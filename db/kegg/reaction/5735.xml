@@ -1,0 +1,12 @@
+ENTRY       R05735                      Reaction
+NAME        acetone:carbon-dioxide ligase (AMP-forming)
+DEFINITION  Acetone + CO2 + ATP + 2 H2O <=> Acetoacetate + AMP + 2 Orthophosphate
+EQUATION    C00207 + C00011 + C00002 + 2 C00001 <=> C00164 + C00020 + 2 C00009
+RPAIR       RP00010  C00002_C00009 ligase
+            RP00274  C00164_C00207 main [RC:RC00040]
+            RP05676  C00001_C00009 leave
+            RP05804  C00011_C00164 leave
+            RP12346  C00002_C00020 ligase [RC:RC00002]
+            RP12391  C00002_C00009 ligase
+ENZYME      6.4.1.6
+///

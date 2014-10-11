@@ -1,0 +1,16 @@
+ENTRY       R00698                      Reaction
+NAME        L-phenylalanine:oxygen oxidoreductase (decarboxylating)
+DEFINITION  L-Phenylalanine + Oxygen <=> 2-Phenylacetamide + CO2
+EQUATION    C00079 + C00007 <=> C02505 + C00011
+COMMENT     plant
+            incomplete reaction (various side reactions)
+            requiring PLP[CPD:C00018] and Mn2+[CPD:C00034]
+RPAIR       RP00599  C00079_C02505 main [RC:RC00213]
+            RP06128  C00011_C00079 leave
+            RP06277  C00007_C02505 leave
+ENZYME      1.11.1.7        1.11.1.21
+PATHWAY     rn00360  Phenylalanine metabolism
+ORTHOLOGY   K00430  peroxidase [EC:1.11.1.7]
+            K03782  catalase-peroxidase [EC:1.11.1.21]
+            K11188  peroxiredoxin 6, 1-Cys peroxiredoxin [EC:1.11.1.7 1.11.1.15 3.1.1.-]
+///

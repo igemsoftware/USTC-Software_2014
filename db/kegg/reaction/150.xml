@@ -1,0 +1,16 @@
+ENTRY       R00150                      Reaction
+NAME        ATP:carbamate phosphotransferase
+DEFINITION  ATP + Ammonia + CO2 <=> ADP + Carbamoyl phosphate
+EQUATION    C00002 + C00014 + C00011 <=> C00008 + C00169
+COMMENT     two-step reaction (see R07316+R01395)
+RPAIR       RP00003  C00002_C00008 main [RC:RC00002]
+            RP03826  C00002_C00169 trans
+            RP06023  C00011_C00169 main [RC:RC02803]
+            RP06025  C00014_C00169 main [RC:RC02804]
+ENZYME      2.7.2.2
+PATHWAY     rn00230  Purine metabolism
+            rn00330  Arginine and proline metabolism
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+ORTHOLOGY   K00926  carbamate kinase [EC:2.7.2.2]
+///

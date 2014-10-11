@@ -1,0 +1,13 @@
+ENTRY       R00998                      Reaction
+NAME        acetyl-CoA:2-oxobutanoate C-acetyltransferase (thioester-hydrolysing, carboxymethyl-forming);
+            (R)-2-ethylmalate 2-oxobutanoyl-lyase (CoA-acylating)
+DEFINITION  (R)-2-Ethylmalate + CoA <=> Acetyl-CoA + H2O + 2-Oxobutanoate
+EQUATION    C02488 + C00010 <=> C00024 + C00001 + C00109
+COMMENT     multi-step reaction
+RPAIR       RP00007  C00010_C00024 main [RC:RC00004]
+            RP01228  C00109_C02488 main [RC:RC00067]
+            RP06401  C00024_C02488 main [RC:RC02754]
+            RP13438  C00001_C02488 leave
+ENZYME      2.3.3.6
+PATHWAY     rn00620  Pyruvate metabolism
+///

@@ -1,0 +1,14 @@
+ENTRY       R00143                      Reaction
+NAME        ammonia:NAD+ oxidoreductase;
+            NADH:hydroxylamine oxidoreductase
+DEFINITION  Ammonia + NAD+ + H2O <=> Hydroxylamine + NADH + H+
+EQUATION    C00014 + C00003 + C00001 <=> C00192 + C00004 + C00080
+COMMENT     not using NADH directly, but electron-transferring (ec 1.7.99.1, see R00284)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP05744  C00014_C00192 main [RC:RC02797]
+            RP05811  C00001_C00192 leave
+ENZYME      1.7.1.10        1.7.99.1
+PATHWAY     rn00910  Nitrogen metabolism
+ORTHOLOGY   K05601  hydroxylamine reductase [EC:1.7.99.1]
+            K15864  nitrite reductase (NO-forming) / hydroxylamine reductase [EC:1.7.2.1 1.7.99.1]
+///

@@ -1,0 +1,13 @@
+ENTRY       R10070                      Reaction
+NAME        zeaxanthin,NADH:oxygen oxidoreductase
+DEFINITION  Zeaxanthin + 2 NADH + 2 H+ + 2 Oxygen <=> Violaxanthin + 2 NAD+ + 2 H2O
+EQUATION    C06098 + 2 C00004 + 2 C00080 + 2 C00007 <=> C08614 + 2 C00003 + 2 C00001
+COMMENT     two-step reaction (see R06946+R06947)
+            see R10071 (NADPH)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP10523  C00007_C08614 leave
+            RP15846  C06098_C08614 main [RC:RC03037]
+ENZYME      1.14.13.90
+ORTHOLOGY   K09838  zeaxanthin epoxidase [EC:1.14.13.90]
+///

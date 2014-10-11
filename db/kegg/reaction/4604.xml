@@ -1,0 +1,12 @@
+ENTRY       R04604                      Reaction
+NAME        Biotin:apo-[3-methylcrotonoyl-CoA:carbon-dioxide ligase (ADP-forming)] ligase (AMP-forming)
+DEFINITION  ATP + Biotin + Apo-[3-methylcrotonoyl-CoA:carbon-dioxide ligase (ADP-forming)] <=> AMP + Diphosphate + [3-Methylcrotonoyl-CoA:carbon-dioxide ligase (ADP-forming)]
+EQUATION    C00002 + C00120 + C04827 <=> C00020 + C00013 + C04801
+COMMENT     two-step reaction (see R01074 + R05145)
+            R05145 and R01074 are general reactions
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP12477  C00120_C04801 main [RC:RC00090]
+            RP12478  C04801_C04827 main [RC:RC00096]
+ENZYME      6.3.4.11
+///

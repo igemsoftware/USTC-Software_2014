@@ -1,0 +1,14 @@
+ENTRY       R08778                      Reaction
+NAME        glycyl-tRNA:undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-isoglutaminyl-L-lysyl-(glycyl)3-D-alanyl-D-alanine glycyltransferase
+DEFINITION  2 Glycyl-tRNA(Gly) + Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-isoglutaminyl-L-lysyl-(glycyl)3-D-alanyl-D-alanine <=> 2 tRNA(Gly) + Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-isoglutaminyl-L-lysyl-(glycyl)5-D-alanyl-D-alanine
+EQUATION    2 C02412 + C17542 <=> 2 C01642 + C05895
+COMMENT     two-step reaction
+RPAIR       RP00152  C01642_C02412 main [RC:RC00055]
+            RP08423  C02412_C05895 trans
+            RP13785  C05895_C17542 main [RC:RC00096]
+            RP13786  C02412_C05895 trans
+ENZYME      2.3.2.18
+PATHWAY     rn00550  Peptidoglycan biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K11695  peptidoglycan pentaglycine glycine transferase (the fourth and fifth glycine) [EC:2.3.2.18]
+///

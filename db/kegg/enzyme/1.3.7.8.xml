@@ -1,0 +1,58 @@
+ENTRY       EC 1.3.7.8                  Enzyme
+NAME        benzoyl-CoA reductase;
+            benzoyl-CoA reductase (dearomatizing)
+CLASS       Oxidoreductases;
+            Acting on the CH-CH group of donors;
+            With an iron-sulfur protein as acceptor
+SYSNAME     cyclohexa-1,5-diene-1-carbonyl-CoA:ferredoxin oxidoreductase (aromatizing, ATP-forming)
+REACTION    cyclohexa-1,5-diene-1-carbonyl-CoA + oxidized ferredoxin + 2 ADP + 2 phosphate = benzoyl-CoA + reduced ferredoxin + 2 ATP + 2 H2O [RN:R02451]
+ALL_REAC    R02451;
+            (other) R00283
+SUBSTRATE   cyclohexa-1,5-diene-1-carbonyl-CoA [CPD:C06322];
+            oxidized ferredoxin [CPD:C00139];
+            ADP [CPD:C00008];
+            phosphate [CPD:C00009]
+PRODUCT     benzoyl-CoA [CPD:C00512];
+            reduced ferredoxin [CPD:C00138];
+            ATP [CPD:C00002];
+            H2O [CPD:C00001]
+COMMENT     An iron-sulfur protein. Requires Mg2+ or Mn2+. Inactive towards aromatic acids that are not CoA esters but will also catalyse the reaction: ammonia + acceptor + 2 ADP + 2 phosphate = hydroxylamine + reduced acceptor + 2 ATP + H2O. In the presence of reduced acceptor, but in the absence of oxidizable substrate, the enzyme catalyses the hydrolysis of ATP to ADP plus phosphate.
+HISTORY     EC 1.3.7.8 created 1999 as EC 1.3.99.15, transferred 2011 to EC 1.3.7.8, modified 2011
+REFERENCE   1  [PMID:8575453]
+  AUTHORS   Boll M, Fuchs G.
+  TITLE     Benzoyl-coenzyme A reductase (dearomatizing), a key enzyme of anaerobic aromatic metabolism. ATP dependence of the reaction, purification and some properties of the enzyme from Thauera aromatica strain K172.
+  JOURNAL   Eur. J. Biochem. 234 (1995) 921-33.
+  ORGANISM  Thauera aromatica
+  SEQUENCE  [up:O87874 O87875 O87876 O87877] [tmz:Tmz1t_2949 Tmz1t_2950 Tmz1t_2951 Tmz1t_2948] (Thauera sp.)
+REFERENCE   2  [PMID:20578740]
+  AUTHORS   Kung JW, Baumann S, von Bergen M, Muller M, Hagedoorn PL, Hagen WR, Boll M
+  TITLE     Reversible biological Birch reduction at an extremely low redox potential.
+  JOURNAL   J. Am. Chem. Soc. 132 (2010) 9850-6.
+  ORGANISM  Geobacter metallireducens
+PATHWAY     ec00362  Benzoate degradation
+            ec01100  Metabolic pathways
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K04112  benzoyl-CoA reductase subunit C
+            K04113  benzoyl-CoA reductase subunit B
+            K04114  benzoyl-CoA reductase subunit A
+            K04115  benzoyl-CoA reductase subunit D
+GENES       EBA: ebA5282(bcrC) ebA5284(bcrB) ebA5286(bcrD) ebA5287(bcrA) ebA742(bcrA) ebA744(bcrD) ebA748(bcrC)
+            TMZ: Tmz1t_2948 Tmz1t_2949 Tmz1t_2950 Tmz1t_2951
+            GLO: Glov_2400 Glov_2401
+            RPA: RPA0657(badD) RPA0658(badE) RPA0659(badF) RPA0660(badG)
+            RPC: RPC_1026 RPC_1027 RPC_1028 RPC_1029
+            RPD: RPD_1535 RPD_1536 RPD_1537 RPD_1538
+            RPE: RPE_0605 RPE_0606 RPE_0607 RPE_0608
+            RPT: Rpal_0724 Rpal_0725 Rpal_0726 Rpal_0727
+            RPX: Rpdx1_4126 Rpdx1_4127 Rpdx1_4128 Rpdx1_4129
+            RVA: Rvan_0037 Rvan_0038 Rvan_0039 Rvan_0040
+            MAG: amb2138 amb2139 amb2140 amb2141
+            SLP: Slip_0467 Slip_0468
+            FPL: Ferp_1184 Ferp_1185 Ferp_1186 Ferp_1187
+DBLINKS     ExplorEnz - The Enzyme Database: 1.3.7.8
+            IUBMB Enzyme Nomenclature: 1.3.7.8
+            ExPASy - ENZYME nomenclature database: 1.3.7.8
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.3.7.8
+            BRENDA, the Enzyme Database: 1.3.7.8
+            CAS: 176591-18-7
+///

@@ -1,0 +1,16 @@
+ENTRY       R05632                      Reaction
+NAME        1-hydroxy-2-naphthoate,NADH:oxygen oxidoreductase (2-hydroxylating, decarboxylating)
+DEFINITION  1-Hydroxy-2-naphthoate + NADH + H+ + Oxygen <=> Naphthalene-1,2-diol + CO2 + NAD+ + H2O
+EQUATION    C03203 + C00004 + C00080 + C00007 <=> C03012 + C00011 + C00003 + C00001
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP05236  C03012_C03203 main [RC:RC00389]
+            RP08785  C00011_C03203 leave
+            RP12337  C00007_C03012 leave
+ENZYME      1.14.13.1       1.14.13.135
+PATHWAY     rn00624  Polycyclic aromatic hydrocarbon degradation
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K00480  salicylate hydroxylase [EC:1.14.13.1]
+///

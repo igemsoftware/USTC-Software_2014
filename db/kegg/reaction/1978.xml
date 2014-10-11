@@ -1,0 +1,18 @@
+ENTRY       R01978                      Reaction
+NAME        acetyl-CoA:acetoacetyl-CoA C-acetyltransferase (thioester-hydrolysing, carboxymethyl-forming)
+DEFINITION  (S)-3-Hydroxy-3-methylglutaryl-CoA + CoA <=> Acetyl-CoA + H2O + Acetoacetyl-CoA
+EQUATION    C00356 + C00010 <=> C00024 + C00001 + C00332
+COMMENT     possibly two-step reaction (acetoacetyl-CoA-lyase, thioester-hydrolysing)
+RPAIR       RP00007  C00010_C00024 main [RC:RC00004]
+            RP01887  C00332_C00356 main [RC:RC00503]
+            RP06799  C00024_C00356 trans
+            RP13373  C00001_C00356 leave
+ENZYME      2.3.3.10
+PATHWAY     rn00072  Synthesis and degradation of ketone bodies
+            rn00280  Valine, leucine and isoleucine degradation
+            rn00650  Butanoate metabolism
+            rn00900  Terpenoid backbone biosynthesis
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K01641  hydroxymethylglutaryl-CoA synthase [EC:2.3.3.10]
+///

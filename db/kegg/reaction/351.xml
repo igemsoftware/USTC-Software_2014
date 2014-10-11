@@ -1,0 +1,21 @@
+ENTRY       R00351                      Reaction
+NAME        acetyl-CoA:oxaloacetate C-acetyltransferase (thioester-hydrolysing)
+DEFINITION  Citrate + CoA <=> Acetyl-CoA + H2O + Oxaloacetate
+EQUATION    C00158 + C00010 <=> C00024 + C00001 + C00036
+COMMENT     (pro-S)-carboxymethyl-forming (ec 2.3.3.1)
+            (pro-R)-carboxymethyl-forming (ec 2.3.3.3)
+RPAIR       RP00007  C00010_C00024 main [RC:RC00004]
+            RP00177  C00036_C00158 main [RC:RC00067]
+            RP05880  C00024_C00158 trans
+            RP13485  C00001_C00158 leave
+ENZYME      2.3.3.1         2.3.3.3
+PATHWAY     rn00020  Citrate cycle (TCA cycle)
+            rn00630  Glyoxylate and dicarboxylate metabolism
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+            rn01210  2-Oxocarboxylic acid metabolism
+            rn01230  Biosynthesis of amino acids
+ORTHOLOGY   K01647  citrate synthase [EC:2.3.3.1]
+///

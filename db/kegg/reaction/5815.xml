@@ -1,0 +1,17 @@
+ENTRY       R05815                      Reaction
+NAME        cobyrinate:L-glutamine amido-ligase (ADP-forming)
+DEFINITION  Cobyrinate + 2 L-Glutamine + 2 ATP + 2 H2O <=> Cob(II)yrinate a,c diamide + 2 L-Glutamate + 2 ADP + 2 Orthophosphate
+EQUATION    C05773 + 2 C00064 + 2 C00002 + 2 C00001 <=> C06504 + 2 C00025 + 2 C00008 + 2 C00009
+COMMENT     two-step reaction (see R09598+R09599)
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00024  C00025_C00064 main [RC:RC00010]
+            RP05695  C00001_C00025 leave
+            RP08884  C00064_C06504 trans
+            RP11604  C05773_C06504 main [RC:RC01301]
+            RP12386  C00064_C06504 trans
+ENZYME      6.3.5.11
+PATHWAY     rn00860  Porphyrin and chlorophyll metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K02224  cobyrinic acid a,c-diamide synthase [EC:6.3.5.9 6.3.5.11]
+///

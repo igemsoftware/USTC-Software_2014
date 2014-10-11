@@ -1,0 +1,157 @@
+ENTRY       EC 2.3.2.10                 Enzyme
+NAME        UDP-N-acetylmuramoylpentapeptide-lysine N6-alanyltransferase;
+            alanyl-transfer ribonucleate-uridine diphosphoacetylmuramoylpentapeptide transferase;
+            UDP-N-acetylmuramoylpentapeptide lysine N6-alanyltransferase;
+            uridine diphosphoacetylmuramoylpentapeptide lysine N6-alanyltransferase;
+            L-alanyl-tRNA:UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine 6-N-alanyltransferase;
+            L-alanyl-tRNA:UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine N6-alanyltransferase
+CLASS       Transferases;
+            Acyltransferases;
+            Aminoacyltransferases
+SYSNAME     L-alanyl-tRNAAla:UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine N6-alanyltransferase
+REACTION    L-alanyl-tRNAAla + UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine = tRNAAla + UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-D-glutamyl-N6-(L-alanyl)-L-lysyl-D-alanyl-D-alanine [RN:R04613]
+ALL_REAC    R04613;
+            (other) R08779
+SUBSTRATE   L-alanyl-tRNA(Ala) [CPD:C00886];
+            UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine
+PRODUCT     tRNA(Ala) [CPD:C01635];
+            UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-D-glutamyl-N6-(L-alanyl)-L-lysyl-D-alanyl-D-alanine
+COMMENT     Also acts on L-seryl-tRNASer.
+HISTORY     EC 2.3.2.10 created 1972, modified 2013
+REFERENCE   1  [PMID:4248527]
+  AUTHORS   Plapp R, Strominger JL.
+  TITLE     Biosynthesis of the peptidoglycan of bacterial cell walls. 18. Purification and properties of L-alanyl transfer ribonucleic acid-uridine diphosphate-N-acetylmuramyl-pentapeptide transferase from Lactobacillus viridescens.
+  JOURNAL   J. Biol. Chem. 245 (1970) 3675-82.
+  ORGANISM  Lactobacillus viridescens
+PATHWAY     ec00550  Peptidoglycan biosynthesis
+ORTHOLOGY   K05363  serine/alanine adding enzyme
+GENES       LLK: LLKF_2319(murM)
+            LLC: LACR_2372
+            LLM: llmg_2352(murM)
+            LLR: llh_12055
+            LLN: LLNZ_12160
+            LLI: uc509_2051(murM)
+            LLW: kw2_2131(murM)
+            LGR: LCGT_0589
+            LGV: LCGL_0608
+            SPY: SPy_0616(murM) SPy_1205
+            SPZ: M5005_Spy_0511(murM) M5005_Spy_0920
+            SPYM: M1GAS476_0565(murM) M1GAS476_0975
+            SPM: spyM18_0683(femB) spyM18_1156
+            SPG: SpyM3_0435(murM.1) SpyM3_0846(murM.2)
+            SPS: SPs1046 SPs1420
+            SPH: MGAS10270_Spy0505(murM) MGAS10270_Spy1034
+            SPI: MGAS10750_Spy0530(murM) MGAS10750_Spy1069
+            SPJ: MGAS2096_Spy0523(murM) MGAS2096_Spy0979
+            SPK: MGAS9429_Spy0501(murM) MGAS9429_Spy1022
+            SPF: SpyM50878(murM) SpyM51352(murM)
+            SPA: M6_Spy0532 M6_Spy0909
+            SPB: M28_Spy0490(murM) M28_Spy0892
+            STG: MGAS15252_0537(murM) MGAS15252_0917
+            SOZ: Spy49_0518c(murM.1) Spy49_0951c(murM2)
+            STZ: SPYALAB49_000543
+            STX: MGAS1882_0534(murM) MGAS1882_0912
+            SPYA: A20_0553c(murM) A20_0956c(murM)
+            SPYH: L897_02755 L897_04550
+            SPN: SP_0615
+            SPD: SPD_0535(murM_fibA)
+            SPR: spr0540(murM)
+            SPW: SPCG_0575(murM)
+            SPX: SPG_0558
+            SNE: SPN23F_05540(murM)
+            SPV: SPH_0708
+            SNM: SP70585_0676
+            SJJ: SPJ_0566
+            SPP: SPP_0629
+            SNT: SPT_0640
+            SNC: HMPREF0837_10904(murM)
+            SNB: SP670_0673
+            SNP: SPAP_0601
+            SNI: INV104_05130(murM)
+            SNV: SPNINV200_05420(murM)
+            SNX: SPNOXC_05610(murM)
+            SND: MYY_0664
+            SNU: SPNA45_01491(murM)
+            SPNG: HMPREF1038_00636
+            SPNE: SPN034156_16110(murM)
+            SPNU: SPN034183_05640(murM)
+            SPNM: SPN994038_05520(murM)
+            SPNO: SPN994039_05530(murM)
+            SPNN: T308_02900
+            SAG: SAG0509(fibA) SAG0510
+            SAN: gbs0555 gbs0556
+            SAK: SAK_0659 SAK_0660
+            SGC: A964_0540(murM) A964_0541(murM)
+            SAGS: SaSA20_0494 SaSA20_0495
+            SAGL: GBS222_0486
+            SAGM: BSA_5970 BSA_5980
+            SAGI: MSA_6120 MSA_6130
+            SAGR: SAIL_6260 SAIL_6270 SAIL_6280
+            SMU: SMU_717(murM)
+            SMC: SmuNN2025_1280(murM)
+            SMJ: SMULJ23_1281(murM)
+            SMUT: SMUGS5_03160
+            STC: str1155(murM)
+            STL: stu1155(murM)
+            STE: STER_1112
+            STN: STND_1074
+            STU: STH8232_1341(murM)
+            STW: Y1U_C0774
+            SSA: SSA_0862(murM)
+            SSK: SSUD12_0367
+            SSUI: T15_0381(murM)
+            SGO: SGO_1623(murM)
+            SEQ: SZO_06490 SZO_09500
+            SEZ: Sez_1015(murM) Sez_1319(murM)
+            SEZO: SeseC_01341 SeseC_01704
+            SEU: SEQ_1178 SEQ_1501
+            SUB: SUB0607(murM)
+            SDS: SDEG_0637(murM) SDEG_0947
+            SDG: SDE12394_03425 SDE12394_05320
+            SDA: GGS_0612(murM) GGS_0917(murM)
+            SDC: SDSE_0678(murM) SDSE_0983 SDSE_0984(murM)
+            SDQ: SDSE167_0691(murM) SDSE167_0692 SDSE167_1051 SDSE167_1052
+            SGA: GALLO_1508
+            SGG: SGGBAA2069_c15300(murM)
+            SGT: SGGB_1503(murM)
+            SMB: smi_1584(fibA)
+            SOR: SOR_1963(murM)
+            STK: STP_0096 STP_0414(murM)
+            STB: SGPB_1404(murM)
+            SCP: HMPREF0833_10855(murM)
+            SCF: Spaf_1436
+            SSR: SALIVB_1141(femX)
+            STF: Ssal_01216(murM)
+            STJ: SALIVA_0993(murM)
+            STD: SPPN_03240
+            SMN: SMA_1515
+            SIF: Sinf_1329
+            SIE: SCIM_0530(murM)
+            SIB: SIR_1111(murM)
+            SIU: SII_1132(murM)
+            SANG: SAIN_0586(murM)
+            SANC: SANR_0598(murM)
+            SCG: SCI_0623(murM)
+            SCON: SCRE_0603(murM)
+            SCOS: SCR2_0603(murM)
+            SOI: I872_02755
+            SIK: K710_0130 K710_0131 K710_1338
+            SLU: KE3_1458
+            SIG: N596_04265
+            SIP: N597_06110
+            EFA: EF2658
+            EFL: EF62_2819(murM)
+            EFI: OG1RF_12030(fibA)
+            EFD: EFD32_2218(murM)
+            EFS: EFS1_2129
+            EFN: DENG_02594(murM)
+            MPS: MPTP_1602
+            MPX: MPD5_0449
+            EUC: EC1_13930 EC1_13940
+            TPY: CQ11_04900
+DBLINKS     ExplorEnz - The Enzyme Database: 2.3.2.10
+            IUBMB Enzyme Nomenclature: 2.3.2.10
+            ExPASy - ENZYME nomenclature database: 2.3.2.10
+            BRENDA, the Enzyme Database: 2.3.2.10
+            CAS: 37257-26-4
+///

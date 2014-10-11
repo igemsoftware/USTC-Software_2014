@@ -1,0 +1,3081 @@
+ENTRY       EC 6.1.1.5                  Enzyme
+NAME        isoleucine---tRNA ligase;
+            isoleucyl-tRNA synthetase;
+            isoleucyl-transfer ribonucleate synthetase;
+            isoleucyl-transfer RNA synthetase;
+            isoleucine-transfer RNA ligase;
+            isoleucine-tRNA synthetase;
+            isoleucine translase
+CLASS       Ligases;
+            Forming carbon-oxygen bonds;
+            Ligases forming aminoacyl-tRNA and related compounds
+SYSNAME     L-isoleucine:tRNAIle ligase (AMP-forming)
+REACTION    ATP + L-isoleucine + tRNAIle = AMP + diphosphate + L-isoleucyl-tRNAIle [RN:R03656]
+ALL_REAC    R03656
+SUBSTRATE   ATP [CPD:C00002];
+            L-isoleucine [CPD:C00407];
+            tRNA(Ile) [CPD:C01644]
+PRODUCT     AMP [CPD:C00020];
+            diphosphate [CPD:C00013];
+            L-isoleucyl-tRNA(Ile) [CPD:C03127]
+HISTORY     EC 6.1.1.5 created 1961
+REFERENCE   1  [PMID:13792726]
+  AUTHORS   ALLEN EH, GLASSMAN E, SCHWEET RS.
+  TITLE     Incorporation of amino acids into ribonucleic acid. I. The role of activating enzymes.
+  JOURNAL   J. Biol. Chem. 235 (1960) 1061-7.
+  ORGANISM  Sus scofa
+REFERENCE   2
+  AUTHORS   Berg, P., Bergmann, F.H., Ofengand, E.J. and Dieckmann, M.
+  TITLE     The enzymic synthesis of amino acyl derivatives of ribonucleic acid. I. The mechanism of leucyl-, valyl-, isoleucyl- and methionyl ribonucleic acid formation.
+  JOURNAL   J. Biol. Chem. 236 (1961) 1726-1734.
+REFERENCE   3
+  AUTHORS   Bergmann, F.H., Berg, P. and Dieckmann, M.
+  TITLE     The enzymic synthesis of amino acyl derivatives of ribonucleic acid. II. The preparation of leucyl-, valyl-, isoleucyl- and methionyl ribonucleic acid synthetases from Escherichia coli.
+  JOURNAL   J. Biol. Chem. 236 (1961) 1735-1740.
+PATHWAY     ec00970  Aminoacyl-tRNA biosynthesis
+ORTHOLOGY   K01870  isoleucyl-tRNA synthetase
+GENES       HSA: 3376(IARS) 55699(IARS2)
+            PTR: 457749(IARS2) 465229(IARS)
+            PPS: 100975820(IARS) 100991539(IARS2)
+            GGO: 101130816(IARS2) 101145976(IARS)
+            PON: 100447462(IARS) 100458836(IARS2)
+            MCC: 677705(IARS) 711121(IARS2)
+            MCF: 102123584(IARS) 102132069(IARS2)
+            MMU: 105148(Iars) 381314(Iars2)
+            RNO: 306804(Iars) 364070(Iars2)
+            CGE: 100754316(Iars) 100758227
+            HGL: 101700176(Iars) 101710191(Iars2)
+            TUP: 102468643(IARS2) 102500657(IARS)
+            CFA: 478963(IARS2) 484216(IARS)
+            AML: 100470717(IARS) 100474134
+            FCA: 101091157(IARS) 101096199(IARS2)
+            PTG: 102951176(IARS) 102962568(IARS2)
+            BTA: 509885(IARS) 533057(IARS2)
+            BOM: 102272697(IARS2) 102276663(IARS)
+            PHD: 102321080(IARS2) 102343409(IARS)
+            CHX: 102178192(IARS2) 102191612(IARS)
+            SSC: 100516215(IARS2) 100624746 100739845
+            CFR: 102504349(IARS2) 102515243(IARS)
+            ECB: 100049915(IARS2) 100054721(IARS)
+            MYB: 102246712(IARS) 102256045(IARS2)
+            MYD: 102761178(IARS) 102772955(IARS2)
+            PALE: 102877934(IARS) 102882321(IARS2)
+            MDO: 100024337(IARS2) 100029867(IARS)
+            SHR: 100916711(IARS) 100916992(IARS2)
+            OAA: 100080817(IARS2) 100081997(IARS)
+            GGA: 415957(IARS) 421346(IARS2)
+            MGP: 100545102 100551015(IARS)
+            TGU: 100220231(IARS) 100223980(IARS2)
+            FAB: 101806033(IARS2) 101822201(IARS)
+            PHI: 102106335(IARS) 102113745(IARS2)
+            APLA: 101794442(IARS2) 101798328(IARS)
+            FPG: 101915249(IARS) 101921870(IARS2)
+            FCH: 102049100(IARS2) 102054007(IARS)
+            CLV: 102087019(IARS2) 102089693(IARS)
+            ASN: 102376147(IARS) 102383698(IARS2)
+            PSS: 102446939(IARS) 102454601(IARS2)
+            CMY: 102931398(IARS2) 102943177(IARS)
+            ACS: 100554864(iars) 100559437
+            XLA: 403361(iars)
+            XTR: 100036668(iars) 100145647(iars2)
+            DRE: 100001219(iars2) 334393(iars)
+            TRU: 101062712 101078502
+            MZE: 101482793 101487949
+            OLA: 101157443 101171455
+            XMA: 102231490 102234001
+            LCM: 102353027(IARS2) 102358096(IARS)
+            BFO: BRAFLDRAFT_110162 BRAFLDRAFT_203583 BRAFLDRAFT_287206
+            CIN: 100175441(iars2) 100187404(iars)
+            SPU: 577472(iars) 579671
+            DME: Dmel_CG11471(Aats-ile) Dmel_CG5414
+            DPO: Dpse_GA11021 Dpse_GA18866
+            DAN: Dana_GF10975 Dana_GF23767
+            DER: Dere_GG15950 Dere_GG16252
+            DPE: Dper_GL16214 Dper_GL25089
+            DSE: Dsec_GM22440 Dsec_GM25585
+            DSI: Dsim_GD14596 Dsim_GD15025
+            DWI: Dwil_GK16057 Dwil_GK24181
+            DYA: Dyak_GE22294 Dyak_GE22611 Dyak_GE23171
+            DGR: Dgri_GH16690 Dgri_GH16853
+            DMO: Dmoj_GI11376 Dmoj_GI13074
+            DVI: Dvir_GJ11630 Dvir_GJ13824
+            AGA: AgaP_AGAP002101 AgaP_AGAP003156
+            AAG: AaeL_AAEL000388 AaeL_AAEL009917
+            CQU: CpipJ_CPIJ015134 CpipJ_CPIJ016361
+            AME: 551629(Aats-ile) 726483(GB13728)
+            NVI: 100119155 100121513(Iars2)
+            TCA: 658753 662393
+            BMOR: 101736975 101742308
+            API: 100165479 100166726
+            PHU: Phum_PHUM297910 Phum_PHUM515270
+            ISC: IscW_ISCW000720 IscW_ISCW013321
+            CEL: CELE_R11A8.6(iars-1)
+            CBR: CBG12225(Cbr-irs-2) CBG23754(Cbr-irs-1)
+            BMY: Bm1_49235 Bm1_49970
+            LOA: LOAG_00948 LOAG_10039 LOAG_12099
+            TSP: Tsp_04001 Tsp_07991
+            SMM: Smp_041600 Smp_129650
+            NVE: NEMVE_v1g168885
+            HMG: 100202200(iars)
+            TAD: TRIADDRAFT_25814 TRIADDRAFT_26821
+            AQU: 100631398(Iars) 100635948 100637107
+            ATH: AT4G10320 AT5G49030(OVA2)
+            ALY: ARALYDRAFT_337099 ARALYDRAFT_342459 ARALYDRAFT_489875 ARALYDRAFT_494966 ARALYDRAFT_916271
+            CRB: CARUB_v10000080mg CARUB_v10015963mg CARUB_v10025780mg
+            EUS: EUTSA_v10003524mg EUTSA_v10027624mg
+            CIT: 102618088 102621177
+            CIC: CICLE_v10004211mg CICLE_v10018576mg
+            TCC: TCM_009231 TCM_021556
+            GMX: 100783252 100791830 100809292 102660591
+            MTR: MTR_4g076850
+            CAM: 101506446 101515155
+            FVE: 101295034 101308369
+            CSV: 101211723 101212830(IARS) 101232018 101232219
+            RCU: RCOM_0574620 RCOM_0681070 RCOM_1575580
+            POP: POPTR_0007s02170g(POPTRDRAFT_216568) POPTR_0008s22110g POPTR_0008s22120g POPTR_0010s01830g(POPTRDRAFT_1089196) POPTR_0017s06170g POPTR_0169s002001
+            VVI: 100250847 100254604
+            SLY: 101249760 101253854
+            SOT: 102583655 102600166
+            OSA: 4330908 9268435 9270869 9272464
+            DOSA: Os02t0183900-00(Os02g0183900) Os02t0778200-01(Os02g0778200) Os06t0645400-01(Os06g0645400)
+            OBR: 102705225 102712821 102719934
+            BDI: 100833154 100843664
+            SBI: SORBI_04g034870(SORBIDRAFT_04g034870) SORBI_04g035150(SORBIDRAFT_04g035150) SORBI_06g002701(SORBIDRAFT_06g002701) SORBI_06g002741(SORBIDRAFT_06g002741) SORBI_06g002780(SORBIDRAFT_06g002780) SORBI_10g025350(SORBIDRAFT_10g025350) SORBI_10g025355(SORBIDRAFT_10g025355)
+            ZMA: 100384866
+            SITA: 101755135 101772872
+            ATR: s00036p00173790(AMTR_s00036p00173790) s00045p00205250(AMTR_s00045p00205250)
+            SMO: SELMODRAFT_153639 SELMODRAFT_269269 SELMODRAFT_426245 SELMODRAFT_437676 SELMODRAFT_445517
+            PPP: PHYPADRAFT_220535 PHYPADRAFT_56033
+            CRE: CHLREDRAFT_106327 CHLREDRAFT_139213
+            VCN: VOLCADRAFT_81773
+            OLU: OSTLU_119549(IleS) OSTLU_45389
+            OTA: Ot02g03640(IleS) Ot04g00470
+            MIS: MICPUN_107348(ILES) MICPUN_97914
+            MPP: MICPUCDRAFT_31655 MICPUCDRAFT_46060
+            CSL: COCSUDRAFT_24197
+            CVR: CHLNCDRAFT_137710
+            CME: CYME_CME047C CYME_CMT280C
+            GSL: Gasu_38250
+            CCP: CHC_T00009388001
+            SCE: YBL076C(ILS1) YPL040C(ISM1)
+            AGO: AGOS_AER394W AGOS_AGL247C
+            ERC: Ecym_2538 Ecym_4677
+            KLA: KLLA0D11858g KLLA0E20549g
+            LTH: KLTH0C06534g KLTH0E11352g
+            PPA: PAS_chr2-1_0123 PAS_chr4_0709
+            VPO: Kpol_1018p98 Kpol_1031p75
+            ZRO: ZYRO0B03498g ZYRO0F08206g
+            CGR: CAGL0G03311g CAGL0L12606g
+            NCS: NCAS_0C02410(NCAS0C02410) NCAS_0E02570(NCAS0E02570)
+            NDI: NDAI_0E03100(NDAI0E03100) NDAI_0E04140(NDAI0E04140)
+            TPF: TPHA_0E00820(TPHA0E00820) TPHA_0L01340(TPHA0L01340)
+            TBL: TBLA_0A01600(TBLA0A01600) TBLA_0I00400(TBLA0I00400)
+            TDL: TDEL_0B01490(TDEL0B01490) TDEL_0C01490(TDEL0C01490)
+            KAF: KAFR_0H01480(KAFR0H01480) KAFR_0L01790(KAFR0L01790)
+            DHA: DEHA2A06380g DEHA2F20372g
+            PIC: PICST_63933(ISM1) PICST_83229(ILS1)
+            PGU: PGUG_00305 PGUG_00306 PGUG_02057
+            LEL: LELG_00277 LELG_04835
+            CAL: CaO19.2138(ILS1) CaO19.2382(ISM1) CaO19.9685(ILS1) CaO19.9918(ISM1)
+            CTP: CTRG_00760 CTRG_05757
+            CDU: CD36_28550 CD36_65370
+            COT: CORT_0A02070 CORT_0F02580
+            YLI: YALI0A00264g YALI0C10780g
+            CLU: CLUG_03964 CLUG_04744
+            NCR: NCU00920 NCU03575
+            SMP: SMAC_00199 SMAC_07812
+            PAN: PODANSg09406 PODANSg6964
+            TTT: THITE_2120730 THITE_2123037 THITE_2144009
+            MTM: MYCTH_2293982 MYCTH_2311378
+            MGR: MGG_01165 MGG_03220
+            FGR: FG00690.1 FG10722.1
+            NHE: NECHADRAFT_40160 NECHADRAFT_75329
+            TRE: TRIREDRAFT_5227 TRIREDRAFT_63935
+            VAL: VDBG_00378 VDBG_07419
+            SSL: SS1G_12971 SS1G_13532
+            BFU: BC1G_05844 BC1G_13385
+            ANI: AN0705.2 AN3362.2
+            AFM: AFUA_1G13710 AFUA_7G01420
+            AOR: AOR_1_1912194(AO090012000505) AOR_1_392024(AO090010000218)
+            ANG: ANI_1_208104(An12g01480) ANI_1_964074(An08g06770)
+            AFV: AFLA_017710 AFLA_117940
+            ACT: ACLA_021730 ACLA_066150
+            NFI: NFIA_011790 NFIA_114110
+            PCS: Pc16g12120 Pc21g13710
+            CIM: CIMG_03394 CIMG_08102
+            CPW: CPC735_008180 CPC735_021200
+            PBL: PAAG_07105 PAAG_08556
+            URE: UREG_02373 UREG_07220
+            ABE: ARB_05230 ARB_06242
+            TVE: TRV_00816 TRV_02269
+            AJE: HCAG_06694 HCAG_07965
+            PNO: SNOG_00408 SNOG_11841
+            PTE: PTT_09164 PTT_12410 PTT_16431
+            ZTR: MYCGRDRAFT_107212 MYCGRDRAFT_32217
+            TML: GSTUM_00005330001 GSTUM_00011254001
+            SPO: SPBC8D2.06(irs1) SPCC18B5.08c
+            CNE: CNA02290 CNN01660
+            CNB: CNBA2140 CNBN1610
+            CGI: CGB_B2620W CGB_N2400W
+            PPL: POSPLDRAFT_102717
+            LBC: LACBIDRAFT_313755 LACBIDRAFT_318681
+            MPR: MPER_09270 MPER_09966
+            CCI: CC1G_03229 CC1G_05258
+            SCM: SCHCODRAFT_77472 SCHCODRAFT_78695
+            UMA: UM05160.1 UM06494.1
+            MGL: MGL_1702 MGL_2067
+            PGR: PGTG_09131 PGTG_10720
+            ECU: ECU11_1100
+            EIN: Eint_110980
+            EHE: EHEL_110980
+            NCE: NCER_100885
+            MBR: MONBRDRAFT_19043
+            DDI: DDB_G0278293(ileS) DDB_G0293030(mileS)
+            DPP: DICPUDRAFT_49251 DICPUDRAFT_75115
+            DFA: DFA_06146(mileS) DFA_08943(ileS)
+            EHI: EHI_177660(20.t00045)
+            EDI: EDI_049880
+            ACAN: ACA1_282850
+            PFA: PF13_0179
+            PFD: PFDG_02887
+            PFH: PFHG_02839
+            PYO: PY01849
+            PCB: PC104447.00.0 PC109130.00.0
+            PBE: PB001141.02.0 PB300750.00.0
+            PKN: PKH_122000
+            PVX: PVX_082575
+            PCY: PCYB_122980
+            TAN: TA12460 TA13750
+            TPV: TP02_0310
+            BBO: BBOV_II005760(18.m06479) BBOV_III006640(17.m07588)
+            BEQ: BEWA_020200 BEWA_023240
+            CPV: cgd3_3840
+            CHO: Chro.30434
+            TGO: TGME49_007640 TGME49_077030
+            TET: TTHERM_00492850
+            PTM: GSPATT00012890001 GSPATT00032933001
+            PTI: PHATRDRAFT_17198 PHATRDRAFT_29824
+            TPS: THAPSDRAFT_26726(ITS2) THAPSDRAFT_36339(ITS1)
+            PIF: PITG_08579
+            EHX: EMIHUDRAFT_223387 EMIHUDRAFT_427789 EMIHUDRAFT_461290 EMIHUDRAFT_469724
+            GTT: GUITHDRAFT_132515 GUITHDRAFT_157645 GUITHDRAFT_71180
+            TBR: Tb10.6k15.1220
+            TCR: 504137.10 509797.40
+            LMA: LMJF_36_5620(ILERS)
+            LIF: LINJ_36_5870(ILERS)
+            LDO: LDBPK_365870
+            LMI: LMXM_36_5620
+            LBZ: LBRM_35_5900
+            NGR: NAEGRDRAFT_35860 NAEGRDRAFT_52295 NAEGRDRAFT_66147
+            TVA: TVAG_024690
+            GLA: GL50803_104173
+            ECO: b0026(ileS)
+            ECJ: Y75_p0026(ileS)
+            ECD: ECDH10B_0027(ileS)
+            EBW: BWG_0024(ileS)
+            ECOK: ECMDS42_0019(ileS)
+            ECE: Z0030(ileS)
+            ECS: ECs0029(ileS)
+            ECF: ECH74115_0028(ileS)
+            ETW: ECSP_0027(ileS)
+            ELX: CDCO157_0027(ileS)
+            EOJ: ECO26_0026(ileS)
+            EOI: ECO111_0026(ileS)
+            EOH: ECO103_0027(ileS)
+            ECG: E2348C_0026(ileS)
+            EOK: G2583_0027(ileS)
+            ELR: ECO55CA74_00130(ileS)
+            ECC: c0030(ileS)
+            ECP: ECP_0024(ileS)
+            ECI: UTI89_C0028(ileS)
+            ECV: APECO1_1957(ileS)
+            ECX: EcHS_A0028(ileS)
+            ECW: EcE24377A_0026(ileS)
+            ECM: EcSMS35_0024(ileS)
+            ECY: ECSE_0024(ileS)
+            ECR: ECIAI1_0027(ileS)
+            ECQ: ECED1_0023(ileS)
+            ECK: EC55989_0025(ileS)
+            ECT: ECIAI39_0027(ileS)
+            EOC: CE10_0027(ileS)
+            EUM: ECUMN_0026(ileS)
+            ECZ: ECS88_0025(ileS)
+            ELO: EC042_0028(ileS)
+            ELN: NRG857_00125(ileS)
+            ELH: ETEC_0026(ileS)
+            ESE: ECSF_0027
+            ESO: O3O_03965(ileS)
+            ESM: O3M_21320(ileS)
+            ESL: O3K_21420(ileS)
+            ECL: EcolC_3629(ileS)
+            EBR: ECB_00030(ileS)
+            EBD: ECBD_3590(ileS)
+            EKO: EKO11_3887
+            EKF: KO11_00130(ileS)
+            EAB: ECABU_c00260(ileS)
+            EDH: EcDH1_3573
+            EDJ: ECDH1ME8569_0023(ileS)
+            EIH: ECOK1_0022(ileS)
+            ENA: ECNA114_0010
+            ELU: UM146_22900(ileS)
+            EUN: UMNK88_24(ileS)
+            ELW: ECW_m0025(ileS)
+            ELL: WFL_00130(ileS)
+            ELC: i14_0024(ileS)
+            ELD: i02_0024(ileS)
+            ELP: P12B_c0021(ileS)
+            EBL: ECD_00030(ileS)
+            EBE: B21_00029(ileS)
+            ELF: LF82_1096(iles)
+            ECOA: APECO78_03590(ileS)
+            ECOL: LY180_00130(ileS)
+            ECOI: ECOPMV1_00024(ileS)
+            ECOJ: P423_00125(ileS)
+            ECOO: ECRM13514_0025(ileS)
+            EFE: EFER_0018(ileS)
+            STY: STY0055(ileS)
+            STT: t0048(ileS)
+            SEX: STBHUCCB_560
+            SENT: TY21A_00250(ileS)
+            STM: STM0046(ileS)
+            SEO: STM14_0055(ileS)
+            SEV: STMMW_00471
+            SEY: SL1344_0047(ileS)
+            SEM: STMDT12_C00470(ileS)
+            SEJ: STMUK_0047(ileS)
+            SEB: STM474_0049(ileS)
+            SEF: UMN798_0051(ileS)
+            SETU: STU288_00230(ileS)
+            SETC: CFSAN001921_17190(ileS)
+            SEEN: SE451236_06240(ileS)
+            SENR: STMDT2_00471(ileS)
+            SEND: DT104_00471(ileS)
+            SPT: SPA0047(ileS)
+            SEK: SSPA0043(ileS)
+            SPQ: SPAB_00056(ileS)
+            SEI: SPC_0048(ileS)
+            SEC: SC0040(ileS)
+            SEH: SeHA_C0049(ileS)
+            SHB: SU5_0682
+            SENH: CFSAN002069_08995(ileS)
+            SEEH: SEEH1578_09265(ileS)
+            SEE: SNSL254_A0050(ileS)
+            SENN: SN31241_10240
+            SEW: SeSA_A0050(ileS)
+            SEA: SeAg_B0051(ileS)
+            SENS: Q786_00225(ileS)
+            SED: SeD_A0050(ileS)
+            SEG: SG0049(ileS)
+            SEL: SPUL_0049(ileS)
+            SEGA: SPUCDC_0049(ileS)
+            SET: SEN0046(ileS)
+            SENJ: CFSAN001992_10800(ileS)
+            SEEC: CFSAN002050_06685(ileS)
+            SEEB: SEEB0189_19155(ileS)
+            SEEP: I137_00220(ileS)
+            SENB: BN855_480(SBOV47361)
+            SENE: IA1_00235(ileS)
+            SES: SARI_02948(ileS)
+            SBG: SBG_0044(ileS)
+            SBZ: A464_45
+            YPE: YPO0475(ileS)
+            YPK: y3700(ileS)
+            YPA: YPA_4068(ileS)
+            YPN: YPN_0347(ileS)
+            YPM: YP_3705(ileS)
+            YPP: YPDSF_3157(ileS)
+            YPG: YpAngola_A0790(ileS)
+            YPZ: YPZ3_0461(ileS)
+            YPT: A1122_02710(ileS)
+            YPD: YPD4_0413(ileS)
+            YPX: YPD8_0414(ileS)
+            YPH: YPC_4112(ileS)
+            YPS: YPTB0617(ileS)
+            YPI: YpsIP31758_3460(ileS)
+            YPY: YPK_3588(ileS)
+            YPB: YPTS_0641(ileS)
+            YEN: YE0616(ileS)
+            YEP: YE105_C0621
+            YEY: Y11_38471
+            YSI: BF17_11365(ileS)
+            SFL: SF0022(ileS)
+            SFX: S0025(ileS)
+            SFV: SFV_0020(ileS)
+            SFE: SFxv_0024(ileS)
+            SSN: SSON_0031(ileS)
+            SSJ: SSON53_00160(ileS)
+            SBO: SBO_0025(ileS)
+            SBC: SbBS512_E0030(ileS)
+            SDY: SDY_0048(ileS)
+            SDZ: Asd1617_00052
+            ECA: ECA3876(ileS)
+            PCT: PC1_3653
+            PCC: PCC21_036490
+            PWA: Pecwa_3846(ileS)
+            PEC: W5S_3995
+            ETA: ETA_07120(ileS)
+            EPY: EpC_07000(ileS)
+            EPR: EPYR_00741(ileS)
+            EAM: EAMY_2937(ileS)
+            EAY: EAM_0655(ileS)
+            EBI: EbC_06740(ileS)
+            ERJ: EJP617_03950(ileS)
+            PLU: plu0591(ileS)
+            PAY: PAU_00555(ileS)
+            BUC: BU149(ileS)
+            BAP: BUAP5A_147(ileS)
+            BAU: BUAPTUC7_148(ileS)
+            BAJC: CWS_00780(ileS)
+            BUP: CWQ_00795(ileS)
+            BAK: BAKON_148(ileS)
+            BUH: BUAMB_137(ileS)
+            BAPF: BUMPF009_CDS00446(iles)
+            BAPG: BUMPG002_CDS00447(iles)
+            BAPU: BUMPUSDA_CDS00445(iles)
+            BAPW: BUMPW106_CDS00446(iles)
+            BAS: BUsg142(ileS)
+            BAB: bbp139(ileS)
+            BCC: BCc_093(ileS)
+            BAJ: BCTU_097(ileS)
+            WBR: WGLp294(ileS)
+            WGL: WIGMOR_0483(ileS)
+            SGL: SG0414(ileS)
+            SOD: Sant_3396(ileS)
+            ENT: Ent638_0584(ileS)
+            ENC: ECL_00834
+            ENO: ECENHK_03555(ileS)
+            ECLO: ENC_45430
+            EEC: EcWSU1_00644(ileS)
+            ENL: A3UG_03415(ileS)
+            ESC: Entcl_3699
+            EAS: Entas_0634
+            EAU: DI57_15175(ileS)
+            EAE: EAE_10845(ileS)
+            EAR: ST548_p5239
+            ENR: H650_19020(ileS)
+            ESA: ESA_03312(ileS)
+            CSK: ES15_3292
+            CSZ: CSSP291_15335(ileS)
+            CSI: P262_04872
+            CTU: CTU_06520(ileS)
+            KPN: KPN_00021(ileS)
+            KPU: KP1_0842(ileS)
+            KPM: KPHS_07310
+            KPP: A79E_4270
+            KPE: KPK_4735(ileS)
+            KPO: KPN2242_02525(ileS)
+            KPR: KPR_0954(ileS)
+            KPJ: N559_4412
+            KPI: D364_00095(ileS)
+            KVA: Kvar_4374
+            KOX: KOX_10530(ileS)
+            KOE: A225_0812
+            CKO: CKO_03366(ileS)
+            CRO: ROD_00231(ileS)
+            CFD: CFNIH1_09830(ileS)
+            SPE: Spro_0698(ileS)
+            SRR: SerAS9_0638
+            SRL: SOD_c05700(ileS)
+            SRY: M621_03010(ileS)
+            SRS: SerAS12_0638
+            SRA: SerAS13_0638
+            SSZ: SCc_112(ileS)
+            SMAF: D781_0648
+            SMW: SMWW4_v1c06900(ileS)
+            SLQ: M495_02850(ileS)
+            SERR: Ser39006_3928
+            SFO: Z042_17120(ileS)
+            PMR: PMI0015(ileS)
+            PMIB: BB2000_0180(ileS)
+            EIC: NT01EI_0679
+            ETR: ETAE_0582(ileS)
+            ETD: ETAF_0530
+            ETC: ETAC_02820(ileS)
+            BFL: Bfl118(ileS)
+            BPN: BPEN_122(ileS)
+            BVA: BVAF_119(ileS)
+            BCHR: BCHRO640_123(ileS)
+            HDE: HDEF_0831(ileS)
+            SECT: A359_05420
+            SEHC: A35E_00481
+            DDA: Dd703_0587(ileS)
+            DDC: Dd586_3588
+            DDD: Dda3937_01396(ileS)
+            DZE: Dd1591_0548(ileS)
+            XBO: XBJ1_1726(ileS)
+            XNE: XNC1_3787(ileS)
+            PAM: PANA_0669(ileS)
+            PLF: PANA5342_3644(ileS)
+            PAJ: PAJ_0015(ileS)
+            PAQ: PAGR_g3529
+            PVA: Pvag_0077(ileS)
+            PAO: Pat9b_0622
+            RIP: RIEPE_0553(ileS)
+            RAH: Rahaq_3784
+            RAQ: Rahaq2_3880
+            RAA: Q7S_19270(ileS)
+            MEN: MEPCIT_082(ileS)
+            MEO: MPC_392(ileS)
+            PSI: S70_07200(ileS)
+            EBT: EBL_c33320(ileS)
+            MMK: MU9_851
+            ROR: RORB6_15125(ileS)
+            EBF: D782_3843
+            PSTS: E05_44290
+            HIT: NTHI1135(ileS)
+            HIP: CGSHiEE_07150(ileS)
+            HIQ: CGSHiGG_08385(ileS)
+            HIF: HIBPF12850
+            HIL: HICON_04370
+            HIU: HIB_11010
+            HIE: R2846_1347(ileS)
+            HIZ: R2866_1419(ileS)
+            HIK: HifGL_000588(ileS)
+            HDU: HD0272(ileS)
+            HAP: HAPS_0916(ileS)
+            HPAZ: K756_01890(ileS)
+            HPR: PARA_03370
+            HSO: HS_0186(ileS)
+            HSM: HSM_0054(ileS)
+            PMU: PM1662(ileS)
+            PMV: PMCN06_2196(ileS)
+            PUL: NT08PM_1997
+            PMP: Pmu_21160(ileS)
+            MSU: MS1751(ileS)
+            MHT: D648_4600
+            MHQ: D650_23550
+            MHX: MHH_c10040(ileS)
+            MHAE: F382_10150(ileS)
+            MHAM: J450_09070(ileS)
+            MHAO: J451_10370(ileS)
+            MHAL: N220_02245(ileS)
+            MVR: X781_19720
+            MVI: X808_3280
+            MVG: X874_3370
+            MVE: X875_17510
+            APL: APL_0044(ileS)
+            APJ: APJL_0045(ileS)
+            APA: APP7_0044
+            ASU: Asuc_1876(ileS)
+            ASI: ASU2_06965(ileS)
+            AAP: NT05HA_2346(ileS)
+            AAT: D11S_1926(ileS)
+            AAO: ANH9381_0110
+            AAN: D7S_01854
+            GAN: UMN179_01334
+            BTO: WQG_5750
+            BTRE: F542_16300
+            BTRH: F543_17990
+            BTRA: F544_6060
+            XFA: XF2418(ileS)
+            XFT: PD1437(ileS)
+            XFM: Xfasm12_1578(ileS)
+            XFN: XfasM23_1521(ileS)
+            XCC: XCC1155(ileS)
+            XCB: XC_3087(ileS)
+            XCA: xccb100_3183(ileS)
+            XCP: XCR_1384(ileS)
+            XCV: XCV1290(ileS)
+            XAC: XAC1254(ileS)
+            XCI: XCAW_03099(ileS)
+            XAX: XACM_1230(ileS)
+            XAO: XAC29_06305(ileS)
+            XOO: XOO1626(ileS)
+            XOM: XOO_1512(ileS)
+            XOP: PXO_05535(ileS)
+            XOR: XOC_3462(ileS)
+            XAL: XALc_0922(ileS)
+            SML: Smlt1340(ileS)
+            SMT: Smal_1125(ileS)
+            BUJ: BurJV3_1110
+            SMZ: SMD_1197(ileS)
+            PSU: Psesu_0976
+            PSD: DSC_10845(ileS)
+            FAU: Fraau_2609
+            RHD: R2APBS1_1238
+            DJI: CH75_04335(ileS)
+            VCH: VC0682(ileS)
+            VCE: Vch1786_I0186(ileS)
+            VCJ: VCD_003638(ileS)
+            VCO: VC0395_A0214(ileS)
+            VCR: VC395_0699(ileS)
+            VCM: VCM66_0640(ileS)
+            VCI: O3Y_03190(ileS)
+            VCL: VCLMA_A0604
+            VVU: VV1_0507(ileS)
+            VVY: VV0687(ileS)
+            VVM: VVMO6_02503
+            VPA: VP0534(ileS)
+            VPB: VPBB_0508
+            VPK: M636_19170(ileS)
+            VPF: M634_04545(ileS)
+            VHA: VIBHAR_00980(ileS)
+            VCA: M892_08005(ileS)
+            VAG: N646_2685
+            VSP: VS_0536(ileS)
+            VEX: VEA_004419
+            VEJ: VEJY3_02410(ileS)
+            VFU: vfu_A00981
+            VNI: VIBNI_A0359(ileS)
+            VAN: VAA_00411
+            LAG: N175_12050(ileS)
+            VFI: VF_0467(ileS)
+            VFM: VFMJ11_0466(ileS)
+            VSA: VSAL_I0580(ileS)
+            PPR: PBPRA0591(ileS)
+            PAE: PA4560(ileS)
+            PAU: PA14_60370(ileS)
+            PAP: PSPA7_5200(ileS)
+            PAG: PLES_49431(ileS)
+            PAF: PAM18_4653(ileS)
+            PNC: NCGM2_1036(ileS)
+            PDK: PADK2_24230(ileS)
+            PSG: G655_24035(ileS)
+            PRP: M062_24010(ileS)
+            PAEP: PA1S_gp2464
+            PAER: PA1R_gp2464
+            PAEM: U769_24985(ileS)
+            PAEL: T223_25245(ileS)
+            PAES: SCV20265_5188
+            PAEU: BN889_05070(ileS)
+            PAEG: AI22_09320(ileS)
+            PPU: PP_0603(ileS)
+            PPF: Pput_0644(ileS)
+            PPG: PputGB1_0649(ileS)
+            PPW: PputW619_4559(ileS)
+            PPT: PPS_0603
+            PPB: PPUBIRD1_0654(ileS)
+            PPI: YSA_06257
+            PPX: T1E_5689(ileS)
+            PPUH: B479_03540(ileS)
+            PPUT: L483_03180(ileS)
+            PPUN: PP4_46460(ileS)
+            PPUU: PputUW4_04668(ileS)
+            PST: PSPTO_0806(ileS)
+            PSB: Psyr_0710(ileS)
+            PSYR: N018_12870(ileS) N018_22085(ileS)
+            PSP: PSPPH_0721(ileS)
+            PCI: PCH70_43750
+            PFL: PFL_5321(ileS)
+            PPRC: PFLCHA0_c52950(ileS)
+            PFO: Pfl01_4852(ileS)
+            PFS: PFLU0768(ileS)
+            PFE: PSF113_5041
+            PFC: PflA506_0756(ileS)
+            PPZ: H045_00665(ileS)
+            PEN: PSEEN4692(ileS)
+            PMY: Pmen_0953(ileS)
+            PMK: MDS_1041
+            PSA: PST_0964(ileS)
+            PSZ: PSTAB_0866(ileS)
+            PSR: PSTAA_0929(ileS)
+            PSC: A458_16940(ileS)
+            PSJ: PSJM300_16475(ileS)
+            PSH: Psest_3379
+            PBA: PSEBR_a4857
+            PFV: Psefu_0739
+            PDR: H681_04680(ileS)
+            PRE: PCA10_09300(ileS)
+            PSV: PVLB_21995(ileS)
+            PSK: U771_04385(ileS)
+            PMON: X969_01465(ileS)
+            PMOT: X970_01455(ileS)
+            PKC: PKB_4800(ileS)
+            CJA: CJA_3217(ileS)
+            AVN: Avin_11780(ileS)
+            AVL: AvCA_11780(ileS)
+            AVD: AvCA6_11780(ileS)
+            PAR: Psyc_0364(ileS)
+            PCR: Pcryo_0402(ileS)
+            PRW: PsycPRwf_1892(ileS)
+            PSO: PSYCG_02260
+            ACI: ACIAD0022(ileS)
+            ACD: AOLE_19300(ileS)
+            ACB: A1S_0020(ileS)
+            ABM: ABSDF0027(ileS)
+            ABY: ABAYE3852(ileS)
+            ABC: ACICU_00042(ileS)
+            ABN: AB57_0061(ileS)
+            ABB: ABBFA_003490(ileS)
+            ABX: ABK1_0052
+            ABZ: ABZJ_00044
+            ABR: ABTJ_03793
+            ABD: ABTW07_0050(ileS)
+            ABH: M3Q_252
+            ABAD: ABD1_00190(ileS)
+            ABJ: BJAB07104_00057
+            ABAB: BJAB0715_00059
+            ABAJ: BJAB0868_00058
+            ABAZ: P795_17130
+            ACC: BDGL_002938(ileS)
+            MCT: MCR_0500(ileS)
+            SON: SO_3532(ileS)
+            SDN: Sden_2723(ileS)
+            SFR: Sfri_2890(ileS)
+            SAZ: Sama_0924(ileS)
+            SBL: Sbal_1054(ileS)
+            SBM: Shew185_1121(ileS)
+            SBN: Sbal195_1156(ileS)
+            SBP: Sbal223_3235(ileS)
+            SBT: Sbal678_1184
+            SBS: Sbal117_1158
+            SBB: Sbal175_3211
+            SLO: Shew_1099(ileS)
+            SPC: Sputcn32_1059(ileS)
+            SHP: Sput200_1059
+            SSE: Ssed_1194(ileS)
+            SPL: Spea_1083(ileS)
+            SHE: Shewmr4_2957(ileS)
+            SHM: Shewmr7_3039(ileS)
+            SHN: Shewana3_3136(ileS)
+            SHW: Sputw3181_3106(ileS)
+            SHL: Shal_1131(ileS)
+            SWD: Swoo_1291(ileS)
+            SWP: swp_3728(ileS)
+            SVO: SVI_1002(ileS)
+            ILO: IL1128(ileS)
+            ILI: K734_05675
+            CPS: CPS_1182(ileS)
+            PHA: PSHAa0918(ileS)
+            PAT: Patl_3178
+            PSM: PSM_A0991(ileS)
+            SDE: Sde_2566
+            MAQ: Maqu_0862
+            MHC: MARHY0733(ileS)
+            MAD: HP15_512(ileS)
+            MBS: MRBBS_0724(ileS)
+            AMC: MADE_000001022280(ileS)
+            AMAC: MASE_12635
+            AMB: AMBAS45_13175
+            AMG: AMEC673_12955
+            AMK: AMBLS11_12660
+            AMAA: amad1_13565(ileS)
+            AMAL: I607_12790(ileS)
+            AMAE: I876_13175(ileS)
+            AMAO: I634_13035(ileS)
+            AMAD: I636_13185(ileS)
+            AMAI: I635_13540(ileS)
+            AMAG: I533_12780(ileS)
+            ALT: ambt_04140(ileS)
+            GAG: Glaag_1154
+            GNI: GNIT_1061
+            GPS: C427_1676
+            PIN: Ping_3271
+            PSY: PCNPT3_02060
+            TTU: TERTU_1040(ileS)
+            FBL: Fbal_0783
+            CBU: CBU_0396(ileS)
+            CBS: COXBURSA331_A0508(ileS)
+            CBD: CBUD_1672(ileS)
+            CBG: CbuG_1612(ileS)
+            CBC: CbuK_1665(ileS)
+            LPN: lpg0937(ileS)
+            LPU: LPE509_02273
+            LPH: LPV_1074(ileS)
+            LPO: LPO_1021(ileS)
+            LPM: LP6_0925(ileS)
+            LPF: lpl0968(ileS)
+            LPP: lpp0999(ileS)
+            LPC: LPC_2353(ileS)
+            LPA: lpa_01412(ileS)
+            LPE: lp12_0959
+            LLO: LLO_1959(ileS)
+            MCA: MCA2253(ileS)
+            MMT: Metme_0137
+            MAH: MEALZ_3583(ileS)
+            FTU: FTT_0915c(ileS)
+            FTF: FTF0915c(ileS)
+            FTW: FTW_1264(ileS)
+            FTR: NE061598_05240(ileS)
+            FTT: FTV_0870(ileS)
+            FTG: FTU_0954(ileS)
+            FTL: FTL_0436(ileS)
+            FTH: FTH_0428(ileS)
+            FTA: FTA_0458(ileS)
+            FTS: F92_02350(ileS)
+            FTI: FTS_0426(ileS)
+            FTO: X557_02305(ileS)
+            FTM: FTM_0503(ileS)
+            FTN: FTN_0441(ileS)
+            FCF: FNFX1_0434
+            FCN: FN3523_0405
+            FPH: Fphi_0396(ileS)
+            FRT: F7308_0456
+            FNA: OOM_0426
+            FNL: M973_02645(ileS)
+            TCX: Tcr_0495
+            TCY: Thicy_1176
+            MEJ: Q7A_1328
+            MEC: Q7C_468
+            CYQ: Q91_0569(ileS)
+            CZA: CYCME_2036
+            NOC: Noc_2277(ileS)
+            NHL: Nhal_0903
+            NWA: Nwat_2109
+            ALV: Alvin_1977
+            TVI: Thivi_3223
+            TMB: Thimo_1139
+            AEH: Mlg_0852(ileS)
+            HHA: Hhal_1836(ileS)
+            HHC: M911_16300
+            TGR: Tgr7_3216
+            TKM: TK90_2556
+            TNI: TVNIR_0168(ileS_[H])
+            SSAL: SPISAL_06705
+            SPIU: SPICUR_07510
+            HNA: Hneap_2232
+            HCH: HCH_05933(ileS)
+            CSA: Csal_0481(ileS)
+            HEL: HELO_1317(ileS)
+            PLE: B186_109(ileS)
+            PLR: PAQ_109(ileS)
+            PLO: C548_099
+            PLD: PalTV_103(ileS)
+            CRP: CRP_129
+            CRU: A33U_0165(ileS)
+            CRC: A33Y_0165(ileS)
+            CRT: A355_0157(ileS)
+            CRH: A353_0169(ileS)
+            CRV: A357_0157(ileS)
+            CRI: CRDC_00805(ileS)
+            ABO: ABO_0459(ileS)
+            ADI: B5T_03722(ileS)
+            KKO: Kkor_1664
+            MMW: Mmwyl1_3853(ileS) Mmwyl1_4230
+            MME: Marme_0297
+            MPC: Mar181_3297
+            TOL: TOL_2879
+            TOR: R615_03290(ileS)
+            AHA: AHA_0682(ileS)
+            AHY: AHML_03505(ileS)
+            ASA: ASA_0684(ileS)
+            AVR: B565_3473
+            AMED: B224_4553
+            TAU: Tola_2954
+            OCE: GU3_04775(ileS)
+            DNO: DNO_0083(ileS)
+            AFE: Lferr_0711
+            AFR: AFE_0556(ileS)
+            ACU: Atc_1735
+            AFI: Acife_2267
+            GAP: GAPWK_0051
+            SAGA: M5M_08680(ileS)
+            BCI: BCI_0556(ileS)
+            RMA: Rmag_0340
+            VOK: COSY_0322(ileS)
+            GPB: HDN1F_03240(ileS)
+            NMA: NMA0622(ileS)
+            NME: NMB1833(ileS)
+            NMP: NMBB_2095
+            NMH: NMBH4476_1778(ileS)
+            NMC: NMC0383(ileS)
+            NMN: NMCC_0389(ileS)
+            NMT: NMV_2022(ileS)
+            NMI: NMO_0328(ileS)
+            NMD: NMBG2136_0383(ileS)
+            NMM: NMBM01240149_0353(ileS)
+            NMS: NMBM01240355_1768(ileS)
+            NMQ: NMBM04240196_1775(ileS)
+            NMW: NMAA_0310(ileS)
+            NMZ: NMBNZ0533_0490(ileS)
+            NGO: NGO0069(ileS)
+            NGK: NGK_0100(ileS)
+            NGT: NGTW08_0049(ileS)
+            NLA: NLA_17760(ileS)
+            SALV: SALWKB2_0537
+            CVI: CV_3569(ileS)
+            LHK: LHK_00614(syi)
+            PSE: NH8B_0821
+            RSO: RSc2458(ileS)
+            RSC: RCFBP_10967(ileS)
+            RSL: RPSI07_1016(ileS)
+            RSN: RSPO_c00987(ileS)
+            RSM: CMR15_10919(ileS)
+            RSE: F504_2419
+            RPI: Rpic_2726(ileS)
+            RPF: Rpic12D_2337(ileS)
+            REU: Reut_A2745(ileS)
+            REH: H16_A3046(ileS)
+            CNC: CNE_1c30020(ileS)
+            RME: Rmet_2885(ileS)
+            CTI: RALTA_A2521(ileS)
+            BMA: BMA2242(ileS) BMAA0963(ileS)
+            BMV: BMASAVP1_0415(ileS) BMASAVP1_A2658(ileS)
+            BML: BMA10229_0227(ileS) BMA10229_A1033(ileS)
+            BMN: BMA10247_2112(ileS) BMA10247_A1373(ileS)
+            BPS: BPSL0906(ileS) BPSS1315(ileS)
+            BPM: BURPS1710b_1122(ileS) BURPS1710b_A0334(ileS)
+            BPL: BURPS1106A_0971(ileS) BURPS1106A_A1783(ileS)
+            BPD: BURPS668_0967(ileS) BURPS668_A1869(ileS)
+            BPR: GBP346_A0896(ileS)
+            BPSE: BDL_1117(ileS) BDL_4615(ileS)
+            BPSU: BBN_2663(ileS) BBN_4755(ileS)
+            BPZ: BP1026B_I2634(ileS) BP1026B_II1399
+            BPQ: BPC006_I0958 BPC006_II1769
+            BPK: BBK_5782(ileS) BBK_597(ileS)
+            BTE: BTH_I0770(ileS)
+            BTD: BTI_2910(ileS) BTI_3818(ileS)
+            BVI: Bcep1808_2590(ileS)
+            BUR: Bcep18194_A5844(ileS)
+            BCN: Bcen_1901(ileS)
+            BCH: Bcen2424_2512(ileS)
+            BCM: Bcenmc03_2537(ileS)
+            BCJ: BCAL2724(ileS)
+            BAM: Bamb_2559(ileS)
+            BAC: BamMC406_2430(ileS)
+            BMU: Bmul_0783(ileS)
+            BMJ: BMULJ_02477(ileS)
+            BCT: GEM_0918
+            BXE: Bxe_A0807(ileS)
+            BPH: Bphy_0574(ileS)
+            BPY: Bphyt_3159(ileS)
+            BGL: bglu_1g28770
+            BUG: BC1001_2805
+            BGE: BC1002_2401
+            BGF: BC1003_2743
+            BRH: RBRH_00936
+            BGD: bgla_1g32150
+            BYI: BYI23_A005430
+            BUK: MYA_2277
+            BPX: BUPH_03342
+            BUO: BRPE64_ACDS05790(ileS)
+            PNU: Pnuc_1740(ileS)
+            PNE: Pnec_1458(ileS)
+            PPK: U875_04350(ileS)
+            PPNO: DA70_21425
+            PRB: X636_05095(ileS)
+            BPE: BP1753(ileS)
+            BPC: BPTD_1730(ileS)
+            BPER: BN118_1615(ileS)
+            BPA: BPP1984(ileS)
+            BPAR: BN117_2052(ileS)
+            BBR: BB2172(ileS)
+            BBM: BN115_2864(ileS)
+            BBH: BN112_1345(ileS)
+            BPT: Bpet2814(ileS)
+            BAV: BAV1411(ileS)
+            BHO: D560_3274(ileS)
+            AXY: AXYL_04082(ileS)
+            AXO: NH44784_055901
+            AXN: AX27061_3850
+            TEQ: TEQUI_0052
+            TEA: KUI_1049(ileS)
+            TEG: KUK_0258(ileS) KUK_1511(ileS)
+            TAS: TASI_1091
+            TAT: KUM_0270(ileS)
+            PUT: PT7_0716
+            AKA: TKWG_14905(ileS)
+            AMIM: MIM_c15990(ileS)
+            CDN: BN940_11371
+            RFR: Rfer_1432
+            POL: Bpro_3849
+            PNA: Pnap_3229
+            AAV: Aave_3450
+            AJS: Ajs_3399
+            DIA: Dtpsy_2735
+            AAA: Acav_3320
+            ACK: C380_06610(ileS)
+            VEI: Veis_2109
+            DAC: Daci_5384
+            DEL: DelCs14_1226
+            VAP: Vapar_1268
+            VPE: Varpa_1369
+            VPD: VAPA_1c13350(ileS)
+            CTT: CtCNB1_0861
+            ADN: Alide_1177
+            ADK: Alide2_3721
+            RTA: Rta_31790(ileS)
+            CBX: Cenrod_0566(ileS)
+            MPT: Mpe_A3046
+            HAR: HEAR0845(ileS)
+            MMS: mma_0828(ileS)
+            HSE: Hsero_1404(ileS)
+            ZIN: ZICARI_127(ileS)
+            CFU: CFU_3260(ileS)
+            LCH: Lcho_1236
+            TIN: Tint_1328
+            THI: THI_1653(ileS)
+            RGE: RGE_14020(ileS)
+            NEU: NE1149(ileS)
+            NET: Neut_1439(ileS)
+            NIT: NAL212_2287
+            NII: Nit79A3_0636
+            NMU: Nmul_A2654(ileS)
+            EBA: ebA4448(ileS)
+            AZO: azo1205(ileS)
+            AZA: AZKH_1197(ileS)
+            DAR: Daro_3046(ileS)
+            TMZ: Tmz1t_1781(ileS)
+            DSU: Dsui_3498
+            TBD: Tbd_1857
+            SDR: SCD_n02131
+            MFA: Mfla_2208
+            MMB: Mmol_0532
+            MEH: M301_0539
+            MEI: Msip34_0521
+            MEP: MPQ_0546(ileS)
+            APP: CAP2UW1_2540(ileS)
+            TPJ: TPPAVE_074(ileS)
+            SLT: Slit_2090
+            GCA: Galf_2054
+            KCI: CKCE_0395(ileS)
+            KCT: CDEE_0478
+            KBL: CKBE_00358(ileS)
+            KBT: BCUE_0465
+            KDE: CDSE_0470
+            KGA: ST1E_0517
+            KON: CONE_0449
+            SSDC: SSDC_01875(ileS)
+            BPRC: D521_1725(ileS)
+            HPY: HP1422(ileS)
+            HEO: C694_07355(ileS)
+            HPJ: jhp1317(ileS)
+            HPA: HPAG1_1348(ileS)
+            HPS: HPSH_07255(ileS)
+            HHP: HPSH112_07190(ileS)
+            HHQ: HPSH169_06975(ileS)
+            HHR: HPSH417_06905(ileS)
+            HPG: HPG27_1345(ileS)
+            HPP: HPP12_1395(ileS)
+            HPB: HELPY_1391(ileS)
+            HPL: HPB8_122(ileS)
+            HPC: HPPC_06920(ileS)
+            HCA: HPPC18_07495(ileS)
+            HPM: HPSJM_07200(ileS)
+            HPE: HPELS_07305(ileS)
+            HPO: HMPREF4655_20015(ileS)
+            HPI: hp908_1406(ileS)
+            HPQ: hp2017_1360(ileS)
+            HPW: hp2018_1363(ileS)
+            HPU: HPCU_07160(ileS)
+            HEF: HPF16_1320(ileS)
+            HPF: HPF30_1291(ileS)
+            HEQ: HPF32_1309(ileS)
+            HEX: HPF57_1337(ileS)
+            HPT: HPSAT_06805(ileS)
+            HPZ: HPKB_1321(ileS)
+            HPV: HPV225_1444(ileS)
+            HPX: HMPREF0462_1401(ileS)
+            HEN: HPSNT_07005(ileS)
+            HPH: HPLT_07045(ileS)
+            HEG: HPGAM_07270(ileS)
+            HPN: HPIN_08035(ileS)
+            HEP: HPPN120_06930(ileS)
+            HEU: HPPN135_07185(ileS)
+            HPYS: HPSA20_1473(ileS)
+            HCN: HPB14_06805(ileS)
+            HPD: KHP_1273(ileS)
+            HEY: MWE_1599(ileS)
+            HER: C695_07365(ileS)
+            HEI: C730_07365(ileS)
+            HPYA: HPAKL117_06805(ileS)
+            HPYK: HPAKL86_06540(ileS)
+            HPYO: HPOK113_1337(ileS)
+            HPYL: HPOK310_1271(ileS)
+            HPYR: K747_04085
+            HPYI: K750_01355
+            HPYU: K751_00695
+            HPYM: K749_06845
+            HEM: K748_05255
+            HEB: U063_0249
+            HEZ: U064_0250
+            HHE: HH1190(ileS)
+            HAC: Hac_0108(ileS)
+            HMS: HMU14430(ileS)
+            HFE: HFELIS_03510(ileS)
+            HBI: HBZC1_05760
+            HCE: HCW_01870(ileS)
+            HCM: HCD_00705(ileS)
+            HCP: HCN_2051(ileS)
+            HCB: HCBAA847_2320(ileS)
+            HHM: BN341_p1318
+            WSU: WS0176(ileS)
+            TDN: Suden_0780(ileS)
+            SUA: Saut_0797
+            SKU: Sulku_0786
+            SULR: B649_08165
+            CJE: Cj1061c(ileS)
+            CJB: BN148_1061c(ileS)
+            CJJ: CJJ81176_1080(ileS)
+            CJU: C8J_1002(ileS)
+            CJN: ICDCCJ_1023
+            CJI: CJSA_1004(ileS)
+            CJM: CJM1_1038(ileS)
+            CJS: CJS3_1109(ileS)
+            CJP: A911_05135(ileS)
+            CJEJ: N564_01028(ileS)
+            CJEU: N565_01073(ileS)
+            CJEN: N755_01066(ileS)
+            CJEI: N135_01097(ileS)
+            CJR: CJE1204(ileS)
+            CJD: JJD26997_0662(ileS)
+            CJZ: M635_01015
+            CJX: BN867_10540
+            CFF: CFF8240_0610(ileS)
+            CFV: CFVI03293_0606(ileS)
+            CCV: CCV52592_0977(ileS)
+            CHA: CHAB381_0906(ileS)
+            CLA: Cla_1161(ileS)
+            CCOL: BN865_10700
+            CCC: G157_03645(ileS)
+            CCQ: N149_0999(ileS)
+            CAMP: CFT03427_0613(ileS)
+            ABU: Abu_0519(ileS)
+            ABT: ABED_0486
+            ABL: A7H1H_0527(ileS)
+            ANT: Arnit_0767
+            ARC: ABLL_0649
+            SDL: Sdel_0483
+            SBA: Sulba_0538
+            SMUL: SMUL_0653(ileS)
+            NSA: Nitsa_0628
+            NIS: NIS_1282(ileS)
+            SUN: SUN_1796(ileS)
+            NAM: NAMH_0696(ileS)
+            GSU: GSU3136(ileS)
+            GSK: KN400_3073(ileS)
+            GME: Gmet_0351(ileS)
+            GUR: Gura_4313(ileS)
+            GLO: Glov_0981(ileS)
+            GBM: Gbem_3650(ileS)
+            GEO: Geob_0392(ileS)
+            GEM: GM21_3757(ileS)
+            GEB: GM18_4108
+            PCA: Pcar_2455(ileS)
+            PPD: Ppro_3596(ileS)
+            DVU: DVU1927(ileS)
+            DVL: Dvul_1240(ileS)
+            DVM: DvMF_0266(ileS)
+            DVG: Deval_1383
+            DDE: Dde_2142
+            DDS: Ddes_0385(ileS)
+            DDN: DND132_0388
+            DMA: DMR_22170(ileS)
+            DSA: Desal_2004(ileS)
+            DAS: Daes_1709
+            DAF: Desaf_2926
+            DHY: DESAM_22252(ileS)
+            DPI: BN4_10393(ileS)
+            DGG: DGI_2774
+            LIP: LI1051(ileS)
+            LIR: LAW_01090(ileS)
+            DBA: Dbac_0488
+            DRT: Dret_1118(ileS)
+            BBA: Bd2257(ileS)
+            BBAT: Bdt_2212(ileS)
+            BBW: BDW_06845(ileS)
+            BBAC: EP01_07540
+            BEX: A11Q_2116
+            BMX: BMS_0693(ileS)
+            DPS: DP2552
+            DAK: DaAHT2_1178
+            DPR: Despr_2394
+            DSF: UWK_03410
+            DOL: Dole_1191
+            DAL: Dalk_1770
+            DAT: HRM2_24890(ileS)
+            DTO: TOL2_C21050(ileS)
+            ADE: Adeh_0012
+            ACP: A2cp1_0012
+            AFW: Anae109_0013
+            ANK: AnaeK_0012
+            MXA: MXAN_0358(ileS) MXAN_6220
+            MFU: LILAB_06880(ileS) LILAB_15365
+            MSD: MYSTI_00373 MYSTI_06805
+            CCX: COCOR_06667(ileS1) COCOR_07636(ileS)
+            SUR: STAUR_5774 STAUR_8129(ileS)
+            SCL: sce4236(ileS)
+            SCU: SCE1572_25675
+            HOH: Hoch_5889
+            SAT: SYN_01454(ileS)
+            DAO: Desac_2908
+            DTI: Desti_4083
+            SFU: Sfum_0122(ileS)
+            DBR: Deba_0413
+            HMR: Hipma_0301
+            DPB: BABL1_858(ileS)
+            RPR: RP617(ileS)
+            RPO: MA1_02955(ileS)
+            RPW: M9W_02960(ileS)
+            RPZ: MA3_03000(ileS)
+            RPG: MA5_00030(ileS)
+            RPS: M9Y_02965(ileS)
+            RPV: MA7_02955(ileS)
+            RPQ: rpr22_CDS595(ileS)
+            RPL: H375_9180
+            RPN: H374_4390
+            RTY: RT0606(ileS)
+            RTT: RTTH1527_02920(ileS)
+            RTB: RTB9991CWPP_02920(ileS)
+            RCM: A1E_01685(ileS)
+            RCC: RCA_01600(ileS)
+            RBE: RBE_0602(ileS)
+            RBO: A1I_03430(ileS)
+            RCO: RC0953(ileS)
+            RFE: RF_0423(ileS)
+            RAK: A1C_04840(ileS)
+            RRI: A1G_05240(ileS)
+            RRJ: RrIowa_1130
+            RRA: RPO_05310(ileS)
+            RRC: RPL_05290(ileS)
+            RRH: RPM_05275(ileS)
+            RRB: RPN_01745(ileS)
+            RRN: RPJ_05250(ileS)
+            RRP: RPK_05215(ileS)
+            RMS: RMA_0982(ileS)
+            RMI: RMB_03205(ileS)
+            RPK: RPR_07180(ileS)
+            RAF: RAF_ORF0859(ileS)
+            RHE: Rh054_05235(ileS)
+            RJA: RJP_0691(ileS)
+            RSV: Rsl_1101(ileS)
+            RSW: MC3_05290(ileS)
+            RPH: RSA_05270(ileS)
+            RAU: MC5_03120(ileS)
+            RMO: MCI_01935(ileS)
+            RPP: MC1_05310(ileS)
+            RRE: MCC_05895(ileS)
+            RAM: MCE_06275(ileS)
+            OTS: OTBS_0154(ileS)
+            OTT: OTT_1352(ileS)
+            WOL: WD0423(ileS)
+            WRI: WRi_003210(ileS)
+            WEN: wHa_04060(ileS)
+            WED: wNo_03240(ileS)
+            WPI: WPa_0627(ileS)
+            WBM: Wbm0363(ileS)
+            WOO: wOo_05210
+            AMA: AM684(ileS)
+            AMF: AMF_514(ileS)
+            AMW: U370_02620(ileS)
+            ACN: ACIS_00630(ileS)
+            APH: APH_0796(ileS)
+            APY: YYU_03715(ileS)
+            APD: YYY_03705(ileS)
+            APHA: WSQ_03710(ileS)
+            ERU: Erum4870(ileS)
+            ERW: ERWE_CDS_05090(ileS)
+            ERG: ERGA_CDS_05000(ileS)
+            ECN: Ecaj_0495(ileS)
+            ECH: ECH_0538(ileS)
+            ECHA: ECHHL_0471(ileS)
+            EMR: EMUR_02600(ileS)
+            EHH: EHF_0481(ileS)
+            NSE: NSE_0537(ileS)
+            NRI: NRI_0514(ileS)
+            NHM: NHE_0516(ileS)
+            MMN: midi_01011(ileS)
+            MLO: mlr8250(ileS)
+            MCI: Mesci_4592
+            MOP: Mesop_5062
+            MAM: Mesau_04651
+            MES: Meso_0425(ileS)
+            PLA: Plav_0287
+            SME: SMc00908(ileS)
+            SMK: Sinme_0506
+            SMQ: SinmeB_0410
+            SMX: SM11_chr0452(ileS)
+            SMI: BN406_00453(ileS)
+            SMEG: C770_GR4Chr0794
+            SMEL: SM2011_c00908(ileS)
+            SMD: Smed_0412(ileS)
+            RHI: NGR_c04140(ileS)
+            SFH: SFHH103_00481(ileS)
+            SFD: USDA257_c05130(ileS)
+            EAD: OV14_1728(ileS)
+            ATU: Atu0686(ileS)
+            ARA: Arad_1078(ileS)
+            AVI: Avi_5819(ileS)
+            AGR: AGROH133_04232(ileS)
+            RET: RHE_CH00832(ileS)
+            REC: RHECIAT_CH0000920(ileS)
+            REL: REMIM1_CH00845(ileS)
+            RLE: RL0889(ileS)
+            RLT: Rleg2_0474(ileS)
+            RLG: Rleg_0519(ileS)
+            RLB: RLEG3_12680(ileS)
+            RLU: RLEG12_13765(ileS)
+            RTR: RTCIAT899_CH04000(ileS)
+            RIR: BN877_I0661(ileS)
+            RHL: LPU83_0944(ileS)
+            LAS: CLIBASIA_01650(ileS)
+            LAA: WSI_01560
+            LSO: CKC_01780
+            LCC: B488_01240
+            LAR: lam_073(ileS)
+            BME: BMEII1043(ileS)
+            BMI: BMEA_B0201(ileS)
+            BMZ: BM28_B0195(ileS)
+            BMG: BM590_B0195(ileS)
+            BMW: BMNI_II0192
+            BMF: BAB2_0194(ileS)
+            BMB: BruAb2_0197(ileS)
+            BMC: BAbS19_II01840(ileS)
+            BAA: BAA13334_II00529
+            BMS: BRA0202(ileS)
+            BSI: BS1330_II0199(ileS)
+            BMT: BSUIS_B0205(ileS)
+            BSV: BSVBI22_B0198(ileS)
+            BOV: BOV_A0181(ileS)
+            BCS: BCAN_B0200(ileS)
+            BSK: BCA52141_II0925
+            BOL: BCOUA_II0202(ileS)
+            BMR: BMI_II198(ileS)
+            BPP: BPI_II199(ileS)
+            BCET: V910_201008
+            OAN: Oant_3032(ileS)
+            BJA: blr7481(ileS)
+            BJU: BJ6T_18080
+            BRA: BRADO6067(ileS)
+            BBT: BBta_1716(ileS)
+            BRS: S23_61140(ileS)
+            AOL: S58_62510
+            RPA: RPA4377(ileS)
+            RPB: RPB_4182(ileS)
+            RPC: RPC_1395(ileS)
+            RPD: RPD_4038(ileS)
+            RPE: RPE_1414(ileS)
+            RPT: Rpal_4861(ileS)
+            RPX: Rpdx1_4594
+            NWI: Nwi_2542(ileS)
+            NHA: Nham_3162(ileS)
+            OCA: OCAR_7234(ileS)
+            OCG: OCA5_c08800(ileS)
+            OCO: OCA4_c08790(ileS)
+            BHE: BH02580(ileS)
+            BHN: PRJBM_00268(ileS)
+            BQU: BQ02440(ileS)
+            BQR: RM11_0232
+            BBK: BARBAKC583_1212(ileS)
+            BTR: Btr_0285(ileS)
+            BGR: Bgr_02710(ileS)
+            BCD: BARCL_0199(ileS)
+            BAUS: BAnh1_01850(ileS)
+            BVN: BVwin_02370(ileS)
+            XAU: Xaut_2207(ileS)
+            AZC: AZC_4239(ileS)
+            SNO: Snov_3882
+            MEX: Mext_2325(ileS)
+            MEA: Mex_1p2327(ileS)
+            MDI: METDI3107(ileS)
+            MCH: Mchl_2602(ileS)
+            MRD: Mrad2831_1798(ileS)
+            MET: M446_2220(ileS)
+            MPO: Mpop_2280(ileS)
+            MNO: Mnod_0391(ileS)
+            BID: Bind_1006(ileS)
+            MSL: Msil_2860(ileS)
+            HDN: Hden_2607
+            HDT: HYPDE_36623(ileS)
+            HMC: HYPMC_3847(ileS)
+            HNI: W911_16115(ileS)
+            RVA: Rvan_0851
+            PHL: KKY_470
+            MSC: BN69_2146(ileS)
+            HCI: HCDSEM_149(ileS)
+            CCR: CC_0701(ileS)
+            CCS: CCNA_00737(ileS)
+            CAK: Caul_4057(ileS)
+            CSE: Cseg_3679
+            PZU: PHZ_c3161(ileS)
+            BSB: Bresu_2239
+            AEX: Astex_3467
+            SIL: SPO3136(ileS)
+            SIT: TM1040_2389(ileS)
+            RSP: RSP_0568
+            RSH: Rsph17029_2221(ileS)
+            RSQ: Rsph17025_0499(ileS)
+            RSK: RSKD131_1907(ileS)
+            RCP: RCAP_rcc03204(ileS)
+            JAN: Jann_3467(ileS)
+            RDE: RD1_2074(ileS)
+            RLI: RLO149_c012170(ileS)
+            PDE: Pden_3612(ileS)
+            PAMI: JCM7686_2381
+            DSH: Dshi_1933(ileS)
+            KVU: EIO_1774(ileS)
+            KVL: KVU_1239(ileS)
+            PSF: PSE_1499(ileS)
+            PGA: PGA1_c05710(ileS)
+            PGL: PGA2_c05270(ileS)
+            PGD: Gal_02935
+            OAT: OAN307_c08710(ileS)
+            OAR: OA238_c32180(ileS)
+            LMD: METH_14005(ileS)
+            RED: roselon_01771
+            MMR: Mmar10_0613(ileS)
+            HNE: HNE_0849(ileS)
+            HBA: Hbal_0982
+            ZMO: ZMO0323(ileS)
+            ZMN: Za10_0909(ileS)
+            ZMM: Zmob_0871
+            ZMB: ZZ6_0917
+            ZMI: ZCP4_0941
+            ZMP: Zymop_0867
+            NAR: Saro_3259(ileS)
+            NPP: PP1Y_AT664
+            SAL: Sala_2357(ileS)
+            SWI: Swit_3784(ileS)
+            SPHM: G432_09810(ileS)
+            SJP: SJA_C1-22910(ileS)
+            SCH: Sphch_1128
+            SSY: SLG_05490(ileS)
+            ELI: ELI_13550(ileS)
+            GOX: GOX1249(ileS)
+            GOH: B932_0881
+            GBE: GbCGDNIH1_0466(ileS)
+            GBH: GbCGDNIH2_0466
+            ACR: Acry_0633(ileS)
+            AMV: ACMV_12360(ileS)
+            GDI: GDI_0589(ileS)
+            GDJ: Gdia_1411(ileS)
+            GXY: GLX_12640
+            GXL: H845_2502
+            APT: APA01_07380(ileS)
+            APW: APA42C_07380
+            APF: APA03_07380
+            APU: APA07_07380
+            APG: APA12_07380
+            APQ: APA22_07380
+            APX: APA26_07380
+            APZ: APA32_07380
+            APK: APA386B_2243(ileS)
+            RRU: Rru_A2966(ileS)
+            RRF: F11_15195(ileS)
+            RCE: RC1_3585(ileS)
+            RPM: RSPPHO_02897
+            MAG: amb0834
+            MGY: MGMSR_2761(ileS)
+            AZL: AZL_007060(ileS)
+            ALI: AZOLI_0609(ileS)
+            ABS: AZOBR_70014(ileS)
+            TMO: TMO_0230(ileS) TMO_2891(ileS)
+            THAL: A1OE_1506(ileS)
+            PBR: PB2503_02712
+            MGM: Mmc1_2147
+            MAI: MICA_2088(ileS)
+            MAN: A11S_2010
+            PGV: SL003B_3445
+            PUB: SAR11_0158(ileS)
+            PEL: SAR11G3_00647
+            APC: HIMB59_00007360
+            APM: HIMB5_00000960
+            APB: SAR116_1144
+            BSU: BSU15430(ileS)
+            BSL: A7A1_0482
+            BSH: BSU6051_15430(ileS)
+            BSY: I653_07940(ileS)
+            BSS: BSUW23_07945(ileS)
+            BST: GYO_1892(ileS)
+            BSO: BSNT_02548(ileS)
+            BSN: BSn5_19820(ileS)
+            BSQ: B657_15430(ileS)
+            BSUB: BEST7613_2351(ileS) BEST7613_3259(ileS)
+            BSX: C663_1587(ileS)
+            BSP: U712_08130
+            BLI: BL02267(ileS)
+            BLD: BLi01762(ileS)
+            BLH: BaLi_c17960(ileS)
+            BAO: BAMF_1614(ileS)
+            BAY: RBAM_015260(ileS)
+            BAQ: BACAU_1497(ileS)
+            BYA: BANAU_1494(ileS)
+            BAMP: B938_07920(ileS)
+            BAML: BAM5036_1462(ileS)
+            BAMA: RBAU_1502(ileS)
+            BAMN: BASU_1482(ileS)
+            BAMB: BAPNAU_2227(ileS)
+            BAZ: BAMTA208_09440(ileS)
+            BQL: LL3_01700(ileS)
+            BXH: BAXH7_01921(ileS)
+            BQY: MUS_1690(ileS)
+            BAMI: KSO_011730(ileS)
+            BAMC: U471_15640
+            BAMF: U722_08105(ileS)
+            BAE: BATR1942_05510(ileS)
+            BHA: BH2545(ileS)
+            BAN: BA_2181(ileS) BA_4034(ileS)
+            BAR: GBAA_2181(ileS) GBAA_4034(ileS)
+            BAT: BAS2027(ileS) BAS3746(ileS)
+            BAH: BAMEG_0593(ileS) BAMEG_2414(ileS)
+            BAI: BAA_2243(ileS) BAA_4060(ileS)
+            BAX: H9401_2068 H9401_3845
+            BANT: A16_22140 A16_40400
+            BANR: A16R_22410 A16R_40920
+            BAL: BACI_c21330(ileS1) BACI_c38500(ileS2)
+            BCE: BC2164(ileS) BC3895(ileS)
+            BCA: BCE_2241(ileS) BCE_3940(ileS)
+            BCZ: BCZK1977(ileS) BCZK3654(ileS)
+            BCR: BCAH187_A2323(ileS) BCAH187_A3947(ileS)
+            BCB: BCB4264_A2186(ileS) BCB4264_A3996(ileS)
+            BCU: BCAH820_2201(ileS) BCAH820_3909(ileS)
+            BCG: BCG9842_B1245(ileS) BCG9842_B3131(ileS)
+            BCQ: BCQ_2149(ileS) BCQ_3681(ileS)
+            BCX: BCA_2267(ileS) BCA_3999(ileS)
+            BNC: BCN_2137 BCN_3727
+            BCF: bcf_10930 bcf_19350
+            BCER: BCK_15760(ileS) BCK_23765(ileS)
+            BCY: Bcer98_2544(ileS)
+            BTK: BT9727_1995(ileS) BT9727_3637(ileS)
+            BTL: BALH_1940(ileS) BALH_3526(ileS)
+            BTB: BMB171_C1947(ileS) BMB171_C3560(ileS)
+            BTT: HD73_2447 HD73_4179
+            BTC: CT43_CH2111(ileS) CT43_CH3896(ileS)
+            BTF: YBT020_11245(ileS) YBT020_19130(ileS)
+            BTM: MC28_1388 MC28_3118(ctaE)
+            BTG: BTB_c22240(ileS2) BTB_c40230(ileS1)
+            BTI: BTG_09060(ileS) BTG_30295(ileS)
+            BTN: BTF1_08330(ileS) BTF1_17770(ileS)
+            BTHT: H175_ch2142 H175_ch3958
+            BTHU: YBT1518_11945(ileS) YBT1518_21350(ileS)
+            BWE: BcerKBAB4_2014(ileS) BcerKBAB4_3722(ileS)
+            BTY: Btoyo_1140 Btoyo_4799
+            BCL: ABC2342(ileS)
+            BPU: BPUM_1442(ileS)
+            BPF: BpOF4_00580(ileS)
+            BMQ: BMQ_2736(ileS) BMQ_4261(ileS)
+            BMD: BMD_2718(ileS) BMD_4249(ileS)
+            BMH: BMWSH_0966 BMWSH_2480(ileS)
+            BSE: Bsel_1667
+            BCO: Bcell_1089 Bcell_2575
+            BCK: BCO26_1038(ileS)
+            BAG: Bcoa_0150
+            BJS: MY9_1688
+            BACI: B1NLA3E_06205(ileS)
+            BIF: N288_09295(ileS) N288_12035
+            OIH: OB0362(ileS) OB1484(ileS)
+            GKA: GK1136(ileS)
+            GTN: GTNG_1001(ileS)
+            GTH: Geoth_2779
+            GTE: GTCCBUS3UF5_13240
+            GWC: GWCH70_1039(ileS)
+            GYC: GYMC61_1909(ileS)
+            GYA: GYMC52_1036
+            GCT: GC56T3_2437
+            GMC: GY4MC1_2759
+            GGH: GHH_c10730(ileS)
+            GJF: M493_05775(ileS)
+            AFL: Aflv_1812(ileS)
+            AXL: AXY_15680(ileS)
+            LSP: Bsph_1451
+            LGY: T479_04570(ileS)
+            HHD: HBHAL_1236(ileS)
+            SAU: SA1036(ileS)
+            SAV: SAV1193(ileS)
+            SAW: SAHV_1183(ileS)
+            SAH: SaurJH1_1277(ileS)
+            SAJ: SaurJH9_1252(ileS)
+            SAM: MW1076(ileS)
+            SAS: SAS1127(ileS)
+            SAR: SAR1169(ileS)
+            SAC: SACOL1206(ileS)
+            SAX: USA300HOU_1130(ileS)
+            SAA: SAUSA300_1087(ileS) SAUSA300_pUSA0303(ileS)
+            SAO: SAOUHSC_01159(ileS)
+            SAE: NWMN_1103(ileS)
+            SAD: SAAV_1165(ileS)
+            SUU: M013TW_1127
+            SUV: SAVC_05130(ileS)
+            SUH: SAMSHR1132_10350
+            SUE: SAOV_1194(ileS)
+            SUJ: SAA6159_01044(ileS)
+            SUK: SAA6008_01147(ileS)
+            SUC: ECTR2_1049(ileS)
+            SUT: SAT0131_01240
+            SUQ: HMPREF0772_12039(ileS)
+            SUZ: MS7_1150(ileS)
+            SUD: ST398NM01_1191
+            SUX: SAEMRSA15_10260(ileS)
+            SUW: SATW20_11870(ileS)
+            SUG: SAPIG1191(ileS)
+            SUF: SARLGA251_11040(ileS)
+            SAUA: SAAG_01791
+            SAUE: RSAU_001074(lileS)
+            SAUN: SAKOR_01119
+            SAUS: SA40_1064(ileS)
+            SAUU: SA957_1079(ileS)
+            SAUZ: SAZ172_1196(ileS)
+            SAB: SAB1057(ileS)
+            SUY: SA2981_1151(ileS)
+            SAUB: C248_1222(ileS)
+            SAUM: BN843_11000
+            SAUC: CA347_1109(ileS)
+            SAUR: SABB_03316(ileS)
+            SEP: SE0868(ileS)
+            SER: SERP0758(ileS)
+            SHA: SH1722(ileS)
+            SSP: SSP1578(ileS)
+            SCA: Sca_0806(ileS)
+            SLG: SLGD_01710
+            SLN: SLUG_17070(ileS)
+            SSD: SPSINT_0898
+            SDT: SPSE_1607(ileS)
+            SWA: A284_07650(ileS)
+            SPAS: STP1_2224
+            LMO: lmo2019(ileS)
+            LMF: LMOf2365_2044(ileS)
+            LMH: LMHCC_0541(ileS)
+            LMC: Lm4b_02031(ileS)
+            LMN: LM5578_2221(ileS)
+            LMY: LM5923_2172(ileS)
+            LMT: LMRG_01168
+            LMG: LMKG_00305
+            LMS: LMLG_0412
+            LMJ: LMOG_01211
+            LMQ: LMM7_2107(ileS)
+            LML: lmo4a_2070(ileS)
+            LMP: MUO_10325(ileS)
+            LMW: LMOSLCC2755_2072(ileS)
+            LMX: LMOSLCC2372_2086(ileS)
+            LMZ: LMOSLCC2482_2075(ileS)
+            LMON: LMOSLCC2376_1974(ileS)
+            LMOC: LMOSLCC5850_2081(ileS)
+            LMOS: LMOSLCC7179_1991(ileS)
+            LMOO: LMOSLCC2378_2035(ileS)
+            LMOY: LMOSLCC2479_2083(ileS)
+            LMOT: LMOSLCC2540_2093(ileS)
+            LMOA: LMOATCC19117_2031(ileS)
+            LMOL: LMOL312_2022(ileS)
+            LMOG: BN389_20390(ileS)
+            LMOE: BN418_2428 BN418_2429 BN418_2430
+            LMOB: BN419_2431 BN419_2432
+            LMOJ: LM220_20355(ileS)
+            LMOZ: LM1816_12347(ileS)
+            LMOD: LMON_2090(ileS)
+            LIN: lin2127(ileS)
+            LWE: lwe2039(ileS)
+            LSG: lse_2001(ileS)
+            LIV: LIV_2000(ileS)
+            LIW: AX25_10680(ileS)
+            ESI: Exig_1951
+            EAT: EAT1b_2847
+            EAN: Eab7_1802(ileS)
+            EXM: U719_07040 U719_10990(ileS)
+            MCL: MCCL_0764(ileS)
+            BBE: BBR47_15360(ileS) BBR47_38180(ileS)
+            PJD: Pjdr2_3873(ileS)
+            GYM: GYMC10_1833(ileS)
+            PPY: PPE_03111(ileS)
+            PPM: PPSC2_c3531
+            PPO: PPM_3339(ILS1)
+            PPOL: X809_17475
+            PMS: KNP414_04047(ileS) KNP414_06610(ileS2)
+            PMQ: PM3016_6214
+            PMW: B2K_27975(ileS) B2K_31515
+            PTA: HPL003_25100(ileS)
+            PLV: ERIC2_c24490(ileS)
+            PSAB: PSAB_17315(ileS)
+            TCO: Theco_2300
+            AAC: Aaci_2374
+            AAD: TC41_2661(ileS)
+            BTS: Btus_1839
+            SIV: SSIL_3083
+            LLA: L0350(ileS)
+            LLK: LLKF_2056(ileS)
+            LLT: CVCAS_1801(ileS)
+            LLS: lilo_1867(ileS)
+            LLD: P620_10520(ileS)
+            LLC: LACR_2056(ileS)
+            LLM: llmg_2053(ileS)
+            LLR: llh_2760
+            LLN: LLNZ_10575(ileS)
+            LLI: uc509_1822(ileS)
+            LLW: kw2_1920(ileS)
+            LGR: LCGT_1609
+            LGV: LCGL_1631
+            SPY: SPy_1513(ileS)
+            SPZ: M5005_Spy_1243(ileS)
+            SPYM: M1GAS476_1306(ileS)
+            SPM: spyM18_1531(ileS)
+            SPG: SpyM3_1166(ileS)
+            SPS: SPs0696(ileS)
+            SPH: MGAS10270_Spy1259(ileS)
+            SPI: MGAS10750_Spy1350(ileS)
+            SPJ: MGAS2096_Spy1261(ileS)
+            SPK: MGAS9429_Spy1238(ileS)
+            SPF: SpyM50609(ileS)
+            SPA: M6_Spy1264(ileS)
+            SPB: M28_Spy1182(ileS)
+            STG: MGAS15252_1127(ileS)
+            SOZ: Spy49_1167c(ileS)
+            STZ: SPYALAB49_001225
+            STX: MGAS1882_1188(ileS)
+            SPYA: A20_1277c(ileS)
+            SPYH: L897_06205(ileS)
+            SPN: SP_1659(ileS)
+            SPD: SPD_1472(ileS)
+            SPR: spr1502(ileS)
+            SPW: SPCG_1631(ileS)
+            SPX: SPG_1568(ileS)
+            SNE: SPN23F_16600(ileS)
+            SPV: SPH_1767(ileS)
+            SNM: SP70585_1699(ileS)
+            SJJ: SPJ_1554(ileS)
+            SPP: SPP_1677(ileS)
+            SNT: SPT_1598(ileS)
+            SNC: HMPREF0837_11902(ileS2)
+            SNB: SP670_1746(ileS)
+            SNP: SPAP_1665
+            SNI: INV104_14110(ileS)
+            SNV: SPNINV200_14830(ileS)
+            SNX: SPNOXC_14570(ileS)
+            SND: MYY_1583
+            SNU: SPNA45_00582(ileS)
+            SPNG: HMPREF1038_01643(ileS)
+            SPNE: SPN034156_05440(ileS)
+            SPNU: SPN034183_14540(ileS)
+            SPNM: SPN994038_14430(ileS)
+            SPNO: SPN994039_14440(ileS)
+            SPNN: T308_07555(ileS)
+            SAG: SAG0485(ileS)
+            SAN: gbs0532(ileS)
+            SAK: SAK_0587(ileS)
+            SGC: A964_0515(ileS)
+            SAGS: SaSA20_0472(ileS)
+            SAGL: GBS222_0463(ileS)
+            SAGM: BSA_5740
+            SAGI: MSA_5890
+            SAGR: SAIL_6030
+            SMU: SMU_558
+            SMC: SmuNN2025_1414
+            SMJ: SMULJ23_1431(ileS)
+            SMUT: SMUGS5_02455
+            STC: str0741(ileS)
+            STL: stu0741(ileS)
+            STE: STER_0783(ileS)
+            STN: STND_0730
+            STU: STH8232_0934(ileS)
+            STW: Y1U_C0708
+            SSA: SSA_0661(ileS)
+            SSU: SSU05_0489(ileS)
+            SSV: SSU98_0483(ileS)
+            SSB: SSUBM407_0428(ileS)
+            SSI: SSU0441(ileS)
+            SSS: SSUSC84_0425(ileS)
+            SST: SSUST3_0510(ileS)
+            SSF: SSUA7_0445(ileS)
+            SSK: SSUD12_0462(ileS)
+            SSQ: SSUD9_0508(ileS)
+            SSW: SSGZ1_0437
+            SUI: SSUJS14_0454(ileS)
+            SUO: SSU12_0450(ileS)
+            SRP: SSUST1_0489(ileS)
+            SUP: YYK_02115(ileS)
+            SSUS: NJAUSS_0461
+            SSUT: TL13_0514(ileS)
+            SSUI: T15_0480(ileS)
+            SGO: SGO_0681(ileS)
+            SEQ: SZO_13900(ileS)
+            SEZ: Sez_0602(ileS)
+            SEZO: SeseC_00725(ileS)
+            SEU: SEQ_0627(ileS)
+            SUB: SUB1284(ileS)
+            SDS: SDEG_1499(ileS)
+            SDG: SDE12394_07815(ileS)
+            SDA: GGS_1368(ileS)
+            SDC: SDSE_1609(ileS)
+            SDQ: SDSE167_1610(ileS) SDSE167_1611
+            SGA: GALLO_0609(ileS)
+            SGG: SGGBAA2069_c05500(ileS)
+            SGT: SGGB_0582(ileS)
+            SMB: smi_0627(ileRS)
+            SOR: SOR_0586(ileRS)
+            STK: STP_1119(ileS)
+            STB: SGPB_0482(ileS)
+            SCP: HMPREF0833_10067(ileS)
+            SCF: Spaf_0592(ileS)
+            SSR: SALIVB_1292(ileS)
+            STF: Ssal_01371(iarS)
+            STJ: SALIVA_0796
+            STD: SPPN_08080(ileS)
+            SMN: SMA_0568(ileS)
+            SIF: Sinf_0489(ileS)
+            SIE: SCIM_0416(ileS)
+            SIB: SIR_1244(ileS)
+            SIU: SII_1268(ileS)
+            SANG: SAIN_0449(ileS)
+            SANC: SANR_0467(ileS)
+            SCG: SCI_0498(ileS)
+            SCON: SCRE_0478(ileS)
+            SCOS: SCR2_0478(ileS)
+            SOI: I872_07315(ileS)
+            SIK: K710_0575
+            SLU: KE3_0569
+            SIG: N596_00325(ileS)
+            SIP: N597_02030(ileS)
+            LPL: lp_2187(ileS)
+            LPJ: JDM1_1830(ileS)
+            LPT: zj316_2177(ileS)
+            LPS: LPST_C1807(ileS)
+            LPR: LBP_cg1751(ileS)
+            LPZ: Lp16_1709
+            LJO: LJ0980(ileS)
+            LJF: FI9785_1225(ileS)
+            LJH: LJP_1175c
+            LJN: T285_05845(ileS)
+            LAC: LBA0817(ileS)
+            LAI: LAC30SC_04075(ileS)
+            LAD: LA14_0841
+            LSA: LSA0756(ileS)
+            LSL: LSL_1042(ileS)
+            LSI: HN6_00861(ileS)
+            LDB: Ldb0748(ileS)
+            LBU: LBUL_0681(ileS)
+            LDE: LDBND_0683(ileS)
+            LDL: LBU_0641
+            LBR: LVIS_1441(ileS)
+            LBK: LVISKB_1389
+            LCA: LSEI_1280(ileS)
+            LCB: LCABL_15110(ileS)
+            LCZ: LCAZH_1272
+            LCS: LCBD_1487(ileS)
+            LCW: BN194_14810(ileS)
+            LCL: LOCK919_1462
+            LGA: LGAS_1196(ileS)
+            LRE: Lreu_0598(ileS)
+            LRF: LAR_0578(ileS)
+            LRU: HMPREF0538_21841(ileS)
+            LRT: LRI_1312(ileS)
+            LRR: N134_03305(ileS)
+            LHE: lhv_0863(ileS)
+            LHL: LBHH_1289(ileS)
+            LHR: R0052_07605(ileS)
+            LHV: lhe_0834
+            LHH: LBH_0719(ileS)
+            LFE: LAF_0582(ileS)
+            LFR: LC40_0407
+            LFF: LBFF_0601(ileS)
+            LRH: LGG_01291(ileS)
+            LRG: LRHM_1238
+            LRL: LC705_01309(ileS)
+            LRA: LRHK_1283(ileS)
+            LRO: LOCK900_1260
+            LRC: LOCK908_1344
+            LCR: LCRIS_00835(ileS)
+            LAM: LA2_04285(ileS)
+            LAY: LAB52_04070(ileS)
+            LBH: Lbuc_0700
+            LBN: LBUCD034_0746(ileS)
+            LKE: WANG_0831(ileS)
+            LSN: LSA_10040(ileS)
+            LPI: LBPG_00547
+            LPQ: AF91_07455(ileS)
+            PPE: PEPE_1179(ileS)
+            PPEN: T256_05805(ileS)
+            PCE: PECL_813(ileS)
+            EFA: EF1003(ileS)
+            EFL: EF62_1437(ileS)
+            EFI: OG1RF_10736(ileS)
+            EFD: EFD32_0817
+            EFS: EFS1_0830(ileS)
+            EFN: DENG_01135(iars)
+            EFC: EFAU004_00776(ileS)
+            EFAU: EFAU085_00847(ileS)
+            EFU: HMPREF0351_10802(ileS)
+            EFM: M7W_2096
+            EHR: EHR_00330(ileS)
+            ENE: ENT_20840
+            ECAS: ECBG_02842
+            EMU: EMQU_0866(ileS)
+            MPS: MPTP_0780
+            MPX: MPD5_1155
+            THL: TEH_07660(ileS)
+            OOE: OEOE_1139
+            LME: LEUM_1487
+            LMM: MI1_06600(ileS)
+            LMK: LMES_1265
+            LCI: LCK_00537(ileS)
+            LKI: LKI_02325
+            LGS: LEGAS_1264(ileS)
+            LEC: LGMK_00650(ileS)
+            LCN: C270_05310(ileS)
+            LGE: C269_06280(ileS)
+            WKO: WKK_01190
+            AUR: HMPREF9243_1408(ileS)
+            CRN: CAR_c08110(ileS)
+            CML: BN424_1202(ileS) BN424_1203(ileS)
+            CAW: Q783_03645(ileS)
+            CAC: CA_C3038(ileS)
+            CAE: SMB_G3074(ileS)
+            CAY: CEA_G3044(ileS)
+            CPE: CPE2541(ileS)
+            CPF: CPF_2865(ileS)
+            CPR: CPR_2550(ileS)
+            CTC: CTC00261(ileS)
+            CTET: BN906_00268(ileS)
+            CNO: NT01CX_0646(ileS)
+            CBO: CBO0099(ileS)
+            CBA: CLB_0135(ileS)
+            CBH: CLC_0147(ileS)
+            CBY: CLM_0142(ileS)
+            CBL: CLK_3274(ileS)
+            CBK: CLL_A0093(ileS)
+            CBB: CLD_0687(ileS)
+            CBI: CLJ_B0137(ileS)
+            CBN: CbC4_2381(ileS)
+            CBT: CLH_0078(ileS)
+            CBF: CLI_0154(ileS)
+            CBM: CBF_0127(ileS)
+            CBJ: H04402_00090
+            CBE: Cbei_0046(ileS)
+            CKL: CKL_3752(ileS)
+            CKR: CKR_3315(ileS)
+            CCE: Ccel_1855(ileS)
+            CLJ: CLJU_c01890(ileS)
+            CCB: Clocel_0349
+            CLS: CXIVA_05320
+            CLB: Clo1100_2188
+            CSR: Cspa_c00570(ileS)
+            CPAS: Clopa_0273
+            CSB: CLSA_c00620(ileS)
+            CAH: CAETHG_2292
+            AMT: Amet_3114(ileS)
+            AOE: Clos_2197(ileS)
+            ASF: SFBM_0247
+            ASM: MOUSESFB_0225(ileS)
+            ASB: RATSFB_0184(ileS)
+            CTH: Cthe_0787(ileS)
+            CTX: Clo1313_1434
+            CCL: Clocl_1048
+            ESR: ES1_04130
+            ESU: EUS_00630
+            CSS: Cst_c05880(ileS)
+            CSD: Clst_0563
+            EHA: Ethha_0701
+            RAL: Rumal_0984
+            RBR: RBR_15500
+            RCH: RUM_08930
+            BPB: bpr_I2852(ileS)
+            BFI: CIY_00340 CIY_00350
+            CLE: Clole_3647
+            RHO: RHOM_04265(ileS)
+            RIX: RO1_03810
+            RIM: ROI_00550
+            COO: CCU_19930
+            CCT: CC1_28250
+            RTO: RTO_01610
+            CPY: Cphy_3832(ileS)
+            CSH: Closa_2895
+            CSO: CLS_21040
+            CAD: Curi_c06150(ileS)
+            CDF: CD630_26180(ileS)
+            CDC: CD196_2455(ileS)
+            CDL: CDR20291_2502(ileS)
+            CDG: CDBI1_12715(ileS)
+            CST: CLOST_1876(ileS)
+            FAA: HMPREF0389_01372
+            STH: STH1231(ileS)
+            SWO: Swol_0962(ileS)
+            SLP: Slip_0827
+            DSY: DSY2882(ileS)
+            DHD: Dhaf_4041(ileS)
+            DDH: Desde_3418
+            DDL: Desdi_2785
+            DRM: Dred_0718(ileS)
+            DAE: Dtox_1089(ileS)
+            DCA: Desca_2287
+            DKU: Desku_1190
+            DRU: Desru_3285
+            DGI: Desgi_3614
+            PTH: PTH_1820(ileS)
+            DAU: Daud_1408
+            TJR: TherJR_1858
+            SGY: Sgly_0663
+            DOR: Desor_0742 Desor_4796
+            DAI: Desaci_0433
+            DMI: Desmer_0770 Desmer_3826
+            DED: DHBDCA_p2565(ileS)
+            DEC: DCF50_p2575
+            DRS: DEHRE_03015
+            HMO: HM1_2096(ileS)
+            FMA: FMG_1104(ileS)
+            APR: Apre_0284(ileS)
+            EEL: EUBELI_00039(ileS)
+            ERE: EUBREC_1053(ileS)
+            ERT: EUR_20840
+            ERA: ERE_20630
+            ELM: ELI_0550
+            EAC: EAL2_c16470(ileS)
+            AWO: Awo_c08540(ileS)
+            OVA: OBV_46000(ileS)
+            TMR: Tmar_0885
+            SAY: TPY_3455(ileS)
+            SAP: Sulac_1459
+            CLO: HMPREF0868_1048(ileS)
+            BPRS: CK3_18090
+            BPRL: CL2_19340
+            TTE: TTE1594(ileS)
+            TEX: Teth514_1886(ileS)
+            THX: Thet_1051
+            TPD: Teth39_0874(ileS)
+            TIT: Thit_1439
+            TMT: Tmath_1432
+            TBO: Thebr_0899
+            TWI: Thewi_1531
+            CHY: CHY_0534(ileS)
+            TEP: TepRe1_0684
+            TAE: TepiRe1_0743(ileS)
+            MTA: Moth_0863(ileS)
+            ADG: Adeg_1020
+            TPZ: Tph_c12900(ileS)
+            CSC: Csac_1912
+            ATE: Athe_1349
+            COB: COB47_1208
+            CHD: Calhy_1377
+            COW: Calow_1141
+            CKI: Calkr_1337
+            CKN: Calkro_1352
+            CLC: Calla_0737
+            TOC: Toce_1642
+            TTM: Tthe_1222
+            TTO: Thethe_01174
+            TXY: Thexy_1477
+            TSH: Tsac_2020
+            CPO: COPRO5265_0684(ileS)
+            TNR: Thena_0807
+            MAS: Mahau_1347
+            NTH: Nther_1320
+            HOR: Hore_09270
+            HAS: Halsa_1594
+            HPK: Hprae_0729
+            AAR: Acear_0883
+            HHL: Halha_0857
+            VPR: Vpar_0174
+            SSG: Selsp_1288
+            SRI: SELR_22870(ileS)
+            MED: MELS_2171
+            AFN: Acfer_1495
+            AIN: Acin_0835(ileS)
+            ERH: ERH_1068(ileS)
+            ERS: K210_03350 K210_03355(ileS)
+            MGE: MG_345(ileS)
+            MGU: CM5_02050
+            MGC: CM9_02065
+            MGQ: CM3_02180
+            MGX: CM1_02105
+            MPN: MPN520(ileS)
+            MPM: MPNA5200(ileS)
+            MPB: C985_0526
+            MPU: MYPU_6670(ileS)
+            MPE: MYPE8820(ileS)
+            MGA: MGA_1196(ileS)
+            MGH: MGAH_1196(ileS)
+            MGF: MGF_3813(ileS)
+            MGN: HFMG06NCA_2369(ileS)
+            MGS: HFMG95NCA_2414(ileS)
+            MGT: HFMG01NYA_2428(ileS)
+            MGV: HFMG94VAA_2487(ileS)
+            MGW: HFMG01WIA_2362(ileS)
+            MGAC: HFMG06CAA_2367(ileS)
+            MGAN: HFMG08NCA_2370(ileS)
+            MGNC: HFMG96NCA_2413(ileS)
+            MGZ: GCW_01825
+            MMY: MSC_0585(ileS)
+            MMYM: MMS_A0643(ileS)
+            MML: MLC_5530(ileS)
+            MMO: MMOB4070(ileS)
+            MHY: mhp033(ileS)
+            MHJ: MHJ_0028(ileS)
+            MHP: MHP7448_0032(ileS)
+            MHN: MHP168_029(ileS)
+            MHYL: MHP168L_029
+            MHYO: MHL_3239(ileS)
+            MSY: MS53_0558(ileS)
+            MCP: MCAP_0393(ileS)
+            MAA: MAG_2200(ileS)
+            MAL: MAGa2310(ileS)
+            MAT: MARTH_orf589(ileS)
+            MCO: MCJ_005350(ileS)
+            MHO: MHO_3050(ileS)
+            MCD: MCRO_0195(ileS)
+            MHR: MHR_0132(ileS)
+            MHH: MYM_0135(ileS)
+            MHM: SRH_01425(ileS)
+            MHS: MOS_145
+            MHV: Q453_0145(ileS)
+            MFR: MFE_06750(ileS)
+            MFM: MfeM64YM_0817(ileS)
+            MFP: MBIO_0624
+            MBV: MBOVPG45_0605(ileS)
+            MBH: MMB_0237(ileS)
+            MBI: Mbov_0256(ileS)
+            MLC: MSB_A0407(ileS)
+            MLH: MLEA_002080(ileS)
+            MHA: HF1_02210(ileS)
+            MSS: MSU_0371(ileS)
+            MSK: Msui03160(ileS)
+            MPF: MPUT_0494(ileS)
+            MPUT: MPUT9231_3630(ileS)
+            MHE: MHC_00930
+            MWE: WEN_00840
+            MHL: MHLP_00580(ileS)
+            MCY: MCYN_0217(MCYN0217)
+            MHB: MHM_01340(ileS)
+            MPV: PRV_02275
+            MOV: OVS_01170
+            MBC: MYB_00895(ileS)
+            UUR: UU410(ileS)
+            UPA: UPA3_0427(ileS)
+            UUE: UUR10_0454(ileS)
+            HCR: X271_00260(ileS)
+            POY: PAM_184(ileS)
+            AYW: AYWB_535(ileS)
+            PML: ATP_00252(ileS)
+            PAL: PAa_0346(ileS)
+            NZS: SLY_0197(ileS)
+            PSOL: S284_03560(ileS)
+            ACL: ACL_0702
+            MFL: Mfl389(ileS)
+            MFW: mflW37_4120
+            SCR: SCHRY_v1c06480(ileS)
+            SSYR: SSYRP_v1c06700(ileS)
+            SDI: SDIMI_v3c06170(ileS)
+            STAI: STAIW_v1c08570(ileS)
+            SAPI: SAPIS_v1c07320(ileS)
+            SMIR: SMM_0704
+            SCQ: SCULI_v1c07670(ileS)
+            SSAB: SSABA_v1c05950(ileS)
+            MTU: Rv1536(ileS)
+            MTV: RVBD_1536
+            MTC: MT1587(ileS)
+            MRA: MRA_1548(ileS)
+            MTF: TBFG_11569(ileS)
+            MTB: TBMG_02441(ileS)
+            MTK: TBSG_02453
+            MTZ: TBXG_002422
+            MTG: MRGA327_09635(ileS)
+            MTI: MRGA423_09630(ileS)
+            MTE: CCDC5079_1432
+            MTUR: CFBS_1637(ileS)
+            MTL: CCDC5180_1420
+            MTO: MTCTRI2_1579(ileS)
+            MTD: UDA_1536(ileS)
+            MTN: ERDMAN_1712(ileS)
+            MTJ: J112_08250(ileS)
+            MTUB: MT7199_1572
+            MTUC: J113_10740(ileS)
+            MTUE: J114_08250(ileS)
+            MTX: M943_08035(ileS)
+            MTUH: I917_10870(ileS)
+            MTUL: TBHG_01517
+            MBO: Mb1563(ileS)
+            MBB: BCG_1588(ileS)
+            MBT: JTY_1563(ileS)
+            MBM: BCGMEX_1560(ileS)
+            MBK: K60_016350
+            MAF: MAF_15630(ileS)
+            MCE: MCAN_15591(ileS)
+            MCQ: BN44_20100(ileS)
+            MCV: BN43_30662(ileS)
+            MCX: BN42_21467(ileS)
+            MCZ: BN45_40011(ileS)
+            MLE: ML1195(ileS)
+            MLB: MLBr_01195(ileS)
+            MPA: MAP1246(ileS)
+            MAO: MAP4_2605
+            MAV: MAV_3235(ileS)
+            MIT: OCO_30820
+            MIR: OCQ_31460
+            MIA: OCU_30720
+            MID: MIP_04551
+            MYO: OEM_30020
+            MSM: MSMEG_3169(ileS)
+            MSG: MSMEI_3087(ileS)
+            MSA: Mycsm_02924
+            MUL: MUL_1532(ileS)
+            MVA: Mvan_2769(ileS)
+            MGI: Mflv_3644(ileS)
+            MSP: Mspyr1_29870
+            MAB: MAB_2705c
+            MABB: MASS_2650(ileS)
+            MMV: MYCMA_1475(ileS)
+            MMC: Mmcs_3100(ileS)
+            MKM: Mkms_3160(ileS)
+            MJL: Mjls_3120(ileS)
+            MJD: JDM601_2190(ileS)
+            MMI: MMAR_2356(ileS)
+            MRH: MycrhN_5266
+            MMM: W7S_15270(ileS)
+            MCB: Mycch_2492
+            MLI: MULP_03267(ileS)
+            MKN: MKAN_27620(ileS)
+            MNE: D174_13605(ileS)
+            ASD: AS9A_1366(ileS)
+            CGL: NCgl2068(ileS)
+            CGB: cg2359(ileS)
+            CGU: WA5_2068(IleS)
+            CGT: cgR_2031(ileS)
+            CGS: C624_10395(ileS)
+            CGG: C629_10405(ileS)
+            CGM: cgp_2359(ileS)
+            CEF: CE2043(ileS)
+            CDI: DIP1589(ileS)
+            CDP: CD241_1526(ileS)
+            CDH: CDB402_1493(ileS)
+            CDT: CDHC01_1527(ileS)
+            CDE: CDHC02_1475(ileS)
+            CDR: CDHC03_1502(ileS)
+            CDA: CDHC04_1502(ileS)
+            CDZ: CD31A_1605(ileS)
+            CDB: CDBH8_1576(ileS)
+            CDS: CDC7B_1587(ileS)
+            CDD: CDCE8392_1497(ileS)
+            CDW: CDPW8_1578(ileS)
+            CDV: CDVA01_1463(ileS)
+            CJK: jk0760(ileS)
+            CUR: cur_1195(ileS)
+            CUA: CU7111_1177(ileS)
+            CAR: cauri_1656(ileS)
+            CKP: ckrop_0758(ileS)
+            CPU: cpfrc_01388(ileS)
+            CPL: Cp3995_1420(ileS)
+            CPG: Cp316_1438(ileS)
+            CPP: CpP54B96_1405(ileS)
+            CPK: Cp1002_1382(ileS)
+            CPQ: CpC231_1381(ileS)
+            CPX: CpI19_1387(ileS)
+            CPZ: CpPAT10_1381(ileS)
+            COR: Cp267_1440(ileS)
+            COP: Cp31_1403(ileS)
+            COD: Cp106_1364(ileS)
+            COS: Cp4202_1372(ileS)
+            COI: CpCIP5297_1407(ileS)
+            COE: Cp258_1406(ileS)
+            COU: Cp162_1382(ileS)
+            CRD: CRES_0804(ileS)
+            CUL: CULC22_01502(ileS)
+            CUC: CULC809_01487(ileS)
+            CUE: CULC0102_1621(ileS)
+            CVA: CVAR_1171(ileS)
+            CHN: A605_09415(ileS)
+            CCN: H924_09030(ileS)
+            CTER: A606_04720(ileS)
+            CMD: B841_08740(ileS)
+            CAZ: CARG_06615(ileS)
+            CFN: CFAL_04450(ileS)
+            CCG: CCASEI_05560(ileS)
+            CVT: B843_08915(ileS)
+            CGY: CGLY_09665(ileS)
+            NFA: nfa17760(ileS)
+            NCY: NOCYR_1884(ileS)
+            NBR: O3I_010475(ileS) O3I_011775(ileS)
+            NNO: NONO_c23780(ileS)
+            RHA: RHA1_ro01078(ileS)
+            RER: RER_35420(ileS)
+            REY: O5Y_16215(ileS)
+            ROP: ROP_08060(ileS)
+            ROA: Pd630_LPD05172
+            REQ: REQ_27680(ileS)
+            RPY: Y013_05705(ileS)
+            GBR: Gbro_3007
+            GPO: GPOL_c27640(ileS)
+            GOR: KTR9_2998
+            TPR: Tpau_2636
+            SRT: Srot_2561
+            SCO: SCO2076(ileS)
+            SMA: SAV_6130(ileS)
+            SGR: SGR_5429(ileS)
+            SCB: SCAB_68091(ileS)
+            SSX: SACTE_1505
+            SVL: Strvi_7157
+            SCT: SCAT_1193(ileS)
+            SCY: SCATT_11920
+            SFA: Sfla_4744
+            SBH: SBI_07887(ileS)
+            SHY: SHJG_3556
+            SHO: SHJGH_3321
+            SVE: SVEN_1731
+            SDV: BN159_6366(ileS)
+            SALB: XNR_4803
+            STRP: F750_1937
+            SFI: SFUL_1648
+            SCI: B446_10890(ileS)
+            SRC: M271_35980
+            SALU: DC74_2555
+            KSK: KSE_21150(ileS)
+            TWH: TWT477(ileS)
+            TWS: TW287(ileS)
+            LXX: Lxx07970(ileS)
+            LXY: O159_15210
+            CMI: CMM_1482(ileS)
+            CMS: CMS_1823(ileS)
+            CMC: CMN_01460(ileS)
+            MTS: MTES_3345(ileS)
+            ART: Arth_2398(ileS)
+            AAU: AAur_2374(ileS)
+            ACH: Achl_2152(ileS)
+            AAI: AARI_18280(ileS)
+            APN: Asphe3_22730
+            ARR: ARUE_c25290(ileS)
+            RSA: RSal33209_3258(ileS)
+            KRH: KRH_11230(ileS)
+            MLU: Mlut_10050(ileS)
+            RMU: RMDY18_08920
+            RDN: HMPREF0733_12078(ileS)
+            BCV: Bcav_2568(ileS)
+            BFA: Bfae_09860
+            JDE: Jden_0970
+            KSE: Ksed_09150(ileS)
+            XCE: Xcel_1148
+            IVA: Isova_1169
+            SKE: Sked_23920
+            CFL: Cfla_1455
+            CFI: Celf_1483
+            CGA: Celgi_2130
+            ICA: Intca_2214
+            PAC: PPA0216(ileS)
+            PAK: HMPREF0675_3261(ileS)
+            PAV: TIA2EST22_01110(ileS)
+            PAX: TIA2EST36_01110(ileS)
+            PAZ: TIA2EST2_01040(ileS)
+            PAW: PAZ_c02370(ileS)
+            PAD: TIIST44_05770(ileS)
+            PCN: TIB1ST10_01125(ileS)
+            PACH: PAGK_0246
+            PFR: PFREUD_03860(ileS)
+            PPC: HMPREF9154_2861(ileS)
+            PBO: PACID_06150
+            PRA: PALO_09470(ileS)
+            MPH: MLP_00520(ileS)
+            NCA: Noca_1198(ileS)
+            KFL: Kfla_2895
+            TFU: Tfu_1120(ileS)
+            NDA: Ndas_0907
+            NAL: B005_3808(ileS)
+            TCU: Tcur_2916
+            SRO: Sros_2880
+            FRA: Francci3_1424(ileS)
+            FRE: Franean1_5088(ileS)
+            FRI: FraEuI1c_2387
+            FAL: FRAAL2207(ileS)
+            FSY: FsymDg_3066
+            ACE: Acel_1029(ileS)
+            NML: Namu_3793
+            GOB: Gobs_3252
+            BSD: BLASA_2235(ileS)
+            MMAR: MODMU_3443(ileS)
+            KRA: Krad_3498(ileS)
+            SEN: SACE_5828(ileS)
+            SVI: Svir_27300(ileS)
+            TBI: Tbis_1416
+            AMD: AMED_2964(ileS)
+            AMN: RAM_15070(ileS)
+            AMM: AMES_2932(ileS)
+            AMZ: B737_2933(ileS)
+            AOI: AORI_5601(ileS)
+            PDX: Psed_2816
+            AMI: Amir_5753(ileS)
+            SESP: BN6_68960(ileS)
+            KAL: KALB_5680 KALB_7101
+            STP: Strop_3487(ileS)
+            SAQ: Sare_3866(ileS)
+            MAU: Micau_4897
+            MIL: ML5_3402
+            VMA: VAB18032_28546(ileS)
+            AMS: AMIS_11350
+            ASE: ACPL_1366(ileS) ACPL_5057(ileS)
+            ACTN: L083_5336(ileS)
+            AFS: AFR_03465(ileS) AFR_07625(ileS)
+            CAI: Caci_5739(ileS)
+            SNA: Snas_0688
+            AHE: Arch_0553
+            MCU: HMPREF0573_11540(ileS2)
+            TPY: CQ11_02145(ileS)
+            BLO: BL1777(ileS)
+            BLJ: BLD_1953(ileS)
+            BLN: Blon_0653(ileS)
+            BLON: BLIJ_0659
+            BLF: BLIF_1530
+            BLL: BLJ_1511(ileS)
+            BLB: BBMN68_1815(ileS)
+            BLM: BLLJ_1483
+            BLK: BLNIAS_00649
+            BAD: BAD_1187(ileS)
+            BLA: BLA_0497(ileS)
+            BLC: Balac_1291(ileS)
+            BLT: Balat_1291(ileS)
+            BBB: BIF_01997
+            BBC: BLC1_1248
+            BNM: BALAC2494_01429
+            BLV: BalV_1249(ileS)
+            BLW: W7Y_1296
+            BLS: W91_1325
+            BANI: Bl12_1209
+            BANL: BLAC_06480(ileS)
+            BNI: BANAN_06330(ileS)
+            BDE: BDP_1645(ileS)
+            BBI: BBIF_1319(ileS)
+            BBP: BBPR_1362(ileS)
+            BBF: BBB_1343(ileS)
+            BBV: HMPREF9228_1453(ileS)
+            BBRU: Bbr_1414(ileS)
+            BAST: BAST_0475
+            BTP: D805_0500(ileS)
+            GVA: HMPREF0424_0433(ileS)
+            GVG: HMPREF0421_20485(ileS)
+            GVH: HMPREF9231_1070(ileS)
+            RXY: Rxyl_2428
+            RRD: RradSPS_0548
+            CWO: Cwoe_5846
+            AFO: Afer_1212
+            AYM: YM304_19550(ileS)
+            CCU: Ccur_06340
+            SHI: Shel_10880
+            APV: Apar_0841
+            ELE: Elen_1557
+            EYY: EGYY_14810(IleS)
+            OLS: Olsu_1041
+            CGO: Corgl_1018
+            GPA: GPA_04470
+            AEQ: AEQU_1006
+            CTR: CT_019(ileS)
+            CTD: CTDEC_0019(ileS)
+            CTF: CTDLC_0019(ileS)
+            CTRD: SOTOND1_00021
+            CTRO: SOTOND5_00021
+            CTRT: SOTOND6_00021
+            CTA: CTA_0021(ileS)
+            CTY: CTR_0191(ileS)
+            CRA: CTO_0099
+            CTRQ: A363_00021
+            CTRX: A5291_00021
+            CTRZ: A7249_00021
+            CTRP: L11322_00021
+            CTLJ: L1115_00021
+            CTLX: L1224_00021
+            CTLL: L1440_00021
+            CTB: CTL0274(ileS)
+            CTRR: L225667R_00021
+            CTLF: CTLFINAL_01455(ileS)
+            CTLI: CTLINITIAL_01455(ileS)
+            CTL: CTLon_0269(ileS)
+            CTRU: L2BUCH2_00021
+            CTRL: L2BLST_00021
+            CTRV: L2BCV204_00021
+            CTRM: L2BAMS1_00021
+            CTLA: L2BAMS2_00021
+            CTLM: L2BAMS3_00021
+            CTLS: L2BAMS4_00021
+            CTLZ: L2BAMS5_00021
+            CTLC: L2BCAN1_00021
+            CTLN: L2BCAN2_00021
+            CTLB: L2B795_00021
+            CTLQ: L2B8200_00021
+            CTO: CTL2C_590(ileS)
+            CTRN: L3404_00021
+            CTJ: JALI_0191(ileS)
+            CTZ: CTB_0191(ileS)
+            CTG: E11023_00105(ileS)
+            CTK: E150_00105(ileS)
+            CSW: SW2_0191(ileS)
+            CES: ESW3_0191(ileS)
+            CTRB: BOUR_00021
+            CTRE: SOTONE4_00021
+            CTRS: SOTONE8_00021
+            CFS: FSW4_0191(ileS)
+            CFW: FSW5_0191(ileS)
+            CTRF: SOTONF3_00021
+            CTCH: O173_00105
+            CTN: G11074_00105(ileS)
+            CTQ: G11222_00105(ileS)
+            CTV: CTG9301_00105(ileS)
+            CTW: G9768_00105(ileS)
+            CTRG: SOTONG1_00021
+            CTRI: BN197_0191(ileS)
+            CTRA: BN442_0191(ileS)
+            CTRH: SOTONIA1_00021
+            CTRJ: SOTONIA3_00021
+            CTRK: SOTONK1_00021
+            CTJT: CTJTET1_00105(ileS)
+            CTCF: CTRC69_00105(ileS)
+            CTFS: CTRC342_00105(ileS)
+            CTHF: CTRC852_00105(ileS)
+            CTCJ: CTRC943_00100(ileS)
+            CTHJ: CTRC953_00105(ileS)
+            CTMJ: CTRC966_00110(ileS)
+            CTTJ: CTRC971_00110(ileS)
+            CTJS: CTRC122_00105(ileS)
+            CTRC: CTRC55_00110(ileS)
+            CTRW: CTRC3_00105(ileS)
+            CTRY: CTRC46_00105(ileS)
+            CTCT: CTW3_00105
+            CMU: TC_0288(ileS)
+            CPN: CPn0109(ileS)
+            CPA: CP0665(ileS)
+            CPJ: CPj0109(ileS)
+            CPT: CpB0110(ileS)
+            CLP: CPK_ORF00619(ileS)
+            CPM: G5S_1039(ileS)
+            CPEC: CPE3_0630(ileS)
+            CPEO: CPE1_0629(ileS)
+            CPER: CPE2_0630(ileS)
+            CHP: CPSIT_0706(ileS)
+            CHB: G5O_0698(ileS)
+            CHS: CPS0A_0724(ileS)
+            CHI: CPS0B_0715(ileS)
+            CHT: CPS0D_0720(ileS)
+            CHC: CPS0C_0721(ileS)
+            CHR: Cpsi_6481(ileS)
+            CPSC: B711_0767(ileS)
+            CPSN: B712_0711(ileS)
+            CPSB: B595_0765(ileS)
+            CPSG: B598_0708(ileS)
+            CPSM: B602_0715(ileS)
+            CPSI: B599_0713(ileS)
+            CPSV: B600_0762(ileS)
+            CPSW: B603_0718(ileS)
+            CPST: B601_0709(ileS)
+            CPSD: BN356_6511(ileS)
+            CPSA: AO9_03395(ileS)
+            CAV: M832_04370(ileS)
+            CCA: CCA00664(ileS)
+            CAB: CAB634(ileS)
+            CFE: CF0347(ileS)
+            PCU: pc0494(ileS)
+            PUV: PUV_12720(ileS)
+            WCH: wcw_0530(ileS)
+            SNG: SNE_A16000(ileS)
+            OTE: Oter_2693
+            CAA: Caka_0910
+            MIN: Minf_0370(ileS)
+            AMU: Amuc_0189
+            BBU: BB_0833(ileS)
+            BBZ: BbuZS7_0862(ileS)
+            BBN: BbuN40_0833(ileS)
+            BBJ: BbuJD1_0833(ileS)
+            BBUR: L144_04100(ileS)
+            BGA: BG0858(ileS)
+            BGB: KK9_0872(ileS)
+            BGN: BgCN_0865
+            BAF: BAPKO_0886(ileS)
+            BAFZ: BafPKo_0860(ileS)
+            BAFH: BafHLJ01_0918(ileS)
+            BBS: BbiDN127_0848(ileS)
+            BTU: BT0833(ileS)
+            BHR: BH0833(ileS)
+            BDU: BDU_846(ileS)
+            BRE: BRE_844(ileS)
+            BCW: Q7M_852
+            BMO: I871_04385
+            TPA: TP0452(ileS)
+            TPW: TPANIC_0452(ileS)
+            TPP: TPASS_0452(ileS)
+            TPU: TPADAL_0452(ileS)
+            TPH: TPChic_0452(ileS)
+            TPO: TPAMA_0452(ileS)
+            TPC: TPECDC2_0452(ileS)
+            TPG: TPEGAU_0452(ileS)
+            TPM: TPESAMD_0452(ileS)
+            TPB: TPFB_0452(ileS)
+            TDE: TDE2663(ileS)
+            TSU: Tresu_1137
+            TBE: Trebr_1528
+            TAZ: TREAZ_0127(ileS)
+            TPI: TREPR_2528(ileS)
+            TPL: TPCCA_0452(ileS)
+            TPED: TPE_0792(ileS)
+            SCD: Spica_1181
+            SSM: Spirs_1894
+            STA: STHERM_c15920
+            STQ: Spith_1644
+            SFC: Spiaf_2477
+            SLR: L21SP2_0801
+            SBU: SpiBuddy_1314
+            SCC: Spico_0522
+            SGP: SpiGrapes_0488
+            LIL: LA_1325(ileS)
+            LIE: LIF_A1064(ileS)
+            LIC: LIC12400(ileS)
+            LBJ: LBJ_2270(ileS)
+            LBL: LBL_0837(ileS)
+            LBI: LEPBI_I2290(ileS)
+            LBF: LBF_2221(ileS)
+            TPX: Turpa_3209
+            BHY: BHWA1_01321(iars)
+            BRM: Bmur_1889
+            BPO: BP951000_0559(iars)
+            BPJ: B2904_orf810(syi)
+            BPIP: BPP43_00200
+            BPW: WESB_1860(syi)
+            BIP: Bint_0537(iars)
+            ABA: Acid345_1861
+            ACA: ACP_0489(ileS)
+            ACM: AciX9_1485
+            GMA: AciX8_2410
+            TSA: AciPR4_1890
+            TRS: Terro_1902
+            SUS: Acid_5353
+            CTM: Cabther_A0337
+            FSU: Fisuc_1805(ileS)
+            FSC: FSU_2306(ileS) FSU_2311
+            EMI: Emin_1144
+            RSD: TGRD_617
+            FNU: FN0067
+            FNC: HMPREF0946_01815
+            FUS: HMPREF0409_01885
+            IPO: Ilyop_0661
+            LBA: Lebu_0360
+            STR: Sterm_3938
+            SMF: Smon_1094
+            GAU: GAU_1399(ileS)
+            GBA: J421_3048
+            TAI: Taci_0985
+            ACO: Amico_0961
+            TLI: Tlie_0933
+            AMO: Anamo_0928
+            RBA: RB7259(ileS)
+            PSL: Psta_3275
+            PLM: Plim_2426
+            PBS: Plabr_3540
+            IPA: Isop_0338
+            SACI: Sinac_1304
+            PHM: PSMK_10920(ileS)
+            SYN: sll1362(ileS)
+            SYZ: MYO_19780(ileS)
+            SYY: SYNGTS_0971(ileS)
+            SYT: SYNGTI_0971(ileS)
+            SYS: SYNPCCN_0970(ileS)
+            SYQ: SYNPCCP_0970(ileS)
+            SYW: SYNW0289(ileS)
+            SYC: syc1669_d(ileS)
+            SYF: Synpcc7942_2437(ileS)
+            SYD: Syncc9605_0284(ileS)
+            SYE: Syncc9902_2060(ileS)
+            SYG: sync_0333(ileS)
+            SYR: SynRCC307_2212(ileS)
+            SYX: SynWH7803_0335(ileS)
+            SYP: SYNPCC7002_A1756(ileS)
+            CYA: CYA_1703(ileS)
+            CYB: CYB_1022(ileS)
+            SYNE: Syn6312_2706
+            SYNP: Syn7502_01401
+            TEL: tlr2330(ileS)
+            THN: NK55_08950(ileS)
+            MAR: MAE_11160(ileS)
+            CYT: cce_4545(ileS)
+            CYP: PCC8801_2707(ileS)
+            CYC: PCC7424_5054(ileS)
+            CYN: Cyan7425_3114(ileS)
+            CYH: Cyan8802_3396(ileS)
+            CYJ: Cyan7822_3220
+            AMR: AM1_3907(ileS)
+            CGC: Cyagr_1903
+            CAN: Cyan10605_2910
+            CSN: Cyast_1723
+            DSL: Dacsa_1505
+            HAO: PCC7418_0542
+            GLP: Glo7428_0123
+            CMP: Cha6605_4961
+            CYU: UCYN_00420
+            TER: Tery_3586
+            LEP: Lepto7376_2726
+            GEI: GEI7407_2864
+            OAC: Oscil6304_3927
+            ONI: Osc7112_5711
+            PSEU: Pse7367_0450
+            CEP: Cri9333_2180
+            MIC: Mic7113_3532
+            ARP: NIES39_L05920(ileS)
+            GVI: gvip495(ileS)
+            GLJ: GKIL_4084(ileS)
+            ANA: alr1073(ileS)
+            NPU: Npun_F1478(ileS)
+            NOS: Nos7107_2501
+            NOP: Nos7524_4289
+            AVA: Ava_3774(ileS)
+            ANB: ANA_C11959(ileS)
+            ACY: Anacy_3621
+            NAZ: Aazo_5054
+            CSG: Cylst_0922
+            CALO: Cal7507_1410
+            CALT: Cal6303_4247
+            RIV: Riv7116_4116
+            PMA: Pro_0268(ileS)
+            PMM: PMM0238(ileS)
+            PMT: PMT1817(ileS)
+            PMN: PMN2A_1605(ileS)
+            PMI: PMT9312_0240(ileS)
+            PMB: A9601_02591(ileS)
+            PMC: P9515_02701(ileS)
+            PMF: P9303_24331(ileS)
+            PMG: P9301_02601(ileS)
+            PMH: P9215_02601(ileS)
+            PMJ: P9211_02611(ileS)
+            PME: NATL1_03171(ileS)
+            CTHE: Chro_0812
+            PLP: Ple7327_2261
+            SCS: Sta7437_0071
+            BTH: BT_0806(ileS)
+            BFR: BF2275
+            BFS: BF2367(ileS)
+            BFG: BF638R_2379(ileS)
+            BVU: BVU_3059(ileS)
+            BHL: Bache_2349
+            BSA: Bacsa_3591
+            BACC: BRDCF_03060
+            PGI: PG1596(ileS)
+            PGN: PGN_0517(ileS)
+            PGT: PGTDC60_0705(ileS)
+            PAH: Poras_0089
+            PDI: BDI_0448(ileS)
+            PPN: Palpr_1675
+            OSP: Odosp_2483
+            TFO: BFO_2936(ileS)
+            BVS: BARVI_01225
+            APS: CFPG_245(ileS)
+            PRU: PRU_1069(ileS)
+            PMZ: HMPREF0659_A6605(ileS)
+            PDN: HMPREF9137_2459(ileS)
+            PIT: PIN17_0023(ileS)
+            PDT: Prede_2015
+            PRO: HMPREF0669_00556
+            AFD: Alfi_2452
+            ASH: AL1_29810
+            DOI: FH5T_08670
+            SRU: SRU_0456(ileS)
+            SRM: SRM_00532(ileS)
+            RMR: Rmar_2048
+            RMG: Rhom172_0818
+            CPI: Cpin_0398
+            NKO: Niako_5716
+            PHE: Phep_0420(ileS)
+            PSN: Pedsa_2543
+            SHG: Sph21_0041
+            SCN: Solca_3313
+            HHY: Halhy_1949
+            SGN: SGRA_1497(ileS)
+            CMR: Cycma_1469
+            BBD: Belba_0616
+            EVI: Echvi_0911
+            CHU: CHU_3676(ileS)
+            DFE: Dfer_4664(ileS)
+            SLI: Slin_0044
+            LBY: Lbys_2118
+            RSI: Runsl_2089
+            FLI: Fleli_1866
+            EOL: Emtol_2076
+            FAE: FAES_3312
+            HSW: Hsw_4238
+            MTT: Ftrac_2465
+            AAS: Aasi_0436(ileS)
+            CHE: CAHE_0599(ileS)
+            GFO: GFO_3183(ileS)
+            FJO: Fjoh_0704(ileS)
+            FPS: FP0217(ileS)
+            FBR: FBFL15_2763(ileS)
+            FCO: FCOL_13170(ileS)
+            FIN: KQS_00380(ileS)
+            COC: Coch_0592(ileS)
+            CCM: Ccan_02420
+            RBI: RB2501_07800(ileS)
+            ZPR: ZPR_0175
+            CAT: CA2559_02490
+            RAN: Riean_1126
+            RAI: RA0C_1394
+            RAR: RIA_1100
+            RAG: B739_0764
+            RAE: G148_0483
+            FBC: FB2170_07105
+            CAO: Celal_1200
+            CLY: Celly_1070
+            WVI: Weevi_1423
+            KDI: Krodi_1084
+            LAN: Lacal_0825
+            ZGA: zobellia_1449(ileS)
+            MRS: Murru_1123
+            ASL: Aeqsu_1479
+            ORH: Ornrh_1989
+            PTQ: P700755_001550
+            NDO: DDD_1116(ileS)
+            POM: MED152_09480(ileS)
+            FBA: FIC_00180(ileS)
+            SMS: SMDSEM_019(ileS)
+            SUM: SMCARI_021(ileS)
+            BBL: BLBBGE_164(ileS)
+            BPI: BPLAN_470(ileS)
+            BMM: MADAR_448(ileS)
+            BCP: BLBCPU_155(ileS)
+            BBG: BGIGA_462(ileS)
+            BBQ: BLBBOR_168
+            BLP: BPAA_470(ileS)
+            BLU: K645_801
+            FTE: Fluta_1393
+            OHO: Oweho_2569
+            UDI: ASNER_066(ileS)
+            CTE: CT0311(ileS)
+            CPC: Cpar_1726(ileS)
+            CCH: Cag_0523(ileS)
+            CPH: Cpha266_1991(ileS)
+            CPB: Cphamn1_1887(ileS)
+            CLI: Clim_1773(ileS)
+            PVI: Cvib_0475(ileS)
+            PLT: Plut_0423(ileS)
+            PPH: Ppha_2287(ileS)
+            PAA: Paes_1709(ileS)
+            CTS: Ctha_0754(ileS)
+            IAL: IALB_0473(ileS)
+            MRO: MROS_2112
+            DET: DET1038(ileS)
+            DEH: cbdb_A1012(ileS)
+            DEB: DehaBAV1_0920(ileS)
+            DEV: DhcVS_908(ileS)
+            DEG: DehalGT_0874
+            DMC: btf_991(ileS)
+            DMD: dcmb_974(ileS)
+            DMG: GY50_0923(ileS)
+            DLY: Dehly_0746
+            RRS: RoseRS_0727
+            RCA: Rcas_0322
+            CAU: Caur_2692
+            CAG: Cagg_0718
+            CHL: Chy400_2909
+            HAU: Haur_2971
+            TRO: trd_1093(ileS)
+            STI: Sthe_0337
+            ATM: ANT_22850(ileS)
+            CAP: CLDAP_37140(ileS)
+            DRA: DR_1335(ileS)
+            DGE: Dgeo_1101(ileS)
+            DDR: Deide_11660(ileS)
+            DMR: Deima_1810
+            DPT: Deipr_0947
+            DGO: DGo_CA1562(ileS)
+            DPD: Deipe_3679
+            TRA: Trad_2316
+            TTH: TTC0702(ileS)
+            TTJ: TTHA1067(ileS)
+            TTS: Ththe16_1078
+            TTL: TtJL18_0993
+            TSC: TSC_c15590(ileS)
+            THC: TCCBUS3UF1_15280
+            TOS: Theos_1466
+            MRB: Mrub_1360
+            MRE: K649_06460(ileS)
+            MSV: Mesil_2036
+            OPR: Ocepr_1147
+            MHD: Marky_1232
+            AAE: aq_305(ileS)
+            HYA: HY04AAS1_0775
+            HHO: HydHO_0772
+            HYS: HydSN_0788
+            HTH: HTH_0841(ileS)
+            HTE: Hydth_0841
+            TAL: Thal_1080
+            TRD: THERU_02975(ileS)
+            SUL: SYO3AOP1_1087
+            SAF: SULAZ_1531(ileS)
+            PMX: PERMA_0684(ileS)
+            TAM: Theam_0642
+            DTE: Dester_0638
+            TMA: TM1361(ileS)
+            TMM: Tmari_1368
+            TMI: THEMA_07535(ileS)
+            TPT: Tpet_1422(ileS)
+            TLE: Tlet_0382(ileS)
+            TRQ: TRQ2_1468(ileS)
+            TNA: CTN_1230(ileS)
+            TNP: Tnap_1442
+            TTA: Theth_1669
+            TME: Tmel_0461(ileS)
+            TAF: THA_833(ileS)
+            FNO: Fnod_1425(ileS)
+            FPE: Ferpe_1791
+            PMO: Pmob_1626(ileS)
+            KOL: Kole_0011(ileS)
+            MPZ: Marpi_1865
+            MPG: Theba_1316
+            CCZ: CCALI_01420
+            FGI: FGOP10_02050
+            CEX: CSE_03800(ileS)
+            DIN: Selin_1525
+            DDF: DEFDS_1185(ileS)
+            DAP: Dacet_1770
+            CNI: Calni_1082
+            FSI: Flexsi_0792
+            DTH: DICTH_1324(ileS)
+            DTU: Dtur_1429
+            TYE: THEYE_A0654(ileS)
+            NDE: NIDE1077(ileS)
+            LFC: LFE_2363
+            LFI: LFML04_2467(ileS)
+            TID: Thein_1381
+            TOP: TOPB45_0902
+            SAAL: L336_0727(ileS)
+            SBE: RAAC3_TM7C01G0535
+            TTR: Tter_0977
+            MOX: DAMO_3136(ileS)
+            HHS: HHS_05020(ileS)
+            SRB: P148_SR1C001G0345
+            WWE: P147_WWE3C01G0169
+            MJA: MJ_0947(ileS)
+            MFE: Mefer_0836(ileS)
+            MVU: Metvu_1504(ileS)
+            MFS: MFS40622_1199
+            MIF: Metin_0651
+            MIG: Metig_0841
+            MMP: MMP1474(ileS)
+            MMQ: MmarC5_0104(ileS)
+            MMX: MmarC6_1199(ileS)
+            MMZ: MmarC7_0719(ileS)
+            MMD: GYY_08210(ileS)
+            MAE: Maeo_0945(ileS)
+            MVN: Mevan_0784(ileS)
+            MVO: Mvol_1188
+            MOK: Metok_1376
+            MAC: MA2431(ileS)
+            MBA: Mbar_A3613
+            MMA: MM_2967(ileS)
+            MMAZ: MmTuc01_3059
+            MBU: Mbur_0185(ileS)
+            MMH: Mmah_0782
+            MEV: Metev_1908
+            MZH: Mzhil_0796
+            MPY: Mpsy_0259(ileS)
+            MHZ: Metho_1546
+            MTP: Mthe_0929(ileS)
+            MCJ: MCON_1410(ileS)
+            MHI: Mhar_1785
+            MHU: Mhun_0606(ileS)
+            MLA: Mlab_0186(ileS)
+            MEM: Memar_0403(ileS)
+            MBG: BN140_0198(ileS)
+            MPI: Mpet_2134
+            MBN: Mboo_2269(ileS)
+            MFO: Metfor_0393
+            MPL: Mpal_0152(ileS)
+            MPD: MCP_0220(ileS)
+            MEZ: Mtc_0362(ileS)
+            RCI: RCIX379(ileS)
+            MER: H729_06075(ileS)
+            MTH: MTH1375(ileS)
+            MMG: MTBMA_c17620(ileS)
+            MST: Msp_1468(ileS)
+            MSI: Msm_1341(ileS)
+            MRU: mru_0126(ileS)
+            MEB: Abm4_1686(ileS)
+            MEL: Metbo_0154
+            MEW: MSWAN_2331
+            METH: MBMB1_1965(ileS)
+            MFV: Mfer_1117
+            MKA: MK0899(IleS)
+            MAX: MMALV_04640
+            AFU: AF0633(ileS)
+            APO: Arcpr_0361
+            AVE: Arcve_0059
+            AST: Asulf_00818
+            FPL: Ferp_1609
+            HAL: VNG2190G(ileS)
+            HSL: OE4068F(ileS)
+            HMA: rrnAC2634(ileS)
+            HHI: HAH_3050(ileS)
+            HHN: HISP_15520
+            HWA: HQ2671A(ileS)
+            HWC: Hqrw_3002(ileS)
+            NPH: NP0610A(ileS)
+            NMO: Nmlp_3573(ileS)
+            HLA: Hlac_0887(ileS)
+            HUT: Huta_1825(ileS)
+            HTI: HTIA_1840
+            HMU: Hmuk_1055(ileS)
+            HTU: Htur_0089
+            NMG: Nmag_1744
+            HVO: HVO_1547(ileS)
+            HME: HFX_1608(ileS) HFX_4129(ileS)
+            HJE: HacjB3_00270(ileS)
+            HBO: Hbor_16810
+            HXA: Halxa_1219
+            NAT: NJ7G_0544 NJ7G_0545
+            NPE: Natpe_0076
+            NGE: Natgr_1682
+            HRU: Halru_3155
+            NOU: Natoc_0070
+            SALI: L593_07280(ileS)
+            TAC: Ta0879(ileS)
+            TVO: TVN0829(ileS)
+            PTO: PTO0411(ileS)
+            FAC: FACI_IFERC01G0758
+            TAR: TALC_00515
+            PHO: PH1065(ileS)
+            PAB: PAB0616(ileS)
+            PFU: PF1096(ileS)
+            PFI: PFC_04705(ileS)
+            PYN: PNA2_1501
+            PYA: PYCH_05590
+            PYS: Py04_0776
+            TKO: TK1748(ileS)
+            TON: TON_1803(ileS)
+            TGA: TGAM_0588(ileS)
+            TSI: TSIB_1124(ileS)
+            TBA: TERMP_02153
+            THE: GQS_06155(ileS)
+            THA: TAM4_732
+            THM: CL1_0874
+            TLT: OCC_00085
+            THS: TES1_0040
+            TNU: BD01_1452
+            ABI: Aboo_0154
+            ACF: AciM339_0894
+            APE: APE_0374(ileS)
+            ACJ: ACAM_0277(ileS)
+            SMR: Smar_0066(ileS)
+            SHC: Shell_0748
+            IHO: Igni_1017(ileS)
+            DKA: DKAM_0607(ileS)
+            DMU: Desmu_0350
+            DFD: Desfe_0709
+            TAG: Tagg_0549
+            IAG: Igag_1896
+            THG: TCELL_0816
+            HBU: Hbut_1425(ileS)
+            PFM: Pyrfu_1655
+            SSO: SSO0722(ileS)
+            SOL: Ssol_1780
+            STO: ST0431(ileS)
+            SAI: Saci_0599(ileS)
+            SACN: SacN8_02910(ileS)
+            SACR: SacRon12I_02900(ileS)
+            SACS: SUSAZ_02715
+            SIA: M1425_1418(ileS)
+            SIM: M1627_1468(ileS)
+            SID: M164_1412(ileS)
+            SIY: YG5714_1413(ileS)
+            SIN: YN1551_1430(ileS)
+            SII: LD85_1623
+            SIH: SiH_1364
+            SIR: SiRe_1286
+            SIC: SiL_1276
+            MSE: Msed_0089(ileS)
+            MCN: Mcup_1969
+            AHO: Ahos_0842
+            PAI: PAE1617(ileS)
+            PIS: Pisl_1650(ileS)
+            PCL: Pcal_0601
+            PAS: Pars_1993(ileS)
+            PYR: P186_0004
+            POG: Pogu_0129
+            TNE: Tneu_0677(ileS)
+            CMA: Cmaq_1197(ileS)
+            TUZ: TUZN_0611
+            TTN: TTX_0858(ileS)
+            VDI: Vdis_1286
+            VMO: VMUT_2113
+            TPE: Tpen_0130(ileS)
+            THB: N186_01575
+            ASC: ASAC_0345
+            CLG: Calag_0712
+            FFO: FFONT_0984
+            NMR: Nmar_1120
+            NIR: NSED_06490
+            NKR: NKOR_06665
+            CSY: CENSYa_0112
+            NGA: Ngar_c05760(ileS)
+            CSU: CSUB_C1213
+            NEQ: NEQ230
+            KCR: Kcr_1199
+            HAH: Halar_1449
+DBLINKS     ExplorEnz - The Enzyme Database: 6.1.1.5
+            IUBMB Enzyme Nomenclature: 6.1.1.5
+            ExPASy - ENZYME nomenclature database: 6.1.1.5
+            BRENDA, the Enzyme Database: 6.1.1.5
+            CAS: 9030-96-0
+///

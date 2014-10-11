@@ -1,0 +1,11 @@
+ENTRY       R07369                      Reaction
+NAME        flavanone,NADPH:oxygen oxidoreductase
+DEFINITION  Flavanone + NADPH + H+ + Oxygen <=> 3'-Hydroxyflavanone + NADP+ + H2O
+EQUATION    C00766 + C00005 + C00080 + C00007 <=> C15204 + C00006 + C00001
+COMMENT     first step of two-step reaction (see R10069, R07369+R07370)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP10537  C00007_C15204 leave
+            RP11227  C00766_C15204 main [RC:RC00490]
+ENZYME      1.14.13.88
+///

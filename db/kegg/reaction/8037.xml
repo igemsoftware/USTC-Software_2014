@@ -1,0 +1,9 @@
+ENTRY       R08037                      Reaction
+DEFINITION  2 4-Hydroxylamino-2,6-dinitrotoluene + 2 2-Hydroxylamino-4,6-dinitrotoluene + Oxygen <=> 2 2,4',6,6'-Tetranitro-2',4-azoxytoluene + 4 H2O
+EQUATION    2 C16392 + 2 C16393 + C00007 <=> 2 C16412 + 4 C00001
+RPAIR       RP00013  C00001_C00007 cofac
+            RP10476  C00001_C16393 leave
+            RP12189  C16392_C16412 main [RC:RC02110]
+            RP12193  C16393_C16412 main [RC:RC02111]
+PATHWAY     rn00633  Nitrotoluene degradation
+///

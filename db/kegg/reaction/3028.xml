@@ -1,0 +1,15 @@
+ENTRY       R03028                      Reaction
+NAME        glutaconyl-1-CoA carboxy-lyase;
+            4-carboxybut-2-enoyl-CoA carboxy-lyase (but-2-enoyl-CoA-forming)
+DEFINITION  Glutaconyl-1-CoA <=> Crotonoyl-CoA + CO2
+EQUATION    C02411 <=> C00877 + C00011
+COMMENT     following after R10074 (ec 1.3.8.6)
+            requires Na+ and acts as a sodium pump (ec 4.1.1.70)
+RPAIR       RP02699  C00877_C02411 main [RC:RC00832]
+            RP07306  C00011_C02411 leave
+ENZYME      1.3.8.6         4.1.1.70
+PATHWAY     rn00362  Benzoate degradation
+            rn00650  Butanoate metabolism
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K01615  glutaconyl-CoA decarboxylase [EC:4.1.1.70]
+///

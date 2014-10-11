@@ -1,0 +1,47 @@
+ENTRY       EC 1.14.13.117              Enzyme
+NAME        isoleucine N-monooxygenase;
+            CYP79D3;
+            CYP79D4
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     L-isoleucine,NADPH:oxygen oxidoreductase (N-hydroxylating)
+REACTION    L-isoleucine + 2 O2 + 2 NADPH + 2 H+ = (E)-2-methylbutanal oxime + 2 NADP+ + CO2 + 3 H2O (overall reaction) [RN:R09403];
+            (1a) L-isoleucine + O2 + NADPH + H+ = N-hydroxy-L-isoleucine + NADP+ + H2O [RN:R10027];
+            (1b) N-hydroxy-L-isoleucine + O2 + NADPH + H+ = N,N-dihydroxy-L-isoleucine + NADP+ + H2O [RN:R10028];
+            (1c) N,N-dihydroxy-L-isoleucine = (E)-2-methylbutanal oxime + CO2 + H2O (spontaneous) [RN:R10029]
+ALL_REAC    R09403 R10027 R10028 R10029;
+            (other) R10031 R10032 R10033
+SUBSTRATE   L-isoleucine [CPD:C00407];
+            O2 [CPD:C00007];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            N-hydroxy-L-isoleucine [CPD:C20310];
+            N,N-dihydroxy-L-isoleucine [CPD:C20311]
+PRODUCT     (E)-2-methylbutanal oxime [CPD:C19491];
+            NADP+ [CPD:C00006];
+            CO2 [CPD:C00011];
+            H2O [CPD:C00001];
+            N-hydroxy-L-isoleucine [CPD:C20310];
+            N,N-dihydroxy-L-isoleucine [CPD:C20311]
+COMMENT     A heme-thiolate protein (P-450). This enzyme catalyses two successive N-hydroxylations of L-isoleucine, the first committed steps in the biosynthesis of the cyanogenic glucoside lotaustralin in the plant Lotus japonicus. The product of the two hydroxylations, N,N-dihydroxy-L-isoleucine, is extremely labile and dehydrates spontaneously. The dehydrated product is then subject to a decarboxylation that produces the oxime. It is still not known whether the decarboxylation is spontaneous or catalysed by the enzyme. The product, (E)-2-methylbutanal oxime, undergoes a spontaneous isomerization to the (Z) form. The enzyme can also accept L-valine as substrate, with a lower activity. It is different from EC 1.14.13.118 (valine N-monooxygenase), which prefers L-valine.
+HISTORY     EC 1.14.13.117 created 2010
+REFERENCE   1  [PMID:10636899]
+  AUTHORS   Andersen MD, Busk PK, Svendsen I, Moller BL
+  TITLE     Cytochromes P-450 from cassava (Manihot esculenta Crantz) catalyzing the first steps in the biosynthesis of the cyanogenic glucosides linamarin and lotaustralin. Cloning, functional expression in Pichia pastoris, and substrate specificity of the isolated recombinant enzymes.
+  JOURNAL   J. Biol. Chem. 275 (2000) 1966-75.
+REFERENCE   2  [PMID:15122013]
+  AUTHORS   Forslund K, Morant M, Jorgensen B, Olsen CE, Asamizu E, Sato S, Tabata S, Bak S
+  TITLE     Biosynthesis of the nitrile glucosides rhodiocyanoside A and D and the cyanogenic glucosides lotaustralin and linamarin in Lotus japonicus.
+  JOURNAL   Plant. Physiol. 135 (2004) 71-84.
+  ORGANISM  Lotus japonicus
+  SEQUENCE  [up:Q6J541 Q6J540]
+PATHWAY     ec00460  Cyanoamino acid metabolism
+            ec00966  Glucosinolate biosynthesis
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K14984  isoleucine N-monooxygenase
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.117
+            IUBMB Enzyme Nomenclature: 1.14.13.117
+            ExPASy - ENZYME nomenclature database: 1.14.13.117
+            BRENDA, the Enzyme Database: 1.14.13.117
+///

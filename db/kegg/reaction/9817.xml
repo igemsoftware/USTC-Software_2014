@@ -1,0 +1,11 @@
+ENTRY       R09817                      Reaction
+NAME        beta-amyrin,NADPH:oxygen oxidoreductase
+DEFINITION  beta-Amyrin + 2 Oxygen + 2 NADPH + 2 H+ <=> 11-Oxo-beta-amyrin + 3 H2O + 2 NADP+
+EQUATION    C08616 + 2 C00007 + 2 C00005 + 2 C00080 <=> C19943 + 3 C00001 + 2 C00006
+COMMENT     two-step reaction (see R09815+R09816)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 leave
+            RP15411  C08616_C19943 main [RC:RC02664]
+            RP15412  C00007_C19943 leave
+ENZYME      1.14.13.134
+///

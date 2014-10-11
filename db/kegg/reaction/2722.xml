@@ -1,0 +1,20 @@
+ENTRY       R02722                      Reaction
+NAME        L-serine hydro-lyase [adding 1-C-(indol-3-yl)glycerol 3-phosphate; L-tryptophan and glyceraldehyde-3-phosphate-forming]
+DEFINITION  L-Serine + Indoleglycerol phosphate <=> L-Tryptophan + D-Glyceraldehyde 3-phosphate + H2O
+EQUATION    C00065 + C03506 <=> C00078 + C00118 + C00001
+COMMENT     multi-step reaction (see R02340+R00674)
+RPAIR       RP00587  C00065_C00078 main [RC:RC00210]
+            RP02139  C00118_C03506 main [RC:RC00700]
+            RP05699  C00001_C00065 leave
+            RP07157  C00078_C03506 main [RC:RC02868]
+ENZYME      4.2.1.20
+PATHWAY     rn00260  Glycine, serine and threonine metabolism
+            rn00400  Phenylalanine, tyrosine and tryptophan biosynthesis
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+            rn01230  Biosynthesis of amino acids
+ORTHOLOGY   K01694  tryptophan synthase [EC:4.2.1.20]
+            K01695  tryptophan synthase alpha chain [EC:4.2.1.20]
+            K01696  tryptophan synthase beta chain [EC:4.2.1.20]
+            K06001  tryptophan synthase beta chain [EC:4.2.1.20]
+///

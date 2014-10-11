@@ -1,0 +1,11 @@
+ENTRY       R03467                      Reaction
+NAME        1,2-Diacyl-3-beta-D-galactosyl-sn-glycerol acylhydrolase
+DEFINITION  1,2-Diacyl-3-beta-D-galactosyl-sn-glycerol + 2 H2O <=> 3-beta-D-Galactosyl-sn-glycerol + 2 Carboxylate
+EQUATION    C03692 + 2 C00001 <=> C05401 + 2 C00060
+COMMENT     two-step reaction
+RPAIR       RP04110  C03692_C05401 main [RC:RC00495]
+            RP05681  C00001_C00060 leave
+            RP09153  C00060_C03692 main [RC:RC00094]
+            RP12650  C00060_C03692 main [RC:RC00020]
+ENZYME      3.1.1.26
+///

@@ -1,0 +1,12 @@
+ENTRY       R08264                      Reaction
+DEFINITION  Codeine + Reduced flavoprotein + Oxygen <=> Norcodeine + Formaldehyde + Oxidized flavoprotein + H2O
+EQUATION    C06174 + C03024 + C00007 <=> C16576 + C00067 + C03161 + C00001
+COMMENT     CYP3A4:N-demethylation
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00502  C00007_C00067 leave
+            RP13071  C06174_C16576 main [RC:RC01198]
+            RP13309  C00067_C06174 main [RC:RC02299]
+ENZYME      1.14.13.-
+PATHWAY     rn00982  Drug metabolism - cytochrome P450
+ORTHOLOGY   K17689  cytochrome P450, family 3, subfamily A, polypeptide 4 [EC:1.14.13.32 1.14.13.67 1.14.13.97 1.14.13.157 1.14.13.-]
+///

@@ -1,0 +1,236 @@
+ENTRY       EC 1.17.3.2                 Enzyme
+NAME        xanthine oxidase;
+            hypoxanthine oxidase;
+            hypoxanthine:oxygen oxidoreductase;
+            Schardinger enzyme;
+            xanthine oxidoreductase;
+            hypoxanthine-xanthine oxidase;
+            xanthine:O2 oxidoreductase;
+            xanthine:xanthine oxidase
+CLASS       Oxidoreductases;
+            Acting on CH or CH2 groups;
+            With oxygen as acceptor
+SYSNAME     xanthine:oxygen oxidoreductase
+REACTION    xanthine + H2O + O2 = urate + H2O2 [RN:R02107]
+ALL_REAC    R02107;
+            (other) R00069 R01769 R07942 R07977 R07978 R07979 R08235
+SUBSTRATE   xanthine [CPD:C00385];
+            H2O [CPD:C00001];
+            O2 [CPD:C00007]
+PRODUCT     urate [CPD:C00366];
+            H2O2 [CPD:C00027]
+COMMENT     An iron-molybdenum flavoprotein (FAD) containing [2Fe-2S] centres. Also oxidizes hypoxanthine, some other purines and pterins, and aldehydes, but is distinct from EC 1.2.3.1, aldehyde oxidase. Under some conditions the product is mainly superoxide rather than peroxide: RH + H2O + 2 O2 = ROH + 2 O2.- + 2 H+. The mammalian enzyme predominantly exists as an NAD-dependent dehydrogenase (EC 1.17.1.4, xanthine dehydrogenase). During purification the enzyme is largely converted to the O2-dependent xanthine oxidase form (EC 1.17.3.2). The conversion can be triggered by several mechanisms, including the oxidation of cysteine thiols to form disulfide bonds [4,5,7,10] [which can be catalysed by EC 1.8.4.7, enzyme-thiol transhydrogenase (glutathione-disulfide) in the presence of glutathione disulfide] or limited proteolysis, which results in irreversible conversion. The conversion can also occur in vivo [4,6,10].
+HISTORY     EC 1.17.3.2 created 1961 as EC 1.2.3.2, transferred 1984 to EC 1.1.3.22, modified 1989, transferred 2004 to EC 1.17.3.2, modified 2011
+REFERENCE   1
+  AUTHORS   Avis, P.G., Bergel, F. and Bray, R.C.
+  TITLE     Cellular constituents. The chemistry of xanthine oxidase. Part I. The preparation of a crystalline xanthine oxidase from cow's milk.
+  JOURNAL   J. Chem. Soc. (Lond.) (1955) 1100-1105.
+REFERENCE   2  [PMID:6960894]
+  AUTHORS   Battelli MG, Lorenzoni E.
+  TITLE     Purification and properties of a new glutathione-dependent thiol:disulphide oxidoreductase from rat liver.
+  JOURNAL   Biochem. J. 207 (1982) 133-8.
+  ORGANISM  Rattus norvegicus
+REFERENCE   3
+  AUTHORS   Bray, R.C.
+  TITLE     Xanthine oxidase.
+  JOURNAL   In: Boyer, P.D., Lardy, H. and Myrback, K. (Eds.), The Enzymes, 2nd ed., vol. 7, Academic Press, New York, 1963, p. 533-556.
+REFERENCE   4  [PMID:4342395]
+  AUTHORS   Corte ED, Stirpe F.
+  TITLE     The regulation of rat liver xanthine oxidase. Involvement of thiol groups in the conversion of the enzyme activity from dehydrogenase (type D) into oxidase (type O) and purification of the enzyme.
+  JOURNAL   Biochem. J. 126 (1972) 739-45.
+  ORGANISM  Rattus norvegicus
+REFERENCE   5  [PMID:3459393]
+  AUTHORS   Ikegami T, Nishino T
+  TITLE     The presence of desulfo xanthine dehydrogenase in purified and crude enzyme preparations from rat liver.
+  JOURNAL   Arch. Biochem. Biophys. 247 (1986) 254-60.
+REFERENCE   6  [PMID:3294898]
+  AUTHORS   Engerson TD, McKelvey TG, Rhyne DB, Boggio EB, Snyder SJ, Jones HP
+  TITLE     Conversion of xanthine dehydrogenase to oxidase in ischemic rat tissues.
+  JOURNAL   J. Clin. Invest. 79 (1987) 1564-70.
+REFERENCE   7  [PMID:2610112]
+  AUTHORS   Saito T, Nishino T, Tsushima K
+  TITLE     Interconversion between NAD-dependent and O2-dependent types of rat liver xanthine dehydrogenase and difference in kinetic and redox properties between them.
+  JOURNAL   Adv. Exp. Med. Biol. 253B (1989) 179-83.
+REFERENCE   8  [PMID:2350174]
+  AUTHORS   Carpani G, Racchi M, Ghezzi P, Terao M, Garattini E.
+  TITLE     Purification and characterization of mouse liver xanthine oxidase.
+  JOURNAL   Arch. Biochem. Biophys. 279 (1990) 237-41.
+  ORGANISM  mouse
+REFERENCE   9  [PMID:11092937]
+  AUTHORS   Eger BT, Okamoto K, Enroth C, Sato M, Nishino T, Pai EF, Nishino T.
+  TITLE     Purification, crystallization and preliminary X-ray diffraction studies of xanthine dehydrogenase and xanthine oxidase isolated from bovine milk.
+  JOURNAL   Acta. Crystallogr. D. Biol. Crystallogr. 56 Pt 12 (2000) 1656-8.
+  ORGANISM  Bos taurus
+REFERENCE   10 [PMID:18513323]
+  AUTHORS   Nishino T, Okamoto K, Eger BT, Pai EF, Nishino T
+  TITLE     Mammalian xanthine oxidoreductase - mechanism of transition from xanthine dehydrogenase to xanthine oxidase.
+  JOURNAL   FEBS. J. 275 (2008) 3278-89.
+PATHWAY     ec00230  Purine metabolism
+            ec00232  Caffeine metabolism
+            ec00983  Drug metabolism - other enzymes
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K00106  xanthine dehydrogenase/oxidase
+GENES       HSA: 7498(XDH)
+            PTR: 470347(XDH)
+            PPS: 100986628(XDH)
+            GGO: 101138402(XDH)
+            PON: 100454383(XDH)
+            MCC: 708046(XDH)
+            MCF: 102116275(XDH)
+            MMU: 22436(Xdh)
+            RNO: 497811(Xdh)
+            CGE: 100766626
+            HGL: 101708017(Xdh)
+            TUP: 102477455(XDH)
+            CFA: 483028(XDH)
+            AML: 100465942(XDH)
+            FCA: 101083831 101091189 493692(XDH)
+            PTG: 102954079(XDH) 102969928
+            BTA: 280960(XDH)
+            BOM: 102264420
+            PHD: 102326880(XDH)
+            CHX: 100861280(XDH)
+            SSC: 100515259(XDH)
+            CFR: 102523581(XDH)
+            ECB: 100054601
+            MYB: 102262378(XDH)
+            MYD: 102773370(XDH)
+            PALE: 102884734(XDH)
+            MDO: 100031481(XDH)
+            SHR: 100933358(XDH)
+            OAA: 100078370
+            GGA: 396025(XDH)
+            MGP: 100544067
+            TGU: 100222890(XDH)
+            FAB: 101819038(XDH)
+            PHI: 102106931(XDH)
+            APLA: 101799192(XDH)
+            FPG: 101918653(XDH)
+            FCH: 102052812(XDH)
+            CLV: 102092037(XDH)
+            ASN: 102374197(XDH)
+            PSS: 102461631(XDH)
+            CMY: 102945230(XDH)
+            ACS: 100566790
+            XTR: 100497499
+            DRE: 560486(xdh)
+            TRU: 101073141
+            MZE: 101478907
+            OLA: 101162508
+            XMA: 102231285
+            BFO: BRAFLDRAFT_117011 BRAFLDRAFT_202728 BRAFLDRAFT_216227 BRAFLDRAFT_216260 BRAFLDRAFT_76515 BRAFLDRAFT_89258
+            CIN: 100181350
+            SPU: 576712(XDH)
+            DME: Dmel_CG7642(ry)
+            DPO: Dpse_GA20500(Dpse_ry)
+            DAN: Dana_GF16484 Dana_GF16486 Dana_GF16487 Dana_GF16930(Dana_Xdh)
+            DER: Dere_GG19379(Dere_Xdh) Dere_GG20432 Dere_GG20443
+            DPE: Dper_GL11489 Dper_GL11933 Dper_GL11934 Dper_GL11936 Dper_GL11937 Dper_GL24383(Dper_ry)
+            DSE: Dsec_GM24078 Dsec_GM25759 Dsec_GM25762
+            DSI: Dsim_GD15152 Dsim_GD18875(Dsim_ry) Dsim_GD20337
+            DWI: Dwil_GK11683 Dwil_GK11684 Dwil_GK12225(Dwil_ry)
+            DYA: Dyak_GE26236(Dyak_ry) Dyak_GE26365 Dyak_GE26367 Dyak_GE26368
+            DGR: Dgri_GH10448 Dgri_GH18370 Dgri_GH19388 Dgri_GH19389 Dgri_GH19392 Dgri_GH19396
+            DMO: Dmoj_GI10152 Dmoj_GI22591 Dmoj_GI22592 Dmoj_GI22594 Dmoj_GI23360(Dmoj_Xdh)
+            DVI: Dvir_GJ10312 Dvir_GJ10353(Dvir_ry) Dvir_GJ23371
+            AGA: AgaP_AGAP006226 AgaP_AGAP007918
+            AAG: AaeL_AAEL002683 AaeL_AAEL010384
+            CQU: CpipJ_CPIJ004365
+            AME: 724718(GB17045)
+            NVI: 100122636 100123244 100123252
+            TCA: 655982 656456(GLEAN_12132) 656621 656938 658680(GLEAN_09714) 658886
+            BMOR: 100126538(Aox1) 101736569 101738746 101739179 692751(Xdh1) 692757(Xdh2)
+            API: 100169249
+            PHU: Phum_PHUM299090
+            CEL: CELE_F55B11.1(F55B11.1)
+            CBR: CBG21624
+            NVE: NEMVE_v1g192610
+            TAD: TRIADDRAFT_26553 TRIADDRAFT_27111
+            AQU: 100631413 100631668 100631741 100632280 100634669 100638317 100640399
+            ATH: AT4G34890(XDH1) AT4G34900(XDH2)
+            ALY: ARALYDRAFT_491165 ARALYDRAFT_912004
+            CRB: CARUB_v10004017mg
+            EUS: EUTSA_v10024224mg
+            CIT: 102622737
+            CIC: CICLE_v10014051mg
+            TCC: TCM_040658
+            GMX: 100800309 100816689
+            MTR: MTR_2g098030
+            CAM: 101495267
+            FVE: 101298861
+            CSV: 101211977
+            RCU: RCOM_1577610
+            POP: POPTR_0009s05940g(POPTRDRAFT_804467)
+            VVI: 100248547
+            SLY: 101252457 101252744
+            SOT: 102596284
+            OSA: 4333171
+            DOSA: Os03t0429800-01(Os03g0429800)
+            OBR: 102707013
+            BDI: 100827961
+            SITA: 101783203 101785503
+            ATR: s00022p00247220(AMTR_s00022p00247220) s00076p00114100(AMTR_s00076p00114100)
+            SMO: SELMODRAFT_172098(XDH-2) SELMODRAFT_443347 SELMODRAFT_444585 SELMODRAFT_83922(XDH-1)
+            PPP: PHYPADRAFT_162514 PHYPADRAFT_172226
+            CRE: CHLREDRAFT_117669(XDH1)
+            VCN: VOLCADRAFT_63971
+            MIS: MICPUN_83794
+            CSL: COCSUDRAFT_53984
+            CVR: CHLNCDRAFT_136969
+            GSL: Gasu_62880
+            CCP: CHC_T00000194001 CHC_T00006216001 CHC_T00006932001
+            PPA: PAS_chr2-2_0112
+            NCR: NCU03350
+            SMP: SMAC_04084
+            PAN: PODANSg6463
+            TTT: THITE_2123410
+            MTM: MYCTH_2311689
+            MGR: MGG_12738
+            FGR: FG01561.1
+            NHE: NECHADRAFT_74201 NECHADRAFT_93123
+            TRE: TRIREDRAFT_78797
+            VAL: VDBG_05801
+            SSL: SS1G_08428 SS1G_14350
+            BFU: BC1G_03118
+            ANI: AN5613.2 AN9178.2
+            AFM: AFUA_4G11220
+            AOR: AOR_1_1958154(AO090003001099)
+            ANG: ANI_1_902184(An04g05440)
+            AFV: AFLA_027200
+            ACT: ACLA_050310
+            NFI: NFIA_094210 NFIA_105140
+            PCS: Pc22g06330
+            CIM: CIMG_01495
+            CPW: CPC735_049500
+            PBL: PAAG_02640 PAAG_03629
+            URE: UREG_05104
+            ABE: ARB_02280
+            TVE: TRV_04973
+            AJE: HCAG_01659 HCAG_06867
+            PNO: SNOG_04191 SNOG_07509
+            PTE: PTT_04424 PTT_07497
+            ZTR: MYCGRDRAFT_53902
+            UMA: UM03264.1
+            MBR: MONBRDRAFT_16701
+            DDI: DDB_G0291047(xdh)
+            DPP: DICPUDRAFT_96745
+            DFA: DFA_00340(xdh)
+            ACAN: ACA1_045720 ACA1_052830 ACA1_160170 ACA1_275400
+            PTI: PHATRDRAFT_15968
+            TPS: THAPSDRAFT_270071
+            PIF: PITG_02284
+            EHX: EMIHUDRAFT_109218 EMIHUDRAFT_226032 EMIHUDRAFT_253512 EMIHUDRAFT_461094 EMIHUDRAFT_469173 EMIHUDRAFT_50708
+            GTT: GUITHDRAFT_164776
+            NGR: NAEGRDRAFT_62716 NAEGRDRAFT_69327 NAEGRDRAFT_73166 NAEGRDRAFT_76858 NAEGRDRAFT_77057 NAEGRDRAFT_77123
+            TVA: TVAG_416300 TVAG_433470
+            MFU: LILAB_23480
+            ARA: Arad_9877
+            SACI: Sinac_0251
+DBLINKS     ExplorEnz - The Enzyme Database: 1.17.3.2
+            IUBMB Enzyme Nomenclature: 1.17.3.2
+            ExPASy - ENZYME nomenclature database: 1.17.3.2
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.17.3.2
+            BRENDA, the Enzyme Database: 1.17.3.2
+            CAS: 9002-17-9
+///

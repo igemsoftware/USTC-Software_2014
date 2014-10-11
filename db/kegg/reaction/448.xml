@@ -1,0 +1,13 @@
+ENTRY       R00448                      Reaction
+NAME        L-lysine,NADPH:oxygen oxidoreductase (6-hydroxylating)
+DEFINITION  L-Lysine + Oxygen + NADPH + H+ <=> N6-Hydroxy-L-lysine + NADP+ + H2O
+EQUATION    C00047 + C00007 + C00005 + C00080 <=> C01028 + C00006 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 leave
+            RP00905  C00047_C01028 main [RC:RC00298]
+            RP06160  C00007_C01028 leave
+ENZYME      1.14.13.59
+PATHWAY     rn00310  Lysine degradation
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K03897  lysine N6-hydroxylase [EC:1.14.13.59]
+///

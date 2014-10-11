@@ -1,0 +1,20 @@
+ENTRY       R00243                      Reaction
+NAME        L-glutamate:NAD+ oxidoreductase (deaminating)
+DEFINITION  L-Glutamate + NAD+ + H2O <=> 2-Oxoglutarate + Ammonia + NADH + H+
+EQUATION    C00025 + C00003 + C00001 <=> C00026 + C00014 + C00004 + C00080
+COMMENT     NADPH (ec 1.4.1.3 and 1.4.1.4, see R00248)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00014  C00025_C00026 main [RC:RC00006]
+            RP05697  C00001_C00026 leave
+            RP05779  C00014_C00025 main [RC:RC02799]
+ENZYME      1.4.1.2         1.4.1.3
+PATHWAY     rn00250  Alanine, aspartate and glutamate metabolism
+            rn00330  Arginine and proline metabolism
+            rn00430  Taurine and hypotaurine metabolism
+            rn00471  D-Glutamine and D-glutamate metabolism
+            rn00910  Nitrogen metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00260  glutamate dehydrogenase [EC:1.4.1.2]
+            K00261  glutamate dehydrogenase (NAD(P)+) [EC:1.4.1.3]
+            K15371  glutamate dehydrogenase [EC:1.4.1.2]
+///

@@ -1,0 +1,106 @@
+ENTRY       EC 1.10.99.3                Enzyme
+NAME        violaxanthin de-epoxidase;
+            VDE
+CLASS       Oxidoreductases;
+            Acting on diphenols and related substances as donors;
+            With other acceptors
+SYSNAME     violaxanthin:ascorbate oxidoreductase
+REACTION    violaxanthin + 2 L-ascorbate = zeaxanthin + 2 L-dehydroascorbate + 2 H2O (overall reaction) [RN:R10055];
+            (1a) violaxanthin + L-ascorbate = antheraxanthin + L-dehydroascorbate + H2O [RN:R07178];
+            (1b) antheraxanthin + L-ascorbate = zeaxanthin + L-dehydroascorbate + H2O [RN:R07179]
+ALL_REAC    R07178 R07179 R10055
+SUBSTRATE   violaxanthin [CPD:C08614];
+            L-ascorbate [CPD:C00072];
+            antheraxanthin [CPD:C08579]
+PRODUCT     zeaxanthin [CPD:C06098];
+            L-dehydroascorbate [CPD:C05422];
+            H2O [CPD:C00001];
+            antheraxanthin [CPD:C08579]
+COMMENT     Along with EC 1.14.13.90, zeaxanthin epoxidase, this enzyme forms part of the xanthophyll (or violaxanthin) cycle for controlling the concentration of zeaxanthin in chloroplasts. It is activated by a low pH of the thylakoid lumen (produced by high light intensity). Zeaxanthin induces the dissipation of excitation energy in the chlorophyll of the light-harvesting protein complex of photosystem II. In higher plants the enzyme reacts with all-trans-diepoxides, such as violaxanthin, and all-trans-monoepoxides, but in the alga Mantoniella squamata, only the diepoxides are good substrates.
+HISTORY     EC 1.10.99.3 created 2005
+REFERENCE   1  [PMID:102251]
+  AUTHORS   Yamamoto HY, Higashi RM.
+  TITLE     Violaxanthin de-epoxidase. Lipid composition and substrate specificity.
+  JOURNAL   Arch. Biochem. Biophys. 190 (1978) 514-22.
+  ORGANISM  Lactuca sativa
+REFERENCE   2  [PMID:8742341]
+  AUTHORS   Rockholm DC, Yamamoto HY.
+  TITLE     Violaxanthin de-epoxidase.
+  JOURNAL   Plant. Physiol. 110 (1996) 697-703.
+  ORGANISM  Lactuca sativa
+  SEQUENCE  [up:Q40251]
+REFERENCE   3  [PMID:9624110]
+  AUTHORS   Bugos RC, Hieber AD, Yamamoto HY.
+  TITLE     Xanthophyll cycle enzymes are members of the lipocalin family, the first identified from plants.
+  JOURNAL   J. Biol. Chem. 273 (1998) 15321-4.
+  ORGANISM  Arabidopsis thaliana, Nicotiana tabacum
+  SEQUENCE  [ath:AT1G08550] [up:Q40593]
+REFERENCE   4  [PMID:10635115]
+  AUTHORS   Kuwabara T, Hasegawa M, Kawano M, Takaichi S.
+  TITLE     Characterization of violaxanthin de-epoxidase purified in the presence of Tween 20: effects of dithiothreitol and pepstatin A.
+  JOURNAL   Plant. Cell. Physiol. 40 (1999) 1119-26.
+  ORGANISM  Spinacia oleracea
+REFERENCE   5  [PMID:12230579]
+  AUTHORS   Latowski D, Kruk J, Burda K, Skrzynecka-Jaskier M, Kostecka-Gugala A, Strzalka K.
+  TITLE     Kinetics of violaxanthin de-epoxidation by violaxanthin de-epoxidase, a xanthophyll cycle enzyme, is regulated by membrane fluidity in model lipid bilayers.
+  JOURNAL   Eur. J. Biochem. 269 (2002) 4656-65.
+  ORGANISM  Lactuca sativa, Spinacia oleracea
+REFERENCE   6  [PMID:12748855]
+  AUTHORS   Goss R.
+  TITLE     Substrate specificity of the violaxanthin de-epoxidase of the primitive green alga Mantoniella squamata (Prasinophyceae).
+  JOURNAL   Planta. 217 (2003) 801-12.
+  ORGANISM  Mantoniella squamata
+REFERENCE   7  [PMID:15078086]
+  AUTHORS   Latowski D, Akerlund HE, Strzalka K.
+  TITLE     Violaxanthin de-epoxidase, the xanthophyll cycle enzyme, requires lipid inverted hexagonal structures for its activity.
+  JOURNAL   Biochemistry. 43 (2004) 4417-20.
+  ORGANISM  Spinacia oleracea
+  SEQUENCE  [up:Q9SM43]
+PATHWAY     ec00906  Carotenoid biosynthesis
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K09839  violaxanthin de-epoxidase
+GENES       ATH: AT1G08550(NPQ1)
+            ALY: ARALYDRAFT_470916(NPQ1)
+            CRB: CARUB_v10009082mg
+            EUS: EUTSA_v10007587mg
+            CIT: 102577994(VDE)
+            CIC: CICLE_v10019925mg
+            TCC: TCM_026037
+            GMX: 100778118 100816085
+            MTR: MTR_7g116630
+            CAM: 101494261
+            FVE: 101303237
+            CSV: 101216870
+            RCU: RCOM_1122510
+            POP: POPTR_0013s05000g(POPTRDRAFT_571158)
+            VVI: 100257865
+            SLY: 543696
+            SOT: 102588520 102597146
+            OSA: 4335625
+            DOSA: Os04t0379700-01(Os04g0379700)
+            OBR: 102708144
+            BDI: 100829969
+            SBI: SORBI_06g012950(SORBIDRAFT_06g012950)
+            ZMA: 100281366
+            SITA: 101754003
+            ATR: s00117p00058770(AMTR_s00117p00058770)
+            SMO: SELMODRAFT_121553 SELMODRAFT_123552 SELMODRAFT_125245 SELMODRAFT_125344 SELMODRAFT_126771 SELMODRAFT_131661 SELMODRAFT_156974 SELMODRAFT_182267 SELMODRAFT_29439
+            PPP: PHYPADRAFT_139915
+            OLU: OSTLU_27727(VDE)
+            OTA: Ot16g00650
+            MIS: MICPUN_104842(VDE)
+            MPP: MICPUCDRAFT_60541(VDE)
+            CSL: COCSUDRAFT_4775
+            CVR: CHLNCDRAFT_35609(VDE)
+            PTI: PHATRDRAFT_44635(VDE)
+            TPS: THAPSDRAFT_7677(DDE)
+            NGD: NGA_0270002(VDE)
+            EHX: EMIHUDRAFT_200654 EMIHUDRAFT_365129 EMIHUDRAFT_455406(VDE)
+            GTT: GUITHDRAFT_109359
+DBLINKS     ExplorEnz - The Enzyme Database: 1.10.99.3
+            IUBMB Enzyme Nomenclature: 1.10.99.3
+            ExPASy - ENZYME nomenclature database: 1.10.99.3
+            BRENDA, the Enzyme Database: 1.10.99.3
+            CAS: 57534-73-3
+///

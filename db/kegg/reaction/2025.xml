@@ -1,0 +1,14 @@
+ENTRY       R02025                      Reaction
+NAME        L-methionine:oxidized-thioredoxin S-oxidoreductase
+DEFINITION  L-Methionine + Thioredoxin disulfide + H2O <=> L-Methionine S-oxide + Thioredoxin
+EQUATION    C00073 + C00343 + C00001 <=> C02989 + C00342
+COMMENT     two distinct enzymes
+            L-methionine (S)-S-oxide specific (ec 1.8.4.13, see R07606)
+            L-methionine (R)-S-oxide specific (ec 1.8.4.14, see R07608)
+RPAIR       RP00030  C00342_C00343 cofac [RC:RC00013]
+            RP01919  C00073_C02989 main [RC:RC00639]
+            RP13363  C00001_C02989 leave
+ENZYME      1.8.4.13        1.8.4.14
+PATHWAY     rn00270  Cysteine and methionine metabolism
+ORTHOLOGY   K08968  L-methionine (R)-S-oxide reductase [EC:1.8.4.14]
+///

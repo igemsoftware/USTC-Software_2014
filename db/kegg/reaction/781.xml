@@ -1,0 +1,13 @@
+ENTRY       R00781                      Reaction
+NAME        Sulfur:oxygen oxidoreductase
+DEFINITION  Sulfur + Oxygen + H2O <=> Sulfite
+EQUATION    C00087 + C00007 + C00001 <=> C00094
+COMMENT     multi-step reaction (see R08677+R08678)
+            requiring glutathione([CDP:C00051]) as a catalytic cofactor
+RPAIR       RP00655  C00087_C00094 main [RC:RC00065]
+            RP01651  C00007_C00094 leave
+            RP05747  C00001_C00094 leave
+ENZYME      1.13.11.18
+PATHWAY     rn00920  Sulfur metabolism
+            rn01120  Microbial metabolism in diverse environments
+///

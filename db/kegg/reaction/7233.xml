@@ -1,0 +1,13 @@
+ENTRY       R07233                      Reaction
+NAME        S-adenosyl-L-methionine:rRNA (guanine-N1-)-methyltransferase
+DEFINITION  S-Adenosyl-L-methionine + rRNA <=> S-Adenosyl-L-homocysteine + rRNA containing N1-methylguanine
+EQUATION    C00019 + C00240 <=> C00021 + C04152
+COMMENT     general reaction
+            The enzyme ec 2.1.1.187 specifically methylates guanine745 at N1 in 23S rRNA.
+            The enzyme ec 2.1.1.188 specifically methylates guanine748 at N1 in 23S rRNA.
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP10687  C00019_C04152 trans
+ENZYME      2.1.1.187       2.1.1.188
+ORTHOLOGY   K00563  23S rRNA (guanine745-N1)-methyltransferase [EC:2.1.1.187]
+            K14336  23S rRNA (guanine748-N1)-methyltransferase [EC:2.1.1.188]
+///

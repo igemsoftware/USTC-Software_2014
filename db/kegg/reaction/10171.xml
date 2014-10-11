@@ -1,0 +1,13 @@
+ENTRY       R10171                      Reaction
+NAME        malonyl-CoA:hexanoyl-CoA malonyltransferase (3,5,7-trioxododecanoyl-CoA-forming)
+DEFINITION  3 Malonyl-CoA + Hexanoyl-CoA <=> 3 CoA + 3,5,7-Trioxododecanoyl-CoA + 3 CO2
+EQUATION    3 C00083 + C05270 <=> 3 C00010 + C20413 + 3 C00011
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP10342  C00010_C05270 main [RC:RC00004]
+            RP15987  C05270_C20413 trans
+            RP15988  C00083_C20413 trans
+            RP15989  C00083_C20413 trans
+            RP15990  C00083_C20413 trans
+ENZYME      2.3.1.206
+///

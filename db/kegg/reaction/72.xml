@@ -1,0 +1,17 @@
+ENTRY       R00072                      Reaction
+NAME        thiamine-aldehyde:oxygen 5-oxidoreductase
+DEFINITION  Thiamine aldehyde + Oxygen + H2O <=> Hydrogen peroxide + Thiamine acetic acid
+EQUATION    C05856 + C00007 + C00001 <=> C00027 + C02892
+COMMENT     second step of two-step reaction (see R02132, R00033+R00072)
+            following after R00033
+RPAIR       RP00006  C00007_C00027 cofac [RC:RC02755]
+            RP03303  C02892_C05856 main [RC:RC00080]
+            RP06857  C00001_C02892 leave
+ENZYME      1.1.3.23
+PATHWAY     rn00730  Thiamine metabolism
+            rn01100  Metabolic pathways
+REFERENCE   1  [PMID:2988447]
+            Gomez-Moreno C, Edmondson DE.
+            Evidence for an aldehyde intermediate in the catalytic mechanism of thiamine oxidase.
+            Arch. Biochem. Biophys. 239 (1985) 46-52.
+///

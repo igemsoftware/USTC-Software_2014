@@ -1,0 +1,180 @@
+ENTRY       EC 2.5.1.77                 Enzyme
+NAME        7,8-didemethyl-8-hydroxy-5-deazariboflavin synthase;
+            FO synthase
+CLASS       Transferases;
+            Transferring alkyl or aryl groups, other than methyl groups;
+            Transferring alkyl or aryl groups, other than methyl groups (only sub-subclass identified to date)
+SYSNAME     5-amino-6-(D-ribitylamino)uracil:4-hydroxyphenylpyruvate, 4-methylphenol transferase
+REACTION    5-amino-6-(D-ribitylamino)uracil + 3-(4-hydroxyphenyl)pyruvate + 2 S-adenosyl-L-methionine + H2O = 7,8-didemethyl-8-hydroxy-5-deazariboflavin + 2 L-methionine + 2 5'-deoxyadenosine + oxalate + NH3 [RN:R09396]
+ALL_REAC    R09396
+SUBSTRATE   5-amino-6-(D-ribitylamino)uracil [CPD:C04732];
+            3-(4-hydroxyphenyl)pyruvate [CPD:C01179];
+            S-adenosyl-L-methionine [CPD:C00019];
+            H2O [CPD:C00001]
+PRODUCT     7,8-didemethyl-8-hydroxy-5-deazariboflavin [CPD:C19154];
+            L-methionine [CPD:C00073];
+            5'-deoxyadenosine [CPD:C05198];
+            oxalate [CPD:C00209];
+            NH3 [CPD:C00014]
+COMMENT     Binds a [4Fe-4S] cluster. The cluster is coordinated by 3 cysteines and an exchangeable AdoMet molecule. The first stage of catalysis is reduction of the 2 AdoMet to produce 2 methionine and 2 5'-deoxyadenosin-5-yl radicals that extract a hydrogen from each of the substrates permitting the condensation of the two [1]. The overall reaction catalysed is the transfer of the hydroxybenzyl group from 4-hydroxyphenylpyruvate (HPP) to 5-amino-6-ribitylaminopyrimidine-2,4(1H,3H)-dione to form 7,8-didemethyl-8-hydroxy-5-deazariboflavin (FO). 7,8-Didemethyl-8-hydroxy-5-deazariboflavin is the chromophore of the hydride carrier coenzyme F420 [1].
+HISTORY     EC 2.5.1.77 created 2010
+REFERENCE   1  [PMID:14593448]
+  AUTHORS   Graham DE, Xu H, White RH
+  TITLE     Identification of the 7,8-didemethyl-8-hydroxy-5-deazariboflavin synthase required for coenzyme F(420) biosynthesis.
+  JOURNAL   Arch. Microbiol. 180 (2003) 455-64.
+  ORGANISM  Methanocaldococcus jannaschii
+  SEQUENCE  [mja:MJ_0446 1431]
+REFERENCE   2  [PMID:11948155]
+  AUTHORS   Choi KP, Kendrick N, Daniels L
+  TITLE     Demonstration that fbiC is required by Mycobacterium bovis BCG for coenzyme F(420) and FO biosynthesis.
+  JOURNAL   J. Bacteriol. 184 (2002) 2420-8.
+  ORGANISM  Mycobacterium bovis
+  SEQUENCE  [mbo:Mb1206]
+PATHWAY     ec00680  Methane metabolism
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K11780  FO synthase subunit 1
+            K11781  FO synthase subunit 2
+GENES       BSUB: BEST7613_1603(cofH) BEST7613_2006(cofG)
+            BSE: Bsel_1865
+            HHL: Halha_2353 Halha_2354
+            CTM: Cabther_A2056
+            SYN: sll1285(cofG) sll1659(cofH)
+            SYZ: MYO_12520 MYO_16490
+            SYY: SYNGTS_0250(cofH) SYNGTS_0642(cofG)
+            SYT: SYNGTI_0250(cofH) SYNGTI_0642(cofG)
+            SYS: SYNPCCN_0250(cofH) SYNPCCN_0642(cofG)
+            SYQ: SYNPCCP_0250(cofH) SYNPCCP_0642(cofG)
+            SYC: syc0648_d(cofG) syc0843_c(cofG)
+            SYF: Synpcc7942_0686(cofG) Synpcc7942_0892(cofG)
+            SYP: SYNPCC7002_A1417(cofG) SYNPCC7002_A1920
+            SYNE: Syn6312_0669 Syn6312_2667
+            TEL: tll1515(cofG) tlr1597(cofG)
+            THN: NK55_04200(cofG) NK55_04740(cofH)
+            MAR: MAE_05370(cofG) MAE_44400
+            CYT: cce_2717(cofG) cce_4539
+            CYP: PCC8801_3080 PCC8801_3695(cofG)
+            CYC: PCC7424_0367(cofG) PCC7424_1434
+            CYN: Cyan7425_0829(cofG) Cyan7425_3281
+            CYH: Cyan8802_3040 Cyan8802_3749(cofG)
+            CYJ: Cyan7822_2858 Cyan7822_3246
+            CAN: Cyan10605_1120 Cyan10605_2647
+            CSN: Cyast_0246 Cyast_0748
+            DSL: Dacsa_0058 Dacsa_2777
+            HAO: PCC7418_0903 PCC7418_2609
+            GLP: Glo7428_1587 Glo7428_1689
+            CMP: Cha6605_0213 Cha6605_3166
+            CYU: UCYN_08790 UCYN_10830
+            TER: Tery_0173(cofG) Tery_2116(cofG)
+            LEP: Lepto7376_2105 Lepto7376_3249
+            GEI: GEI7407_1065 GEI7407_2659
+            OAC: Oscil6304_4047 Oscil6304_5521
+            ONI: Osc7112_3345 Osc7112_4712
+            CEP: Cri9333_0183 Cri9333_1653
+            MIC: Mic7113_0382 Mic7113_5310
+            ARP: NIES39_K03090(cofG) NIES39_L02990(cofH)
+            GVI: gll2100(cofG) glr0776(cofG)
+            GLJ: GKIL_0029(cofG) GKIL_2220(cofH)
+            ANA: alr3573(cofG) alr4129(cofG)
+            NPU: Npun_F4799(cofG) Npun_R6205
+            NOS: Nos7107_3642 Nos7107_4537
+            NOP: Nos7524_0859 Nos7524_3594
+            AVA: Ava_0775 Ava_1598(cofG)
+            ANB: ANA_C11401(cofH) ANA_C12049(thiH)
+            ACY: Anacy_2798 Anacy_4497
+            NAZ: Aazo_0194 Aazo_0829
+            CSG: Cylst_3746 Cylst_4247
+            CALO: Cal7507_2039 Cal7507_3054
+            CALT: Cal6303_0714 Cal6303_4393
+            RIV: Riv7116_0978 Riv7116_1180
+            CTHE: Chro_1933 Chro_4336
+            PLP: Ple7327_2924 Ple7327_4035
+            SCS: Sta7437_1936 Sta7437_2830
+            MJA: MJ_0446(cofG) MJ_1431(cofG)
+            MFE: Mefer_0989(cofG) Mefer_1391
+            MVU: Metvu_0187(cofG) Metvu_0742
+            MFS: MFS40622_0622 MFS40622_1713
+            MIF: Metin_0177 Metin_1060
+            MIG: Metig_0642 Metig_1294
+            MMP: MMP0056(cofH) MMP0876(cofG)
+            MMQ: MmarC5_0684(cofG) MmarC5_1621(cofG)
+            MMX: MmarC6_0893 MmarC6_1779(cofG)
+            MMZ: MmarC7_0124(cofG) MmarC7_1053(cofG)
+            MMD: GYY_00285 GYY_00290 GYY_05090(cofG)
+            MAE: Maeo_0750(cofG) Maeo_0911(cofG)
+            MVN: Mevan_0044(cofG) Mevan_1071(cofG)
+            MVO: Mvol_0642 Mvol_1375
+            MOK: Metok_0201 Metok_1270
+            MAC: MA1489(cofG) MA1490(cofG) MA1491(cofG)
+            MBA: Mbar_A3415 Mbar_A3416 Mbar_A3417
+            MMA: MM_2494(cofG) MM_2495(cofG) MM_2496(cofG)
+            MMAZ: MmTuc01_2546
+            MBU: Mbur_1302(cofG) Mbur_1303(cofG) Mbur_1304(cofG)
+            MMH: Mmah_1608 Mmah_1609
+            MEV: Metev_0265 Metev_0266
+            MZH: Mzhil_1604 Mzhil_1605
+            MPY: Mpsy_2557 Mpsy_2558 Mpsy_2559(cofG)
+            MHZ: Metho_0950 Metho_0951 Metho_0952
+            MTP: Mthe_0221(cofG) Mthe_0284
+            MCJ: MCON_1058(cofG) MCON_3335(cofH)
+            MHI: Mhar_0763 Mhar_0954
+            MHU: Mhun_1253
+            MLA: Mlab_1590
+            MEM: Memar_1838
+            MBG: BN140_0224(cofH1) BN140_0551(cofG)
+            MPI: Mpet_0714 Mpet_2579
+            MBN: Mboo_2201
+            MFO: Metfor_0137 Metfor_0519
+            MPL: Mpal_0976
+            MPD: MCP_2457(cofH-2) MCP_2458(cofG)
+            MEZ: Mtc_0996(cofG) Mtc_0997(cofH-1) Mtc_0998(cofH-2)
+            RCI: RCIX459(cofH-2) RCIX460(cofH-1) RCIX461(cofG)
+            MTH: MTH1198(cofG) MTH820
+            MMG: MTBMA_c12170(cofH) MTBMA_c15760(cofG)
+            MST: Msp_0296(cofG) Msp_0392(cofH)
+            MSI: Msm_0079 Msm_1035(cofG)
+            MRU: mru_1266(cofH) mru_1974(cofG)
+            MEB: Abm4_0772(cofH) Abm4_1547(cofG)
+            MEL: Metbo_0140 Metbo_0327 Metbo_1931
+            MEW: MSWAN_0164 MSWAN_0688 MSWAN_2090
+            METH: MBMB1_0707(cofH1) MBMB1_1031(cofH3) MBMB1_1721(cofG)
+            MFV: Mfer_0395 Mfer_0690
+            MKA: MK0897(ThiH_1) MK0898(cofG)
+            AFU: AF0797(cofG) AF0798
+            APO: Arcpr_1290 Arcpr_1291
+            AVE: Arcve_1610 Arcve_1611
+            AST: Asulf_02116 Asulf_02117
+            FPL: Ferp_0002 Ferp_0003
+            HAL: VNG1937C(cofG)
+            HSL: OE3722F(cofG)
+            HMA: rrnAC3279(cofG)
+            HHI: HAH_0520(cofG)
+            HHN: HISP_02695
+            HWA: HQ3125A(cofG)
+            HWC: Hqrw_3666(cofG)
+            NPH: NP2398A(cofG)
+            NMO: Nmlp_2441(cofG)
+            HLA: Hlac_1894(cofG)
+            HUT: Huta_1304(cofG)
+            HTI: HTIA_1196
+            HMU: Hmuk_1415(cofG)
+            HTU: Htur_0642
+            NMG: Nmag_2633
+            HVO: HVO_2201
+            HME: HFX_2258(thiH)
+            HJE: HacjB3_04935(cofG)
+            HBO: Hbor_06390
+            HXA: Halxa_1896
+            NAT: NJ7G_3940
+            NPE: Natpe_3128
+            NGE: Natgr_1125
+            HRU: Halru_0972
+            NOU: Natoc_0463
+            SALI: L593_00095(cofG)
+            NMR: Nmar_0592
+            NKR: NKOR_03090
+            HAH: Halar_2226
+DBLINKS     ExplorEnz - The Enzyme Database: 2.5.1.77
+            IUBMB Enzyme Nomenclature: 2.5.1.77
+            ExPASy - ENZYME nomenclature database: 2.5.1.77
+            BRENDA, the Enzyme Database: 2.5.1.77
+///

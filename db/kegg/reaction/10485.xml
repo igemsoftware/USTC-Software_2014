@@ -1,0 +1,11 @@
+ENTRY       R10485                      Reaction
+NAME        malonyl-CoA:(S)-1-pyrroline-5-carboxylate malonyltransferase (cyclizing)
+DEFINITION  Malonyl-CoA + (S)-1-Pyrroline-5-carboxylate + H2O <=> CoA + (2S,5S)-trans-Carboxymethylproline + CO2
+EQUATION    C00083 + C03912 + C00001 <=> C00010 + C17366 + C00011
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP16539  C03912_C17366 main [RC:RC03182]
+            RP16540  C00083_C17366 trans
+            RP16541  C00001_C17366 leave
+ENZYME      2.3.1.226
+///

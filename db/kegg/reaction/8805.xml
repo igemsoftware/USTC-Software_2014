@@ -1,0 +1,14 @@
+ENTRY       R08805                      Reaction
+NAME        p-coumaroyl-CoA:malonyl-CoA C-coumaroyltransferase (decarboxylating)
+DEFINITION  p-Coumaroyl-CoA + Malonyl-CoA <=> p-Coumaroyl-diketide-CoA + CoA + CO2
+EQUATION    C00223 + C00083 <=> C17740 + C00010 + C00011
+COMMENT     diketide-CoA synthase (DCS)
+RPAIR       RP00144  C00010_C00223 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP13856  C00083_C17740 trans
+            RP13857  C00223_C17740 main [RC:RC02955]
+ENZYME      2.3.1.218
+PATHWAY     rn00945  Stilbenoid, diarylheptanoid and gingerol biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13233  phenylpropanoylacetyl-CoA synthase [EC:2.3.1.218]
+///

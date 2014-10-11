@@ -1,0 +1,12 @@
+ENTRY       R05813                      Reaction
+DEFINITION  Cobalt-dihydro-precorrin 6 + 2 S-Adenosyl-L-methionine <=> Cobalt-precorrin 8 + 2 S-Adenosyl-L-homocysteine + CO2
+EQUATION    C11543 + 2 C00019 <=> C11545 + 2 C00021 + C00011
+COMMENT     multi-step reaction (see R07774+R07775)
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP10648  C00011_C11543 leave
+            RP10700  C00019_C11545 trans
+            RP11856  C11543_C11545 main [RC:RC02052]
+            RP12387  C00019_C11545 trans
+ORTHOLOGY   K02191  cobalt-precorrin-6B (C15)-methyltransferase [EC:2.1.1.196]
+            K03399  cobalt-precorrin-7 (C5)-methyltransferase [EC:2.1.1.289]
+///

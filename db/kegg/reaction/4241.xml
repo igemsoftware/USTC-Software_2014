@@ -1,0 +1,11 @@
+ENTRY       R04241                      Reaction
+NAME        tetrahydropteroyl-gamma-polyglutamate:L-glutamate gamma-ligase (ADP-forming)
+DEFINITION  ATP + THF-polyglutamate(n) + L-Glutamate <=> ADP + Orthophosphate + THF-polyglutamate(n+1)
+EQUATION    C00002 + C03541(n) + C00025 <=> C00008 + C00009 + C03541(n+1)
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP03875  C00025_C03541 main [RC:RC00064]
+ENZYME      6.3.2.17
+PATHWAY     rn00790  Folate biosynthesis
+ORTHOLOGY   K01930  folylpolyglutamate synthase [EC:6.3.2.17]
+///

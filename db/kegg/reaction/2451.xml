@@ -1,0 +1,20 @@
+ENTRY       R02451                      Reaction
+NAME        cyclohexa-1,5-diene-1-carbonyl-CoA:ferredoxin oxidoreductase (aromatizing, ATP-forming)
+DEFINITION  S-Benzoate coenzyme A + Reduced ferredoxin + 2 ATP + 2 H2O <=> Cyclohexa-1,5-diene-1-carbonyl-CoA + Oxidized ferredoxin + 2 Orthophosphate + 2 ADP
+EQUATION    C00512 + C00138 + 2 C00002 + 2 C00001 <=> C06322 + C00139 + 2 C00009 + 2 C00008
+COMMENT     BadD,BadE,BadF,BadG
+            multi-step reaction
+RPAIR       RP00003  C00002_C00008 main [RC:RC00002]
+            RP00010  C00002_C00009 leave
+            RP05676  C00001_C00009 leave
+            RP11166  C00512_C06322 main [RC:RC01839]
+ENZYME      1.3.7.8
+PATHWAY     rn00362  Benzoate degradation
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K04112  benzoyl-CoA reductase subunit C [EC:1.3.7.8]
+            K04113  benzoyl-CoA reductase subunit B [EC:1.3.7.8]
+            K04114  benzoyl-CoA reductase subunit A [EC:1.3.7.8]
+            K04115  benzoyl-CoA reductase subunit D [EC:1.3.7.8]
+///

@@ -1,0 +1,15 @@
+ENTRY       R02078                      Reaction
+NAME        L-Tyrosine,L-dopa:oxygen oxidoreductase
+DEFINITION  3,4-Dihydroxy-L-phenylalanine + L-Tyrosine + Oxygen <=> Dopaquinone + 3,4-Dihydroxy-L-phenylalanine + H2O
+EQUATION    C00355 + C00082 + C00007 <=> C00822 + C00355 + C00001
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00123  C00082_C00355 main [RC:RC00046]
+            RP00507  C00355_C00822 cofac [RC:RC00180]
+            RP05762  C00007_C00355 leave
+ENZYME      1.10.3.1        1.14.18.1
+PATHWAY     rn00350  Tyrosine metabolism
+            rn00965  Betalain biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00422  polyphenol oxidase [EC:1.10.3.1]
+            K00505  tyrosinase [EC:1.14.18.1]
+///

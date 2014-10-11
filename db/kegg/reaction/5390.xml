@@ -1,0 +1,13 @@
+ENTRY       R05390                      Reaction
+DEFINITION  3-Chloro-cis,cis-muconate <=> Protoanemonin + Hydrochloric acid + CO2
+EQUATION    C03585 <=> C07090 + C01327 + C00011
+COMMENT     possible multi-step reaction
+            Ref.: 1. PMID:7493952
+RPAIR       RP04999  C03585_C07090 main [RC:RC01356]
+            RP06109  C01327_C03585 leave
+            RP08639  C00011_C03585 leave
+ENZYME      5.5.1.1
+PATHWAY     rn00361  Chlorocyclohexane and chlorobenzene degradation
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K01856  muconate cycloisomerase [EC:5.5.1.1]
+///

@@ -1,0 +1,98 @@
+ENTRY       EC 1.3.8.2                  Enzyme
+NAME        4,4'-diapophytoene desaturase;
+            dehydrosqualene desaturase;
+            CrtN;
+            4,4'-diapophytoene:FAD oxidoreductase
+CLASS       Oxidoreductases;
+            Acting on the CH-CH group of donors;
+            With a flavin as acceptor
+SYSNAME     15-cis-4,4'-diapophytoene:FAD oxidoreductase
+REACTION    15-cis-4,4'-diapophytoene + 4 FAD = all-trans-4,4'-diapolycopene + 4 FADH2 (overall reaction) [RN:R09690];
+            (1a) 15-cis-4,4'-diapophytoene + FAD = all-trans-4,4'-diapophytofluene + FADH2 [RN:R09719];
+            (1b) all-trans-4,4'-diapophytofluene + FAD = all-trans-4,4'-diapo-zeta-carotene + FADH2 [RN:R09744];
+            (1c) all-trans-4,4'-diapo-zeta-carotene + FAD = all-trans-4,4'-diaponeurosporene + FADH2 [RN:R09745];
+            (1d) all-trans-4,4'-diaponeurosporene + FAD = all-trans-4,4'-diapolycopene + FADH2 [RN:R09746]
+ALL_REAC    R09690 R09719 R09744 R09745 R09746;
+            (other) R07653
+SUBSTRATE   15-cis-4,4'-diapophytoene;
+            FAD [CPD:C00016];
+            all-trans-4,4'-diapophytofluene;
+            all-trans-4,4'-diapo-zeta-carotene;
+            all-trans-4,4'-diaponeurosporene
+PRODUCT     all-trans-4,4'-diapolycopene;
+            FADH2 [CPD:C01352];
+            all-trans-4,4'-diapophytofluene;
+            all-trans-4,4'-diapo-zeta-carotene;
+            all-trans-4,4'-diaponeurosporene
+COMMENT     Typical of Staphylococcus aureus and some other bacteria such as Heliobacillus sp. Responsible for four successive dehydrogenations. In some species it only proceeds as far as all-trans-4,4'-diaponeurosporene.
+HISTORY     EC 1.3.8.2 created 2011, modified 2011
+REFERENCE   1  [PMID:8002598]
+  AUTHORS   Wieland B, Feil C, Gloria-Maercker E, Thumm G, Lechner M, Bravo JM, Poralla K, Gotz F
+  TITLE     Genetic and biochemical analyses of the biosynthesis of the yellow carotenoid 4,4'-diaponeurosporene of Staphylococcus aureus.
+  JOURNAL   J. Bacteriol. 176 (1994) 7719-26.
+  ORGANISM  Staphylococcus aureus
+  SEQUENCE  [sae:NWMN_2461]
+REFERENCE   2  [PMID:10498735]
+  AUTHORS   Raisig A, Sandmann G
+  TITLE     4,4'-diapophytoene desaturase: catalytic properties of an enzyme from the C(30) carotenoid pathway of Staphylococcus aureus.
+  JOURNAL   J. Bacteriol. 181 (1999) 6184-7.
+  ORGANISM  Staphylococcus aureus
+  SEQUENCE  [sae:NWMN_2461]
+REFERENCE   3  [PMID:11566453]
+  AUTHORS   Raisig A, Sandmann G
+  TITLE     Functional properties of diapophytoene and related desaturases of C(30) and C(40) carotenoid biosynthetic pathways.
+  JOURNAL   Biochim. Biophys. Acta. 1533 (2001) 164-70.
+  ORGANISM  Staphylococcus aureus
+  SEQUENCE  [sae:NWMN_2461]
+PATHWAY     ec00906  Carotenoid biosynthesis
+ORTHOLOGY   K10209  4,4'-diapophytoene desaturase
+GENES       SAU: SA2348(crtN)
+            SAV: SAV2561(crtN)
+            SAW: SAHV_2545(crtN)
+            SAH: SaurJH1_2637
+            SAJ: SaurJH9_2583
+            SAM: MW2482(crtN)
+            SAS: SAS2447
+            SAR: SAR2642(crtN)
+            SAC: SACOL2576(crtN)
+            SAX: USA300HOU_2556(crtN)
+            SAA: SAUSA300_2498(crtN)
+            SAO: SAOUHSC_02877
+            SAE: NWMN_2461(crtN)
+            SAD: SAAV_2627(crtN)
+            SUU: M013TW_2535
+            SUV: SAVC_11685
+            SUE: SAOV_2606c
+            SUJ: SAA6159_02457(crtN)
+            SUK: SAA6008_02600(crtN)
+            SUC: ECTR2_2414(crtI)
+            SUT: SAT0131_02772
+            SUQ: HMPREF0772_10628(crtN)
+            SUZ: MS7_2568(crtI)
+            SUD: ST398NM01_2612
+            SUX: SAEMRSA15_24640(crtN)
+            SUW: SATW20_26830(crtN)
+            SUG: SAPIG2612
+            SUF: SARLGA251_23360(crtN)
+            SAUA: SAAG_00382
+            SAUE: RSAU_002402(crtN)
+            SAUN: SAKOR_02552
+            SAUS: SA40_2315(crtN)
+            SAUU: SA957_2399(crtN)
+            SAUZ: SAZ172_2661(crtN)
+            SAB: SAB2434c(crtN)
+            SUY: SA2981_2498(crtN)
+            SAUB: C248_2619(crtN)
+            SAUM: BN843_25980
+            SAUC: CA347_2637(crtI)
+            SAUR: SABB_01123(crtN)
+            SHA: SH0491(crtN)
+            SLG: SLGD_00188
+            SLN: SLUG_01860(crtN)
+            SWA: A284_01660
+            SPAS: STP1_1063
+DBLINKS     ExplorEnz - The Enzyme Database: 1.3.8.2
+            IUBMB Enzyme Nomenclature: 1.3.8.2
+            ExPASy - ENZYME nomenclature database: 1.3.8.2
+            BRENDA, the Enzyme Database: 1.3.8.2
+///

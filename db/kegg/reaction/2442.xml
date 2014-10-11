@@ -1,0 +1,16 @@
+ENTRY       R02442                      Reaction
+NAME        naringenin,NADPH:oxygen oxidoreductase (3'-hydroxylating)
+DEFINITION  Naringenin + NADPH + H+ + Oxygen <=> Eriodictyol + NADP+ + H2O
+EQUATION    C00509 + C00005 + C00080 + C00007 <=> C05631 + C00006 + C00001
+COMMENT     flavonoid 3'-hydroxylase
+            flavonoid 3'-monooxygenase
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP02219  C00509_C05631 main [RC:RC00046]
+            RP07021  C00007_C05631 leave
+ENZYME      1.14.13.21      1.14.13.88
+PATHWAY     rn00941  Flavonoid biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K05280  flavonoid 3'-monooxygenase [EC:1.14.13.21]
+            K13083  flavonoid 3',5'-hydroxylase [EC:1.14.13.88]
+///

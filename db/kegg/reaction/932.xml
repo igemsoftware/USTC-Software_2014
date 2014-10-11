@@ -1,0 +1,12 @@
+ENTRY       R00932                      Reaction
+NAME        propanoyl-CoA:glyoxylate C-propanoyltransferase (thioester-hydrolysing, 2-carboxyethyl-forming);
+            2-hydroxyglutarate glyoxylate-lyase (CoA-propanoylating)
+DEFINITION  2-Hydroxyglutarate + CoA <=> Propanoyl-CoA + H2O + Glyoxylate
+EQUATION    C02630 + C00010 <=> C00100 + C00001 + C00048
+RPAIR       RP00034  C00010_C00100 main [RC:RC00004]
+            RP01182  C00048_C02630 main [RC:RC00308]
+            RP06371  C00100_C02630 trans
+            RP13442  C00001_C02630 leave
+ENZYME      2.3.3.11
+PATHWAY     rn00660  C5-Branched dibasic acid metabolism
+///

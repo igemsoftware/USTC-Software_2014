@@ -1,0 +1,15 @@
+ENTRY       R05453                      Reaction
+NAME        acetophenone:carbon-dioxide ligase (ADP-forming)
+DEFINITION  2 ATP + Acetophenone + HCO3- + H2O + H+ <=> 2 ADP + 2 Orthophosphate + 3-Oxo-3-phenylpropanoate
+EQUATION    2 C00002 + C07113 + C00288 + C00001 + C00080 <=> 2 C00008 + 2 C00009 + C07114
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP05065  C07113_C07114 main [RC:RC00040]
+            RP05676  C00001_C00009 leave
+            RP15275  C00288_C07114 leave
+ENZYME      6.4.1.8
+PATHWAY     rn00642  Ethylbenzene degradation
+            rn01120  Microbial metabolism in diverse environments
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K10701  acetophenone carboxylase [EC:6.4.1.8]
+///

@@ -1,0 +1,37 @@
+ENTRY       EC 2.5.1.99                 Enzyme
+NAME        all-trans-phytoene synthase;
+            prephytoene-diphosphate synthase (ambiguous);
+            phytoene synthetase (ambiguous);
+            PSase (ambiguous);
+            geranylgeranyl-diphosphate geranylgeranyltransferase (ambiguous);
+            15-trans-phytoene synthase
+CLASS       Transferases;
+            Transferring alkyl or aryl groups, other than methyl groups;
+            Transferring alkyl or aryl groups, other than methyl groups (only sub-subclass identified to date)
+SYSNAME     geranylgeranyl-diphosphate:geranylgeranyl-diphosphate geranylgeranyltransferase (all-trans-phytoene forming)
+REACTION    2 geranylgeranyl diphosphate = all-trans-phytoene + 2 diphosphate (overall reaction) [RN:R07916];
+            (1a) 2 geranylgeranyl diphosphate = diphosphate + prephytoene diphosphate [RN:R02065];
+            (1b) prephytoene diphosphate = all-trans-phytoene + diphosphate [RN:R07270]
+ALL_REAC    R02065 R07270 R07916
+SUBSTRATE   geranylgeranyl diphosphate [CPD:C00353];
+            prephytoene diphosphate [CPD:C03427]
+PRODUCT     all-trans-phytoene [CPD:C05413];
+            diphosphate [CPD:C00013];
+            prephytoene diphosphate [CPD:C03427]
+COMMENT     Requires Mn2+ for activity. The enzyme from the bacterium Pantoea agglomerans (previously known as Erwinia herbicola) produces the all-trans isomer of phytoene. cf. EC 2.5.1.32, 15-cis-phytoene synthase.
+HISTORY     EC 2.5.1.99 created 2012
+REFERENCE   1  [PMID:4819767]
+  AUTHORS   Gregonis DE, Rilling HC.
+  TITLE     The stereochemistry of trans-phytoene synthesis. Some observations on lycopersene as a carotene precursor and a mechanism for the synthesis of cis- and trans-phytoene.
+  JOURNAL   Biochemistry. 13 (1974) 1538-42.
+REFERENCE   2  [PMID:12641468]
+  AUTHORS   Iwata-Reuyl D, Math SK, Desai SB, Poulter CD.
+  TITLE     Bacterial phytoene synthase: molecular cloning, expression, and characterization of Erwinia herbicola phytoene synthase.
+  JOURNAL   Biochemistry. 42 (2003) 3359-65.
+  ORGANISM  Erwinia herbicola
+  SEQUENCE  [up:D5KXJ0]
+DBLINKS     ExplorEnz - The Enzyme Database: 2.5.1.99
+            IUBMB Enzyme Nomenclature: 2.5.1.99
+            ExPASy - ENZYME nomenclature database: 2.5.1.99
+            BRENDA, the Enzyme Database: 2.5.1.99
+///

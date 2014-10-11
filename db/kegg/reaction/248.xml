@@ -1,0 +1,21 @@
+ENTRY       R00248                      Reaction
+NAME        L-Glutamate:NADP+ oxidoreductase (deaminating)
+DEFINITION  L-Glutamate + NADP+ + H2O <=> 2-Oxoglutarate + Ammonia + NADPH + H+
+EQUATION    C00025 + C00006 + C00001 <=> C00026 + C00014 + C00005 + C00080
+COMMENT     NADH (ec 1.4.1.3, see R00243)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00014  C00025_C00026 main [RC:RC00006]
+            RP05697  C00001_C00026 leave
+            RP05779  C00014_C00025 main [RC:RC02799]
+ENZYME      1.4.1.3         1.4.1.4         1.4.1.13
+PATHWAY     rn00250  Alanine, aspartate and glutamate metabolism
+            rn00330  Arginine and proline metabolism
+            rn00471  D-Glutamine and D-glutamate metabolism
+            rn00910  Nitrogen metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00261  glutamate dehydrogenase (NAD(P)+) [EC:1.4.1.3]
+            K00262  glutamate dehydrogenase (NADP+) [EC:1.4.1.4]
+            K00264  glutamate synthase (NADPH/NADH) [EC:1.4.1.13 1.4.1.14]
+            K00265  glutamate synthase (NADPH/NADH) large chain [EC:1.4.1.13 1.4.1.14]
+            K00266  glutamate synthase (NADPH/NADH) small chain [EC:1.4.1.13 1.4.1.14]
+///

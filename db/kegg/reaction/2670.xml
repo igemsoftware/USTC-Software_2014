@@ -1,0 +1,14 @@
+ENTRY       R02670                      Reaction
+DEFINITION  2 3-Hydroxyanthranilate + 4 Oxygen <=> Cinnavalininate + 2 O2.- + 2 Hydrogen peroxide + 2 H+
+EQUATION    2 C00632 + 4 C00007 <=> C05640 + 2 C00704 + 2 C00027 + 2 C00080
+COMMENT     non-enzymatic
+            multi-step reaction
+            this reaction is hastened by superoxide dismutase (ec 1.15.1.1) and catalase (ec 1.11.1.6)
+RPAIR       RP00006  C00007_C00027 cofac [RC:RC02755]
+            RP02397  C00632_C05640 main [RC:RC00767]
+            RP12780  C00632_C05640 main [RC:RC02141]
+ENZYME      1.11.1.6        1.11.1.21
+PATHWAY     rn00380  Tryptophan metabolism
+ORTHOLOGY   K03781  catalase [EC:1.11.1.6]
+            K03782  catalase-peroxidase [EC:1.11.1.21]
+///

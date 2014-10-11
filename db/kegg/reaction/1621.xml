@@ -1,0 +1,14 @@
+ENTRY       R01621                      Reaction
+NAME        D-Xylulose 5-phosphate D-glyceraldehyde-3-phosphate-lyase (adding phosphate; acetyl-phosphate-forming)
+DEFINITION  D-Xylulose 5-phosphate + Orthophosphate <=> Acetyl phosphate + D-Glyceraldehyde 3-phosphate + H2O
+EQUATION    C00231 + C00009 <=> C00227 + C00118 + C00001
+RPAIR       RP00080  C00118_C00231 main [RC:RC00032]
+            RP00100  C00009_C00227 leave
+            RP06639  C00227_C00231 trans
+            RP13389  C00001_C00231 leave
+ENZYME      4.1.2.9         4.1.2.22
+PATHWAY     rn00030  Pentose phosphate pathway
+            rn00710  Carbon fixation in photosynthetic organisms
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01621  phosphoketolase [EC:4.1.2.9]
+///

@@ -1,0 +1,124 @@
+ENTRY       EC 1.4.9.1                  Enzyme
+NAME        methylamine dehydrogenase (amicyanin);
+            amine dehydrogenase;
+            primary-amine dehydrogenase;
+            amine: (acceptor) oxidoreductase (deaminating);
+            primary-amine:(acceptor) oxidoreductase (deaminating)
+CLASS       Oxidoreductases;
+            Acting on the CH-NH2 group of donors;
+            With a copper protein as acceptor
+SYSNAME     methylamine:amicyanin oxidoreductase (deaminating)
+REACTION    methylamine + H2O + amicyanin = formaldehyde + ammonia + reduced amicyanin [RN:R00606]
+ALL_REAC    R00606
+SUBSTRATE   methylamine [CPD:C00218];
+            H2O [CPD:C00001];
+            amicyanin [CPD:C19671]
+PRODUCT     formaldehyde [CPD:C00067];
+            ammonia [CPD:C00014];
+            reduced amicyanin [CPD:C19672]
+COMMENT     Contains tryptophan tryptophylquinone (TTQ) cofactor. The enzyme oxidizes aliphatic monoamines and diamines, histamine and ethanolamine, but not secondary and tertiary amines, quaternary ammonium salts or aromatic amines.
+HISTORY     EC 1.4.9.1 created 1978 as EC 1.4.99.3, modified 1986, transferred 2011 to EC 1.4.98.1, transferred 2011 to EC 1.4.9.1
+REFERENCE   1  [PMID:6246962]
+  AUTHORS   de Beer R, Duine JA, Frank J, Large PJ.
+  TITLE     The prosthetic group of methylamine dehydrogenase from Pseudomonas AM1: evidence for a quinone structure.
+  JOURNAL   Biochim. Biophys. Acta. 622 (1980) 370-4.
+REFERENCE   2  [PMID:4388687]
+  AUTHORS   Eady RR, Large PJ.
+  TITLE     Purification and properties of an amine dehydrogenase from Pseudomonas AM1 and its role in growth on methylamine.
+  JOURNAL   Biochem. J. 106 (1968) 245-55.
+REFERENCE   3  [PMID:5124384]
+  AUTHORS   Eady RR, Large PJ.
+  TITLE     Microbial oxidation of amines. Spectral and kinetic properties of the primary amine dehydrogenase of Pseudomonas AM1.
+  JOURNAL   Biochem. J. 123 (1971) 757-71.
+REFERENCE   4  [PMID:18512962]
+  AUTHORS   Cavalieri C, Biermann N, Vlasie MD, Einsle O, Merli A, Ferrari D, Rossi GL, Ubbink M
+  TITLE     Structural comparison of crystal and solution states of the 138 kDa complex of methylamine dehydrogenase and amicyanin from Paracoccus versutus.
+  JOURNAL   Biochemistry. 47 (2008) 6560-70.
+REFERENCE   5  [PMID:20873742]
+  AUTHORS   Meschi F, Wiertz F, Klauss L, Cavalieri C, Blok A, Ludwig B, Heering HA, Merli A, Rossi GL, Ubbink M
+  TITLE     Amicyanin transfers electrons from methylamine dehydrogenase to cytochrome c-551i via a ping-pong mechanism, not a ternary complex.
+  JOURNAL   J. Am. Chem. Soc. 132 (2010) 14537-45.
+PATHWAY     ec00680  Methane metabolism
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K08685  quinohemoprotein amine dehydrogenase
+            K15228  methylamine dehydrogenase light chain
+            K15229  methylamine dehydrogenase heavy chain
+GENES       VFU: vfu_A02015 vfu_A02018
+            PPF: Pput_2307
+            PPG: PputGB1_2221 PputGB1_2224 PputGB1_2475
+            PPW: PputW619_2945
+            PFL: PFL_4120(peaA)
+            PFO: Pfl01_2975
+            PEN: PSEEN2552 PSEEN2555 PSEEN2977
+            PMK: MDS_2876 MDS_2877 MDS_4213 MDS_4216
+            PRE: PCA10_23420(mauB) PCA10_23450(mauA) PCA10_34250(mauB) PCA10_34280(mauA)
+            PKC: PKB_2656(mauA) PKB_2659(mauB)
+            PAT: Patl_0157 Patl_0160
+            GAG: Glaag_4148 Glaag_4151
+            ADI: B5T_00161 B5T_00164 B5T_00533 B5T_00536
+            PSE: NH8B_2195
+            REU: Reut_B4077 Reut_B4080
+            BUR: Bcep18194_B0601 Bcep18194_B0604
+            BCN: Bcen_3305 Bcen_3308
+            BCH: Bcen2424_5059 Bcen2424_5062
+            BCM: Bcenmc03_5222 Bcenmc03_5225
+            BCJ: BCAM2301 BCAM2304
+            BAM: Bamb_4469 Bamb_4472
+            BAC: BamMC406_4994 BamMC406_4997
+            BMU: Bmul_3580 Bmul_3583
+            BMJ: BMULJ_04934 BMULJ_04937
+            BCT: GEM_3380 GEM_3383
+            BPH: Bphy_3809 Bphy_3812
+            BGE: BC1002_1587 BC1002_1590
+            BGF: BC1003_3869 BC1003_3872
+            BYI: BYI23_B006010 BYI23_B006040
+            BUO: BRPE64_BCDS07560 BRPE64_BCDS07590
+            AXY: AXYL_02123 AXYL_02126
+            AXO: NH44784_037061 NH44784_037091
+            AXN: AX27061_1937 AX27061_1940 AX27061_1941
+            AKA: TKWG_18915 TKWG_18935
+            AMIM: MIM_c29740(mauA) MIM_c29770(mauB)
+            CDN: BN940_17491 BN940_17506
+            MPT: Mpe_A2653
+            EBA: ebA2235(qhpA)
+            AZO: azo1239(qhpA) azo2257(mauA) azo2260(maub)
+            TMZ: Tmz1t_0761
+            MFA: Mfla_0548 Mfla_0551
+            MMB: Mmol_1572 Mmol_1575
+            ABU: Abu_0465
+            MEA: Mex_1p2770(mauB) Mex_1p2773(mauA)
+            MCH: Mchl_0562 Mchl_0565
+            HNI: W911_02545 W911_02560
+            PHL: KKY_2939 KKY_2942
+            CAK: Caul_0557 Caul_0560
+            PDE: Pden_1703 Pden_4730 Pden_4733
+            PAMI: JCM7686_0163 JCM7686_0166
+            HBA: Hbal_2737 Hbal_2741
+            NAR: Saro_1685 Saro_1688 Saro_3028 Saro_3818 Saro_3821
+            NPP: PP1Y_Mpl7173 PP1Y_Mpl7192
+            SWI: Swit_3251 Swit_3254 Swit_4363 Swit_4365
+            SPHM: G432_07310 G432_07325
+            GDI: GDI_0271(mauB) GDI_0273(mauA) GDI_1806(mauB) GDI_1807(mauA)
+            GDJ: Gdia_0036 Gdia_2335 Gdia_2337
+            GXL: H845_1153 H845_1154 H845_1163 H845_1164 H845_1172 H845_1175
+            APT: APA01_04540 APA01_04570
+            APW: APA42C_04540 APA42C_04570
+            APF: APA03_04540 APA03_04570
+            APU: APA07_04540 APA07_04570
+            APG: APA12_04540 APA12_04570
+            APQ: APA22_04540 APA22_04570
+            APX: APA26_04540 APA26_04570
+            APZ: APA32_04540 APA32_04570
+            APK: APA386B_1936(mauB) APA386B_1939(mauA)
+            PGV: SL003B_2489
+            RER: RER_53630
+            REY: O5Y_25460
+            REQ: REQ_44990(mauA)
+            RPY: Y013_17135
+            MIN: Minf_1997 Minf_2000
+DBLINKS     ExplorEnz - The Enzyme Database: 1.4.9.1
+            IUBMB Enzyme Nomenclature: 1.4.9.1
+            ExPASy - ENZYME nomenclature database: 1.4.9.1
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.4.9.1
+            BRENDA, the Enzyme Database: 1.4.9.1
+///

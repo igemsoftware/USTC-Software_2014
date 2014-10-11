@@ -1,0 +1,54 @@
+<a>  
+说明：建立超链接
+属性：href  超链接使用的网址URL。target  连接打开的目标。
+例如：txt.htmlText = "<a href='http://fdbinghen.com' target='_blank'>风冻冰痕</a>";
+
+<b>
+说明：文字粗体显示。
+例如：txt.htmlText = "<b>风冻冰痕</b>";
+
+<br>
+说明：不分段换行。
+例如：txt.htmlText = "风冻<br>冰痕";
+注：设置文本框为多行。
+
+<font>
+说明：文字样式设置。
+属性：color  设置文字颜色。face  设置文字字体。size  设置文字大小，以像素为单位。
+例如：txt.htmlText = "<font color='#ff00ff' face='宋体' size='16'>风冻冰痕</font>";
+
+<i>
+说明：文字斜体显示。
+例如：txt.htmlText = "<i>风冻冰痕</i>";
+
+<p>
+说明：文字段落设置。
+属性：align  指定文字段落的对齐方式。class  指定段落内容的样式类。
+例如：var style:StyleSheet=new StyleSheet();
+      var css:Object=new Object();
+      css.fontSize = "14";
+      css.color = "#ff0044";
+      style.setStyle(".title",css);
+      txt.styleSheet = style;
+      txt.htmlText = "<p align='center' class='title'>风冻冰痕</p>";
+
+<u>
+说明：文字下划线显示。
+例如：txt.htmlText = "<u>风冻冰痕</u>";
+
+<img>
+说明：在文字字段中显示图片或SWF文件。
+属性：src  图片或SWF文件来源URL。id  标签组件识别标志。width  宽度。height  高度。align  水平对齐方式。hspace  水平方向的留白。vspace  垂直方向的留白。
+注：文本内容必须带有文字才生效。
+例如：txt.htmlText = "图片：<img src='http://fdbinghen.com/image/sign/tuesday.jpg' id='images' width='480' height='341' align='center' hspace='0' vspace='0'>";
+
+<li>
+说明：列表项目
+例如：txt.htmlText = "<li>风</li>\n<li>冻</li>\n<li>冰</li>\n<li>痕</li>";
+
+<span>
+说明：范围设置。
+
+<testformat>
+说明：Flash专用控制标签。
+属性：blockIndent  区块缩排，单位为point。indent  从左边空白到段落开头文字间的留白大小。leading  指定行的垂直间距。rightmargin  设置区块段落右侧留白。leftmargin  设置区块段落左侧留白。tabstops  以整数数组设置定位停驻点。

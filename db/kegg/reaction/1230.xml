@@ -1,0 +1,13 @@
+ENTRY       R01230                      Reaction
+NAME        Xanthosine-5'-phosphate:ammonia ligase (AMP-forming)
+DEFINITION  ATP + Xanthosine 5'-phosphate + Ammonia <=> AMP + Diphosphate + GMP
+EQUATION    C00002 + C00655 + C00014 <=> C00020 + C00013 + C00144
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00573  C00144_C00655 main [RC:RC00204]
+            RP05868  C00014_C00144 leave
+ENZYME      6.3.5.2
+PATHWAY     rn00230  Purine metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01951  GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+///

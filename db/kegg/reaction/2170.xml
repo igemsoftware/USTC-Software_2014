@@ -1,0 +1,13 @@
+ENTRY       R02170                      Reaction
+NAME        Penicillin amidohydrolase
+DEFINITION  Penicillin + H2O <=> Carboxylate + 6-Aminopenicillanate
+EQUATION    C00395 + C00001 <=> C00060 + C02954
+COMMENT     general reaction (see R04103)
+RPAIR       RP02012  C00060_C00395 main [RC:RC00328]
+            RP02013  C00395_C02954 main [RC:RC00166]
+            RP05681  C00001_C00060 leave
+ENZYME      3.5.1.11
+PATHWAY     rn00311  Penicillin and cephalosporin biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K01434  penicillin amidase [EC:3.5.1.11]
+///

@@ -1,0 +1,10 @@
+ENTRY       R09871                      Reaction
+NAME        S-adenosyl-L-methionine:3-Methoxy-4',5-dihydroxy-trans-stilbene 5-O-methyltransferase
+DEFINITION  S-Adenosyl-L-methionine + 3-Methoxy-4',5-dihydroxy-trans-stilbene <=> S-Adenosyl-L-homocysteine + Pterostilbene
+EQUATION    C00019 + C20154 <=> C00021 + C10287
+COMMENT     second step of two-step reaction (see R09872, R09870+R09871)
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP15495  C10287_C20154 main [RC:RC00392]
+            RP15496  C00019_C10287 trans
+ENZYME      2.1.1.240
+///

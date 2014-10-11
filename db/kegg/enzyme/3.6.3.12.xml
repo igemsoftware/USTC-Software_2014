@@ -1,0 +1,1102 @@
+ENTRY       EC 3.6.3.12                 Enzyme
+NAME        K+-transporting ATPase;
+            K+-translocating Kdp-ATPase;
+            multi-subunit K+-transport ATPase
+CLASS       Hydrolases;
+            Acting on acid anhydrides;
+            Acting on acid anhydrides to catalyse transmembrane movement of substances
+SYSNAME     ATP phosphohydrolase (K+-importing)
+REACTION    ATP + H2O + K+out = ADP + phosphate + K+in [RN:R00086]
+ALL_REAC    R00086
+SUBSTRATE   ATP [CPD:C00002];
+            H2O [CPD:C00001];
+            K+ [CPD:C00238]
+PRODUCT     ADP [CPD:C00008];
+            phosphate [CPD:C00009];
+            K+ [CPD:C00238]
+COMMENT     A P-type ATPase that undergoes covalent phosphorylation during the transport cycle. A bacterial enzyme of di(heterotetrameric) structure that is involved in K+ import. The probable stoichiometry is one ion per ATP hydrolysed.
+HISTORY     EC 3.6.3.12 created 2000
+REFERENCE   1  [PMID:2522440]
+  AUTHORS   Siebers A, Altendorf K.
+  TITLE     Characterization of the phosphorylated intermediate of the K+-translocating Kdp-ATPase from Escherichia coli.
+  JOURNAL   J. Biol. Chem. 264 (1989) 5831-8.
+  ORGANISM  Escherichia coli
+REFERENCE   2  [PMID:9858692]
+  AUTHORS   Gassel M, Siebers A, Epstein W, Altendorf K.
+  TITLE     Assembly of the Kdp complex, the multi-subunit K+-transport ATPase of Escherichia coli.
+  JOURNAL   Biochim. Biophys. Acta. 1415 (1998) 77-84.
+  ORGANISM  Escherichia coli
+ORTHOLOGY   K01546  K+-transporting ATPase ATPase A chain
+            K01547  K+-transporting ATPase ATPase B chain
+            K01548  K+-transporting ATPase ATPase C chain
+GENES       ECO: b0696(kdpC) b0697(kdpB) b0698(kdpA)
+            ECJ: Y75_p0675(kdpC) Y75_p0676(kdpB) Y75_p0677(kdpA)
+            ECD: ECDH10B_0762(kdpC) ECDH10B_0763(kdpB) ECDH10B_0764(kdpA)
+            EBW: BWG_0556(kdpC) BWG_0557(kdpB) BWG_0558(kdpA)
+            ECOK: ECMDS42_0552(kdpC) ECMDS42_0553(kdpB) ECMDS42_0554(kdpA)
+            ECE: Z0843(kdpC) Z0844(kdpB) Z0845(kdpA)
+            ECS: ECs0724 ECs0725 ECs0726
+            ECF: ECH74115_0789(kdpC) ECH74115_0790(kdpB) ECH74115_0791(kdpA)
+            ETW: ECSP_0742(kdpC) ECSP_0743(kdpB) ECSP_0744(kdpA)
+            ELX: CDCO157_0704 CDCO157_0705 CDCO157_0706
+            EOJ: ECO26_0758(kdpC) ECO26_0759(kdpB) ECO26_0760(kdpA)
+            EOI: ECO111_0714(kdpC) ECO111_0715(kdpB) ECO111_0716(kdpA)
+            EOH: ECO103_0690(kdpC) ECO103_0691(kdpB)
+            ECG: E2348C_0585(kdpC) E2348C_0586(kdpB) E2348C_0587(kdpA)
+            EOK: G2583_0854(kdpC) G2583_0855(kdpB) G2583_0856(kdpA)
+            ELR: ECO55CA74_04150 ECO55CA74_04155 ECO55CA74_04160
+            ECC: c0781(kdpC) c0782(kdpB) c0783(kdpA)
+            ECP: ECP_0715 ECP_0716 ECP_0717
+            ECI: UTI89_C0700(kdpC) UTI89_C0701(kdpB) UTI89_C0702(kdpA)
+            ECV: APECO1_1369(kdpA) APECO1_1370(kdpB) APECO1_1371(kdpC)
+            ECX: EcHS_A0743(kdpC) EcHS_A0744(kdpB) EcHS_A0745(kdpA)
+            ECW: EcE24377A_0722(kdpC) EcE24377A_0723(kdpB) EcE24377A_0724(kdpA)
+            ECM: EcSMS35_0718(kdpC) EcSMS35_0719(kdpB) EcSMS35_0720(kdpA)
+            ECY: ECSE_0756 ECSE_0757 ECSE_0758
+            ECR: ECIAI1_0672(kdpC) ECIAI1_0673(kdpB) ECIAI1_0674(kdpA)
+            ECQ: ECED1_0675(kdpC) ECED1_0676(kdpB) ECED1_0677(kdpA)
+            ECK: EC55989_0680(kdpC) EC55989_0681(kdpB) EC55989_0682(kdpA)
+            ECT: ECIAI39_0655(kdpC) ECIAI39_0656(kdpB) ECIAI39_0657(kdpA)
+            EOC: CE10_0685(kdpC) CE10_0686(kdpB) CE10_0687(kdpA)
+            EUM: ECUMN_0778(kdpC) ECUMN_0779(kdpB) ECUMN_0780(kdpA)
+            ECZ: ECS88_0730(kdpC) ECS88_0731(kdpB) ECS88_0732(kdpA)
+            ELO: EC042_0720(kdpC) EC042_0721(kdpB) EC042_0722(kdpA)
+            ELN: NRG857_03135 NRG857_03140 NRG857_03145
+            ELH: ETEC_0712 ETEC_0713
+            ESE: ECSF_0631 ECSF_0632 ECSF_0633
+            ESO: O3O_07125 O3O_07130 O3O_07135
+            ESM: O3M_18140 O3M_18145 O3M_18150
+            ESL: O3K_18160 O3K_18165 O3K_18170
+            ECL: EcolC_2958 EcolC_2959 EcolC_2960
+            EBR: ECB_00653(kdpC) ECB_00654(kdpB) ECB_00655(kdpA)
+            EBD: ECBD_2962 ECBD_2963 ECBD_2964
+            EKO: EKO11_3181 EKO11_3182 EKO11_3183
+            EKF: KO11_20245(kdpA) KO11_20250(kdpB) KO11_20255(kdpC)
+            EAB: ECABU_c07470(kdpC) ECABU_c07480(kdpB) ECABU_c07490(kdpA)
+            EDH: EcDH1_2938 EcDH1_2939 EcDH1_2940
+            EDJ: ECDH1ME8569_0655(kdpC) ECDH1ME8569_0656(kdpB) ECDH1ME8569_0657(kdpA)
+            EIH: ECOK1_0705(kdpC) ECOK1_0706(kdpB) ECOK1_0707(kdpA)
+            ENA: ECNA114_0633(kdpC) ECNA114_0634(kdpB) ECNA114_0635(kdpA)
+            ELU: UM146_14080 UM146_14085 UM146_14090
+            EUN: UMNK88_733(kdpC) UMNK88_734(kdpB) UMNK88_735(kdpA)
+            ELW: ECW_m0747(kdpC) ECW_m0748(kdpB) ECW_m0749(kdpA)
+            ELL: WFL_03665(kdpC) WFL_03670(kdpB) WFL_03675(kdpA)
+            ELC: i14_0752(kdpC) i14_0753(kdpB) i14_0754(kdpA)
+            ELD: i02_0752(kdpC) i02_0753(kdpB) i02_0754(kdpA)
+            ELP: P12B_c0667(kdpC) P12B_c0668(kdpB) P12B_c0669(kdpA)
+            EBL: ECD_00653(kdpC) ECD_00654(kdpB) ECD_00655(kdpA)
+            EBE: B21_00644(kdpC) B21_00645(kdpB) B21_00646(kdpA)
+            ELF: LF82_1145(kdpA) LF82_1146(kdpB) LF82_1147(kdpC)
+            ECOA: APECO78_07010 APECO78_07015 APECO78_07020
+            ECOL: LY180_03695 LY180_03700 LY180_03705
+            ECOI: ECOPMV1_00709 ECOPMV1_00710(kdpB) ECOPMV1_00711
+            ECOJ: P423_03430 P423_03435 P423_03440
+            ECOO: ECRM13514_0714(kdpC) ECRM13514_0715(kdpB) ECRM13514_0716(kdpA)
+            EFE: EFER_2412(kdpA) EFER_2413(kdpB) EFER_2414(kdpC)
+            STY: STY0745(kdpC) STY0746(kdpB) STY0747(kdpA)
+            STT: t2169(kdpA) t2170(kdpB) t2171(kdpC)
+            SEX: STBHUCCB_22950 STBHUCCB_22960 STBHUCCB_22970
+            SENT: TY21A_11010 TY21A_11015 TY21A_11020
+            STM: STM0704(kdpC) STM0705(kdpB) STM0706(kdpA)
+            SEO: STM14_0823(kdpC) STM14_0824(kdpB) STM14_0825(kdpA)
+            SEV: STMMW_07621 STMMW_07631 STMMW_07641
+            SEY: SL1344_0686(kdpC) SL1344_0687(kdpB) SL1344_0688(kdpA)
+            SEM: STMDT12_C07610 STMDT12_C07620 STMDT12_C07630
+            SEJ: STMUK_0710(kdpC) STMUK_0711(kdpB) STMUK_0712(kdpA)
+            SEB: STM474_0726(kdpC) STM474_0727(kdpB) STM474_0728(kdpA)
+            SEF: UMN798_0763(kdpC) UMN798_0764(kdpB) UMN798_0765(kdpA)
+            SETU: STU288_10870 STU288_10875 STU288_10880
+            SETC: CFSAN001921_13495 CFSAN001921_13500 CFSAN001921_13505
+            SEEN: SE451236_09550 SE451236_09555 SE451236_09560
+            SENR: STMDT2_06881(kdpC) STMDT2_06891(kdpB) STMDT2_06901(kdpA)
+            SEND: DT104_07271(kdpC) DT104_07281(kdpB) DT104_07291(kdpA)
+            SPT: SPA2035(kdpA) SPA2036(kdpB) SPA2037(kdpC)
+            SEK: SSPA1896 SSPA1897 SSPA1898
+            SPQ: SPAB_02830 SPAB_02831 SPAB_02832
+            SEI: SPC_0714(kdpC) SPC_0715(kdpB) SPC_0716(kdpA)
+            SEC: SC0724(kdpC) SC0725(kdpB) SC0726(kdpA)
+            SEH: SeHA_C0826(kdpC) SeHA_C0827(kdpB) SeHA_C0828(kdpA)
+            SHB: SU5_01388 SU5_01389 SU5_01390
+            SENH: CFSAN002069_05305 CFSAN002069_05310 CFSAN002069_05315
+            SEEH: SEEH1578_12925 SEEH1578_12930 SEEH1578_12935
+            SEE: SNSL254_A0765(kdpC) SNSL254_A0766(kdpB) SNSL254_A0767(kdpA)
+            SENN: SN31241_17050 SN31241_17060 SN31241_17070
+            SEW: SeSA_A0862(kdpC) SeSA_A0863(kdpB) SeSA_A0864(kdpA)
+            SEA: SeAg_B0752(kdpC) SeAg_B0753(kdpB) SeAg_B0754(kdpA)
+            SENS: Q786_03470 Q786_03475 Q786_03480
+            SED: SeD_A0812(kdpC) SeD_A0813(kdpB) SeD_A0814(kdpA)
+            SEG: SG0701(kdpC) SG0702(kdpB) SG0703(kdpA)
+            SEL: SPUL_2257(kdpB) SPUL_2258(kdpC)
+            SEGA: SPUCDC_2242(kdpA) SPUCDC_2243(kdpB) SPUCDC_2244(kdpC)
+            SET: SEN0668(kdpC) SEN0669(kdpB) SEN0670(kdpA)
+            SENJ: CFSAN001992_07855 CFSAN001992_07860 CFSAN001992_07865
+            SEEC: CFSAN002050_10140 CFSAN002050_10145 CFSAN002050_10150
+            SEEB: SEEB0189_15750 SEEB0189_15755 SEEB0189_15760
+            SEEP: I137_10250 I137_10255
+            SENB: BN855_6920(SBOV06511) BN855_6930(SBOV06521) BN855_6940(SBOV06531)
+            SENE: IA1_03655 IA1_03660 IA1_03665
+            SES: SARI_02235 SARI_02236 SARI_02237
+            SBG: SBG_0594(kdpC) SBG_0595(kdpB) SBG_0596(kdpA)
+            SBZ: A464_666 A464_667 A464_668
+            YPE: YPO2690(kdpC) YPO2691(kdpB) YPO2692(kdpA)
+            YPK: y1263(kdpC) y1264(kdpB) y1265(kdpA)
+            YPA: YPA_2420 YPA_2421 YPA_2422
+            YPN: YPN_1177 YPN_1178 YPN_1179
+            YPM: YP_2493(kdpC) YP_2494(kdpB) YP_2495(kdpA)
+            YPP: YPDSF_1580 YPDSF_1581 YPDSF_1582
+            YPG: YpAngola_A3580(kdpC) YpAngola_A3581(kdpB) YpAngola_A3582(kdpA)
+            YPZ: YPZ3_2372(kdpC) YPZ3_2373 YPZ3_2374(kdpA)
+            YPT: A1122_12605 A1122_12610 A1122_12615
+            YPD: YPD4_2338(kdpA) YPD4_2339(kdpB) YPD4_2340(kdpC)
+            YPX: YPD8_2351(kdpC) YPD8_2352 YPD8_2353(kdpA)
+            YPH: YPC_3164(kdpA) YPC_3165(kdpB) YPC_3166(kdpC)
+            YPS: YPTB2916(kdpA) YPTB2917(kdpB) YPTB2918(kdpC)
+            YPI: YpsIP31758_1104(kdpC) YpsIP31758_1106(kdpB) YpsIP31758_1108(kdpA)
+            YPY: YPK_1157 YPK_1158 YPK_1159
+            YPB: YPTS_3031 YPTS_3032 YPTS_3033
+            YEN: YE2960(kdpA) YE2961(kdpB) YE2962(kdpC)
+            YEP: YE105_C1274 YE105_C1275 YE105_C1276
+            YEY: Y11_18801 Y11_18811 Y11_18821
+            YSI: BF17_00975 BF17_00980 BF17_00990
+            SFL: SF0598(kdpA)
+            SFX: S0609(kdpA) S0611(kdpC)
+            SFV: SFV_0635(kdpA) SFV_0637(kdpC)
+            SFE: SFxv_0658(kdpA) SFxv_0660(kdpC)
+            SSN: SSON_0647(kdpC) SSON_0648(kdpB) SSON_0649(kdpA)
+            SSJ: SSON53_03460 SSON53_03465 SSON53_03470
+            SBO: SBO_0559(kdpB) SBO_0560(kdpA)
+            SBC: SbBS512_E0551(kdpA) SbBS512_E0552(kdpB)
+            SDY: SDY_0631(kdpC)
+            SDZ: Asd1617_00794 Asd1617_00795 Asd1617_00796 Asd1617_00797 Asd1617_00798
+            ECA: ECA1340(kdpC) ECA1341(kdpB) ECA1342(kdpA)
+            PCT: PC1_1216 PC1_1217 PC1_1218
+            PCC: PCC21_012470 PCC21_012480 PCC21_012490
+            ETA: ETA_33630(kdpC) ETA_33640(kdpB) ETA_33650(kdpA)
+            EPY: EpC_35690(kdpC) EpC_35700(kdpB) EpC_35710(kdpA)
+            EPR: EPYR_03839(kdpC) EPYR_03840(kdpB) EPYR_03841(kdpA)
+            EAM: EAMY_3570(kdpC) EAMY_3571(kdpB) EAMY_3572(kdpA)
+            EAY: EAM_3357(kdpC) EAM_3358(kdpB) EAM_3359(kdpA)
+            EBI: EbC_43380(kdpC) EbC_43390(kdpB) EbC_43400(kdpA)
+            ERJ: EJP617_10530(kdpC) EJP617_10540(kdpB) EJP617_10550(kdpA)
+            PLU: plu1418(kdpC) plu1419(kdpB) plu1420(kdpA)
+            PAY: PAU_02986(kdpA) PAU_02987(kdpB) PAU_02988(kdpC)
+            SGL: SG0327
+            SOD: Sant_3535(kdpC) Sant_3536(kdpB) Sant_3537(kdpA)
+            ENT: Ent638_1208 Ent638_1209 Ent638_1210
+            ENC: ECL_03020 ECL_03021 ECL_03022
+            ENO: ECENHK_06530 ECENHK_06535 ECENHK_06540
+            ECLO: ENC_20320 ENC_20330
+            EEC: EcWSU1_01257(kdpC) EcWSU1_01258(kdpB) EcWSU1_01259(kdpA)
+            ENL: A3UG_06435 A3UG_06440 A3UG_06445
+            ESC: Entcl_3119 Entcl_3120 Entcl_3121
+            EAS: Entas_1188 Entas_1189 Entas_1190
+            EAU: DI57_12390 DI57_12395 DI57_12400
+            EAE: EAE_14075 EAE_14080 EAE_14085
+            EAR: ST548_p5903 ST548_p5904 ST548_p5905
+            ENR: H650_22255 H650_22260 H650_22265
+            ESA: ESA_02641 ESA_02642 ESA_02643
+            CSK: ES15_2722(kdpA) ES15_2723(kdpB) ES15_2724(kdpC)
+            CSZ: CSSP291_12485 CSSP291_12490 CSSP291_12495
+            CSI: P262_03970 P262_03972 P262_03973
+            CTU: CTU_13120(kdpC) CTU_13130(kdpB) CTU_13140(kdpA)
+            KPN: KPN_00715(kdpC) KPN_00716(kdpB) KPN_00717(kdpA)
+            KPU: KP1_1668(kdpC) KP1_1669(kdpB) KP1_1670(kdpA)
+            KPM: KPHS_15480 KPHS_15490 KPHS_15500
+            KPP: A79E_3521 A79E_3522 A79E_3523
+            KPE: KPK_3853(kdpA) KPK_3854(kdpB) KPK_3855(kdpC)
+            KPO: KPN2242_06410 KPN2242_06415 KPN2242_06420
+            KPR: KPR_3862(atkA) KPR_3863(atkB) KPR_3864(atkC)
+            KPJ: N559_3611 N559_3612 N559_3613
+            KPI: D364_03735 D364_03740 D364_03745
+            KVA: Kvar_3654 Kvar_3655 Kvar_3656
+            KOX: KOX_14495 KOX_14500 KOX_14505
+            KOE: A225_1724 A225_1725 A225_1726
+            CKO: CKO_02463 CKO_02464 CKO_02465
+            CRO: ROD_07021(kdpC) ROD_07031(kdpB) ROD_07041(kdpA)
+            CFD: CFNIH1_13585 CFNIH1_13590 CFNIH1_13595
+            SPE: Spro_1246 Spro_1247 Spro_1248
+            SRR: SerAS9_1219 SerAS9_1220 SerAS9_1221
+            SRL: SOD_c11170(kdpC) SOD_c11180(kdpB) SOD_c11190(kdpA)
+            SRY: M621_06270 M621_06275 M621_06280
+            SRS: SerAS12_1219 SerAS12_1220 SerAS12_1221
+            SRA: SerAS13_1219 SerAS13_1220 SerAS13_1221
+            SMAF: D781_1168 D781_1169 D781_1170
+            SMW: SMWW4_v1c12110(kdpC) SMWW4_v1c12120(kdpB) SMWW4_v1c12130(kdpA)
+            SLQ: M495_05600 M495_05605 M495_05610
+            SERR: Ser39006_1856 Ser39006_1857 Ser39006_1858
+            SFO: Z042_19830 Z042_19835 Z042_19840
+            PMIB: BB2000_1237 BB2000_1238(copA) BB2000_1239
+            EIC: NT01EI_2888 NT01EI_2889 NT01EI_2890
+            ETR: ETAE_2600(kdpA) ETAE_2601(kdpB) ETAE_2602(kdpC)
+            ETD: ETAF_2341 ETAF_2342 ETAF_2343
+            ETC: ETAC_12500 ETAC_12505 ETAC_12510
+            DDA: Dd703_1128 Dd703_1129 Dd703_1130
+            DDC: Dd586_1172 Dd586_1173 Dd586_1174
+            DDD: Dda3937_01549(kdpA) Dda3937_01550(kdpB) Dda3937_01551(kdpC)
+            DZE: Dd1591_2927 Dd1591_2928 Dd1591_2929
+            XBO: XBJ1_1067(kdpA) XBJ1_1068(kdpB) XBJ1_1069(kdpC)
+            XNE: XNC1_1396(kdpC) XNC1_1397(kdpB) XNC1_1398(kdpA)
+            PAM: PANA_3788(kdpC) PANA_3789(kdpB) PANA_3790(kdpA)
+            PLF: PANA5342_0250(kdpA3) PANA5342_0251(kdpB) PANA5342_0252(kdpC)
+            PAJ: PAJ_3008(kdpC) PAJ_3009(kdpB) PAJ_3010(kdpA)
+            PAQ: PAGR_g0243 PAGR_g0244 PAGR_g0245
+            PVA: Pvag_3066(kdpC) Pvag_3067(kdpB) Pvag_3068(kdpA)
+            PAO: Pat9b_3781 Pat9b_3782 Pat9b_3783
+            RAH: Rahaq_3167 Rahaq_3168 Rahaq_3169
+            RAQ: Rahaq2_3197 Rahaq2_3198 Rahaq2_3199
+            RAA: Q7S_15975 Q7S_15980 Q7S_15985
+            PSI: S70_15700 S70_15705 S70_15710
+            EBT: EBL_c26800(kdpA) EBL_c26810(kdpB) EBL_c26820(kdpC)
+            MMK: MU9_3393 MU9_3394 MU9_3395
+            ROR: RORB6_11530 RORB6_11535 RORB6_11540
+            EBF: D782_3152 D782_3153 D782_3154
+            XCC: XCC0702(kdpA) XCC0703(kdpB) XCC0704(kdpC)
+            XCB: XC_3530 XC_3531 XC_3532
+            XCA: xccb100_3651 xccb100_3652 xccb100_3653
+            XCP: XCR_0869(kdpA) XCR_0870(kdpB) XCR_0871(kdpC)
+            XCV: XCV0808(kdpA) XCV0809(kdpB) XCV0810(kdpC)
+            XAC: XAC0756(kdpA) XAC0757(kdpB) XAC0758(kdpC)
+            XCI: XCAW_03824(kdpC) XCAW_03825(kdpB) XCAW_03826(kdpA)
+            XAX: XACM_0752(kdpA) XACM_0753(kdpB) XACM_0754(kdpC)
+            XAO: XAC29_03855 XAC29_03860 XAC29_03865
+            XOO: XOO3844(kdpC) XOO3845(kdpB) XOO3846(kdpA)
+            XOM: XOO_3622 XOO_3623 XOO_3624
+            XOP: PXO_04385(kdpC) PXO_04386(kdpB) PXO_04387(kdpA)
+            XOR: XOC_0822(kdpA) XOC_0823(kdpB) XOC_0824(kdpC)
+            XAL: XALc_2830(kdpC) XALc_2831(KdpB) XALc_2832(KdpA)
+            SML: Smlt0406(kdpC) Smlt0407(kdpB) Smlt0408(kdpA)
+            SMT: Smal_0289 Smal_0290 Smal_0291
+            BUJ: BurJV3_0317 BurJV3_0318 BurJV3_0319
+            SMZ: SMD_0326(kdpC) SMD_0327(kdpB) SMD_0328(kdpA)
+            DJI: CH75_16330 CH75_16345 CH75_16350
+            PAE: PA1633(kdpA) PA1634(kdpB) PA1635(kdpC)
+            PAU: PA14_43370(kdpC) PA14_43380(kdpB) PA14_43400(kdpA)
+            PAP: PSPA7_3638(kdpC2) PSPA7_3639(kdpB2) PSPA7_3640(kdpA2) PSPA7_3712(kdpA1) PSPA7_3713(kdpB1) PSPA7_3714(kdpC1)
+            PAG: PLES_36921(kdpC) PLES_36931(kdpB) PLES_36941(kdpA)
+            PAF: PAM18_3412(kdpC) PAM18_3413(kdpB) PAM18_3414(kdpA)
+            PNC: NCGM2_2524(kdpA) NCGM2_2525(kdpB) NCGM2_2526(kdpC)
+            PDK: PADK2_17535 PADK2_17540 PADK2_17545
+            PSG: G655_17035 G655_17040 G655_17045
+            PRP: M062_08695 M062_08700 M062_08705
+            PAEP: PA1S_gp5213 PA1S_gp5214 PA1S_gp5215
+            PAER: PA1R_gp5213 PA1R_gp5214 PA1R_gp5215
+            PAEM: U769_17570 U769_17575 U769_17580
+            PAEL: T223_18900 T223_18905 T223_18910
+            PAES: SCV20265_3777 SCV20265_3778 SCV20265_3779
+            PAEU: BN889_01747(kdpA) BN889_01748(kdpB) BN889_01749(kdpC)
+            PAEG: AI22_16130 AI22_16135 AI22_16140
+            PPU: PP_4159(kdpC) PP_4161(kdpA)
+            PPF: Pput_1707 Pput_1708 Pput_1709
+            PPG: PputGB1_3731 PputGB1_3732 PputGB1_3733
+            PPW: PputW619_3484 PputW619_3485 PputW619_3486
+            PPT: PPS_3560 PPS_3561 PPS_3562
+            PPB: PPUBIRD1_1690(kdpA) PPUBIRD1_1692 PPUBIRD1_1693(kdpC)
+            PPI: YSA_08530 YSA_08532 YSA_08534
+            PPX: T1E_2368(kdpC) T1E_2369(kdpB) T1E_2370(kdpA)
+            PPUH: B479_17720 B479_17725 B479_17730
+            PPUT: L483_23135 L483_23140 L483_23145
+            PPUN: PP4_15960(kdpA) PP4_15970(kdpB) PP4_15980(kdpC)
+            PPUU: PputUW4_01391(kdpA) PputUW4_01392(kdpB) PputUW4_01393(kdpC)
+            PST: PSPTO_2242(kdpA) PSPTO_2243(kdpB) PSPTO_2244(kdpC)
+            PSB: Psyr_2047 Psyr_2048 Psyr_2049
+            PSYR: N018_09505 N018_09510 N018_09515
+            PSP: PSPPH_2017(kdpA) PSPPH_2018(kdpB) PSPPH_2019 PSPPH_2020(kdpC)
+            PCI: PCH70_30430 PCH70_30440 PCH70_30450
+            PFL: PFL_4295(kdpC_1) PFL_4296(kdpB_1) PFL_4297(kdpA_1) PFL_4571(kdpB_2) PFL_4572(kdpC_2) PFL_4573(kdpA_2)
+            PPRC: PFLCHA0_c43600(kdpC1) PFLCHA0_c43610(kdpB1) PFLCHA0_c43620(kdpA1) PFLCHA0_c46420(kdpB2) PFLCHA0_c46430(kdpC2) PFLCHA0_c46440(kdpA2)
+            PFO: Pfl01_4031 Pfl01_4032 Pfl01_4033
+            PFS: PFLU1676(kdpA) PFLU1677(kdpB) PFLU1678(kdpC)
+            PFE: PSF113_1665 PSF113_1666 PSF113_1667
+            PFC: PflA506_1723(kdpA) PflA506_1724(kdpB) PflA506_1725(kdpC)
+            PPZ: H045_04780 H045_04785 H045_04790
+            PEN: PSEEN3607(kdpC) PSEEN3608(kdpB) PSEEN3609(kdpA)
+            PMK: MDS_4640 MDS_4641 MDS_4642
+            PSR: PSTAA_1952(kdpA) PSTAA_1953(kdpB) PSTAA_1954(kdpC)
+            PBA: PSEBR_a1586 PSEBR_a1587 PSEBR_a1588
+            PDR: H681_10005 H681_10010 H681_10015
+            PRE: PCA10_22330(kdpA) PCA10_22340(kdpB) PCA10_22350(kdpC)
+            PSV: PVLB_16150 PVLB_16155 PVLB_16160
+            PSK: U771_09440 U771_09445 U771_09450 U771_10500 U771_10505 U771_10510
+            PMON: X969_17020 X969_17025 X969_17030
+            PMOT: X970_16670 X970_16675 X970_16680
+            PKC: PKB_1847(kdpa1) PKB_1848(kdpb1) PKB_1849(kdpc1) PKB_3062(kdpa3) PKB_3063(kdpb3) PKB_3064(kdpc3)
+            PSO: PSYCG_03970 PSYCG_03975 PSYCG_03980
+            ACI: ACIAD2976(kdpC) ACIAD2977(kdpB) ACIAD2978(kdpA)
+            ACD: AOLE_06445 AOLE_06450 AOLE_06455
+            ACB: A1S_2139 A1S_2140 A1S_2141 A1S_2142
+            ABM: ABSDF1597(kdpA) ABSDF1598(kdpB) ABSDF1599(kdpC)
+            ABY: ABAYE1420(kdpA) ABAYE1421(kdpB) ABAYE1422(kdpC)
+            ABC: ACICU_02339 ACICU_02340 ACICU_02341
+            ABN: AB57_2472(kdpC) AB57_2473(kdpB) AB57_2474(kdpA)
+            ABB: ABBFA_001325(kdpA) ABBFA_001326(kdpB) ABBFA_001327(kdpC)
+            ABX: ABK1_1348 ABK1_1349 ABK1_1350
+            ABZ: ABZJ_02491 ABZJ_02492 ABZJ_02493
+            ABR: ABTJ_01402 ABTJ_01403 ABTJ_01404
+            ABD: ABTW07_2531(kdpC) ABTW07_2532 ABTW07_2533
+            ABH: M3Q_2587 M3Q_2588 M3Q_2589
+            ABAD: ABD1_21380(kpdC) ABD1_21390(kpdB) ABD1_21400(kpdA)
+            ABJ: BJAB07104_02495 BJAB07104_02496 BJAB07104_02498
+            ABAB: BJAB0715_02524 BJAB0715_02525 BJAB0715_02526
+            ABAJ: BJAB0868_02378 BJAB0868_02379 BJAB0868_02380
+            ABAZ: P795_6250 P795_6255 P795_6260
+            ACC: BDGL_001626(kdpC) BDGL_001627(kdpB) BDGL_001628(kdpA)
+            SPC: Sputcn32_3080 Sputcn32_3081 Sputcn32_3082
+            SHP: Sput200_3189 Sput200_3190 Sput200_3191
+            SHW: Sputw3181_0862 Sputw3181_0863 Sputw3181_0864 Sputw3181_0865
+            LLO: LLO_2468(kdpA) LLO_2469(kdpB) LLO_2470(kdpC)
+            MCA: MCA2215(kdpC) MCA2216(kdpB) MCA2217(kdpA)
+            FTU: FTT_1737c(kdpC) FTT_1738c(kdpB)
+            FTF: FTF1737c(kdpC) FTF1738c(kdpB)
+            FTW: FTW_0059(kdpA) FTW_0060(kdpB) FTW_0061(kdpC)
+            FTR: NE061598_10115 NE061598_10120
+            FTT: FTV_1656(kdpC) FTV_1657(kdpB)
+            FTG: FTU_1741(kdpC) FTU_1742(kdpB)
+            FTL: FTL_1880 FTL_1881 FTL_1882 FTL_1883
+            FTH: FTH_1806(kdpC) FTH_1808(kdpA)
+            FTA: FTA_1989(kdpC) FTA_1992(kdpA)
+            FTS: F92_10400 F92_10405 F92_10410 F92_10415
+            FTI: FTS_1830(kdpC) FTS_1832(kdpA)
+            FTO: X557_09655 X557_09665
+            FTM: FTM_1687(kdpC) FTM_1688(kdpB) FTM_1689(kdpA)
+            FTN: FTN_1716(kdpC) FTN_1717(kdpB) FTN_1718(kdpA)
+            FCF: FNFX1_1757 FNFX1_1758 FNFX1_1759
+            FCN: FN3523_1788 FN3523_1789 FN3523_1790
+            FPH: Fphi_0885 Fphi_0886 Fphi_0887
+            FRT: F7308_0483 F7308_0484 F7308_0485
+            FNA: OOM_1770
+            FNL: M973_10045
+            ALV: Alvin_1158 Alvin_1159 Alvin_1160
+            TVI: Thivi_0081 Thivi_0082 Thivi_0083
+            TGR: Tgr7_1887 Tgr7_1888 Tgr7_1889
+            ADI: B5T_02494 B5T_02495 B5T_02496
+            AHA: AHA_0015(kdpC) AHA_0016(kdpB) AHA_0017(kdpA)
+            AHY: AHML_00075 AHML_00080 AHML_00085
+            ASA: ASA_0018(kdpC) ASA_0019(kdpB) ASA_0020(kdpA)
+            AVR: B565_0014 B565_0015 B565_0016
+            AMED: B224_5323 B224_5324 B224_5328
+            TAU: Tola_1192 Tola_1193 Tola_1194
+            AFE: Lferr_1885 Lferr_1886 Lferr_1887 Lferr_2100 Lferr_2101 Lferr_2102 Lferr_2104
+            AFR: AFE_2232(kdpA-3) AFE_2233(kdpB-2) AFE_2234(kdpC-2) AFE_2473(kdpC-1) AFE_2474(kdpB-1) AFE_2475(kdpA-2) AFE_2477(kdpA-1)
+            ACU: Atc_0137 Atc_0138 Atc_0139 Atc_0146 Atc_0285 Atc_0286 Atc_0287
+            AFI: Acife_1075 Acife_1076 Acife_1077
+            GPB: HDN1F_36020(kdpC) HDN1F_36030(kdpB) HDN1F_36040(kdpA)
+            CVI: CV_1597(kdpC) CV_1598(kdpB) CV_1599(kdpA)
+            LHK: LHK_01572(atkA) LHK_01573 LHK_01574(atkC)
+            RSO: RSc3382(kdpA) RSc3383(kdpB) RSc3384(kdpC)
+            RSC: RCFBP_10081(kdpC) RCFBP_10082(kdpB) RCFBP_10083(kdpA)
+            RSL: RPSI07_0057(kdpC) RPSI07_0058(kdpB) RPSI07_0059(kdpA)
+            RSN: RSPO_c00058(kdpC) RSPO_c00059(kdpB) RSPO_c00060(kdpA)
+            RSM: CMR15_10087(kdpC) CMR15_10088(kdpB) CMR15_10089(kdpA)
+            RSE: F504_3432 F504_3433 F504_3434
+            RPI: Rpic_3589 Rpic_3590 Rpic_3591
+            RPF: Rpic12D_3267 Rpic12D_3268 Rpic12D_3269
+            REU: Reut_A2291 Reut_A2292 Reut_A2293
+            REH: H16_B0896(kdpC) H16_B0897(kdpB) H16_B0898(kdpA)
+            CNC: CNE_2c08510(kdpC) CNE_2c08520(kdpB) CNE_2c08530(kdpA)
+            RME: Rmet_0038(kdpA) Rmet_0039(kdpB) Rmet_0040(kdpC)
+            CTI: RALTA_A0976(kdpA) RALTA_A0977(kdpB) RALTA_A0978(kdpC)
+            BMA: BMA1874(kdpC) BMA1875(kdpB) BMA1876(kdpA)
+            BMV: BMASAVP1_A1083(kdpA) BMASAVP1_A1084(kdpB) BMASAVP1_A1085(kdpC)
+            BML: BMA10229_A0782(kdpC) BMA10229_A0783(kdpB) BMA10229_A0784(kdpA)
+            BMN: BMA10247_0366(kdpA) BMA10247_0367(kdpB) BMA10247_0368(kdpC)
+            BPS: BPSL1171(kdpA) BPSL1172(kdpB) BPSL1173(kdpC)
+            BPM: BURPS1710b_1393(kdpA) BURPS1710b_1394(kdpB) BURPS1710b_1395(kdpC)
+            BPL: BURPS1106A_1249(kdpA) BURPS1106A_1250(kdpB) BURPS1106A_1251(kdpC)
+            BPD: BURPS668_1241(kdpA) BURPS668_1242(kdpB) BURPS668_1243(kdpC)
+            BPR: GBP346_A1265(kdpA) GBP346_A1266(kdpB) GBP346_A1267(kdpC)
+            BPSE: BDL_855(kdpC) BDL_856(kdpB) BDL_857(kdpA)
+            BPSU: BBN_2412(kdpC) BBN_2413(kdpB) BBN_2414(kdpA)
+            BPZ: BP1026B_I2383(kdpC) BP1026B_I2384(kdpB) BP1026B_I2385(kdpA)
+            BPQ: BPC006_I1297 BPC006_I1298 BPC006_I1299
+            BPK: BBK_361(kdpC) BBK_362(kdpB) BBK_363(kdpA)
+            BTE: BTH_I1021(kdpA) BTH_I1022(kdpB) BTH_I1023(kdpC)
+            BTD: BTI_2675(kdpC) BTI_2676(kdpB) BTI_2677(kdpA) BTI_4751(kdpA)
+            BVI: Bcep1808_2371 Bcep1808_2372 Bcep1808_2373
+            BUR: Bcep18194_A5613 Bcep18194_A5614 Bcep18194_A5615 Bcep18194_B0449 Bcep18194_B2381 Bcep18194_B2382 Bcep18194_B2383
+            BCN: Bcen_1674 Bcen_1675 Bcen_1676
+            BCH: Bcen2424_2286 Bcen2424_2287 Bcen2424_2288
+            BCM: Bcenmc03_2309 Bcenmc03_2310 Bcenmc03_2311
+            BCJ: BCAL2381(kdpC) BCAL2382(kdpB) BCAL2383(kdpA)
+            BAM: Bamb_2324 Bamb_2325 Bamb_2326
+            BAC: BamMC406_2202 BamMC406_2203 BamMC406_2204
+            BMU: Bmul_0990 Bmul_0991 Bmul_0992
+            BMJ: BMULJ_02272(kdpC) BMULJ_02273(kdpB) BMULJ_02274(kdpA)
+            BCT: GEM_1123 GEM_1124 GEM_1125 GEM_5042 GEM_5043 GEM_5044
+            BXE: Bxe_A3250 Bxe_A3251 Bxe_A3252
+            BPH: Bphy_2055 Bphy_2056 Bphy_2057
+            BPY: Bphyt_1308 Bphyt_1309 Bphyt_1310
+            BGL: bglu_1g26260 bglu_1g26270 bglu_1g26280
+            BUG: BC1001_1047 BC1001_1048 BC1001_1049
+            BGE: BC1002_0919 BC1002_0920 BC1002_0921
+            BGF: BC1003_2354 BC1003_2355 BC1003_2356
+            BRH: RBRH_02803 RBRH_02804 RBRH_02805
+            BGD: bgla_1g29630 bgla_1g29640 bgla_1g29650
+            BYI: BYI23_A008890 BYI23_A008900 BYI23_A008910
+            BUK: MYA_2078 MYA_2079 MYA_2080
+            BPX: BUPH_05193 BUPH_05194 BUPH_05195
+            BUO: BRPE64_CCDS05440(kdpC) BRPE64_CCDS05450(kdpB) BRPE64_CCDS05460(kdpA)
+            PNU: Pnuc_1668 Pnuc_1669 Pnuc_1670
+            PPK: U875_08835 U875_08840 U875_08845
+            PPNO: DA70_01575 DA70_01580 DA70_01585
+            PRB: X636_00785 X636_00790 X636_00795
+            BPE: BP2480(kdpA) BP2481(kdpB) BP2482(kdpC)
+            BPC: BPTD_2437(kdpA) BPTD_2438(kdpB) BPTD_2439(kdpC)
+            BPER: BN118_1543(kdpC) BN118_1544(kdpB) BN118_1545(kdpA)
+            BPA: BPP3468(kdpA) BPP3469(kdpB) BPP3470(kdpC)
+            BPAR: BN117_1195(kdpC) BN117_1197(kdpA)
+            BBR: BB3917(kdpA) BB3918(kdpB) BB3919(kdpC)
+            BBM: BN115_3593(kdpA) BN115_3594(kdpB) BN115_3595(kdpC)
+            BBH: BN112_4497(kdpC) BN112_4498(kdpB) BN112_4499(kdpA)
+            BAV: BAV2701(kdpA) BAV2702(kdpB) BAV2703(kdpC)
+            BHO: D560_0210(kdpA) D560_0213 D560_0214(kdpC)
+            AXY: AXYL_01192(kdpC) AXYL_01193(kdpB) AXYL_01194(kdpA)
+            AXO: NH44784_007971 NH44784_007981 NH44784_007991
+            AXN: AX27061_1235 AX27061_1236 AX27061_1237
+            AKA: TKWG_19640 TKWG_19645 TKWG_19650 TKWG_19655 TKWG_19660 TKWG_19665
+            AMIM: MIM_c38460(kdpB) MIM_c38470(kdpC) MIM_c38480(kdpA)
+            PNA: Pnap_3602 Pnap_3603 Pnap_3604
+            AAV: Aave_0355 Aave_0356 Aave_0357
+            AAA: Acav_0425 Acav_0426 Acav_0427
+            ACK: C380_12750 C380_12755 C380_12760
+            DAC: Daci_5923 Daci_5924 Daci_5925
+            DEL: DelCs14_0671 DelCs14_0672 DelCs14_0673
+            VAP: Vapar_4993 Vapar_4994 Vapar_4995
+            VPE: Varpa_5693 Varpa_5694 Varpa_5695
+            VPD: VAPA_1c51820(kdpC) VAPA_1c51830(kdpB) VAPA_1c51840(kdpA)
+            CTT: CtCNB1_0529 CtCNB1_0530 CtCNB1_0531
+            ADN: Alide_3010 Alide_3011 Alide_3012
+            ADK: Alide2_1436 Alide2_1437 Alide2_1438
+            MPT: Mpe_A2505(kdpC) Mpe_A2506(kdpB) Mpe_A2507(kdpA)
+            HAR: HEAR1624(kdpC) HEAR1625(kdpB) HEAR1626(kdpA)
+            MMS: mma_1821(kdpC) mma_1822(kdpB) mma_1823(kdpA)
+            HSE: Hsero_3777(kdpC) Hsero_3778(kdpB) Hsero_3779(kdpA)
+            CFU: CFU_1316(kdpA) CFU_1317(kdpB) CFU_1318(kdpC)
+            TIN: Tint_0065 Tint_0066 Tint_0067
+            THI: THI_0071(kdpA) THI_0072(kdpB) THI_0073(kdpC)
+            RGE: RGE_18980 RGE_18990 RGE_20700(kdpC) RGE_20710(kdpB) RGE_20720(kdpA)
+            NII: Nit79A3_1970 Nit79A3_1971 Nit79A3_1972
+            DAR: Daro_1085 Daro_1086 Daro_1087
+            DSU: Dsui_0277 Dsui_0278 Dsui_0279
+            MMB: Mmol_1453 Mmol_1454 Mmol_1455
+            MEH: M301_2077 M301_2078 M301_2079
+            MEI: Msip34_1058 Msip34_1059 Msip34_1060
+            MEP: MPQ_1112(kdpC) MPQ_1113(kdpB) MPQ_1114(kdpA)
+            APP: CAP2UW1_1686 CAP2UW1_1687 CAP2UW1_1688
+            CJE: Cj0677(kdpB)
+            CJB: BN148_0677(kdpB)
+            CJJ: CJJ81176_0699 CJJ81176_0700 CJJ81176_0701
+            CJU: C8J_0628 C8J_0629(kdpB) C8J_0630
+            CJN: ICDCCJ_613 ICDCCJ_614 ICDCCJ_615
+            CJI: CJSA_0638(kdpB) CJSA_0640(kdpB) CJSA_0641(kdpC)
+            CJM: CJM1_0644 CJM1_0645(kdpA) CJM1_0646(kdpB) CJM1_0647
+            CJS: CJS3_0672
+            CJP: A911_03290
+            CJEJ: N564_00657 N564_00658 N564_00659(kdpB) N564_00660
+            CJEU: N565_00704 N565_00705(kdpB) N565_00706
+            CJEN: N755_00702 N755_00703(kdpB) N755_00704
+            CJEI: N135_00724(kdpB) N135_00725
+            CJR: CJE0776
+            CJZ: M635_07695 M635_07700 M635_07710 M635_07715 M635_07720
+            CJX: BN867_06750 BN867_06760 BN867_06770
+            SMUL: SMUL_2967 SMUL_2968 SMUL_2969
+            GSU: GSU2480(kdpA) GSU2481(kdpB) GSU2482(kdpC)
+            GSK: KN400_2423(kdpA) KN400_2424(kdpB) KN400_2425(kdpC)
+            GME: Gmet_2433(kdpA) Gmet_2434(kdpB) Gmet_2435(kdpC)
+            GUR: Gura_1225 Gura_1226 Gura_1227
+            GLO: Glov_3228 Glov_3229 Glov_3230
+            GBM: Gbem_2606(kdpC) Gbem_2607(kdpB) Gbem_2608(kdpA)
+            DVU: DVU3337(kdpC) DVU3338(kdpB) DVU3339(kdpA)
+            DVL: Dvul_0053 Dvul_0054 Dvul_0055
+            DVM: DvMF_2575 DvMF_2576 DvMF_2577
+            DVG: Deval_3081 Deval_3082 Deval_3083
+            DDS: Ddes_1677 Ddes_1678 Ddes_1679
+            DMA: DMR_09260(kdpC) DMR_09270(kdpB) DMR_09290(kdpA)
+            BBA: Bd1755(kdpA) Bd1757(kdpA)
+            BBAC: EP01_04895 EP01_04900 EP01_04905
+            BEX: A11Q_655 A11Q_656 A11Q_657
+            ADE: Adeh_0893 Adeh_0894 Adeh_0895
+            MXA: MXAN_0164(kdpA) MXAN_0165(kdpB) MXAN_0166(kdpC)
+            MSD: MYSTI_00152 MYSTI_00153 MYSTI_00154
+            CCX: COCOR_07864(kdpC) COCOR_07865(kdpB) COCOR_07866(kdpA)
+            SUR: STAUR_0217(kdpA) STAUR_0218(kdpB) STAUR_0219(kdpC)
+            SCL: sce1352(kdpA) sce1353(kdpB) sce1354(kdpC)
+            SCU: SCE1572_09210 SCE1572_09215 SCE1572_09220
+            DTI: Desti_1867 Desti_1868 Desti_1869
+            SFU: Sfum_2618 Sfum_2619 Sfum_2620
+            MLO: mll3129 mll3130 mll3133
+            MCI: Mesci_1800 Mesci_1802 Mesci_1803
+            MOP: Mesop_1843 Mesop_1845 Mesop_1846
+            MAM: Mesau_01862 Mesau_01864 Mesau_01865
+            PLA: Plav_1013 Plav_1014 Plav_1015
+            SME: SMa2329(kdpC) SMa2331(kdpB) SMa2333(kdpA)
+            SMK: Sinme_5540 Sinme_5541 Sinme_5542
+            SMQ: SinmeB_5341 SinmeB_5342 SinmeB_5343
+            SMX: SM11_pC0040(kdpA) SM11_pC0041(kdpB) SM11_pC0042(kdpC)
+            SMI: BN406_03535(kdpA) BN406_03536(kdpB) BN406_03537(kdpC)
+            SMEG: C770_GR4pC0045 C770_GR4pC0046 C770_GR4pC0047
+            SMEL: SM2011_a2329(kdpC) SM2011_a2331(kdpB) SM2011_a2333(kdpA)
+            SMD: Smed_5358 Smed_5359 Smed_5360
+            RHI: NGR_b12460(kdpA) NGR_b12470(kdpB) NGR_b12480(kdpC)
+            SFH: SFHH103_05806(kdpC) SFHH103_05807(kdpB) SFHH103_05809(kdpA)
+            SFD: USDA257_c09540(kdpA) USDA257_c09560(kdpB) USDA257_c09570(kdpC)
+            EAD: OV14_1414(kdpA) OV14_1415(kdpB) OV14_1416(kdpC)
+            ATU: Atu3788(kdpC) Atu3789(kdpB) Atu3790(kdpA)
+            ARA: Arad_9462(kdpA) Arad_9463(kdpB) Arad_9464(kdpC)
+            AVI: Avi_6072(kdpC) Avi_6073(kdpB) Avi_6074(kdpA)
+            AGR: AGROH133_12180 AGROH133_12183 AGROH133_12191
+            RET: RHE_PE00264(kdpC) RHE_PE00265(kdpB) RHE_PE00266(kdpA)
+            REC: RHECIAT_PA0000209(kdpC) RHECIAT_PA0000210(kdpB) RHECIAT_PA0000211(kdpA)
+            REL: REMIM1_PD00277(kdpC) REMIM1_PD00278(kdpB) REMIM1_PD00279(kdpA)
+            RLE: pRL110379(kdpC) pRL110380(kdpB) pRL110381(kdpA)
+            RLT: Rleg2_5835 Rleg2_5837 Rleg2_5838
+            RLG: Rleg_6747 Rleg_6749 Rleg_6750
+            RLB: RLEG3_04520 RLEG3_04525 RLEG3_04535
+            RLU: RLEG12_02910 RLEG12_02915 RLEG12_02920
+            RTR: RTCIAT899_PC04040(kdpA) RTCIAT899_PC04045(kdpB) RTCIAT899_PC04050(kdpC)
+            RIR: BN877_II0741(kdpC) BN877_II0742(kdpB) BN877_II0744(kdpA)
+            RHL: LPU83_4158(kdpA) LPU83_4160(kdpB) LPU83_4161(kdpC)
+            OAN: Oant_3776 Oant_3777 Oant_3778
+            BJA: bll6777(kdpC) bll6778(kdpB) bll6779(kdpA)
+            BJU: BJ6T_26390 BJ6T_26400 BJ6T_26410
+            BRA: BRADO5828(kdpC) BRADO5829(kdpB) BRADO5830(kdpA)
+            BBT: BBta_6336(kdpC) BBta_6337(kdpB) BBta_6338(kdpA)
+            BRS: S23_15330(kdpA) S23_15340(kdpB) S23_15350(kdpC)
+            AOL: S58_59720 S58_59730 S58_59740
+            RPA: RPA3002(kdpC) RPA3003(kdpB) RPA3004(kdpA)
+            RPB: RPB_4645 RPB_4646 RPB_4647
+            RPC: RPC_4548 RPC_4549 RPC_4550
+            RPD: RPD_0662 RPD_0663 RPD_0664
+            RPE: RPE_4624 RPE_4625 RPE_4626
+            RPT: Rpal_3411 Rpal_3412 Rpal_3413
+            RPX: Rpdx1_1120 Rpdx1_1121 Rpdx1_1122
+            NHA: Nham_2992 Nham_2993 Nham_2994
+            OCA: OCAR_4175(kdpA) OCAR_4176(kdpB) OCAR_4177(kdpC)
+            OCG: OCA5_c03370(kdpC) OCA5_c03380(kdpB) OCA5_c03390(kdpA)
+            OCO: OCA4_c03360(kdpC) OCA4_c03370(kdpB) OCA4_c03380(kdpA)
+            XAU: Xaut_3237 Xaut_3238 Xaut_3240
+            AZC: AZC_1565 AZC_1566 AZC_1567
+            SNO: Snov_1542 Snov_1543 Snov_1544
+            MEX: Mext_0233 Mext_0234 Mext_0235
+            MEA: Mex_1p0128(kdpA) Mex_1p0130(kdpB) Mex_1p0131(kdpC)
+            MDI: METDI0116(kdpA) METDI0118(kdpB) METDI0119(kdpC)
+            MCH: Mchl_0177 Mchl_0179 Mchl_0180
+            MRD: Mrad2831_0206 Mrad2831_0207 Mrad2831_0209
+            MPO: Mpop_0951 Mpop_0952 Mpop_0954
+            MNO: Mnod_0193 Mnod_0195 Mnod_0196
+            BID: Bind_1096 Bind_1097 Bind_1098
+            MSL: Msil_2824 Msil_2825 Msil_2826
+            HDN: Hden_2931 Hden_2932 Hden_2933
+            HDT: HYPDE_28243 HYPDE_28248 HYPDE_28253
+            HMC: HYPMC_3100(kdpC) HYPMC_3101(kdpB) HYPMC_3102(kdpA)
+            RVA: Rvan_3285 Rvan_3286 Rvan_3287
+            MSC: BN69_2487(kdpC) BN69_2488(kdpB) BN69_2489(kdpA)
+            CCR: CC_1591 CC_1592 CC_1593
+            CCS: CCNA_01663 CCNA_01664 CCNA_01665
+            CAK: Caul_4240 Caul_4241 Caul_4242
+            CSE: Cseg_1853 Cseg_1854 Cseg_1855
+            BSB: Bresu_3239 Bresu_3241 Bresu_3242
+            AEX: Astex_0656 Astex_0657 Astex_0658
+            RSP: RSP_1265(kdpA) RSP_1266(kdpB) RSP_1267(kdpC)
+            RSH: Rsph17029_2923 Rsph17029_2924 Rsph17029_2925
+            RSQ: Rsph17025_3783 Rsph17025_3784 Rsph17025_3785
+            RSK: RSKD131_2663 RSKD131_2664 RSKD131_2665
+            RCP: RCAP_rcc02252(kdpA) RCAP_rcc02253(kdpB) RCAP_rcc02254(kdpC)
+            PAMI: JCM7686_pAMI4p338 JCM7686_pAMI4p339 JCM7686_pAMI4p340
+            SWI: Swit_1466 Swit_1467 Swit_1468
+            SPHM: G432_12245 G432_12250 G432_12255
+            SCH: Sphch_1024 Sphch_1025 Sphch_1026
+            SSY: SLG_31040(kdpC) SLG_31050(kdpB) SLG_31060(kdpA)
+            GBE: GbCGDNIH1_0182 GbCGDNIH1_0183 GbCGDNIH1_0184
+            GBH: GbCGDNIH2_0182 GbCGDNIH2_0183 GbCGDNIH2_0184
+            ACR: Acry_0708 Acry_0709 Acry_0710 Acry_3488 Acry_3489 Acry_3490
+            AMV: ACMV_11620(kdpC) ACMV_11630(kdpB) ACMV_11640(kdpA)
+            GDI: GDI_1563(kdpA) GDI_1564(kdpB) GDI_1565(kdpC)
+            GXY: GLX_30970 GLX_30980 GLX_30990
+            APT: APA01_40500(kdpA) APA01_40510(kdpB) APA01_40520(kdpC) APA01_43100(kdpA) APA01_43110(kdpB) APA01_43120(kdpC)
+            APW: APA42C_40500(kdpA) APA42C_40510(kdpB) APA42C_40520(kdpC) APA42C_43100(kdpA) APA42C_43110(kdpB) APA42C_43120(kdpC)
+            APF: APA03_40500(kdpA) APA03_40510(kdpB) APA03_40520(kdpC) APA03_43100(kdpA) APA03_43110(kdpB) APA03_43120(kdpC)
+            APU: APA07_40500(kdpA) APA07_40510(kdpB) APA07_40520(kdpC) APA07_43100(kdpA) APA07_43110(kdpB) APA07_43120(kdpC)
+            APG: APA12_40500(kdpA) APA12_40510(kdpB) APA12_40520(kdpC) APA12_43100(kdpA) APA12_43110(kdpB) APA12_43120(kdpC)
+            APQ: APA22_40500(kdpA) APA22_40510(kdpB) APA22_40520(kdpC) APA22_43100(kdpA) APA22_43110(kdpB) APA22_43120(kdpC)
+            APX: APA26_40500(kdpA) APA26_40510(kdpB) APA26_40520(kdpC) APA26_43100(kdpA) APA26_43110(kdpB) APA26_43120(kdpC)
+            APZ: APA32_40500(kdpA) APA32_40510(kdpB) APA32_40520(kdpC) APA32_43100(kdpA) APA32_43110(kdpB) APA32_43120(kdpC)
+            RRU: Rru_A1155 Rru_A1156 Rru_A1157
+            RRF: F11_05975 F11_05980 F11_05985
+            RCE: RC1_0434(kdpC) RC1_0435(kdpB) RC1_0436(kdpA)
+            RPM: RSPPHO_00509(kdpA) RSPPHO_00510 RSPPHO_00511 RSPPHO_00512(kdpC)
+            MAG: amb1909 amb1910 amb1911
+            MGY: MGMSR_1828(kdpC) MGMSR_1829(kdpB) MGMSR_1830(kdpA)
+            AZL: AZL_b02710(kdpC) AZL_b02720(kdpB) AZL_b02730(kdpA)
+            ALI: AZOLI_p20514(kdpA) AZOLI_p20515(kdpB) AZOLI_p20516(kdpC)
+            ABS: AZOBR_p230078(kdpA) AZOBR_p230079(kdpB) AZOBR_p230080(kdpC)
+            TMO: TMO_0448(kdpA) TMO_0449(kdpB) TMO_0450(kdpC)
+            BSUB: BEST7613_2752(kdpA) BEST7613_2753(kdpB) BEST7613_2755(kdpC)
+            BLH: BaLi_c29340 BaLi_c29350 BaLi_c29360
+            BAN: BA_0739(kdpA) BA_0740(kdpB) BA_0741(kdpC)
+            BAR: GBAA_0739(kdpA) GBAA_0740(kdpB) GBAA_0741(kdpC)
+            BAT: BAS0703 BAS0704 BAS0705
+            BAH: BAMEG_3817(kdpC) BAMEG_3818(kdpB) BAMEG_3819(kdpA)
+            BAI: BAA_0847(kdpA) BAA_0848(kdpB) BAA_0849(kdpC)
+            BAX: H9401_0706 H9401_0707 H9401_0708
+            BANT: A16_08220 A16_08230 A16_08250
+            BANR: A16R_08310 A16R_08320 A16R_08330
+            BAL: BACI_c07690(kdpA) BACI_c07700(kdpB) BACI_c07710(kdpC)
+            BCE: BC0753 BC0754 BC0755
+            BCA: BCE_0809(kdpA) BCE_0810(kdpB) BCE_0811(kdpC)
+            BCZ: BCZK0646(kdpA) BCZK0647(kdpB) BCZK0648(kdpC)
+            BCR: BCAH187_A0894(kdpA) BCAH187_A0895(kdpB) BCAH187_A0896(kdpC)
+            BCB: BCB4264_A0797(kdpA) BCB4264_A0798(kdpB) BCB4264_A0799(kdpC)
+            BCU: BCAH820_0815(kdpA) BCAH820_0816(kdpB) BCAH820_0817(kdpC)
+            BCG: BCG9842_B4532(kdpC) BCG9842_B4533(kdpB) BCG9842_B4534(kdpA)
+            BCQ: BCQ_0829(kdpA) BCQ_0830(kdpB) BCQ_0831(kdpC)
+            BCX: BCA_0803(kdpA) BCA_0804(kdpB) BCA_0805(kdpC)
+            BNC: BCN_0717 BCN_0718 BCN_0719
+            BCF: bcf_03890 bcf_03895 bcf_03900
+            BCER: BCK_04425 BCK_04430 BCK_04435
+            BCY: Bcer98_0624 Bcer98_0625 Bcer98_0626
+            BTK: BT9727_0647(kdpA) BT9727_0648(kdpB) BT9727_0649(kdpC)
+            BTL: BALH_0673(kdpA) BALH_0674(kdpB) BALH_0675(kdpC)
+            BTB: BMB171_C0648(kdpA) BMB171_C0649(kdpB) BMB171_C0650(kdpC)
+            BTT: HD73_0872 HD73_0873 HD73_0874 HD73_0875
+            BTC: CT43_CH0715(kdpA) CT43_CH0716(kdpB) CT43_CH0717(kdpC)
+            BTF: YBT020_03970 YBT020_03975 YBT020_03980
+            BTM: MC28_0018(kdpB) MC28_0019(kdpC) MC28_0020
+            BTG: BTB_c08300(kdpA) BTB_c08310(kdpB) BTB_c08320(kdpC)
+            BTI: BTG_17435 BTG_17440 BTG_17445
+            BTN: BTF1_01405 BTF1_01410 BTF1_01415
+            BTHT: H175_ch0723 H175_ch0724 H175_ch0725
+            BTHU: YBT1518_04710 YBT1518_04715 YBT1518_04720
+            BWE: BcerKBAB4_0654 BcerKBAB4_0655 BcerKBAB4_0656
+            BTY: Btoyo_3435 Btoyo_3436 Btoyo_3437
+            BMQ: BMQ_3026(kdpC) BMQ_3027(kdpB) BMQ_3028(kdpA)
+            BMH: BMWSH_2152(kdpA) BMWSH_2153(kdpB) BMWSH_2154(kdpC)
+            BIF: N288_25410 N288_25415 N288_25420
+            GKA: GK3246 GK3247 GK3248
+            LSP: Bsph_3679 Bsph_3680 Bsph_3681
+            LGY: T479_15005 T479_15010 T479_15015
+            SAU: SA0068(kdpA) SA0070(kdpB) SA0071(kdpC) SA1879(kdpC) SA1880(kdpB) SA1881(kdpA)
+            SAV: SAV0072(truncated-kdpA) SAV0073(kdpB(SCCmec)) SAV0074(kdpC(SCCmec)) SAV2075(kdpC) SAV2076(kdpB) SAV2077(kdpA)
+            SAW: SAHV_0071 SAHV_0072(kdpB) SAHV_0073(kdpC) SAHV_2060(kdpC) SAHV_2061(kdpB) SAHV_2062(kdpA)
+            SAH: SaurJH1_0061 SaurJH1_0062 SaurJH1_0063 SaurJH1_2150 SaurJH1_2151 SaurJH1_2152
+            SAJ: SaurJH9_0059 SaurJH9_0060 SaurJH9_0061 SaurJH9_2112 SaurJH9_2113 SaurJH9_2114
+            SAM: MW1999(kdpC) MW2000(kdpB) MW2001(kdpA)
+            SAS: SAS1980 SAS1981 SAS1982
+            SAR: SAR0070 SAR0071 SAR2163(kdpC) SAR2164(kdpB) SAR2165(kdpA)
+            SAC: SACOL2066(kdpC) SACOL2067(kdpB) SACOL2068(kdpA)
+            SAX: USA300HOU_2070(kdpC) USA300HOU_2071(kdpB) USA300HOU_2072(kdpA)
+            SAA: SAUSA300_2032(kdpC) SAUSA300_2033(kdpB) SAUSA300_2034(kdpA)
+            SAO: SAOUHSC_02310 SAOUHSC_02311 SAOUHSC_02312
+            SAE: NWMN_1980(kdpC) NWMN_1981(kdpB) NWMN_1982(kdpA)
+            SAD: SAAV_2129(kdpC) SAAV_2130(kdpB) SAAV_2131(kdpA)
+            SUU: M013TW_2034 M013TW_2035 M013TW_2036
+            SUV: SAVC_09260 SAVC_09265 SAVC_09270
+            SUH: SAMSHR1132_19000 SAMSHR1132_19010 SAMSHR1132_19020
+            SUE: SAOV_2117c SAOV_2118c SAOV_2119c
+            SUJ: SAA6159_01990(kdpC) SAA6159_01991(kdpB) SAA6159_01992(kdpA)
+            SUK: SAA6008_02114(kdpC) SAA6008_02115(kdpB) SAA6008_02116(kdpA)
+            SUC: ECTR2_1931(kdpC) ECTR2_1932(kdpB) ECTR2_1933(kdpA)
+            SUT: SAT0131_02232(argG) SAT0131_02235(pgi) SAT0131_02236
+            SUQ: HMPREF0772_11118(kdpA) HMPREF0772_11119(kdpB) HMPREF0772_11120(kdpC)
+            SUZ: MS7_2092(kdpC) MS7_2093(kdpB) MS7_2094(kdpA)
+            SUD: ST398NM01_2116 ST398NM01_2117 ST398NM01_2118
+            SUX: SAEMRSA15_19850(kdpC) SAEMRSA15_19860(kdpB) SAEMRSA15_19870(kdpA)
+            SUW: SATW20_22150(kdpC) SATW20_22160(kdpB) SATW20_22170(kdpA)
+            SUG: SAPIG2116(kdpC) SAPIG2117(kdpB) SAPIG2118(kdpA)
+            SUF: SARLGA251_18780(kdpC) SARLGA251_18790(kdpB) SARLGA251_18800(kdpA)
+            SAUA: SAAG_02287 SAAG_02288 SAAG_02289
+            SAUE: RSAU_001915(kdpC) RSAU_001916(kdpB) RSAU_001917(kdpA)
+            SAUN: SAKOR_02041 SAKOR_02042 SAKOR_02043
+            SAUS: SA40_1833(kdpC) SA40_1834(kdpB) SA40_1835(kdpA)
+            SAUU: SA957_1917(kdpC) SA957_1918(kdpB) SA957_1919(kdpA)
+            SAUZ: SAZ172_2180(kdpC) SAZ172_2181(kdpB) SAZ172_2182(kdpA)
+            SAB: SAB1960c(kdpC) SAB1961c(kdpB) SAB1962c(kdpA)
+            SUY: SA2981_0072(kdpA) SA2981_0073(kdpB) SA2981_0074(kdpC) SA2981_2016(kdpC) SA2981_2017(kdpB) SA2981_2018(kdpA)
+            SAUB: C248_2087(kdpC) C248_2088(kdbP) C248_2089(kdpA)
+            SAUM: BN843_21130 BN843_21140 BN843_21150
+            SAUC: CA347_2156(kdpC) CA347_2157(kdpB) CA347_2158(kdpA) CA347_70(kdpA) CA347_71(kdpB) CA347_72(kdpC)
+            SAUR: SABB_02405(kdpB) SABB_03242(kdpC) SABB_03243(kdpA)
+            SER: SERP2485(kdpC) SERP2486(kdpB) SERP2487(kdpA)
+            SHA: SH0033(kdpA) SH0034(kdpB) SH0035(kdpC)
+            SLG: SLGD_00058 SLGD_00059 SLGD_00060 SLGD_00088 SLGD_00089
+            SLN: SLUG_00860(kdpA(SCCmec)) SLUG_00870(kdpB(SCCmec)) SLUG_00880(kdpC(SCCmec))
+            SSD: SPSINT_0105 SPSINT_0106 SPSINT_0107
+            SDT: SPSE_2363(kdpA) SPSE_2364(kdpB) SPSE_2365(kdpC)
+            LMO: lmo2680(kdpC) lmo2681(kdpB) lmo2682(kdpA)
+            LMF: LMOf2365_2660(kdpC) LMOf2365_2661(kdpB) LMOf2365_2662(kdpA)
+            LMH: LMHCC_2854(kdpA) LMHCC_2855(kdpB) LMHCC_2856(kdpC)
+            LMC: Lm4b_02653(kdpC) Lm4b_02654(kdpB) Lm4b_02655(kdpA)
+            LMN: LM5578_0178(kdpA) LM5578_0179(kdpB) LM5578_0180(kdpC)
+            LMY: LM5923_0178(kdpA) LM5923_0179(kdpB) LM5923_0180(kdpC)
+            LMT: LMRG_02225 LMRG_02226 LMRG_02227
+            LMG: LMKG_02161 LMKG_02162 LMKG_02163
+            LMS: LMLG_1303 LMLG_1304 LMLG_1305
+            LMJ: LMOG_01824 LMOG_01825 LMOG_01826
+            LMQ: LMM7_2790(kdpC) LMM7_2791(kdpB) LMM7_2792(kdpA)
+            LML: lmo4a_2742(kdpC) lmo4a_2743(kdpB) lmo4a_2744(kdpA)
+            LMP: MUO_13415 MUO_13420 MUO_13425
+            LMW: LMOSLCC2755_2700(kdpC) LMOSLCC2755_2701(kdpB) LMOSLCC2755_2702(kdpA)
+            LMX: LMOSLCC2372_2757(kdpC) LMOSLCC2372_2758(kdpB) LMOSLCC2372_2759(kdpA)
+            LMZ: LMOSLCC2482_2699(kdpC) LMOSLCC2482_2700(kdpB) LMOSLCC2482_2701(kdpA)
+            LMON: LMOSLCC2376_2576(kdpC) LMOSLCC2376_2577(kdpB) LMOSLCC2376_2578(kdpA)
+            LMOC: LMOSLCC5850_2692(kdpC) LMOSLCC5850_2693(kdpB) LMOSLCC5850_2694(kdpA)
+            LMOS: LMOSLCC7179_2650(kdpC) LMOSLCC7179_2651(kdpB) LMOSLCC7179_2652(kdpA)
+            LMOO: LMOSLCC2378_2689(kdpC) LMOSLCC2378_2690(kdpB) LMOSLCC2378_2691(kdpA)
+            LMOY: LMOSLCC2479_2757(kdpC) LMOSLCC2479_2758(kdpB) LMOSLCC2479_2759(kdpA)
+            LMOT: LMOSLCC2540_2721(kdpC) LMOSLCC2540_2722(kdpB) LMOSLCC2540_2723(kdpA)
+            LMOA: LMOATCC19117_2690(kdpC) LMOATCC19117_2691(kdpB) LMOATCC19117_2692(kdpA)
+            LMOL: LMOL312_2646(kdpC) LMOL312_2647(kdpB) LMOL312_2648(kdpA)
+            LMOG: BN389_26460(kdpC) BN389_26470(kdpB) BN389_26480(kdpA)
+            LMOE: BN418_3163 BN418_3164 BN418_3165
+            LMOB: BN419_3176 BN419_3177 BN419_3178 BN419_3179
+            LMOJ: LM220_02927 LM220_21345 LM220_21350
+            LMOZ: LM1816_02432 LM1816_02437 LM1816_02442
+            LMOD: LMON_2703(kdpC) LMON_2704(kdpB) LMON_2705(kdpA)
+            LIN: lin2828(kdpC) lin2829(kdpB) lin2830 pli0052 pli0053 pli0055
+            LWE: lwe2629(kdpC) lwe2630(kdpB) lwe2631(kdpA)
+            LSG: lse_2586(kdpC) lse_2587(kdpB) lse_2588(kdpA)
+            LIV: LIV_2600(kdpC) LIV_2601(kdpB) LIV_2602(kdpA)
+            LIW: AX25_13915 AX25_13920 AX25_13925
+            ESI: Exig_2549 Exig_2550 Exig_2551
+            EAT: EAT1b_1248 EAT1b_1249 EAT1b_1250
+            EAN: Eab7_2392(kdpC) Eab7_2393(kdpB) Eab7_2394(kdpA)
+            EXM: U719_13995 U719_14000 U719_14005
+            BBE: BBR47_03820(kdpA) BBR47_03830(kdpB) BBR47_03840(kdpC)
+            PJD: Pjdr2_5990 Pjdr2_5991 Pjdr2_5992
+            GYM: GYMC10_0432 GYMC10_0433 GYMC10_0434
+            PPY: PPE_01240(kdpA) PPE_01241 PPE_01242(kdpC)
+            PPM: PPSC2_c1328 PPSC2_c1329 PPSC2_c1330
+            PPO: PPM_1210(kdpA) PPM_1211(kdpB) PPM_1212(kdpC)
+            PPOL: X809_06870 X809_06875 X809_06880
+            PMQ: PM3016_1494 PM3016_1495 PM3016_1496
+            PTA: HPL003_14545 HPL003_14550 HPL003_14555
+            PLV: ERIC2_c03120(kdpA) ERIC2_c03130(kdpB) ERIC2_c03140(kdpC)
+            PSAB: PSAB_12630 PSAB_12635 PSAB_12640
+            AAC: Aaci_0251 Aaci_0252 Aaci_0253
+            AAD: TC41_0329(kdpA) TC41_0330(kdpB) TC41_0331(kdpC)
+            BTS: Btus_0565 Btus_0566 Btus_0567
+            LLK: LLKF_1240(kdpA) LLKF_1241(kdpB) LLKF_1242(kdpC)
+            LLT: CVCAS_1164(kdpA) CVCAS_1165(kdpB) CVCAS_1166(kdpC)
+            LLS: lilo_1089 lilo_1090
+            LLD: P620_06825 P620_06830 P620_06835
+            STB: SGPB_0700(kdpA) SGPB_0701(kdpB) SGPB_0702(kdpC)
+            STD: SPPN_03635 SPPN_03640 SPPN_03645
+            LPS: LPST_P0007(kdpC) LPST_P0008(kdpB) LPST_P0009(kdpA)
+            EFA: EF0567(kdpA) EF0568(kdpB) EF0569(kdpC)
+            ECAS: ECBG_00515 ECBG_00516 ECBG_00517
+            EMU: EMQU_1742(kdpC) EMQU_1743(kdpB) EMQU_1744(kdpA)
+            CRN: CAR_c22790(kdpC) CAR_c22800(kdpB) CAR_c22810(kdpA)
+            CML: BN424_661(kdpA) BN424_663(kdpB) BN424_664(kdpC)
+            CAC: CA_C3680(kdpC_atkC) CA_C3681(kdpB_atkB) CA_C3682(kdpA_atkA)
+            CAE: SMB_G3721(kdpC) SMB_G3722(kdpB) SMB_G3723(kdpA)
+            CAY: CEA_G3687(kdpC) CEA_G3688(kdpB) CEA_G3689(kdpA)
+            CPF: CPF_1210(kdpA) CPF_1211(kdpB) CPF_1212(kdpC)
+            CBK: CLL_A0978(kdpA) CLL_A0979(kdpB) CLL_A0980(kdpC)
+            CBT: CLH_0915(kdpA) CLH_0916(kdpB) CLH_0917(kdpC)
+            CKL: CKL_1471(kdpA) CKL_1472(kdpB) CKL_1473(kdpC)
+            CKR: CKR_1366 CKR_1367 CKR_1368
+            CLJ: CLJU_c39540(kdpC) CLJU_c39550(kdpB) CLJU_c39560(kdpA)
+            CLB: Clo1100_3924 Clo1100_3925 Clo1100_3926
+            CSR: Cspa_c09070(kdpA) Cspa_c09080(kdpB) Cspa_c09090(kdpC)
+            CPAS: Clopa_3993 Clopa_3994 Clopa_3995
+            CAH: CAETHG_1799 CAETHG_1800 CAETHG_1801
+            EHA: Ethha_1755 Ethha_1756 Ethha_1757
+            CSH: Closa_4112 Closa_4113 Closa_4114
+            CDF: CD630_15910(kdpA) CD630_15920(kdpB) CD630_15930(kdpC)
+            CDC: CD196_1514(kdpA) CD196_1515(kdpB) CD196_1516(kdpC)
+            CDL: CDR20291_1489(kdpA) CDR20291_1490(kdpB) CDR20291_1491(kdpC)
+            CDG: CDBI1_07825 CDBI1_07830 CDBI1_07835
+            DAI: Desaci_0902 Desaci_0903 Desaci_0904
+            DMI: Desmer_2980 Desmer_2981 Desmer_2982
+            ELM: ELI_1132 ELI_1133 ELI_1134 ELI_1559 ELI_1560 ELI_1561
+            AWO: Awo_c05620(kdpB)
+            SAY: TPY_0468(kdpC) TPY_3243(kdpC) TPY_3244(kdpB) TPY_3245(kdpA)
+            SAP: Sulac_0422 Sulac_0423 Sulac_0424 Sulac_1666 Sulac_1670
+            TTE: TTE2010(KdpC) TTE2011(KdpB) TTE2012(KdpA)
+            TWI: Thewi_2017 Thewi_2018 Thewi_2019
+            ADG: Adeg_1479 Adeg_1480 Adeg_1481
+            TTM: Tthe_1975 Tthe_1976 Tthe_1977
+            TXY: Thexy_0860 Thexy_0861 Thexy_0862
+            TSH: Tsac_2385 Tsac_2386 Tsac_2387
+            TNR: Thena_0833 Thena_0834 Thena_0835
+            MHG: MHY_05000 MHY_05010 MHY_05020
+            MTU: Rv1029(kdpA) Rv1030(kdpB) Rv1031(kdpC)
+            MTV: RVBD_1029 RVBD_1030 RVBD_1031
+            MTC: MT1058(kdpA) MT1059(kdpB) MT1060(kdpC)
+            MRA: MRA_1037(kdpA) MRA_1038(kdpB) MRA_1039(kdpC)
+            MTF: TBFG_11047 TBFG_11048 TBFG_11049
+            MTB: TBMG_02956 TBMG_02957 TBMG_02958
+            MTK: TBSG_02975 TBSG_02976 TBSG_02977
+            MTZ: TBXG_002936 TBXG_002937 TBXG_002938
+            MTG: MRGA327_06470
+            MTI: MRGA423_06415
+            MTE: CCDC5079_0952 CCDC5079_0953 CCDC5079_0954
+            MTUR: CFBS_1085(kdpA) CFBS_1086(kdpB) CFBS_1087(kdpC)
+            MTL: CCDC5180_0944 CCDC5180_0945 CCDC5180_0946
+            MTO: MTCTRI2_1056(kdpA) MTCTRI2_1057(kdpB) MTCTRI2_1058(kdpC)
+            MTD: UDA_1029(kdpA) UDA_1030(kdpB) UDA_1031(kdpC)
+            MTN: ERDMAN_1147(kdpA) ERDMAN_1148(kdpB) ERDMAN_1149(kdpC)
+            MTJ: J112_05560 J112_05565 J112_05570
+            MTUB: MT7199_1054 MT7199_1055 MT7199_1056
+            MTUC: J113_07260 J113_07275
+            MTUE: J114_05550 J114_05555 J114_05560
+            MTX: M943_05420 M943_05425 M943_05430
+            MTUH: I917_07330 I917_07335 I917_07340
+            MTUL: TBHG_01013 TBHG_01014 TBHG_01015
+            MBO: Mb1058(kdpA) Mb1059(kdpB) Mb1060(kdpC)
+            MBB: BCG_1087(kdpA) BCG_1088(kdpB) BCG_1089(kdpC)
+            MBT: JTY_1059(kdpA) JTY_1060(kdpB) JTY_1061(kdpC)
+            MBM: BCGMEX_1059(kdpA) BCGMEX_1060(kdpB) BCGMEX_1061(kdpC)
+            MBK: K60_011040 K60_011050 K60_011060
+            MAF: MAF_10400(kdpA) MAF_10410(kdpB) MAF_10420(kdpC)
+            MCE: MCAN_10351(kdpA) MCAN_10361(kdpB) MCAN_10371(kdpC)
+            MCQ: BN44_11146(kdpA) BN44_11147(kdpB) BN44_11148(kdpC)
+            MCV: BN43_30058(kdpA) BN43_30059(kdpB) BN43_30060(kdpC)
+            MCX: BN42_20855(kdpA) BN42_20856(kdpB) BN42_20857(kdpC)
+            MCZ: BN45_30064(kdpA) BN45_30065(kdpB) BN45_30066(kdpC)
+            MPA: MAP0997c(kdpC) MAP0998c MAP0999c MAP1000c(kdpA)
+            MAO: MAP4_2859 MAP4_2862
+            MAV: MAV_1171(kdpC) MAV_1172(kdpB) MAV_1173(kdpA)
+            MIT: OCO_10580 OCO_10590 OCO_10600
+            MIR: OCQ_10690 OCQ_10700 OCQ_10710
+            MIA: OCU_10600 OCU_10610 OCU_10620
+            MID: MIP_01733 MIP_01735 MIP_01736
+            MYO: OEM_10830 OEM_10840 OEM_10850
+            MSM: MSMEG_5392(kdpA) MSMEG_5393(kdpB) MSMEG_5394
+            MSG: MSMEI_5244(kdpA) MSMEI_5245(kdpB) MSMEI_5246
+            MSA: Mycsm_05130 Mycsm_05132 Mycsm_05133 Mycsm_05134
+            MVA: Mvan_4759 Mvan_4760 Mvan_4761
+            MAB: MAB_3252c MAB_3253c MAB_3254c
+            MABB: MASS_3195 MASS_3196 MASS_3197
+            MMV: MYCMA_1784(kdpC) MYCMA_1785(kdpB) MYCMA_1786(kdpA)
+            MMC: Mmcs_4226 Mmcs_4227 Mmcs_4228
+            MKM: Mkms_4292 Mkms_4293 Mkms_4294
+            MJL: Mjls_4604 Mjls_4605 Mjls_4606
+            MMI: MMAR_0631(kdpA) MMAR_0632(kdpB) MMAR_0633(kdpC)
+            MRH: MycrhN_3444 MycrhN_3445 MycrhN_3446
+            MMM: W7S_05260 W7S_05265 W7S_05270
+            MCB: Mycch_0493 Mycch_0494 Mycch_0495
+            MKN: MKAN_08390 MKAN_08395 MKAN_08400
+            MNE: D174_21880 D174_21885 D174_21890
+            CJK: jk1269(kdpA) jk1270(kdpB) jk1271(kdpC)
+            CRD: CRES_1320(kdpA) CRES_1321(kdpB) CRES_1322(kdpC)
+            CFN: CFAL_06855 CFAL_06860 CFAL_06865
+            NFA: nfa15660(kdpA) nfa15670(kdpB) nfa15680(kdpC)
+            NCY: NOCYR_3890(kdpA) NOCYR_3891(kdpB) NOCYR_3892(kdpC)
+            NBR: O3I_031405 O3I_031410 O3I_031415
+            NNO: NONO_c56310(kdpC) NONO_c56320(kdpB) NONO_c56330(kdpA)
+            RHA: RHA1_ro01230(kdpC) RHA1_ro01231(kdpB) RHA1_ro01232(kdpA)
+            RER: RER_37240(kdpC) RER_37250(kdpB) RER_37260(kdpA)
+            REY: O5Y_17165 O5Y_17170 O5Y_17175
+            ROP: ROP_09530(kdpC) ROP_09540(kdpB) ROP_09550(kdpA)
+            ROA: Pd630_LPD05333 Pd630_LPD05334 Pd630_LPD05335
+            REQ: REQ_31050(kdpC) REQ_31060(kdpB) REQ_31070(kdpA)
+            RPY: Y013_25405 Y013_25410 Y013_25415
+            GBR: Gbro_4090 Gbro_4091 Gbro_4092
+            GPO: GPOL_c44120(kdpC) GPOL_c44130(kdpB) GPOL_c44140(kdpA)
+            GOR: KTR9_4020 KTR9_4021 KTR9_4022
+            TPR: Tpau_3244 Tpau_3245 Tpau_3246
+            SRT: Srot_0867 Srot_0868 Srot_0869
+            SCO: SCO3716(SCH35.08) SCO3717(SCH35.07) SCO3718(SCH35.06)
+            SMA: SAV_917(kdpC) SAV_918(kdpB) SAV_919(kdpA)
+            SGR: SGR_2677 SGR_2678 SGR_2679
+            SCB: SCAB_7191 SCAB_7201 SCAB_7211
+            SSX: SACTE_5029 SACTE_5030 SACTE_5031
+            SVL: Strvi_6695 Strvi_6696 Strvi_6697
+            SCT: SCAT_4641(kdpA) SCAT_4642(kdpB) SCAT_4643(kdpC)
+            SCY: SCATT_46340 SCATT_46350 SCATT_46360
+            SFA: Sfla_5850 Sfla_5851 Sfla_5852
+            SBH: SBI_00293 SBI_00294 SBI_00295 SBI_09269 SBI_09270 SBI_09271
+            SHY: SHJG_2396 SHJG_2397 SHJG_2398
+            SHO: SHJGH_2161 SHJGH_2162 SHJGH_2163
+            SVE: SVEN_2508 SVEN_2509 SVEN_2510
+            SDV: BN159_7223(kdpA) BN159_7224(kdpB) BN159_7225(kdpC)
+            SALB: XNR_0329 XNR_0330 XNR_1364 XNR_1365 XNR_1366
+            STRP: F750_0725 F750_0726 F750_0727
+            SFI: SFUL_5776 SFUL_5777 SFUL_5778
+            SRC: M271_38300 M271_38305 M271_38310
+            SALU: DC74_374 DC74_375 DC74_376 DC74_5942 DC74_5943 DC74_5944 DC74_828
+            KSK: KSE_36220(kdpC) KSE_36230(kdpB) KSE_36240(kdpA)
+            CMI: CMM_2751(kdpA) CMM_2752(kdpB) CMM_2753(kdpC)
+            CMS: CMS_0460 CMS_0461(kdpB) CMS_0462
+            CMC: CMN_02714(kdpA) CMN_02715(kdpB) CMN_02716(kdpC)
+            MTS: MTES_1366 MTES_1367(kdpB) MTES_1368
+            ART: Arth_1875 Arth_1876 Arth_1877
+            ACH: Achl_1704 Achl_1705 Achl_1706
+            ARR: ARUE_232p01720
+            RSA: RSal33209_0910 RSal33209_0911 RSal33209_0912 RSal33209_0913 RSal33209_0914 RSal33209_0915
+            BCV: Bcav_3780 Bcav_3781 Bcav_3782
+            SKE: Sked_27040 Sked_27050 Sked_27060
+            PAC: PPA0115 PPA0116 PPA0117
+            PAK: HMPREF0675_3120(kdpA) HMPREF0675_3121(kdpB) HMPREF0675_3122(kdpC)
+            PAV: TIA2EST22_00570 TIA2EST22_00575 TIA2EST22_00580
+            PAX: TIA2EST36_00590 TIA2EST36_00595 TIA2EST36_00600
+            PAZ: TIA2EST2_00570 TIA2EST2_00575 TIA2EST2_00580
+            PAW: PAZ_c01260(kdpA) PAZ_c01270(kdpB) PAZ_c01280(kdpC)
+            PAD: TIIST44_05220 TIIST44_05225 TIIST44_05230
+            PCN: TIB1ST10_00585 TIB1ST10_00590 TIB1ST10_00595
+            PACC: PAC1_00605 PAC1_00610 PAC1_00615
+            PACH: PAGK_0115 PAGK_0116 PAGK_0117
+            PRA: PALO_10030 PALO_10035 PALO_10040
+            MPH: MLP_28150(kdpC) MLP_28160(kdpB) MLP_28170(kdpA)
+            KFL: Kfla_6792 Kfla_6793 Kfla_6794
+            NDA: Ndas_1510 Ndas_1511 Ndas_1512
+            SRO: Sros_0433 Sros_0434 Sros_0435
+            FRA: Francci3_3285 Francci3_3286 Francci3_3287
+            FRE: Franean1_0600 Franean1_0601 Franean1_0602
+            FRI: FraEuI1c_3046 FraEuI1c_3047 FraEuI1c_3048
+            FAL: FRAAL5300(kdpC) FRAAL5301(kdpB) FRAAL5302(kdpA)
+            FSY: FsymDg_2987 FsymDg_2988 FsymDg_2989
+            NML: Namu_5031 Namu_5032 Namu_5034
+            MMAR: MODMU_1295(kdpA) MODMU_1296(kdpB) MODMU_1297(kdpC)
+            KRA: Krad_1016 Krad_1017 Krad_1018
+            SEN: SACE_6087(kdpC) SACE_6088(kdpB) SACE_6089(kdpA)
+            AMD: AMED_1893(kdpA) AMED_1894(kdpB) AMED_1895(kdpC)
+            AMN: RAM_09605 RAM_09610 RAM_09615
+            AMM: AMES_1878(kdpA) AMES_1879(kdpB) AMES_1880(kdpC)
+            AMZ: B737_1879(kdpA) B737_1880(kdpB) B737_1881(kdpC)
+            AOI: AORI_5978(kdpC) AORI_5979(kdpB) AORI_5980(kdpA)
+            PDX: Psed_4145 Psed_4146 Psed_4147
+            AMI: Amir_3229 Amir_3230 Amir_3231
+            SESP: BN6_67540 BN6_67550(kdpB) BN6_67560(kdpA)
+            KAL: KALB_7345 KALB_7346 KALB_7347
+            MAU: Micau_0595 Micau_0596 Micau_0597
+            MIL: ML5_0790 ML5_0791 ML5_0792
+            VMA: VAB18032_21880 VAB18032_21885 VAB18032_21890
+            AMS: AMIS_17450 AMIS_17460 AMIS_17470
+            ACTN: L083_3146 L083_3147(copA) L083_3148
+            AFS: AFR_13810 AFR_13815 AFR_13820
+            CAI: Caci_6789 Caci_6791
+            SNA: Snas_1438 Snas_1439 Snas_1440
+            BLB: BBMN68_442 BBMN68_443 BBMN68_444
+            CWO: Cwoe_0722 Cwoe_0723 Cwoe_0724
+            AFO: Afer_1176 Afer_1177 Afer_1178
+            ELE: Elen_2844 Elen_2845 Elen_2846
+            EYY: EGYY_06100 EGYY_06110 EGYY_06120
+            GPA: GPA_12560 GPA_12570 GPA_12580
+            AEQ: AEQU_1605 AEQU_1606 AEQU_1607
+            PUV: PUV_26200(kdpC) PUV_26210(kdpB) PUV_26220(kdpA)
+            MIN: Minf_0033(kdpC) Minf_0034(kdpB) Minf_0035(kdpA)
+            AMU: Amuc_0830 Amuc_0831 Amuc_0832 Amuc_1151 Amuc_1152 Amuc_1153
+            LIL: LA_3110(kdpC) LA_3111(kdpB) LA_3112(kdpA)
+            LIE: LIF_A2514(kdpC) LIF_A2515(kdpB) LIF_A2516(kdpA)
+            LIC: LIC10990(kdpA) LIC10991(kdpB) LIC10992(kdpC)
+            TPX: Turpa_0350
+            ABA: Acid345_0510 Acid345_0511 Acid345_0512
+            ACA: ACP_0429(kdpA) ACP_0430(kdpB) ACP_0431(kdpC)
+            ACM: AciX9_2437 AciX9_2438 AciX9_2439
+            GMA: AciX8_0329 AciX8_0330 AciX8_0331 AciX8_3969
+            TSA: AciPR4_4256 AciPR4_4257 AciPR4_4258
+            TRS: Terro_2258 Terro_2259 Terro_2260 Terro_2622 Terro_2623 Terro_2624
+            SUS: Acid_0073 Acid_0074 Acid_0075
+            GAU: GAU_2890 GAU_2891(kdpB) GAU_2892(kdpC)
+            PSL: Psta_4098 Psta_4099 Psta_4100
+            PLM: Plim_1871 Plim_1872 Plim_1873
+            SACI: Sinac_5536 Sinac_5537 Sinac_5538
+            SYN: slr1728(kdpA) slr1729(kdpB) slr1730(kdpC)
+            SYZ: MYO_113640(kdpA) MYO_113650(kdpB) MYO_113670(kdpC)
+            SYY: SYNGTS_1352(kdpA) SYNGTS_1353(kdpB) SYNGTS_1355(kdpC)
+            SYT: SYNGTI_1352(kdpA) SYNGTI_1353(kdpB) SYNGTI_1355(kdpC)
+            SYS: SYNPCCN_1351(kdpA) SYNPCCN_1352(kdpB) SYNPCCN_1354(kdpC)
+            SYQ: SYNPCCP_1351(kdpA) SYNPCCP_1352(kdpB) SYNPCCP_1354(kdpC)
+            SYC: syc2419_c(kdpC) syc2420_c(kdpB) syc2421_c(kdpA)
+            SYF: Synpcc7942_1668 Synpcc7942_1669 Synpcc7942_1671
+            SYP: SYNPCC7002_G0055(kdpC) SYNPCC7002_G0059(kdpB) SYNPCC7002_G0060(kdpA)
+            SYNE: Syn6312_2727 Syn6312_2730 Syn6312_2732
+            SYNP: Syn7502_02569 Syn7502_02571 Syn7502_02572
+            MAR: MAE_59800 MAE_59820 MAE_59870
+            CYT: cce_3887(kdpC) cce_3891(kdpB) cce_3892(kdpA)
+            CYP: PCC8801_1929 PCC8801_1930 PCC8801_1933
+            CYH: Cyan8802_1956 Cyan8802_1957 Cyan8802_1960
+            CYJ: Cyan7822_3295 Cyan7822_3297 Cyan7822_3298
+            CGC: Cyagr_3179 Cyagr_3181 Cyagr_3182
+            CAN: Cyan10605_2253 Cyan10605_2255 Cyan10605_2258
+            GLP: Glo7428_0027 Glo7428_0028 Glo7428_0030
+            CMP: Cha6605_2201 Cha6605_2203 Cha6605_2204
+            OAC: Oscil6304_4990 Oscil6304_4992 Oscil6304_4994
+            ONI: Osc7112_2126 Osc7112_2127 Osc7112_2129
+            CEP: Cri9333_1263 Cri9333_1264 Cri9333_1266
+            MIC: Mic7113_5921 Mic7113_5922 Mic7113_5924
+            ARP: NIES39_O07190
+            GVI: gvip062(kdpA) gvip063(kdpB) gvip064(kdpC)
+            GLJ: GKIL_2708(kdpC) GKIL_2709(kdpB) GKIL_2710(kdpA) GKIL_2712(kdpA) GKIL_2713(kdpC)
+            ANA: all3151 all3153 all3154 all4243 all4245 all4246
+            NPU: Npun_F0718 Npun_F0719 Npun_F0721 Npun_R0300 Npun_R0301 Npun_R0302
+            NOS: Nos7107_1177 Nos7107_1178 Nos7107_1180 Nos7107_3964 Nos7107_3966 Nos7107_3967
+            NOP: Nos7524_0589 Nos7524_0590 Nos7524_0592 Nos7524_2432 Nos7524_2433 Nos7524_2434
+            AVA: Ava_1192 Ava_1194 Ava_1195 Ava_3846 Ava_3848 Ava_3849 Ava_B0204 Ava_B0206 Ava_B0207
+            ANB: ANA_C11289(kdpC) ANA_C11290(kdpB) ANA_C11291(kdpA) ANA_C11903(kdpC) ANA_C11905(kdpB) ANA_C11906(kdpA)
+            ACY: Anacy_0432 Anacy_0433 Anacy_0434 Anacy_3301 Anacy_3303 Anacy_3304
+            NAZ: Aazo_3971 Aazo_3972 Aazo_3973
+            CSG: Cylst_2649 Cylst_2650 Cylst_2652
+            CALO: Cal7507_1557 Cal7507_1559 Cal7507_1560 Cal7507_2477 Cal7507_2478 Cal7507_2479
+            CALT: Cal6303_0702 Cal6303_0703 Cal6303_0705 Cal6303_4967 Cal6303_4968 Cal6303_4969
+            RIV: Riv7116_5535 Riv7116_5536 Riv7116_5537
+            CTHE: Chro_3173 Chro_3174 Chro_3176
+            SCS: Sta7437_4009 Sta7437_4011 Sta7437_4013
+            BTH: BT_2423 BT_2424 BT_2425
+            BFR: BF0578 BF0579 BF0580
+            BFS: BF0528(kdpA) BF0529(kdpB) BF0530(kdpC)
+            BFG: BF638R_0576(kdpA) BF638R_0577(kdpB) BF638R_0578(kdpC)
+            BVU: BVU_3265 BVU_3266 BVU_3267
+            BHL: Bache_0220 Bache_0221 Bache_0222
+            BXY: BXY_09350 BXY_09360 BXY_09370
+            PDI: BDI_3930 BDI_3931 BDI_3932
+            PPN: Palpr_2664 Palpr_2665 Palpr_2666
+            ASH: AL1_06390 AL1_06400 AL1_06410
+            CPI: Cpin_3614 Cpin_3615 Cpin_3616
+            NKO: Niako_4130 Niako_4131 Niako_4132
+            PHE: Phep_2506 Phep_2507 Phep_2508
+            PSN: Pedsa_1584 Pedsa_1585 Pedsa_1586
+            SHG: Sph21_4254 Sph21_4255 Sph21_4256
+            SCN: Solca_3775 Solca_3776 Solca_3777
+            HHY: Halhy_6479 Halhy_6480 Halhy_6481
+            CHU: CHU_1982(kdpA) CHU_1983(kdpB) CHU_1984(kdpC)
+            DFE: Dfer_0375 Dfer_0376 Dfer_0379
+            SLI: Slin_0062 Slin_0064 Slin_0065
+            RSI: Runsl_3030 Runsl_3031 Runsl_3034
+            FAE: FAES_1198 FAES_1199 FAES_1200
+            HSW: Hsw_0618 Hsw_0619 Hsw_0620
+            FJO: Fjoh_1973 Fjoh_1974 Fjoh_1975
+            FPS: FP1690(kdpC) FP1691(kdpB) FP1692(kdpA)
+            FBA: FIC_01123 FIC_01124 FIC_01125
+            FTE: Fluta_0544 Fluta_0545 Fluta_0546
+            CLI: Clim_1743 Clim_1744 Clim_1745
+            HAU: Haur_2275 Haur_2276 Haur_2278
+            DRA: DR_B0083 DR_B0086 DR_B0087
+            DGE: Dgeo_2849 Dgeo_2850 Dgeo_2851
+            DMR: Deima_1591 Deima_1592 Deima_1593
+            DGO: DGo_CA0647(kdpC) DGo_CA0648(kdpB) DGo_CA0649(kdpA)
+            MSV: Mesil_3490 Mesil_3491 Mesil_3493
+            HYA: HY04AAS1_0717 HY04AAS1_0718 HY04AAS1_0719
+            HTH: HTH_0186(kdpC) HTH_0187(kdpB) HTH_0188(kdpA)
+            HTE: Hydth_0187 Hydth_0188
+            CCZ: CCALI_01552 CCALI_01553 CCALI_01554
+            FGI: FGOP10_01595 FGOP10_01596 FGOP10_01597
+            LFC: LFE_1176 LFE_1177 LFE_1178
+            LFI: LFML04_0551(kdpC) LFML04_0552 LFML04_0554
+            TTR: Tter_2089 Tter_2090 Tter_2091
+            MOX: DAMO_0410(kdpA) DAMO_0413(kdpC)
+            MBG: BN140_1994(kdpA) BN140_1995(kdpB) BN140_1996(kdpC)
+            MBN: Mboo_0443 Mboo_0444 Mboo_0894 Mboo_0895
+            MPL: Mpal_2486 Mpal_2487 Mpal_2488
+            MPD: MCP_1967(kdpA) MCP_1968(kdpB) MCP_1969(kdpC)
+            MEZ: Mtc_2440(kdpC) Mtc_2441(kdpB) Mtc_2442(kdpA)
+            MEL: Metbo_1759 Metbo_1760 Metbo_1761
+            MEW: MSWAN_1125 MSWAN_1126 MSWAN_1127
+            MFV: Mfer_0047 Mfer_0048 Mfer_0049
+            HAL: VNG6176G(kdpA) VNG6177G(kdpB) VNG6178G(kdpC)
+            HSL: OE5052F(kdpA) OE5053F(kdpB) OE5054F(kdpC)
+            NPE: Natpe_1875 Natpe_1876 Natpe_1877
+            TAC: Ta1308m(kdpC) Ta1309 Ta1310
+            TVO: TVN0499 TVN0500 TVN0501
+            PTO: PTO0155 PTO0156 PTO0157
+            FAC: FACI_IFERC01G1535 FACI_IFERC01G1536 FACI_IFERC01G1537
+            THG: TCELL_0356 TCELL_0357 TCELL_0358
+            TPE: Tpen_1479 Tpen_1480 Tpen_1481
+            CLG: Calag_0872 Calag_0873 Calag_0874
+            FFO: FFONT_0093 FFONT_0094 FFONT_0095
+DBLINKS     ExplorEnz - The Enzyme Database: 3.6.3.12
+            IUBMB Enzyme Nomenclature: 3.6.3.12
+            ExPASy - ENZYME nomenclature database: 3.6.3.12
+            BRENDA, the Enzyme Database: 3.6.3.12
+///

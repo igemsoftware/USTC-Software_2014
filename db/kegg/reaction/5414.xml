@@ -1,0 +1,17 @@
+ENTRY       R05414                      Reaction
+NAME        9H-carbazole,NADH:oxygen oxidoreductase (2,3-hydroxylating)
+DEFINITION  Carbazole + Oxygen + NADH + H+ <=> 2'-Aminobiphenyl-2,3-diol + NAD+
+EQUATION    C08060 + C00007 + C00004 + C00080 <=> C08061 + C00003
+COMMENT     NADPH (see R09512)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP05020  C08060_C08061 main [RC:RC01370]
+            RP08655  C00007_C08061 leave
+ENZYME      1.14.12.22
+PATHWAY     rn00621  Dioxin degradation
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K15751  carbazole 1,9a-dioxygenase, terminal dioxygenase component [EC:1.14.12.22]
+            K15752  carbazole 1,9a-dioxygenase, ferredoxin component
+            K15753  carbazole 1,9a-dioxygenase, ferredoxin reductase component
+///

@@ -1,0 +1,2240 @@
+ENTRY       EC 2.8.1.8                  Enzyme
+NAME        lipoyl synthase;
+            LS;
+            LipA;
+            lipoate synthase;
+            protein 6-N-(octanoyl)lysine:sulfur sulfurtransferase;
+            protein N6-(octanoyl)lysine:sulfur sulfurtransferase
+CLASS       Transferases;
+            Transferring sulfur-containing groups;
+            Sulfurtransferases
+SYSNAME     protein N6-(octanoyl)lysine:sulfur-(sulfur carrier) sulfurtransferase
+REACTION    protein N6-(octanoyl)lysine + 2 sulfur-(sulfur carrier) + 2 S-adenosyl-L-methionine = protein N6-(lipoyl)lysine + 2 (sulfur carrier) + 2 L-methionine + 2 5'-deoxyadenosine [RN:R07767]
+ALL_REAC    R07767;
+            (other) R07768
+SUBSTRATE   protein N6-(octanoyl)lysine [CPD:C16236];
+            sulfur-(sulfur carrier);
+            S-adenosyl-L-methionine [CPD:C00019]
+PRODUCT     protein N6-(lipoyl)lysine [CPD:C16237];
+            (sulfur carrier);
+            L-methionine [CPD:C00073];
+            5'-deoxyadenosine [CPD:C05198]
+COMMENT     This enzyme is a member of the 'AdoMet radical' (radical SAM) family, all members of which produce the 5'-deoxyadenosin-5'-yl radical and methionine from AdoMet [i.e. S-adenosylmethionine, or S-(5'-deoxyadenosin-5'-yl)methionine], by the addition of an electron from an iron-sulfur centre. The radical is converted into 5'-deoxyadenosine when it abstracts a hydrogen atom from C-6 and C-8, leaving reactive radicals at these positions so that they can add sulfur, with inversion of configuration [4]. This enzyme catalyses the final step in the de-novo biosynthesis of the lipoyl cofactor, with the other enzyme involved being EC 2.3.1.181, lipoyl(octanoyl) transferase. Lipoylation is essential for the function of several key enzymes involved in oxidative metabolism, as it converts apoprotein into the biologically active holoprotein. Examples of such lipoylated proteins include pyruvate dehydrogenase (E2 domain), 2-oxoglutarate dehydrogenase (E2 domain), the branched-chain 2-oxoacid dehydrogenases and the glycine cleavage system (H protein) [2,5]. An alternative lipoylation pathway involves EC 2.7.7.63, lipoate---protein ligase, which can lipoylate apoproteins using exogenous lipoic acid (or its analogues) [7].
+HISTORY     EC 2.8.1.8 created 2006
+REFERENCE   1  [PMID:15740115]
+  AUTHORS   Cicchillo RM, Booker SJ.
+  TITLE     Mechanistic investigations of lipoic acid biosynthesis in Escherichia coli: both sulfur atoms in lipoic acid are contributed by the same lipoyl synthase polypeptide.
+  JOURNAL   J. Am. Chem. Soc. 127 (2005) 2860-1.
+  ORGANISM  Escherichia coli
+  SEQUENCE  [eco:b0628]
+REFERENCE   2  [PMID:1655709]
+  AUTHORS   Vanden Boom TJ, Reed KE, Cronan JE Jr.
+  TITLE     Lipoic acid metabolism in Escherichia coli: isolation of null mutants defective in lipoic acid biosynthesis, molecular cloning and characterization of the E. coli lip locus, and identification of the lipoylated protein of the glycine cleavage system.
+  JOURNAL   J. Bacteriol. 173 (1991) 6411-20.
+  ORGANISM  Escherichia coli
+REFERENCE   3  [PMID:14700636]
+  AUTHORS   Zhao X, Miller JR, Jiang Y, Marletta MA, Cronan JE.
+  TITLE     Assembly of the covalent linkage between lipoic acid and its cognate enzymes.
+  JOURNAL   Chem. Biol. 10 (2003) 1293-302.
+  ORGANISM  Escherichia coli
+  SEQUENCE  [eco:b0628]
+REFERENCE   4  [PMID:15157071]
+  AUTHORS   Cicchillo RM, Iwig DF, Jones AD, Nesbitt NM, Baleanu-Gogonea C, Souder MG, Tu L, Booker SJ.
+  TITLE     Lipoyl synthase requires two equivalents of S-adenosyl-L-methionine to synthesize one equivalent of lipoic acid.
+  JOURNAL   Biochemistry. 43 (2004) 6378-86.
+  ORGANISM  Escherichia coli
+  SEQUENCE  [eco:b0628]
+REFERENCE   5  [PMID:9218413]
+  AUTHORS   Jordan SW, Cronan JE Jr.
+  TITLE     A new metabolic link. The acyl carrier protein of lipid synthesis donates lipoic acid to the pyruvate dehydrogenase complex in Escherichia coli and mitochondria.
+  JOURNAL   J. Biol. Chem. 272 (1997) 17903-6.
+  ORGANISM  Escherichia coli
+REFERENCE   6  [PMID:11106496]
+  AUTHORS   Miller JR, Busby RW, Jordan SW, Cheek J, Henshaw TF, Ashley GW, Broderick JB, Cronan JE Jr, Marletta MA.
+  TITLE     Escherichia coli LipA is a lipoyl synthase: in vitro biosynthesis of lipoylated pyruvate dehydrogenase complex from octanoyl-acyl carrier protein.
+  JOURNAL   Biochemistry. 39 (2000) 15166-78.
+  ORGANISM  Escherichia coli
+  SEQUENCE  [eco:b0628]
+REFERENCE   7  [PMID:10966480]
+  AUTHORS   Perham RN.
+  TITLE     Swinging arms and swinging domains in multifunctional enzymes: catalytic machines for multistep reactions.
+  JOURNAL   Annu. Rev. Biochem. 69 (2000) 961-1004.
+PATHWAY     ec00785  Lipoic acid metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K03644  lipoic acid synthetase
+GENES       HSA: 11019(LIAS)
+            PTR: 471170(LIAS)
+            PPS: 100975769(LIAS)
+            GGO: 101135272(LIAS)
+            PON: 100432224(LIAS)
+            MCC: 699244(LIAS)
+            MCF: 101866565
+            MMU: 79464(Lias)
+            RNO: 305348(Lias)
+            CGE: 100757956
+            HGL: 101696506(Lias)
+            TUP: 102501558(LIAS)
+            CFA: 479108(LIAS)
+            AML: 100466678
+            FCA: 101083674(LIAS)
+            PTG: 102960152(LIAS)
+            BTA: 530865(LIAS)
+            BOM: 102284241(LIAS)
+            PHD: 102326737(LIAS)
+            CHX: 102171138(LIAS)
+            SSC: 100627627(LIAS)
+            CFR: 102517147(LIAS)
+            ECB: 100055115(LIAS)
+            MYB: 102254331(LIAS)
+            MYD: 102759930(LIAS)
+            PALE: 102879364(LIAS)
+            MDO: 100022086(LIAS)
+            SHR: 100919973(LIAS)
+            OAA: 100081998(LIAS)
+            GGA: 422791(LIAS)
+            MGP: 100550390
+            TGU: 100230377(LIAS)
+            FAB: 101820673(LIAS)
+            PHI: 102106477(LIAS)
+            APLA: 101792215(LIAS)
+            FPG: 101920843(LIAS)
+            FCH: 102059166(LIAS)
+            CLV: 102084456(LIAS)
+            ASN: 102372994(LIAS)
+            PSS: 102444627(LIAS)
+            CMY: 102940249(LIAS)
+            ACS: 100557694
+            XLA: 443960(lias)
+            XTR: 101735113 496674(lias)
+            DRE: 393528(lias)
+            TRU: 101066511
+            MZE: 101477690
+            OLA: 101165533
+            XMA: 102218811
+            LCM: 102357223(LIAS)
+            BFO: BRAFLDRAFT_125969
+            CIN: 100183489
+            SPU: 593424
+            DME: Dmel_CG5231(Las)
+            DPO: Dpse_GA18753
+            DAN: Dana_GF24134
+            DER: Dere_GG13311
+            DPE: Dper_GL11904
+            DSE: Dsec_GM22215
+            DSI: Dsim_GD12187
+            DWI: Dwil_GK17689
+            DYA: Dyak_GE22400 Dyak_GE22745
+            DGR: Dgri_GH16746
+            DMO: Dmoj_GI13471
+            DVI: Dvir_GJ11834
+            AGA: AgaP_AGAP010568
+            AAG: AaeL_AAEL009368
+            CQU: CpipJ_CPIJ004250
+            AME: 552644(Las)
+            NVI: 100121854(LIAS)
+            TCA: 664427
+            BMOR: 101735920
+            API: 100160514
+            PHU: Phum_PHUM250990
+            ISC: IscW_ISCW005563
+            CEL: CELE_M01F1.3(M01F1.3)
+            CBR: CBG09779
+            BMY: Bm1_23910
+            LOA: LOAG_04019
+            TSP: Tsp_01534
+            SMM: Smp_010100
+            NVE: NEMVE_v1g107253 NEMVE_v1g225637
+            HMG: 100203522
+            TAD: TRIADDRAFT_38449
+            AQU: 100636121
+            ATH: AT2G20860(LIP1) AT5G08415
+            ALY: ARALYDRAFT_325438 ARALYDRAFT_900465
+            CRB: CARUB_v10003725mg CARUB_v10014173mg CARUB_v10015445mg
+            EUS: EUTSA_v10002016mg EUTSA_v10013747mg
+            CIT: 102612536 102614207
+            CIC: CICLE_v10015632mg CICLE_v10015778mg
+            TCC: TCM_007646 TCM_007985
+            GMX: 100775835 100789911 100802588
+            CAM: 101494143 101502689
+            FVE: 101303353 101314461
+            CSV: 101204346 101212656 101227470
+            RCU: RCOM_0817880 RCOM_1176060
+            POP: POPTR_0005s08840g(POPTRDRAFT_558638) POPTR_0007s06900g POPTR_0013s13960g(POPTRDRAFT_774018) POPTR_0019s13380g
+            VVI: 100243894 100251365(LIP1)
+            SLY: 101257453 101258875 101261841
+            SOT: 102581126 102601496
+            OSA: 4325595 4336023 4339289
+            DOSA: Os04t0455800-01(Os04g0455800) Os05t0511500-01(Os05g0511500)
+            OBR: 102702064 102716211 102719869
+            BDI: 100838790 100841632 100843430
+            SBI: SORBI_03g011455(SORBIDRAFT_03g011455) SORBI_03g035760(SORBIDRAFT_03g035760) SORBI_06g018660(SORBIDRAFT_06g018660)
+            ZMA: 100279807(umc2251) 100283909(LIP1P-1) 100384288(LIP1P-2) 100502490
+            SITA: 101761119 101764943 101766333
+            ATR: s00003p00261780(AMTR_s00003p00261780) s00155p00036640(AMTR_s00155p00036640)
+            SMO: SELMODRAFT_121095 SELMODRAFT_123090 SELMODRAFT_185127 SELMODRAFT_186771
+            PPP: PHYPADRAFT_184135 PHYPADRAFT_202915
+            CRE: CHLREDRAFT_194766(LIPA1) CHLREDRAFT_196092(LIPA2)
+            VCN: VOLCADRAFT_43591 VOLCADRAFT_99442
+            OLU: OSTLU_31232 OSTLU_32294
+            MIS: MICPUN_60627 MICPUN_86513
+            MPP: MICPUCDRAFT_20781 MICPUCDRAFT_4033
+            CSL: COCSUDRAFT_26680 COCSUDRAFT_48852
+            CVR: CHLNCDRAFT_10627 CHLNCDRAFT_24051
+            CME: CYME_CML179C CYME_CMQ441C
+            GSL: Gasu_20200 Gasu_38020
+            CCP: CHC_T00008509001
+            SCE: YOR196C(LIP5)
+            AGO: AGOS_AGR231C
+            ERC: Ecym_7103
+            KLA: KLLA0F00836g
+            LTH: KLTH0D09548g
+            PPA: PAS_chr1-4_0425
+            VPO: Kpol_479p5
+            ZRO: ZYRO0F10758g
+            CGR: CAGL0I10923g
+            NCS: NCAS_0B01780(NCAS0B01780)
+            NDI: NDAI_0E01640(NDAI0E01640)
+            TPF: TPHA_0A01130(TPHA0A01130)
+            TBL: TBLA_0B04260(TBLA0B04260)
+            TDL: TDEL_0A05510(TDEL0A05510)
+            KAF: KAFR_0G02080(KAFR0G02080)
+            DHA: DEHA2G18854g
+            PIC: PICST_86231(LIP12)
+            PGU: PGUG_02382
+            LEL: LELG_04389
+            CAL: CaO19.10290(LIS1) CaO19.2774(LIS1)
+            CTP: CTRG_00165
+            CDU: CD36_42180
+            COT: CORT_0E01690
+            YLI: YALI0E10571g
+            CLU: CLUG_04975
+            NCR: NCU00565
+            SMP: SMAC_01256
+            PAN: PODANSg3928
+            TTT: THITE_2112862
+            MTM: MYCTH_2297436
+            MGR: MGG_02691
+            FGR: FG09444.1
+            NHE: NECHADRAFT_66689
+            TRE: TRIREDRAFT_81362
+            VAL: VDBG_02344
+            SSL: SS1G_09179
+            BFU: BC1G_01056
+            ANI: AN9486.2
+            AFM: AFUA_3G06560
+            AOR: AOR_1_608084(AO090020000344)
+            ANG: ANI_1_2510094(An11g09760)
+            AFV: AFLA_100710
+            ACT: ACLA_034510
+            NFI: NFIA_070700
+            PCS: Pc20g03200
+            CIM: CIMG_00458
+            CPW: CPC735_057610
+            PBL: PAAG_05935
+            URE: UREG_00501
+            ABE: ARB_07274
+            TVE: TRV_02005
+            AJE: HCAG_01217
+            PNO: SNOG_00270
+            PTE: PTT_09528
+            ZTR: MYCGRDRAFT_111717
+            TML: GSTUM_00002750001
+            SPO: SPBC8D2.15(lip5)
+            CNE: CNL04340
+            CNB: CNBI2500
+            CGI: CGB_D3020C
+            LBC: LACBIDRAFT_181332
+            MPR: MPER_02718
+            CCI: CC1G_03624
+            SCM: SCHCODRAFT_65029
+            UMA: UM04653.1
+            MGL: MGL_0652
+            PGR: PGTG_04610
+            MBR: MONBRDRAFT_34270
+            ACAN: ACA1_055650
+            PFA: MAL13P1.220
+            PFD: PFDG_04038
+            PFH: PFHG_02389
+            PYO: PY06208
+            PCB: PC000446.01.0 PC000673.03.0
+            PBE: PB000042.00.0 PB300672.00.0
+            PKN: PKH_120980
+            PVX: PVX_083125
+            PCY: PCYB_121910
+            TGO: TGME49_026400
+            PTI: PHATRDRAFT_18029 PHATRDRAFT_28652
+            TPS: THAPSDRAFT_31673 THAPSDRAFT_31845
+            PIF: PITG_14852
+            EHX: EMIHUDRAFT_414552 EMIHUDRAFT_419686 EMIHUDRAFT_426269
+            GTT: GUITHDRAFT_158225 GUITHDRAFT_83954
+            TBR: Tb10.61.1530
+            TCR: 506211.10 511291.30
+            LMA: LMJF_19_0350
+            LIF: LINJ_19_0350
+            LDO: LDBPK_190350
+            LMI: LMXM_19_0350
+            LBZ: LBRM_19_0670
+            NGR: NAEGRDRAFT_31291
+            ECO: b0628(lipA)
+            ECJ: Y75_p0618(lipA)
+            ECD: ECDH10B_0589(lipA) ECDH10B_0697(lipA)
+            EBW: BWG_0499(lipA)
+            ECOK: ECMDS42_0489(lipA)
+            ECE: Z0773(lipA)
+            ECS: ECs0666
+            ECF: ECH74115_0716(lipA)
+            ETW: ECSP_0681(lipA)
+            ELX: CDCO157_0653
+            EOJ: ECO26_0702(lipA)
+            EOI: ECO111_0658(lipA)
+            EOH: ECO103_0635(lipA)
+            ECG: E2348C_0528(lipA)
+            EOK: G2583_0791(lipA)
+            ELR: ECO55CA74_03880
+            ECC: c0718(lipA)
+            ECP: ECP_0658
+            ECI: UTI89_C0631(lipA)
+            ECV: APECO1_1427(lipA)
+            ECX: EcHS_A0679(lipA)
+            ECW: EcE24377A_0652(lipA)
+            ECM: EcSMS35_0648(lipA)
+            ECY: ECSE_0695
+            ECR: ECIAI1_0611(lipA)
+            ECQ: ECED1_0624(lipA)
+            ECK: EC55989_0620(lipA)
+            ECT: ECIAI39_0603(lipA)
+            EOC: CE10_0626(lipA)
+            EUM: ECUMN_0720(lipA)
+            ECZ: ECS88_0669(lipA)
+            ELO: EC042_0663(lipA)
+            ELN: NRG857_02855
+            ELH: ETEC_0656
+            ESE: ECSF_0567
+            ESO: O3O_06840
+            ESM: O3M_18435
+            ESL: O3K_18455
+            ECL: EcolC_3017
+            EBR: ECB_00597(lipA)
+            EBD: ECBD_3023
+            EKO: EKO11_3238
+            EKF: KO11_20530(lipA)
+            EAB: ECABU_c06820(lipA)
+            EDH: EcDH1_2998
+            EDJ: ECDH1ME8569_0597(lipA)
+            EIH: ECOK1_0638(lipA)
+            ENA: ECNA114_0567
+            ELU: UM146_14375
+            EUN: UMNK88_663(lipA)
+            ELW: ECW_m0682(lipA)
+            ELL: WFL_03390(lipA)
+            ELC: i14_0686(lipA)
+            ELD: i02_0686(lipA)
+            ELP: P12B_c0610(lipA)
+            EBL: ECD_00597(lipA)
+            EBE: B21_00586(lipA)
+            ELF: LF82_1199(lipA)
+            ECOA: APECO78_06715
+            ECOL: LY180_03395
+            ECOI: ECOPMV1_00646(lipA)
+            ECOJ: P423_03080
+            ECOO: ECRM13514_0651(lipA)
+            EFE: EFER_2476(lipA)
+            STY: STY0683(lipA)
+            STT: t2234(lipA)
+            SEX: STBHUCCB_23620
+            SENT: TY21A_11330
+            STM: STM0633(lipA)
+            SEO: STM14_0737(lipA)
+            SEV: STMMW_06981
+            SEY: SL1344_0621(lipA)
+            SEM: STMDT12_C06950
+            SEJ: STMUK_0638(lipA)
+            SEB: STM474_0654(lipA)
+            SEF: UMN798_0684(lipA)
+            SETU: STU288_11210
+            SETC: CFSAN001921_13870
+            SEEN: SE451236_09190
+            SENR: STMDT2_06241(lipA)
+            SEND: DT104_06621(lipA)
+            SPT: SPA2101(lipA)
+            SEK: SSPA1953
+            SPQ: SPAB_02922
+            SEI: SPC_0648(lipA)
+            SEC: SC0662(lipA)
+            SEH: SeHA_C0748(lipA)
+            SHB: SU5_01323
+            SENH: CFSAN002069_05680
+            SEEH: SEEH1578_12595
+            SEE: SNSL254_A0688(lipA)
+            SENN: SN31241_16390
+            SEW: SeSA_A0792(lipA)
+            SEA: SeAg_B0674(lipA)
+            SENS: Q786_03095
+            SED: SeD_A0734(lipA)
+            SEG: SG0637(lipA)
+            SEL: SPUL_2329(lipA)
+            SEGA: SPUCDC_2315(lipA)
+            SET: SEN0602(lipA)
+            SENJ: CFSAN001992_08165
+            SEEC: CFSAN002050_09775
+            SEEB: SEEB0189_16120
+            SEEP: I137_10625
+            SENB: BN855_6260(SBOV05841)
+            SENE: IA1_03315
+            SES: SARI_02300
+            SBG: SBG_0541(lipA)
+            SBZ: A464_609
+            YPE: YPO2598(lipA)
+            YPK: y1171(lipA)
+            YPA: YPA_2501
+            YPN: YPN_1083
+            YPM: YP_1115(lipA)
+            YPP: YPDSF_2655
+            YPG: YpAngola_A1855(lipA)
+            YPZ: YPZ3_2293(lipA)
+            YPT: A1122_13110
+            YPD: YPD4_2422(lipA)
+            YPX: YPD8_2271(lipA)
+            YPH: YPC_3277(lipA)
+            YPS: YPTB1091(lipA)
+            YPI: YpsIP31758_2955(lipA)
+            YPY: YPK_3027
+            YPB: YPTS_1148
+            YEN: YE3008(lip)
+            YEP: YE105_C1229
+            YEY: Y11_19301
+            YSI: BF17_14005
+            SFL: SF0653(lipA)
+            SFX: S0675(lipA)
+            SFV: SFV_0698(lipA)
+            SFE: SFxv_0720(lipA)
+            SSN: SSON_0582(lipA)
+            SSJ: SSON53_03150
+            SBO: SBO_0492(lipA)
+            SBC: SbBS512_E0542(lipA)
+            SDY: SDY_0550(lipA)
+            SDZ: Asd1617_00715
+            ECA: ECA1297(lipA)
+            PCT: PC1_1175
+            PCC: PCC21_011990
+            PWA: Pecwa_3156
+            PEC: W5S_3154
+            ETA: ETA_23590(lipA)
+            EPY: EpC_24940(lipA)
+            EPR: EPYR_02698(lipA)
+            EAM: EAMY_1112(lipA)
+            EAY: EAM_1119(lipA)
+            EBI: EbC_12420(lipA)
+            ERJ: EJP617_22350(lipA)
+            PLU: plu1291(lipA)
+            PAY: PAU_03168(lipA)
+            BUC: BU269(lipA)
+            BAP: BUAP5A_264(lipA)
+            BAU: BUAPTUC7_266(lipA)
+            BAJC: CWS_01400
+            BUA: CWO_01405
+            BUP: CWQ_01430
+            BAK: BAKON_271(lipA)
+            BUH: BUAMB_251(lipA)
+            BAPF: BUMPF009_CDS00327(lipa)
+            BAPG: BUMPG002_CDS00328(lipa)
+            BAPU: BUMPUSDA_CDS00327(lipa)
+            BAPW: BUMPW106_CDS00327(lipa)
+            BAS: BUsg259(lipA)
+            BAB: bbp250(lipA)
+            BCC: BCc_170(lipA)
+            BAJ: BCTU_176(lipA)
+            WBR: WGLp176(lipA)
+            WGL: WIGMOR_0607(lipA)
+            SGL: SG0792
+            SOD: Sant_2831(lipA)
+            ENT: Ent638_1163
+            ENC: ECL_03067
+            ENO: ECENHK_06300
+            ECLO: ENC_20820
+            EEC: EcWSU1_01211(lipA)
+            ENL: A3UG_06205
+            ESC: Entcl_3168
+            EAS: Entas_1143
+            EAU: DI57_12660
+            EAE: EAE_13825
+            EAR: ST548_p5852
+            ENR: H650_21975
+            ESA: ESA_02700
+            CSK: ES15_2771(lipA)
+            CSZ: CSSP291_12730
+            CSI: P262_04042
+            CTU: CTU_12610(lipA)
+            KPN: KPN_00660(lipA)
+            KPU: KP1_1615(lipA)
+            KPM: KPHS_14990
+            KPP: A79E_3579
+            KPE: KPK_3913(lipA)
+            KPO: KPN2242_06175
+            KPR: KPR_3915(lipA)
+            KPJ: N559_3662
+            KPI: D364_03465
+            KVA: Kvar_3706
+            KOX: KOX_14195
+            KOE: A225_1658
+            CKO: CKO_02530
+            CRO: ROD_06461(lipA)
+            CFD: CFNIH1_13305
+            SPE: Spro_1195
+            SRR: SerAS9_1167
+            SRL: SOD_c10610(lipA)
+            SRY: M621_05985
+            SRS: SerAS12_1167
+            SRA: SerAS13_1167
+            SSZ: SCc_229(lipA)
+            SMAF: D781_1111
+            SMW: SMWW4_v1c11630(lipA)
+            SLQ: M495_05330
+            SERR: Ser39006_1816
+            SFO: Z042_19535
+            PMR: PMI0420(lipA)
+            PMIB: BB2000_0565(lipA)
+            EIC: NT01EI_2948
+            ETR: ETAE_2650(lipA)
+            ETD: ETAF_2389
+            ETC: ETAC_12735
+            HDE: HDEF_0677(lipA)
+            SECT: A359_02860
+            SEHC: A35E_00470
+            DDA: Dd703_1086
+            DDC: Dd586_1131
+            DDD: Dda3937_02489(lipA)
+            DZE: Dd1591_2970
+            XBO: XBJ1_3219(lipA)
+            XNE: XNC1_1323(lipA)
+            PAM: PANA_1118(lipA)
+            PLF: PANA5342_3171(lipA)
+            PAJ: PAJ_0439(lipA)
+            PAQ: PAGR_g3040
+            PVA: Pvag_0484(lipA)
+            PAO: Pat9b_1060
+            RIP: RIEPE_0090(lipA)
+            RAH: Rahaq_3213
+            RAQ: Rahaq2_3250
+            RAA: Q7S_16215
+            MEN: MEPCIT_141(lipA)
+            MEO: MPC_452(lipA)
+            PSI: S70_15320
+            EBT: EBL_c27360(lipA)
+            MMK: MU9_1334
+            ROR: RORB6_11765
+            EBF: D782_3213
+            PSTS: E05_07520
+            HIN: HI0026(lipA)
+            HIT: NTHI0033(lipA)
+            HIP: CGSHiEE_03180
+            HIQ: CGSHiGG_02615
+            HIF: HIBPF00300
+            HIL: HICON_03110
+            HIU: HIB_00260
+            HIE: R2846_0621(lipA)
+            HIZ: R2866_0679(lipA)
+            HIK: HifGL_001524(lipA)
+            HDU: HD2012(lipA)
+            HAP: HAPS_1235(lipA)
+            HPAZ: K756_00505
+            HPR: PARA_01290
+            HSO: HS_0315(lipA)
+            HSM: HSM_0186
+            PMU: PM1930(lipA)
+            PMV: PMCN06_1441(lipA)
+            PUL: NT08PM_1465
+            PMP: Pmu_14020(lipA)
+            MSU: MS1826(lipA)
+            MHT: D648_24920
+            MHQ: D650_1240
+            MHX: MHH_c04790(lipA)
+            MHAE: F382_08380
+            MHAM: J450_06570
+            MHAO: J451_07595
+            MHAL: N220_13645
+            MVR: X781_22980
+            MVI: X808_540
+            MVG: X874_510
+            MVE: X875_20550
+            APL: APL_1593(lipA)
+            APJ: APJL_1626(lipA1)
+            APA: APP7_1655
+            ASU: Asuc_0703
+            ASI: ASU2_09155
+            AAP: NT05HA_1490
+            AAT: D11S_2137
+            AAO: ANH9381_0319
+            AAN: D7S_01200
+            GAN: UMN179_01348
+            BTO: WQG_22520
+            BTRE: F542_90
+            BTRH: F543_100
+            BTRA: F544_23040
+            XFA: XF1269
+            XFT: PD0530(lipA)
+            XFM: Xfasm12_0599
+            XFN: XfasM23_0554
+            XFF: XFLM_08115
+            XCC: XCC3451(lipA)
+            XCB: XC_0713
+            XCA: xccb100_0745(lipA)
+            XCP: XCR_3791(lipA)
+            XCV: XCV0729(lipA)
+            XAC: XAC0668(lipA)
+            XCI: XCAW_03913(lipA)
+            XAX: XACM_0673(lipA)
+            XAO: XAC29_03395
+            XOO: XOO3952(lipA)
+            XOM: XOO_3730
+            XOP: PXO_04289(lipA)
+            XOR: XOC_0727(lipA)
+            XAL: XALc_0817(lipA)
+            SML: Smlt4046(lipA)
+            SMT: Smal_3442
+            BUJ: BurJV3_3485
+            SMZ: SMD_3634(lipA)
+            PSU: Psesu_0288
+            PSD: DSC_14090
+            FAU: Fraau_0584
+            RHD: R2APBS1_0405 R2APBS1_2297
+            DJI: CH75_22725
+            VCH: VC0943
+            VCE: Vch1786_I0448
+            VCJ: VCD_003392
+            VCO: VC0395_A0467(lipA)
+            VCR: VC395_0958(lipA)
+            VCM: VCM66_0899(lipA)
+            VCI: O3Y_04385
+            VCL: VCLMA_A0805
+            VVU: VV1_0284(lipA)
+            VVY: VV0900
+            VVM: VVMO6_02318
+            VPA: VP0716
+            VPB: VPBB_0687
+            VPK: M636_18260
+            VPF: M634_05490
+            VHA: VIBHAR_01211
+            VCA: M892_06905
+            VAG: N646_2870
+            VSP: VS_0707
+            VEX: VEA_004228
+            VEJ: VEJY3_03290
+            VFU: vfu_A02658
+            VNI: VIBNI_A2720(lipA)
+            VAN: VAA_01104
+            LAG: N175_10865
+            VFI: VF_0742(lipA)
+            VFM: VFMJ11_0761(lipA)
+            VSA: VSAL_I0979(lipA)
+            PPR: PBPRA2896
+            PAE: PA3996(lis)
+            PAU: PA14_12130(lis)
+            PAP: PSPA7_1113(lipA)
+            PAG: PLES_09801(lis)
+            PAF: PAM18_0944(lis)
+            PNC: NCGM2_5195(lis)
+            PDK: PADK2_04345
+            PSG: G655_04700
+            PRP: M062_21110
+            PAEP: PA1S_gp1885
+            PAER: PA1R_gp1885
+            PAEM: U769_04860
+            PAEL: T223_04800
+            PAES: SCV20265_0980
+            PAEU: BN889_04441(lipA_1)
+            PAEG: AI22_28765
+            PPU: PP_4800(lipA)
+            PPF: Pput_4675
+            PPG: PputGB1_3093 PputGB1_4853
+            PPW: PputW619_0621
+            PPT: PPS_4642
+            PPB: PPUBIRD1_4583(lipA)
+            PPI: YSA_03710
+            PPX: T1E_3677(lipA) T1E_5529
+            PPUH: B479_23445
+            PPUT: L483_11010 L483_14470 L483_29140
+            PPUN: PP4_31270(lipA) PP4_48670(lipA)
+            PPUU: PputUW4_01862(lis1) PputUW4_04776(lis2)
+            PST: PSPTO_4818(lipA)
+            PSB: Psyr_4358
+            PSYR: N018_22590
+            PSP: PSPPH_4399(lipA)
+            PCI: PCH70_44690
+            PFL: PFL_5445(lipA)
+            PPRC: PFLCHA0_c54150(lipA)
+            PFO: Pfl01_4963
+            PFS: PFLU5416(lipA)
+            PFE: PSF113_5151(lis)
+            PFC: PflA506_4708(lipA)
+            PPZ: H045_17475
+            PEN: PSEEN4819(lipA)
+            PMY: Pmen_3791
+            PMK: MDS_4096
+            PSA: PST_3774(lipA)
+            PSZ: PSTAB_3729(lipA)
+            PSR: PSTAA_3857(lipA)
+            PSC: A458_02645
+            PSJ: PSJM300_17170
+            PSH: Psest_0519
+            PBA: PSEBR_a4957
+            PFV: Psefu_3619
+            PDR: H681_03325
+            PRE: PCA10_08040(lipA) PCA10_43490(lipA)
+            PSV: PVLB_22270
+            PSK: U771_27865
+            PMON: X969_22895
+            PMOT: X970_22530
+            PKC: PKB_0719(lipa1) PKB_2328(lipa3)
+            CJA: CJA_0797(lipA)
+            AVN: Avin_08460(lipA)
+            AVL: AvCA_08460(lipA)
+            AVD: AvCA6_08460(lipA)
+            PAR: Psyc_0749(lipA)
+            PCR: Pcryo_0744
+            PRW: PsycPRwf_0899
+            PSO: PSYCG_04230
+            ACI: ACIAD1015(lipA) ACIAD2275(lipA)
+            ACD: AOLE_05370 AOLE_10265
+            ACB: A1S_2329
+            ABM: ABSDF1194(lipA)
+            ABY: ABAYE1146(lipA) ABAYE1949(lipA)
+            ABC: ACICU_01734 ACICU_02532
+            ABN: AB57_1927(lipA) AB57_2763(lipA)
+            ABB: ABBFA_001111(lipA) ABBFA_001797(lipA)
+            ABX: ABK1_1157 ABK1_2193
+            ABZ: ABZJ_01899 ABZJ_02725
+            ABR: ABTJ_01185 ABTJ_01974
+            ABD: ABTW07_1947 ABTW07_2721(lipA)
+            ABH: M3Q_2085 M3Q_2798
+            ABAD: ABD1_16910(lipA) ABD1_23310(lipA)
+            ABJ: BJAB07104_02017 BJAB07104_02689
+            ABAB: BJAB0715_01918 BJAB0715_02736
+            ABAJ: BJAB0868_01857 BJAB0868_02571
+            ABAZ: P795_5245 P795_8735
+            ACC: BDGL_001060(lipA) BDGL_001823(lipA)
+            MCT: MCR_0323(lipA)
+            SON: SO_1161(lipA)
+            SDN: Sden_0867
+            SFR: Sfri_0692
+            SAZ: Sama_2595
+            SBL: Sbal_3282
+            SBM: Shew185_3324
+            SBN: Sbal195_3460
+            SBP: Sbal223_1085
+            SBT: Sbal678_3475
+            SBS: Sbal117_3419
+            SBB: Sbal175_1083
+            SLO: Shew_2942
+            SPC: Sputcn32_2876
+            SHP: Sput200_3020
+            SSE: Ssed_3492
+            SPL: Spea_3156
+            SHE: Shewmr4_0984
+            SHM: Shewmr7_1049
+            SHN: Shewana3_0988
+            SHW: Sputw3181_1027
+            SHL: Shal_3241
+            SWD: Swoo_3715
+            SWP: swp_3930
+            SVO: SVI_3413(lipA)
+            ILO: IL0960(lipA)
+            ILI: K734_04825
+            CPS: CPS_1709(lipA)
+            PHA: PSHAa1019(lipA)
+            PAT: Patl_1553
+            PSM: PSM_A2007(lipA)
+            SDE: Sde_3334
+            MAQ: Maqu_2373
+            MHC: MARHY0868(lipA)
+            MAD: HP15_640
+            MBS: MRBBS_0834(lipA)
+            AMC: MADE_000001021785
+            AMAC: MASE_08580
+            AMB: AMBAS45_09165
+            AMG: AMEC673_08645
+            AMH: I633_09715
+            AMK: AMBLS11_08435
+            AMAA: amad1_09725
+            AMAL: I607_08600
+            AMAE: I876_08900
+            AMAO: I634_08980
+            AMAD: I636_09410
+            AMAI: I635_09710
+            AMAG: I533_08980
+            ALT: ambt_09575
+            GAG: Glaag_2777
+            GNI: GNIT_2088(lipA)
+            GPS: C427_1966 C427_3487
+            PIN: Ping_3030
+            PSY: PCNPT3_10645
+            TTU: TERTU_0611(lipA)
+            FBL: Fbal_0812
+            CBU: CBU_1266(lipA)
+            CBS: COXBURSA331_A1414(lipA)
+            CBD: CBUD_1351(lipA)
+            CBG: CbuG_0745(lipA)
+            CBC: CbuK_1127(lipA)
+            LPN: lpg0745
+            LPU: LPE509_02468
+            LPH: LPV_0869(lipA)
+            LPO: LPO_0825(lipA)
+            LPM: LP6_0725(lipA)
+            LPF: lpl0781(lipA)
+            LPP: lpp0810(lipA)
+            LPC: LPC_2548(lipA)
+            LPA: lpa_01148(lipA)
+            LPE: lp12_0754
+            LLO: LLO_2076(lipA)
+            MCA: MCA0110(lipA)
+            MMT: Metme_1538
+            MAH: MEALZ_3393(lipA)
+            FTU: FTT_0653(lipA)
+            FTF: FTF0653(lipA)
+            FTW: FTW_1075(lipA)
+            FTR: NE061598_03740
+            FTT: FTV_0613(lipA)
+            FTG: FTU_0697(lipA)
+            FTL: FTL_0927
+            FTH: FTH_0906(lipA)
+            FTA: FTA_0977(lipA)
+            FTS: F92_05105
+            FTI: FTS_0910(lipA)
+            FTO: X557_04850
+            FTM: FTM_1205(lipA)
+            FTN: FTN_1030(lipA)
+            FCF: FNFX1_1069
+            FCN: FN3523_1151
+            FPH: Fphi_1563
+            FRT: F7308_1561
+            FNA: OOM_1350
+            FNL: M973_04450
+            TCX: Tcr_1639
+            TCY: Thicy_1260
+            MEJ: Q7A_2825
+            MEC: Q7C_1167
+            CYQ: Q91_1755
+            CZA: CYCME_0700
+            NOC: Noc_2629
+            NHL: Nhal_0579
+            NWA: Nwat_0488
+            ALV: Alvin_2543
+            TVI: Thivi_1990
+            TMB: Thimo_1346
+            AEH: Mlg_1586
+            HHA: Hhal_0116
+            HHC: M911_01920
+            TGR: Tgr7_2696
+            TKM: TK90_1966
+            TNI: TVNIR_2196(lipA_[H])
+            SSAL: SPISAL_01535
+            SPIU: SPICUR_01625
+            HNA: Hneap_1263
+            HCH: HCH_05836(lipA)
+            CSA: Csal_1552
+            HEL: HELO_2204(lipA)
+            PLE: B186_229(lipA)
+            PLY: C530_222
+            PLR: PAQ_225(lipA)
+            PLO: C548_221
+            PLD: PalTV_197(lipA)
+            ABO: ABO_1964(lipA)
+            ADI: B5T_01072(lipA)
+            KKO: Kkor_0337
+            MMW: Mmwyl1_2841
+            MME: Marme_1482
+            MPC: Mar181_1229
+            TOL: TOL_2893
+            TOR: R615_03215
+            AHA: AHA_3263(lipA)
+            AHY: AHML_17455
+            ASA: ASA_1054(lipA)
+            AVR: B565_0890
+            AMED: B224_0998
+            TAU: Tola_2836
+            OCE: GU3_06100
+            DNO: DNO_0480(lipA)
+            AFE: Lferr_2200
+            AFR: AFE_2570(lipA)
+            ACU: Atc_2379
+            AFI: Acife_2503
+            GAP: GAPWK_0944
+            SAGA: M5M_07075
+            BCI: BCI_0238(lipA)
+            RMA: Rmag_0543
+            VOK: COSY_0498(lipA)
+            GPB: HDN1F_14530(lipA)
+            NMA: NMA1378(lipA)
+            NME: NMB1216(lipA)
+            NMP: NMBB_1297
+            NMH: NMBH4476_0999(lipA)
+            NMC: NMC1110(lipA)
+            NMN: NMCC_1095
+            NMT: NMV_1218(lipA2)
+            NMI: NMO_1022(lipA)
+            NMD: NMBG2136_1093(lipA)
+            NMM: NMBM01240149_0959(lipA)
+            NMS: NMBM01240355_1134(lipA)
+            NMQ: NMBM04240196_0989
+            NMW: NMAA_0930(lipA2)
+            NMZ: NMBNZ0533_1181
+            NGO: NGO0793
+            NGK: NGK_1019
+            NGT: NGTW08_0824
+            NLA: NLA_10190(lipA)
+            SALV: SALWKB2_0410
+            CVI: CV_3097(lipA)
+            LHK: LHK_00972(lipA)
+            PSE: NH8B_1698 NH8B_2216
+            RSO: RSc0322(lipA)
+            RSC: RCFBP_21165(lipA)
+            RSL: RPSI07_3088(lipA)
+            RSN: RSPO_c03084(lipA)
+            RSM: CMR15_30622(lipA)
+            RSE: F504_343
+            RPI: Rpic_0178
+            RPF: Rpic12D_0184
+            REU: Reut_A0086
+            REH: H16_A0123(lipA)
+            CNC: CNE_1c01140(lipA1)
+            RME: Rmet_0061(lipA)
+            CTI: RALTA_A0063(lipA)
+            BMA: BMA0052(lipA)
+            BMV: BMASAVP1_A0218(lipA-2)
+            BML: BMA10229_A1375(lipA)
+            BMN: BMA10247_3186(lipA-2)
+            BPS: BPSL0414(lipA)
+            BPM: BURPS1710b_0628(lipA)
+            BPL: BURPS1106A_0464(lipA)
+            BPD: BURPS668_0444(lipA)
+            BPR: GBP346_A0372(lipA)
+            BPSE: BDL_1567(lipA)
+            BPSU: BBN_3118(lipA)
+            BPZ: BP1026B_I3092(lipA)
+            BPQ: BPC006_I0450
+            BPK: BBK_1049(lipA)
+            BTE: BTH_I0386(lipA) BTH_I2210
+            BTD: BTI_3320(lipA)
+            BVI: Bcep1808_1763 Bcep1808_2983
+            BUR: Bcep18194_A5137 Bcep18194_A6230
+            BCN: Bcen_2272 Bcen_6243
+            BCH: Bcen2424_1836 Bcen2424_2887
+            BCM: Bcenmc03_1860 Bcenmc03_2897
+            BCJ: BCAL0710(lipA) BCAL1908(lipA)
+            BAM: Bamb_1774 Bamb_2937
+            BAC: BamMC406_1747 BamMC406_2799
+            BMU: Bmul_0417 Bmul_1437
+            BMJ: BMULJ_01806(lipA) BMULJ_02838(lipA)
+            BCT: GEM_0549 GEM_1588
+            BXE: Bxe_A4212 Bxe_B0316
+            BPH: Bphy_0217 Bphy_3757
+            BPY: Bphyt_0504 Bphyt_5917
+            BGL: bglu_1g32030
+            BUG: BC1001_0232
+            BGE: BC1002_0240 BC1002_6672
+            BGF: BC1003_0243
+            BRH: RBRH_02213 RBRH_03512
+            BGD: bgla_1g35730
+            BYI: BYI23_A001660
+            BUK: MYA_1629 MYA_2645
+            BPX: BUPH_04130
+            BUO: BRPE64_ACDS01770(lipA)
+            PNU: Pnuc_1961
+            PNE: Pnec_1668
+            PPK: U875_21360
+            PPNO: DA70_14035
+            PRB: X636_12815
+            BPE: BP0106(lipA)
+            BPC: BPTD_0104(lipA)
+            BPER: BN118_0178(lipA)
+            BPA: BPP0170(lipA)
+            BPAR: BN117_0169(lipA)
+            BBR: BB0172(lipA)
+            BBM: BN115_0161(lipA)
+            BBH: BN112_3241(lipA)
+            BPT: Bpet4803(lipA)
+            BAV: BAV0139(lipA)
+            BHO: D560_1283(lipA)
+            AXY: AXYL_06263(lipA)
+            AXO: NH44784_024081
+            AXN: AX27061_5879
+            TEQ: TEQUI_0690
+            TEA: KUI_0063(lipA)
+            TEG: KUK_1074(lipA)
+            TAS: TASI_0063
+            TAT: KUM_0968(lipA)
+            PUT: PT7_3262
+            AKA: TKWG_04415
+            AMIM: MIM_c06790(lipA)
+            CDN: BN940_05936
+            RFR: Rfer_3934
+            POL: Bpro_0313
+            PNA: Pnap_0242
+            AAV: Aave_0362
+            AJS: Ajs_0298
+            DIA: Dtpsy_0293
+            AAA: Acav_0432
+            ACK: C380_01960
+            VEI: Veis_0470
+            DAC: Daci_0410
+            DEL: DelCs14_0423
+            VAP: Vapar_4881
+            VPE: Varpa_5519
+            VPD: VAPA_1c50640(lipA)
+            CTT: CtCNB1_0326
+            ADN: Alide_0429
+            ADK: Alide2_0374
+            RTA: Rta_03500(lipA)
+            CBX: Cenrod_2381(lipA)
+            MPT: Mpe_A0316
+            HAR: HEAR3003(lipA)
+            MMS: mma_3252(lipA)
+            HSE: Hsero_4771(lipA)
+            ZIN: ZICARI_005(lipA)
+            CFU: CFU_4191(lipA)
+            LCH: Lcho_0401
+            TIN: Tint_2802
+            THI: THI_3350(lipA)
+            RGE: RGE_44060(lipA)
+            NEU: NE1489(lipA)
+            NET: Neut_0757
+            NIT: NAL212_2329
+            NII: Nit79A3_2241
+            NMU: Nmul_A1987
+            EBA: ebA3050(lipA)
+            AZO: azo0184(lipA)
+            AZA: AZKH_0142(lipA) AZKH_3812(lipA) AZKH_p0652
+            DAR: Daro_0287
+            TMZ: Tmz1t_0245
+            DSU: Dsui_0903
+            TBD: Tbd_0274
+            SDR: SCD_n00107(lipA)
+            MFA: Mfla_2501
+            MMB: Mmol_2262
+            MEH: M301_2611
+            MEI: Msip34_2543
+            MEP: MPQ_2491(lipA)
+            APP: CAP2UW1_0704
+            SLT: Slit_2313
+            GCA: Galf_2083
+            SSDC: SSDC_01150(lipA)
+            BPRC: D521_1959
+            SUA: Saut_0487
+            ABU: Abu_1470(lipA)
+            ABT: ABED_1371
+            ABL: A7H1H_1486(lipA)
+            ANT: Arnit_2602
+            ARC: ABLL_1679
+            NSA: Nitsa_1004
+            NIS: NIS_0925(lipA)
+            SUN: SUN_0965(lipA)
+            NAM: NAMH_0776
+            GSU: GSU0380(lipA)
+            GSK: KN400_0348(lipA)
+            GME: Gmet_3150(lipA)
+            GUR: Gura_0399
+            GLO: Glov_2662
+            GBM: Gbem_0400(lipA)
+            GEO: Geob_1320
+            GEM: GM21_0399
+            GEB: GM18_0494
+            PCA: Pcar_0346(acoS)
+            PPD: Ppro_1029 Ppro_2239
+            DVU: DVU0905(lipA)
+            DVL: Dvul_2079
+            DVM: DvMF_1401
+            DVG: Deval_0835
+            DDE: Dde_2714
+            DDS: Ddes_2076
+            DDN: DND132_3356
+            DSA: Desal_2806 Desal_3025
+            DAS: Daes_2303
+            DAF: Desaf_2112
+            DHY: DESAM_21636(lipA)
+            DPI: BN4_20344(lipA) BN4_20419(lipA)
+            DGG: DGI_3074
+            BEX: A11Q_698
+            BMX: BMS_2609(lipA)
+            DPS: DP0296
+            DPR: Despr_2729
+            DAT: HRM2_24950(lipA)
+            DTO: TOL2_C20990(lipA)
+            ADE: Adeh_1828
+            ACP: A2cp1_2102
+            AFW: Anae109_1992
+            ANK: AnaeK_2032
+            MXA: MXAN_4218(lipA)
+            MFU: LILAB_29230
+            MSD: MYSTI_03732
+            CCX: COCOR_03726(lipA)
+            SUR: STAUR_4669(lipA)
+            SCL: sce1573(lipA)
+            SCU: SCE1572_10020
+            HOH: Hoch_3704
+            DAO: Desac_0607
+            DTI: Desti_0754 Desti_4149
+            SFU: Sfum_2644
+            DBR: Deba_2982
+            RPR: RP742
+            RPO: MA1_03580
+            RPW: M9W_03590
+            RPZ: MA3_03630
+            RPG: MA5_00670
+            RPS: M9Y_03595
+            RPV: MA7_03585
+            RPQ: rpr22_CDS722(lipA)
+            RPL: H375_7830
+            RPN: H374_3060
+            RTY: RT0727(lipA)
+            RTT: RTTH1527_03495
+            RTB: RTB9991CWPP_03495
+            RCM: A1E_04770
+            RCC: RCA_04410
+            RBE: RBE_1309(lipA)
+            RBO: A1I_00315
+            RCO: RC1145(lipA)
+            RFE: RF_1187(lipA)
+            RAK: A1C_05775
+            RRI: A1G_06300
+            RRJ: RrIowa_1352
+            RRA: RPO_06360
+            RRC: RPL_06345
+            RRH: RPM_06330
+            RRB: RPN_00690
+            RRN: RPJ_06305
+            RRP: RPK_06290
+            RMS: RMA_1171(lipA)
+            RMI: RMB_02175
+            RPK: RPR_03265
+            RAF: RAF_ORF1043(lipA)
+            RHE: Rh054_06290
+            RJA: RJP_0844(lipA)
+            RSV: Rsl_1319(lipA)
+            RSW: MC3_06420
+            RPH: RSA_06340
+            RAU: MC5_02080
+            RMO: MCI_02975
+            RPP: MC1_06385
+            RRE: MCC_06905
+            RAM: MCE_07320
+            OTS: OTBS_0390(lipA)
+            OTT: OTT_0086(lipA)
+            WOL: WD0392(lipA)
+            WRI: WRi_003970(lipA)
+            WEN: wHa_04590(lipA)
+            WED: wNo_11020(lipA)
+            WPI: WPa_0235(lipA)
+            WBM: Wbm0303
+            WOO: wOo_07000
+            AMA: AM820(lipA)
+            AMF: AMF_610(lipA)
+            AMW: U370_03070
+            AMP: U128_03175
+            ACN: ACIS_00515(lipA)
+            APH: APH_0367(lipA)
+            APY: YYU_01760
+            APD: YYY_01785
+            APHA: WSQ_01770
+            ERU: Erum5290(lipA)
+            ERW: ERWE_CDS_05550(lipA)
+            ERG: ERGA_CDS_05440(lipA)
+            ECN: Ecaj_0537
+            ECH: ECH_0490(lipA)
+            ECHA: ECHHL_0425(lipA)
+            EMR: EMUR_02820
+            EHH: EHF_0434(lipA)
+            NSE: NSE_0322(lipA)
+            NRI: NRI_0316(lipA)
+            NHM: NHE_0308(lipA)
+            MMN: midi_00422(lipA)
+            MLO: mlr0392
+            MCI: Mesci_3701
+            MOP: Mesop_4539
+            MAM: Mesau_04173
+            MES: Meso_1624
+            PLA: Plav_3136
+            SME: SMc01037(lipA)
+            SMK: Sinme_1253
+            SMQ: SinmeB_1082
+            SMX: SM11_chr2116(lipA2)
+            SMI: BN406_01185(lipA) BN406_06655(lipA1) BN406_06803(lipA3)
+            SMEG: C770_GR4Chr1472
+            SMEL: SM2011_c01037(lipA)
+            SMD: Smed_1083
+            RHI: NGR_b19510(lipA1) NGR_c12900(lipA2)
+            SFH: SFHH103_01175(lipa3)
+            SFD: USDA257_c17680(lipA2) USDA257_c34880(lipA3)
+            EAD: OV14_2525(lipA1)
+            ATU: Atu1436(lipA)
+            ARA: Arad_2255(lipA)
+            AVI: Avi_2123(lipA)
+            AGR: AGROH133_05929(lipA)
+            RET: RHE_CH01941(lipA)
+            REC: RHECIAT_CH0002038(lipA)
+            REL: REMIM1_CH02000(lipA-1) REMIM1_PF00840(lipA-2)
+            RLE: RL2249
+            RLT: Rleg2_1611
+            RLG: Rleg_1804
+            RLB: RLEG3_19495
+            RLU: RLEG12_19535
+            RTR: RTCIAT899_CH08630(lipA)
+            RIR: BN877_I1394(lipA)
+            RHL: LPU83_2552(lipA3)
+            LAS: CLIBASIA_02815
+            LAA: WSI_02585
+            LSO: CKC_02315
+            LCC: B488_11050
+            LAR: lam_316(lipA)
+            BME: BMEI0859
+            BMI: BMEA_A1169(lipA)
+            BMZ: BM28_A1132(lipA)
+            BMG: BM590_A1122
+            BMW: BMNI_I1095
+            BMF: BAB1_1147(lipA)
+            BMB: BruAb1_1130(lipA)
+            BMC: BAbS19_I10650
+            BAA: BAA13334_I02178
+            BMS: BR1124(lipA)
+            BSI: BS1330_I1120(lipA)
+            BMT: BSUIS_A1173(lipA)
+            BSV: BSVBI22_A1120(lipA)
+            BOV: BOV_1082(lipA)
+            BCS: BCAN_A1143(lipA)
+            BSK: BCA52141_I3377
+            BOL: BCOUA_I1124(lipA)
+            BMR: BMI_I1136(lipA)
+            BPP: BPI_I1171(lipA)
+            BCET: V910_100862
+            BCEE: V568_100958
+            OAN: Oant_2065
+            BJA: bll3717(lipA) blr4477(lipA)
+            BJU: BJ6T_52680
+            BRA: BRADO3879(lipA)
+            BBT: BBta_3949(lipA)
+            BRS: S23_37050(lipA)
+            AOL: S58_39260
+            RPA: RPA2587(lipA2)
+            RPB: RPB_2888
+            RPC: RPC_2572
+            RPD: RPD_2584
+            RPE: RPE_2752
+            RPT: Rpal_2857
+            RPX: Rpdx1_2884
+            NWI: Nwi_1439
+            NHA: Nham_1831
+            OCA: OCAR_6091(lipA)
+            OCG: OCA5_c19380(lipA)
+            OCO: OCA4_c19370(lipA)
+            BHE: BH05790(lipA)
+            BHN: PRJBM_00590(lipA)
+            BQU: BQ04950(lipA)
+            BQR: RM11_0479
+            BBK: BARBAKC583_0538(lipA)
+            BTR: Btr_0866(lipA)
+            BGR: Bgr_06620(lipA)
+            BCD: BARCL_0597(lipA)
+            BAUS: BAnh1_05040(lipA)
+            BVN: BVwin_05180(lipA)
+            XAU: Xaut_3897
+            AZC: AZC_1747
+            SNO: Snov_1789
+            MEX: Mext_2799
+            MEA: Mex_1p3000(lipA)
+            MDI: METDI3566(lipA)
+            MCH: Mchl_3027
+            MRD: Mrad2831_2176
+            MET: M446_1252 M446_5924
+            MPO: Mpop_2923
+            MNO: Mnod_6533
+            BID: Bind_1509
+            MSL: Msil_0523
+            HDN: Hden_2670
+            HDT: HYPDE_36978
+            HMC: HYPMC_0723(lipA)
+            HNI: W911_01405 W911_10965
+            RVA: Rvan_1323
+            PHL: KKY_1389
+            MSC: BN69_0216
+            CCR: CC_1735
+            CCS: CCNA_01809
+            CAK: Caul_2751
+            CSE: Cseg_1975
+            PZU: PHZ_c1737(lipA)
+            BSB: Bresu_2363
+            AEX: Astex_2911
+            SIL: SPO2102(lipA)
+            SIT: TM1040_1371
+            RSP: RSP_2783(lipA)
+            RSH: Rsph17029_1425
+            RSQ: Rsph17025_1041
+            RSK: RSKD131_1089
+            RCP: RCAP_rcc01864(lipA)
+            JAN: Jann_2226
+            RDE: RD1_2773(lipA)
+            RLI: RLO149_c017830(lipA)
+            PDE: Pden_1376
+            PAMI: JCM7686_1397
+            DSH: Dshi_1583(lipA)
+            PSF: PSE_3289(lipA)
+            PGA: PGA1_78p00270(lipA) PGA1_c14680(lipA)
+            PGL: PGA2_95p360(lipA) PGA2_c14570(lipA)
+            PGD: Gal_01934 Gal_04256
+            OAT: OAN307_c25160(lipA)
+            OAR: OA238_c19050(lipA)
+            LMD: METH_09975 METH_14610
+            RED: roselon_02878
+            MMR: Mmar10_1436
+            HNE: HNE_2021(lipA)
+            HBA: Hbal_1668
+            ZMO: ZMO1132
+            ZMN: Za10_0194
+            ZMM: Zmob_0195
+            ZMB: ZZ6_0196
+            ZMI: ZCP4_0199
+            ZMP: Zymop_0164
+            NAR: Saro_1921
+            NPP: PP1Y_AT26163
+            SAL: Sala_1281
+            SWI: Swit_0241
+            SPHM: G432_01125
+            SJP: SJA_C1-16790(lipA)
+            SCH: Sphch_0698
+            SSY: SLG_18030(lipA)
+            ELI: ELI_06310
+            GOX: GOX2293
+            GOH: B932_2705
+            GBE: GbCGDNIH1_1188
+            GBH: GbCGDNIH2_1188
+            ACR: Acry_2824
+            AMV: ACMV_31620(lipA)
+            GDI: GDI_1943(lipA)
+            GDJ: Gdia_0165
+            GXY: GLX_07520
+            GXL: H845_1897
+            APT: APA01_12140
+            APW: APA42C_12140
+            APF: APA03_12140
+            APU: APA07_12140
+            APG: APA12_12140
+            APQ: APA22_12140
+            APX: APA26_12140
+            APZ: APA32_12140
+            APK: APA386B_2734(lipA)
+            RRU: Rru_A1877
+            RRF: F11_09645
+            RCE: RC1_0123(lipA)
+            RPM: RSPPHO_02151(lipA)
+            MAG: amb2322
+            MGY: MGMSR_0972(lipA)
+            AZL: AZL_015150(lipA)
+            ALI: AZOLI_0731(lipA1) AZOLI_1335(lipA2)
+            ABS: AZOBR_50039(lipA) AZOBR_p110003(lipA)
+            TMO: TMO_1713(lipA)
+            THAL: A1OE_723(lipA)
+            PBR: PB2503_12014
+            MGM: Mmc1_0527
+            MAI: MICA_1289(lipA)
+            MAN: A11S_1223
+            PGV: SL003B_2315
+            PUB: SAR11_0941(lipA)
+            PEL: SAR11G3_01064 SAR11G3_01065
+            APC: HIMB59_00012250
+            APM: HIMB5_00005900
+            APB: SAR116_0209
+            BSU: BSU32330(lipA)
+            BSR: I33_3333(lipA)
+            BSL: A7A1_2339
+            BSH: BSU6051_32330(lipA)
+            BSY: I653_15580
+            BSS: BSUW23_15765(lipA)
+            BST: GYO_3526(lipA)
+            BSO: BSNT_04783(lipA)
+            BSN: BSn5_07055
+            BSQ: B657_32330(lipA)
+            BSUB: BEST7613_1781(lipA) BEST7613_2423(lipA) BEST7613_6371(lipA)
+            BSX: C663_3091(lipA)
+            BSP: U712_16120
+            BLI: BL02143(lipA)
+            BLD: BLi03422(lipA)
+            BLH: BaLi_c34900(lipA)
+            BAO: BAMF_3036(lipA)
+            BAY: RBAM_029430(lipA)
+            BAQ: BACAU_2972(lipA)
+            BYA: BANAU_3132(lipA)
+            BAMP: B938_15075
+            BAML: BAM5036_2858(lipA)
+            BAMA: RBAU_3073(lipA)
+            BAMN: BASU_2864(lipA)
+            BAMB: BAPNAU_3123(lipA)
+            BAZ: BAMTA208_16365(lipA)
+            BQL: LL3_03311(lipA)
+            BXH: BAXH7_03338(lipA)
+            BQY: MUS_3533(lipA)
+            BAMI: KSO_004420
+            BAMC: U471_30520
+            BAMF: U722_15855
+            BAE: BATR1942_13990
+            BHA: BH3435
+            BAN: BA_5205(lipA)
+            BAR: GBAA_5205(lipA)
+            BAT: BAS4840
+            BAH: BAMEG_5262(lipA)
+            BAI: BAA_5241(lipA)
+            BAX: H9401_4969
+            BANT: A16_52240
+            BANR: A16R_52880
+            BAL: BACI_c49780(lipA2)
+            BCE: BC4973
+            BCA: BCE_5109(lipA)
+            BCZ: BCZK4698(lipA)
+            BCR: BCAH187_A5114(lipA)
+            BCB: BCB4264_A5116(lipA)
+            BCU: BCAH820_5076(lipA)
+            BCG: BCG9842_B0124(lipA)
+            BCQ: BCQ_4790(lipA)
+            BCX: BCA_5104(lipA)
+            BNC: BCN_4868
+            BCF: bcf_24905
+            BCER: BCK_10400
+            BCY: Bcer98_3568
+            BTK: BT9727_4682(lipA)
+            BTL: BALH_4504(lipA)
+            BTB: BMB171_C4583(lipA)
+            BTT: HD73_5343
+            BTC: CT43_CH5032(lipA)
+            BTF: YBT020_24680
+            BTM: MC28_4238
+            BTG: BTB_c51970(lipA)
+            BTI: BTG_23980
+            BTN: BTF1_23415
+            BTHT: H175_ch5114
+            BTHU: YBT1518_27645
+            BWE: BcerKBAB4_4796
+            BTY: Btoyo_2215
+            BCL: ABC2950(lipS)
+            BPU: BPUM_2896(lipA)
+            BPF: BpOF4_04970
+            BMQ: BMQ_4985(lipA)
+            BMD: BMD_4971(lipA)
+            BMH: BMWSH_0290(lipA)
+            BCO: Bcell_3421
+            BCK: BCO26_2181
+            BAG: Bcoa_2284
+            BJS: MY9_3246
+            BACI: B1NLA3E_18710
+            BIF: N288_21055
+            OIH: OB1284
+            GKA: GK2974
+            GTN: GTNG_2924
+            GTH: Geoth_0589
+            GTE: GTCCBUS3UF5_33300
+            GWC: GWCH70_2906
+            GYC: GYMC61_3051
+            GYA: GYMC52_3074
+            GCT: GC56T3_0531
+            GMC: GY4MC1_0519
+            GGH: GHH_c30520(lipA)
+            GJF: M493_15490
+            AFL: Aflv_2425(lipA)
+            LSP: Bsph_0562
+            LGY: T479_18685
+            HHD: HBHAL_2091(lipA)
+            SAU: SA0785(lipA)
+            SAV: SAV0924(lipA)
+            SAW: SAHV_0919(lipA)
+            SAH: SaurJH1_0942
+            SAJ: SaurJH9_0923
+            SAM: MW0807(lipA)
+            SAS: SAS0795
+            SAR: SAR0887(lipA)
+            SAC: SACOL0927(lipA)
+            SAX: USA300HOU_0885(lipA)
+            SAA: SAUSA300_0829(lipA)
+            SAO: SAOUHSC_00861
+            SAE: NWMN_0796(lipA)
+            SAD: SAAV_0885(lipA)
+            SUU: M013TW_0844
+            SUV: SAVC_03800
+            SUH: SAMSHR1132_07770
+            SUE: SAOV_0871
+            SUJ: SAA6159_00784(lipA)
+            SUK: SAA6008_00876(lipA)
+            SUC: ECTR2_780(lipA)
+            SUT: SAT0131_00955(rsbV)
+            SUQ: HMPREF0772_12322(lipA)
+            SUZ: MS7_0880(lipA)
+            SUD: ST398NM01_0908
+            SUX: SAEMRSA15_07550(lipA)
+            SUW: SATW20_09250(lipA)
+            SUG: SAPIG0908(lipA)
+            SUF: SARLGA251_08430(lipA)
+            SAUA: SAAG_01277
+            SAUE: RSAU_000803(lipA)
+            SAUN: SAKOR_00836
+            SAUS: SA40_0792(lipA)
+            SAUU: SA957_0807(lipA)
+            SAUZ: SAZ172_0866(lipA)
+            SAB: SAB0791
+            SUY: SA2981_0879(lipA)
+            SAUB: C248_0924(lipA)
+            SAUM: BN843_8300
+            SAUC: CA347_846(lipA)
+            SAUR: SABB_02643(lipA)
+            SEP: SE0617
+            SER: SERP0511(lipA)
+            SHA: SH2028(lipA)
+            SSP: SSP1850
+            SCA: Sca_0528(lipA)
+            SLG: SLGD_01948
+            SLN: SLUG_19400(lipA)
+            SSD: SPSINT_0613
+            SDT: SPSE_1909(lipA)
+            SWA: A284_09120
+            SPAS: STP1_2001
+            ESI: Exig_2330
+            EAT: EAT1b_1403
+            EAN: Eab7_2175
+            EXM: U719_12835
+            MCL: MCCL_0553
+            BBE: BBR47_48010(lipA)
+            PJD: Pjdr2_1203
+            GYM: GYMC10_5495
+            PPY: PPE_03942(lipA)
+            PPM: PPSC2_c4426
+            PPO: PPM_4141(lipA3)
+            PPOL: X809_21955
+            PMS: KNP414_03622(lipA)
+            PMQ: PM3016_1028
+            PMW: B2K_05190
+            PTA: HPL003_01670
+            PLV: ERIC2_c30330(lipA)
+            PSAB: PSAB_19895
+            TCO: Theco_3060
+            AAC: Aaci_1757
+            AAD: TC41_1656(lipA)
+            BTS: Btus_1312
+            SIV: SSIL_1057
+            CKL: CKL_2273(lipA2)
+            CKR: CKR_2002
+            CLJ: CLJU_c33210(lipA)
+            CAH: CAETHG_1220
+            AMT: Amet_4425
+            CSS: Cst_c06500(lipA)
+            CSD: Clst_0618
+            CAD: Curi_c00790(lipA)
+            CST: CLOST_2088(lipA)
+            STH: STH2153
+            SLP: Slip_2183
+            DRM: Dred_0610
+            DCA: Desca_0395 Desca_0774
+            DGI: Desgi_4179
+            DOR: Desor_4330
+            FMA: FMG_1290
+            TMR: Tmar_1665
+            SAY: TPY_3785(lipA)
+            SAP: Sulac_3479
+            TTE: TTE1672(LipA2)
+            TEX: Teth514_2036
+            THX: Thet_0901
+            TPD: Teth39_0787
+            TIT: Thit_1502
+            TMT: Tmath_1493
+            TBO: Thebr_0809
+            TWI: Thewi_1634
+            MTA: Moth_1762
+            CSC: Csac_0871
+            ATE: Athe_0701
+            COB: COB47_0649
+            CHD: Calhy_1968
+            COW: Calow_0562
+            CKN: Calkro_1929
+            TOC: Toce_0611
+            CPO: COPRO5265_0641(lipA)
+            TNR: Thena_1147
+            HAS: Halsa_2089
+            MTU: Rv2218(lipA)
+            MTV: RVBD_2218
+            MTC: MT2275(lipA)
+            MRA: MRA_2234(lipA)
+            MTF: TBFG_12246
+            MTB: TBMG_01763
+            MTK: TBSG_01774
+            MTZ: TBXG_001745
+            MTG: MRGA327_13680
+            MTI: MRGA423_13795
+            MTE: CCDC5079_2053
+            MTUR: CFBS_2347(lipA)
+            MTL: CCDC5180_2026
+            MTO: MTCTRI2_2253(lipA)
+            MTD: UDA_2218(lipA)
+            MTN: ERDMAN_2436(lipA)
+            MTJ: J112_11890
+            MTUB: MT7199_2248
+            MTUC: J113_15395
+            MTUE: J114_11875
+            MTX: M943_11475
+            MTUH: I917_15590
+            MTUL: TBHG_02170
+            MBO: Mb2241(lipA)
+            MBB: BCG_2234(lipA)
+            MBT: JTY_2228(lipA)
+            MBM: BCGMEX_2221(lipA)
+            MBK: K60_023000
+            MAF: MAF_22290(lipA)
+            MCE: MCAN_22401(lipA)
+            MCQ: BN44_50156(lipA)
+            MCV: BN43_31453(lipA)
+            MCX: BN42_40137(lipA)
+            MCZ: BN45_50545(lipA)
+            MLE: ML0858(lipA)
+            MLB: MLBr_00858(lipA)
+            MPA: MAP1959(lipA)
+            MAO: MAP4_1868
+            MAV: MAV_2270(lipA)
+            MIT: OCO_22200
+            MIR: OCQ_21310
+            MIA: OCU_22400
+            MID: MIP_03144
+            MYO: OEM_20310
+            MSM: MSMEG_4286(lipA)
+            MSG: MSMEI_4185(lipA)
+            MSA: Mycsm_03922
+            MUL: MUL_1343(lipA)
+            MVA: Mvan_0914 Mvan_3582
+            MGI: Mflv_2932
+            MSP: Mspyr1_22640
+            MAB: MAB_1942c
+            MABB: MASS_1930
+            MMV: MYCMA_1009(lipA)
+            MMC: Mmcs_3316
+            MKM: Mkms_3378
+            MJL: Mjls_3327
+            MJD: JDM601_1685(lipA)
+            MMI: MMAR_3286(lipA)
+            MRH: MycrhN_4489
+            MMM: W7S_10550
+            MCB: Mycch_3222
+            MLI: MULP_03518(lipA)
+            MKN: MKAN_03045
+            MNE: D174_18085
+            ASD: AS9A_1259
+            CGL: NCgl2128(Cgl2209)
+            CGB: cg2423(lipA)
+            CGU: WA5_2128(LipA)
+            CGT: cgR_2089
+            CGS: C624_10695
+            CGG: C629_10705
+            CGM: cgp_2423(lipA)
+            CEF: CE2100
+            CDI: DIP1641(lipA)
+            CDP: CD241_1576(lipA)
+            CDH: CDB402_1544
+            CDT: CDHC01_1577(lipA)
+            CDE: CDHC02_1525(lipA)
+            CDR: CDHC03_1553(lipA)
+            CDA: CDHC04_1553
+            CDZ: CD31A_1655(lipA)
+            CDB: CDBH8_1627
+            CDS: CDC7B_1638(lipA)
+            CDD: CDCE8392_1547
+            CDW: CDPW8_1630(lipA)
+            CDV: CDVA01_1514(lipA)
+            CJK: jk0705(lipA)
+            CUR: cur_1249
+            CUA: CU7111_1231(lipA)
+            CAR: cauri_1717(lipA)
+            CKP: ckrop_0698
+            CPU: cpfrc_01444(lipA)
+            CPL: Cp3995_1481(lipA)
+            CPG: Cp316_1503(lipA)
+            CPP: CpP54B96_1465(lipA)
+            CPK: Cp1002_1441(lipA)
+            CPQ: CpC231_1440(lipA)
+            CPX: CpI19_1447(lipA)
+            CPZ: CpPAT10_1438(lipA)
+            COR: Cp267_1501(lipA)
+            COP: Cp31_1463(lipA)
+            COD: Cp106_1425(lipA)
+            COS: Cp4202_1431(lipA)
+            COI: CpCIP5297_1469(lipA)
+            COE: Cp258_1467(lipA)
+            COU: Cp162_1442(lipA)
+            CRD: CRES_0743(lipA)
+            CUL: CULC22_01560(lipA)
+            CUC: CULC809_01544(lipA)
+            CUE: CULC0102_1679
+            CVA: CVAR_1121(lipA)
+            CHN: A605_09695
+            CCN: H924_09310
+            CTER: A606_04455
+            CMD: B841_08995
+            CAZ: CARG_06885
+            CFN: CFAL_04175
+            CCG: CCASEI_05285
+            CVT: B843_09195
+            CGY: CGLY_09930(lipA2)
+            NFA: nfa16860(lipA)
+            NCY: NOCYR_1801(lipA)
+            NBR: O3I_011290
+            NNO: NONO_c21920(lipA)
+            RHA: RHA1_ro01154 RHA1_ro02928
+            RER: RER_36200(lipA)
+            REY: O5Y_16605
+            ROP: ROP_08810(lipA) ROP_26500(lipA)
+            ROA: Pd630_LPD01803 Pd630_LPD05251 Pd630_LPD07162
+            REQ: REQ_28450(lipA)
+            RPY: Y013_06055 Y013_12645
+            GBR: Gbro_3077
+            GPO: GPOL_c28370(lipA)
+            GOR: KTR9_3068
+            TPR: Tpau_1513
+            SRT: Srot_2235
+            SCO: SCO2194(lipA)
+            SMA: SAV_6009(lipA)
+            SGR: SGR_5319
+            SCB: SCAB_66921(lipA)
+            SSX: SACTE_1615
+            SVL: Strvi_7270
+            SCT: SCAT_1315(lipA)
+            SCY: SCATT_13130
+            SFA: Sfla_4635
+            SBH: SBI_07777(lipA)
+            SHY: SHJG_2461 SHJG_3673
+            SHO: SHJGH_2226 SHJGH_3438
+            SVE: SVEN_1859
+            SDV: BN159_6235(lipA)
+            SALB: XNR_4688
+            STRP: F750_2049
+            SFI: SFUL_1760
+            SCI: B446_11495
+            SRC: M271_35430
+            SALU: DC74_2686
+            KSK: KSE_22270(lipA)
+            TWH: TWT464(lipA)
+            TWS: TW301(lipA)
+            LXX: Lxx10130(lipA)
+            LXY: O159_15800
+            CMI: CMM_1208(lipA)
+            CMS: CMS_1883(lipA)
+            CMC: CMN_01179(lipA)
+            MTS: MTES_3252(lipA)
+            ART: Arth_0062 Arth_1604
+            AAU: AAur_1747(lipA) AAur_4002(lipA)
+            ACH: Achl_0533 Achl_1598
+            AAI: AARI_20320(lipA)
+            APN: Asphe3_15800 Asphe3_34200
+            ARR: ARUE_c16510 ARUE_c41420(lipA)
+            RSA: RSal33209_2443
+            KRH: KRH_14460(lipA)
+            MLU: Mlut_13370
+            RMU: RMDY18_07230
+            RDN: HMPREF0733_10010(lipA)
+            BCV: Bcav_1858
+            BFA: Bfae_16470
+            JDE: Jden_1481
+            KSE: Ksed_16380
+            XCE: Xcel_2035
+            IVA: Isova_1858
+            SKE: Sked_15400
+            CFL: Cfla_2109
+            CFI: Celf_2219
+            CGA: Celgi_1391
+            ICA: Intca_2025 Intca_3591
+            PAC: PPA0689
+            PAK: HMPREF0675_3758(lipA)
+            PAV: TIA2EST22_03485
+            PAX: TIA2EST36_03450
+            PAZ: TIA2EST2_03405
+            PAW: PAZ_c07370(lipA)
+            PAD: TIIST44_11010
+            PCN: TIB1ST10_03560
+            PACC: PAC1_03580
+            PACH: PAGK_1440
+            PFR: PFREUD_05560(lipA)
+            PPC: HMPREF9154_1239
+            PBO: PACID_12090(lipA)
+            PRA: PALO_07365
+            MPH: MLP_42280(lipA)
+            NCA: Noca_2299
+            KFL: Kfla_2676
+            TFU: Tfu_0991
+            NDA: Ndas_0939
+            NAL: B005_0136(lipA)
+            TCU: Tcur_3099
+            SRO: Sros_2640
+            FRA: Francci3_3138
+            FRE: Franean1_1774
+            FRI: FraEuI1c_1754
+            FAL: FRAAL5157(lipA)
+            FSY: FsymDg_3224
+            ACE: Acel_0926
+            NML: Namu_1919
+            GOB: Gobs_3370
+            BSD: BLASA_2079(lipA)
+            MMAR: MODMU_1966(lipA)
+            KRA: Krad_3288
+            SEN: SACE_1626(lipA)
+            SVI: Svir_10420
+            TBI: Tbis_1266
+            AMD: AMED_1817(lipA) AMED_2159(lipA)
+            AMN: RAM_09220 RAM_11000
+            AMM: AMES_1804(lipA) AMES_2140(lipA)
+            AMZ: B737_1805(lipA) B737_2141(lipA)
+            AOI: AORI_5770(lipA) AORI_6058(lipA)
+            PDX: Psed_4571
+            AMI: Amir_1340
+            SESP: BN6_15880(lipA)
+            KAL: KALB_1935
+            STP: Strop_3328
+            SAQ: Sare_3561
+            MAU: Micau_4615
+            MIL: ML5_3686
+            VMA: VAB18032_27441
+            AMS: AMIS_13820
+            ASE: ACPL_1610
+            ACTN: L083_1856
+            AFS: AFR_09225
+            CAI: Caci_7406
+            SNA: Snas_4893
+            AHE: Arch_1446
+            MCU: HMPREF0573_10044(lipA)
+            TPY: CQ11_05285
+            RXY: Rxyl_2548
+            RRD: RradSPS_0401
+            CWO: Cwoe_0743
+            AFO: Afer_0719
+            AYM: YM304_29640(lipB)
+            CTR: CT_558(lipA)
+            CTD: CTDEC_0558(lipA)
+            CTF: CTDLC_0558(lipA)
+            CTRD: SOTOND1_00593
+            CTRO: SOTOND5_00592
+            CTRT: SOTOND6_00591
+            CTA: CTA_0608(lipA)
+            CTY: CTR_5611(lipA)
+            CRA: CTO_0608
+            CTRQ: A363_00600
+            CTRX: A5291_00599
+            CTRZ: A7249_00598
+            CTRP: L11322_00586
+            CTLJ: L1115_00586
+            CTLX: L1224_00586
+            CTLL: L1440_00589
+            CTB: CTL0821(lipA)
+            CTRR: L225667R_00588
+            CTLF: CTLFINAL_04280
+            CTLI: CTLINITIAL_04275
+            CTL: CTLon_0815(lipA)
+            CTRU: L2BUCH2_00585
+            CTRL: L2BLST_00585
+            CTRV: L2BCV204_00585
+            CTRM: L2BAMS1_00585
+            CTLA: L2BAMS2_00585
+            CTLM: L2BAMS3_00585
+            CTLS: L2BAMS4_00586
+            CTLZ: L2BAMS5_00586
+            CTLC: L2BCAN1_00586
+            CTLN: L2BCAN2_00586
+            CTLB: L2B795_00586
+            CTLQ: L2B8200_00585
+            CTO: CTL2C_134(lipA)
+            CTRN: L3404_00586
+            CTJ: JALI_5611(lipA)
+            CTZ: CTB_5611(lipA)
+            CTG: E11023_02930
+            CTK: E150_02945
+            CSW: SW2_5681(lipA)
+            CES: ESW3_5681(lipA)
+            CTRB: BOUR_00595
+            CTRE: SOTONE4_00590
+            CTRS: SOTONE8_00596
+            CFS: FSW4_5681(lipA)
+            CFW: FSW5_5681(lipA)
+            CTRF: SOTONF3_00590
+            CTCH: O173_03080
+            CTN: G11074_02935
+            CTQ: G11222_02940
+            CTV: CTG9301_02940
+            CTW: G9768_02930
+            CTRG: SOTONG1_00592
+            CTRI: BN197_5661(lipA)
+            CTRA: BN442_5661(lipA)
+            CTRH: SOTONIA1_00594
+            CTRJ: SOTONIA3_00594
+            CTRK: SOTONK1_00591
+            CTJT: CTJTET1_02965
+            CTCF: CTRC69_02960
+            CTFS: CTRC342_02980
+            CTHF: CTRC852_02995
+            CTCJ: CTRC943_02925
+            CTHJ: CTRC953_02935
+            CTMJ: CTRC966_02935
+            CTTJ: CTRC971_02945
+            CTJS: CTRC122_02970
+            CTRC: CTRC55_02935
+            CTRW: CTRC3_02965
+            CTRY: CTRC46_02940
+            CTCT: CTW3_03090
+            CMU: TC_0847(lipA)
+            CPN: CPn0832(lipA)
+            CPA: CP1038
+            CPJ: CPj0832(lipA)
+            CPT: CpB0861
+            CLP: CPK_ORF00239(lipA)
+            CPM: G5S_0210(lipA)
+            CPEC: CPE3_0894(lipA)
+            CPEO: CPE1_0893(lipA)
+            CPER: CPE2_0894(lipA)
+            CHP: CPSIT_0990(lipA)
+            CHB: G5O_0983(lipA)
+            CHS: CPS0A_1013(lipA)
+            CHI: CPS0B_0999(lipA)
+            CHT: CPS0D_1007(lipA)
+            CHC: CPS0C_1008(lipA)
+            CHR: Cpsi_9201(lipA3)
+            CPSC: B711_1066(lipA)
+            CPSN: B712_1004(lipA)
+            CPSB: B595_1069(lipA)
+            CPSG: B598_1001(lipA)
+            CPSM: B602_1005(lipA)
+            CPSI: B599_1000(lipA)
+            CPSV: B600_1064(lipA)
+            CPSW: B603_1008(lipA)
+            CPST: B601_1007(lipA)
+            CPSD: BN356_9241(lipA3)
+            CPSA: AO9_04795
+            CAV: M832_07160(lipA)
+            CCA: CCA00934(lipA)
+            CAB: CAB903(lipA3)
+            CFE: CF0080(lipA)
+            PCU: pc0152(lipA)
+            PUV: PUV_26050(lipA)
+            WCH: wcw_0099(lipA)
+            SNG: SNE_A01980(lipA)
+            OTE: Oter_2080
+            CAA: Caka_1470
+            MIN: Minf_1525(lipA)
+            AMU: Amuc_1092
+            TDE: TDE1575(lipA)
+            TAZ: TREAZ_0931(lipA)
+            TPED: TPE_0768(lipA)
+            SCD: Spica_1729
+            STA: STHERM_c03110(lipA)
+            STQ: Spith_0294
+            SFC: Spiaf_1743
+            SLR: L21SP2_2614
+            LIL: LA_2292(lipA)
+            LIE: LIF_A1870(lipA)
+            LIC: LIC11646(lipA)
+            LBJ: LBJ_1322(lipA)
+            LBL: LBL_1547(lipA)
+            LBI: LEPBI_I1462(lipA)
+            LBF: LBF_1409(lipA)
+            TPX: Turpa_1384
+            ABA: Acid345_4487
+            ACA: ACP_1379(lipA)
+            ACM: AciX9_3529
+            GMA: AciX8_0427
+            TSA: AciPR4_3978
+            TRS: Terro_0262
+            SUS: Acid_1501 Acid_4705
+            CTM: Cabther_A0398
+            EMI: Emin_0381
+            RSD: TGRD_426
+            GAU: GAU_0751(lipA)
+            GBA: J421_2669
+            AMO: Anamo_1265
+            SBR: SY1_04200
+            RBA: RB4868
+            PSL: Psta_0472
+            PLM: Plim_3382
+            PBS: Plabr_1803
+            IPA: Isop_1355
+            SACI: Sinac_3747
+            PHM: PSMK_06200(lipA)
+            SYN: sll0868(lipA) slr1598(lipA)
+            SYZ: MYO_110470(lipA) MYO_14280(lipA)
+            SYY: SYNGTS_0423(lipA) SYNGTS_1038(lipA)
+            SYT: SYNGTI_0423(lipA) SYNGTI_1038(lipA)
+            SYS: SYNPCCN_0423(lipA) SYNPCCN_1037(lipA)
+            SYQ: SYNPCCP_0423(lipA) SYNPCCP_1037(lipA)
+            SYW: SYNW0929(lipA) SYNW2130(lipA)
+            SYC: syc0979_c(lipA) syc2492_c(lipA)
+            SYF: Synpcc7942_0542 Synpcc7942_1507
+            SYD: Syncc9605_0328 Syncc9605_1638
+            SYE: Syncc9902_1398 Syncc9902_2014
+            SYG: sync_0389(lipA-1) sync_1037(lipA-2)
+            SYR: SynRCC307_0800(lipA) SynRCC307_2162
+            SYX: SynWH7803_0387(lipA) SynWH7803_1526(lipA)
+            SYP: SYNPCC7002_A0785(lipA) SYNPCC7002_A1577(lipA)
+            CYA: CYA_0692(lipA-1) CYA_0714(lipA-2) CYA_2347(lipA-3)
+            CYB: CYB_1117(lipA-1) CYB_2905(lipA-2)
+            SYNE: Syn6312_1860 Syn6312_3451
+            SYNP: Syn7502_02201 Syn7502_03279
+            TEL: tll0574 tlr0613
+            THN: NK55_00045(lipA1)
+            MAR: MAE_08190 MAE_53890
+            CYT: cce_0767(lipA1) cce_3143(lipA2)
+            CYP: PCC8801_2940 PCC8801_3569
+            CYC: PCC7424_1107 PCC7424_3346
+            CYN: Cyan7425_4375 Cyan7425_4749
+            CYH: Cyan8802_2544 Cyan8802_3156
+            CYJ: Cyan7822_4047 Cyan7822_5188
+            AMR: AM1_1698(lipA) AM1_3776(lipA)
+            CGC: Cyagr_0930 Cyagr_1857
+            CAN: Cyan10605_0399 Cyan10605_3152
+            CSN: Cyast_0814 Cyast_2315
+            DSL: Dacsa_0387 Dacsa_2160
+            HAO: PCC7418_2531 PCC7418_3717
+            GLP: Glo7428_3453 Glo7428_4136
+            CMP: Cha6605_3781 Cha6605_5277
+            TER: Tery_1957 Tery_3493
+            LEP: Lepto7376_0238 Lepto7376_1504
+            GEI: GEI7407_0774 GEI7407_1332
+            OAC: Oscil6304_2239 Oscil6304_3979
+            ONI: Osc7112_0213 Osc7112_4552
+            PSEU: Pse7367_0791 Pse7367_3613
+            CEP: Cri9333_1202 Cri9333_2746
+            MIC: Mic7113_1469 Mic7113_3491
+            ARP: NIES39_E04190(lipA) NIES39_K01490(lipA)
+            GVI: gll1029 gll3526
+            GLJ: GKIL_1081(lipA) GKIL_3949(lipA)
+            ANA: all1694 alr1282
+            NPU: Npun_F0994 Npun_R3828
+            NOS: Nos7107_2570 Nos7107_4512
+            NOP: Nos7524_0329 Nos7524_3688
+            AVA: Ava_1162 Ava_3006
+            ANB: ANA_C12373(lipA) ANA_C13643(lipA)
+            ACY: Anacy_2897 Anacy_4820
+            NAZ: Aazo_0567 Aazo_2199
+            CSG: Cylst_1761 Cylst_3455
+            CALO: Cal7507_3118 Cal7507_4733
+            CALT: Cal6303_0718 Cal6303_5174
+            RIV: Riv7116_1268 Riv7116_6440
+            PMA: Pro_1099(lipA) Pro_1670(lipA)
+            PMM: PMM1096(lipA) PMM1514(lipA)
+            PMT: PMT1076(LipA) PMT1775(lipA)
+            PMN: PMN2A_0652 PMN2A_1080
+            PMI: PMT9312_1107 PMT9312_1606
+            PMB: A9601_12021 A9601_17181
+            PMC: P9515_11871 P9515_16941
+            PMF: P9303_09741 P9303_23551
+            PMG: P9301_12031 P9301_17061
+            PMH: P9215_12321(lipA) P9215_17821(lipA)
+            PMJ: P9211_10901 P9211_16371
+            PME: NATL1_14841 NATL1_19551
+            CTHE: Chro_0310 Chro_0653
+            PLP: Ple7327_0626 Ple7327_3248
+            SCS: Sta7437_2187 Sta7437_3160
+            BTH: BT_4192
+            BFR: BF0976
+            BFS: BF0898
+            BFG: BF638R_0957(lipA)
+            BVU: BVU_1990
+            BHL: Bache_1335
+            BSA: Bacsa_1665
+            BXY: BXY_32990
+            PGI: PG0504(lipA)
+            PGN: PGN_1468
+            PGT: PGTDC60_1621(lipA)
+            PAH: Poras_1655
+            PDI: BDI_2192
+            PPN: Palpr_0427
+            OSP: Odosp_0856
+            TFO: BFO_1660(lipA)
+            PMZ: HMPREF0659_A6168(lipA)
+            PDN: HMPREF9137_0254(lipA)
+            PIT: PIN17_0297(lipA)
+            AFD: Alfi_1511
+            ASH: AL1_16250
+            DOI: FH5T_10330
+            SRU: SRU_0796(lipA)
+            SRM: SRM_00974(lipA)
+            RMR: Rmar_2195
+            RMG: Rhom172_0679
+            CPI: Cpin_1966
+            NKO: Niako_2154
+            PHE: Phep_0513
+            PSN: Pedsa_3469
+            SHG: Sph21_5263
+            SCN: Solca_4375
+            HHY: Halhy_1892
+            SGN: SGRA_2985(lipA)
+            CMR: Cycma_1081
+            BBD: Belba_1539
+            EVI: Echvi_0606
+            CHU: CHU_3189(lipA)
+            DFE: Dfer_3202
+            SLI: Slin_0446
+            LBY: Lbys_1572
+            RSI: Runsl_4050
+            FLI: Fleli_1186
+            EOL: Emtol_4265
+            FAE: FAES_4444
+            HSW: Hsw_3908
+            MTT: Ftrac_2810
+            CHE: CAHE_0742(lipA)
+            GFO: GFO_2703(lipA)
+            FJO: Fjoh_0227
+            FPS: FP1469(lipA)
+            FBR: FBFL15_2149(lipA)
+            FCO: FCOL_01075
+            FIN: KQS_10650(lipA)
+            COC: Coch_1779
+            CCM: Ccan_13840
+            RBI: RB2501_02425
+            ZPR: ZPR_3748
+            CAT: CA2559_07861
+            RAN: Riean_0541
+            RAI: RA0C_0766
+            RAR: RIA_1721
+            RAG: B739_1451
+            RAE: G148_1079
+            FBC: FB2170_16511
+            CAO: Celal_2305
+            CLY: Celly_0588
+            WVI: Weevi_0513
+            KDI: Krodi_1776
+            LAN: Lacal_1443
+            ZGA: zobellia_711(lipA)
+            MRS: Murru_2096
+            ASL: Aeqsu_0457
+            ORH: Ornrh_1233
+            PTQ: P700755_000106
+            NDO: DDD_0584(lipA)
+            POM: MED152_03845
+            FBA: FIC_01810
+            SMG: SMGWSS_152(lipA)
+            SMS: SMDSEM_159(lipA)
+            SMH: DMIN_01480
+            SUM: SMCARI_167(lipA)
+            SMV: SULALF_121(lipA)
+            BBL: BLBBGE_474(lipA)
+            BPI: BPLAN_166(lipA)
+            BMM: MADAR_198(lipA)
+            BCP: BLBCPU_442(lipA)
+            BBG: BGIGA_162(lipA)
+            BBQ: BLBBOR_470
+            BLP: BPAA_169(lipA)
+            BLU: K645_2236
+            FTE: Fluta_2251
+            OHO: Oweho_1023
+            UDI: ASNER_189(lipA)
+            CTE: CT1078(lipA)
+            CPC: Cpar_1044
+            CCH: Cag_1068
+            CPH: Cpha266_1277
+            CPB: Cphamn1_1370
+            CLI: Clim_1213
+            PVI: Cvib_0857
+            PLT: Plut_1084
+            PPH: Ppha_1316
+            PAA: Paes_1149
+            CTS: Ctha_2201
+            IAL: IALB_1648(lipA)
+            MRO: MROS_2260
+            RRS: RoseRS_1042
+            CAU: Caur_2839
+            CAG: Cagg_1129
+            CHL: Chy400_3075
+            HAU: Haur_0183 Haur_0893
+            TRO: trd_0168(lipA)
+            ATM: ANT_25960(lipA)
+            CAP: CLDAP_12660(lipA)
+            DRA: DR_0765
+            DGE: Dgeo_1742
+            DDR: Deide_07210(lipA)
+            DMR: Deima_0781
+            DPT: Deipr_1590
+            DGO: DGo_CA2259(lipA)
+            DPD: Deipe_0640
+            TRA: Trad_2085
+            TTH: TTC1747
+            TTJ: TTHA0239
+            TTS: Ththe16_0146
+            TTL: TtJL18_0158
+            TSC: TSC_c02290(lipA)
+            THC: TCCBUS3UF1_20490
+            TOS: Theos_2092
+            MRB: Mrub_1771
+            MRE: K649_13700
+            MSV: Mesil_0833
+            OPR: Ocepr_1775
+            MHD: Marky_0694
+            AAE: aq_1355(lipA)
+            HTH: HTH_0579(lipA1) HTH_0701(lipA2)
+            HTE: Hydth_0578 Hydth_0701
+            TAL: Thal_1071
+            TRD: THERU_00675
+            SUL: SYO3AOP1_1024
+            SAF: SULAZ_1479(lipA)
+            PMX: PERMA_0907(lipA)
+            MPG: Theba_2508
+            CCZ: CCALI_02780
+            FGI: FGOP10_00809
+            TYE: THEYE_A1983(lipA)
+            NDE: NIDE3950(lipA)
+            LFC: LFE_0253
+            LFI: LFML04_2199(acoS)
+            TTR: Tter_0096 Tter_2833
+            MOX: DAMO_1599(lipA)
+            HHS: HHS_07770(lipA)
+            MPD: MCP_1716(lipA)
+            MEZ: Mtc_1889(lipA)
+            RCI: RRC130(lipA)
+            HAL: VNG2216G(lip)
+            HSL: OE4111F(lip)
+            HMA: rrnAC2959(lipA)
+            HHI: HAH_0218(lipA)
+            HHN: HISP_01175
+            NPH: NP0562A(lipA)
+            NMO: Nmlp_1032(lipA)
+            HLA: Hlac_2099
+            HMU: Hmuk_0672
+            HTU: Htur_3599 Htur_4149
+            NMG: Nmag_1669
+            HVO: HVO_2957(lipA)
+            HME: HFX_2951(lipA)
+            HJE: HacjB3_00110
+            HBO: Hbor_02980 Hbor_39900
+            HXA: Halxa_1123
+            NAT: NJ7G_0037
+            NPE: Natpe_0219
+            NGE: Natgr_1354
+            HRU: Halru_0166
+            NOU: Natoc_3847
+            SALI: L593_09430
+            PTO: PTO0550
+            FAC: FACI_IFERC01G0865
+            APE: APE_2344.1(lipA)
+            ACJ: ACAM_1474(lipA)
+            SSO: SSO3158(lipA)
+            SOL: Ssol_0899
+            SAI: Saci_0309(lipA)
+            SACN: SacN8_01515
+            SACR: SacRon12I_01515
+            SACS: SUSAZ_01565
+            SIS: LS215_2377
+            SIA: M1425_2212
+            SIM: M1627_2291
+            SID: M164_2213
+            SIY: YG5714_2339
+            SIN: YN1551_0568
+            SII: LD85_2483
+            SIH: SiH_2154
+            SIR: SiRe_2092
+            SIC: SiL_2061
+            PAI: PAE2643
+            PCL: Pcal_1406
+            PAS: Pars_1184
+            PYR: P186_1850
+            POG: Pogu_1070
+            TUZ: TUZN_1026
+            CSU: CSUB_C1591
+            HAH: Halar_2848
+DBLINKS     ExplorEnz - The Enzyme Database: 2.8.1.8
+            IUBMB Enzyme Nomenclature: 2.8.1.8
+            ExPASy - ENZYME nomenclature database: 2.8.1.8
+            BRENDA, the Enzyme Database: 2.8.1.8
+            CAS: 189398-80-9
+///

@@ -1,0 +1,11 @@
+ENTRY       R01309                      Reaction
+NAME        phosphatidylcholine acylhydrolase
+DEFINITION  Phosphatidylcholine + 2 H2O <=> sn-Glycero-3-phosphocholine + 2 Fatty acid
+EQUATION    C00157 + 2 C00001 <=> C00670 + 2 C00162
+COMMENT     two-step reaction (see R01315+R02746 or R01316+R02747)
+RPAIR       RP00252  C00157_C00162 main [RC:RC00094]
+            RP01424  C00157_C00670 main [RC:RC00495]
+            RP05684  C00001_C00162 leave
+            RP13421  C00157_C00162 main [RC:RC00020]
+ENZYME      3.1.1.5
+///

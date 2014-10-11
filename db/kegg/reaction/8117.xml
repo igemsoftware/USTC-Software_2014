@@ -1,0 +1,13 @@
+ENTRY       R08117                      Reaction
+NAME        4-fluorobenzoate:CoA ligase
+DEFINITION  4-Fluorobenzoate + CoA + ATP <=> 4-Fluorobenzoyl-CoA + AMP + Diphosphate
+EQUATION    C02371 + C00010 + C00002 <=> C02802 + C00020 + C00013
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP10624  C00010_C02802 main [RC:RC00004]
+            RP11396  C02371_C02802 main [RC:RC00174]
+ENZYME      6.2.1.33
+PATHWAY     rn00364  Fluorobenzoate degradation
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K14417  4-chlorobenzoate-CoA ligase [EC:6.2.1.33]
+///

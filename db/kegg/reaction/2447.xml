@@ -1,0 +1,13 @@
+ENTRY       R02447                      Reaction
+NAME        malonyl-CoA:benzoyl-CoA malonyltransferase (2,4,6-trihydroxybenzophenone-forming)
+DEFINITION  3 Malonyl-CoA + S-Benzoate coenzyme A <=> 4 CoA + 2,4,6-Trihydroxybenzophenone + 3 CO2
+EQUATION    3 C00083 + C00512 <=> 4 C00010 + C06356 + 3 C00011
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP00053  C00010_C00512 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP07023  C00083_C06356 trans
+            RP07025  C00512_C06356 trans
+            RP12793  C00083_C06356 trans
+            RP12799  C00083_C06356 trans
+ENZYME      2.3.1.151       2.3.1.220
+///

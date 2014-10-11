@@ -1,0 +1,16 @@
+ENTRY       R01298                      Reaction
+NAME        4-hydroxybenzoate,NADPH:oxygen oxidoreductase (3-hydroxylating)
+DEFINITION  4-Hydroxybenzoate + Oxygen + NADPH + H+ <=> 3,4-Dihydroxybenzoate + NADP+ + H2O
+EQUATION    C00156 + C00007 + C00005 + C00080 <=> C00230 + C00006 + C00001
+COMMENT     NADH (ec 1.14.13.33, see R1296)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP00474  C00156_C00230 main [RC:RC00046]
+            RP05740  C00007_C00230 leave
+ENZYME      1.14.13.2       1.14.13.33
+PATHWAY     rn00362  Benzoate degradation
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K00481  p-hydroxybenzoate 3-monooxygenase [EC:1.14.13.2]
+///

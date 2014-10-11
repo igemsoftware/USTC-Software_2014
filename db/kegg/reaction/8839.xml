@@ -1,0 +1,11 @@
+ENTRY       R08839                      Reaction
+NAME        UDP-glucose:ferulate D-glucosyltransferase
+DEFINITION  UDP-glucose + Ferulate <=> 1-O-Feruloyl-beta-D-glucose + UDP
+EQUATION    C00029 + C01494 <=> C17759 + C00015
+COMMENT     ec 2.4.1.120 forms only glucose esters
+            ec 2.4.1.126 forms a mixture of glucose esters and 4-glucosides
+RPAIR       RP00012  C00015_C00029 main [RC:RC00005]
+            RP13846  C01494_C17759 main [RC:RC00523]
+            RP13847  C00029_C17759 trans
+ENZYME      2.4.1.120       2.4.1.126
+///

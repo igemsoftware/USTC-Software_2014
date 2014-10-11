@@ -1,0 +1,12 @@
+ENTRY       R05188                      Reaction
+NAME        acyl-CoA:malonyl-CoA C-acyltransferase(decarboxylating, oxoacyl- and enoyl-reducing and thioester-hydrolysing)
+DEFINITION  Acetyl-CoA + n Malonyl-CoA + 2n NADPH + 2n H+ <=> Long-chain fatty acid + n CO2 + 2n NADP+ + (n+1) CoA + n H2O
+EQUATION    C00024 + n C00083 + 2n C00005 + 2n C00080 <=> C00638 + n C00011 + 2n C00006 + (n+1) C00010 + n C00001
+COMMENT     multi-step reaction (see map00061)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00007  C00010_C00024 main [RC:RC00004]
+            RP00051  C00010_C00083 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP08518  C00001_C00083 leave
+ENZYME      2.3.1.85
+///

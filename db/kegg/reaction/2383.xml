@@ -1,0 +1,14 @@
+ENTRY       R02383                      Reaction
+NAME        Monophenol,L-dopa:oxygen oxidoreductase
+DEFINITION  Tyramine + Oxygen + NADH + H+ <=> Dopamine + NAD+ + H2O
+EQUATION    C00483 + C00007 + C00004 + C00080 <=> C03758 + C00003 + C00001
+COMMENT     tyramine monooxygenase
+            Ref:1. Meth Enzymol 1987; 142: 165-169
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 leave
+            RP02171  C00483_C03758 main [RC:RC00046]
+ENZYME      1.14.13.-       1.14.18.1
+PATHWAY     rn00950  Isoquinoline alkaloid biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K00505  tyrosinase [EC:1.14.18.1]
+///

@@ -1,0 +1,11 @@
+ENTRY       R10026                      Reaction
+NAME        amorpha-4,11-diene,NADPH:oxygen oxidoreductase (12-hydroxylating)
+DEFINITION  Amorpha-4,11-diene + 3 Oxygen + 3 NADPH + 3 H+ <=> Artemisinate + 3 NADP+ + 4 H2O
+EQUATION    C16028 + 3 C00007 + 3 C00005 + 3 C00080 <=> C20309 + 3 C00006 + 4 C00001
+COMMENT     three-step reaction (see R10023+R10024+R10025)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP15767  C00007_C20309 leave
+            RP15768  C16028_C20309 main [RC:RC02089]
+ENZYME      1.14.13.158
+///

@@ -1,0 +1,107 @@
+ENTRY       EC 1.1.2.7                  Enzyme
+NAME        methanol dehydrogenase (cytochrome c);
+            methanol dehydrogenase;
+            MDH
+CLASS       Oxidoreductases;
+            Acting on the CH-OH group of donors;
+            With a cytochrome as acceptor
+SYSNAME     methanol:cytochrome c oxidoreductase
+REACTION    a primary alcohol + 2 ferricytochrome cL = an aldehyde + 2 ferrocytochrome cL + 2 H+
+ALL_REAC    (other) R01146 R09127 R09128
+SUBSTRATE   primary alcohol [CPD:C00226];
+            ferricytochrome cL [CPD:C18233]
+PRODUCT     aldehyde [CPD:C00071];
+            ferrocytochrome cL [CPD:C18234];
+            H+ [CPD:C00080]
+COMMENT     A periplasmic quinoprotein alcohol dehydrogenase that only occurs in methylotrophic bacteria. It uses the novel specific cytochrome cL as acceptor. Acts on a wide range of primary alcohols, including ethanol, duodecanol, chloroethanol, cinnamyl alcohol, and also formaldehyde. Activity is stimulated by ammonia or methylamine. It is usually assayed with phenazine methosulphate. Like all other quinoprotein alcohol dehydrogenases it has an 8-bladed 'propeller' structure, a calcium ion bound to the PQQ in the active site and an unusual disulphide ring structure in close proximity to the PQQ. It differs from EC 1.1.2.8, alcohol dehydrogenase (cytochrome c), in having a high affinity for methanol and in having a second essential small subunit (no known function).
+HISTORY     EC 1.1.2.7 created 1972 as 1.1.99.8, modified 1982, part transferred 2010 to EC 1.1.2.7
+REFERENCE   1  [PMID:4378696]
+  AUTHORS   Anthony C, Zatman LJ
+  TITLE     The microbial oxidation of methanol. 2. The methanol-oxidizing enzyme of Pseudomonas sp. M 27.
+  JOURNAL   Biochem. J. 92 (1964) 614-21.
+REFERENCE   2  [PMID:6049934]
+  AUTHORS   Anthony C, Zatman LJ
+  TITLE     The microbial oxidation of methanol. The prosthetic group of the alcohol dehydrogenase of Pseudomonas sp. M27: a new oxidoreductase prosthetic group.
+  JOURNAL   Biochem. J. 104 (1967) 960-9.
+REFERENCE   3  [PMID:6250827]
+  AUTHORS   Duine JA, Frank J, Verwiel PE.
+  TITLE     Structure and activity of the prosthetic group of methanol dehydrogenase.
+  JOURNAL   Eur. J. Biochem. 108 (1980) 187-92.
+REFERENCE   4  [PMID:471057]
+  AUTHORS   Salisbury SA, Forrest HS, Cruse WB, Kennard O.
+  TITLE     A novel coenzyme from bacterial primary alcohol dehydrogenases.
+  JOURNAL   Nature. 280 (1979) 843-4.
+REFERENCE   5  [PMID:1311606]
+  AUTHORS   Cox JM, Day DJ, Anthony C
+  TITLE     The interaction of methanol dehydrogenase and its electron acceptor, cytochrome cL in methylotrophic bacteria.
+  JOURNAL   Biochim. Biophys. Acta. 1119 (1992) 97-106.
+  ORGANISM  Methylophilus methylotrophus
+  SEQUENCE  [up:P38540]
+REFERENCE   6  [PMID:7656012]
+  AUTHORS   Blake CC, Ghosh M, Harlos K, Avezoux A, Anthony C
+  TITLE     The active site of methanol dehydrogenase contains a disulphide bridge between adjacent cysteine residues.
+  JOURNAL   Nat. Struct. Biol. 1 (1994) 102-5.
+  ORGANISM  Methylobacterium extorquens
+  SEQUENCE  [mea:Mex_1p4538 Mex_1p4535]
+REFERENCE   7  [PMID:9930981]
+  AUTHORS   Xia ZX, He YN, Dai WW, White SA, Boyd GD, Mathews FS
+  TITLE     Detailed active site configuration of a new crystal form of methanol dehydrogenase from Methylophilus W3A1 at 1.9 A resolution.
+  JOURNAL   Biochemistry. 38 (1999) 1214-20.
+REFERENCE   8  [PMID:11502173]
+  AUTHORS   Afolabi PR, Mohammed F, Amaratunga K, Majekodunmi O, Dales SL, Gill R, Thompson D, Cooper JB, Wood SP, Goodwin PM, Anthony C
+  TITLE     Site-directed mutagenesis and X-ray crystallography of the PQQ-containing quinoprotein methanol dehydrogenase and its electron acceptor, cytochrome c(L).
+  JOURNAL   Biochemistry. 40 (2001) 9799-809.
+  ORGANISM  Methylobacterium extorquens
+  SEQUENCE  [mea:Mex_1p4538 Mex_1p4535]
+REFERENCE   9  [PMID:12686102]
+  AUTHORS   Anthony C, Williams P
+  TITLE     The structure and mechanism of methanol dehydrogenase.
+  JOURNAL   Biochim. Biophys. Acta. 1647 (2003) 18-23.
+REFERENCE   10 [PMID:15608378]
+  AUTHORS   Williams PA, Coates L, Mohammed F, Gill R, Erskine PT, Coker A, Wood SP, Anthony C, Cooper JB
+  TITLE     The atomic resolution structure of methanol dehydrogenase from Methylobacterium extorquens.
+  JOURNAL   Acta. Crystallogr. D. Biol. Crystallogr. 61 (2005) 75-9.
+PATHWAY     ec00010  Glycolysis / Gluconeogenesis
+            ec00625  Chloroalkane and chloroalkene degradation
+            ec00680  Methane metabolism
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K14028  methanol dehydrogenase (cytochrome c) subunit 1
+            K14029  methanol dehydrogenase (cytochrome c) subunit 2
+GENES       MCA: MCA0299 MCA0779(mxaF) MCA0782(mxaI)
+            MMT: Metme_1518 Metme_4317 Metme_4320
+            MAH: MEALZ_3445(mxaI) MEALZ_3448(mxaF) MEALZ_3497(xoxF)
+            MEJ: Q7A_534 Q7A_537
+            MEC: Q7C_2122 Q7C_2125
+            VEI: Veis_1826 Veis_1829
+            MFA: Mfla_2041 Mfla_2044
+            MEI: Msip34_0734 Msip34_0737
+            MEP: MPQ_0771 MPQ_0774
+            RPC: RPC_1907 RPC_1910
+            RPE: RPE_3136 RPE_3139
+            SNO: Snov_4188 Snov_4191
+            MEX: Mext_4147 Mext_4150
+            MEA: Mex_1p4535(mxaI) Mex_1p4538(mxaF)
+            MDI: METDI5141(mxaI) METDI5145(mxaF)
+            MCH: Mchl_4515 Mchl_4518
+            MRD: Mrad2831_4207 Mrad2831_4210
+            MPO: Mpop_4629 Mpop_4632
+            MNO: Mnod_8037 Mnod_8040
+            MSL: Msil_0471 Msil_0474
+            HDN: Hden_1320 Hden_1323
+            HMC: HYPMC_0485(mxaF) HYPMC_0488(mxaI)
+            HNI: W911_14530 W911_14545
+            MSC: BN69_2570(mxaF) BN69_2573
+            PDE: Pden_2993 Pden_2996
+            GBE: GbCGDNIH1_0344 GbCGDNIH1_0347
+            ALI: AZOLI_p10948(moxF1) AZOLI_p10951(moxI)
+            MIN: Minf_0992(gcd)
+            MOX: DAMO_0112(mxaF) DAMO_0115(mxaI)
+DBLINKS     ExplorEnz - The Enzyme Database: 1.1.2.7
+            IUBMB Enzyme Nomenclature: 1.1.2.7
+            ExPASy - ENZYME nomenclature database: 1.1.2.7
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.1.2.7
+            BRENDA, the Enzyme Database: 1.1.2.7
+            CAS: 37205-43-9
+///

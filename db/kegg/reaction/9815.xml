@@ -1,0 +1,11 @@
+ENTRY       R09815                      Reaction
+NAME        beta-amyrin,NADPH:oxygen 11-oxidoreductase (hydroxylating)
+DEFINITION  beta-Amyrin + Oxygen + NADPH + H+ <=> 11alpha-Hydroxy-beta-amyrin + H2O + NADP+
+EQUATION    C08616 + C00007 + C00005 + C00080 <=> C19942 + C00001 + C00006
+COMMENT     first step of two-step reaction (see R09817, R09815+R09816)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP15408  C08616_C19942 main [RC:RC00524]
+            RP15409  C00007_C19942 leave
+ENZYME      1.14.13.134
+///

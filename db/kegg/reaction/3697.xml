@@ -1,0 +1,12 @@
+ENTRY       R03697                      Reaction
+DEFINITION  Morphine + Oxidized flavoprotein + Formaldehyde + H2O <=> Codeine + Reduced flavoprotein + Oxygen
+EQUATION    C01516 + C03161 + C00067 + C00001 <=> C06174 + C03024 + C00007
+COMMENT     CYP2D6:O-demethylation
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00502  C00007_C00067 leave
+            RP11325  C01516_C06174 main [RC:RC00392]
+            RP12618  C00067_C06174 main [RC:RC01533]
+ENZYME      1.14.14.1
+PATHWAY     rn00982  Drug metabolism - cytochrome P450
+ORTHOLOGY   K17712  cytochrome P450, family 2, subfamily D, polypeptide 6 [EC:1.14.14.1]
+///

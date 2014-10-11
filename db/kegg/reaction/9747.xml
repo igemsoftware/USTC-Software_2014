@@ -1,0 +1,12 @@
+ENTRY       R09747                      Reaction
+NAME        beta-carotene,NADH:oxygen oxidoreductase (3,3'-hydroxylating)
+DEFINITION  beta-Carotene + 2 NADH + 2 H+ + 2 Oxygen <=> Zeaxanthin + 2 NAD+ + 2 H2O
+EQUATION    C02094 + 2 C00004 + 2 C00080 + 2 C00007 <=> C06098 + 2 C00003 + 2 C00001
+COMMENT     2-step reaction (see R07558+R07559)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP15257  C02094_C06098 main [RC:RC02629]
+            RP15258  C00007_C06098 leave
+ENZYME      1.14.13.129
+ORTHOLOGY   K02294  beta-carotene hydroxylase [EC:1.14.13.-]
+///

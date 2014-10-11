@@ -1,0 +1,12 @@
+ENTRY       R04563                      Reaction
+NAME        Biotin:apo[methylmalonyl-CoA:pyruvate carboxyltransferase] ligase (AMP-forming)
+DEFINITION  ATP + Biotin + Apo-[methylmalonyl-CoA:pyruvate carboxytransferase] <=> AMP + Diphosphate + [Methylmalonyl-CoA:pyruvate carboxytransferase]
+EQUATION    C00002 + C00120 + C04736 <=> C00020 + C00013 + C04682
+COMMENT     two-step reaction (see R01074 + R05145)
+            R05145 and R01074 are general reactions
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP12479  C00120_C04682 main [RC:RC00090]
+            RP12480  C04682_C04736 main [RC:RC00096]
+ENZYME      6.3.4.9
+///

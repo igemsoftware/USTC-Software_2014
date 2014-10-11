@@ -1,0 +1,13 @@
+ENTRY       R08543                      Reaction
+NAME        (2E,6E)-farnesyl-diphosphate diphosphate-lyase (adding water;acetone-geosmin-forming)
+DEFINITION  trans,trans-Farnesyl diphosphate + 2 H2O <=> Geosmin + Diphosphate + Acetone
+EQUATION    C00448 + 2 C00001 <=> C16286 + C00013 + C00207
+COMMENT     multi-step reaction (see R07647+R09487)
+RPAIR       RP05713  C00013_C00448 leave
+            RP12947  C00207_C00448 main [RC:RC02159]
+            RP12984  C00448_C16286 main [RC:RC02183]
+            RP13321  C00001_C00207 leave
+            RP13322  C00001_C16286 leave
+ENZYME      4.1.99.16       4.2.3.22
+ORTHOLOGY   K10187  germacradienol/geosmin synthase [EC:4.2.3.22 4.2.3.75 4.1.99.16]
+///

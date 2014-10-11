@@ -1,0 +1,76 @@
+ENTRY       EC 1.3.99.30                Enzyme
+NAME        phytoene desaturase (3,4-didehydrolycopene-forming);
+            5-step phytoene desaturase;
+            five-step phytoene desaturase;
+            phytoene desaturase (ambiguous);
+            Al-1
+CLASS       Oxidoreductases;
+            Acting on the CH-CH group of donors;
+            With other acceptors
+SYSNAME     15-cis-phytoene:acceptor oxidoreductase (3,4-didehydrolycopene-forming)
+REACTION    15-cis-phytoene + 5 acceptor = all-trans-3,4-didehydrolycopene + 5 reduced acceptor (overall reaction) [RN:R09703];
+            (1a) 15-cis-phytoene + acceptor = all-trans-phytofluene + reduced acceptor [RN:R09692];
+            (1b) all-trans-phytofluene + acceptor = all-trans-zeta-carotene + reduced acceptor [RN:R04787];
+            (1c) all-trans-zeta-carotene + acceptor = all-trans-neurosporene + reduced acceptor [RN:R04798];
+            (1d) all-trans-neurosporene + acceptor = all-trans-lycopene + reduced acceptor [RN:R04800];
+            (1e) all-trans-lycopene + acceptor = all-trans-3,4-didehydrolycopene + reduced acceptor [RN:R07518]
+ALL_REAC    R04787 R04798 R04800 R07518 R09692 R09703
+SUBSTRATE   15-cis-phytoene [CPD:C05421];
+            acceptor [CPD:C00028];
+            all-trans-phytofluene [CPD:C05414];
+            all-trans-zeta-carotene [CPD:C05430];
+            all-trans-neurosporene [CPD:C05431];
+            all-trans-lycopene [CPD:C05432]
+PRODUCT     all-trans-3,4-didehydrolycopene [CPD:C15867];
+            reduced acceptor [CPD:C00030];
+            all-trans-phytofluene [CPD:C05414];
+            all-trans-zeta-carotene [CPD:C05430];
+            all-trans-neurosporene [CPD:C05431];
+            all-trans-lycopene [CPD:C05432]
+COMMENT     This enzyme is involved in carotenoid biosynthesis and catalyses up to five desaturation steps (cf. EC 1.3.99.28 [phytoene desaturase (neurosporene-forming)], EC 1.3.99.29 [phytoene desaturase (zeta-carotene-forming)] and EC 1.3.99.31 [phytoene desaturase (lycopene-forming)]).
+HISTORY     EC 1.3.99.30 created 2011
+REFERENCE   1  [PMID:11017770]
+  AUTHORS   Hausmann A, Sandmann G.
+  TITLE     A single five-step desaturase is involved in the carotenoid biosynthesis pathway to beta-carotene and torulene in Neurospora crassa.
+  JOURNAL   Fungal. Genet. Biol. 30 (2000) 147-53.
+  ORGANISM  Neurospora crassa
+  SEQUENCE  [ncr:NCU00552]
+REFERENCE   2  [PMID:18812228]
+  AUTHORS   Estrada AF, Maier D, Scherzinger D, Avalos J, Al-Babili S
+  TITLE     Novel apocarotenoid intermediates in Neurospora crassa mutants imply a new biosynthetic reaction sequence leading to neurosporaxanthin formation.
+  JOURNAL   Fungal. Genet. Biol. 45 (2008) 1497-505.
+  ORGANISM  Neurospora crassa
+  SEQUENCE  [ncr:NCU00552]
+PATHWAY     ec00906  Carotenoid biosynthesis
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K15745  phytoene desaturase (3,4-didehydrolycopene-forming)
+GENES       API: 100159050 100161380 100169110 100169245(tor)
+            VCN: VOLCADRAFT_96696
+            NCR: NCU00552
+            SMP: SMAC_01244(al1)
+            PAN: PODANSg3970
+            FGR: FG03065.1
+            NHE: NECHADRAFT_97347
+            VAL: VDBG_00708
+            SSL: SS1G_04340
+            BFU: BC1G_13907
+            AOR: AOR_1_1270084(AO090020000158)
+            ANG: ANI_1_1482064(An07g01150)
+            AFV: AFLA_102520
+            ABE: ARB_03950
+            TVE: TRV_03238
+            PNO: SNOG_00342
+            PTE: PTT_09941
+            ZTR: MYCGRDRAFT_101921
+            UMA: UM04210.1
+            PGR: PGTG_19044
+            ACAN: ACA1_391690
+            PTI: PHATR_43904
+            EHX: EMIHUDRAFT_458688
+            GTT: GUITHDRAFT_120391 GUITHDRAFT_122289
+DBLINKS     ExplorEnz - The Enzyme Database: 1.3.99.30
+            IUBMB Enzyme Nomenclature: 1.3.99.30
+            ExPASy - ENZYME nomenclature database: 1.3.99.30
+            BRENDA, the Enzyme Database: 1.3.99.30
+///

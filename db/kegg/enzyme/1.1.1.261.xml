@@ -1,0 +1,461 @@
+ENTRY       EC 1.1.1.261                Enzyme
+NAME        sn-glycerol-1-phosphate dehydrogenase;
+            glycerol-1-phosphate dehydrogenase [NAD(P)+];
+            sn-glycerol-1-phosphate:NAD+ oxidoreductase;
+            G-1-P dehydrogenase;
+            Gro1PDH;
+            AraM
+CLASS       Oxidoreductases;
+            Acting on the CH-OH group of donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     sn-glycerol-1-phosphate:NAD(P)+ 2-oxidoreductase
+REACTION    sn-glycerol 1-phosphate + NAD(P)+ = glycerone phosphate + NAD(P)H + H+ [RN:R05679 R05680]
+ALL_REAC    R05679 R05680
+SUBSTRATE   sn-glycerol 1-phosphate [CPD:C00623];
+            NAD+ [CPD:C00003];
+            NADP+ [CPD:C00006]
+PRODUCT     glycerone phosphate [CPD:C00111];
+            NADH [CPD:C00004];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080]
+COMMENT     This enzyme is found primarily as a Zn2+-dependent form in archaea but a Ni2+-dependent form has been found in Gram-positive bacteria [6]. The Zn2+-dependent metalloenzyme is responsible for the formation of archaea-specific sn-glycerol-1-phosphate, the first step in the biosynthesis of polar lipids in archaea. It is the enantiomer of sn-glycerol 3-phosphate, the form of glycerophosphate found in bacteria and eukaryotes. The other enzymes involved in the biosynthesis of polar lipids in archaea are EC 2.5.1.41 (phosphoglycerol geranylgeranyltransferase) and EC 2.5.1.42 (geranylgeranylglycerol-phosphate geranylgeranyltransferase), which together alkylate the hydroxy groups of glycerol 1-phosphate to give unsaturated archaetidic acid, which is acted upon by EC 2.7.7.67 (CDP-archaeol synthase) to form CDP-unsaturated archaeol. The final step in the pathway involves the addition of L-serine, with concomitant removal of CMP, leading to the production of unsaturated archaetidylserine [4]. Activity of the enzyme is stimulated by K+ [2].
+HISTORY     EC 1.1.1.261 created 2000, modified 2009
+REFERENCE   1  [PMID:8586635]
+  AUTHORS   Nishihara M, Koga Y
+  TITLE     sn-glycerol-1-phosphate dehydrogenase in Methanobacterium thermoautotrophicum: key enzyme in biosynthesis of the enantiomeric glycerophosphate backbone of ether phospholipids of archaebacteria.
+  JOURNAL   J. Biochem. 117 (1995) 933-5.
+  ORGANISM  Methanobacterium thermoautotrophicum
+REFERENCE   2  [PMID:9348086]
+  AUTHORS   Nishihara M, Koga Y
+  TITLE     Purification and properties of sn-glycerol-1-phosphate dehydrogenase from Methanobacterium thermoautotrophicum: characterization of the biosynthetic enzyme for the enantiomeric glycerophosphate backbone of ether polar lipids of Archaea.
+  JOURNAL   J. Biochem. 122 (1997) 572-6.
+  ORGANISM  Methanobacterium thermoautotrophicum
+  SEQUENCE  [mth:MTH610]
+REFERENCE   3  [PMID:9419225]
+  AUTHORS   Koga Y, Kyuragi T, Nishihara M, Sone N.
+  TITLE     Did archaeal and bacterial cells arise independently from noncellular precursors? A hypothesis stating that the advent of membrane phospholipid with enantiomeric glycerophosphate backbones caused the separation of the two lines of descent.
+  JOURNAL   J. Mol. Evol. 46 (1998) 54-63.
+  ORGANISM  Methanobacterium thermoautotrophicum
+  SEQUENCE  [mth:MTH610]
+REFERENCE   4  [PMID:10960477]
+  AUTHORS   Morii H, Nishihara M, Koga Y
+  TITLE     CTP:2,3-di-O-geranylgeranyl-sn-glycero-1-phosphate cytidyltransferase in the methanogenic archaeon Methanothermobacter thermoautotrophicus.
+  JOURNAL   J. Biol. Chem. 275 (2000) 36568-74.
+  ORGANISM  Methanothermobacter thermoautotrophicus
+REFERENCE   5  [PMID:15876564]
+  AUTHORS   Han JS, Ishikawa K
+  TITLE     Active site of Zn(2+)-dependent sn-glycerol-1-phosphate dehydrogenase from Aeropyrum pernix K1.
+  JOURNAL   Archaea. 1 (2005) 311-7.
+  ORGANISM  Aeropyrum pernix
+  SEQUENCE  [ape:APE_0519.1]
+REFERENCE   6  [PMID:18558723]
+  AUTHORS   Guldan H, Sterner R, Babinger P
+  TITLE     Identification and characterization of a bacterial glycerol-1-phosphate dehydrogenase: Ni(2+)-dependent AraM from Bacillus subtilis.
+  JOURNAL   Biochemistry. 47 (2008) 7376-84.
+  ORGANISM  Bacillus subtilis
+  SEQUENCE  [bsu:BSU28760]
+PATHWAY     ec00564  Glycerophospholipid metabolism
+ORTHOLOGY   K00096  glycerol-1-phosphate dehydrogenase [NAD(P)+]
+GENES       SSE: Ssed_0112
+            SVO: SVI_0105(egsA)
+            VAP: Vapar_4002
+            VPD: VAPA_1c41540
+            DVU: DVUA0098
+            DVL: Dvul_3015
+            DVG: Deval_3193
+            DGG: DGI_1035
+            SCL: sce5394(gldA)
+            SCU: SCE1572_28715
+            WOL: WD0787
+            WRI: WRi_006280
+            WEN: wHa_06670
+            WED: wNo_03550
+            WPI: WPa_0692
+            AMA: AM1109
+            AMF: AMF_838(egsA)
+            AMW: U370_04165
+            AMP: U128_04320
+            ACN: ACIS_00259
+            APH: APH_1193
+            APY: YYU_05505
+            APD: YYY_05575
+            APHA: WSQ_05560
+            ERU: Erum8350
+            ERW: ERWE_CDS_08850(egsA)
+            ERG: ERGA_CDS_08770(egsA)
+            ECN: Ecaj_0871
+            ECH: ECH_1084(araM)
+            ECHA: ECHHL_0092
+            EMR: EMUR_04420
+            EHH: EHF_0095
+            NSE: NSE_0940
+            NRI: NRI_0900
+            NHM: NHE_0897
+            SMD: Smed_2701
+            RET: RHE_PA00022
+            RLB: RLEG3_04380
+            RDE: RD1_3615
+            RLI: RLO149_c008500
+            APC: HIMB59_00002440
+            BSU: BSU28760(araM)
+            BSR: I33_2932
+            BSL: A7A1_3171
+            BSH: BSU6051_28760(araM)
+            BSY: I653_13735
+            BSS: BSUW23_13975(araM)
+            BST: GYO_3126
+            BSO: BSNT_04198(araM)
+            BSN: BSn5_05210
+            BSQ: B657_28760(araM)
+            BSUB: BEST7613_5194(araM)
+            BSX: C663_2721(egsA)
+            BSP: U712_14225
+            BLI: BL00250 BL00349(araM)
+            BLD: BLi03025(araM) BLi04259
+            BLH: BaLi_c31060(araM) BaLi_c42500
+            BAO: BAMF_2681(araM)
+            BAY: RBAM_025820(araM)
+            BAQ: BACAU_2599(araM)
+            BYA: BANAU_2797(araM)
+            BAMP: B938_13345
+            BAML: BAM5036_2522(araM)
+            BAMA: RBAU_2719(araM)
+            BAMN: BASU_2525(araM)
+            BAMB: BAPNAU_0971(araM)
+            BAZ: BAMTA208_14130(araM)
+            BQL: LL3_02965(araM)
+            BXH: BAXH7_02894(araM)
+            BQY: MUS_3151(araM)
+            BAMI: KSO_006140
+            BAMC: U471_26820
+            BAMF: U722_14000
+            BAE: BATR1942_12140
+            BHA: BH1862
+            BCL: ABC0405(araM)
+            BSE: Bsel_0345 Bsel_1936
+            BCO: Bcell_2234
+            BJS: MY9_2868
+            GTN: GTNG_1788
+            GYC: GYMC61_2721
+            GYA: GYMC52_1851
+            GCT: GC56T3_1631
+            GGH: GHH_c19500(egsA)
+            GJF: M493_09805
+            AFL: Aflv_1552
+            HHD: HBHAL_2663
+            GYM: GYMC10_1642
+            PPY: PPE_01661
+            PPM: PPSC2_c1852
+            PPO: PPM_1663(araM)
+            PPOL: X809_08995
+            PMS: KNP414_06688
+            PMQ: PM3016_6313
+            PMW: B2K_31905
+            PTA: HPL003_16760
+            PSAB: PSAB_03670
+            TCO: Theco_3239
+            AAC: Aaci_2896
+            AAD: TC41_3261(araM)
+            SNE: SPN23F_03300(wchY)
+            CAC: CA_C1626
+            CAE: SMB_G1651
+            CAY: CEA_G1640
+            CBK: CLL_A2956
+            CBT: CLH_2709
+            CBE: Cbei_2364 Cbei_2501 Cbei_4092
+            CCE: Ccel_2486
+            CLS: CXIVA_14120(GldA)
+            CLB: Clo1100_0725
+            CSR: Cspa_c43550(egsA)
+            CPAS: Clopa_4395
+            CSB: CLSA_c14810(egsA1) CLSA_c18080(egsA2)
+            CCL: Clocl_0519
+            CSS: Cst_c15320(egsA1) Cst_c16390(egsA2) Cst_c16420(egsA3)
+            CSD: Clst_1479 Clst_1581 Clst_1584
+            CLE: Clole_2704
+            RIX: RO1_26120
+            RIM: ROI_37560
+            COO: CCU_19100 CCU_19110
+            ROB: CK5_09860
+            DAI: Desaci_1051
+            ERE: EUBREC_2435
+            ERT: EUR_26940
+            ERA: ERE_07100
+            ELM: ELI_0163 ELI_1367 ELI_1846 ELI_3921
+            AWO: Awo_c07780(egsA)
+            BPRL: CL2_20430
+            TIT: Thit_1700
+            TMT: Tmath_1683
+            CHY: CHY_2583
+            CSC: Csac_0948
+            ATE: Athe_0802
+            COB: COB47_0731
+            CHD: Calhy_1885
+            COW: Calow_0648
+            CKN: Calkro_0375 Calkro_1851
+            CLC: Calla_1312
+            TTM: Tthe_0671
+            TTO: Thethe_00665
+            TXY: Thexy_0559
+            TSH: Tsac_1288
+            CPO: COPRO5265_0587
+            MAS: Mahau_0170
+            HAS: Halsa_0683
+            HHL: Halha_1740
+            MSA: Mycsm_02445
+            SCO: SCO2598(SCC88.09c) SCO6754(SC6A5.03)
+            SMA: SAV_1659(gldA)
+            SGR: SGR_971
+            SCB: SCAB_13051
+            SSX: SACTE_5917
+            SVL: Strvi_2847
+            SCT: SCAT_4934
+            SCY: SCATT_49290
+            SFA: Sfla_0653
+            SBH: SBI_02618
+            SHY: SHJG_4091 SHJG_7645
+            SHO: SHJGH_3856 SHJGH_7406
+            SVE: SVEN_6441
+            SDV: BN159_1607
+            SALB: XNR_0277
+            STRP: F750_6216
+            SFI: SFUL_6524
+            SCI: B446_30805
+            SRC: M271_11270
+            SALU: DC74_6773
+            KSK: KSE_17680 KSE_33420
+            BCV: Bcav_1503
+            PAC: PPA1488 PPA2320
+            PAK: HMPREF0675_4553 HMPREF0675_5398
+            PAV: TIA2EST22_07460 TIA2EST22_11490
+            PAX: TIA2EST36_07445 TIA2EST36_11350
+            PAZ: TIA2EST2_07370 TIA2EST2_11295
+            PAW: PAZ_c15740(egsA1) PAZ_c24190(egsA2)
+            PAD: TIIST44_00430 TIIST44_04415
+            PCN: TIB1ST10_07650 TIB1ST10_11815
+            PACC: PAC1_07835 PAC1_11840
+            PACH: PAGK_0690 PAGK_2228
+            PFR: PFREUD_22380(araM)
+            PPC: HMPREF9154_1854 HMPREF9154_2330
+            PBO: PACID_11470 PACID_21800
+            PRA: PALO_10695
+            KFL: Kfla_1570
+            TFU: Tfu_2533
+            NDA: Ndas_3866
+            NAL: B005_1036
+            TCU: Tcur_4107
+            SRO: Sros_1355
+            NML: Namu_1913 Namu_3322
+            TBI: Tbis_0723
+            STP: Strop_4488
+            SAQ: Sare_5002
+            MAU: Micau_6192
+            MIL: ML5_6154
+            VMA: VAB18032_03940
+            AMS: AMIS_80170
+            ASE: ACPL_8272(gldA)
+            ACTN: L083_8085(gldA)
+            AFS: AFR_42400
+            SNA: Snas_5680
+            TPY: CQ11_09075
+            RRD: RradSPS_2472 RradSPS_3030
+            TAZ: TREAZ_0464
+            SSM: Spirs_3427
+            STA: STHERM_c14750
+            STQ: Spith_0750
+            SBU: SpiBuddy_0496
+            SCC: Spico_1438
+            SGP: SpiGrapes_1478
+            PLM: Plim_1578
+            SACI: Sinac_1074
+            PGI: PG1514
+            AFD: Alfi_2303
+            ASH: AL1_30940
+            PSN: Pedsa_3148
+            RRS: RoseRS_4112
+            RCA: Rcas_1386
+            ATM: ANT_17650
+            CAP: CLDAP_24830
+            TMA: TM0285
+            TMM: Tmari_0283
+            TMI: THEMA_03300
+            TPT: Tpet_0627
+            TLE: Tlet_1523
+            TRQ: TRQ2_0652
+            TNA: CTN_0399
+            TNP: Tnap_0917
+            TTA: Theth_0130
+            PMO: Pmob_0302
+            DIN: Selin_0204
+            DTH: DICTH_1640
+            DTU: Dtur_1751
+            MJA: MJ_0712
+            MFE: Mefer_1077
+            MVU: Metvu_1556
+            MFS: MFS40622_1459
+            MIF: Metin_0507
+            MIG: Metig_1110
+            MMP: MMP0225(gldA)
+            MMQ: MmarC5_1469
+            MMX: MmarC6_0730
+            MMZ: MmarC7_1225
+            MMD: GYY_01145
+            MAE: Maeo_0518
+            MVN: Mevan_1239
+            MVO: Mvol_1465
+            MOK: Metok_0109
+            MAC: MA3686(egsA)
+            MBA: Mbar_A0291
+            MMA: MM_0590(egsA)
+            MMAZ: MmTuc01_0596
+            MBU: Mbur_1032(egsA)
+            MMH: Mmah_1407
+            MEV: Metev_0562
+            MZH: Mzhil_0474
+            MPY: Mpsy_0964
+            MHZ: Metho_0547
+            MTP: Mthe_0219(egsA)
+            MCJ: MCON_1056(egsA)
+            MHI: Mhar_0956
+            MHU: Mhun_1136(egsA)
+            MLA: Mlab_1308(egsA)
+            MEM: Memar_2045(egsA)
+            MBG: BN140_1475(egsA)
+            MPI: Mpet_1786
+            MBN: Mboo_1960(egsA)
+            MFO: Metfor_0992
+            MPL: Mpal_0948(egsA)
+            MPD: MCP_0189(egsA)
+            MEZ: Mtc_0013(gldA)
+            RCI: RCIX1388(egsA)
+            MER: H729_07050(egsA)
+            MTH: MTH610(egsA)
+            MMG: MTBMA_c09900(egsA)
+            MST: Msp_0997(egsA)
+            MSI: Msm_0286
+            MRU: mru_0955(egsA)
+            MEB: Abm4_1208
+            MEL: Metbo_1015
+            MEW: MSWAN_1221
+            METH: MBMB1_0896(egsA)
+            MFV: Mfer_0007
+            MKA: MK1230(GldA)
+            MAX: MMALV_05780
+            AFU: AF1674(gldA)
+            AVE: Arcve_0518 Arcve_0845
+            AST: Asulf_02016
+            FPL: Ferp_2181
+            HAL: VNG0406C(egsA)
+            HSL: OE1602F(egsA)
+            HMA: rrnAC0175(egsA)
+            HHI: HAH_0925(gldA)
+            HHN: HISP_04765(egsA)
+            HWA: HQ1560A(egsA)
+            HWC: Hqrw_1664(gldA)
+            NPH: NP4492A(egsA)
+            NMO: Nmlp_3111(gldA)
+            HLA: Hlac_0655(egsA)
+            HUT: Huta_0604(egsA)
+            HTI: HTIA_0352
+            HMU: Hmuk_3139(egsA)
+            HTU: Htur_3191
+            NMG: Nmag_2535
+            HVO: HVO_0822
+            HME: HFX_0792(gldA)
+            HJE: HacjB3_13715(egsA)
+            HBO: Hbor_23950
+            HXA: Halxa_3759
+            NAT: NJ7G_2596
+            NPE: Natpe_0479
+            NGE: Natgr_3656
+            HRU: Halru_2332
+            NOU: Natoc_2103
+            SALI: L593_01290(egsA)
+            TAC: Ta1158(egsA)
+            TVO: TVN1227(egsA)
+            PTO: PTO0850(egsA)
+            FAC: FACI_IFERC01G1280
+            TAR: TALC_00609
+            PHO: PH1475(egsA)
+            PAB: PAB1907(egsA)
+            PFU: PF1382(egsA)
+            PFI: PFC_06135(egsA)
+            PYN: PNA2_0061
+            PYA: PYCH_03050
+            PYS: Py04_1369
+            TKO: TK0789(egsA)
+            TON: TON_1047(egsA)
+            TGA: TGAM_1402(egsA)
+            TSI: TSIB_0726(egsA)
+            TBA: TERMP_01044
+            THE: GQS_10330(egsA)
+            THA: TAM4_1506
+            THM: CL1_1645
+            TLT: OCC_04917(egsA)
+            THS: TES1_1114
+            TNU: BD01_1029
+            ABI: Aboo_0536
+            ACF: AciM339_0510
+            APE: APE_0519.1
+            ACJ: ACAM_0400
+            SMR: Smar_0939(egsA)
+            SHC: Shell_1526
+            IHO: Igni_1174
+            DKA: DKAM_1289(egsA)
+            DMU: Desmu_1275
+            DFD: Desfe_1388
+            TAG: Tagg_1251
+            IAG: Igag_0044
+            THG: TCELL_0215
+            HBU: Hbut_1566(egsA)
+            PFM: Pyrfu_0213
+            SSO: SSO0760(egsA)
+            SOL: Ssol_1816
+            STO: ST0344(egsA)
+            SAI: Saci_0640(egsA)
+            SACN: SacN8_03105(egsA)
+            SACR: SacRon12I_03095(egsA)
+            SACS: SUSAZ_02875(egsA)
+            SIS: LS215_1478(egsA)
+            SIA: M1425_1382(egsA)
+            SIM: M1627_1432(egsA)
+            SID: M164_1374(egsA)
+            SIY: YG5714_1376(egsA)
+            SIN: YN1551_1465(egsA)
+            SII: LD85_1586
+            SIH: SiH_1327
+            SIR: SiRe_1249
+            SIC: SiL_1240
+            MSE: Msed_2255(egsA)
+            MCN: Mcup_2002
+            AHO: Ahos_0639
+            PAI: PAE1685
+            PIS: Pisl_1689
+            PCL: Pcal_0566
+            PAS: Pars_1827
+            PYR: P186_0043
+            POG: Pogu_0303
+            TNE: Tneu_0711
+            CMA: Cmaq_1971
+            TUZ: TUZN_2018
+            TTN: TTX_1518(gldA)
+            VDI: Vdis_2125 Vdis_2371
+            VMO: VMUT_0721
+            TPE: Tpen_1231
+            THB: N186_07330
+            ASC: ASAC_0315
+            CLG: Calag_1344
+            FFO: FFONT_0831
+            NMR: Nmar_1729
+            NIR: NSED_09205
+            CSY: CENSYa_1547
+            NGA: Ngar_c23480(egsA)
+            CSU: CSUB_C1615
+            KCR: Kcr_0068
+            HAH: Halar_3622
+DBLINKS     ExplorEnz - The Enzyme Database: 1.1.1.261
+            IUBMB Enzyme Nomenclature: 1.1.1.261
+            ExPASy - ENZYME nomenclature database: 1.1.1.261
+            BRENDA, the Enzyme Database: 1.1.1.261
+            CAS: 204594-18-3
+///

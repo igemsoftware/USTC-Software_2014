@@ -1,0 +1,14 @@
+ENTRY       R08932                      Reaction
+NAME        S-adenosyl-L-methionine:dTDP-4-amino-2,3,4,6-tetradeoxy-D-glucose N-methyltransferase (dTDP-D-forosamine-forming)
+DEFINITION  dTDP-4-amino-2,3,4,6-tetradeoxy-D-glucose + 2 S-Adenosyl-L-methionine <=> dTDP-D-forosamine + 2 S-Adenosyl-L-homocysteine
+EQUATION    C18033 + 2 C00019 <=> C18034 + 2 C00021
+COMMENT     N-dimethyltransferase
+            two-step reaction
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP14199  C18033_C18034 main [RC:RC01515]
+            RP14204  C00019_C18034 trans
+            RP14205  C00019_C18034 trans
+ENZYME      2.1.1.-
+PATHWAY     rn00523  Polyketide sugar unit biosynthesis
+ORTHOLOGY   K13330  N-dimethyltransferase
+///

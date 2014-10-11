@@ -1,0 +1,16 @@
+ENTRY       R03098                      Reaction
+NAME        L-2-aminoadipate-6-semialdehyde:NAD(P)+ 6-oxidoreductase;
+            ATP:L-2-aminoadipate 6-O-adenylyltransferase
+DEFINITION  L-2-Aminoadipate + ATP <=> L-2-Aminoadipate adenylate + Diphosphate
+EQUATION    C00956 + C00002 <=> C05560 + C00013
+COMMENT     The first step of three-step reaction (R03098+R04863+R04390)
+            For reverse direction, one-step reaction (see R03103) 
+RPAIR       RP00009  C00002_C00013 leave
+            RP00485  C00002_C05560 trans
+            RP00497  C00956_C05560 main [RC:RC00043]
+ENZYME      1.2.1.31
+PATHWAY     rn00300  Lysine biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00143  L-aminoadipate-semialdehyde dehydrogenase [EC:1.2.1.31]
+            K14085  aldehyde dehydrogenase family 7 member A1 [EC:1.2.1.31 1.2.1.8 1.2.1.3]
+///

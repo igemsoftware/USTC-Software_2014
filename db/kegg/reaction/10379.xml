@@ -1,0 +1,16 @@
+ENTRY       R10379                      Reaction
+DEFINITION  12-Demethyl-11,12-dehydropaspaline + 3 Oxygen + 3 NADPH + 3 H+ <=> Terpendole I + 3 NADP+ + 3 H2O
+EQUATION    C20534 + 3 C00007 + 3 C00005 + 3 C00080 <=> C20543 + 3 C00006 + 3 C00001
+COMMENT     cytochrome P450, LtmQ
+            multi-step reaction
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP16324  C00007_C20543 leave
+            RP16330  C20534_C20543 main [RC:RC03144]
+            RP16331  C00007_C20543 leave
+            RP16332  C00007_C20543 leave
+ENZYME      1.14.13.-
+PATHWAY     rn00403  Indole diterpene alkaloid biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K18393  cytochrome P450 monooxygenase [EC:1.14.13.-]
+///

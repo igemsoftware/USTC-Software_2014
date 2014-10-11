@@ -1,0 +1,15 @@
+ENTRY       R02408                      Reaction
+NAME        L-Cystine L-Cysteine-lyase (deaminating)
+DEFINITION  L-Cystine + H2O <=> Pyruvate + Ammonia + Thiocysteine
+EQUATION    C00491 + C00001 <=> C00022 + C00014 + C01962
+RPAIR       RP02184  C00022_C00491 main [RC:RC00710]
+            RP07003  C00014_C00491 leave
+            RP10324  C00001_C00022 leave
+            RP13337  C00491_C01962 main [RC:RC02303]
+ENZYME      4.4.1.1         4.4.1.8
+PATHWAY     rn00270  Cysteine and methionine metabolism
+ORTHOLOGY   K01758  cystathionine gamma-lyase [EC:4.4.1.1]
+            K01760  cystathionine beta-lyase [EC:4.4.1.8]
+            K14155  cystathione beta-lyase [EC:4.4.1.8]
+            K17217  cystathionine gamma-lyase / homocysteine desulfhydrase [EC:4.4.1.1 4.4.1.2]
+///

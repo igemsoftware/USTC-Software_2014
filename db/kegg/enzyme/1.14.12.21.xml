@@ -1,0 +1,115 @@
+ENTRY       EC 1.14.12.21               Enzyme
+NAME        benzoyl-CoA 2,3-dioxygenase;
+            benzoyl-CoA dioxygenase/reductase;
+            BoxBA;
+            BoxA/BoxB system
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of two atoms of oxygen into the other donor
+SYSNAME     benzoyl-CoA,NADPH:oxygen oxidoreductase (2,3-hydroxylating)
+REACTION    benzoyl-CoA + NADPH + H+ + O2 = 2,3-dihydro-2,3-dihydroxybenzoyl-CoA + NADP+ [RN:R09555]
+ALL_REAC    R09555
+SUBSTRATE   benzoyl-CoA [CPD:C00512];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007]
+PRODUCT     2,3-dihydro-2,3-dihydroxybenzoyl-CoA [CPD:C19684];
+            NADP+ [CPD:C00006]
+COMMENT     The enzyme is involved in aerobic benzoate metabolism in Azoarcus evansii. BoxB functions as the oxygenase part of benzoyl-CoA oxygenase in conjunction with BoxA, the reductase component, which upon binding of benzoyl-CoA, transfers two electrons to the ring in the course of dioxygenation. BoxA is a homodimeric 46 kDa iron-sulfur-flavoprotein (FAD), BoxB is a monomeric iron-protein [1].
+HISTORY     EC 1.14.12.21 created 2010
+REFERENCE   1  [PMID:15458418]
+  AUTHORS   Zaar A, Gescher J, Eisenreich W, Bacher A, Fuchs G
+  TITLE     New enzymes involved in aerobic benzoate metabolism in Azoarcus evansii.
+  JOURNAL   Mol. Microbiol. 54 (2004) 223-38.
+  ORGANISM  Azoarcus evansii
+  SEQUENCE  [up:Q9AIX6 Q9AIX7]
+REFERENCE   2  [PMID:12399500]
+  AUTHORS   Gescher J, Zaar A, Mohamed M, Schagger H, Fuchs G
+  TITLE     Genes coding for a new pathway of aerobic benzoate metabolism in Azoarcus evansii.
+  JOURNAL   J. Bacteriol. 184 (2002) 6301-15.
+  ORGANISM  Azoarcus evansii
+  SEQUENCE  [up:Q9AIX6 Q9AIX7]
+REFERENCE   3  [PMID:11222587]
+  AUTHORS   Mohamed ME, Zaar A, Ebenau-Jehle C, Fuchs G
+  TITLE     Reinvestigation of a new type of aerobic benzoate metabolism in the proteobacterium Azoarcus evansii.
+  JOURNAL   J. Bacteriol. 183 (2001) 1899-908.
+  ORGANISM  Azoarcus evansii
+  SEQUENCE  [up:Q9AIX6 Q9AIX7]
+ORTHOLOGY   K15511  benzoyl-CoA 2,3-dioxygenase component A
+            K15512  benzoyl-CoA 2,3-dioxygenase component B
+GENES       XAL: XALc_1517(albXII)
+            ADI: B5T_02165 B5T_02166
+            REU: Reut_A1323 Reut_A1324
+            REH: H16_A1408(bdxA) H16_B1912(boxA) H16_B1913(boxB)
+            CNC: CNE_1c14360(boxA) CNE_1c14370(boxB) CNE_2c18730(fusA2) CNE_2c18740(boxA) CNE_BB1p04280(boxA)
+            RME: Rmet_1220(boxA) Rmet_1221(boxB)
+            CTI: RALTA_A1321(bdxA) RALTA_A1322(bdxB) RALTA_B1611(boxA) RALTA_B1612(boxB)
+            BXE: Bxe_A1423(boxB) Bxe_C0890(boxA) Bxe_C0891(boxB)
+            BPH: Bphy_1538 Bphy_1539
+            BPY: Bphyt_2694 Bphyt_2695
+            BUG: BC1001_2389 BC1001_2390
+            BGE: BC1002_1975 BC1002_1976
+            BGF: BC1003_1068 BC1003_1069
+            BRH: RBRH_00498 RBRH_00499
+            BPX: BUPH_02965 BUPH_02966
+            PPK: U875_06785 U875_06790
+            PPNO: DA70_23860 DA70_23865
+            PRB: X636_02785 X636_02790
+            BPT: Bpet3568(petH) Bpet3569(pbcA)
+            BHO: D560_2021(boxB) D560_2022(boxA)
+            AXY: AXYL_05030(boxA) AXYL_05031(boxB)
+            AXO: NH44784_035141 NH44784_035151
+            AXN: AX27061_4849 AX27061_4850
+            AKA: TKWG_07590 TKWG_07595
+            AMIM: MIM_c27160(boxA) MIM_c27170(boxB)
+            CDN: BN940_14751 BN940_14756
+            RFR: Rfer_0221 Rfer_0222
+            POL: Bpro_1629 Bpro_1630
+            PNA: Pnap_2942 Pnap_2943
+            ACK: C380_20165 C380_20170
+            VEI: Veis_0733 Veis_0734
+            DAC: Daci_0072 Daci_0073
+            DEL: DelCs14_0073 DelCs14_0074
+            VAP: Vapar_0094 Vapar_0095
+            VPE: Varpa_0110 Varpa_0111
+            VPD: VAPA_1c00960(boxB) VAPA_1c00970(boxA)
+            CTT: CtCNB1_0065 CtCNB1_0066
+            RTA: Rta_22300
+            LCH: Lcho_3660 Lcho_3661
+            THI: THI_0466(boxA) THI_0467(boxB)
+            EBA: ebA2765(boxB) ebA2766(boxA)
+            AZO: azo3057(boxB) azo3058(boxA)
+            AZA: AZKH_4519(boxB) AZKH_4520(boXA)
+            TMZ: Tmz1t_3908
+            SUR: STAUR_7626(boxB)
+            SCL: sce1060(yfcX)
+            SCU: SCE1572_07645
+            HOH: Hoch_5225
+            BJA: blr1081
+            BJU: BJ6T_11110
+            BRA: BRADO6788(boxB)
+            BBT: BBta_0750(boxB) BBta_6638(boxA) BBta_6639(boxB)
+            BRS: S23_67350
+            AOL: S58_06720
+            RPA: RPA0677
+            RPB: RPB_4653
+            RPD: RPD_0881
+            RPE: RPE_0584
+            RPT: Rpal_0744
+            RPX: Rpdx1_4109
+            SIL: SPO3701(boxB) SPO3703(boxA)
+            JAN: Jann_0672
+            MAG: amb0175 amb0176
+            BSD: BLASA_2556(boxB)
+            AMD: AMED_8610
+            AMN: RAM_44190
+            AMM: AMES_8479
+            AMZ: B737_8480
+            AOI: AORI_7396
+            PDX: Psed_1489
+            CAI: Caci_2007
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.12.21
+            IUBMB Enzyme Nomenclature: 1.14.12.21
+            ExPASy - ENZYME nomenclature database: 1.14.12.21
+            BRENDA, the Enzyme Database: 1.14.12.21
+///

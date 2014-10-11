@@ -1,0 +1,12 @@
+ENTRY       R01357                      Reaction
+NAME        Acetoacetate:CoA ligase (AMP-forming)
+DEFINITION  ATP + Acetoacetate + CoA <=> AMP + Diphosphate + Acetoacetyl-CoA
+EQUATION    C00002 + C00164 + C00010 <=> C00020 + C00013 + C00332
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00085  C00164_C00332 main [RC:RC00014]
+            RP00174  C00010_C00332 main [RC:RC00004]
+ENZYME      6.2.1.16
+PATHWAY     rn00650  Butanoate metabolism
+ORTHOLOGY   K01907  acetoacetyl-CoA synthetase [EC:6.2.1.16]
+///

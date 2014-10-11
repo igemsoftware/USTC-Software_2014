@@ -1,0 +1,14 @@
+ENTRY       R08204                      Reaction
+NAME        7(1)-hydroxychlorophyllide-a,NADPH:oxygen 7(1)-oxidoreductase
+DEFINITION  7(1)-Hydroxychlorophyllide a + Oxygen + NADPH + H+ <=> Chlorophyllide b + 2 H2O + NADP+
+EQUATION    C16540 + C00007 + C00005 + C00080 <=> C16541 + 2 C00001 + C00006
+COMMENT     second step of two-step reaction (see R10080, R08203+R08204)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP13207  C16540_C16541 main [RC:RC00116]
+ENZYME      1.14.13.122
+PATHWAY     rn00860  Porphyrin and chlorophyll metabolism
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13600  chlorophyllide a oxygenase [EC:1.14.13.122]
+///

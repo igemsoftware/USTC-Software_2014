@@ -1,0 +1,47 @@
+ENTRY       EC 1.14.13.118              Enzyme
+NAME        valine N-monooxygenase;
+            CYP79D1;
+            CYP79D2
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     L-valine,NADPH:oxygen oxidoreductase (N-hydroxylating)
+REACTION    L-valine + 2 O2 + 2 NADPH + 2 H+ = (E)-2-methylpropanal oxime + 2 NADP+ + CO2 + 3 H2O (overall reaction) [RN:R08663];
+            (1a) L-valine + O2 + NADPH + H+ = N-hydroxy-L-valine + NADP+ + H2O [RN:R10031];
+            (1b) N-hydroxy-L-valine + O2 + NADPH + H+ = N,N-dihydroxy-L-valine + NADP+ + H2O [RN:R10032];
+            (1c) N,N-dihydroxy-L-valine = (E)-2-methylpropanal oxime + CO2 + H2O (spontaneous) [RN:R10033]
+ALL_REAC    R08663 R10031 R10032 R10033;
+            (other) R10027 R10028 R10029
+SUBSTRATE   L-valine [CPD:C00183];
+            O2 [CPD:C00007];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            N-hydroxy-L-valine [CPD:C20313];
+            N,N-dihydroxy-L-valine [CPD:C20314]
+PRODUCT     (E)-2-methylpropanal oxime [CPD:C03219];
+            NADP+ [CPD:C00006];
+            CO2 [CPD:C00011];
+            H2O [CPD:C00001];
+            N-hydroxy-L-valine [CPD:C20313];
+            N,N-dihydroxy-L-valine [CPD:C20314]
+COMMENT     A heme-thiolate protein (P-450). This enzyme catalyses two successive N-hydroxylations of L-valine, the first committed steps in the biosynthesis of the cyanogenic glucoside linamarin in Manihot esculenta (cassava). The product of the two hydroxylations, N,N-dihydroxy-L-valine, is extremely labile and dehydrates spontaneously. The dehydrated product is then subject to a decarboxylation that produces the oxime. It is still not known whether the decarboxylation is spontaneous or catalysed by the enzyme. The product, (E)-2-methylpropanal oxime, undergoes a spontaneous isomerization to the (Z) form. The enzyme can also accept L-isoleucine as substrate, with a lower activity. It is different from EC 1.14.13.117 (isoleucine N-monooxygenase), which prefers L-isoleucine.
+HISTORY     EC 1.14.13.118 created 2010
+REFERENCE   1  [PMID:10636899]
+  AUTHORS   Andersen MD, Busk PK, Svendsen I, Moller BL
+  TITLE     Cytochromes P-450 from cassava (Manihot esculenta Crantz) catalyzing the first steps in the biosynthesis of the cyanogenic glucosides linamarin and lotaustralin. Cloning, functional expression in Pichia pastoris, and substrate specificity of the isolated recombinant enzymes.
+  JOURNAL   J. Biol. Chem. 275 (2000) 1966-75.
+  ORGANISM  Manihot esculenta
+  SEQUENCE  [up:Q9M7B8 Q9M7B7]
+REFERENCE   2  [PMID:15122013]
+  AUTHORS   Forslund K, Morant M, Jorgensen B, Olsen CE, Asamizu E, Sato S, Tabata S, Bak S
+  TITLE     Biosynthesis of the nitrile glucosides rhodiocyanoside A and D and the cyanogenic glucosides lotaustralin and linamarin in Lotus japonicus.
+  JOURNAL   Plant. Physiol. 135 (2004) 71-84.
+PATHWAY     ec00460  Cyanoamino acid metabolism
+            ec00966  Glucosinolate biosynthesis
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13401  valine N-monooxygenase
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.118
+            IUBMB Enzyme Nomenclature: 1.14.13.118
+            ExPASy - ENZYME nomenclature database: 1.14.13.118
+            BRENDA, the Enzyme Database: 1.14.13.118
+///

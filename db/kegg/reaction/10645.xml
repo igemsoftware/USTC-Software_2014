@@ -1,0 +1,12 @@
+ENTRY       R10645                      Reaction
+NAME        tRNA (N6-dimethylallyladenosine):sulfur-donor,S-adenosyl-L-methionine C2-methylthiotransferase
+DEFINITION  tRNA containing 6-isopentenyladenosine + Sulfur donor + 2 S-Adenosyl-L-methionine <=> 2-Methylthio-N6-dimethylallyladenine in tRNA + S-Adenosyl-L-homocysteine + L-Methionine + 5'-Deoxyadenosine
+EQUATION    C04432 + C17023 + 2 C00019 <=> C20753 + C00021 + C00073 + C05198
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP03934  C00019_C00073 cofac [RC:RC00021]
+            RP04346  C00019_C05198 cofac
+            RP16763  C04432_C20753 main [RC:RC03221]
+            RP16764  C00019_C20753 trans
+ENZYME      2.8.4.3
+ORTHOLOGY   K06168  bifunctional enzyme involved in thiolation and methylation of tRNA
+///

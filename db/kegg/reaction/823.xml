@@ -1,0 +1,24 @@
+ENTRY       R00823                      Reaction
+NAME        Anthranilate,NADH:oxygen oxidoreductase (1,2-hydroxylating, deaminating, decarboxylating)
+DEFINITION  Anthranilate + Oxygen + NADH + H+ <=> Catechol + Ammonia + CO2 + NAD+
+EQUATION    C00108 + C00007 + C00004 + C00080 <=> C00090 + C00014 + C00011 + C00003
+COMMENT     NADPH (see R00825)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00543  C00090_C00108 main [RC:RC00192]
+            RP05749  C00014_C00108 leave
+            RP12290  C00007_C00090 leave
+ENZYME      1.14.12.1
+PATHWAY     rn00627  Aminobenzoate degradation
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K05599  anthranilate 1,2-dioxygenase (deaminating, decarboxylating) large subunit [EC:1.14.12.1]
+            K05600  anthranilate 1,2-dioxygenase (deaminating, decarboxylating) small subunit [EC:1.14.12.1]
+            K11311  anthranilate 1,2-dioxygenase reductase subunit [EC:1.18.1.-]
+            K16319  anthranilate 1,2-dioxygenase large subunit [EC:1.14.12.1]
+            K16320  anthranilate 1,2-dioxygenase small subunit [EC:1.14.12.1]
+            K18248  anthranilate 1,2-dioxygenase ferredoxin subunit
+            K18249  anthranilate 1,2-dioxygenase ferredoxin reductase subunit [EC:1.18.1.-]
+REFERENCE   1  [PMID:11114907]
+            Eby DM, Beharry ZM, Coulter ED, Kurtz DM Jr, Neidle EL.
+            Characterization and evolution of anthranilate 1,2-dioxygenase from Acinetobacter sp. strain ADP1.
+            J. Bacteriol. 183 (2001) 109-18.
+///

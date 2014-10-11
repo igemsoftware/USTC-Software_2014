@@ -1,0 +1,27 @@
+ENTRY       R01934                      Reaction
+NAME        (1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate:NAD+ oxidoreductase (decarboxylating);
+            homoisocitrate:NAD+ oxidoreductase (decarboxylating)
+DEFINITION  Homoisocitrate + NAD+ <=> 2-Oxoadipate + CO2 + NADH + H+
+EQUATION    C05662 + C00003 <=> C00322 + C00011 + C00004 + C00080
+COMMENT     two-step reaction (see R04862+R01936), reversible
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP01857  C00322_C05662 main [RC:RC00114]
+            RP06774  C00011_C05662 leave
+ENZYME      1.1.1.87        1.1.1.286
+PATHWAY     rn00300  Lysine biosynthesis
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01210  2-Oxocarboxylic acid metabolism
+            rn01230  Biosynthesis of amino acids
+ORTHOLOGY   K05824  homoisocitrate dehydrogenase [EC:1.1.1.87]
+            K10978  methanogen homoisocitrate dehydrogenase [EC:1.1.1.87 1.1.1.-]
+            K17753  isocitrate--homoisocitrate dehydrogenase [EC:1.1.1.286]
+REFERENCE   1  [PMID:4395693]
+            Rowley B, Tucci AF.
+            Homoisocitric dehydrogenase from yeast.
+            Arch. Biochem. Biophys. 141 (1970) 499-510.
+            2  [PMID:5808337]
+            Chilina K, Thomas U, Tucci AF, McMichael KD, Stevens CM.
+            Synthesis and absolute configuration of the isomers of homoisocitric acid (1-hydroxy-1,2,4-butanetricarboxylic acid) and the stereochemistry of lysine biosynthesis.
+            Biochemistry. 8 (1969) 2846-55.
+///

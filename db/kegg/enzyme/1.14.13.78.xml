@@ -1,0 +1,77 @@
+ENTRY       EC 1.14.13.78               Enzyme
+NAME        ent-kaurene oxidase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     ent-kaur-16-ene,NADPH:oxygen oxidoreductase (hydroxylating)
+REACTION    ent-kaur-16-ene + 3 NADPH + 3 H+ + 3 O2 = ent-kaur-16-en-19-oate + 3 NADP+ + 4 H2O (overall reaction) [RN:R10066];
+            (1a) ent-kaur-16-ene + NADPH + H+ + O2 = ent-kaur-16-en-19-ol + NADP+ + H2O [RN:R06291];
+            (1b) ent-kaur-16-en-19-ol + NADPH + H+ + O2 = ent-kaur-16-en-19-al + NADP+ + 2 H2O [RN:R06292];
+            (1c) ent-kaur-16-en-19-al + NADPH + O2 = ent-kaur-16-en-19-oate + NADP+ + H2O [RN:R06293]
+ALL_REAC    R06291 R06292 R06293 R10066
+SUBSTRATE   ent-kaur-16-ene [CPD:C06090];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            ent-kaur-16-en-19-ol [CPD:C11872];
+            ent-kaur-16-en-19-al [CPD:C11873]
+PRODUCT     ent-kaur-16-en-19-oate [CPD:C11874];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            ent-kaur-16-en-19-ol [CPD:C11872];
+            ent-kaur-16-en-19-al [CPD:C11873]
+COMMENT     Requires cytochrome P450. Catalyses three sucessive oxidations of the 4-methyl group of ent-kaurene giving kaurenoic acid.
+HISTORY     EC 1.14.13.78 created 2002
+REFERENCE   1  [PMID:2223832]
+  AUTHORS   Ashman PJ, Mackenzie A, Bramley PM.
+  TITLE     Characterization of ent-kaurene oxidase activity from Gibberella fujikuroi.
+  JOURNAL   Biochim. Biophys. Acta. 1036 (1990) 151-7.
+  ORGANISM  Gibberella fujikuroi
+REFERENCE   2  [PMID:1397591]
+  AUTHORS   Archer C, Ashman PJ, Hedden P, Bowyer JR, Bramley PM.
+  TITLE     Purification of ent-kaurene oxidase from Gibberella fujikuroi and Cucurbita maxima.
+  JOURNAL   Biochem. Soc. Trans. 20 (1992) 218S.
+  ORGANISM  Cucurbita maxima, Gibberella fujikuroi
+REFERENCE   3  [PMID:9952446]
+  AUTHORS   Helliwell CA, Poole A, Peacock WJ, Dennis ES.
+  TITLE     Arabidopsis ent-kaurene oxidase catalyzes three steps of gibberellin biosynthesis.
+  JOURNAL   Plant. Physiol. 119 (1999) 507-10.
+  ORGANISM  Arabidopsis thaliana
+  SEQUENCE  [ath:AT5G25900]
+PATHWAY     ec00904  Diterpenoid biosynthesis
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K04122  ent-kaurene oxidase
+GENES       ATH: AT5G25900(GA3)
+            ALY: ARALYDRAFT_910656
+            CRB: CARUB_v10000758mg
+            EUS: EUTSA_v10004043mg
+            CIT: 102626273 102627235
+            CIC: CICLE_v10000884mg CICLE_v10000902mg CICLE_v10001179mg
+            TCC: TCM_033930
+            GMX: 100802970(CYP701A16) 100814223
+            MTR: MTR_080s0016
+            CAM: 101492348 101492682
+            FVE: 101315406
+            CSV: 101209283(ko) 101224928
+            RCU: RCOM_1592560
+            POP: POPTR_0002s13110g
+            VVI: 100255742
+            SLY: 101267112
+            SOT: 102588924 102589573
+            OSA: 4341345 4341347
+            DOSA: Os06t0568600-01(Os06g0568600) Os06t0569500-01(Os06g0569500) Os06t0569900-01(Os06g0569900) Os06t0570100-01(Os06g0570100) Os06t0570566-00(Os06g0570566) Os06t0570600-00(Os06g0570600)
+            OBR: 102700808 102701085 102719498 102719778
+            BDI: 100826923 100828145 100834998
+            SBI: SORBI_10g022520(SORBIDRAFT_10g022520)
+            ZMA: 100274015
+            SITA: 101769883 101770285 101770692
+            ATR: s00056p00094740(AMTR_s00056p00094740) s00338p00015190(AMTR_s00338p00015190) s03314p00002290(AMTR_s03314p00002290) s03588p00004980(AMTR_s03588p00004980)
+            SMO: SELMODRAFT_119177 SELMODRAFT_421373(CYP701C2) SELMODRAFT_424982 SELMODRAFT_74427(CYP701C1)
+            PPP: PHYPADRAFT_151293(CYP701B1)
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.78
+            IUBMB Enzyme Nomenclature: 1.14.13.78
+            ExPASy - ENZYME nomenclature database: 1.14.13.78
+            BRENDA, the Enzyme Database: 1.14.13.78
+            CAS: 149565-67-3
+///

@@ -1,0 +1,16 @@
+ENTRY       R00148                      Reaction
+NAME        ammonia,ubiquinol:oxygen oxidoreductase;
+            ammonia monooxygenase
+DEFINITION  Ammonia + Oxygen + Ubiquinol <=> Hydroxylamine + H2O + Ubiquinone
+EQUATION    C00014 + C00007 + C00390 <=> C00192 + C00001 + C00399
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00162  C00390_C00399 cofac [RC:RC00061]
+            RP05744  C00014_C00192 main [RC:RC02797]
+            RP07901  C00007_C00192 leave
+ENZYME      1.14.99.39
+PATHWAY     rn00910  Nitrogen metabolism
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K10944  methane/ammonia monooxygenase subunit A [EC:1.14.18.3 1.14.99.39]
+            K10945  methane/ammonia monooxygenase subunit B
+            K10946  methane/ammonia monooxygenase subunit C
+///

@@ -1,0 +1,13 @@
+ENTRY       R08050                      Reaction
+DEFINITION  Ectoine + 2-Oxoglutarate + Oxygen <=> 5-Hydroxyectoine + Succinate + CO2
+EQUATION    C06231 + C00026 + C00007 <=> C16432 + C00042 + C00011
+RPAIR       RP00015  C00026_C00042 cofac
+            RP05677  C00011_C00026 leave
+            RP05690  C00007_C00042 leave
+            RP11657  C06231_C16432 main [RC:RC00661]
+            RP12283  C00007_C16432 leave
+ENZYME      1.14.11.-
+PATHWAY     rn00260  Glycine, serine and threonine metabolism
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K10674  ectoine hydroxylase [EC:1.14.11.-]
+///

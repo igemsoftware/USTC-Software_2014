@@ -1,0 +1,13 @@
+ENTRY       R02708                      Reaction
+NAME        4-hydroxyphenylacetonitrile,NADPH:oxygen oxidoreductase
+DEFINITION  4-Hydroxyphenylacetonitrile + Oxygen + NADPH + H+ <=> (S)-4-Hydroxymandelonitrile + NADP+ + H2O
+EQUATION    C03766 + C00007 + C00005 + C00080 <=> C03742 + C00006 + C00001
+COMMENT     second step of two-step reaction (see R05728, R04306+R02708)
+            following after R04306
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP02423  C03742_C03766 main [RC:RC02540]
+            RP12532  C00007_C03742 leave
+ENZYME      1.14.13.68
+ORTHOLOGY   K13029  4-hydroxyphenylacetaldehyde oxime monooxygenase [EC:1.14.13.68]
+///

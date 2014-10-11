@@ -1,0 +1,18 @@
+ENTRY       R05185                      Reaction
+NAME        reduced ferredoxin:dinitrogen oxidoreductase (ATP-hydrolysing)
+DEFINITION  16 ATP + Nitrogen + 8 Reduced ferredoxin + 8 H+ + 16 H2O <=> 16 Orthophosphate + 16 ADP + 8 Oxidized ferredoxin + 2 Ammonia + Hydrogen
+EQUATION    16 C00002 + C00697 + 8 C00138 + 8 C00080 + 16 C00001 <=> 16 C00009 + 16 C00008 + 8 C00139 + 2 C00014 + C00282
+COMMENT     multi-step reaction (see R00002+R00067+R00153+R02802+R04782)
+RPAIR       RP00003  C00002_C00008 main [RC:RC00002]
+            RP00010  C00002_C00009 leave
+            RP05676  C00001_C00009 leave
+            RP05829  C00014_C00697 main [RC:RC02891]
+ENZYME      1.18.6.1
+PATHWAY     rn00910  Nitrogen metabolism
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K00531  nitrogenase delta subunit [EC:1.18.6.1]
+            K02586  nitrogenase molybdenum-iron protein alpha chain [EC:1.18.6.1]
+            K02588  nitrogenase iron protein NifH [EC:1.18.6.1]
+            K02591  nitrogenase molybdenum-iron protein beta chain [EC:1.18.6.1]
+///

@@ -1,0 +1,11 @@
+ENTRY       R01169                      Reaction
+NAME        S-adenosyl-L-methionine:L-histidine Nalpha-methyltransferase
+DEFINITION  L-Histidine + 3 S-Adenosyl-L-methionine + H+ <=> Hercynine + 3 S-Adenosyl-L-homocysteine
+EQUATION    C00135 + 3 C00019 + C00080 <=> C05575 + 3 C00021
+COMMENT     three-step reaction (see R10523+R10524+R04436)
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP08108  C00019_C05575 trans
+            RP13425  C00135_C05575 main [RC:RC02308]
+ENZYME      2.1.1.44
+PATHWAY     rn00340  Histidine metabolism
+///

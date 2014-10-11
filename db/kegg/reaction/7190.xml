@@ -1,0 +1,13 @@
+ENTRY       R07190                      Reaction
+DEFINITION  N,N-Dihydroxy-L-tyrosine <=> (Z)-4-Hydroxyphenylacetaldehyde oxime + CO2 + H2O
+EQUATION    C15503 <=> C04353 + C00011 + C00001
+COMMENT     second step of two-step reaction (R04460+R07190 or R06585), following after R04460
+            and a part of multi-step reaction (see R08656)
+RPAIR       RP10419  C00001_C15503 leave
+            RP10650  C00011_C15503 leave
+            RP11493  C04353_C15503 main [RC:RC01936]
+ENZYME      1.14.13.41
+PATHWAY     rn00460  Cyanoamino acid metabolism
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13027  tyrosine N-monooxygenase [EC:1.14.13.41]
+///

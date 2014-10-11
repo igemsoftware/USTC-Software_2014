@@ -1,0 +1,45 @@
+ENTRY       EC 1.1.1.360                Enzyme
+NAME        glucose/galactose 1-dehydrogenase;
+            GdhA;
+            dual-specific glucose/galactose dehydrogenase;
+            glucose (galactose) dehydrogenase;
+            glucose/galactose dehydrogenase
+CLASS       Oxidoreductases;
+            Acting on the CH-OH group of donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     D-glucose/D-galactose 1-dehydrogenase (NADPH)
+REACTION    (1) D-glucopyranose + NADP+ = D-glucono-1,5-lactone + NADPH + H+ [RN:R07147];
+            (2) D-galactopyranose + NADP+ = D-galactono-1,5-lactone + NADPH + H+ [RN:R01096]
+ALL_REAC    R01096 R07147
+SUBSTRATE   D-glucopyranose [CPD:C00031];
+            NADP+ [CPD:C00006];
+            D-galactopyranose [CPD:C00124]
+PRODUCT     D-glucono-1,5-lactone [CPD:C00198];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            D-galactono-1,5-lactone [CPD:C02669]
+COMMENT     A zinc protein. The enzyme from the archaeon Picrophilus torridus is involved in glucose and galactose catabolism via the nonphosphorylative variant of the Entner-Doudoroff pathway. It shows 20-fold higher activity with NADP+ compared to NAD+. The oxidation of D-glucose and D-galactose is catalysed at a comparable rate (cf. EC 1.1.1.119, glucose 1-dehydrogenase (NADP+) and EC 1.1.1.120, galactose 1-dehydrogenase (NADP+)).
+HISTORY     EC 1.1.1.360 created 2013
+REFERENCE   1  [PMID:15691337]
+  AUTHORS   Angelov A, Futterer O, Valerius O, Braus GH, Liebl W
+  TITLE     Properties of the recombinant glucose/galactose dehydrogenase from the extreme thermoacidophile, Picrophilus torridus.
+  JOURNAL   FEBS. J. 272 (2005) 1054-62.
+  ORGANISM  Picrophilus torridus
+  SEQUENCE  [pto:PTO1070]
+REFERENCE   2  [PMID:16556607]
+  AUTHORS   Milburn CC, Lamble HJ, Theodossis A, Bull SD, Hough DW, Danson MJ, Taylor GL
+  TITLE     The structural basis of substrate promiscuity in glucose dehydrogenase from the hyperthermophilic archaeon Sulfolobus solfataricus.
+  JOURNAL   J. Biol. Chem. 281 (2006) 14796-804.
+PATHWAY     ec00030  Pentose phosphate pathway
+            ec00052  Galactose metabolism
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K18124  glucose/galactose 1-dehydrogenase (NADP+)
+GENES       TAC: Ta0897
+            TVO: TVN1019
+            PTO: PTO1070
+            FAC: FACI_IFERC01G0298
+DBLINKS     ExplorEnz - The Enzyme Database: 1.1.1.360
+            IUBMB Enzyme Nomenclature: 1.1.1.360
+            ExPASy - ENZYME nomenclature database: 1.1.1.360
+            BRENDA, the Enzyme Database: 1.1.1.360
+///

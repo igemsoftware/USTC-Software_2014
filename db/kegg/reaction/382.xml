@@ -1,0 +1,9 @@
+ENTRY       R00382                      Reaction
+NAME        (Deoxyribonucleotide)n:5'-phospho-(deoxyribonucleotide)m ligase (AMP-forming, NMN-forming)
+DEFINITION  NAD+ + DNA(n) + 5'-Phospho-DNA(m) <=> AMP + Nicotinamide D-ribonucleotide + DNA(n+m)
+EQUATION    C00003 + C00039(n) + C02128(m) <=> C00020 + C00455 + C00039(n+m)
+RPAIR       RP00641  C00003_C00455 ligase [RC:RC00002]
+            RP03498  C00003_C00020 ligase [RC:RC00002]
+            RP13483  C00039_C02128 main [RC:RC00005]
+ENZYME      6.5.1.2
+///

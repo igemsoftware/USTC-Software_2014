@@ -1,0 +1,11 @@
+ENTRY       R01650                      Reaction
+DEFINITION  Succinate semialdehyde + Hydrogen cyanide + Ammonia <=> gamma-Amino-gamma-cyanobutanoate + H2O
+EQUATION    C00232 + C01326 + C00014 <=> C05715 + C00001
+COMMENT     multi-step reaction
+            possibly intermediate (Schiff base)
+RPAIR       RP01665  C00232_C05715 main [RC:RC00576]
+            RP05849  C00014_C05715 leave
+            RP06062  C00001_C00232 leave
+            RP06656  C01326_C05715 main [RC:RC00598]
+PATHWAY     rn00460  Cyanoamino acid metabolism
+///

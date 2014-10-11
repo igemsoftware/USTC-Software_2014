@@ -1,0 +1,14 @@
+ENTRY       R02237                      Reaction
+NAME        7,8-dihydropteroate:L-glutamate ligase (ADP-forming)
+DEFINITION  ATP + Dihydropteroate + L-Glutamate <=> ADP + Orthophosphate + Dihydrofolate
+EQUATION    C00002 + C00921 + C00025 <=> C00008 + C00009 + C00415
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP02060  C00025_C00415 main [RC:RC00064]
+            RP02061  C00415_C00921 main [RC:RC00162]
+ENZYME      6.3.2.12        6.3.2.17
+PATHWAY     rn00790  Folate biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01930  folylpolyglutamate synthase [EC:6.3.2.17]
+            K11754  dihydrofolate synthase / folylpolyglutamate synthase [EC:6.3.2.12 6.3.2.17]
+///

@@ -1,0 +1,11 @@
+ENTRY       R05811                      Reaction
+DEFINITION  Cobalt-precorrin 5 + S-Adenosyl-L-methionine + H2O <=> Cobalt-precorrin 6 + S-Adenosyl-L-homocysteine + Acetaldehyde
+EQUATION    C11541 + C00019 + C00001 <=> C11542 + C00021 + C00084
+COMMENT     multi-step reaction
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP08882  C00084_C11541 main [RC:RC01545]
+            RP08883  C00019_C11542 trans
+            RP11853  C11541_C11542 trans
+            RP12388  C00001_C11542 leave
+ENZYME      2.1.1.-
+///

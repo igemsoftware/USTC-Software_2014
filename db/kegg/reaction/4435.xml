@@ -1,0 +1,17 @@
+ENTRY       R04435                      Reaction
+NAME        phosphoenolpyruvate:N-acetyl-D-mannosamine-6-phosphate C-(1-carboxyvinyl)transferase (phosphate-hydrolysing, 2-carboxy-2-oxoethyl-forming);
+            N-acetylneuraminate 9-phosphate pyruvate-lyase (pyruvate-phosphorylating)
+DEFINITION  N-Acetylneuraminate 9-phosphate + Orthophosphate <=> N-Acetyl-D-mannosamine 6-phosphate + Phosphoenolpyruvate + H2O
+EQUATION    C06241 + C00009 <=> C04257 + C00074 + C00001
+COMMENT     multi-step reaction
+RPAIR       RP00122  C00009_C00074 leave
+            RP04073  C00074_C06241 trans
+            RP04074  C04257_C06241 main [RC:RC00159]
+            RP15464  C00001_C06241 leave
+ENZYME      2.5.1.56        2.5.1.57
+PATHWAY     rn00520  Amino sugar and nucleotide sugar metabolism
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K01654  N-acetylneuraminate synthase [EC:2.5.1.56]
+            K05304  sialic acid synthase [EC:2.5.1.56 2.5.1.57]
+///

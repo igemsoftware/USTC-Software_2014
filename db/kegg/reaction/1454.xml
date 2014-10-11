@@ -1,0 +1,13 @@
+ENTRY       R01454                      Reaction
+NAME        Cholesterol:oxygen oxidoreductase (side-chain-cleaving)
+DEFINITION  Cholesterol + Oxygen + 2 H+ + 2 Reduced adrenal ferredoxin <=> 20alpha-Hydroxycholesterol + H2O + 2 Oxidized adrenal ferredoxin
+EQUATION    C00187 + C00007 + 2 C00080 + 2 C00662 <=> C05500 + C00001 + 2 C00667
+COMMENT     first step of R02724 (R01454+R04854+R03933)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP01521  C00187_C05500 main [RC:RC00521]
+            RP06570  C00007_C05500 leave
+ENZYME      1.14.15.6
+PATHWAY     rn00140  Steroid hormone biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00498  cholesterol monooxygenase (side-chain-cleaving) [EC:1.14.15.6]
+///

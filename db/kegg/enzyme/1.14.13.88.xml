@@ -1,0 +1,66 @@
+ENTRY       EC 1.14.13.88               Enzyme
+NAME        flavanoid 3',5'-hydroxylase;
+            flavonoid 3',5'-hydroxylase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     flavanone,NADPH:oxygen oxidoreductase
+REACTION    a flavanone + 2 NADPH + 2 H+ + 2 O2 = a 3',5'-dihydroxyflavanone + 2 NADP+ + 2 H2O (overall reaction) [RN:R10069];
+            (1a) a flavanone + NADPH + H+ + O2 = a 3'-hydroxyflavanone + NADP+ + H2O [RN:R07369];
+            (1b) a 3'-hydroxyflavanone + NADPH + H+ + O2 = a 3',5'-dihydroxyflavanone + NADP+ + H2O [RN:R07370]
+ALL_REAC    R07369 > R02442 R03124;
+            R07370 > R03639 R04902;
+            R10069;
+            (other) R06537 R06538 R10258 R10260
+SUBSTRATE   flavanone [CPD:C00766];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            3'-hydroxyflavanone [CPD:C15204]
+PRODUCT     3',5'-dihydroxyflavanone [CPD:C15609];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            3'-hydroxyflavanone [CPD:C15204]
+COMMENT     A heme-thiolate protein (P-450). The 3',5'-dihydroxyflavanone is formed via the 3'-hydroxyflavanone. In Petunia hybrida the enzyme acts on naringenin, eriodictyol, dihydroquercetin (taxifolin) and dihydrokaempferol (aromadendrin). The enzyme catalyses the hydroxylation of 5,7,4'-trihydroxyflavanone (naringenin) at either the 3' position to form eriodictyol or at both the 3' and 5' positions to form 5,7,3',4',5'-pentahydroxyflavanone (dihydrotricetin). The enzyme also catalyses the hydroxylation of 3,5,7,3',4'-pentahydroxyflavanone (taxifolin) at the 5' position, forming ampelopsin. NADH is not a good substitute for NADPH.
+HISTORY     EC 1.14.13.88 created 2004
+REFERENCE   1  [PMID:12232356]
+  AUTHORS   Menting J, Scopes RK, Stevenson TW.
+  TITLE     Characterization of Flavonoid 3[prime],5[prime]-Hydroxylase in Microsomal Membrane Fraction of Petunia hybrida Flowers.
+  JOURNAL   Plant. Physiol. 106 (1994) 633-642.
+  ORGANISM  Petunia hybrida
+REFERENCE   2  [PMID:10567704]
+  AUTHORS   Shimada Y, Nakano-Shimada R, Ohbayashi M, Okinaka Y, Kiyokawa S, Kikuchi Y.
+  TITLE     Expression of chimeric P450 genes encoding flavonoid-3', 5'-hydroxylase in transgenic tobacco and petunia plants(1).
+  JOURNAL   FEBS. Lett. 461 (1999) 241-5.
+  ORGANISM  Nicotiana tabacum, Petunia hybrida
+REFERENCE   3  [PMID:9892710]
+  AUTHORS   de Vetten N, ter Horst J, van Schaik HP, de Boer A, Mol J, Koes R.
+  TITLE     A cytochrome b5 is required for full activity of flavonoid 3', 5'-hydroxylase, a cytochrome P450 involved in the formation of blue flower colors.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 96 (1999) 778-83.
+  ORGANISM  Petunia hybrida
+PATHWAY     ec00941  Flavonoid biosynthesis
+            ec00944  Flavone and flavonol biosynthesis
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13083  flavonoid 3',5'-hydroxylase
+GENES       CIT: 102627616
+            CIC: CICLE_v10018289mg
+            TCC: TCM_040896
+            GMX: 100783516 547705(W1)
+            MTR: MTR_058s0001 MTR_058s0002 MTR_144s0009 MTR_144s0021
+            CAM: 101503703
+            POP: POPTR_0001s28140g(POPTRDRAFT_64620) POPTR_0009s07320g(POPTRDRAFT_54623B)
+            VVI: 100232896 100241335 100242945 100243414 100246462 100247021 100248071 100251607 100256733 100261319(F3'5'H) 100266025 100267840 100852531 100853643 100854152
+            SLY: 100736504
+            SOT: 102577676(P)
+            DOSA: Os03t0367101-00(Os03g0367101)
+            OBR: 102721818
+            BDI: 100832240 100842616
+            SBI: SORBI_01g034460(SORBIDRAFT_01g034460) SORBI_01g034470(SORBIDRAFT_01g034470)
+            ZMA: 100278079
+            SITA: 101754995
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.88
+            IUBMB Enzyme Nomenclature: 1.14.13.88
+            ExPASy - ENZYME nomenclature database: 1.14.13.88
+            BRENDA, the Enzyme Database: 1.14.13.88
+            CAS: 94047-23-1
+///

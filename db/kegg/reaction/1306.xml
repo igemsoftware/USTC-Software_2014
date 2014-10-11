@@ -1,0 +1,12 @@
+ENTRY       R01306                      Reaction
+NAME        4-Methoxybenzoate,hydrogen-donor:oxygen oxidoreductase (O-demethylating)
+DEFINITION  4-Methoxybenzoate + Reduced acceptor + Oxygen <=> 4-Hydroxybenzoate + Formaldehyde + Acceptor + H2O
+EQUATION    C02519 + C00030 + C00007 <=> C00156 + C00067 + C00028 + C00001
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00502  C00007_C00067 leave
+            RP01420  C00156_C02519 main [RC:RC00392]
+            RP06519  C00067_C02519 main [RC:RC01533]
+ENZYME      1.14.99.15
+PATHWAY     rn00362  Benzoate degradation
+            rn01220  Degradation of aromatic compounds
+///

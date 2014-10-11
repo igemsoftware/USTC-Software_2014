@@ -1,0 +1,16 @@
+ENTRY       R07710                      Reaction
+NAME        salicylate,NADPH:oxygen oxidoreductase (5-hydroxylating)
+DEFINITION  Salicylate + NADPH + Oxygen + H+ <=> 2,5-Dihydroxybenzoate + NADP+ + H2O
+EQUATION    C00805 + C00005 + C00007 + C00080 <=> C00628 + C00006 + C00001
+COMMENT     NADH (see R07709)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP10505  C00007_C00628 leave
+            RP11191  C00628_C00805 main [RC:RC00490]
+ENZYME      1.14.13.172
+PATHWAY     rn00626  Naphthalene degradation
+ORTHOLOGY   K14578  naphthalene 1,2-dioxygenase system ferredoxin subunit
+            K14581  ferredoxin-NAD(P)+ reductase (naphthalene dioxygenase ferredoxin-specific) [EC:1.18.1.7]
+            K18242  salicylate 5-hydroxylase large subunit [EC:1.14.13.172]
+            K18243  salicylate 5-hydroxylase small subunit [EC:1.14.13.172]
+///

@@ -1,0 +1,13 @@
+ENTRY       R01395                      Reaction
+NAME        ATP:carbamate phosphotransferase
+DEFINITION  ATP + Carbamate <=> ADP + Carbamoyl phosphate
+EQUATION    C00002 + C01563 <=> C00008 + C00169
+COMMENT     the second step of two-step reaction (see R00150, R07316+R01395)
+            following after R07316
+RPAIR       RP00003  C00002_C00008 main [RC:RC00002]
+            RP01477  C00169_C01563 main [RC:RC00043]
+            RP03826  C00002_C00169 trans
+ENZYME      2.7.2.2
+PATHWAY     rn00910  Nitrogen metabolism
+ORTHOLOGY   K00926  carbamate kinase [EC:2.7.2.2]
+///

@@ -1,0 +1,90 @@
+ENTRY       EC 2.4.1.241                Enzyme
+NAME        digalactosyldiacylglycerol synthase;
+            DGD1;
+            DGD2;
+            DGDG synthase (ambiguous);
+            UDP-galactose-dependent DGDG synthase;
+            UDP-galactose-dependent digalactosyldiacylglycerol synthase;
+            UDP-galactose:MGDG galactosyltransferase;
+            UDP-galactose:3-(beta-D-galactosyl)-1,2-diacyl-sn-glycerol 6-alpha-galactosyltransferase
+CLASS       Transferases;
+            Glycosyltransferases;
+            Hexosyltransferases
+SYSNAME     UDP-alpha-D-galactose:1,2-diacyl-3-O-(beta-D-galactosyl)-sn-glycerol 6-alpha-galactosyltransferase
+REACTION    UDP-alpha-D-galactose + 1,2-diacyl-3-O-(beta-D-galactosyl)-sn-glycerol = UDP + 1,2-diacyl-3-O-[alpha-D-galactosyl-(1->6)-beta-D-galactosyl]-sn-glycerol [RN:R04469]
+ALL_REAC    R04469
+SUBSTRATE   UDP-alpha-D-galactose [CPD:C00052];
+            1,2-diacyl-3-O-(beta-D-galactosyl)-sn-glycerol
+PRODUCT     UDP [CPD:C00015];
+            1,2-diacyl-3-O-[alpha-D-galactosyl-(1->6)-beta-D-galactosyl]-sn-glycerol
+COMMENT     Requires Mg2+. Diacylglycerol cannot serve as an acceptor molecule for galactosylation as in the reaction catalysed by EC 2.4.1.46, monogalactosyldiacylglyerol synthase. When phosphate is limiting, phospholipids in plant membranes are reduced but these are replaced, at least in part, by the glycolipids digalactosyldiacylglycerol (DGDG) and sulfoquinovosyldiacylglycerol [3]. While both DGD1 and DGD2 are increased under phosphate-limiting conditions, DGD2 does not contribute significantly under optimal growth conditions. DGD2 is responsible for the synthesis of DGDG molecular species that are rich in C16 fatty acids at sn-1 of diacylglycerol whereas DGD1 leads to molecular species rich in C18 fatty acids [3]. The enzyme has been localized to the outer side of chloroplast envelope membranes.
+HISTORY     EC 2.4.1.241 created 2005
+REFERENCE   1  [PMID:11696551]
+  AUTHORS   Kelly AA, Dormann P.
+  TITLE     DGD2, an arabidopsis gene encoding a UDP-galactose-dependent digalactosyldiacylglycerol synthase is expressed during growth under phosphate-limiting conditions.
+  JOURNAL   J. Biol. Chem. 277 (2002) 1166-73.
+  ORGANISM  Arabidopsis thaliana
+  SEQUENCE  [ath:AT4G00550]
+REFERENCE   2  [PMID:10973486]
+  AUTHORS   Hartel H, Dormann P, Benning C.
+  TITLE     DGD1-independent biosynthesis of extraplastidic galactolipids after phosphate deprivation in Arabidopsis.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 97 (2000) 10649-54.
+  ORGANISM  Arabidopsis sp.
+REFERENCE   3  [PMID:14600212]
+  AUTHORS   Kelly AA, Froehlich JE, Dormann P.
+  TITLE     Disruption of the two digalactosyldiacylglycerol synthase genes DGD1 and DGD2 in Arabidopsis reveals the existence of an additional enzyme of galactolipid synthesis.
+  JOURNAL   Plant. Cell. 15 (2003) 2694-706.
+  ORGANISM  Arabidopsis sp.
+  SEQUENCE  [ath:AT3G11670 AT4G00550]
+REFERENCE   4  [PMID:15590685]
+  AUTHORS   Benning C, Ohta H.
+  TITLE     Three enzyme systems for galactoglycerolipid biosynthesis are coordinately regulated in plants.
+  JOURNAL   J. Biol. Chem. 280 (2005) 2397-400.
+  ORGANISM  Arabidopsis sp.
+PATHWAY     ec00561  Glycerolipid metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K09480  digalactosyldiacylglycerol synthase
+GENES       ATH: AT3G11670(DGD1) AT4G00550(DGD2)
+            ALY: ARALYDRAFT_490510 ARALYDRAFT_686538 ARALYDRAFT_897369
+            CRB: CARUB_v10000865mg CARUB_v10012998mg
+            EUS: EUTSA_v10020090mg EUTSA_v10028633mg
+            CIT: 102607996 102608572 102625925
+            CIC: CICLE_v10011110mg CICLE_v10019524mg CICLE_v10023521mg
+            TCC: TCM_005397 TCM_022931
+            GMX: 100777005 100796354 547762(DGD2) 548059(DGD1)
+            MTR: MTR_134s0013 MTR_134s1032 MTR_6g091670 MTR_7g076400
+            CAM: 101493389 101502949 101504489
+            FVE: 101296403 101312478
+            CSV: 101204668 101218383 101225639
+            RCU: RCOM_0322290 RCOM_1614470
+            POP: POPTR_0006s21970g(POPTRDRAFT_716790) POPTR_0014s07530g(POPTRDRAFT_834731) POPTR_0016s07090g(POPTRDRAFT_835465)
+            VVI: 100247315 100251641 100259167 100265767
+            SLY: 101247974 101250748 101258305 101266854
+            SOT: 102578378 102578535 102580118 102585986
+            OSA: 4329584 4332054 4332372 4335812 4349835
+            DOSA: Os02t0539100-01(Os02g0539100) Os03t0214400-01(Os03g0214400) Os03t0268300-01(Os03g0268300) Os11t0158400-01(Os11g0158400)
+            OBR: 102706456 102709991 102711343 102713684 102722841
+            BDI: 100824823 100831810 100837116 100839031 100845054
+            SBI: SORBI_01g039910(SORBIDRAFT_01g039910) SORBI_04g022040(SORBIDRAFT_04g022040) SORBI_05g003730(SORBIDRAFT_05g003730) SORBI_06g016250(SORBIDRAFT_06g016250)
+            ZMA: 100277520 100286172 100382823 100383181(si486045a09)
+            SITA: 101759231 101764872 101770913 101772957 101776547
+            ATR: s00030p00179690(AMTR_s00030p00179690) s00101p00147880(AMTR_s00101p00147880)
+            SMO: SELMODRAFT_130585(Dgd)
+            PPP: PHYPADRAFT_137342 PHYPADRAFT_162919 PHYPADRAFT_216055 PHYPADRAFT_218058
+            CRE: CHLREDRAFT_196553(DGD1)
+            VCN: VOLCADRAFT_116955
+            OLU: OSTLU_17319
+            OTA: Ot11g01480
+            MIS: MICPUN_83849 MICPUN_86997
+            MPP: MICPUCDRAFT_20694 MICPUCDRAFT_46248
+            CSL: COCSUDRAFT_27439 COCSUDRAFT_49349
+            CVR: CHLNCDRAFT_31413
+            CCP: CHC_T00008344001
+            EHX: EMIHUDRAFT_443881 EMIHUDRAFT_452862 EMIHUDRAFT_453786
+            GTT: GUITHDRAFT_115024
+DBLINKS     ExplorEnz - The Enzyme Database: 2.4.1.241
+            IUBMB Enzyme Nomenclature: 2.4.1.241
+            ExPASy - ENZYME nomenclature database: 2.4.1.241
+            BRENDA, the Enzyme Database: 2.4.1.241
+            CAS: 69913-00-4
+///

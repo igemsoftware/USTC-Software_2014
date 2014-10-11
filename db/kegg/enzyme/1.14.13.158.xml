@@ -1,0 +1,36 @@
+ENTRY       EC 1.14.13.158              Enzyme
+NAME        amorpha-4,11-diene 12-monooxygenase;
+            CYP71AV1
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     amorpha-4,11-diene,NADPH:oxygen oxidoreductase (12-hydroxylating)
+REACTION    amorpha-4,11-diene + 3 O2 + 3 NADPH + 3 H+ = artemisinate + 3 NADP+ + 4 H2O (overall reaction) [RN:R10026];
+            (1a) amorpha-4,11-diene + O2 + NADPH + H+ = artemisinic alcohol + NADP+ + H2O [RN:R10023];
+            (1b) artemisinic alcohol + O2 + NADPH + H+ = artemisinic aldehyde + NADP+ + 2 H2O [RN:R10024];
+            (1c) artemisinic aldehyde + O2 + NADPH + H+ = artemisinate + NADP+ + H2O [RN:R10025]
+ALL_REAC    R10023 R10024 R10025 R10026
+SUBSTRATE   amorpha-4,11-diene [CPD:C16028];
+            O2 [CPD:C00007];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            artemisinic alcohol [CPD:C20307];
+            artemisinic aldehyde [CPD:C20308]
+PRODUCT     artemisinate [CPD:C20309];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            artemisinic alcohol [CPD:C20307];
+            artemisinic aldehyde [CPD:C20308]
+COMMENT     A heme-thiolate protein (P-450). Cloned from the plant Artemisia annua (sweet wormwood). Part of the biosynthetic pathway of artemisinin.
+HISTORY     EC 1.14.13.158 created 2012
+REFERENCE   1  [PMID:16458889]
+  AUTHORS   Teoh KH, Polichuk DR, Reed DW, Nowak G, Covello PS
+  TITLE     Artemisia annua L. (Asteraceae) trichome-specific cDNAs reveal CYP71AV1, a cytochrome P450 with a key role in the biosynthesis of the antimalarial sesquiterpene lactone artemisinin.
+  JOURNAL   FEBS. Lett. 580 (2006) 1411-6.
+  ORGANISM  Artemisia annua
+  SEQUENCE  [up:Q1PS23]
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.158
+            IUBMB Enzyme Nomenclature: 1.14.13.158
+            ExPASy - ENZYME nomenclature database: 1.14.13.158
+            BRENDA, the Enzyme Database: 1.14.13.158
+///

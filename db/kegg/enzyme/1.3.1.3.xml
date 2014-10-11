@@ -1,0 +1,138 @@
+ENTRY       EC 1.3.1.3                  Enzyme
+NAME        Delta4-3-oxosteroid 5beta-reductase;
+            3-oxo-Delta4-steroid 5beta-reductase;
+            5beta-reductase;
+            androstenedione 5beta-reductase;
+            cholestenone 5beta-reductase;
+            cortisone 5beta-reductase;
+            cortisone beta-reductase;
+            cortisone Delta4-5beta-reductase;
+            steroid 5beta-reductase;
+            testosterone 5beta-reductase;
+            Delta4-3-ketosteroid 5beta-reductase;
+            Delta4-5beta-reductase;
+            Delta4-hydrogenase;
+            4,5beta-dihydrocortisone:NADP+ Delta4-oxidoreductase;
+            3-oxo-5beta-steroid:NADP+ Delta4-oxidoreductase
+CLASS       Oxidoreductases;
+            Acting on the CH-CH group of donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     5beta-cholestan-3-one:NADP+ 4,5-oxidoreductase
+REACTION    (1) 5beta-cholestan-3-one + NADP+ = cholest-4-en-3-one + NADPH + H+ [RN:R02609];
+            (2) 17,21-dihydroxy-5beta-pregnane-3,11,20-trione + NADP+ = cortisone + NADPH + H+ [RN:R02893]
+ALL_REAC    R02609 R02893;
+            (other) R01835 R02219 R02498 R02841 R03713 R03850 R04817 R04823
+SUBSTRATE   5beta-cholestan-3-one [CPD:C03091];
+            NADP+ [CPD:C00006];
+            17,21-dihydroxy-5beta-pregnane-3,11,20-trione
+PRODUCT     cholest-4-en-3-one [CPD:C00599];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            cortisone [CPD:C00762]
+COMMENT     The enzyme from human efficiently catalyses the reduction of progesterone, androstenedione, 17alpha-hydroxyprogesterone and testosterone to 5beta-reduced metabolites; it can also act on aldosterone, corticosterone and cortisol, but to a lesser extent [8]. The bile acid intermediates 7alpha,12alpha-dihydroxy-4-cholesten-3-one and 7alpha-hydroxy-4-cholesten-3-one can also act as substrates [9].
+HISTORY     EC 1.3.1.3 created 1961 (EC 1.3.1.23 created 1972, incorporated 2005), modified 2005
+REFERENCE   1  [PMID:13376613]
+  AUTHORS   DORFMAN RI, FORCHIELLI E.
+  TITLE     Separation of delta 4-5 alpha-hydrogenases from rat liver homogenates.
+  JOURNAL   J. Biol. Chem. 223 (1956) 443-8.
+  ORGANISM  Rattus norvegicus
+REFERENCE   2  [PMID:13805063]
+  AUTHORS   BROWN-GRANT K, FORCHIELLI E, DORFMAN RI.
+  TITLE     The delta4-hydrogenases of guinea pig adrenal gland.
+  JOURNAL   J. Biol. Chem. 235 (1960) 1317-20.
+  ORGANISM  Cavia porcellus
+REFERENCE   3
+  AUTHORS   Levy, H.R. and Talalay, P.
+  TITLE     Enzymatic introduction of double bonds into steroid ring A.
+  JOURNAL   J. Am. Chem. Soc. 79 (1957) 2658-2659.
+REFERENCE   4  [PMID:13416214]
+  AUTHORS   TOMKINS GM.
+  TITLE     The enzymatic reduction of delta 4-3-ketosteroids.
+  JOURNAL   J. Biol. Chem. 225 (1957) 13-24.
+  ORGANISM  Rattus norvegicus
+REFERENCE   5  [PMID:2278855]
+  AUTHORS   Sugimoto Y, Yoshida M, Tamaoki B.
+  TITLE     Purification of 5 beta-reductase from hepatic cytosol fraction of chicken.
+  JOURNAL   J. Steroid. Biochem. Mol. Biol. 37 (1990) 717-24.
+  ORGANISM  Gallus gallus
+REFERENCE   6  [PMID:3828348]
+  AUTHORS   Furuebisu M, Deguchi S, Okuda K.
+  TITLE     Identification of cortisone 5 beta-reductase as delta 4-3-ketosteroid 5 beta-reductase.
+  JOURNAL   Biochim. Biophys. Acta. 912 (1987) 110-4.
+  ORGANISM  Rattus norvegicus
+REFERENCE   7  [PMID:6736016]
+  AUTHORS   Okuda A, Okuda K.
+  TITLE     Purification and characterization of delta 4-3-ketosteroid 5 beta-reductase.
+  JOURNAL   J. Biol. Chem. 259 (1984) 7519-24.
+  ORGANISM  Rattus norvegicus
+REFERENCE   8  [PMID:11342103]
+  AUTHORS   Charbonneau A, The VL.
+  TITLE     Genomic organization of a human 5beta-reductase and its pseudogene and substrate selectivity of the expressed enzyme.
+  JOURNAL   Biochim. Biophys. Acta. 1517 (2001) 228-35.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:6718]
+REFERENCE   9  [PMID:7508385]
+  AUTHORS   Kondo KH, Kai MH, Setoguchi Y, Eggertsen G, Sjoblom P, Setoguchi T, Okuda KI, Bjorkhem I.
+  TITLE     Cloning and expression of cDNA of human delta 4-3-oxosteroid 5 beta-reductase and substrate specificity of the expressed enzyme.
+  JOURNAL   Eur. J. Biochem. 219 (1994) 357-63.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:6718]
+PATHWAY     ec00120  Primary bile acid biosynthesis
+            ec00140  Steroid hormone biosynthesis
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00251  3-oxo-5-beta-steroid 4-dehydrogenase
+GENES       HSA: 6718(AKR1D1)
+            PTR: 472607(AKR1D1)
+            PPS: 100985077
+            GGO: 101127761
+            PON: 100456267(AKR1D1)
+            MCC: 709863(AKR1D1)
+            MCF: 102146771(AKR1D1)
+            MMU: 208665(Akr1d1)
+            RNO: 192242(Akr1d1)
+            CGE: 100770348
+            HGL: 101716388(Akr1d1)
+            TUP: 102473225(AKR1D1)
+            CFA: 482711(AKR1D1) 491379(AKR1D1)
+            AML: 100483237(AKR1D1)
+            FCA: 101100551(AKR1D1)
+            PTG: 102949203(AKR1D1)
+            BTA: 513855(AKR1D1)
+            BOM: 102264964(AKR1D1)
+            PHD: 102322934(AKR1D1)
+            CHX: 102170484(AKR1D1)
+            SSC: 100520813(AKR1D1)
+            CFR: 102510401(AKR1D1)
+            ECB: 100066919(AKR1D1)
+            MYB: 102243036(AKR1D1) 102246475
+            MYD: 102756994 102775075 102775514(AKR1D1)
+            PALE: 102882463(AKR1D1)
+            MDO: 100022753(AKR1D1)
+            SHR: 100926677(AKR1D1)
+            OAA: 100076664
+            GGA: 418107(AKR1D1)
+            MGP: 100547967
+            TGU: 100228769(AKR1D1)
+            FAB: 101820121(AKR1D1)
+            PHI: 102107003(AKR1D1)
+            APLA: 101802488(AKR1D1)
+            FPG: 101910289
+            FCH: 102047333
+            CLV: 102085311
+            ASN: 102377874(AKR1D1)
+            PSS: 102453451(AKR1D1)
+            CMY: 102942570(AKR1D1)
+            ACS: 100555605
+            XLA: 399023
+            XTR: 594997(akr1d1)
+            TRU: 101070818
+            MZE: 101470353 101485185
+            OLA: 101170970 101175316
+            XMA: 102229839 102235761
+            LCM: 102361835
+DBLINKS     ExplorEnz - The Enzyme Database: 1.3.1.3
+            IUBMB Enzyme Nomenclature: 1.3.1.3
+            ExPASy - ENZYME nomenclature database: 1.3.1.3
+            BRENDA, the Enzyme Database: 1.3.1.3
+            CAS: 9029-08-7
+///

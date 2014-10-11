@@ -1,0 +1,11 @@
+ENTRY       R01875                      Reaction
+NAME        Thiosulfate:thiol sulfurtransferase
+DEFINITION  Thiosulfate + 2 Glutathione + H+ <=> Sulfite + Glutathione disulfide + Hydrogen sulfide
+EQUATION    C00320 + 2 C00051 + C00080 <=> C00094 + C00127 + C00283
+COMMENT     intermediate (glutathione hydrodisulfide [CPD:C17267])
+RPAIR       RP00025  C00051_C00127 main [RC:RC00011]
+            RP00110  C00094_C00320 leave [RC:RC02813]
+            RP04675  C00283_C00320 leave [RC:RC02823]
+ENZYME      2.8.1.3
+PATHWAY     rn00480  Glutathione metabolism
+///

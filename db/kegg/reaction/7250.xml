@@ -1,0 +1,17 @@
+ENTRY       R07250                      Reaction
+NAME        malonyl-CoA:N-methylanthraniloyl-CoA malonyltransferase (cyclizing)
+DEFINITION  3 Malonyl-CoA + N-Methylanthraniloyl-CoA <=> 4 CoA + 1,3-Dihydroxy-N-methylacridone + 3 CO2 + H2O
+EQUATION    3 C00083 + C12092 <=> 4 C00010 + C12093 + 3 C00011 + C00001
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP08518  C00001_C00083 leave
+            RP10625  C00010_C12092 main [RC:RC00004]
+            RP10895  C00083_C12093 trans
+            RP11888  C12092_C12093 main [RC:RC02952]
+            RP14016  C00083_C12093 trans
+            RP14017  C00083_C12093 trans
+ENZYME      2.3.1.159
+PATHWAY     rn01058  Acridone alkaloid biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K12644  acridone synthase [EC:2.3.1.159]
+///

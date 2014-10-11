@@ -1,0 +1,48 @@
+ENTRY       EC 1.14.13.151              Enzyme
+NAME        linalool 8-monooxygenase;
+            P-450lin;
+            CYP111
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     linalool,NADH:oxygen oxidoreductase (8-hydroxylating)
+REACTION    linalool + 2 NADH + 2 H+ + 2 O2 = (6E)-8-oxolinalool + 2 NAD+ + 3 H2O (overall reaction) [RN:R09925];
+            (1a) linalool + NADH + H+ + O2 = (6E)-8-hydroxylinalool + NAD+ + H2O [RN:R04366];
+            (1b) (6E)-8-hydroxylinalool + NADH + H+ + O2 = (6E)-8-oxolinalool + NAD+ + 2 H2O [RN:R09924]
+ALL_REAC    R04366 > R09922 R09923;
+            R09924 R09925
+SUBSTRATE   linalool [CPD:C03985];
+            NADH [CPD:C00004];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            (6E)-8-hydroxylinalool [CPD:C04433]
+PRODUCT     (6E)-8-oxolinalool [CPD:C20221];
+            NAD+ [CPD:C00003];
+            H2O [CPD:C00001];
+            (6E)-8-hydroxylinalool [CPD:C04433]
+COMMENT     A heme-thiolate protein (P-450). The secondary electron donor is a specific [2Fe-2S] ferredoxin from the same bacterial strain.
+HISTORY     EC 1.14.13.151 created 1989 as EC 1.14.99.28, transferred 2012 to EC 1.14.13.151
+REFERENCE   1  [PMID:2295633]
+  AUTHORS   Ullah AJ, Murray RI, Bhattacharyya PK, Wagner GC, Gunsalus IC
+  TITLE     Protein components of a cytochrome P-450 linalool 8-methyl hydroxylase.
+  JOURNAL   J. Biol. Chem. 265 (1990) 1345-51.
+  ORGANISM  Pseudomonas putida
+  SEQUENCE  [up:Q59723]
+REFERENCE   2  [PMID:8376348]
+  AUTHORS   Ropp JD, Gunsalus IC, Sligar SG
+  TITLE     Cloning and expression of a member of a new cytochrome P-450 family: cytochrome P-450lin (CYP111) from Pseudomonas incognita.
+  JOURNAL   J. Bacteriol. 175 (1993) 6028-37.
+  ORGANISM  Pseudomonas putida
+  SEQUENCE  [up:Q59723]
+PATHWAY     ec00902  Monoterpenoid biosynthesis
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K05525  linalool 8-monooxygenase
+GENES       ACI: ACIAD1575(linC)
+            SUR: STAUR_6105(linC)
+            PLA: Plav_0029
+            NAR: Saro_0759
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.151
+            IUBMB Enzyme Nomenclature: 1.14.13.151
+            ExPASy - ENZYME nomenclature database: 1.14.13.151
+            BRENDA, the Enzyme Database: 1.14.13.151
+///

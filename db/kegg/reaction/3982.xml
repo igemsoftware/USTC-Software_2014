@@ -1,0 +1,15 @@
+ENTRY       R03982                      Reaction
+NAME        Pentachlorophenol,NADPH:oxygen oxidoreductase (hydroxylating, dechloronating)
+DEFINITION  Pentachlorophenol + Oxygen + 2 NADPH + H+ <=> Tetrachlorohydroquinone + Cl- + 2 NADP+ + H2O
+EQUATION    C02575 + C00007 + 2 C00005 + C00080 <=> C03434 + C00698 + 2 C00006 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP03602  C00698_C02575 leave
+            RP03603  C00007_C03434 leave
+            RP07825  C02575_C03434 main [RC:RC01540]
+ENZYME      1.14.13.50
+PATHWAY     rn00361  Chlorocyclohexane and chlorobenzene degradation
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K03391  pentachlorophenol monooxygenase [EC:1.14.13.50]
+///

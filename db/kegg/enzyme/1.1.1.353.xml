@@ -1,0 +1,46 @@
+ENTRY       EC 1.1.1.353                Enzyme
+NAME        versiconal hemiacetal acetate reductase;
+            VHA reductase;
+            VHA reductase I;
+            VHA reductase II;
+            vrdA (gene name)
+CLASS       Oxidoreductases;
+            Acting on the CH-OH group of donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     versiconol-acetate:NADP+ oxidoreductase
+REACTION    (1) versicolorone + NADP+ = 1'-hydroxyversicolorone + NADPH + H+ [RN:R09756];
+            (2) versiconol acetate + NADP+ = versiconal hemiacetal acetate + NADPH + H+ [RN:R10399];
+            (3) versiconol + NADP+ = versiconal + NADPH + H+ [RN:R10400]
+ALL_REAC    R09756 R10399 R10400
+SUBSTRATE   versicolorone [CPD:C20504];
+            NADP+ [CPD:C00006];
+            versiconol acetate [CPD:C20506];
+            versiconol [CPD:C20508]
+PRODUCT     1'-hydroxyversicolorone [CPD:C20503];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            versiconal hemiacetal acetate [CPD:C20505];
+            versiconal [CPD:C20507]
+COMMENT     Isolated from the mold Aspergillus parasiticus. Involved in a metabolic grid that leads to aflatoxin biosynthesis.
+HISTORY     EC 1.1.1.353 created 2013
+REFERENCE   1  [PMID:16349333]
+  AUTHORS   Matsushima K, Ando Y, Hamasaki T, Yabe K
+  TITLE     Purification and characterization of two versiconal hemiacetal acetate reductases involved in aflatoxin biosynthesis.
+  JOURNAL   Appl. Environ. Microbiol. 60 (1994) 2561-7.
+  ORGANISM  Aspergillus parasiticus
+  SEQUENCE  [up:B9WYE6] [afv:AFLA_090030] (Aspergillus flavus)
+REFERENCE   2  [PMID:19211038]
+  AUTHORS   Shima Y, Shiina M, Shinozawa T, Ito Y, Nakajima H, Adachi Y, Yabe K
+  TITLE     Participation in aflatoxin biosynthesis by a reductase enzyme encoded by vrdA gene outside the aflatoxin gene cluster.
+  JOURNAL   Fungal. Genet. Biol. 46 (2009) 221-31.
+  ORGANISM  Aspergillus parasiticus
+  SEQUENCE  [up:B9WYE6] [afv:AFLA_090030] (Aspergillus flavus)
+PATHWAY     ec00254  Aflatoxin biosynthesis
+ORTHOLOGY   K17647  versiconal hemiacetal acetate reductase
+GENES       AOR: AOR_1_2094(AO090120000002)
+            AFV: AFLA_090030
+DBLINKS     ExplorEnz - The Enzyme Database: 1.1.1.353
+            IUBMB Enzyme Nomenclature: 1.1.1.353
+            ExPASy - ENZYME nomenclature database: 1.1.1.353
+            BRENDA, the Enzyme Database: 1.1.1.353
+///

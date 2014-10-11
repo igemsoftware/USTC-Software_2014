@@ -1,0 +1,115 @@
+ENTRY       EC 1.1.1.300                Enzyme
+NAME        NADP-retinol dehydrogenase;
+            all-trans retinal reductase (ambiguous);
+            all-trans-retinol dehydrogenase;
+            NADP(H)-dependent retinol dehydrogenase/reductase;
+            RDH11;
+            RDH12;
+            RDH13;
+            RDH14;
+            retinol dehydrogenase 12;
+            retinol dehydrogenase 14;
+            retinol dehydrogenase [NADP+];
+            RalR1;
+            PSDR1
+CLASS       Oxidoreductases;
+            Acting on the CH-OH group of donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     retinol:NADP+ oxidoreductase
+REACTION    retinol + NADP+ = retinal + NADPH + H+ [RN:R08379]
+ALL_REAC    R08379
+SUBSTRATE   retinol [CPD:C00473];
+            NADP+ [CPD:C00006]
+PRODUCT     retinal [CPD:C00376];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080]
+COMMENT     Greater catalytic efficiency in the reductive direction. This observation, and the enzyme's localization at the entrance to the mitochondrial matrix, suggest that it may function to protect mitochondria against oxidative stress associated with the highly reactive retinal produced from dietary beta-carotene by EC 1.14.99.36 (beta-carotene 15,15'-monooxygenase) [2]. Km-values for NADP+ and NADPH are at least 800-fold lower than those for NAD+ and NADH [1,4]. This enzyme differs from EC 1.1.1.105, retinol dehydrogenase, which prefers NAD+ and NADH.
+HISTORY     EC 1.1.1.300 created 2009
+REFERENCE   1  [PMID:15865448]
+  AUTHORS   Belyaeva OV, Korkina OV, Stetsenko AV, Kim T, Nelson PS, Kedishvili NY
+  TITLE     Biochemical properties of purified human retinol dehydrogenase 12 (RDH12): catalytic efficiency toward retinoids and C9 aldehydes and effects of cellular retinol-binding protein type I (CRBPI) and cellular retinaldehyde-binding protein (CRALBP) on the oxidation and reduction of retinoids.
+  JOURNAL   Biochemistry. 44 (2005) 7035-47.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:145226]
+REFERENCE   2  [PMID:18039331]
+  AUTHORS   Belyaeva OV, Korkina OV, Stetsenko AV, Kedishvili NY
+  TITLE     Human retinol dehydrogenase 13 (RDH13) is a mitochondrial short-chain dehydrogenase/reductase with a retinaldehyde reductase activity.
+  JOURNAL   FEBS. J. 275 (2008) 138-47.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:112724]
+REFERENCE   3  [PMID:9705317]
+  AUTHORS   Haeseleer F, Huang J, Lebioda L, Saari JC, Palczewski K
+  TITLE     Molecular characterization of a novel short-chain dehydrogenase/reductase that reduces all-trans-retinal.
+  JOURNAL   J. Biol. Chem. 273 (1998) 21790-9.
+  ORGANISM  Homo sapiens, Mus musculus, Bos taurus
+  SEQUENCE  [hsa:9249] [mmu:20148] [bta:281482]
+REFERENCE   4  [PMID:12036956]
+  AUTHORS   Kedishvili NY, Chumakova OV, Chetyrkin SV, Belyaeva OV, Lapshina EA, Lin DW, Matsumura M, Nelson PS
+  TITLE     Evidence that the human gene for prostate short-chain dehydrogenase/reductase (PSDR1) encodes a novel retinal reductase (RalR1).
+  JOURNAL   J. Biol. Chem. 277 (2002) 28909-15.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:51109]
+ORTHOLOGY   K11146  short-chain dehydrogenase/reductase 3
+            K11152  retinol dehydrogenase 11
+            K11153  retinol dehydrogenase 12
+            K11161  retinol dehydrogenase 13
+GENES       HSA: 112724(RDH13) 145226(RDH12) 51109(RDH11) 9249(DHRS3)
+            PTR: 100615509(RDH12) 452986(RDH11) 456293(RDH13) 737006(DHRS3)
+            PPS: 100971367(DHRS3) 100974938 100976717(RDH12) 100995016(RDH13)
+            GGO: 101132424(RDH13) 101133959(RDH12) 101134301(RDH11) 101136764(DHRS3)
+            PON: 100173396(RDH11) 100442746 100443109 100444779(RDH12) 100446028(DHRS3)
+            MCC: 711195(RDH11) 711438(RDH12) 715548(DHRS3) 722798
+            MCF: 101865597 101866088(ARSDR1) 102118061(RDH13) 102142015(DHRS3)
+            MMU: 108841(Rdh13) 17252(Rdh11) 20148(Dhrs3) 77974(Rdh12)
+            RNO: 313689(Dhrs3) 314264(Rdh12) 361504(Rdh13) 362757(Rdh11)
+            CGE: 100756186 100759393 100759583 100759877
+            HGL: 101707915(Dhrs3) 101715642(Rdh12) 101716026(Rdh13) 101716314(Rdh11)
+            TUP: 102494216(RDH13) 102498009(RDH11) 102498963(RDH12) 102502620(DHRS3)
+            CFA: 480366(RDH11) 487436(DHRS3) 490744(RDH12) 611373(RDH13)
+            AML: 100468936 100469186 100470711 100481198
+            FCA: 101080307(DHRS3) 101093062(RDH13) 101093193(RDH11) 101093615(RDH12)
+            PTG: 102958225(RDH12) 102958792(RDH11) 102961855(RDH13) 102970609(DHRS3)
+            BTA: 281482(DHRS3) 369021(RDH12) 505995(RDH11) 508082(RDH13)
+            BOM: 102265772(DHRS3) 102270792(RDH13) 102270801(RDH11) 102271090(RDH12)
+            PHD: 102321429(RDH12) 102322389(RDH11) 102323197(DHRS3) 102329922(RDH13)
+            CHX: 102171883(RDH11) 102173010(RDH12) 102179583(DHRS3) 102181531(RDH13)
+            SSC: 100153020(RDH12) 100154684(RDH11) 100514967(DHRS3)
+            CFR: 102511414(RDH13) 102516964(RDH12) 102517215(RDH11) 102524578(DHRS3)
+            ECB: 100055280(RDH13) 100055537(DHRS3) 100063295(RDH11) 100063369(RDH12)
+            MYB: 102246028(RDH13) 102248154(DHRS3) 102260151(RDH11) 102260844(RDH12)
+            MYD: 102756510(RDH13) 102762827(DHRS3) 102764631(RDH12) 102765110(RDH11)
+            PALE: 102880345(DHRS3) 102886009(RDH11) 102886424(RDH12) 102890503(RDH13)
+            MDO: 100010099(DHRS3) 100028370(RDH11) 100028379(RDH12)
+            SHR: 100913855(DHRS3) 100923639(RDH11) 100923904(RDH12) 100931844
+            OAA: 100078920(RDH13) 100090663(DHRS3) 100092853 100092857
+            GGA: 419480(DHRS3) 423274(RDH12)
+            MGP: 100540846 100541886
+            TGU: 100221618(DHRS3) 100226769(RDH12)
+            FAB: 101814379(DHRS3) 101816060(RDH12)
+            PHI: 102106104(RDH12) 102110985(DHRS3)
+            APLA: 101792259(DHRS3) 101793409(RDH12)
+            FPG: 101916630(RDH12) 101921484(DHRS3)
+            FCH: 102055890(RDH12) 102058887(DHRS3)
+            CLV: 102087489(DHRS3) 102088180 102088364
+            ASN: 102370531(DHRS3) 102373718(RDH12)
+            PSS: 102445977(DHRS3) 102446647(RDH12)
+            CMY: 102934533(RDH12) 102944040(DHRS3)
+            ACS: 100556987 100557137 100557577
+            XLA: 444106(rdh13) 444269(dhrs3)
+            XTR: 493258(dhrs3) 496409(rdh13)
+            DRE: 436597(rdh12) 450050(dhrs3b)
+            TRU: 101064046 101069118 101071170 101073971
+            MZE: 101467758 101470050 101480615 101486960
+            OLA: 101159580 101164512 101164605
+            XMA: 102221571 102227890 102229237 102234622 102237356
+            LCM: 102347732 102353614(RDH12) 102361459(DHRS3)
+            BFO: BRAFLDRAFT_150455 BRAFLDRAFT_247684 BRAFLDRAFT_68398
+            SPU: 593999
+            ISC: IscW_ISCW008433 IscW_ISCW010995 IscW_ISCW014854 IscW_ISCW016462 IscW_ISCW018859
+            AQU: 100641757
+            NGR: NAEGRDRAFT_44570 NAEGRDRAFT_44843
+DBLINKS     ExplorEnz - The Enzyme Database: 1.1.1.300
+            IUBMB Enzyme Nomenclature: 1.1.1.300
+            ExPASy - ENZYME nomenclature database: 1.1.1.300
+            BRENDA, the Enzyme Database: 1.1.1.300
+///

@@ -1,0 +1,155 @@
+ENTRY       EC 2.4.1.245                Enzyme
+NAME        alpha,alpha-trehalose synthase;
+            trehalose synthase;
+            trehalose synthetase;
+            UDP-glucose:glucose 1-glucosyltransferase;
+            TreT;
+            PhGT;
+            ADP-glucose:D-glucose 1-alpha-D-glucosyltransferase
+CLASS       Transferases;
+            Glycosyltransferases;
+            Hexosyltransferases
+SYSNAME     NDP-alpha-D-glucose:D-glucose 1-alpha-D-glucosyltransferase
+REACTION    NDP-alpha-D-glucose + D-glucose = alpha,alpha-trehalose + NDP [RN:R10525]
+ALL_REAC    R10525 > R08946
+SUBSTRATE   NDP-alpha-D-glucose [CPD:C15541];
+            D-glucose [CPD:C00031]
+PRODUCT     alpha,alpha-trehalose [CPD:C01083];
+            NDP [CPD:C00454]
+COMMENT     Requires Mg2+ for maximal activity [1]. The enzyme-catalysed reaction is reversible [1]. In the reverse direction to that shown above, the enzyme is specific for alpha,alpha-trehalose as substrate, as it cannot use alpha- or beta-paranitrophenyl glucosides, maltose, sucrose, lactose or cellobiose [1]. While the enzymes from the thermophilic bacterium Rubrobacter xylanophilus and the hyperthermophilic archaeon Pyrococcus horikoshii can use ADP-, UDP- and GDP-alpha-D-glucose to the same extent [2,3], that from the hyperthermophilic archaeon Thermococcus litoralis has a marked preference for ADP-alpha-D-glucose [1] and that from the hyperthermophilic archaeon Thermoproteus tenax has a marked preference for UDP-alpha-D-glucose [4].
+HISTORY     EC 2.4.1.245 created 2008, modified 2013
+REFERENCE   1  [PMID:15364950]
+  AUTHORS   Qu Q, Lee SJ, Boos W.
+  TITLE     TreT, a novel trehalose glycosyltransferring synthase of the hyperthermophilic archaeon Thermococcus litoralis.
+  JOURNAL   J. Biol. Chem. 279 (2004) 47890-7.
+  ORGANISM  Thermococcus litoralis
+  SEQUENCE  [tlt:OCC_03547]
+REFERENCE   2  [PMID:15737605]
+  AUTHORS   Ryu SI, Park CS, Cha J, Woo EJ, Lee SB.
+  TITLE     A novel trehalose-synthesizing glycosyltransferase from Pyrococcus horikoshii: molecular cloning and characterization.
+  JOURNAL   Biochem. Biophys. Res. Commun. 329 (2005) 429-36.
+  ORGANISM  Pyrococcus horikoshii
+  SEQUENCE  [pho:PH1035]
+REFERENCE   3  [PMID:18835983]
+  AUTHORS   Nobre A, Alarico S, Fernandes C, Empadinhas N, da Costa MS
+  TITLE     A unique combination of genetic systems for the synthesis of trehalose in Rubrobacter xylanophilus: properties of a rare actinobacterial TreT.
+  JOURNAL   J. Bacteriol. 190 (2008) 7939-46.
+  ORGANISM  Rubrobacter xylanophilus
+  SEQUENCE  [rxy:Rxyl_2973]
+REFERENCE   4  [PMID:18483808]
+  AUTHORS   Kouril T, Zaparty M, Marrero J, Brinkmann H, Siebers B
+  TITLE     A novel trehalose synthesizing pathway in the hyperthermophilic Crenarchaeon Thermoproteus tenax: the unidirectional TreT pathway.
+  JOURNAL   Arch. Microbiol. 190 (2008) 355-69.
+PATHWAY     ec00500  Starch and sucrose metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K13057  trehalose synthase
+GENES       NHL: Nhal_1697 Nhal_3100
+            AFE: Lferr_1740
+            AFR: AFE_2083
+            GEO: Geob_2843
+            GEB: GM18_3944
+            DRT: Dret_0427
+            DAK: DaAHT2_0474
+            DPR: Despr_1889
+            AFW: Anae109_3637
+            MXA: MXAN_0781
+            MFU: LILAB_00130 LILAB_04900
+            MSD: MYSTI_00757
+            CCX: COCOR_06731(treT) COCOR_07114(treT1)
+            HOH: Hoch_4094
+            SAT: SYN_02626
+            DAO: Desac_0491 Desac_2074
+            DTI: Desti_0427 Desti_1352
+            SFU: Sfum_2348
+            NPP: PP1Y_AT23076 PP1Y_AT23089
+            DKU: Desku_2761
+            DGI: Desgi_1716
+            TJR: TherJR_2672
+            TPZ: Tph_c26450(treT)
+            CPO: COPRO5265_1552
+            AMS: AMIS_32200
+            ACTN: L083_2862
+            RXY: Rxyl_2973
+            CWO: Cwoe_5908
+            PUV: PUV_09960
+            EMI: Emin_1550
+            TAI: Taci_0297
+            ACO: Amico_0248
+            AMO: Anamo_1584
+            RBI: RB2501_12587
+            MRS: Murru_0499
+            TRO: trd_0944
+            STI: Sthe_2106
+            HTH: HTH_0760
+            HTE: Hydth_0761
+            TMA: TM0392
+            TMM: Tmari_0389
+            TMI: THEMA_02770
+            TPT: Tpet_0528
+            TLE: Tlet_1841
+            TRQ: TRQ2_0542
+            TNA: CTN_0277
+            TNP: Tnap_0184
+            TTA: Theth_1807
+            TME: Tmel_1821
+            TAF: THA_843
+            FNO: Fnod_0451
+            FPE: Ferpe_0502
+            KOL: Kole_0299
+            MPG: Theba_0438
+            CEX: CSE_06690
+            NDE: NIDE3904
+            TID: Thein_0594
+            TOP: TOPB45_0482
+            TTR: Tter_1718
+            MTP: Mthe_0797
+            MEM: Memar_1763
+            MBG: BN140_0244 BN140_0628 BN140_1261
+            NMG: Nmag_3832
+            HXA: Halxa_0121
+            NGE: Natgr_2896
+            HRU: Halru_0712 Halru_2965
+            NOU: Natoc_3903
+            PHO: PH1035
+            PFU: PF1742
+            PFI: PFC_09885
+            PYS: Py04_1331
+            TSI: TSIB_0361
+            TBA: TERMP_01971
+            TLT: OCC_03547
+            THS: TES1_1927
+            SMR: Smar_0085
+            SHC: Shell_0727
+            SSO: SSO2609
+            SOL: Ssol_0419
+            STO: ST0404
+            SAI: Saci_1827
+            SACN: SacN8_08915
+            SACR: SacRon12I_08925
+            SACS: SUSAZ_08770
+            SIS: LS215_2870
+            SIA: M1425_2703
+            SIM: M1627_2757
+            SID: M164_2688
+            SIY: YG5714_2882
+            SIN: YN1551_3067
+            SII: LD85_3027
+            SIH: SiH_2660
+            SIR: SiRe_2596
+            SIC: SiL_2546
+            MSE: Msed_0129
+            MCN: Mcup_1929
+            AHO: Ahos_0030
+            PAI: PAE1278
+            PCL: Pcal_1359
+            PAS: Pars_0594
+            PYR: P186_2621
+            POG: Pogu_1761
+            TUZ: TUZN_0976
+            TTN: TTX_0217(treT)
+            TPE: Tpen_1592
+DBLINKS     ExplorEnz - The Enzyme Database: 2.4.1.245
+            IUBMB Enzyme Nomenclature: 2.4.1.245
+            ExPASy - ENZYME nomenclature database: 2.4.1.245
+            BRENDA, the Enzyme Database: 2.4.1.245
+///

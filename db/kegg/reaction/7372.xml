@@ -1,0 +1,13 @@
+ENTRY       R07372                      Reaction
+NAME        cholest-5-ene-3beta,27-diol,NADPH:oxygen oxidoreductase (7alpha-hydroxylating)
+DEFINITION  Cholest-5-ene-3beta,26-diol + NADPH + H+ + Oxygen <=> 7alpha,27-Dihydroxycholesterol + NADP+ + H2O
+EQUATION    C15610 + C00005 + C00080 + C00007 <=> C06341 + C00006 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 leave
+            RP04760  C06341_C15610 main [RC:RC00524]
+            RP08491  C00007_C06341 leave
+ENZYME      1.14.13.17      1.14.13.100
+PATHWAY     rn00120  Primary bile acid biosynthesis
+ORTHOLOGY   K00489  cholesterol 7alpha-monooxygenase [EC:1.14.13.17]
+            K07430  oxysterol 7-alpha-hydroxylase [EC:1.14.13.100]
+///

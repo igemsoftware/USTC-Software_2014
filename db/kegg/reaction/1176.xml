@@ -1,0 +1,13 @@
+ENTRY       R01176                      Reaction
+NAME        Butanoate:CoA ligase (AMP-forming)
+DEFINITION  ATP + Butanoic acid + CoA <=> AMP + Diphosphate + Butanoyl-CoA
+EQUATION    C00002 + C00246 + C00010 <=> C00020 + C00013 + C00136
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00093  C00010_C00136 main [RC:RC00004]
+            RP00206  C00136_C00246 main [RC:RC00014]
+ENZYME      6.2.1.2
+PATHWAY     rn00650  Butanoate metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01896  medium-chain acyl-CoA synthetase [EC:6.2.1.2]
+///

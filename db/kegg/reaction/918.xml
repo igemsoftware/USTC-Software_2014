@@ -1,0 +1,28 @@
+ENTRY       R00918                      Reaction
+NAME        propanoyl-CoA:(2S)-methylmalonyl-CoA malonyltransferase (cyclizing);
+            propanoyl-CoA:(2S)-methylmalonyl-CoA 2-C-acyltransferase (decarboxylating, oxoacyl-reducing and cyclizing)
+DEFINITION  Propanoyl-CoA + 6 (S)-Methylmalonyl-CoA + 6 NADPH + 6 H+ <=> 6-Deoxyerythronolide B + 7 CoA + 6 CO2 + H2O + 6 NADP+
+EQUATION    C00100 + 6 C00683 + 6 C00005 + 6 C00080 <=> C03240 + 7 C00010 + 6 C00011 + C00001 + 6 C00006
+COMMENT     EryA MegA
+            multi-step reaction
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00034  C00010_C00100 main [RC:RC00004]
+            RP02480  C00010_C00683 main [RC:RC00004]
+            RP06362  C00100_C03240 main [RC:RC02825]
+            RP06363  C00683_C03240 main [RC:RC02826]
+            RP06365  C00011_C00683 leave
+            RP13341  C00683_C03240 main [RC:RC02828]
+            RP13342  C00683_C03240 main [RC:RC02829]
+            RP13343  C00683_C03240 main [RC:RC02830]
+            RP13344  C00683_C03240 main [RC:RC02826]
+            RP13345  C00683_C03240 main [RC:RC02831]
+            RP14780  C00001_C00683 leave
+ENZYME      2.3.1.94
+PATHWAY     rn00522  Biosynthesis of 12-, 14- and 16-membered macrolides
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K10817  erythronolide synthase [EC:2.3.1.94]
+REFERENCE   1  [PMID:11752428]
+            Tsai SC, Miercke LJ, Krucinski J, Gokhale R, Chen JC, Foster PG, Cane DE, Khosla C, Stroud RM
+            Crystal structure of the macrocycle-forming thioesterase domain of the erythromycin polyketide synthase: versatility from a unique substrate channel.
+            Proc. Natl. Acad. Sci. U. S. A. 98 (2001) 14808-13.
+///

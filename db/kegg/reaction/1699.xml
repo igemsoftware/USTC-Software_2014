@@ -1,0 +1,16 @@
+ENTRY       R01699                      Reaction
+NAME        pyruvate:[dihydrolipoyllysine-residue acetyltransferase]-lipoyllysine 2-oxidoreductase (decarboxylating, acceptor-acetylating)
+DEFINITION  Pyruvate + Enzyme N6-(lipoyl)lysine <=> [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine + CO2
+EQUATION    C00022 + C15972 <=> C16255 + C00011
+COMMENT     pyruvate dehydrogenase complex: pyruvate dehydrogenase
+            a part of multi-step reaction (see R00209, R01699+R02569+R07618)
+            subsequently R02569
+            TPP-dependent enzyme (see R00014+R03270)
+RPAIR       RP05698  C00011_C00022 leave
+            RP10730  C00022_C16255 trans
+            RP12061  C15972_C16255 main [RC:RC00627]
+ENZYME      1.2.4.1
+ORTHOLOGY   K00161  pyruvate dehydrogenase E1 component subunit alpha [EC:1.2.4.1]
+            K00162  pyruvate dehydrogenase E1 component subunit beta [EC:1.2.4.1]
+            K00163  pyruvate dehydrogenase E1 component [EC:1.2.4.1]
+///

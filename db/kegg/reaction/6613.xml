@@ -1,0 +1,14 @@
+ENTRY       R06613                      Reaction
+NAME        5,10-methylenetetrahydrofolate,NADPH:dUMP C-methyltransferase
+DEFINITION  5,10-Methylenetetrahydrofolate + dUMP + NADPH + H+ <=> Tetrahydrofolate + dTMP + NADP+
+EQUATION    C00143 + C00365 + C00005 + C00080 <=> C00101 + C00364 + C00006
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00061  C00101_C00143 main [RC:RC00022]
+            RP01970  C00364_C00365 main [RC:RC00332]
+            RP06842  C00143_C00364 trans
+ENZYME      2.1.1.148
+PATHWAY     rn00240  Pyrimidine metabolism
+            rn00670  One carbon pool by folate
+            rn01100  Metabolic pathways
+ORTHOLOGY   K03465  thymidylate synthase (FAD) [EC:2.1.1.148]
+///

@@ -1,0 +1,16 @@
+ENTRY       R08807                      Reaction
+NAME        p-coumaroyl-CoA:p-coumaroyl-diketide-CoA C-coumaroyltransferase (thioester-hydrolysing and decarboxylating)
+DEFINITION  p-Coumaroyl-diketide-CoA + p-Coumaroyl-CoA + H2O <=> Bisdemethoxycurcumin + 2 CoA + CO2
+EQUATION    C17740 + C00223 + C00001 <=> C17743 + 2 C00010 + C00011
+COMMENT     curcuminoid synthase (CURS)
+RPAIR       RP00144  C00010_C00223 main [RC:RC00004]
+            RP05682  C00001_C00011 leave
+            RP13864  C17740_C17743 main [RC:RC02970]
+            RP13865  C00223_C17743 trans
+            RP13866  C00010_C17740 main [RC:RC00004]
+            RP13867  C00011_C17740 leave
+ENZYME      2.3.1.219
+PATHWAY     rn00945  Stilbenoid, diarylheptanoid and gingerol biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K17211  curcumin/demethoxycurcumin synthase [EC:2.3.1.217 2.3.1.219]
+///

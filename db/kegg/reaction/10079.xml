@@ -1,0 +1,12 @@
+ENTRY       R10079                      Reaction
+NAME        carbamate hydro-lyase;
+            cyanate hydratase
+DEFINITION  Cyanate + HCO3- + H+ <=> Ammonia + 2 CO2
+EQUATION    C01417 + C00288 + C00080 <=> C00014 + 2 C00011
+COMMENT     two-step reaction (see R03546+R07316)
+            bicarbonate is recycled (see R10092)
+RPAIR       RP07593  C00011_C00288 leave [RC:RC02807]
+            RP15870  C00014_C01417 leave
+ENZYME      4.2.1.104
+ORTHOLOGY   K01725  cyanate lyase [EC:4.2.1.104]
+///

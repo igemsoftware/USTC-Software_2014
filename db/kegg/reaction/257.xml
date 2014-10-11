@@ -1,0 +1,15 @@
+ENTRY       R00257                      Reaction
+NAME        Deamido-NAD+:L-glutamine amido-ligase (AMP-forming)
+DEFINITION  ATP + Deamino-NAD+ + L-Glutamine + H2O <=> AMP + Diphosphate + NAD+ + L-Glutamate
+EQUATION    C00002 + C00857 + C00064 + C00001 <=> C00020 + C00013 + C00003 + C00025
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00024  C00025_C00064 main [RC:RC00010]
+            RP00273  C00003_C00857 main [RC:RC00100]
+            RP05695  C00001_C00025 leave
+            RP08456  C00003_C00064 trans
+ENZYME      6.3.5.1
+PATHWAY     rn00760  Nicotinate and nicotinamide metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01950  NAD+ synthase (glutamine-hydrolysing) [EC:6.3.5.1]
+///

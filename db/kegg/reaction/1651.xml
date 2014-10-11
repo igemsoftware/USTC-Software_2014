@@ -1,0 +1,12 @@
+ENTRY       R01651                      Reaction
+NAME        4-methyl-2-oxopentanoate:NAD+ oxidoreductase (CoA-mehtylpropanoylating)
+DEFINITION  4-Methyl-2-oxopentanoate + CoA + NAD+ <=> 3-Methylbutanoyl-CoA + CO2 + NADH + H+
+EQUATION    C00233 + C00010 + C00003 <=> C02939 + C00011 + C00004 + C00080
+COMMENT     multi-step reaction
+            possibly identical to branched-chain alpha-keto acid dehydrogenase complex (see R01702+R04097+R07618)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00248  C00010_C02939 main [RC:RC00004]
+            RP01666  C00233_C02939 trans [RC:RC02833]
+            RP05859  C00011_C00233 leave
+ENZYME      1.2.1.25
+///

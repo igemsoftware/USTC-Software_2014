@@ -1,0 +1,11 @@
+ENTRY       R05837                      Reaction
+NAME        4-(phosphonooxy)threonine:NAD oxidoreductase
+DEFINITION  O-Phospho-4-hydroxy-L-threonine + NAD+ <=> 3-Amino-2-oxopropyl phosphate + NADH + H+ + CO2
+EQUATION    C06055 + C00003 <=> C11638 + C00004 + C00080 + C00011
+COMMENT     two-step reaction (see R05681+R07406)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP05420  C06055_C11638 main [RC:RC01475]
+            RP08890  C00011_C06055 leave
+ENZYME      1.1.1.262
+ORTHOLOGY   K00097  4-hydroxythreonine-4-phosphate dehydrogenase [EC:1.1.1.262]
+///

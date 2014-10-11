@@ -1,0 +1,14 @@
+ENTRY       R05149                      Reaction
+NAME        S-Adenosyl-L-methionine:1-precorrin-6Y C5,15-methyltransferase (C-12-decarboxylating)
+DEFINITION  2 S-Adenosyl-L-methionine + Precorrin 6Y <=> 2 S-Adenosyl-L-homocysteine + Precorrin 8X + CO2
+EQUATION    2 C00019 + C06319 <=> 2 C00021 + C06408 + C00011
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP04749  C06319_C06408 main [RC:RC01279]
+            RP08481  C00011_C06319 leave
+            RP08482  C00019_C06408 trans
+            RP12424  C00019_C06408 trans
+ENZYME      2.1.1.132
+PATHWAY     rn00860  Porphyrin and chlorophyll metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00595  precorrin-6Y C5,15-methyltransferase (decarboxylating) [EC:2.1.1.132]
+///

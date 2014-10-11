@@ -1,0 +1,13 @@
+ENTRY       R09385                      Reaction
+NAME        (S)-limonene,NADH:oxygen oxidoreductase
+DEFINITION  (-)-Limonene + NADH + H+ + Oxygen <=> (4S)-Limonene-1,2-epoxide + NAD+ + H2O
+EQUATION    C00521 + C00004 + C00080 + C00007 <=> C19081 + C00003 + C00001
+COMMENT     NADPH (see R09389)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP14685  C00521_C19081 main [RC:RC01506]
+            RP14686  C00007_C19081 leave
+ENZYME      1.14.13.107
+PATHWAY     rn00903  Limonene and pinene degradation
+ORTHOLOGY   K14733  limonene 1,2-monooxygenase [EC:1.14.13.107]
+///

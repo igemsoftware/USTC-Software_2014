@@ -1,0 +1,10 @@
+ENTRY       R10088                      Reaction
+NAME        D-ribose 5-phosphate,D-glyceraldehyde 3-phosphate pyridoxal 5'-phosphate-lyase
+DEFINITION  D-Ribose 5-phosphate + D-Glyceraldehyde 3-phosphate + Ammonia <=> Pyridoxal phosphate + 4 H2O + Orthophosphate
+EQUATION    C00117 + C00118 + C00014 <=> C00018 + 4 C00001 + C00009
+COMMENT     second step of two-step reaction (see R10089, R00256+R10088)
+RPAIR       RP10677  C00018_C00118 main [RC:RC01783]
+            RP15879  C00018_C00117 main [RC:RC03049]
+            RP15880  C00014_C00018 leave
+ENZYME      4.3.3.6
+///

@@ -1,0 +1,15 @@
+ENTRY       R04094                      Reaction
+NAME        Thioglucoside glucohydrolase
+DEFINITION  Glucobrassicin + H2O <=> 3-Indoleacetonitrile + D-Glucose + Sulfate + Sulfur
+EQUATION    C05837 + C00001 <=> C02938 + C00031 + C00059 + C00087
+COMMENT     multi-step reaction
+            Ref:1. J Agric Food Chem 1996; 1014-1021
+RPAIR       RP03721  C02938_C05837 main [RC:RC01077]
+            RP05679  C00001_C00031 leave
+            RP12542  C00031_C05837 main [RC:RC02128]
+            RP12543  C00059_C05837 leave
+            RP12544  C00087_C05837 leave
+ENZYME      3.2.1.147
+PATHWAY     rn00380  Tryptophan metabolism
+ORTHOLOGY   K01237  myrosinase [EC:3.2.1.147]
+///

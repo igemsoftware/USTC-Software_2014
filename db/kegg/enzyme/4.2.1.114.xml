@@ -1,0 +1,112 @@
+ENTRY       EC 4.2.1.114                Enzyme
+NAME        methanogen homoaconitase;
+            methanogen HACN
+CLASS       Lyases;
+            Carbon-oxygen lyases;
+            Hydro-lyases
+SYSNAME     (R)-2-hydroxybutane-1,2,4-tricarboxylate hydro-lyase [(1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate-forming]
+REACTION    (R)-2-hydroxybutane-1,2,4-tricarboxylate = (1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate (overall reaction) [RN:R09720];
+            (1a) (R)-2-hydroxybutane-1,2,4-tricarboxylate = (Z)-but-1-ene-1,2,4-tricarboxylate + H2O [RN:R03444];
+            (1b) (Z)-but-1-ene-1,2,4-tricarboxylate + H2O = (1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate [RN:R04371]
+ALL_REAC    R03444 R04371 R09720;
+            (other) R10391 R10392 R10393 R10394 R10395 R10396
+SUBSTRATE   (R)-2-hydroxybutane-1,2,4-tricarboxylate [CPD:C01251];
+            (Z)-but-1-ene-1,2,4-tricarboxylate [CPD:C04002];
+            H2O [CPD:C00001]
+PRODUCT     (1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate [CPD:C05662];
+            (Z)-but-1-ene-1,2,4-tricarboxylate [CPD:C04002];
+            H2O [CPD:C00001]
+COMMENT     This enzyme catalyses several reactions in the pathway of coenzyme-B biosynthesis in methanogenic archaea. Requires a [4Fe-4S] cluster for activity. In contrast to EC 4.2.1.36, homoaconitate hydratase, this enzyme can catalyse both the dehydration of (R)-homocitrate to form cis-homoaconitate and the subsequent hydration reaction that forms homoisocitrate. In addition to cis-homoaconitate, the enzyme can also catalyse the hydration of the physiological substrates dihomocitrate and trihomocitrate as well as the non-physiological substrate tetrahomocitrate. cis-Aconitate and threo-DL-isocitrate cannot act as substrates, and (S)-homocitrate and trans-homoaconitate act as inhibitors of the enzyme.
+HISTORY     EC 4.2.1.114 created 2009
+REFERENCE   1  [PMID:18765671]
+  AUTHORS   Drevland RM, Jia Y, Palmer DR, Graham DE
+  TITLE     Methanogen homoaconitase catalyzes both hydrolyase reactions in coenzyme B biosynthesis.
+  JOURNAL   J. Biol. Chem. 283 (2008) 28888-96.
+  ORGANISM  Methanocaldococcus jannaschii
+  SEQUENCE  [mja:MJ_1003 MJ_1271]
+PATHWAY     ec00300  Lysine biosynthesis
+            ec00680  Methane metabolism
+            ec01100  Metabolic pathways
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K16792  methanogen homoaconitase large subunit
+            K16793  methanogen homoaconitase small subunit
+GENES       RRS: RoseRS_1053 RoseRS_1056
+            RCA: Rcas_3472 Rcas_3474
+            CAU: Caur_0329 Caur_0330(leuD)
+            CAG: Cagg_3601(leuD) Cagg_3602
+            CHL: Chy400_0354 Chy400_0355(leuD)
+            HAU: Haur_3302 Haur_3303(leuD)
+            DRA: DR_1610 DR_1614(leuD)
+            DGE: Dgeo_1154(leuD) Dgeo_1156
+            DDR: Deide_13460(leuD) Deide_13470
+            DMR: Deima_1353 Deima_1355
+            DGO: DGo_CA1306 DGo_CA1308
+            DPD: Deipe_2762 Deipe_2764
+            TRA: Trad_1389 Trad_1390
+            TTH: TTC1546 TTC1547
+            TTJ: TTHA1910 TTHA1911
+            TTS: Ththe16_1910 Ththe16_1911
+            TTL: TtJL18_1992 TtJL18_1993
+            TSC: TSC_c01880(hacA) TSC_c01890(hacB)
+            THC: TCCBUS3UF1_21060 TCCBUS3UF1_21070
+            TOS: Theos_1936 Theos_1937
+            MRB: Mrub_2727 Mrub_2728
+            MRE: K649_08895 K649_08900
+            MSV: Mesil_0441 Mesil_0442
+            OPR: Ocepr_1780 Ocepr_1781
+            MHD: Marky_0671 Marky_0672
+            MJA: MJ_1003 MJ_1271
+            MFE: Mefer_0048 Mefer_1231
+            MVU: Metvu_0677 Metvu_0864 Metvu_1303
+            MFS: MFS40622_0030 MFS40622_0660 MFS40622_1618
+            MIF: Metin_0516 Metin_1437
+            MIG: Metig_0050 Metig_0807 Metig_1570
+            MMP: MMP0381 MMP1480
+            MMQ: MmarC5_0098 MmarC5_1257
+            MMX: MmarC6_0529 MmarC6_1194
+            MMZ: MmarC7_0724 MmarC7_1379
+            MMD: GYY_08235
+            MAE: Maeo_0311 Maeo_0652
+            MVN: Mevan_0789 Mevan_1368
+            MVO: Mvol_1623 Mvol_1671
+            MOK: Metok_0062 Metok_0567
+            MAC: MA1223(leuC) MA3085(leuC) MA3751(leuD)
+            MBA: Mbar_A0244 Mbar_A1961 Mbar_A2270
+            MMA: MM_0409 MM_0645
+            MMAZ: MmTuc01_0417 MmTuc01_0660
+            MBU: Mbur_1578 Mbur_2263
+            MMH: Mmah_0127 Mmah_0418
+            MEV: Metev_1312 Metev_1371
+            MZH: Mzhil_0725 Mzhil_1660
+            MPY: Mpsy_2354 Mpsy_2821
+            MHZ: Metho_0481 Metho_0694
+            MTP: Mthe_0788 Mthe_0853
+            MCJ: MCON_0444(leuC1) MCON_1922(leuD1)
+            MHI: Mhar_1525 Mhar_2395
+            MHU: Mhun_1799 Mhun_1800
+            MLA: Mlab_0233 Mlab_0234
+            MEM: Memar_0634 Memar_0635
+            MBG: BN140_1716(leuD3) BN140_1717(leuC3)
+            MPI: Mpet_2489 Mpet_2490
+            MBN: Mboo_0599 Mboo_0600
+            MFO: Metfor_2591 Metfor_2592
+            MPL: Mpal_2143 Mpal_2144
+            MPD: MCP_1961 MCP_1962
+            MEZ: Mtc_1558(leuD-2) Mtc_1559(leuC-2)
+            RCI: RCIX2645(leuD-2) RCIX2646(leuC-2)
+            MTH: MTH1631 MTH829(leuD)
+            MMG: MTBMA_c02160(leuC1) MTBMA_c12270(leuD1)
+            MST: Msp_0374(leuD) Msp_1100(leuC2)
+            MSI: Msm_0723 Msm_0847(leuD)
+            MRU: mru_0384(aksD) mru_1689(aksE)
+            MEB: Abm4_0180(aksD) Abm4_0514(aksE)
+            MEL: Metbo_1944 Metbo_2070
+            MEW: MSWAN_0570 MSWAN_0676
+            METH: MBMB1_0289(leuC2) MBMB1_0696(leuD1)
+            MFV: Mfer_0205 Mfer_0965
+            MKA: MK1206(LeuD_2) MK1208(LeuC_2)
+DBLINKS     ExplorEnz - The Enzyme Database: 4.2.1.114
+            IUBMB Enzyme Nomenclature: 4.2.1.114
+            ExPASy - ENZYME nomenclature database: 4.2.1.114
+            BRENDA, the Enzyme Database: 4.2.1.114
+///

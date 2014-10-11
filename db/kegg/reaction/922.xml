@@ -1,0 +1,10 @@
+ENTRY       R00922                      Reaction
+NAME        2-Methyl-3-oxopropanoate:NAD+ oxidoreductase (CoA-propanoylating)
+DEFINITION  2-Methyl-3-oxopropanoate + CoA + NAD+ <=> Propanoyl-CoA + CO2 + NADH + H+
+EQUATION    C00349 + C00010 + C00003 <=> C00100 + C00011 + C00004 + C00080
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00034  C00010_C00100 main [RC:RC00004]
+            RP01178  C00100_C00349 trans
+            RP06364  C00011_C00349 leave
+ENZYME      1.2.1.27
+///

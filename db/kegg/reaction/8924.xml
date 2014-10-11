@@ -1,0 +1,11 @@
+ENTRY       R08924                      Reaction
+NAME        butanoyl-CoA:carbon-dioxide ligase (ADP-forming)
+DEFINITION  ATP + HCO3- + Butanoyl-CoA + H+ <=> ADP + Orthophosphate + (2S)-Ethylmalonyl-CoA
+EQUATION    C00002 + C00288 + C00136 + C00080 <=> C00008 + C00009 + C18026
+COMMENT     possibly two-step reaction (similar to R00742 or R04385+R04386)
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP13951  C00136_C18026 main [RC:RC00626]
+            RP13952  C00288_C18026 leave
+ENZYME      6.4.1.3
+///

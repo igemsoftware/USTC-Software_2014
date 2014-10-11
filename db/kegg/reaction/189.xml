@@ -1,0 +1,13 @@
+ENTRY       R00189                      Reaction
+NAME        deamido-NAD+:ammonia ligase (AMP-forming)
+DEFINITION  ATP + Deamino-NAD+ + Ammonia <=> AMP + Diphosphate + NAD+
+EQUATION    C00002 + C00857 + C00014 <=> C00020 + C00013 + C00003
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00273  C00003_C00857 main [RC:RC00100]
+            RP08150  C00003_C00014 leave
+ENZYME      6.3.1.5         6.3.5.1
+PATHWAY     rn00760  Nicotinate and nicotinamide metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01916  NAD+ synthase [EC:6.3.1.5]
+///

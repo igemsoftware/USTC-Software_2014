@@ -1,0 +1,13 @@
+ENTRY       R08312                      Reaction
+DEFINITION  Carbamazepine + NADPH + H+ + Oxygen <=> Carbamazepine-10,11-epoxide + NADP+ + H2O
+EQUATION    C06868 + C00005 + C00080 + C00007 <=> C07496 + C00006 + C00001
+COMMENT     CYP3A4, CYP2C8
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP12838  C00007_C07496 leave
+            RP13100  C06868_C07496 main [RC:RC02228]
+ENZYME      1.14.13.-       1.14.14.1
+PATHWAY     rn00982  Drug metabolism - cytochrome P450
+ORTHOLOGY   K17689  cytochrome P450, family 3, subfamily A, polypeptide 4 [EC:1.14.13.32 1.14.13.67 1.14.13.97 1.14.13.157 1.14.13.-]
+            K17718  cytochrome P450, family 2, subfamily C, polypeptide 8 [EC:1.14.14.1]
+///

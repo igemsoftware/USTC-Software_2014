@@ -1,0 +1,14 @@
+ENTRY       R10693                      Reaction
+NAME        N-acetyl-L-aspartyl-L-glutamate:L-glutamate ligase (ADP, N-acetyl-L-aspartyl-L-glutamyl-L-glutamate-forming)
+DEFINITION  ATP + N-Acetylaspartylglutamate + L-Glutamate <=> ADP + Orthophosphate + N-Acetylaspartylglutamylglutamate
+EQUATION    C00002 + C12270 + C00025 <=> C00008 + C00009 + C20776
+COMMENT     two-step reaction (see R10679, R10678+R10693)
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP16838  C00025_C20776 main [RC:RC00064]
+            RP16855  C12270_C20776 main [RC:RC00141]
+ENZYME      6.3.2.42
+PATHWAY     rn00250  Alanine, aspartate and glutamate metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K18311  N-acetylaspartylglutamate/N-acetylaspartylglutamylglutamate synthase [EC:6.3.2.41 6.3.2.42]
+///

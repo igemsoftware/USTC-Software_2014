@@ -1,0 +1,13 @@
+ENTRY       R01351                      Reaction
+NAME        1-acylglycerol acylhydrolase
+DEFINITION  1-Acylglycerol + H2O <=> Glycerol + Fatty acid
+EQUATION    C01885 + C00001 <=> C00116 + C00162
+COMMENT     see R01352 (2-acyl type reaction)
+RPAIR       RP01447  C00116_C01885 main [RC:RC00041]
+            RP01448  C00162_C01885 main [RC:RC00020]
+            RP05684  C00001_C00162 leave
+ENZYME      3.1.1.23
+PATHWAY     rn00561  Glycerolipid metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01054  acylglycerol lipase [EC:3.1.1.23]
+///

@@ -1,0 +1,12 @@
+ENTRY       R00828                      Reaction
+NAME        2-nitrophenol,NADPH:oxygen 2-oxidoreductase (2-hydroxylating, nitrite-forming)
+DEFINITION  2-Nitrophenol + Oxygen + 2 NADPH + 2 H+ <=> Catechol + Nitrite + 2 NADP+ + H2O
+EQUATION    C01988 + C00007 + 2 C00005 + 2 C00080 <=> C00090 + C00088 + 2 C00006 + C00001
+COMMENT     possibly intermediate (see [CPD:C02351])
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP01126  C00090_C01988 main [RC:RC00393]
+            RP05745  C00007_C00090 leave
+            RP06329  C00088_C01988 leave
+ENZYME      1.14.13.31
+///

@@ -1,0 +1,43 @@
+ENTRY       EC 1.1.1.286                Enzyme
+NAME        isocitrate---homoisocitrate dehydrogenase;
+            homoisocitrate---isocitrate dehydrogenase;
+            PH1722
+CLASS       Oxidoreductases;
+            Acting on the CH-OH group of donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     isocitrate(homoisocitrate):NAD+ oxidoreductase (decarboxylating)
+REACTION    (1) isocitrate + NAD+ = 2-oxoglutarate + CO2 + NADH [RN:R00709];
+            (2) (1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate + NAD+ = 2-oxoadipate + CO2 + NADH + H+ [RN:R01934]
+ALL_REAC    R00709 R01934;
+            (other) R01936 R04862
+SUBSTRATE   isocitrate [CPD:C00311];
+            NAD+ [CPD:C00003];
+            (1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate [CPD:C05662]
+PRODUCT     2-oxoglutarate [CPD:C00026];
+            CO2 [CPD:C00011];
+            NADH [CPD:C00004];
+            2-oxoadipate [CPD:C00322];
+            H+ [CPD:C00080]
+COMMENT     Requires Mn2+ and K+ or NH4+ for activity. Unlike EC 1.1.1.41, isocitrate dehydrogenase (NAD+) and EC 1.1.1.87, homoisocitrate dehydrogenase, this enzyme, from Pyrococcus horikoshii, can use both isocitrate and homoisocitrate as substrates. The enzyme may play a role in both the lysine and glutamate biosynthesis pathways.
+HISTORY     EC 1.1.1.286 created 2005
+REFERENCE   1  [PMID:15845397]
+  AUTHORS   Miyazaki K.
+  TITLE     Bifunctional isocitrate-homoisocitrate dehydrogenase: a missing link in the evolution of beta-decarboxylating dehydrogenase.
+  JOURNAL   Biochem. Biophys. Res. Commun. 331 (2005) 341-6.
+  ORGANISM  Pyrococcus horikoshii
+  SEQUENCE  [pho:PH1722]
+PATHWAY     ec00020  Citrate cycle (TCA cycle)
+            ec00300  Lysine biosynthesis
+            ec01100  Metabolic pathways
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K17753  isocitrate--homoisocitrate dehydrogenase
+GENES       PHO: PH1722
+            PAB: PAB0289(leuB-2)
+            PYN: PNA2_0331
+            PYS: Py04_1638
+            TKO: TK0280
+DBLINKS     ExplorEnz - The Enzyme Database: 1.1.1.286
+            IUBMB Enzyme Nomenclature: 1.1.1.286
+            ExPASy - ENZYME nomenclature database: 1.1.1.286
+            BRENDA, the Enzyme Database: 1.1.1.286
+///

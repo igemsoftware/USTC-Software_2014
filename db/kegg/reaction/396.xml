@@ -1,0 +1,14 @@
+ENTRY       R00396                      Reaction
+NAME        L-Alanine:NAD+ oxidoreductase (deaminating)
+DEFINITION  L-Alanine + NAD+ + H2O <=> Pyruvate + Ammonia + NADH + H+
+EQUATION    C00041 + C00003 + C00001 <=> C00022 + C00014 + C00004 + C00080
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00021  C00022_C00041 main [RC:RC00008]
+            RP06140  C00014_C00041 leave
+            RP10324  C00001_C00022 leave
+ENZYME      1.4.1.1
+PATHWAY     rn00250  Alanine, aspartate and glutamate metabolism
+            rn00430  Taurine and hypotaurine metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00259  alanine dehydrogenase [EC:1.4.1.1]
+///

@@ -1,0 +1,50 @@
+ENTRY       EC 2.1.1.251                Enzyme
+NAME        methylated-thiol---coenzyme M methyltransferase;
+            mtsA (gene name)
+CLASS       Transferases;
+            Transferring one-carbon groups;
+            Methyltransferases
+SYSNAME     methylated-thiol:coenzyme M methyltransferase
+REACTION    methanethiol + coenzyme M = methyl-CoM + hydrogen sulfide (overall reaction) [RN:R09997];
+            (1a) methanethiol + a [Co(I) methylated-thiol-specific corrinoid protein] = a [methyl-Co(III) methylated-thiol-specific corrinoid protein] + hydrogen sulfide [RN:R10001];
+            (1b) a [methyl-Co(III) methylated-thiol-specific corrinoid protein] + coenzyme M = methyl-CoM + a [Co(I) methylated-thiol-specific corrinoid protein] [RN:R10000]
+ALL_REAC    R09997 R10000 R10001
+SUBSTRATE   methanethiol [CPD:C00409];
+            coenzyme M [CPD:C19637];
+            [Co(I) methylated-thiol-specific corrinoid protein];
+            [methyl-Co(III) methylated-thiol-specific corrinoid protein]
+PRODUCT     methyl-CoM [CPD:C03920];
+            hydrogen sulfide [CPD:C00283];
+            [methyl-Co(III) methylated-thiol-specific corrinoid protein];
+            [Co(I) methylated-thiol-specific corrinoid protein]
+COMMENT     The enzyme, which is involved in methanogenesis from methylated thiols, such as methane thiol, dimethyl sulfide, and 3-S-methylmercaptopropionate, catalyses two successive steps - the transfer of a methyl group from the substrate to the cobalt cofactor of a methylated-thiol-specific corrinoid protein (MtsB), and the subsequent transfer of the methyl group from the corrinoid protein to coenzyme M. With most other methanogenesis substrates this process is carried out by two different enzymes (for example, EC 2.1.1.90, methanol---corrinoid protein Co-methyltransferase, and EC 2.1.1.246, methylated methanol-specific corrinoid protein:coenzyme M methyltransferase). The cobalt is oxidized during methylation from the Co(I) state to the Co(III) state, and is reduced back to the Co(I) form during demethylation.
+HISTORY     EC 2.1.1.251 created 2012
+REFERENCE   1  [PMID:8932317]
+  AUTHORS   Paul L, Krzycki JA
+  TITLE     Sequence and transcript analysis of a novel Methanosarcina barkeri methyltransferase II homolog and its associated corrinoid protein homologous to methionine synthase.
+  JOURNAL   J. Bacteriol. 178 (1996) 6599-607.
+  ORGANISM  Methanosarcina barkeri
+  SEQUENCE  [mba:Mbar_A3585]
+REFERENCE   2  [PMID:9371433]
+  AUTHORS   Tallant TC, Krzycki JA
+  TITLE     Methylthiol:coenzyme M methyltransferase from Methanosarcina barkeri, an enzyme of methanogenesis from dimethylsulfide and methylmercaptopropionate.
+  JOURNAL   J. Bacteriol. 179 (1997) 6902-11.
+  ORGANISM  Methanosarcina barkeri
+  SEQUENCE  [mba:Mbar_A3585]
+REFERENCE   3  [PMID:11073950]
+  AUTHORS   Tallant TC, Paul L, Krzycki JA
+  TITLE     The MtsA subunit of the methylthiol:coenzyme M methyltransferase of Methanosarcina barkeri catalyses both half-reactions of corrinoid-dependent dimethylsulfide: coenzyme M methyl transfer.
+  JOURNAL   J. Biol. Chem. 276 (2001) 4485-93.
+  ORGANISM  Methanosarcina barkeri
+  SEQUENCE  [mba:Mbar_A3585]
+PATHWAY     ec00920  Sulfur metabolism
+ORTHOLOGY   K16954  methylthiol:coenzyme M methyltransferase
+GENES       MBA: Mbar_A3585
+            MMA: MM_2427(mtsA)
+            MMAZ: MmTuc01_2485
+            MAX: MMALV_13470
+DBLINKS     ExplorEnz - The Enzyme Database: 2.1.1.251
+            IUBMB Enzyme Nomenclature: 2.1.1.251
+            ExPASy - ENZYME nomenclature database: 2.1.1.251
+            BRENDA, the Enzyme Database: 2.1.1.251
+///

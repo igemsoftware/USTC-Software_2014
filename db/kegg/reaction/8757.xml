@@ -1,0 +1,11 @@
+ENTRY       R08757                      Reaction
+NAME        hydroxylamine:ubiquinone oxidoreductase;
+            hydroxylamine oxidase
+DEFINITION  Hydroxylamine + 2 Ubiquinone + H2O <=> Nitrite + 2 Ubiquinol
+EQUATION    C00192 + 2 C00399 + C00001 <=> C00088 + 2 C00390
+COMMENT     a part of multi-step reaction (see R00793, R08757+R02161+R00081)
+            ubiquinol is also oxidezed by ammonia monooxygenase (see R00148) or NADH dehydrogenase (see R02163) in nitrification
+RPAIR       RP00162  C00390_C00399 cofac [RC:RC00061]
+            RP01107  C00088_C00192 leave [RC:RC00383]
+            RP12393  C00001_C00088 leave
+///

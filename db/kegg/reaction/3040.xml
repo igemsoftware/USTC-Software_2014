@@ -1,0 +1,12 @@
+ENTRY       R03040                      Reaction
+NAME        3-Propylmalate glyoxylate-lyase (CoA-pentanoylating)
+DEFINITION  3-Propylmalate + CoA <=> Pentanoyl-CoA + H2O + Glyoxylate
+EQUATION    C02123 + C00010 <=> C00888 + C00001 + C00048
+COMMENT     possibly intermediate
+RPAIR       RP02712  C00010_C00888 main [RC:RC00004]
+            RP02713  C00048_C02123 main [RC:RC00311]
+            RP07310  C00888_C02123 trans
+            RP12735  C00001_C02123 leave
+ENZYME      2.3.3.12
+PATHWAY     rn00630  Glyoxylate and dicarboxylate metabolism
+///

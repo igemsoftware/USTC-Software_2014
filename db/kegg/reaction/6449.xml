@@ -1,0 +1,13 @@
+ENTRY       R06449                      Reaction
+DEFINITION  5-O-beta-D-Mycaminosyltylactone + 2 NADPH + 2 Oxygen + 2 H+ <=> 20-Oxo-5-O-beta-mycaminosyltylactone + 2 NADP+ + 3 H2O
+EQUATION    C12001 + 2 C00005 + 2 C00007 + 2 C00080 <=> C20760 + 2 C00006 + 3 C00001
+COMMENT     cytochrome P450,TylI
+            multi-step reaction
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP16781  C12001_C20760 main [RC:RC03223]
+            RP16782  C00007_C20760 leave
+PATHWAY     rn00522  Biosynthesis of 12-, 14- and 16-membered macrolides
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K15992  cytochrome P450 TylI
+///

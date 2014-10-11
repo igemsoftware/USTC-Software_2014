@@ -1,0 +1,16 @@
+ENTRY       R01300                      Reaction
+NAME        4-Hydroxybenzoate:CoA ligase (AMP-forming)
+DEFINITION  ATP + 4-Hydroxybenzoate + CoA <=> AMP + Diphosphate + 4-Hydroxybenzoyl-CoA
+EQUATION    C00002 + C00156 + C00010 <=> C00020 + C00013 + C02949
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00482  C00010_C02949 main [RC:RC00004]
+            RP00483  C00156_C02949 main [RC:RC00174]
+ENZYME      6.2.1.27
+PATHWAY     rn00362  Benzoate degradation
+            rn00627  Aminobenzoate degradation
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K04105  4-hydroxybenzoate-CoA ligase [EC:6.2.1.27 6.2.1.25]
+///

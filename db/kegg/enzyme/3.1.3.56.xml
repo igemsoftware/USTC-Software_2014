@@ -1,0 +1,161 @@
+ENTRY       EC 3.1.3.56                 Enzyme
+NAME        inositol-polyphosphate 5-phosphatase;
+            type I inositol-polyphosphate phosphatase;
+            inositol trisphosphate phosphomonoesterase;
+            InsP3/Ins(1,3,4,5)P4 5-phosphatase;
+            inosine triphosphatase;
+            D-myo-inositol 1,4,5-triphosphate 5-phosphatase;
+            D-myo-inositol 1,4,5-trisphosphate 5-phosphatase;
+            L-myo-inositol 1,4,5-trisphosphate-monoesterase;
+            inositol phosphate 5-phosphomonoesterase;
+            inositol-1,4,5-trisphosphate/1,3,4,5-tetrakisphosphate 5-phosphatase;
+            Ins(1,4,5)P3 5-phosphatase;
+            D-myo-inositol(1,4,5)/(1,3,4,5)-polyphosphate 5-phosphatase;
+            inositol 1,4,5-trisphosphate phosphatase;
+            inositol polyphosphate-5-phosphatase;
+            myo-inositol-1,4,5-trisphosphate 5-phosphatase;
+            inositol-1,4,5-trisphosphate 5-phosphatase
+CLASS       Hydrolases;
+            Acting on ester bonds;
+            Phosphoric-monoester hydrolases
+SYSNAME     1D-myo-inositol-1,4,5-trisphosphate 5-phosphohydrolase
+REACTION    (1) D-myo-inositol 1,4,5-trisphosphate + H2O = myo-inositol 1,4-bisphosphate + phosphate [RN:R03394];
+            (2) 1D-myo-inositol 1,3,4,5-tetrakisphosphate + H2O = 1D-myo-inositol 1,3,4-trisphosphate + phosphate [RN:R03430]
+ALL_REAC    R03394 R03430
+SUBSTRATE   D-myo-inositol 1,4,5-trisphosphate [CPD:C01245];
+            H2O [CPD:C00001];
+            1D-myo-inositol 1,3,4,5-tetrakisphosphate [CPD:C01272]
+PRODUCT     myo-inositol 1,4-bisphosphate [CPD:C01220];
+            phosphate [CPD:C00009];
+            1D-myo-inositol 1,3,4-trisphosphate [CPD:C01243]
+COMMENT     One mammalian isoform is known. This enzyme is distinguished from the family of enzymes classified under EC 3.1.3.36, phosphoinositide 5-phosphatase, by its inability to dephosphorylate inositol lipids.
+HISTORY     EC 3.1.3.56 created 1989, modified 2002
+REFERENCE   1  [PMID:6285891]
+  AUTHORS   Downes CP, Mussat MC, Michell RH.
+  TITLE     The inositol trisphosphate phosphomonoesterase of the human erythrocyte membrane.
+  JOURNAL   Biochem. J. 203 (1982) 169-77.
+  ORGANISM  Homo sapiens
+REFERENCE   2  [PMID:2540972]
+  AUTHORS   Erneux C, Lemos M, Verjans B, Vanderhaeghen P, Delvaux A, Dumont JE.
+  TITLE     Soluble and particulate Ins(1,4,5)P3/Ins(1,3,4,5)P4 5-phosphatase in bovine brain.
+  JOURNAL   Eur. J. Biochem. 181 (1989) 317-22.
+  ORGANISM  Bos taurus
+REFERENCE   3
+  AUTHORS   Woscholski, R. and Parker, P.J.
+  TITLE     Inositol phosphatases: constructive destruction of phosphoinositides and inositol phosphates.
+  JOURNAL   In: Cockcroft, S. (Ed.), Biology of Phosphoinositides, Biology of Phosphoinositides, Oxford, 2000, p. 320-338.
+REFERENCE   4  [PMID:8198557]
+  AUTHORS   Verjans B, De Smedt F, Lecocq R, Vanweyenberg V, Moreau C, Erneux C.
+  TITLE     Cloning and expression in Escherichia coli of a dog thyroid cDNA encoding a novel inositol 1,4,5-trisphosphate 5-phosphatase.
+  JOURNAL   Biochem. J. 300 ( Pt 1) (1994) 85-90.
+  ORGANISM  Bos taurus, Canis familiaris
+  SEQUENCE  [cfa:403937]
+PATHWAY     ec00562  Inositol phosphate metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K01106  inositol-1,4,5-trisphosphate 5-phosphatase
+GENES       HSA: 27124(INPP5J) 3632(INPP5A) 51763(INPP5K)
+            PTR: 454410(INPP5K) 458767(INPP5J) 747128(INPP5A)
+            PPS: 100976910(INPP5K) 100980932(INPP5J) 100995871(INPP5A)
+            GGO: 101124081(INPP5K) 101127025(INPP5J) 101135588 101137047 101137407
+            PON: 100440857(INPP5A) 100457320(INPP5J)
+            MCC: 718308(INPP5J) 719508 721222(INPP5K)
+            MCF: 101867263 102124549(INPP5A) 102139212(INPP5J)
+            MMU: 170835(Inpp5j) 19062(Inpp5k) 212111(Inpp5a)
+            RNO: 171088(Inpp5j) 287533(Inpp5k) 365382(Inpp5a)
+            CGE: 100760037 100761777 100764873(Inpp5k)
+            HGL: 101704617(Inpp5a) 101719531(Inpp5k) 101726724(Inpp5j)
+            TUP: 102474778(INPP5J) 102485414(INPP5A) 102490192(INPP5K)
+            CFA: 403937(INPP5A) 480647(INPP5K) 486360(INPP5J)
+            AML: 100465896 100467068 100479313
+            FCA: 101083037(INPP5A) 101085842(INPP5K) 101095688(INPP5J)
+            PTG: 102951376(INPP5J) 102951654(INPP5A) 102971559(INPP5K)
+            BTA: 514123(INPP5K) 514307(INPP5J) 615232(INPP5A)
+            BOM: 102279605(INPP5K) 102284010(INPP5J) 102285484
+            PHD: 102318041(INPP5J) 102324043 102330783(INPP5K)
+            CHX: 102171365(INPP5J) 102177657(INPP5K) 102181924
+            SSC: 100462756(INPP5K) 100510987(INPP5J) 100512501(INPP5A)
+            CFR: 102510594(INPP5A) 102513746(INPP5K) 102521192
+            ECB: 100051027(INPP5A) 100058547(INPP5J) 100072370(INPP5K)
+            MYB: 102251847(INPP5K) 102254511 102256211(INPP5J) 102256550(INPP5A)
+            MYD: 102759392(INPP5K) 102770814(INPP5A) 102770954(INPP5J)
+            PALE: 102886374(INPP5K) 102886411(INPP5A) 102894864(INPP5J)
+            MDO: 100028528(INPP5J) 100619651(INPP5K)
+            SHR: 100914690 100916010(INPP5J) 100927613(INPP5K)
+            OAA: 100075999(INPP5J) 100093027(INPP5A)
+            GGA: 416996(INPP5J) 423973(INPP5A) 771549(INPP5K)
+            MGP: 100538550 100546269 100548603(INPP5A)
+            TGU: 100218210(INPP5A) 100221510(INPP5J) 100231908(INPP5K)
+            FAB: 101806643(INPP5K) 101810436(INPP5J) 101814745(INPP5A)
+            PHI: 102099529(INPP5A) 102101343(INPP5K) 102114523(INPP5J)
+            APLA: 101790657(INPP5J) 101798206(INPP5K) 101804204(INPP5A)
+            FPG: 101918225(INPP5K) 101918251(INPP5J) 101924782(INPP5A)
+            FCH: 102050343(INPP5J) 102052658(INPP5K) 102054445(INPP5A)
+            CLV: 102088610(INPP5K) 102090809(INPP5A) 102097794(INPP5J)
+            ASN: 102367974(INPP5K) 102368100 102373735(INPP5A) 102382432(INPP5J) 102387261
+            PSS: 102447470(INPP5A) 102451462 102464080(INPP5K)
+            CMY: 102929515(INPP5A) 102943056(INPP5J) 102944286(INPP5K)
+            ACS: 100552188 100553401 100558191
+            XLA: 447532(inpp5a.1)
+            XTR: 100127685(inpp5k) 548959(inpp5a.1) 779554(inpp5j)
+            DRE: 100037338(inpp5k) 100317089(inpp5jb) 566188(inpp5k) 569568 641571
+            TRU: 101066042 101070549 101070552 101071038 101075361 101077228
+            MZE: 101466368 101467691 101469729 101472350 101478369 101485329
+            OLA: 101156112 101165165 101171587 101173869 101174367
+            XMA: 102217982 102219699 102231889 102234446 102234923 102235414
+            LCM: 102349479 102349489(INPP5K) 102356377(INPP5J) 102366716
+            BFO: BRAFLDRAFT_243393 BRAFLDRAFT_91041 BRAFLDRAFT_96912(Nkx6.2)
+            CIN: 100175970 100178482
+            SPU: 575498 576800
+            DME: Dmel_CG42283(5PtaseI) Dmel_CG9784
+            DPO: Dpse_GA16016 Dpse_GA22035
+            AGA: AgaP_AGAP000203 AgaP_AGAP011644
+            AAG: AaeL_AAEL000840 AaeL_AAEL013891 AaeL_AAEL014247
+            CQU: CpipJ_CPIJ006698 CpipJ_CPIJ008163
+            AME: 406096(GB12514) 408730(GB12104)
+            NVI: 100117462 100123979
+            TCA: 659746 662279
+            BMOR: 101740803 101743221
+            API: 100164453 100164713
+            PHU: Phum_PHUM014890 Phum_PHUM456270
+            ISC: IscW_ISCW016108 IscW_ISCW018837
+            CEL: CELE_C09B8.1(ipp-5)
+            CBR: CBG14816(Cbr-ipp-5)
+            LOA: LOAG_13479
+            TSP: Tsp_00303 Tsp_06539 Tsp_10192
+            SMM: Smp_050830
+            NVE: NEMVE_v1g196982 NEMVE_v1g248701
+            HMG: 101235654
+            TAD: TRIADDRAFT_31282
+            AQU: 100641876
+            CIC: CICLE_v10003465mg
+            TCC: TCM_033974
+            GMX: 100810977
+            FVE: 101310193
+            SLY: 101247013
+            SOT: 102592790
+            SBI: SORBI_01g014230(SORBIDRAFT_01g014230)
+            ZMA: 100279724
+            SMO: SELMODRAFT_408645 SELMODRAFT_421239
+            PPP: PHYPADRAFT_160028
+            SCE: YNL106C(INP52) YOL065C(INP54) YOR109W(INP53)
+            KLA: KLLA0D13860g
+            CGR: CAGL0C05269g
+            PIC: PICST_58872(INP51) PICST_82710(INP52)
+            UMA: UM02595.1
+            MBR: MONBRDRAFT_33207
+            CPV: cgd2_230
+            EHX: EMIHUDRAFT_246601 EMIHUDRAFT_443392
+            GTT: GUITHDRAFT_132445
+            TBR: Tb09.160.4180 Tb11.02.4140
+            TCR: 506297.200 510101.130
+            LMA: LMJF_11_1010
+            LIF: LINJ_11_1010
+            LDO: LDBPK_111010
+            LMI: LMXM_11_1010
+            LBZ: LBRM_11_0810
+DBLINKS     ExplorEnz - The Enzyme Database: 3.1.3.56
+            IUBMB Enzyme Nomenclature: 3.1.3.56
+            ExPASy - ENZYME nomenclature database: 3.1.3.56
+            BRENDA, the Enzyme Database: 3.1.3.56
+            CAS: 106283-14-1
+///

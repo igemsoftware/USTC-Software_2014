@@ -1,0 +1,12 @@
+ENTRY       R10496                      Reaction
+NAME        agmatine:[tRNA(Ile2)]-cytidine34 ligase
+DEFINITION  ATP + Agmatine + [tRNA(Ile2)]-cytidine34 + H2O <=> [tRNA(Ile2)]-2-agmatinylcytidine34 + AMP + 2 Orthophosphate
+EQUATION    C00002 + C00179 + C19722 + C00001 <=> C20580 + C00020 + 2 C00009
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00010  C00002_C00009 ligase
+            RP05688  C00001_C00020 leave
+            RP12391  C00002_C00009 ligase
+            RP16424  C00179_C20580 main [RC:RC01421]
+            RP16425  C19722_C20580 main [RC:RC03167]
+ENZYME      6.3.4.22
+///

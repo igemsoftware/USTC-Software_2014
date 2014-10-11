@@ -1,0 +1,15 @@
+ENTRY       R04125                      Reaction
+NAME        S-aminomethyldihydrolipoylprotein:(6S)-tetrahydrofolate aminomethyltransferase (ammonia-forming)
+DEFINITION  S-Aminomethyldihydrolipoylprotein + Tetrahydrofolate <=> Dihydrolipoylprotein + 5,10-Methylenetetrahydrofolate + Ammonia
+EQUATION    C01242 + C00101 <=> C02972 + C00143 + C00014
+COMMENT     a part step of glycine cleavage system (see R01221, R03425+R04125+R03815)
+RPAIR       RP00061  C00101_C00143 main [RC:RC00022]
+            RP03755  C01242_C02972 main [RC:RC00069]
+            RP07921  C00014_C01242 leave
+            RP07922  C00143_C01242 trans
+ENZYME      2.1.2.10
+PATHWAY     rn00260  Glycine, serine and threonine metabolism
+            rn00670  One carbon pool by folate
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00605  aminomethyltransferase [EC:2.1.2.10]
+///

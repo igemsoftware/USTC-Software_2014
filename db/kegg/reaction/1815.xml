@@ -1,0 +1,14 @@
+ENTRY       R01815                      Reaction
+NAME        L-Tyrosine,tetrahydrobiopterin:oxygen oxidoreductase (3-hydroxylating)
+DEFINITION  Tetrahydrobiopterin + L-Tyrosine + Oxygen <=> 3,4-Dihydroxy-L-phenylalanine + Dihydrobiopterin + H2O
+EQUATION    C00272 + C00082 + C00007 <=> C00355 + C00268 + C00001
+COMMENT     two-step reaction (see R07212+R04734)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00063  C00268_C00272 cofac [RC:RC00023]
+            RP00123  C00082_C00355 main [RC:RC00046]
+            RP05762  C00007_C00355 leave
+ENZYME      1.14.16.2
+PATHWAY     rn00350  Tyrosine metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00501  tyrosine 3-monooxygenase [EC:1.14.16.2]
+///

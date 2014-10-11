@@ -1,0 +1,107 @@
+ENTRY       EC 1.14.13.90               Enzyme
+NAME        zeaxanthin epoxidase;
+            Zea-epoxidase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     zeaxanthin,NAD(P)H:oxygen oxidoreductase
+REACTION    zeaxanthin + 2 NAD(P)H + 2 H+ + 2 O2 = violaxanthin + 2 NAD(P)+ + 2 H2O (overall reaction) [RN:R10070 R10071];
+            (1a) zeaxanthin + NAD(P)H + H+ + O2 = antheraxanthin + NAD(P)+ + H2O [RN:R06946 R07199];
+            (1b) antheraxanthin + NAD(P)H + H+ + O2 = violaxanthin + NAD(P)+ + H2O [RN:R06947 R07200]
+ALL_REAC    R06946 R06947 R07199 R07200 R10070 R10071
+SUBSTRATE   zeaxanthin [CPD:C06098];
+            NADH [CPD:C00004];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            antheraxanthin [CPD:C08579]
+PRODUCT     violaxanthin [CPD:C08614];
+            NAD+ [CPD:C00003];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            antheraxanthin [CPD:C08579]
+COMMENT     A flavoprotein (FAD) that is active under conditions of low light. Along with EC 1.10.99.3, violaxanthin de-epoxidase, this enzyme forms part of the xanthophyll (or violaxanthin) cycle, which is involved in protecting the plant against damage by excess light. It will also epoxidize lutein in some higher-plant species.
+HISTORY     EC 1.14.13.90 created 2005
+REFERENCE   1  [PMID:8521963]
+  AUTHORS   Buch K, Stransky H, Hager A.
+  TITLE     FAD is a further essential cofactor of the NAD(P)H and O2-dependent zeaxanthin-epoxidase.
+  JOURNAL   FEBS. Lett. 376 (1995) 45-8.
+  ORGANISM  Nicotiana plumbaginifolia
+REFERENCE   2  [PMID:9624110]
+  AUTHORS   Bugos RC, Hieber AD, Yamamoto HY.
+  TITLE     Xanthophyll cycle enzymes are members of the lipocalin family, the first identified from plants.
+  JOURNAL   J. Biol. Chem. 273 (1998) 15321-4.
+  ORGANISM  Nicotiana plumbaginifolia
+REFERENCE   3  [PMID:10890531]
+  AUTHORS   Thompson AJ, Jackson AC, Parker RA, Morpeth DR, Burbidge A, Taylor IB.
+  TITLE     Abscisic acid biosynthesis in tomato: regulation of zeaxanthin epoxidase and 9-cis-epoxycarotenoid dioxygenase mRNAs by light/dark cycles, water stress and abscisic acid.
+  JOURNAL   Plant. Mol. Biol. 42 (2000) 833-45.
+  ORGANISM  Nicotiana plumbaginifolia, Zea mays
+REFERENCE   4  [PMID:11058750]
+  AUTHORS   Hieber AD, Bugos RC, Yamamoto HY.
+  TITLE     Plant lipocalins: violaxanthin de-epoxidase and zeaxanthin epoxidase.
+  JOURNAL   Biochim. Biophys. Acta. 1482 (2000) 84-91.
+  ORGANISM  Zea mays
+REFERENCE   5  [PMID:11506368]
+  AUTHORS   Frommolt R, Goss R, Wilhelm C.
+  TITLE     The de-epoxidase and epoxidase reactions of Mantoniella squamata (Prasinophyceae) exhibit different substrate-specific reaction kinetics compared to spinach.
+  JOURNAL   Planta. 213 (2001) 446-56.
+  ORGANISM  Mantoniella squamata, Spinacia oleracea
+REFERENCE   6  [PMID:11506368]
+  AUTHORS   Frommolt R, Goss R, Wilhelm C.
+  TITLE     The de-epoxidase and epoxidase reactions of Mantoniella squamata (Prasinophyceae) exhibit different substrate-specific reaction kinetics compared to spinach.
+  JOURNAL   Planta. 213 (2001) 446-56.
+  ORGANISM  Mantoniella squamata, Spinacia oleracea
+REFERENCE   7  [PMID:12844265]
+  AUTHORS   Matsubara S, Morosinotto T, Bassi R, Christian AL, Fischer-Schliebs E, Luttge U, Orthen B, Franco AC, Scarano FR, Forster B, Pogson BJ, Osmond CB.
+  TITLE     Occurrence of the lutein-epoxide cycle in mistletoes of the Loranthaceae and Viscaceae.
+  JOURNAL   Planta. 217 (2003) 868-79.
+  ORGANISM  Amyema cambagei, Amyema miquelii, Amyema pendulum, Muellerina eucalyptoides, Nuytsia floribunda, Phthirusa ovata, Psittachanthus dichrous, Psittachanthus robustus, Struthanthus flexicaulis, Struthanthus marginatus, Arceuthobium divaricatum, Arceuthobium oxycedri, Phoradendron californicum, Phoradendron dipterum, Phoradendron emarginatum, Phoradendron hexastichon, Phoradendron juniperinum, Phoradendron perrottetii, Phoradendron piauhyanum, Phoradendron piperoides, Phoradendron semivenosum, Phoradendron tunaeforme, Phoradendron undulatum, Viscum album, Exocarpos cupressiformis, Melampyrum pratense, Cassytha filiformis
+PATHWAY     ec00906  Carotenoid biosynthesis
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K09838  zeaxanthin epoxidase
+GENES       ATH: AT5G67030(ABA1)
+            ALY: ARALYDRAFT_496897
+            CRB: CARUB_v10026026mg
+            EUS: EUTSA_v10003769mg
+            CIT: 102577984(ZEP) 102619293
+            CIC: CICLE_v10025089mg CICLE_v10027323mg
+            TCC: TCM_000621
+            GMX: 100778602 100800186(ZEP) 100820171
+            MTR: MTR_142s1020 MTR_4g022850 MTR_5g017330 MTR_5g017350
+            CAM: 101492490 101503567
+            FVE: 101291766 101306850
+            CSV: 101212903
+            RCU: RCOM_1408430 RCOM_1771660
+            POP: POPTR_0001s23620g POPTR_0005s18160g(POPTRDRAFT_760467) POPTR_0007s10980g(POPTRDRAFT_764537)
+            VVI: 100232944(ZEP) 100257960
+            SLY: 544162
+            SOT: 102592281
+            OSA: 4335984
+            DOSA: Os04t0448900-00(Os04g0448900)
+            OBR: 102712906
+            BDI: 100835175
+            ZMA: 100285076
+            SITA: 101780465 101781949
+            ATR: s00022p00182600(AMTR_s00022p00182600) s00076p00039590(AMTR_s00076p00039590)
+            SMO: SELMODRAFT_172667(Zep1-1) SELMODRAFT_234460(Zep1-2)
+            PPP: PHYPADRAFT_186228
+            CRE: CHLREDRAFT_53522(ZEP1)
+            VCN: VOLCADRAFT_75879
+            OLU: OSTLU_1611(ZEP)
+            OTA: Ot02g04620(Aba2) Ot16g00660
+            MIS: MICPUN_50838 MICPUN_82567(ZEP1)
+            MPP: MICPUCDRAFT_19991(ZEP1) MICPUCDRAFT_24859(ZEP2)
+            CSL: COCSUDRAFT_42814
+            CVR: CHLNCDRAFT_138731(ZEP)
+            PTI: PHATRDRAFT_45845(ZEP1) PHATRDRAFT_56488(ZEP2) PHATRDRAFT_56492(ZEP3)
+            TPS: THAPSDRAFT_261390 THAPSDRAFT_270370
+            EHX: EMIHUDRAFT_440259 EMIHUDRAFT_444553 EMIHUDRAFT_456674 EMIHUDRAFT_457120 EMIHUDRAFT_462793 EMIHUDRAFT_463185
+            GTT: GUITHDRAFT_159412(ZEP)
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.90
+            IUBMB Enzyme Nomenclature: 1.14.13.90
+            ExPASy - ENZYME nomenclature database: 1.14.13.90
+            BRENDA, the Enzyme Database: 1.14.13.90
+            CAS: 149718-34-3
+///

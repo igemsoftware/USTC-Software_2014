@@ -1,0 +1,13 @@
+ENTRY       R02223                      Reaction
+NAME        Stearoyl-CoA:malonyl-CoA C-acyltransferase (decarboxylating, oxoacyl- and enoyl-reducing)
+DEFINITION  Stearoyl-CoA + Malonyl-CoA + 2 NADH + 2 H+ <=> Eicosanoyl-CoA + CO2 + 2 NAD+ + CoA + H2O
+EQUATION    C00412 + C00083 + 2 C00004 + 2 C00080 <=> C02041 + C00011 + 2 C00003 + C00010 + C00001
+COMMENT     NADPH (see R02224)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00397  C00083_C02041 trans
+            RP00398  C00010_C00412 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP05975  C00001_C00412 leave
+            RP05980  C00412_C02041 trans
+ENZYME      2.3.1.119
+///

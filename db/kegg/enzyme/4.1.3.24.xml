@@ -1,0 +1,137 @@
+ENTRY       EC 4.1.3.24                 Enzyme
+NAME        malyl-CoA lyase;
+            malyl-coenzyme A lyase;
+            (3S)-3-carboxy-3-hydroxypropanoyl-CoA glyoxylate-lyase;
+            mclA (gene name);
+            mcl1 (gene name);
+            (3S)-3-carboxy-3-hydroxypropanoyl-CoA glyoxylate-lyase (acetyl-CoA-forming);
+            L-malyl-CoA lyase
+CLASS       Lyases;
+            Carbon-carbon lyases;
+            Oxo-acid-lyases
+SYSNAME     (S)-malyl-CoA glyoxylate-lyase (acetyl-CoA-forming)
+REACTION    (1) (S)-malyl-CoA = acetyl-CoA + glyoxylate [RN:R00473];
+            (2) (2R,3S)-2-methylmalyl-CoA = propanoyl-CoA + glyoxylate [RN:R00934]
+ALL_REAC    R00473 R00934;
+            (other) R00237
+SUBSTRATE   (S)-malyl-CoA [CPD:C04348];
+            (2R,3S)-2-methylmalyl-CoA [CPD:C06027]
+PRODUCT     acetyl-CoA [CPD:C00024];
+            glyoxylate [CPD:C00048];
+            propanoyl-CoA [CPD:C00100]
+COMMENT     The enzyme from the bacterium Chloroflexus aurantiacus, which participates in the 3-hydroxypropanoate cycle for carbon assimilation, also has the activity of EC 4.1.3.25, (3S)-citramalyl-CoA lyase [2,4]. The enzymes from Rhodobacter species are part of acetate assimilation pathways [3,5]. The reactions are reversible.
+HISTORY     EC 4.1.3.24 created 1972, modified 2014
+REFERENCE   1  [PMID:14285256]
+  AUTHORS   TUBOI S, KIKUCHI G.
+  TITLE     ENZYMIC CLEAVAGE OF MALYTL-COENZYME A INTO ACETYL-COENZYME A AND GLYOXYLIC ACID.
+  JOURNAL   Biochim. Biophys. Acta. 96 (1965) 148-53.
+  ORGANISM  Rhodopseudomonas sphaeroides
+REFERENCE   2  [PMID:12374834]
+  AUTHORS   Herter S, Busch A, Fuchs G.
+  TITLE     L-Malyl-coenzyme A lyase/beta-methylmalyl-coenzyme A lyase from Chloroflexus aurantiacus, a bifunctional enzyme involved in autotrophic CO(2) fixation.
+  JOURNAL   J. Bacteriol. 184 (2002) 5999-6006.
+  ORGANISM  Chloroflexus aurantiacus
+  SEQUENCE  [cau:Caur_0174]
+REFERENCE   3  [PMID:15687206]
+  AUTHORS   Meister M, Saum S, Alber BE, Fuchs G
+  TITLE     L-malyl-coenzyme A/beta-methylmalyl-coenzyme A lyase is involved in acetate assimilation of the isocitrate lyase-negative bacterium Rhodobacter capsulatus.
+  JOURNAL   J. Bacteriol. 187 (2005) 1415-25.
+  ORGANISM  Rhodobacter capsulatus
+  SEQUENCE  [rcp:RCAP_rcc03164]
+REFERENCE   4  [PMID:17259315]
+  AUTHORS   Friedmann S, Alber BE, Fuchs G
+  TITLE     Properties of R-citramalyl-coenzyme A lyase and its role in the autotrophic 3-hydroxypropionate cycle of Chloroflexus aurantiacus.
+  JOURNAL   J. Bacteriol. 189 (2007) 2906-14.
+  ORGANISM  Chloroflexus aurantiacus
+REFERENCE   5  [PMID:20047909]
+  AUTHORS   Erb TJ, Frerichs-Revermann L, Fuchs G, Alber BE
+  TITLE     The apparent malate synthase activity of Rhodobacter sphaeroides is due to two paralogous enzymes, (3S)-Malyl-coenzyme A (CoA)/{beta}-methylmalyl-CoA lyase and  (3S)- Malyl-CoA thioesterase.
+  JOURNAL   J. Bacteriol. 192 (2010) 1249-58.
+  ORGANISM  Rhodobacter sphaeroides
+  SEQUENCE  [rsp:RSP_1771]
+PATHWAY     ec00630  Glyoxylate and dicarboxylate metabolism
+            ec00660  C5-Branched dibasic acid metabolism
+            ec00680  Methane metabolism
+            ec00720  Carbon fixation pathways in prokaryotes
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K08691  malyl-CoA lyase
+            K14450  L-malyl-CoA/beta-methylmalyl-CoA lyase
+GENES       MCA: MCA1739
+            CNC: CNE_BB1p10140(mcl)
+            BPH: Bphy_5924
+            MPT: Mpe_A3254
+            APP: CAP2UW1_2508
+            PLA: Plav_3098
+            XAU: Xaut_3870
+            AZC: AZC_1227
+            MEX: Mext_1802 Mext_3917
+            MEA: Mex_1p1733(mcl) Mex_1p4295
+            MDI: METDI2485(mcl) METDI4906
+            MCH: Mchl_2138 Mchl_4285
+            MRD: Mrad2831_1650 Mrad2831_3663
+            MET: M446_6315 M446_6559
+            MPO: Mpop_1754 Mpop_4390
+            MNO: Mnod_7119 Mnod_7178
+            MSL: Msil_1719
+            HDN: Hden_1659
+            HDT: HYPDE_30183
+            HMC: HYPMC_1941
+            HNI: W911_10365
+            RVA: Rvan_1682
+            MSC: BN69_1171 BN69_2035
+            CCR: CC_2999
+            CCS: CCNA_03094
+            CAK: Caul_0731
+            CSE: Cseg_3490
+            SIL: SPO1565 SPO3608(mclA)
+            SIT: TM1040_3165
+            RSP: RSP_1771
+            RSH: Rsph17029_0417
+            RSQ: Rsph17025_2481
+            RSK: RSKD131_0071
+            RCP: RCAP_rcc03164(citE2)
+            JAN: Jann_0471
+            RDE: RD1_1001(citE) RD1_1160(mclA) RD1_4242(mclA)
+            RLI: RLO149_c002070(mcl1) RLO149_c036850(mcl2)
+            PDE: Pden_0799
+            PAMI: JCM7686_2763
+            DSH: Dshi_3050(citE2)
+            PSF: PSE_3192
+            LMD: METH_18390
+            HNE: HNE_0078(mclA)
+            HBA: Hbal_0778
+            GBE: GbCGDNIH1_0055
+            GBH: GbCGDNIH2_0055
+            RRU: Rru_A0217
+            RRF: F11_01090
+            RPM: RSPPHO_00107
+            MAG: amb3977
+            MGY: MGMSR_3257
+            TMO: TMO_0350(citE)
+            PGV: SL003B_2239
+            SCT: SCAT_4364
+            SCY: SCATT_43520
+            SALU: DC74_4078
+            ICA: Intca_2587
+            NCA: Noca_4393
+            FRA: Francci3_2805
+            FSY: FsymDg_0509
+            AMD: AMED_0079(citE)
+            AMN: RAM_00395
+            AMM: AMES_0076(citE)
+            AMZ: B737_0077(citE)
+            AOI: AORI_0068(mcl)
+            KAL: KALB_2473
+            CWO: Cwoe_4213
+            AYM: YM304_14270
+            RRS: RoseRS_4173
+            RCA: Rcas_0912
+            CAU: Caur_0174
+            CAG: Cagg_1328
+            CHL: Chy400_0187
+DBLINKS     ExplorEnz - The Enzyme Database: 4.1.3.24
+            IUBMB Enzyme Nomenclature: 4.1.3.24
+            ExPASy - ENZYME nomenclature database: 4.1.3.24
+            BRENDA, the Enzyme Database: 4.1.3.24
+            CAS: 37290-67-8
+///

@@ -1,0 +1,15 @@
+ENTRY       R05225                      Reaction
+DEFINITION  Adenosyl cobyrinate a,c diamide + 4 L-Glutamine + 4 ATP + 4 H2O <=> Adenosyl cobyrinate hexaamide + 4 L-Glutamate + 4 Orthophosphate + 4 ADP
+EQUATION    C06506 + 4 C00064 + 4 C00002 + 4 C00001 <=> C06507 + 4 C00025 + 4 C00009 + 4 C00008
+COMMENT     multi-step reaction
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00024  C00025_C00064 main [RC:RC00010]
+            RP04825  C06506_C06507 main [RC:RC01302]
+            RP05695  C00001_C00025 leave
+            RP08536  C00064_C06507 trans
+ENZYME      6.3.5.10
+PATHWAY     rn00860  Porphyrin and chlorophyll metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K02232  adenosylcobyric acid synthase [EC:6.3.5.10]
+///

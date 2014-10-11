@@ -1,0 +1,11 @@
+ENTRY       R00379                      Reaction
+NAME        Deoxynucleoside triphosphate:DNA deoxynucleotidyltransferase
+DEFINITION  Deoxynucleoside triphosphate + DNA(n) <=> Diphosphate + DNA(n+1)
+EQUATION    C00677 + C00039(n) <=> C00013 + C00039(n+1)
+COMMENT     DNA-directed (ec 2.7.7.7)
+            RNA-directed (ec 2.7.7.49)
+            non-template (ec 2.7.7.31)
+RPAIR       RP05622  C00039_C00677 trans
+            RP06136  C00013_C00677 leave
+ENZYME      2.7.7.7         2.7.7.31        2.7.7.49
+///

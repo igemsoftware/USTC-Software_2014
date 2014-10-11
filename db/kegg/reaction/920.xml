@@ -1,0 +1,12 @@
+ENTRY       R00920                      Reaction
+NAME        Propanoate:CoA ligase (ADP-forming)
+DEFINITION  ATP + Propanoate + CoA <=> ADP + Orthophosphate + Propanoyl-CoA
+EQUATION    C00002 + C00163 + C00010 <=> C00008 + C00009 + C00100
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00034  C00010_C00100 main [RC:RC00004]
+            RP00117  C00100_C00163 main [RC:RC00014]
+ENZYME      6.2.1.13
+PATHWAY     rn00640  Propanoate metabolism
+ORTHOLOGY   K01905  acetyl-CoA synthetase (ADP-forming) [EC:6.2.1.13]
+///

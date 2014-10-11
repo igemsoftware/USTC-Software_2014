@@ -1,0 +1,15 @@
+ENTRY       R07987                      Reaction
+NAME        malonyl-CoA:cinnamoyl-CoA malonyltransferase (cyclizing)
+DEFINITION  Cinnamoyl-CoA + 3 Malonyl-CoA <=> Pinocembrin chalcone + 4 CoA + 3 CO2
+EQUATION    C00540 + 3 C00083 <=> C16404 + 4 C00010 + 3 C00011
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP00481  C00010_C00540 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP10911  C00083_C16404 trans
+            RP11170  C00540_C16404 main [RC:RC02726]
+            RP12266  C00083_C16404 trans
+            RP12267  C00083_C16404 trans
+ENZYME      2.3.1.74
+PATHWAY     rn00941  Flavonoid biosynthesis
+ORTHOLOGY   K00660  chalcone synthase [EC:2.3.1.74]
+///

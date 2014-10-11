@@ -1,0 +1,232 @@
+ENTRY       EC 1.14.18.1                Enzyme
+NAME        tyrosinase;
+            monophenol monooxygenase;
+            phenolase;
+            monophenol oxidase;
+            cresolase;
+            monophenolase;
+            tyrosine-dopa oxidase;
+            monophenol monooxidase;
+            monophenol dihydroxyphenylalanine:oxygen oxidoreductase;
+            N-acetyl-6-hydroxytryptophan oxidase;
+            monophenol, dihydroxy-L-phenylalanine oxygen oxidoreductase;
+            o-diphenol:O2 oxidoreductase;
+            phenol oxidase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With another compound as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     L-tyrosine,L-dopa:oxygen oxidoreductase
+REACTION    (1) L-tyrosine + O2 = dopaquinone + H2O (overall reaction);
+            (1a) L-tyrosine + 1/2 O2 = L-dopa [RN:R00031];
+            (1b) L-dopa + 1/2 O2 = dopaquinone + H2O [RN:R00045];
+            (2) 2 L-dopa + O2 = 2 dopaquinone + 2 H2O
+ALL_REAC    R00031 R00045;
+            (other) R00058 R00731 R02078 R02363 R02383 R02950 R04693 R04884
+SUBSTRATE   L-tyrosine [CPD:C00082];
+            O2 [CPD:C00007];
+            L-dopa [CPD:C00355]
+PRODUCT     dopaquinone [CPD:C00822];
+            H2O [CPD:C00001];
+            L-dopa [CPD:C00355]
+COMMENT     A type III copper protein found in a broad variety of bacteria, fungi, plants, insects, crustaceans, and mammals, which is involved in the synthesis of betalains and melanin. The enzyme, which is activated upon binding molecular oxygen, can catalyse both a monophenolase reaction cycle (reaction 1) or a diphenolase reaction cycle (reaction 2). During the monophenolase cycle, one of the bound oxygen atoms is transferred to a monophenol (such as L-tyrosine), generating an o-diphenol intermediate, which is subsequently oxidized to an o-quinone and released, along with a water molecule. The enzyme remains in an inactive deoxy state, and is restored to the active oxy state by the binding of a new oxygen molecule. During the diphenolase cycle the enzyme binds an external diphenol molecule (such as L-dopa) and oxidizes it to an o-quinone that is released along with a water molecule, leaving the enzyme in the intermediate met state. The enzyme then binds a second diphenol molecule and repeats the process, ending in a deoxy state [7].
+            The second reaction is identical to that catalysed by the related enzyme catechol oxidase (EC 1.10.3.1). However, the latter can not catalyse the hydroxylation or monooxygenation of monophenols.
+HISTORY     EC 1.14.18.1 created 1972, modified 1976, modified 1980 (EC 1.14.17.2 created 1972, incorporated 1984), modified 2012
+REFERENCE   1
+  AUTHORS   Dawson, C.R. and Tarpley, W.B.
+  TITLE     The copper oxidases.
+  JOURNAL   In: Sumner, J.B. and Myrback, K. (Eds.), The Enzymes, 1st ed., vol. 2, Academic Press, New York, 1951, p. 454-498.
+REFERENCE   2  [PMID:5842066]
+  AUTHORS   Patil SS, Zucker M.
+  TITLE     Potato phenolases. Purification and properties.
+  JOURNAL   J. Biol. Chem. 240 (1965) 3938-43.
+  ORGANISM  Solanum tuberosum
+REFERENCE   3  [PMID:13972077]
+  AUTHORS   POMERANTZ SH.
+  TITLE     Separation, purification, and properties of two tyrosinases from hamster melanoma.
+  JOURNAL   J. Biol. Chem. 238 (1963) 2351-7.
+  ORGANISM  hamster
+REFERENCE   4  [PMID:13972077]
+  AUTHORS   POMERANTZ SH.
+  TITLE     Separation, purification, and properties of two tyrosinases from hamster melanoma.
+  JOURNAL   J. Biol. Chem. 238 (1963) 2351-7.
+  ORGANISM  hamster
+REFERENCE   5
+  AUTHORS   Robb, D.A.
+  TITLE     `Tyrosinase.
+  JOURNAL   In: Lontie, R. (Ed.), Copper Proteins and Copper Enzymes, vol. 2, CRC Press, Boca Raton, FL, 1984, p. 207-240.
+REFERENCE   6
+  AUTHORS   Robb, D.A.
+  TITLE     `Tyrosinase.
+  JOURNAL   In: Lontie, R. (Ed.), Copper Proteins and Copper Enzymes, vol. 2, CRC Press, Boca Raton, FL, 1984, p. 207-240.
+REFERENCE   7  [PMID:7873577]
+  AUTHORS   Sanchez-Ferrer A, Rodriguez-Lopez JN, Garcia-Canovas F, Garcia-Carmona F
+  TITLE     Tyrosinase: a comprehensive review of its mechanism.
+  JOURNAL   Biochim. Biophys. Acta. 1247 (1995) 1-11.
+REFERENCE   8  [PMID:7873577]
+  AUTHORS   Sanchez-Ferrer A, Rodriguez-Lopez JN, Garcia-Canovas F, Garcia-Carmona F
+  TITLE     Tyrosinase: a comprehensive review of its mechanism.
+  JOURNAL   Biochim. Biophys. Acta. 1247 (1995) 1-11.
+REFERENCE   9  [PMID:8660589]
+  AUTHORS   Steiner U, Schliemann W, Strack D
+  TITLE     Assay for tyrosine hydroxylation activity of tyrosinase from betalain-forming plants and cell cultures.
+  JOURNAL   Anal. Biochem. 238 (1996) 72-5.
+REFERENCE   10 [PMID:8660589]
+  AUTHORS   Steiner U, Schliemann W, Strack D
+  TITLE     Assay for tyrosine hydroxylation activity of tyrosinase from betalain-forming plants and cell cultures.
+  JOURNAL   Anal. Biochem. 238 (1996) 72-5.
+REFERENCE   11 [PMID:21416076]
+  AUTHORS   Rolff M, Schottenheim J, Decker H, Tuczek F
+  TITLE     Copper-O2 reactivity of tyrosinase models towards external monophenolic substrates: molecular mechanism and comparison with the enzyme.
+  JOURNAL   Chem. Soc. Rev. 40 (2011) 4077-98.
+REFERENCE   12 [PMID:21416076]
+  AUTHORS   Rolff M, Schottenheim J, Decker H, Tuczek F
+  TITLE     Copper-O2 reactivity of tyrosinase models towards external monophenolic substrates: molecular mechanism and comparison with the enzyme.
+  JOURNAL   Chem. Soc. Rev. 40 (2011) 4077-98.
+PATHWAY     ec00350  Tyrosine metabolism
+            ec00740  Riboflavin metabolism
+            ec00950  Isoquinoline alkaloid biosynthesis
+            ec00965  Betalain biosynthesis
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K00505  tyrosinase
+GENES       HSA: 7299(TYR)
+            PTR: 451473(TYR)
+            PPS: 100989128(TYR)
+            GGO: 101148846(TYR)
+            PON: 100453479(TYR)
+            MCC: 705792(TYR)
+            MCF: 102141480(TYR)
+            MMU: 22173(Tyr)
+            RNO: 308800(Tyr)
+            CGE: 100752294(Tyr)
+            HGL: 101696609(Tyr)
+            TUP: 102485831(TYR)
+            CFA: 403405(TYR)
+            AML: 100475022
+            FCA: 751100(TYR)
+            PTG: 102957473(TYR)
+            BTA: 280951(TYR)
+            BOM: 102272000(TYR)
+            PHD: 102324178(TYR)
+            CHX: 102182281(TYR)
+            SSC: 407745(TYR)
+            CFR: 102509800(TYR)
+            ECB: 100060227(TYR)
+            MYB: 102260258(TYR)
+            MYD: 102762530(TYR)
+            PALE: 102894376(TYR)
+            OAA: 100080574(TYR)
+            GGA: 373971(TYR)
+            MGP: 100538462
+            TGU: 100225893(TYR)
+            FAB: 101814779(TYR)
+            PHI: 102104800(TYR)
+            APLA: 101791683(TYR)
+            FPG: 101915664(TYR)
+            FCH: 102054260(TYR)
+            CLV: 102093703(TYR)
+            ASN: 102385049(TYR)
+            PSS: 102454532(TYR)
+            ACS: 100552257
+            XTR: 100125152(tyr)
+            DRE: 30207(tyr)
+            TRU: 101064772
+            MZE: 101476383
+            OLA: 100049427(tyr)
+            XMA: 102222951
+            LCM: 102365572(TYR)
+            BFO: BRAFLDRAFT_57224
+            DME: Dmel_CG42639(proPO-A1) Dmel_CG42640(proPO59)
+            DPO: Dpse_GA19121
+            DER: Dere_GG22822(Dere_Dox-A3)
+            DSI: Dsim_GD11733
+            DYA: Dyak_GE14257
+            CEL: CELE_C34G6.2(tyr-4)
+            CBR: CBG04025(Cbr-tyr-4)
+            SMM: Smp_013540
+            NCR: NCU00776 NCU11382
+            PAN: PODANSg09832 PODANSg3516 PODANSg6905
+            MGR: MGG_01571 MGG_05914 MGG_06169 MGG_08455 MGG_10585
+            FGR: FG01988.1 FG03801.1 FG11450.1
+            SSL: SS1G_14461
+            BFU: BC1G_01000 BC1G_15125 BC1G_15830
+            ANI: AN2799.2 AN5311.2 AN9388.2
+            AFM: AFUA_1G17430 AFUA_3G01070
+            AOR: AOR_1_1028194(AO090012000590) AOR_1_662164(AO090001000383) AOR_1_722144(AO090023000424) AOR_1_932024(AO090010000557)
+            ANG: ANI_1_1250014(An01g09220) ANI_1_1798134(An15g07670) ANI_1_26034(An03g00280)
+            AFV: AFLA_018450 AFLA_067860 AFLA_120380 AFLA_137910
+            ACT: ACLA_063650
+            NFI: NFIA_001930
+            PCS: Pc15g00990 Pc22g18500
+            CIM: CIMG_07314
+            CPW: CPC735_001120 CPC735_018390 CPC735_043510
+            URE: UREG_04223 UREG_07862
+            PNO: SNOG_04287 SNOG_04568 SNOG_13474
+            TML: GSTUM_00004221001
+            LBC: LACBIDRAFT_252993(R2) LACBIDRAFT_295069(R1)
+            MPR: MPER_00316 MPER_10173 MPER_11172
+            CCI: CC1G_05599 CC1G_14163
+            EIN: Eint_101560
+            EHE: EHEL_101630
+            PTI: PHATRDRAFT_40017(TYR1)
+            PFO: Pfl01_3461
+            PFC: PflA506_4965(melC2)
+            CVI: CV_3262
+            RSO: RSc1501(mel)
+            RSC: RCFBP_11480
+            RSL: RPSI07_1536
+            RSN: RSPO_c01550(mel)
+            BPM: BURPS1710b_A0806
+            BPL: BURPS1106A_A2352
+            BTE: BTH_II0649
+            BUR: Bcep18194_C6986
+            BPH: Bphy_4746
+            NEU: NE1241
+            NMU: Nmul_A2156
+            RET: RHE_PD00076
+            RPB: RPB_2167
+            NWI: Nwi_0968
+            NHA: Nham_1018 Nham_2941
+            MET: M446_5336
+            MSC: BN69_0277
+            BCA: BCE_A0211
+            BCU: BCAH820_B0256
+            BTB: BMB171_P0244
+            BTHT: H175_328p166
+            BMQ: BMQ_3385
+            BMD: BMD_3389
+            BMH: BMWSH_1797(melC1)
+            CEF: CE1756
+            SCO: SCO2700(melC2)
+            SMA: SAV_1137(melC1) SAV_5362(melC1-2)
+            SGR: SGR_2447(melC2-2) SGR_527(melC2-1)
+            SCB: SCAB_59241(melC2) SCAB_85681(melC2B)
+            SSX: SACTE_0308
+            SFA: Sfla_5963
+            SHY: SHJG_4198
+            SHO: SHJGH_3963
+            SVE: SVEN_4652 SVEN_6839
+            SDV: BN159_5596(melC2) BN159_8269(melC2)
+            STRP: F750_0607
+            SFI: SFUL_6847
+            SCI: B446_04405 B446_14305
+            FRA: Francci3_0237
+            FRE: Franean1_0747
+            FAL: FRAAL0531
+            FSY: FsymDg_3452
+            SESP: BN6_45030(melC2)
+            ASE: ACPL_5017(griF)
+            RXY: Rxyl_1947
+            SUS: Acid_5081
+            SACI: Sinac_0162
+            AMR: AM1_B0356
+            NPU: Npun_R1263 Npun_R2099
+            DFE: Dfer_1836
+            CAO: Celal_3121
+            NIR: NSED_00525
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.18.1
+            IUBMB Enzyme Nomenclature: 1.14.18.1
+            ExPASy - ENZYME nomenclature database: 1.14.18.1
+            BRENDA, the Enzyme Database: 1.14.18.1
+            CAS: 9002-10-2
+///

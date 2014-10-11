@@ -1,0 +1,419 @@
+ENTRY       EC 1.14.99.3                Enzyme
+NAME        heme oxygenase (biliverdin-producing);
+            ORP33 proteins;
+            haem oxygenase (ambiguous);
+            heme oxygenase (decyclizing) (ambiguous);
+            heme oxidase (ambiguous);
+            haem oxidase (ambiguous);
+            heme oxygenase (ambiguous);
+            heme,hydrogen-donor:oxygen oxidoreductase (alpha-methene-oxidizing, hydroxylating)
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            Miscellaneous
+SYSNAME     protoheme,hydrogen-donor:oxygen oxidoreductase (alpha-methene-oxidizing, hydroxylating)
+REACTION    protoheme + 3 AH2 + 3 O2 = biliverdin + Fe2+ + CO + 3 A + 3 H2O [RN:R00311]
+ALL_REAC    R00311;
+            (other) R03683
+SUBSTRATE   protoheme [CPD:C00032];
+            AH2 [CPD:C00030];
+            O2 [CPD:C00007]
+PRODUCT     biliverdin [CPD:C00500];
+            Fe2+ [CPD:C14818];
+            CO [CPD:C00237];
+            A [CPD:C00028];
+            H2O [CPD:C00001]
+COMMENT     Requires NAD(P)H and EC 1.6.2.4, NADPH---hemoprotein reductase. The terminal oxygen atoms that are incorporated into the carbonyl groups of pyrrole rings A and B of biliverdin are derived from two separate oxygen molecules [4]. The third oxygen molecule provides the oxygen atom that converts the alpha-carbon to CO. The central iron is kept in the reduced state by NAD(P)H.
+HISTORY     EC 1.14.99.3 created 1972, modified 2006
+REFERENCE   1  [PMID:18477]
+  AUTHORS   Maines MD, Ibrahim NG, Kappas A.
+  TITLE     Solubilization and partial purification of heme oxygenase from rat liver.
+  JOURNAL   J. Biol. Chem. 252 (1977) 5900-3.
+  ORGANISM  Rattus norvegicus
+REFERENCE   2  [PMID:6897023]
+  AUTHORS   Sunderman FW Jr, Downs JR, Reid MC, Bibeau LM.
+  TITLE     Gas-chromatographic assay for heme oxygenase activity.
+  JOURNAL   Clin. Chem. 28 (1982) 2026-32.
+  ORGANISM  Rattus norvegicus
+REFERENCE   3  [PMID:4370250]
+  AUTHORS   Yoshida T, Takahashi S, Kikuchi G.
+  TITLE     Partial purification and reconstitution of the heme oxygenase system from pig spleen microsomes.
+  JOURNAL   J. Biochem. (Tokyo). 75 (1974) 1187-91.
+  ORGANISM  Sus scofa
+REFERENCE   4  [PMID:105935]
+  AUTHORS   Noguchi M, Yoshida T, Kikuchi G.
+  TITLE     Specific requirement of NADPH-cytochrome c reductase for the microsomal heme oxygenase reaction yielding biliverdin IX alpha.
+  JOURNAL   FEBS. Lett. 98 (1979) 281-4.
+  ORGANISM  Rattus norvegicus
+REFERENCE   5  [PMID:12500973]
+  AUTHORS   Lad L, Schuller DJ, Shimizu H, Friedman J, Li H, Ortiz de Montellano PR, Poulos TL.
+  TITLE     Comparison of the heme-free and -bound crystal structures of human heme oxygenase-1.
+  JOURNAL   J. Biol. Chem. 278 (2003) 7834-43.
+  ORGANISM  Homo sapiens
+PATHWAY     ec00860  Porphyrin and chlorophyll metabolism
+ORTHOLOGY   K00510  heme oxygenase
+GENES       HSA: 3162(HMOX1) 3163(HMOX2)
+            PTR: 453880(HMOX2) 470195(HMOX1)
+            PPS: 100977821(HMOX1) 100995961(HMOX2)
+            GGO: 101149599(HMOX2) 101152785(HMOX1) 101153576
+            PON: 100173339(HMOX1) 100451286(HMOX2)
+            MCC: 705461(HMOX2) 719266(HMOX1)
+            MCF: 101926565 102143766(HMOX2)
+            MMU: 15368(Hmox1) 15369(Hmox2)
+            RNO: 24451(Hmox1) 79239(Hmox2)
+            CGE: 100756872 100773727
+            HGL: 101708868(Hmox1) 101718879(Hmox2)
+            TUP: 102472031(HMOX2) 102485781(HMOX1)
+            CFA: 442987(HMOX1) 479864(HMOX2)
+            AML: 100472787 100479189
+            FCA: 101092621(HMOX1) 101093823(HMOX2)
+            PTG: 102948800(HMOX1) 102960470(HMOX2)
+            BTA: 510243(HMOX2) 513221(HMOX1)
+            BOM: 102274047(HMOX2) 102281265(HMOX1)
+            PHD: 102322748(HMOX2) 102333615(HMOX1)
+            CHX: 100860951(HMOX1) 102189453(HMOX2)
+            SSC: 396622(HO2) 445512(HMOX1)
+            CFR: 102503731(HMOX2) 102505023(HMOX1)
+            ECB: 100066114(HMOX2) 100069058(HMOX1)
+            MYB: 102248030(HMOX1) 102253515(HMOX2)
+            MYD: 102764042(HMOX2) 102767690(HMOX1)
+            PALE: 102880347(HMOX1) 102882902(HMOX2)
+            MDO: 100019502(HMOX2) 100024355(HMOX1)
+            SHR: 100925365(HMOX1) 100928954
+            OAA: 100078850(HMOX2)
+            GGA: 396287(HMOX1) 416663(HMOX2)
+            MGP: 100541778 100551243
+            TGU: 100190323 100226348(HMOX1)
+            FAB: 101817237(HMOX2) 101817317(HMOX1)
+            PHI: 102101610(HMOX1) 102104458(HMOX2)
+            APLA: 101801310(HMOX2) 101805057(HMOX1)
+            FPG: 101915244(HMOX1) 101921302(HMOX2)
+            FCH: 102047339(HMOX2) 102055466(HMOX1)
+            CLV: 102084894(HMOX1)
+            ASN: 102368811(HMOX2) 102373399(HMOX1)
+            PSS: 102446230(HMOX2) 102462727(HMOX1)
+            CMY: 102940527(HMOX1) 102942411(HMOX2)
+            ACS: 100555210
+            XLA: 398965 444101(hmox2) 734976(hmox1)
+            XTR: 100488303(hmox1) 780096(hmox2)
+            DRE: 100002875(hmox2a) 100329531(hmox2b) 791518(hmox1a)
+            TRU: 101070079 101074254
+            MZE: 101464072 101468730 101470476 101479559
+            OLA: 101163641 101167630 101174976 101175163
+            XMA: 102220354 102223107 102228740 102233187
+            LCM: 102354266(HMOX1) 102360501
+            CIN: 100185311
+            DME: Dmel_CG14716(Ho)
+            DPO: Dpse_GA13198
+            DAN: Dana_GF18390
+            DER: Dere_GG18355
+            DPE: Dper_GL12384
+            DSE: Dsec_GM23969
+            DSI: Dsim_GD18775
+            DWI: Dwil_GK11097
+            DYA: Dyak_GE24194
+            DGR: Dgri_GH18266
+            DMO: Dmoj_GI24074
+            DVI: Dvir_GJ10893
+            AGA: AgaP_AGAP003975
+            AAG: AaeL_AAEL008136
+            CQU: CpipJ_CPIJ007246
+            AME: 494506(Ho)
+            NVI: 100115195(Ho)
+            BMOR: 732895
+            API: 100162545
+            PHU: Phum_PHUM417690
+            NVE: NEMVE_v1g25425
+            ATH: AT1G58300(HO4) AT1G69720(HO3) AT2G26670(TED4)
+            ALY: ARALYDRAFT_315973 ARALYDRAFT_475446 ARALYDRAFT_481532
+            CRB: CARUB_v10021525mg CARUB_v10021693mg CARUB_v10023804mg
+            EUS: EUTSA_v10002061mg EUTSA_v10024084mg EUTSA_v10024132mg
+            CIT: 102621367 102628729
+            CIC: CICLE_v10009114mg
+            TCC: TCM_033890 TCM_038078
+            GMX: 100775684 547612(HO1) 547613(HO3)
+            CAM: 101488729 101492506 101513490
+            FVE: 101296421
+            CSV: 101214191(HO1)
+            RCU: RCOM_0223730 RCOM_1591500
+            POP: POPTR_0006s06900g(POPTRDRAFT_819093) POPTR_0014s03350g POPTR_0018s13160g(POPTRDRAFT_779760)
+            VVI: 100249078 100262471
+            SLY: 101257539(HO1) 543676(HO2)
+            SOT: 102580772 102600014
+            OSA: 4341462
+            DOSA: Os06t0603000-01(Os06g0603000)
+            OBR: 102712820
+            BDI: 100841507
+            SBI: SORBI_10g023510(SORBIDRAFT_10g023510) SORBI_10g023550(SORBIDRAFT_10g023550)
+            ZMA: 100192807 100193737(HO1) 100526754(HO-1)
+            SITA: 101764063
+            ATR: s00024p00217730(AMTR_s00024p00217730) s00078p00062760(AMTR_s00078p00062760)
+            SMO: SELMODRAFT_97989(HO-1)
+            PPP: PHYPADRAFT_181226(HO1b) PHYPADRAFT_218505(HO1a)
+            CRE: CHLREDRAFT_152591(HMOX2) CHLREDRAFT_195947(HMOX1)
+            VCN: VOLCADRAFT_117870 VOLCADRAFT_92469
+            OLU: OSTLU_89558
+            OTA: Ot18g01720
+            MIS: MICPUN_103550 MICPUN_108005(HY1)
+            MPP: MICPUCDRAFT_46050(HY1)
+            CSL: COCSUDRAFT_44188 COCSUDRAFT_62659
+            CVR: CHLNCDRAFT_25424 CHLNCDRAFT_28833 CHLNCDRAFT_49660
+            CME: CYME_CMH209C
+            GSL: Gasu_19790
+            CCP: CHC_T00006260001
+            PIC: PICST_86063(HMX1)
+            CNE: CNF01200
+            CNB: CNBF3510
+            CGI: CGB_F5120W
+            LBC: LACBIDRAFT_322919
+            MPR: MPER_11565
+            CCI: CC1G_11686
+            SCM: SCHCODRAFT_256685
+            PTI: PHATRDRAFT_12588 PHATRDRAFT_55416
+            TPS: THAPSDRAFT_17865
+            PIF: PITG_08411
+            NGD: NGA_0418400(HMOX)
+            EHX: EMIHUDRAFT_112037 EMIHUDRAFT_240501 EMIHUDRAFT_358761 EMIHUDRAFT_438923
+            GTT: GUITHDRAFT_154367
+            LPN: lpg0229
+            LPU: LPE509_02996
+            LPH: LPV_0309
+            LPO: LPO_0268
+            LPM: LP6_0230
+            LPF: lpl0282
+            LPP: lpp0288
+            LPC: LPC_0304
+            LPA: lpa_00413
+            LPE: lp12_0233
+            MXA: MXAN_5679
+            MFU: LILAB_35855
+            MSD: MYSTI_06265
+            CCX: COCOR_04338(pbsA1)
+            SUR: STAUR_4468
+            BRA: BRADO1626(hmuO)
+            BBT: BBta_6429(hmuO)
+            BRS: S23_19350(hmuO)
+            AOL: S58_59100
+            RPA: RPA1539
+            RPB: RPB_3984
+            RPC: RPC_1310
+            RPD: RPD_3739
+            RPE: RPE_1344
+            RPT: Rpal_1727
+            RPX: Rpdx1_3981
+            BSUB: BEST7613_1644(ho1) BEST7613_6140(ho2)
+            MGI: Mflv_0990
+            MSP: Mspyr1_52000
+            MAB: MAB_4773
+            MABB: MASS_4843
+            MMV: MYCMA_2617(pbsA1)
+            ASD: AS9A_1954(hmuO)
+            CGL: NCgl2146(Cgl2227)
+            CGB: cg2445(hmuO)
+            CGU: WA5_2146(HmuO)
+            CGT: cgR_2104
+            CGS: C624_10780
+            CGG: C629_10790
+            CGM: cgp_2445(hmuO)
+            CDI: DIP1669(hmuO)
+            CDP: CD241_1603(hmuO)
+            CDH: CDB402_1558(hmuO)
+            CDT: CDHC01_1605(hmuO)
+            CDE: CDHC02_1539(hmuO)
+            CDR: CDHC03_1567(hmuO)
+            CDA: CDHC04_1567(hmuO)
+            CDZ: CD31A_1669(hmuO)
+            CDB: CDBH8_1642(hmuO)
+            CDS: CDC7B_1652
+            CDD: CDCE8392_1562(hmuO)
+            CDW: CDPW8_1660(hmuO)
+            CDV: CDVA01_1528(hmuO)
+            CJK: jk0320(hmuO)
+            CUR: cur_1670
+            CUA: CU7111_1238(hmuO1) CU7111_1609(hmuO2)
+            CAR: cauri_1721(hmuO)
+            CPU: cpfrc_01487(hmuO)
+            CPL: Cp3995_1522(hmuO)
+            CPG: Cp316_1521(hmuO)
+            CPP: CpP54B96_1507(hmuO)
+            CPK: Cp1002_1478(hmuO)
+            CPQ: CpC231_1480(hmuO)
+            CPX: CpI19_1487(hmuO)
+            CPZ: CpPAT10_1480(hmuO)
+            COR: Cp267_1543(hmuO)
+            COP: Cp31_1478(hmuO)
+            COD: Cp106_1443(hmuO)
+            COS: Cp4202_1471(hmuO)
+            COI: CpCIP5297_1491(hmuO)
+            COE: Cp258_1485(hmuO)
+            COU: Cp162_1457(hmuO)
+            CRD: CRES_0229(hmuO)
+            CUL: CULC22_01581(hmuO)
+            CUC: CULC809_01565(hmuO)
+            CUE: CULC0102_1701(hmuO)
+            CVA: CVAR_1101(hmuO)
+            CHN: A605_00515
+            CCN: H924_09380
+            CTER: A606_04360
+            CMD: B841_09030
+            CAZ: CARG_06920
+            CCG: CCASEI_01005
+            CGY: CGLY_10035(hmuO)
+            NFA: nfa24730
+            NCY: NOCYR_2556(isdG)
+            NBR: O3I_017790
+            NNO: NONO_c31700
+            RHA: RHA1_ro00883
+            RER: RER_32040(hmuO)
+            REY: O5Y_14730
+            ROP: ROP_06190(hmuO)
+            ROA: Pd630_LPD04967
+            REQ: REQ_22910
+            RPY: Y013_02955
+            GBR: Gbro_3085
+            GPO: GPOL_c28450(hmuO)
+            GOR: KTR9_3073
+            SCO: SCO2267(SCC75A.13)
+            SMA: SAV_5930(hmuO)
+            SGR: SGR_5243
+            SCB: SCAB_66281
+            SSX: SACTE_1699
+            SCT: SCAT_1359
+            SCY: SCATT_13580
+            SFA: Sfla_4565
+            SBH: SBI_05872
+            SVE: SVEN_1952
+            SDV: BN159_6162
+            SALB: XNR_4617
+            STRP: F750_2124
+            SFI: SFUL_1847
+            SCI: B446_11920
+            SRC: M271_35020
+            SALU: DC74_2749
+            KSK: KSE_73640
+            LXX: Lxx24860(hmuO)
+            LXY: O159_27490
+            CMI: CMM_0601(hemO)
+            CMS: CMS_2835
+            CMC: CMN_00562(hemO)
+            MTS: MTES_1696(hmuO)
+            RSA: RSal33209_2547
+            RMU: RMDY18_17800
+            RDN: HMPREF0733_11210(hmuO)
+            BCV: Bcav_3872
+            BFA: Bfae_08750
+            XCE: Xcel_2758
+            SKE: Sked_35580
+            CFL: Cfla_1054
+            CFI: Celf_2819
+            CGA: Celgi_3080
+            TFU: Tfu_2345
+            NDA: Ndas_0441
+            NAL: B005_3314
+            TCU: Tcur_0079
+            SRO: Sros_3241
+            AMD: AMED_8476
+            AMN: RAM_43510
+            AMM: AMES_8347
+            AMZ: B737_8348
+            AOI: AORI_7263(hmuO)
+            PDX: Psed_5881
+            AMI: Amir_3062
+            KAL: KALB_7768
+            VMA: VAB18032_19210
+            AMS: AMIS_5350 AMIS_79190
+            ASE: ACPL_715(pbsA) ACPL_716(pbsA)
+            ACTN: L083_0856
+            AFS: AFR_04095
+            SNA: Snas_4613
+            LIL: LB_186
+            LIE: LIF_B150
+            LIC: LIC20148(hol)
+            LBJ: LBJ_4165
+            LBL: LBL_4180
+            LBI: LEPBI_I0669(hmuO)
+            LBF: LBF_0647
+            IPA: Isop_2223
+            SYN: sll1184(ho1) sll1875(ho2)
+            SYZ: MYO_116590(ho2) MYO_12900(ho1)
+            SYY: SYNGTS_0288(ho1) SYNGTS_1644(ho2)
+            SYT: SYNGTI_0288(ho1) SYNGTI_1644(ho2)
+            SYS: SYNPCCN_0288(ho1) SYNPCCN_1643(ho2)
+            SYQ: SYNPCCP_0288(ho1) SYNPCCP_1643(ho2)
+            SYW: SYNW0171(ho1)
+            SYC: syc2236_c(ho1)
+            SYF: Synpcc7942_1858
+            SYD: Syncc9605_0166
+            SYE: Syncc9902_0196
+            SYG: sync_0216
+            SYR: SynRCC307_0155(ho1)
+            SYX: SynWH7803_0221(ho1)
+            SYP: SYNPCC7002_A1991(ho2) SYNPCC7002_A2508(hox1)
+            CYA: CYA_0408
+            CYB: CYB_2435
+            SYNE: Syn6312_2023
+            SYNP: Syn7502_00363 Syn7502_00422
+            TEL: tll0365(ho1) tll1721(ho2)
+            THN: NK55_00245(hox1) NK55_05250(hox2)
+            MAR: MAE_14930(ho1)
+            CYT: cce_2324(ho2) cce_2573(ho1)
+            CYP: PCC8801_0101 PCC8801_1380
+            CYC: PCC7424_2604 PCC7424_3635
+            CYN: Cyan7425_2962 Cyan7425_4780
+            CYH: Cyan8802_0098 Cyan8802_1414
+            CYJ: Cyan7822_0292 Cyan7822_4262
+            AMR: AM1_0466 AM1_0850 AM1_C0108 AM1_C0205
+            CGC: Cyagr_1026 Cyagr_2158
+            CAN: Cyan10605_0877
+            CSN: Cyast_2464
+            DSL: Dacsa_1977 Dacsa_2591
+            HAO: PCC7418_0650 PCC7418_1707
+            GLP: Glo7428_3238
+            CMP: Cha6605_3892
+            TER: Tery_0335
+            LEP: Lepto7376_0723 Lepto7376_1354
+            GEI: GEI7407_1012 GEI7407_1973
+            OAC: Oscil6304_0917 Oscil6304_5881
+            ONI: Osc7112_0442 Osc7112_1425
+            PSEU: Pse7367_2590
+            CEP: Cri9333_0198
+            MIC: Mic7113_1398 Mic7113_1588 Mic7113_4890
+            ARP: NIES39_Q00930(ho)
+            GVI: gvip040(ho1)
+            GLJ: GKIL_1562(hmuO)
+            ANA: all1897 alr3125
+            NPU: Npun_F0643 Npun_R4585
+            NOS: Nos7107_4171 Nos7107_5430
+            NOP: Nos7524_0013 Nos7524_3427 Nos7524_3951
+            AVA: Ava_3767 Ava_3827
+            ANB: ANA_C11198 ANA_C12136(pbsA)
+            ACY: Anacy_0232 Anacy_3844
+            NAZ: Aazo_2851
+            CSG: Cylst_3151 Cylst_3223
+            CALO: Cal7507_1471 Cal7507_1516 Cal7507_3649
+            CALT: Cal6303_0507 Cal6303_4555
+            RIV: Riv7116_2515 Riv7116_4277
+            PMA: Pro_1750(ho1)
+            PMM: PMM1594(ho1)
+            PMT: PMT1685(ho1)
+            PMN: PMN2A_1169
+            PMI: PMT9312_1686
+            PMB: A9601_18031(ho1)
+            PMC: P9515_17811(ho1)
+            PMF: P9303_22411(ho1)
+            PMG: P9301_17861(ho1)
+            PMH: P9215_18671(ho1)
+            PMJ: P9211_17151(ho1)
+            PME: NATL1_20441(ho1)
+            CTHE: Chro_3999
+            PLP: Ple7327_3614 Ple7327_3803
+            SCS: Sta7437_2534
+            GFO: GFO_1957
+            HYA: HY04AAS1_1431
+            HHO: HydHO_1412
+            HYS: HydSN_1450
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.99.3
+            IUBMB Enzyme Nomenclature: 1.14.99.3
+            ExPASy - ENZYME nomenclature database: 1.14.99.3
+            BRENDA, the Enzyme Database: 1.14.99.3
+            CAS: 9059-22-7
+///

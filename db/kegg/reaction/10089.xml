@@ -1,0 +1,11 @@
+ENTRY       R10089                      Reaction
+NAME        D-ribose 5-phosphate,D-glyceraldehyde 3-phosphate pyridoxal 5'-phosphate-lyase (glutamine-hydrolyzing)
+DEFINITION  D-Ribose 5-phosphate + D-Glyceraldehyde 3-phosphate + L-Glutamine <=> Pyridoxal phosphate + L-Glutamate + 3 H2O + Orthophosphate
+EQUATION    C00117 + C00118 + C00064 <=> C00018 + C00025 + 3 C00001 + C00009
+COMMENT     two-step reaction (see R00256+R10088)
+RPAIR       RP00024  C00025_C00064 main [RC:RC00010]
+            RP10676  C00018_C00064 trans
+            RP10677  C00018_C00118 main [RC:RC01783]
+            RP15879  C00018_C00117 main [RC:RC03049]
+ENZYME      4.3.3.6
+///

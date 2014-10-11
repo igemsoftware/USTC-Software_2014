@@ -1,0 +1,23 @@
+ENTRY       R04558                      Reaction
+DEFINITION  N-(5'-Phospho-D-1'-ribulosylformimino)-5-amino-1-(5''-phospho-D-ribosyl)-4-imidazolecarboxamide + L-Glutamine <=> D-erythro-1-(Imidazol-4-yl)glycerol 3-phosphate + 1-(5'-Phosphoribosyl)-5-amino-4-imidazolecarboxamide + L-Glutamate
+EQUATION    C04916 + C00064 <=> C04666 + C04677 + C00025
+COMMENT     Imidazole glycerol phosphate synthase, hisH/hisF
+            two-step reaction: (1a) Glutamine + H2O = Glutamate + NH3, (1b) NH3 + PRFAR = IGP + AICAR + H2O
+RPAIR       RP00024  C00025_C00064 main [RC:RC00010]
+            RP04295  C04677_C04916 main [RC:RC01190]
+            RP08182  C00064_C04666 trans
+            RP10757  C00025_C04916 trans
+            RP11512  C04666_C04916 main [RC:RC01943]
+ENZYME      2.4.2.-         4.1.3.-
+PATHWAY     rn00340  Histidine metabolism
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+            rn01230  Biosynthesis of amino acids
+ORTHOLOGY   K01663  glutamine amidotransferase / cyclase [EC:2.4.2.- 4.1.3.-]
+            K02500  cyclase [EC:4.1.3.-]
+            K02501  glutamine amidotransferase [EC:2.4.2.-]
+REFERENCE   1  [PMID:11264293]
+            Beismann-Driemeyer S, Sterner R.
+            Imidazole glycerol phosphate synthase from Thermotoga maritima. Quaternary structure, steady-state kinetics, and reaction mechanism of the bienzyme complex.
+            J. Biol. Chem. 276 (2001) 20387-96.
+///

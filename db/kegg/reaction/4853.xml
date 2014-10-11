@@ -1,0 +1,12 @@
+ENTRY       R04853                      Reaction
+NAME        20alpha-Hydroxycholesterol,hydrogen-donor:oxygen oxidoreductase (17-alpha-hydroxylating)
+DEFINITION  20alpha-Hydroxycholesterol + NADPH + H+ + Oxygen <=> 17alpha,20alpha-Dihydroxycholesterol + NADP+ + H2O
+EQUATION    C05500 + C00005 + C00080 + C00007 <=> C05499 + C00006 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP04468  C05499_C05500 main [RC:RC01222]
+            RP08322  C00007_C05499 leave
+ENZYME      1.14.99.9
+PATHWAY     rn00140  Steroid hormone biosynthesis
+ORTHOLOGY   K00512  steroid 17alpha-monooxygenase / 17alpha-hydroxyprogesterone aldolase [EC:1.14.99.9 4.1.2.30]
+///

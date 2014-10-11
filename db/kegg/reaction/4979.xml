@@ -1,0 +1,14 @@
+ENTRY       R04979                      Reaction
+NAME        Bilirubin beta-diglucuronide glucuronosohydrolase
+DEFINITION  Bilirubin beta-diglucuronide + 2 H2O + 3 Reduced acceptor <=> D-Urobilinogen + 2 D-Glucuronate + 3 Acceptor
+EQUATION    C05787 + 2 C00001 + 3 C00030 <=> C05791 + 2 C00191 + 3 C00028
+COMMENT     multi-step reaction
+RPAIR       RP04588  C00191_C05787 main [RC:RC00055]
+            RP04589  C05787_C05791 main [RC:RC01251]
+            RP12433  C00191_C05787 main [RC:RC00055]
+            RP12434  C00001_C05791 leave
+            RP12435  C00001_C05791 leave
+ENZYME      1.-.-.-         3.2.1.31
+PATHWAY     rn00860  Porphyrin and chlorophyll metabolism
+ORTHOLOGY   K01195  beta-glucuronidase [EC:3.2.1.31]
+///

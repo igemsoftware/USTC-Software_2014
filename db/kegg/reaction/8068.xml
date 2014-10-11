@@ -1,0 +1,11 @@
+ENTRY       R08068                      Reaction
+DEFINITION  N6-(delta2-Isopentenyl)-adenine + Reduced flavoprotein + Oxygen <=> Zeatin + Oxidized flavoprotein + H2O
+EQUATION    C04083 + C03024 + C00007 <=> C00371 + C03161 + C00001
+COMMENT     P-450 monooxygenase
+            P-450 reductase (ec 1.6.2.4) is the flavoprotein and re-reduced by NADPH (see R08551)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP10380  C00007_C00371 leave
+            RP11111  C00371_C04083 main [RC:RC01137]
+PATHWAY     rn00908  Zeatin biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+///

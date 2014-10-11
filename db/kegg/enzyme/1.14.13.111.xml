@@ -1,0 +1,54 @@
+ENTRY       EC 1.14.13.111              Enzyme
+NAME        methanesulfonate monooxygenase;
+            mesylate monooxygenase;
+            mesylate,reduced-FMN:oxygen oxidoreductase;
+            MsmABC;
+            methanesulfonic acid monooxygenase;
+            MSA monooxygenase;
+            MSAMO
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     methanesulfonate,NADH:oxygen oxidoreductase
+REACTION    methanesulfonate + NADH + H+ + O2 = formaldehyde + NAD+ + sulfite + H2O [RN:R09513]
+ALL_REAC    R09513
+SUBSTRATE   methanesulfonate [CPD:C11145];
+            NADH [CPD:C00004];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007]
+PRODUCT     formaldehyde [CPD:C00067];
+            NAD+ [CPD:C00003];
+            sulfite [CPD:C00094];
+            H2O [CPD:C00001]
+COMMENT     A flavoprotein. Methanesulfonate is the simplest of the sulfonates and is a substrate for the growth of certain methylotrophic microorganisms. Compared with EC 1.14.14.5, alkanesulfonate monooxygenase, this enzyme has a restricted substrate range that includes only the short-chain aliphatic sulfonates (methanesulfonate to butanesulfonate) and excludes all larger molecules, such as arylsulfonates [1]. The enzyme from the bacterium Methylosulfonomonas methylovora is a multicomponent system comprising a hydroxylase, a reductase (MsmD) and a ferredoxin (MsmC). The hydroxylase has both large (MsmA) and small (MsmB) subunits, with each large subunit containing a Rieske-type [2Fe-2S] cluster.
+HISTORY     EC 1.14.13.111 created 2009 as EC 1.14.14.6, transferred 2010 to EC 1.14.13.111
+REFERENCE   1  [PMID:10094704]
+  AUTHORS   de Marco P, Moradas-Ferreira P, Higgins TP, McDonald I, Kenna EM, Murrell JC
+  TITLE     Molecular analysis of a novel methanesulfonic acid monooxygenase from the methylotroph Methylosulfonomonas methylovora.
+  JOURNAL   J. Bacteriol. 181 (1999) 2244-51.
+  ORGANISM  Methylosulfonomonas methylovora
+  SEQUENCE  [up:Q9X404 Q9X405]
+REFERENCE   2  [PMID:8932698]
+  AUTHORS   Higgins TP, Davey M, Trickett J, Kelly DP, Murrell JC
+  TITLE     Metabolism of methanesulfonic acid involves a multicomponent monooxygenase enzyme.
+  JOURNAL   Microbiology. 142 ( Pt 2) (1996) 251-60.
+PATHWAY     ec00920  Sulfur metabolism
+ORTHOLOGY   K16968  methanesulfonate monooxygenase large subunit
+            K16969  methanesulfonate monooxygenase small subunit
+GENES       BCT: GEM_5811 GEM_5812
+            PPK: U875_05270 U875_05275
+            PRB: X636_04320 X636_04325
+            BPA: BPP0512 BPP0513
+            BBR: BB0517 BB0518
+            BBM: BN115_0496 BN115_0497
+            BBH: BN112_2903 BN112_2904
+            PUT: PT7_2465 PT7_2466
+            MPT: Mpe_A0919(msmS2) Mpe_A0920(msmB)
+            MNO: Mnod_2708 Mnod_8364 Mnod_8365
+            APB: SAR116_2102 SAR116_2103 SAR116_2109
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.111
+            IUBMB Enzyme Nomenclature: 1.14.13.111
+            ExPASy - ENZYME nomenclature database: 1.14.13.111
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.14.13.111
+            BRENDA, the Enzyme Database: 1.14.13.111
+///

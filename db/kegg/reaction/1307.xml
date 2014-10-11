@@ -1,0 +1,11 @@
+ENTRY       R01307                      Reaction
+NAME        4-Chlorobenzoate chlorohydrolase
+DEFINITION  4-Chlorobenzoate + H2O <=> 4-Hydroxybenzoate + Cl- + H+
+EQUATION    C02370 + C00001 <=> C00156 + C00698 + C00080
+COMMENT     requiring ATP and coenzyme A, this reaction must be comprised of three reactions,
+            ec 6.2.1.33 (see R03932) + ec 3.8.1.7 (see R04101) + ec 3.1.2.23 (see R01301)
+RPAIR       RP01421  C00156_C02370 main [RC:RC00492]
+            RP06520  C00698_C02370 leave
+            RP13422  C00001_C00156 leave
+ENZYME      3.8.1.6
+///

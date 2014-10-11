@@ -1,0 +1,150 @@
+ENTRY       EC 4.1.99.5                 Enzyme
+NAME        aldehyde oxygenase (deformylating);
+            decarbonylase;
+            aldehyde decarbonylase;
+            octadecanal decarbonylase;
+            octadecanal alkane-lyase
+CLASS       Lyases;
+            Carbon-carbon lyases;
+            Other carbon-carbon lyases
+SYSNAME     a long-chain aldehyde alkane-lyase
+REACTION    a long-chain aldehyde + O2 + 2 NADPH + 2 H+ = an alkane + formate + H2O + 2 NADP+ [RN:R03728]
+ALL_REAC    R03728;
+            (other) R09466
+SUBSTRATE   long-chain aldehyde [CPD:C00609];
+            O2 [CPD:C00007];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080]
+PRODUCT     alkane [CPD:C01371];
+            formate [CPD:C00058];
+            H2O [CPD:C00001];
+            NADP+ [CPD:C00006]
+COMMENT     Contains a diiron center. Involved in the biosynthesis of alkanes. The enzyme from the cyanobacterium Nostoc punctiforme PCC 73102 is only active in vitro in the presence of ferredoxin, ferredoxin reductase and NADPH, and produces mostly C15 and C17 alkanes [2,3]. The enzyme from pea (Pisum sativum) produces alkanes of chain length C18 to C32 and is inhibited by metal-chelating agents [1]. The substrate for this enzyme is formed by EC 1.2.1.80, acyl-[acyl-carrier protein] reductase.
+HISTORY     EC 4.1.99.5 created 1989, modified 2011, modified 2013
+REFERENCE   1  [PMID:6593720]
+  AUTHORS   Cheesbrough TM, Kolattukudy PE.
+  TITLE     Alkane biosynthesis by decarbonylation of aldehydes catalyzed by a particulate preparation from Pisum sativum.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 81 (1984) 6613-7.
+  ORGANISM  Pisum sativum
+REFERENCE   2  [PMID:20671186]
+  AUTHORS   Schirmer A, Rude MA, Li X, Popova E, del Cardayre SB
+  TITLE     Microbial biosynthesis of alkanes.
+  JOURNAL   Science. 329 (2010) 559-62.
+  ORGANISM  Synechococcus elongatus
+  SEQUENCE  [syf:Synpcc7942_1593]
+REFERENCE   3  [PMID:21341652]
+  AUTHORS   Warui DM, Li N, Norgaard H, Krebs C, Bollinger JM Jr, Booker SJ
+  TITLE     Detection of formate, rather than carbon monoxide, as the stoichiometric coproduct in conversion of fatty aldehydes to alkanes by a cyanobacterial aldehyde decarbonylase.
+  JOURNAL   J. Am. Chem. Soc. 133 (2011) 3316-9.
+  ORGANISM  Nostoc punctiforme
+  SEQUENCE  [npu:Npun_R1711]
+REFERENCE   4  [PMID:22947199]
+  AUTHORS   Li N, Chang WC, Warui DM, Booker SJ, Krebs C, Bollinger JM Jr
+  TITLE     Evidence for only oxygenative cleavage of aldehydes to alk(a/e)nes and formate by cyanobacterial aldehyde decarbonylases.
+  JOURNAL   Biochemistry. 51 (2012) 7908-16.
+PATHWAY     ec00073  Cutin, suberine and wax biosynthesis
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K14331  fatty aldehyde decarbonylase
+            K15404  aldehyde decarbonylase
+GENES       ATH: AT1G02205(CER1)
+            ALY: ARALYDRAFT_321478 ARALYDRAFT_470048 ARALYDRAFT_887207
+            CRB: CARUB_v10008547mg CARUB_v10008574mg CARUB_v10012639mg CARUB_v10024836mg
+            EUS: EUTSA_v10007056mg EUTSA_v10009534mg EUTSA_v10016375mg
+            CIT: 102609996 102610181 102610308
+            CIC: CICLE_v10011291mg CICLE_v10019265mg CICLE_v10019279mg
+            TCC: TCM_006139 TCM_006142 TCM_006143 TCM_006145 TCM_006147 TCM_041433 TCM_041436 TCM_042351
+            GMX: 100790115 100805835 100818557
+            MTR: MTR_4g054150 MTR_4g054290 MTR_7g090100 MTR_7g090120 MTR_7g090140 MTR_8g009550 MTR_8g009560
+            CAM: 101507583 101508006 101514081 101514846
+            FVE: 101297683 101308477 101311999 101312286
+            CSV: 101203441 101211518 101221193 101222843 101224123
+            RCU: RCOM_0658910 RCOM_0658920
+            POP: POPTR_0014s15050g POPTR_0014s15080g POPTR_0014s15110g POPTR_0014s17850g(POPTRDRAFT_732680)
+            VVI: 100243849 100250668 100252221 100256874 100261967 100262701 100854413
+            SLY: 101244328 101244624 101252060 101253677 101263099 101267647 101267934 101268663
+            SOT: 102579007 102579333 102579884 102593084 102595425 102595750 102599091 102599945
+            OSA: 4330012 4348869
+            DOSA: Os02t0621300-01(Os02g0621300) Os10t0471100-01(Os10g0471100)
+            OBR: 102703957 102714431 102718869
+            BDI: 100825208 100833295 100833807 100833914 100837949
+            SBI: SORBI_01g019590(SORBIDRAFT_01g019590) SORBI_04g026320(SORBIDRAFT_04g026320) SORBI_04g036940(SORBIDRAFT_04g036940) SORBI_06g022320(SORBIDRAFT_06g022320) SORBI_08g006850(SORBIDRAFT_08g006850)
+            ZMA: 100273712(CER1) 100280261(cl3929_1) 100382841
+            SITA: 101762753 101769789 101772770 101775794
+            ATR: s00001p00090180(AMTR_s00001p00090180) s00067p00188650(AMTR_s00067p00188650) s00067p00190600(AMTR_s00067p00190600)
+            SMO: SELMODRAFT_129942(CER1-2) SELMODRAFT_230422(CER1-1)
+            PPP: PHYPADRAFT_177243
+            BSUB: BEST7613_5507
+            SYN: sll0208
+            SYZ: MYO_122780
+            SYY: SYNGTS_2252(sll0208)
+            SYT: SYNGTI_2251(sll0208)
+            SYS: SYNPCCN_2250(sll0208)
+            SYQ: SYNPCCP_2250(sll0208)
+            SYW: SYNW1738
+            SYC: syc0050_d
+            SYF: Synpcc7942_1593
+            SYD: Syncc9605_0728
+            SYE: Syncc9902_1635
+            SYG: sync_1990
+            SYR: SynRCC307_1586
+            SYX: SynWH7803_0654
+            CYA: CYA_0415
+            CYB: CYB_2442
+            SYNE: Syn6312_2280
+            SYNP: Syn7502_03278
+            TEL: tll1313
+            THN: NK55_03185
+            MAR: MAE_53090
+            CYT: cce_0778
+            CYP: PCC8801_0455
+            CYN: Cyan7425_0398
+            CYH: Cyan8802_0468
+            AMR: AM1_4041
+            CGC: Cyagr_0039 Cyagr_1038
+            CAN: Cyan10605_1692
+            DSL: Dacsa_2178
+            HAO: PCC7418_0961
+            GLP: Glo7428_0150
+            CMP: Cha6605_4153
+            CYU: UCYN_05810
+            TER: Tery_2280
+            GEI: GEI7407_1564
+            OAC: Oscil6304_2075
+            ONI: Osc7112_0944
+            PSEU: Pse7367_3626
+            CEP: Cri9333_4418
+            MIC: Mic7113_4535
+            ARP: NIES39_M01940
+            GVI: gll3146
+            GLJ: GKIL_0725
+            ANA: alr5283
+            NPU: Npun_R1711
+            NOS: Nos7107_1028
+            NOP: Nos7524_4304
+            AVA: Ava_2533
+            ANB: ANA_C11210
+            ACY: Anacy_3389
+            NAZ: Aazo_3371
+            CSG: Cylst_0697
+            CALO: Cal7507_5586
+            CALT: Cal6303_4369
+            RIV: Riv7116_3790
+            PMA: Pro_0532
+            PMM: PMM0532
+            PMT: PMT1231
+            PMN: PMN2A_1863
+            PMI: PMT9312_0532
+            PMB: A9601_05881
+            PMC: P9515_05961
+            PMF: P9303_07791
+            PMG: P9301_05581
+            PMH: P9215_06131
+            PMJ: P9211_05351
+            PME: NATL1_05881
+            CTHE: Chro_1554
+DBLINKS     ExplorEnz - The Enzyme Database: 4.1.99.5
+            IUBMB Enzyme Nomenclature: 4.1.99.5
+            ExPASy - ENZYME nomenclature database: 4.1.99.5
+            BRENDA, the Enzyme Database: 4.1.99.5
+            CAS: 94185-90-7
+///

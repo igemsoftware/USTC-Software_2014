@@ -1,0 +1,12 @@
+ENTRY       R09407                      Reaction
+DEFINITION  Aflatoxin B1 + Oxygen + NADPH + H+ <=> Aflatoxin B1-endo-8,9-epoxide + H2O + NADP+
+EQUATION    C06800 + C00007 + C00005 + C00080 <=> C19595 + C00001 + C00006
+COMMENT     CYP1A2
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP14722  C06800_C19595 main [RC:RC02526]
+            RP14724  C00007_C19595 leave
+ENZYME      1.14.14.1
+PATHWAY     rn00980  Metabolism of xenobiotics by cytochrome P450
+ORTHOLOGY   K07409  cytochrome P450, family 1, subfamily A, polypeptide 2 [EC:1.14.14.1]
+///

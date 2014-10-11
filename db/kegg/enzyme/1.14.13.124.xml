@@ -1,0 +1,61 @@
+ENTRY       EC 1.14.13.124              Enzyme
+NAME        phenylalanine N-monooxygenase;
+            phenylalanine N-hydroxylase;
+            CYP79A2
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     L-phenylalanine,NADPH:oxygen oxidoreductase (N-hydroxylating)
+REACTION    L-phenylalanine + 2 O2 + 2 NADPH + 2 H+ = (E)-phenylacetaldoxime + 2 NADP+ + CO2 + 3 H2O (overall reaction) [RN:R09578];
+            (1a) L-phenylalanine + O2 + NADPH + H+ = N-hydroxy-L-phenylalanine + NADP+ + H2O [RN:R09579];
+            (1b) N-hydroxy-L-phenylalanine + O2 + NADPH + H+ = N,N-dihydroxy-L-phenylalanine + NADP+ + H2O [RN:R09580];
+            (1c) N,N-dihydroxy-L-phenylalanine = (E)-phenylacetaldoxime + CO2 + H2O [RN:R09581]
+ALL_REAC    R09578 R09579 R09580 R09581;
+            (other) R08652
+SUBSTRATE   L-phenylalanine [CPD:C00079];
+            O2 [CPD:C00007];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            N-hydroxy-L-phenylalanine [CPD:C19712];
+            N,N-dihydroxy-L-phenylalanine [CPD:C19715]
+PRODUCT     (E)-phenylacetaldoxime [CPD:C19714];
+            NADP+ [CPD:C00006];
+            CO2 [CPD:C00011];
+            H2O [CPD:C00001];
+            N-hydroxy-L-phenylalanine [CPD:C19712];
+            N,N-dihydroxy-L-phenylalanine [CPD:C19715]
+COMMENT     A heme-thiolate protein (P-450). This enzyme catalyses two successive N-hydroxylations of L-phenylalanine, the first committed steps in the biosynthesis of benzylglucosinolate. The product of the two hydroxylations, N,N-dihydroxy-L-phenylalanine, is extremely labile and dehydrates spontaneously.The dehydrated product is then subject to a decarboxylation that produces the oxime. It is still not known whether the decarboxylation is spontaneous or catalysed by the enzyme. The product, (E)-phenylacetaldoxime, undergoes a spontaneous isomerization to the (Z) form.
+HISTORY     EC 1.14.13.124 created 2011
+REFERENCE   1  [PMID:10799553]
+  AUTHORS   Wittstock U, Halkier BA.
+  TITLE     Cytochrome P450 CYP79A2 from Arabidopsis thaliana L. Catalyzes the conversion of L-phenylalanine to phenylacetaldoxime in the biosynthesis of benzylglucosinolate.
+  JOURNAL   J. Biol. Chem. 275 (2000) 14659-66.
+  ORGANISM  Arabidopsis thaliana
+  SEQUENCE  [ath:AT5G05260]
+PATHWAY     ec00460  Cyanoamino acid metabolism
+            ec00966  Glucosinolate biosynthesis
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K12153  phenylalanine N-monooxygenase
+GENES       ATH: AT5G05260(CYP79A2)
+            ALY: ARALYDRAFT_325159 ARALYDRAFT_655516
+            CRB: CARUB_v10003209mg
+            EUS: EUTSA_v10015246mg
+            CIT: 102609684 102610000 102610907 102612895 102613196 102614859 102618319 102624911 102625186 102626076
+            CIC: CICLE_v10004690mg CICLE_v10013842mg CICLE_v10025237mg CICLE_v10025240mg CICLE_v10031099mg CICLE_v10031307mg CICLE_v10031309mg CICLE_v10031311mg CICLE_v10033385mg
+            TCC: TCM_042289 TCM_045495 TCM_045498 TCM_045499 TCM_045501 TCM_045503 TCM_045507 TCM_045509 TCM_045511 TCM_045515 TCM_046361
+            GMX: 100779934 100785254 100786887 100787378 100809902
+            MTR: MTR_8g073950 MTR_8g076390
+            CAM: 101513975 101514837 101515486
+            FVE: 101302920
+            CSV: 101210312 101215668 101216155 101216819 101217397 101225892
+            RCU: RCOM_1042060 RCOM_1042690 RCOM_1042920 RCOM_1043050
+            POP: POPTR_0013s15310g POPTR_0013s15320g(POPTRDRAFT_571904) POPTR_1061s00200g
+            VVI: 100241541 100246526 100249616 100249797 100253513 100255415 100255835 100256228 100260154 100260482 100263664 100263812 100265709 100853343 100853601
+            SLY: 101243884 101244179 101253063 101257394
+            SOT: 102593505 102597216 102599701 102604932 102605273
+            SBI: SORBI_01g016480(SORBIDRAFT_01g016480)
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.124
+            IUBMB Enzyme Nomenclature: 1.14.13.124
+            ExPASy - ENZYME nomenclature database: 1.14.13.124
+            BRENDA, the Enzyme Database: 1.14.13.124
+///

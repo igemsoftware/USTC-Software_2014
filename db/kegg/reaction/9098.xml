@@ -1,0 +1,16 @@
+ENTRY       R09098                      Reaction
+NAME        methanol:coenzyme M methyltransferase
+DEFINITION  Methanol + 2-Mercaptoethanesulfonate <=> 2-(Methylthio)ethanesulfonate + H2O
+EQUATION    C00132 + C03576 <=> C03920 + C00001
+COMMENT     two-step reaction (see R04384+R10000)
+RPAIR       RP03981  C03576_C03920 main [RC:RC00035]
+            RP05738  C00001_C00132 leave
+            RP14384  C00132_C03920 main [RC:RC02440]
+ENZYME      2.1.1.90        2.1.1.246
+PATHWAY     rn00680  Methane metabolism
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+ORTHOLOGY   K04480  methanol---5-hydroxybenzimidazolylcobamide Co-methyltransferase [EC:2.1.1.90]
+            K14080  [methyl-Co(III) methanol-specific corrinoid protein]:coenzyme M methyltransferase [EC:2.1.1.246]
+            K14081  methanol corrinoid protein
+///

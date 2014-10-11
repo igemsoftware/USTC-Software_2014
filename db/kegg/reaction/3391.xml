@@ -1,0 +1,15 @@
+ENTRY       R03391                      Reaction
+NAME        CDP-4-dehydro-3,6-dideoxy-D-glucose:NAD+ 3-oxydoreductase
+DEFINITION  CDP-4-dehydro-3,6-dideoxy-D-glucose + NAD+ + H2O <=> CDP-4-dehydro-6-deoxy-D-glucose + NADH + H+
+EQUATION    C04297 + C00003 + C00001 <=> C01219 + C00004 + C00080
+COMMENT     NADP+ (see R03392)
+            multi-step reaction
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00671  C01219_C04297 main [RC:RC00230]
+            RP06020  C00001_C01219 leave
+ENZYME      1.17.1.1
+PATHWAY     rn00520  Amino sugar and nucleotide sugar metabolism
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K00523  CDP-4-dehydro-6-deoxyglucose reductase [EC:1.17.1.1]
+            K12452  CDP-6-deoxy-D-xylo-4-hexulose-3-dehydrase
+///

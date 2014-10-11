@@ -1,0 +1,24 @@
+ENTRY       R06448                      Reaction
+DEFINITION  5 Methylmalonyl-CoA + 2 Malonyl-CoA + (2S)-Ethylmalonyl-CoA + 7 NADPH + 7 H+ <=> 8 CoA + Tylactone + 8 CO2 + 3 H2O + 7 NADP+
+EQUATION    5 C02557 + 2 C00083 + C18026 + 7 C00005 + 7 C00080 <=> 8 C00010 + C12000 + 8 C00011 + 3 C00001 + 7 C00006
+COMMENT     tylactone synthase,TylG1-5
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00051  C00010_C00083 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP05961  C00010_C02557 main [RC:RC00004]
+            RP06096  C00011_C02557 leave
+            RP08515  C00001_C02557 leave
+            RP10623  C00010_C18026 main [RC:RC00004]
+            RP10894  C00083_C12000 main [RC:RC02912]
+            RP11417  C02557_C12000 main [RC:RC02917]
+            RP12674  C02557_C12000 main [RC:RC02910]
+            RP13953  C00011_C18026 leave
+            RP13954  C12000_C18026 trans
+            RP13955  C02557_C12000 main [RC:RC02919]
+            RP13956  C02557_C12000 main [RC:RC02829]
+            RP13957  C02557_C12000 main [RC:RC02914]
+            RP13958  C00083_C12000 main [RC:RC02911]
+PATHWAY     rn00522  Biosynthesis of 12-, 14- and 16-membered macrolides
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K15988  tylactone synthase
+///

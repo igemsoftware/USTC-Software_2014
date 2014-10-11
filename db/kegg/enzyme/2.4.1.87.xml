@@ -1,0 +1,77 @@
+ENTRY       EC 2.4.1.87                 Enzyme
+NAME        N-acetyllactosaminide 3-alpha-galactosyltransferase;
+            alpha-galactosyltransferase;
+            UDP-Gal:beta-D-Gal(1,4)-D-GlcNAc alpha(1,3)-galactosyltransferase;
+            UDP-Gal:N-acetyllactosaminide alpha(1,3)-galactosyltransferase;
+            UDP-Gal:N-acetyllactosaminide alpha-1,3-D-galactosyltransferase;
+            UDP-Gal:Galbeta1->4GlcNAc-R alpha1->3-galactosyltransferase;
+            UDP-galactose-acetyllactosamine alpha-D-galactosyltransferase;
+            UDPgalactose:beta-D-galactosyl-beta-1,4-N-acetyl-D-glucosaminyl-glycopeptide alpha-1,3-D-galactosyltransferase;
+            glucosaminylglycopeptide alpha-1,3-galactosyltransferase;
+            uridine diphosphogalactose-acetyllactosamine alpha1->3-galactosyltransferase;
+            uridine diphosphogalactose-acetyllactosamine galactosyltransferase;
+            uridine diphosphogalactose-galactosylacetylglucosaminylgalactosylglucosylceramide galactosyltransferase;
+            beta-D-galactosyl-N-acetylglucosaminylglycopeptide alpha-1,3-galactosyltransferase;
+            UDP-galactose:N-acetyllactosaminide 3-alpha-D-galactosyltransferase;
+            UDP-galactose:beta-D-galactosyl-1,4-beta-N-acetyl-D-glucosaminyl-R 3-alpha-D-galactosyltransferase;
+            UDP-galactose:beta-D-galactosyl-(1->4)-beta-N-acetyl-D-glucosaminyl-R 3-alpha-D-galactosyltransferase
+CLASS       Transferases;
+            Glycosyltransferases;
+            Hexosyltransferases
+SYSNAME     UDP-alpha-D-galactose:beta-D-galactosyl-(1->4)-beta-N-acetyl-D-glucosaminyl-R 3-alpha-D-galactosyltransferase
+REACTION    UDP-alpha-D-galactose + beta-D-galactosyl-(1->4)-beta-N-acetyl-D-glucosaminyl-R = UDP + alpha-D-galactosyl-(1->3)-beta-D-galactosyl-(1->4)-beta-N-acetylglucosaminyl-R (where R can be OH, an oligosaccharide or a glycoconjugate) [RN:R02791]
+ALL_REAC    R02791 > R04531 R05978(G) R06145(G) R06169(G)
+SUBSTRATE   UDP-alpha-D-galactose [CPD:C00052];
+            beta-D-galactosyl-(1->4)-beta-N-acetyl-D-glucosaminyl-R [CPD:C00694]
+PRODUCT     UDP [CPD:C00015];
+            alpha-D-galactosyl-(1->3)-beta-D-galactosyl-(1->4)-beta-N-acetylglucosaminyl-R [CPD:C04855]
+COMMENT     Acts on beta-galactosyl-1,4-N-acetylglucosaminyl termini on asialo-alpha1-acid glycoprotein and N-acetyllactosamine (beta-D-galactosyl-1,4-N-acetyl-beta-D-glucosamine), but not on 2'-fucosylated-N-acetyllactosamine. The non-reducing terminal N-acetyllactosamine residues of glycoproteins can also act as acceptor. Now includes EC 2.4.1.124 and EC 2.4.1.151.
+HISTORY     EC 2.4.1.87 created 1976, modified 1989, modified 2002 (EC 2.4.1.124 created 1984, incorporated 2002, EC 2.4.1.151 created 1984, incorporated 2002)
+REFERENCE   1  [PMID:4632915]
+  AUTHORS   Basu M, Basu S.
+  TITLE     Enzymatic synthesis of a blood group B-related pentaglycosylceramide by an alpha-galactosyltransferase from rabbit bone marrow.
+  JOURNAL   J. Biol. Chem. 248 (1973) 1700-6.
+  ORGANISM  Oryctolagus cuniculus
+REFERENCE   2  [PMID:3932335]
+  AUTHORS   Blanken WM, Van den Eijnden DH.
+  TITLE     Biosynthesis of terminal Gal alpha 1----3Gal beta 1----4GlcNAc-R oligosaccharide sequences on glycoconjugates. Purification and acceptor specificity of a UDP-Gal:N-acetyllactosaminide alpha 1----3-galactosyltransferase from calf thymus.
+  JOURNAL   J. Biol. Chem. 260 (1985) 12927-34.
+  ORGANISM  Bos taurus
+REFERENCE   3  [PMID:6787040]
+  AUTHORS   Blake DA, Goldstein IJ.
+  TITLE     An alpha-D-galactosyltransferase activity in Ehrlich ascites tumor cells. Biosynthesis and characterization of a trisaccharide (alpha-D-galactose-(1 goes to 3)-N-acetyllactosamine).
+  JOURNAL   J. Biol. Chem. 256 (1981) 5387-93.
+  ORGANISM  Mus musculus
+PATHWAY     ec00601  Glycosphingolipid biosynthesis - lacto and neolacto series
+ORTHOLOGY   K00743  N-acetyllactosaminide 3-alpha-galactosyltransferase
+GENES       PTR: 464708
+            PON: 100433669
+            MMU: 14594(Ggta1)
+            RNO: 246766(Ggta1p)
+            CGE: 100754535(Ggta1)
+            HGL: 101705531
+            TUP: 102502371
+            CFA: 491357(GGTA1)
+            AML: 100482234
+            FCA: 493877(GGTA1)
+            PTG: 102965067
+            BTA: 281780(GGTA1)
+            BOM: 102282898
+            PHD: 102317168
+            CHX: 102168270
+            SSC: 396733(GGTA1)
+            CFR: 102516521
+            ECB: 100067589
+            MYB: 102261921
+            MYD: 102751930
+            PALE: 102892029
+            MDO: 100016105 100033073
+            SHR: 100933356
+            AAE: aq_516(mtfC)
+            AFU: AF1728
+DBLINKS     ExplorEnz - The Enzyme Database: 2.4.1.87
+            IUBMB Enzyme Nomenclature: 2.4.1.87
+            ExPASy - ENZYME nomenclature database: 2.4.1.87
+            BRENDA, the Enzyme Database: 2.4.1.87
+            CAS: 128449-51-4
+///

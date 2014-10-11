@@ -1,0 +1,13 @@
+ENTRY       R02240                      Reaction
+NAME        ATP:1,2-diacylglycerol 3-phosphotransferase
+DEFINITION  ATP + 1,2-Diacyl-sn-glycerol <=> ADP + Phosphatidate
+EQUATION    C00002 + C00641 <=> C00008 + C00416
+RPAIR       RP00003  C00002_C00008 main [RC:RC00002]
+            RP00441  C00416_C00641 main [RC:RC00017]
+            RP06912  C00002_C00416 trans
+ENZYME      2.7.1.107
+PATHWAY     rn00561  Glycerolipid metabolism
+            rn00564  Glycerophospholipid metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00901  diacylglycerol kinase (ATP dependent) [EC:2.7.1.107]
+///

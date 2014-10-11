@@ -1,0 +1,10 @@
+ENTRY       R02599                      Reaction
+NAME        CTP:N-acylneuraminate cytidylyltransferase
+DEFINITION  CTP + N-Acylneuraminate <=> Diphosphate + CMP-N-acylneuraminate
+EQUATION    C00063 + C00591 <=> C00013 + C01064
+COMMENT     R= -CH3 or -CH2OH (see R01117 and R04215)
+RPAIR       RP00501  C00591_C01064 main [RC:RC00152]
+            RP01194  C00013_C00063 leave
+            RP02338  C00063_C01064 trans
+ENZYME      2.7.7.43
+///

@@ -1,0 +1,12 @@
+ENTRY       R08680                      Reaction
+NAME        acetyl-CoA:2-oxo-acid C-acetyltransferase (thioester-hydrolysing, carboxymethyl-forming)
+DEFINITION  2-Oxo acid + Acetyl-CoA + H2O <=> 2-Alkylmalic acid + CoA
+EQUATION    C00161 + C00024 + C00001 <=> C17263 + C00010
+COMMENT     a part of chain-elongation cycle (see R08792)
+            general reaction (see R08619, R08623, R08627, R08631, R08640 and R08644)
+RPAIR       RP00007  C00010_C00024 main [RC:RC00004]
+            RP13682  C00161_C17263 main [RC:RC02340]
+            RP13683  C00024_C17263 trans
+            RP13684  C00001_C17263 leave
+ENZYME      2.3.3.-
+///

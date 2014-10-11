@@ -1,0 +1,11 @@
+ENTRY       R08983                      Reaction
+DEFINITION  3 p-Coumaroyl-CoA + Spermidine <=> N1,N5,N10-Tricoumaroyl spermidine + 3 CoA
+EQUATION    3 C00223 + C00315 <=> C18069 + 3 C00010
+COMMENT     multi-step reaction
+RPAIR       RP00144  C00010_C00223 main [RC:RC00004]
+            RP14174  C00315_C18069 main [RC:RC02392]
+            RP14175  C00223_C18069 trans
+            RP14176  C00223_C18069 trans
+            RP14177  C00223_C18069 trans
+PATHWAY     rn00940  Phenylpropanoid biosynthesis
+///

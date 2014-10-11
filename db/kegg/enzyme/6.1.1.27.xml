@@ -1,0 +1,88 @@
+ENTRY       EC 6.1.1.27                 Enzyme
+NAME        O-phospho-L-serine---tRNA ligase;
+            O-phosphoseryl-tRNA ligase;
+            non-canonical O-phosphoseryl-tRNA synthetase;
+            SepRS
+CLASS       Ligases;
+            Forming carbon-oxygen bonds;
+            Ligases forming aminoacyl-tRNA and related compounds
+SYSNAME     O-phospho-L-serine:tRNACys ligase (AMP-forming)
+REACTION    ATP + O-phospho-L-serine + tRNACys = AMP + diphosphate + O-phospho-L-seryl-tRNACys [RN:R08576]
+ALL_REAC    R08576
+SUBSTRATE   ATP [CPD:C00002];
+            O-phospho-L-serine [CPD:C01005];
+            tRNA(Cys) [CPD:C01639]
+PRODUCT     AMP [CPD:C00020];
+            diphosphate [CPD:C00013];
+            O-phospho-L-seryl-tRNACys
+COMMENT     In organisms like Archaeoglobus fulgidus lacking EC 6.1.1.16 (cysteine---tRNA ligase) for the direct Cys-tRNACys formation, Cys-tRNACys is produced by an indirect pathway, in which EC 6.1.1.27 (O-phosphoseryl-tRNA ligase) ligates O-phosphoserine to tRNACys, and EC 2.5.1.73 (O-phospho-L-seryl-tRNA: Cys-tRNA synthase) converts the produced O-phospho-L-seryl-tRNACys to Cys-tRNACys. The SepRS/SepCysS pathway is the sole route for cysteine biosynthesis in the organism [1]. Methanosarcina mazei can use both pathways, the direct route using EC 6.1.1.16 (cysteine---tRNA ligase) and the indirect pathway with EC 6.1.1.27 and EC 2.5.1.73 (O-phospho-L-seryl-tRNA: Cys-tRNA synthase) [2].
+HISTORY     EC 6.1.1.27 created 2009
+REFERENCE   1  [PMID:17351629]
+  AUTHORS   Fukunaga R, Yokoyama S
+  TITLE     Structural insights into the first step of RNA-dependent cysteine biosynthesis in archaea.
+  JOURNAL   Nat. Struct. Mol. Biol. 14 (2007) 272-9.
+  ORGANISM  Methanococcus jannaschii, Archaeoglobus fulgidus, Methanococcus maripaludis
+  SEQUENCE  [mja:MJ_1660] [afu:AF0110]
+REFERENCE   2  [PMID:18559341]
+  AUTHORS   Hauenstein SI, Perona JJ
+  TITLE     Redundant synthesis of cysteinyl-tRNACys in Methanosarcina mazei.
+  JOURNAL   J. Biol. Chem. 283 (2008) 22007-17.
+  ORGANISM  Methanosarcina mazei
+PATHWAY     ec00970  Aminoacyl-tRNA biosynthesis
+ORTHOLOGY   K07587  O-phosphoseryl-tRNA synthetase
+GENES       MJA: MJ_1660
+            MFE: Mefer_0735
+            MVU: Metvu_1155
+            MFS: MFS40622_0592
+            MIF: Metin_0235
+            MIG: Metig_1346
+            MMP: MMP0688
+            MMQ: MmarC5_0888
+            MMX: MmarC6_0196
+            MMZ: MmarC7_1715
+            MMD: GYY_02815
+            MAE: Maeo_1060
+            MVN: Mevan_1570
+            MVO: Mvol_0433
+            MOK: Metok_0981
+            MAC: MA0090(pheRS)
+            MBA: Mbar_A1204
+            MMA: MM_1383
+            MMAZ: MmTuc01_1435
+            MBU: Mbur_0923
+            MMH: Mmah_0685
+            MEV: Metev_1721
+            MZH: Mzhil_0247
+            MPY: Mpsy_1453
+            MHZ: Metho_0248
+            MTP: Mthe_0363
+            MCJ: MCON_3135(sepS)
+            MHI: Mhar_0928
+            MHU: Mhun_2839
+            MLA: Mlab_0537
+            MEM: Memar_2215
+            MBG: BN140_1447
+            MPI: Mpet_0614
+            MBN: Mboo_0273
+            MFO: Metfor_2843
+            MPL: Mpal_0290
+            MPD: MCP_1457
+            MEZ: Mtc_1161
+            RCI: RRC273
+            MTH: MTH1501
+            MMG: MTBMA_c00860(pheS1)
+            MEL: Metbo_0044
+            MEW: MSWAN_0057
+            METH: MBMB1_0036(sepS)
+            MFV: Mfer_0342
+            MKA: MK0439
+            AFU: AF0110
+            APO: Arcpr_1311
+            AVE: Arcve_1107
+            AST: Asulf_01133
+            FPL: Ferp_0952
+DBLINKS     ExplorEnz - The Enzyme Database: 6.1.1.27
+            IUBMB Enzyme Nomenclature: 6.1.1.27
+            ExPASy - ENZYME nomenclature database: 6.1.1.27
+            BRENDA, the Enzyme Database: 6.1.1.27
+///

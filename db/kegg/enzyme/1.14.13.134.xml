@@ -1,0 +1,35 @@
+ENTRY       EC 1.14.13.134              Enzyme
+NAME        beta-amyrin 11-oxidase;
+            CYP88D6
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     beta-amyrin,NADPH:oxygen oxidoreductase (hydroxylating)
+REACTION    beta-amyrin + 2 O2 + 2 NADPH + 2 H+ = 11-oxo-beta-amyrin + 3 H2O + 2 NADP+ (overall reaction) [RN:R09817];
+            (1a) beta-amyrin + O2 + NADPH + H+ = 11alpha-hydroxy-beta-amyrin + H2O + NADP+ [RN:R09815];
+            (1b) 11alpha-hydroxy-beta-amyrin + O2 + NADPH + H+ = 11-oxo-beta-amyrin + 2 H2O + NADP+ [RN:R09816]
+ALL_REAC    R09815 R09816 R09817
+SUBSTRATE   beta-amyrin [CPD:C08616];
+            O2 [CPD:C00007];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            11alpha-hydroxy-beta-amyrin [CPD:C19942]
+PRODUCT     11-oxo-beta-amyrin [CPD:C19943];
+            H2O [CPD:C00001];
+            NADP+ [CPD:C00006];
+            11alpha-hydroxy-beta-amyrin [CPD:C19942]
+COMMENT     Requires cytochrome P450. Part of the glycyrrhizin biosynthesis pathway. The enzyme is also able to oxidize 30-hydroxy-beta-amyrin to 11alpha,30-dihydroxy-beta-amyrin but this is not thought to be part of glycyrrhizin biosynthesis.
+HISTORY     EC 1.14.13.134 created 2011
+REFERENCE   1  [PMID:18779566]
+  AUTHORS   Seki H, Ohyama K, Sawai S, Mizutani M, Ohnishi T, Sudo H, Akashi T, Aoki T, Saito K, Muranaka T
+  TITLE     Licorice beta-amyrin 11-oxidase, a cytochrome P450 with a key role in the biosynthesis of the triterpene sweetener glycyrrhizin.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 105 (2008) 14204-9.
+  ORGANISM  Glycyrrhiza uralensis
+  SEQUENCE  [up:B5BSX1]
+ORTHOLOGY   K17875  beta-amyrin 11-oxidase
+GENES       CAM: 101496150
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.134
+            IUBMB Enzyme Nomenclature: 1.14.13.134
+            ExPASy - ENZYME nomenclature database: 1.14.13.134
+            BRENDA, the Enzyme Database: 1.14.13.134
+///

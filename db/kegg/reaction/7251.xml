@@ -1,0 +1,24 @@
+ENTRY       R07251                      Reaction
+NAME        acyl-CoA:malonyl-CoA C-acyltransferase (decarboxylating, oxoacyl- and enoyl-reducing, thioester-hydrolysing)
+DEFINITION  Acetyl-CoA + 8 Malonyl-CoA + 11 NADPH + 11 H+ + S-Adenosyl-L-methionine <=> Dihydromonacolin L + 9 CoA + 8 CO2 + 11 NADP+ + S-Adenosyl-L-homocysteine + 6 H2O
+EQUATION    C00024 + 8 C00083 + 11 C00005 + 11 C00080 + C00019 <=> C15536 + 9 C00010 + 8 C00011 + 11 C00006 + C00021 + 6 C00001
+COMMENT     multi-step reaction
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00004  C00019_C00021 main [RC:RC00003]
+            RP00007  C00010_C00024 main [RC:RC00004]
+            RP00051  C00010_C00083 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP08518  C00001_C00083 leave
+            RP10708  C00019_C15536 trans
+            RP10739  C00024_C15536 trans
+            RP10897  C00083_C15536 trans
+            RP13914  C00083_C15536 trans
+            RP13915  C00083_C15536 trans
+            RP13916  C00083_C15536 trans
+            RP13917  C00083_C15536 trans
+            RP13918  C00083_C15536 trans
+            RP13919  C00083_C15536 trans
+            RP13920  C00083_C15536 trans
+            RP13921  C00001_C00024 leave
+ENZYME      2.3.1.161
+///

@@ -1,0 +1,12 @@
+ENTRY       R08352                      Reaction
+NAME        glutathione:spermine ligase (ADP-forming)
+DEFINITION  ATP + Glutathione + Spermine <=> ADP + Orthophosphate + Glutathionylspermine
+EQUATION    C00002 + C00051 + C00750 <=> C00008 + C00009 + C16562
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP12919  C00051_C16562 main [RC:RC00090]
+            RP12994  C00750_C16562 main [RC:RC00096]
+ENZYME      6.3.1.9
+PATHWAY     rn00480  Glutathione metabolism
+ORTHOLOGY   K01833  trypanothione synthetase/amidase [EC:6.3.1.9 3.5.1.-]
+///

@@ -1,0 +1,49 @@
+ENTRY       EC 3.1.1.82                 Enzyme
+NAME        pheophorbidase;
+            phedase;
+            PPD
+CLASS       Hydrolases;
+            Acting on ester bonds;
+            Carboxylic-ester hydrolases
+SYSNAME     pheophorbide-a hydrolase
+REACTION    pheophorbide a + H2O = pyropheophorbide a + methanol + CO2 (overall reaction) [RN:R08974];
+            (1a) pheophorbide a + H2O = C-132-carboxypyropheophorbide a + methanol [RN:R08975];
+            (1b) C-132-carboxypyropheophorbide a = pyropheophorbide a + CO2 (spontaneous) [RN:R08976]
+ALL_REAC    R08974 R08975 R08976
+SUBSTRATE   pheophorbide a [CPD:C18021];
+            H2O [CPD:C00001];
+            C-132-carboxypyropheophorbide a
+PRODUCT     pyropheophorbide a [CPD:C18064];
+            methanol [CPD:C00132];
+            CO2 [CPD:C00011];
+            C-132-carboxypyropheophorbide a
+COMMENT     This enzyme forms part of the chlorophyll degradation pathway, and is found in higher plants and in algae. In higher plants it participates in de-greening processes such as fruit ripening, leaf senescence, and flowering. The enzyme exists in two forms: type 1 is induced by senescence whereas type 2 is constitutively expressed [1,2]. The enzyme is highly specific for pheophorbide as substrate (with a preference for pheophorbide a over pheophorbide b) as other chlorophyll derivatives such as protochlorophyllide a, pheophytin a and c, chlorophyll a and b, and chlorophyllide a cannot act as substrates [2]. Another enzyme, called pheophorbide demethoxycarbonylase (PDC), produces pyropheophorbide a from pheophorbide a without forming an intermediate although the precise reaction is not yet known [1].
+HISTORY     EC 3.1.1.82 created 2007
+REFERENCE   1  [PMID:16228561]
+  AUTHORS   Suzuki Y, Doi M, Shioi Y.
+  TITLE     Two enzymatic reaction pathways in the formation of pyropheophorbide a.
+  JOURNAL   Photosynth. Res. 74 (2002) 225-33.
+  ORGANISM  Raphanus sativus
+  SEQUENCE  [up:Q2V0W1]
+REFERENCE   2  [PMID:16384908]
+  AUTHORS   Suzuki Y, Amano T, Shioi Y.
+  TITLE     Characterization and cloning of the chlorophyll-degrading enzyme pheophorbidase from cotyledons of radish.
+  JOURNAL   Plant. Physiol. 140 (2006) 716-25.
+  ORGANISM  Raphanus sativus
+  SEQUENCE  [up:Q2V0W1]
+REFERENCE   3  [PMID:16669755]
+  AUTHORS   Hortensteiner S.
+  TITLE     Chlorophyll degradation during senescence.
+  JOURNAL   Annu. Rev. Plant. Biol. 57 (2006) 55-77.
+PATHWAY     ec00860  Porphyrin and chlorophyll metabolism
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13544  pheophorbidase
+GENES       ATH: AT4G16690(MES16)
+            ALY: ARALYDRAFT_493208
+            CRB: CARUB_v10005512mg
+            EUS: EUTSA_v10026004mg
+DBLINKS     ExplorEnz - The Enzyme Database: 3.1.1.82
+            IUBMB Enzyme Nomenclature: 3.1.1.82
+            ExPASy - ENZYME nomenclature database: 3.1.1.82
+            BRENDA, the Enzyme Database: 3.1.1.82
+///

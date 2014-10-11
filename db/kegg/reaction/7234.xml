@@ -1,0 +1,17 @@
+ENTRY       R07234                      Reaction
+NAME        S-adenosyl-L-methionine:rRNA (guanine-N2-)-methyltransferase
+DEFINITION  S-Adenosyl-L-methionine + rRNA <=> S-Adenosyl-L-homocysteine + rRNA containing N2-methylguanine
+EQUATION    C00019 + C00240 <=> C00021 + C04153
+COMMENT     general reaction
+            The enzyme ec 2.1.1.171 specifically methylates guanine966 at N2 in 16S rRNA.
+            The enzyme ec 2.1.1.172 specifically methylates guanine1207 at N2 in 16S rRNA.
+            The enzyme ec 2.1.1.173 specifically methylates guanine2445 at N2 in 23S rRNA.
+            The enzyme ec 2.1.1.174 specifically methylates guanine1835 at N2 in 23S rRNA.
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP10688  C00019_C04153 trans
+ENZYME      2.1.1.171       2.1.1.172       2.1.1.173       2.1.1.174
+ORTHOLOGY   K00564  16S rRNA (guanine1207-N2)-methyltransferase [EC:2.1.1.172]
+            K08316  16S rRNA (guanine966-N2)-methyltransferase [EC:2.1.1.171]
+            K11391  23S rRNA (guanine1835-N2)-methyltransferase [EC:2.1.1.174]
+            K12297  23S rRNA (guanine2445-N2)-methyltransferase / 23S rRNA (guanine2069-N7)-methyltransferase [EC:2.1.1.173 2.1.1.264]
+///

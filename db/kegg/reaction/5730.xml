@@ -1,0 +1,12 @@
+ENTRY       R05730                      Reaction
+NAME        alkene,NADH:oxygen oxidoreductase
+DEFINITION  Propylene + NADH + H+ + Oxygen <=> (S)-1,2-Epoxypropane + NAD+ + H2O
+EQUATION    C11505 + C00004 + C00080 + C00007 <=> C11507 + C00003 + C00001
+COMMENT     The stereospecifity of the epoxypropane formed is 5% (S).
+            see R05729 ((R)-formed)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP05321  C11505_C11507 main [RC:RC01460]
+            RP08821  C00007_C11507 leave
+ENZYME      1.14.13.69
+///

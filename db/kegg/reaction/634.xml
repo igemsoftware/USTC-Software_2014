@@ -1,0 +1,11 @@
+ENTRY       R00634                      Reaction
+NAME        aldehyde:NADP+ oxidoreductase
+DEFINITION  Aldehyde + NADP+ + H2O <=> Carboxylate + NADPH + H+
+EQUATION    C00071 + C00006 + C00001 <=> C00060 + C00005 + C00080
+COMMENT     general reaction
+            NAD+ (ec 1.2.1.5, see R00538)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00186  C00060_C00071 main [RC:RC00071]
+            RP05681  C00001_C00060 leave
+ENZYME      1.2.1.4         1.2.1.5
+///

@@ -1,0 +1,442 @@
+ENTRY       EC 1.3.1.1                  Enzyme
+NAME        dihydropyrimidine dehydrogenase (NAD+);
+            dihydropyrimidine dehydrogenase;
+            dihydrothymine dehydrogenase;
+            pyrimidine reductase;
+            thymine reductase;
+            uracil reductase;
+            dihydrouracil dehydrogenase (NAD+)
+CLASS       Oxidoreductases;
+            Acting on the CH-CH group of donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     5,6-dihydropyrimidine:NAD+ oxidoreductase
+REACTION    (1) 5,6-dihydrouracil + NAD+ = uracil + NADH + H+ [RN:R00977];
+            (2) 5,6-dihydrothymine + NAD+ = thymine + NADH + H+ [RN:R01414]
+ALL_REAC    R00977 R01414
+SUBSTRATE   5,6-dihydrouracil [CPD:C00429];
+            NAD+ [CPD:C00003];
+            5,6-dihydrothymine [CPD:C00906]
+PRODUCT     uracil [CPD:C00106];
+            NADH [CPD:C00004];
+            H+ [CPD:C00080];
+            thymine [CPD:C00178]
+COMMENT     An iron-sulfur flavoenzyme. The enzyme was originally discovered in the uracil-fermenting bacterium, Clostridium uracilicum, which utilizes uracil and thymine as nitrogen and carbon sources for growth [1]. Since then the enzyme was found in additional organisms including Alcaligenes eutrophus [2], Pseudomonas strains [3,4] and Escherichia coli [5,6].
+HISTORY     EC 1.3.1.1 created 1961, modified 2011
+REFERENCE   1  [PMID:13462991]
+  AUTHORS   CAMPBELL LL Jr.
+  TITLE     Reductive degradation of pyrimidines. III. Purification and properties of dihydrouracil dehydrogenase.
+  JOURNAL   J. Biol. Chem. 227 (1957) 693-700.
+  ORGANISM  Clostridium uracilicum
+REFERENCE   2  [PMID:8806723]
+  AUTHORS   Schmitt U, Jahnke K, Rosenbaum K, Cook PF, Schnackerz KD
+  TITLE     Purification and characterization of dihydropyrimidine dehydrogenase from Alcaligenes eutrophus.
+  JOURNAL   Arch. Biochem. Biophys. 332 (1996) 175-82.
+REFERENCE   3  [PMID:1903745]
+  AUTHORS   Kim S, West TP
+  TITLE     Pyrimidine catabolism in Pseudomonas aeruginosa.
+  JOURNAL   FEMS. Microbiol. Lett. 61 (1991) 175-9.
+REFERENCE   4  [PMID:11759049]
+  AUTHORS   West TP
+  TITLE     Pyrimidine base catabolism in Pseudomonas putida biotype B.
+  JOURNAL   Antonie. Van. Leeuwenhoek. 80 (2001) 163-7.
+REFERENCE   5  [PMID:10030006]
+  AUTHORS   West TP
+  TITLE     Isolation and characterization of an Escherichia coli B mutant strain defective in uracil catabolism.
+  JOURNAL   Can. J. Microbiol. 44 (1998) 1106-9.
+REFERENCE   6  [PMID:21169495]
+  AUTHORS   Hidese R, Mihara H, Kurihara T, Esaki N
+  TITLE     Escherichia coli dihydropyrimidine dehydrogenase is a novel NAD-dependent heterotetramer essential for the production of 5,6-dihydrouracil.
+  JOURNAL   J. Bacteriol. 193 (2011) 989-93.
+  ORGANISM  Escherichia coli
+  SEQUENCE  [eco:b2146 b2147]
+PATHWAY     ec00240  Pyrimidine metabolism
+            ec00410  beta-Alanine metabolism
+            ec00770  Pantothenate and CoA biosynthesis
+            ec01100  Metabolic pathways
+ORTHOLOGY   K17722  dihydropyrimidine dehydrogenase (NAD+) subunit PreT
+            K17723  dihydropyrimidine dehydrogenase (NAD+) subunit PreA
+GENES       ECO: b2146(preT) b2147(preA)
+            ECJ: Y75_p2108(yeiT) Y75_p2109(yeiA)
+            ECD: ECDH10B_2303(yeiT) ECDH10B_2304(yeiA)
+            EBW: BWG_1928(yeiT) BWG_1929(yeiA)
+            ECOK: ECMDS42_1715(yeiT) ECMDS42_1716(yeiA)
+            ECE: Z3401 Z3402(yeiA)
+            ECS: ECs3038 ECs3039
+            ECF: ECH74115_3278 ECH74115_3279
+            ETW: ECSP_3024(yeiT) ECSP_3025(yeiA)
+            ELX: CDCO157_2801 CDCO157_2802
+            EOJ: ECO26_3058(yeiT) ECO26_3059(yeiA)
+            EOI: ECO111_2863(yeiT) ECO111_2864(yeiA)
+            EOH: ECO103_2621(yeiT) ECO103_2622(yeiA)
+            ECG: E2348C_2292(yeiT) E2348C_2293(yeiA)
+            EOK: G2583_2689(yeiT) G2583_2690(yeiA)
+            ELR: ECO55CA74_13295 ECO55CA74_13300
+            ECC: c2679(yeiT) c2680(yeiA)
+            ECP: ECP_2185 ECP_2186
+            ECI: UTI89_C2419(yeiT) UTI89_C2420(yeiA)
+            ECV: APECO1_4404(yeiA) APECO1_4405(yeiT)
+            ECX: EcHS_A2280 EcHS_A2281
+            ECW: EcE24377A_2441 EcE24377A_2442
+            ECM: EcSMS35_2293 EcSMS35_2294
+            ECY: ECSE_2413 ECSE_2414
+            ECR: ECIAI1_2223(yeiT) ECIAI1_2224(yeiA)
+            ECQ: ECED1_2593(yeiT) ECED1_2594(yeiA)
+            ECK: EC55989_2396(yeiT) EC55989_2397(yeiA)
+            ECT: ECIAI39_2285(yeiT) ECIAI39_2286(yeiA)
+            EOC: CE10_2517(yeiT) CE10_2518(yeiA)
+            EUM: ECUMN_2479(yeiT) ECUMN_2480(yeiA)
+            ECZ: ECS88_2292(yeiT) ECS88_2293(yeiA)
+            ELO: EC042_2378
+            ELN: NRG857_10900 NRG857_10905
+            ELH: ETEC_2281 ETEC_2282
+            ESE: ECSF_2028 ECSF_2029
+            ESO: O3O_16920 O3O_16925
+            ESM: O3M_08660 O3M_08665
+            ESL: O3K_08710 O3K_08715
+            ECL: EcolC_1501 EcolC_1502
+            EBR: ECB_02075(yeiT) ECB_02076(yeiA)
+            EBD: ECBD_1511 ECBD_1512
+            EKO: EKO11_1607 EKO11_1608
+            EKF: KO11_11895(yeiA) KO11_11900(yeiT)
+            EAB: ECABU_c24760(yeiT) ECABU_c24770(yeiA)
+            EDH: EcDH1_1511 EcDH1_1512
+            EDJ: ECDH1ME8569_2082(yeiT) ECDH1ME8569_2083(yeiA)
+            EIH: ECOK1_2376 ECOK1_2377
+            ENA: ECNA114_2236 ECNA114_2237
+            ELU: UM146_06055 UM146_06060
+            EUN: UMNK88_2690 UMNK88_2691
+            ELW: ECW_m2347(yeiT) ECW_m2348(yeiA)
+            ELL: WFL_11480(yeiT) WFL_11485(yeiA)
+            ELC: i14_2478(yeiT) i14_2479(yeiA)
+            ELD: i02_2478(yeiT) i02_2479(yeiA)
+            ELP: P12B_c2240(yeiT) P12B_c2241
+            EBL: ECD_02075(yeiT) ECD_02076(yeiA)
+            EBE: B21_02034(yeiT) B21_02035(yeiA)
+            ELF: LF82_3007(yeiA) LF82_3021(yeiT)
+            ECOA: APECO78_14445 APECO78_14450
+            ECOL: LY180_11220 LY180_11225
+            ECOI: ECOPMV1_02307(preT) ECOPMV1_02308(preA)
+            ECOJ: P423_12080 P423_12085
+            ECOO: ECRM13514_2908 ECRM13514_2909(yeiA)
+            EFE: EFER_2231(yeiT) EFER_2232(yeiA)
+            STY: STY2416
+            STT: t0669
+            SEX: STBHUCCB_7150 STBHUCCB_7160 STBHUCCB_7170
+            SENT: TY21A_03415
+            STM: STM2186 STM2187(yeiA)
+            SEO: STM14_2693 STM14_2694(yeiA)
+            SEV: STMMW_22181 STMMW_22191
+            SEY: SL1344_2163 SL1344_2164(yeiA)
+            SEM: STMDT12_C22070 STMDT12_C22080
+            SEJ: STMUK_2216 STMUK_2217(yeiA)
+            SEB: STM474_2275 STM474_2276(yeiA)
+            SEF: UMN798_2360 UMN798_2361(yeiA)
+            SETU: STU288_07315 STU288_07320
+            SETC: CFSAN001921_05850 CFSAN001921_05855
+            SEEN: SE451236_17135 SE451236_17140
+            SENR: STMDT2_21631 STMDT2_21641(yeiA)
+            SEND: DT104_22461 DT104_22471(yeiA)
+            SPT: SPA0664(yeiA) SPA0665
+            SEK: SSPA0623 SSPA0624
+            SPQ: SPAB_00829 SPAB_00830
+            SEI: SPC_1515(yeiA) SPC_1516
+            SEC: SC2203(yeiT) SC2204(yeiA)
+            SEH: SeHA_C2421 SeHA_C2422
+            SHB: SU5_02778 SU5_02779
+            SENH: CFSAN002069_20890 CFSAN002069_20895
+            SEEH: SEEH1578_20205 SEEH1578_20210
+            SEE: SNSL254_A2376 SNSL254_A2377
+            SENN: SN31241_32980 SN31241_32990
+            SEW: SeSA_A2425 SeSA_A2426
+            SEA: SeAg_B2332 SeAg_B2333
+            SENS: Q786_10850 Q786_10855
+            SED: SeD_A2533 SeD_A2534
+            SEG: SG2222 SG2223(yeiA)
+            SEL: SPUL_0702(yeiA) SPUL_0703
+            SEGA: SPUCDC_0702(yeiA) SPUCDC_0703
+            SET: SEN2179 SEN2180(yeiA)
+            SENJ: CFSAN001992_00425 CFSAN001992_00430
+            SEEC: CFSAN002050_17935 CFSAN002050_17940
+            SEEB: SEEB0189_08575 SEEB0189_08580
+            SEEP: I137_03190 I137_03195
+            SENB: BN855_22750(SBOV22551) BN855_22760(SBOV22561)
+            SENE: IA1_10935 IA1_10940
+            SBG: SBG_1998 SBG_1999
+            SBZ: A464_2311 A464_2312
+            SFL: SF2231
+            SFX: S2360
+            SFV: SFV_2221
+            SFE: SFxv_2463(yeiT)
+            SSN: SSON_2203(yeiA)
+            SSJ: SSON53_12900 SSON53_12905 SSON53_12910
+            SBO: SBO_0995
+            SBC: SbBS512_E0824 SbBS512_E0825
+            SDY: SDY_2140a
+            SDZ: Asd1617_02891 Asd1617_02893 Asd1617_02894
+            ESC: Entcl_1556 Entcl_1557
+            CFD: CFNIH1_22020 CFNIH1_22025
+            SERR: Ser39006_0646
+            DDA: Dd703_0045
+            EBF: D782_1475 D782_1476
+            PAE: PA0439
+            PAU: PA14_05740(pydA)
+            PAP: PSPA7_0540
+            PAG: PLES_04371
+            PAF: PAM18_0439
+            PNC: NCGM2_5758(pydA)
+            PDK: PADK2_02215
+            PSG: G655_02235
+            PRP: M062_02205
+            PAEP: PA1S_gp3951
+            PAER: PA1R_gp3951
+            PAEM: U769_02260
+            PAEL: T223_02220
+            PAES: SCV20265_0459
+            PAEU: BN889_00513
+            PAEG: AI22_01675
+            PPU: PP_4038
+            PPF: Pput_1800
+            PPG: PputGB1_3640
+            PPW: PputW619_1834
+            PPT: PPS_3443
+            PPB: PPUBIRD1_1782
+            PPI: YSA_08710
+            PPX: T1E_3294(yeiA)
+            PPUH: B479_17145
+            PPUT: L483_22585
+            PPUN: PP4_17170(preA)
+            PPUU: PputUW4_02930(pyrD1)
+            PFL: PFL_2546
+            PPRC: PFLCHA0_c26090
+            PFO: Pfl01_3443
+            PFS: PFLU3944
+            PFE: PSF113_2358
+            PFC: PflA506_3319
+            PEN: PSEEN3251
+            PBA: PSEBR_a3369
+            PSV: PVLB_10010
+            PSK: U771_20795
+            PMON: X969_16410
+            PMOT: X970_16055
+            GAP: GAPWK_1093
+            RSL: RPSI07_2141
+            BVI: Bcep1808_5511
+            BUR: Bcep18194_C6656
+            BCN: Bcen_1595
+            BCH: Bcen2424_6236
+            BCM: Bcenmc03_6712
+            BCJ: BCAS0733
+            BAM: Bamb_5965
+            BAC: BamMC406_5721
+            BMU: Bmul_5351
+            BMJ: BMULJ_06147(pyrD)
+            BXE: Bxe_A1429
+            BPH: Bphy_1534
+            BPY: Bphyt_2689
+            BUG: BC1001_2385
+            BGE: BC1002_6352
+            BGF: BC1003_1073
+            BRH: RBRH_00601
+            BGD: bgla_2g17630
+            BYI: BYI23_B009000
+            BUK: MYA_5114
+            BPX: BUPH_02961
+            BUO: BRPE64_BCDS04150
+            PNA: Pnap_4020
+            AAV: Aave_0967
+            AAA: Acav_0940
+            ACK: C380_04145
+            VEI: Veis_4151
+            DAC: Daci_2862
+            DEL: DelCs14_3886
+            THI: THI_3627(pydA)
+            GLO: Glov_2025
+            SUR: STAUR_8046(yeiA)
+            SCL: sce6397(yeiA)
+            SCU: SCE1572_37895
+            DTI: Desti_0688 Desti_3250
+            MLO: mll1643
+            MCI: Mesci_3086
+            MOP: Mesop_3471
+            MAM: Mesau_03357
+            MES: Meso_2055
+            SME: SMc01815
+            SMK: Sinme_2496
+            SMQ: SinmeB_2275
+            SMX: SM11_chr2601
+            SMI: BN406_02297
+            SMEG: C770_GR4Chr2550
+            SMEL: SM2011_c01815
+            SMD: Smed_2361
+            RHI: NGR_c24770
+            SFH: SFHH103_02342
+            SFD: USDA257_c49090(preA)
+            EAD: OV14_4004
+            ARA: Arad_3441
+            AVI: Avi_3449
+            RET: RHE_CH03278
+            REC: RHECIAT_CH0003524(pydA)
+            REL: REMIM1_CH03339(preA)
+            RLE: RL3708(pydA)
+            RLT: Rleg2_3029
+            RLG: Rleg_3281
+            RLB: RLEG3_26955
+            RLU: RLEG12_26405
+            RTR: RTCIAT899_CH13740
+            RHL: LPU83_3157
+            BME: BMEI1639
+            BMI: BMEA_A0316
+            BMZ: BM28_A0313
+            BMG: BM590_A0310
+            BMW: BMNI_I0309
+            BMF: BAB1_0313
+            BMB: BruAb1_0308
+            BMC: BAbS19_I02830
+            BAA: BAA13334_I03475
+            BMS: BR0282
+            BSI: BS1330_I0283
+            BMT: BSUIS_A0306
+            BSV: BSVBI22_A0283
+            BOV: BOV_0296
+            BCS: BCAN_A0286
+            BSK: BCA52141_I1236
+            BOL: BCOUA_I0282
+            BMR: BMI_I288
+            BPP: BPI_I317
+            BCET: V910_101662
+            BCEE: V568_101863
+            OAN: Oant_0365
+            BBT: BBta_6035
+            SIL: SPO1777
+            SIT: TM1040_1500
+            RSP: RSP_0187
+            RSH: Rsph17029_1820
+            RSQ: Rsph17025_1458
+            RSK: RSKD131_1527
+            RCP: RCAP_rcc02528
+            JAN: Jann_2712
+            RDE: RD1_3103
+            RLI: RLO149_c023340
+            PAMI: JCM7686_2282
+            DSH: Dshi_1363(pyrD1)
+            PGA: PGA1_c12820
+            PGL: PGA2_c12790
+            PGD: Gal_02122
+            OAT: OAN307_c41920(yeiA)
+            OAR: OA238_c03780(yeiA)
+            LMD: METH_07625
+            RED: roselon_03393
+            GOH: B932_1609
+            GDI: GDI_1503
+            GDJ: Gdia_2199
+            GXY: GLX_03930
+            GXL: H845_1598
+            APT: APA01_21610
+            APW: APA42C_21610
+            APF: APA03_21610
+            APU: APA07_21610
+            APG: APA12_21610
+            APQ: APA22_21610
+            APX: APA26_21610
+            APZ: APA32_21610
+            APK: APA386B_1024
+            AZL: AZL_d01290(dpyD)
+            ALI: AZOLI_p40507
+            TMO: TMO_c0377(yeiA)
+            PGV: SL003B_0743
+            BCL: ABC3782
+            BPF: BpOF4_09025
+            BMQ: BMQ_4423
+            BMD: BMD_4409
+            BCO: Bcell_1313
+            BAG: Bcoa_0943
+            BACI: B1NLA3E_11170
+            BIF: N288_11965
+            GKA: GK1422
+            GTH: Geoth_2416 Geoth_2417 Geoth_2518
+            GTE: GTCCBUS3UF5_16540
+            GYC: GYMC61_2213
+            GYA: GYMC52_1341
+            GMC: GY4MC1_2334 GY4MC1_2335 GY4MC1_2475
+            LSP: Bsph_2011
+            LGY: T479_07685
+            HHD: HBHAL_2644
+            BBE: BBR47_32370
+            PJD: Pjdr2_4688
+            PMS: KNP414_02475
+            PMQ: PM3016_2732
+            PMW: B2K_13835
+            PSAB: PSAB_23035
+            AAD: TC41_2982
+            SIV: SSIL_0761
+            LRE: Lreu_1309 Lreu_1310
+            LRF: LAR_1241 LAR_1242
+            LRU: HMPREF0538_20322(pyrDII) HMPREF0538_20323(gltD)
+            LRT: LRI_0657 LRI_0658
+            LRR: N134_07295 N134_07300
+            CTC: CTC00815 CTC00816
+            CTET: BN906_00853 BN906_00854
+            CBO: CBO2819 CBO2820
+            CBA: CLB_2762 CLB_2763
+            CBH: CLC_2695 CLC_2696
+            CBY: CLM_3182 CLM_3183
+            CBL: CLK_2206 CLK_2207
+            CBK: CLL_A2317 CLL_A2318
+            CBB: CLD_1755 CLD_1756
+            CBI: CLJ_B3046 CLJ_B3047
+            CBN: CbC4_1672 CbC4_1673(gltA)
+            CBT: CLH_2060 CLH_2061
+            CBF: CLI_2868 CLI_2869
+            CBM: CBF_2860
+            CBJ: H04402_02899 H04402_02900
+            CBE: Cbei_1943
+            CKL: CKL_2399(pyrD1)
+            CKR: CKR_2115
+            CLJ: CLJU_c35870 CLJU_c35880
+            CLS: CXIVA_03300
+            CSR: Cspa_c41330(preA)
+            CPAS: Clopa_1054 Clopa_1055
+            CAH: CAETHG_1494 CAETHG_1495
+            ESR: ES1_26140
+            ESU: EUS_26160
+            EHA: Ethha_1173
+            RCH: RUM_00500
+            CLE: Clole_0545
+            SGY: Sgly_1379
+            DOR: Desor_1363
+            DAI: Desaci_2046
+            DMI: Desmer_1290
+            SAY: TPY_1320
+            SAP: Sulac_2333
+            BPRL: CL2_22260 CL2_22270
+            TPZ: Tph_c23940(pyrD2) Tph_c24020(pyrD3)
+            HPK: Hprae_0435 Hprae_0436
+            SRI: SELR_pSRC101280
+            CCN: H924_00165
+            MIN: Minf_0626(pyrD)
+            TAZ: TREAZ_2798
+            TPI: TREPR_0425
+            SGP: SpiGrapes_1798
+            ACM: AciX9_0263
+            GMA: AciX8_2686
+            TRS: Terro_4343
+            SUS: Acid_7660
+            PHM: PSMK_25200
+            BACC: BRDCF_11725
+            PDI: BDI_1170
+            CPI: Cpin_3448
+            NKO: Niako_0461
+            HSW: Hsw_1064
+            DGO: DGo_CA0639(yeiA)
+            DPD: Deipe_2277
+            TRA: Trad_0920
+            MRB: Mrub_1889
+            MRE: K649_13115
+            MSV: Mesil_2108
+            CEX: CSE_02230
+DBLINKS     ExplorEnz - The Enzyme Database: 1.3.1.1
+            IUBMB Enzyme Nomenclature: 1.3.1.1
+            ExPASy - ENZYME nomenclature database: 1.3.1.1
+            BRENDA, the Enzyme Database: 1.3.1.1
+            CAS: 9026-89-5
+///

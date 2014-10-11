@@ -1,0 +1,320 @@
+ENTRY       EC 1.2.7.5                  Enzyme
+NAME        aldehyde ferredoxin oxidoreductase;
+            AOR
+CLASS       Oxidoreductases;
+            Acting on the aldehyde or oxo group of donors;
+            With an iron-sulfur protein as acceptor
+SYSNAME     aldehyde:ferredoxin oxidoreductase
+REACTION    an aldehyde + H2O + 2 oxidized ferredoxin = a carboxylate + 2 H+ + 2 reduced ferredoxin [RN:R07158]
+ALL_REAC    R07158 > R08571
+SUBSTRATE   aldehyde [CPD:C00071];
+            H2O [CPD:C00001];
+            oxidized ferredoxin [CPD:C00139]
+PRODUCT     carboxylate [CPD:C00060];
+            H+ [CPD:C00080];
+            reduced ferredoxin [CPD:C00138]
+COMMENT     This is an oxygen-sensitive enzyme that contains tungsten-molybdopterin and iron-sulfur clusters. Catalyses the oxidation of aldehydes (including crotonaldehyde, acetaldehyde, formaldehyde and glyceraldehyde) to their corresponding acids. However, it does not oxidize glyceraldehyde 3-phosphate [see EC 1.2.7.6, glyceraldehyde-3-phosphate dehydrogenase (ferredoxin)]. Can use ferredoxin or methyl viologen but not NAD(P)+ as electron acceptor.
+HISTORY     EC 1.2.7.5 created 2003
+REFERENCE   1  [PMID:1907273]
+  AUTHORS   Mukund S, Adams MW.
+  TITLE     The novel tungsten-iron-sulfur protein of the hyperthermophilic archaebacterium, Pyrococcus furiosus, is an aldehyde ferredoxin oxidoreductase. Evidence for its participation in a unique glycolytic pathway.
+  JOURNAL   J. Biol. Chem. 266 (1991) 14208-16.
+  ORGANISM  Pyrococcus furiosus
+  SEQUENCE  [pfu:PF0346]
+REFERENCE   2  [PMID:8444863]
+  AUTHORS   Johnson JL, Rajagopalan KV, Mukund S, Adams MW.
+  TITLE     Identification of molybdopterin as the organic component of the tungsten cofactor in four enzymes from hyperthermophilic Archaea.
+  JOURNAL   J. Biol. Chem. 268 (1993) 4848-52.
+  ORGANISM  Pyrococcus furiosus
+REFERENCE   3  [PMID:7878465]
+  AUTHORS   Chan MK, Mukund S, Kletzin A, Adams MW, Rees DC.
+  TITLE     Structure of a hyperthermophilic tungstopterin enzyme, aldehyde ferredoxin oxidoreductase.
+  JOURNAL   Science. 267 (1995) 1463-9.
+  ORGANISM  Pyrococcus furiosus
+  SEQUENCE  [pfu:PF0346]
+REFERENCE   4  [PMID:11265456]
+  AUTHORS   Roy R, Menon AL, Adams MW.
+  TITLE     Aldehyde oxidoreductases from Pyrococcus furiosus.
+  JOURNAL   Methods. Enzymol. 331 (2001) 132-44.
+  ORGANISM  Pyrococcus furiosus
+PATHWAY     ec00030  Pentose phosphate pathway
+            ec01100  Metabolic pathways
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K03738  aldehyde:ferredoxin oxidoreductase
+GENES       SBL: Sbal_3096
+            SPC: Sputcn32_1189
+            SSE: Ssed_2568
+            SPL: Spea_0261
+            SHW: Sputw3181_2975
+            MAH: MEALZ_0765(aor)
+            CYQ: Q91_2116
+            CZA: CYCME_0309
+            AEH: Mlg_1297
+            RFR: Rfer_2850
+            PNA: Pnap_0049
+            AJS: Ajs_3944
+            DIA: Dtpsy_3293
+            MPT: Mpe_A2581
+            LCH: Lcho_1817
+            TIN: Tint_2646
+            THI: THI_3176(aor)
+            EBA: ebA5005
+            AZO: azo2930(aorA)
+            AZA: AZKH_1616(aorA)
+            TMZ: Tmz1t_2811
+            APP: CAP2UW1_0307
+            WSU: WS1844
+            SDL: Sdel_1699
+            SBA: Sulba_1777
+            SMUL: SMUL_2394(aor)
+            GSU: GSU0910 GSU2191
+            GSK: KN400_0895 KN400_2138
+            GME: Gmet_1045(aorA) Gmet_2087(bamB-1) Gmet_2289
+            GUR: Gura_1195 Gura_2421 Gura_3269 Gura_3550
+            GLO: Glov_2231
+            GBM: Gbem_0312 Gbem_1352 Gbem_1444(bamB-1) Gbem_3341
+            GEO: Geob_0085 Geob_0212 Geob_0228 Geob_0260 Geob_0269 Geob_1875 Geob_3259
+            GEM: GM21_0304 GM21_0904 GM21_2810 GM21_2933
+            GEB: GM18_0358 GM18_1209 GM18_1306 GM18_1821 GM18_1843 GM18_3212 GM18_3420
+            PCA: Pcar_0254(aorA-1) Pcar_2514
+            PPD: Ppro_0465 Ppro_0580 Ppro_0888
+            DVU: DVU0687 DVU1179(aor)
+            DVL: Dvul_1877 Dvul_2276
+            DVM: DvMF_1956 DvMF_2671
+            DVG: Deval_0631 Deval_1088
+            DDE: Dde_2460 Dde_2943
+            DDS: Ddes_1775
+            DDN: DND132_0701 DND132_1018 DND132_1032 DND132_2371 DND132_2395
+            DMA: DMR_02370 DMR_22700 DMR_22830 DMR_29360 DMR_35460
+            DSA: Desal_0517 Desal_1641 Desal_3753
+            DAS: Daes_1327 Daes_2605 Daes_3267
+            DAF: Desaf_0315 Desaf_1713 Desaf_2874
+            DHY: DESAM_20802 DESAM_22054
+            DPI: BN4_10136 BN4_11866 BN4_12047 BN4_20263
+            DGG: DGI_1056(afor) DGI_1447 DGI_3127
+            DBA: Dbac_2001 Dbac_2007 Dbac_2054 Dbac_2150 Dbac_2323 Dbac_2970 Dbac_3328
+            DRT: Dret_0081 Dret_0175 Dret_1842 Dret_2319
+            DPS: DP2476
+            DPR: Despr_1395 Despr_2090
+            DSF: UWK_00311 UWK_01369 UWK_01406
+            DOL: Dole_1771 Dole_2289 Dole_2501
+            DAL: Dalk_0704 Dalk_2424 Dalk_2768 Dalk_4476 Dalk_4694
+            DAT: HRM2_02020(aor1) HRM2_04880(aor2) HRM2_05270(aor3) HRM2_14310(aor4) HRM2_33750(aor6) HRM2_38620(aor7) HRM2_38700(aor8) HRM2_44080
+            DTO: TOL2_C00430(aor1) TOL2_C01300(aor2) TOL2_C03790(bamB1) TOL2_C04250(aor3) TOL2_C04260 TOL2_C05660(aor4) TOL2_C06330 TOL2_C07610(aor5) TOL2_C28110(aor6) TOL2_C39760(aor7) TOL2_C41430(bamB2) TOL2_C41450(aor8) TOL2_C41790(aor9) TOL2_C43590(bamB3)
+            HOH: Hoch_5245
+            SAT: SYN_00140 SYN_00261 SYN_01377 SYN_01640 SYN_02419 SYN_03032
+            DTI: Desti_0167 Desti_1599 Desti_1912 Desti_5353
+            SFU: Sfum_1080 Sfum_1479 Sfum_2287
+            HMR: Hipma_0789 Hipma_0834
+            RRU: Rru_A0313
+            RRF: F11_01580
+            MAG: amb1488 amb2922
+            AZL: AZL_b04690(aor)
+            ALI: AZOLI_p20536(aor1) AZOLI_p40585(aor2)
+            BSE: Bsel_2218
+            BACI: B1NLA3E_11420 B1NLA3E_18985
+            CAC: CA_C2018
+            CAE: SMB_G2050(aor)
+            CAY: CEA_G2033
+            CBO: CBO1935(aorA)
+            CBA: CLB_1874(aor)
+            CBH: CLC_1881(aor)
+            CBY: CLM_2153(aor)
+            CBL: CLK_1393(aor)
+            CBB: CLD_2688(aor)
+            CBI: CLJ_B2140(aor)
+            CBF: CLI_2002(aor)
+            CBM: CBF_1985(aor)
+            CBJ: H04402_01957
+            CLJ: CLJU_c20110 CLJU_c20210
+            CLS: CXIVA_17090
+            CAH: CAETHG_0092 CAETHG_0102
+            AMT: Amet_0699 Amet_3157 Amet_4643
+            CAD: Curi_c25040(aor)
+            CST: CLOST_0827
+            STH: STH2051 STH2886 STH3283
+            SWO: Swol_1703 Swol_1835
+            SLP: Slip_0711 Slip_1587 Slip_2101
+            DHD: Dhaf_2056
+            DRM: Dred_1830 Dred_2273
+            DCA: Desca_0853 Desca_1319 Desca_1670 Desca_1941 Desca_2486
+            DKU: Desku_0164 Desku_0587 Desku_0590 Desku_0621 Desku_0627 Desku_2946 Desku_2951 Desku_2982 Desku_3081 Desku_3230
+            DRU: Desru_1387
+            DGI: Desgi_0477 Desgi_0485 Desgi_0509 Desgi_0518 Desgi_1109 Desgi_1970 Desgi_1976 Desgi_2316 Desgi_2902 Desgi_3038 Desgi_3845 Desgi_3919 Desgi_3960 Desgi_4598
+            PTH: PTH_0487 PTH_0610 PTH_0852 PTH_0921 PTH_2604 PTH_2897
+            DAU: Daud_0135 Daud_0279
+            TJR: TherJR_0856 TherJR_2264 TherJR_2501 TherJR_2507
+            DOR: Desor_1169 Desor_1285 Desor_2516 Desor_2521 Desor_3072
+            DMI: Desmer_1182 Desmer_2082
+            HMO: HM1_0998(aor)
+            ELM: ELI_0332 ELI_1752 ELI_3389
+            EAC: EAL2_808p04810(aor)
+            AWO: Awo_c12420(for)
+            TEX: Teth514_1380
+            THX: Thet_1521
+            TPD: Teth39_0850
+            TBO: Thebr_0872
+            TWI: Thewi_0375
+            CHY: CHY_0789(aor1) CHY_1329(aor2) CHY_1712(aor3) CHY_1747(aor4)
+            MTA: Moth_0154 Moth_0722 Moth_2300
+            ADG: Adeg_1006 Adeg_1743
+            TPZ: Tph_c04180(aor1) Tph_c07080(aor2) Tph_c08220(aor3) Tph_c19480(aor4) Tph_c20350(aor5) Tph_c27630(aor6)
+            CSC: Csac_0969
+            ATE: Athe_0821
+            COB: COB47_0758
+            CHD: Calhy_1866
+            COW: Calow_0668
+            CKI: Calkr_1890
+            CKN: Calkro_1832
+            CLC: Calla_1292
+            TOC: Toce_0383
+            CPO: COPRO5265_0137 COPRO5265_1588
+            TNR: Thena_0949 Thena_1055 Thena_1703
+            NTH: Nther_0827 Nther_2055 Nther_2339
+            HAS: Halsa_0727
+            AAR: Acear_0949 Acear_0977 Acear_1487 Acear_1517
+            KFL: Kfla_2116
+            SHI: Shel_24640
+            ELE: Elen_2089
+            SSM: Spirs_3566
+            SBU: SpiBuddy_2787
+            SCC: Spico_1227
+            SGP: SpiGrapes_2201
+            IPO: Ilyop_1309
+            STR: Sterm_1112 Sterm_1677
+            TAI: Taci_0217 Taci_0474 Taci_0803
+            ACO: Amico_0167 Amico_1873
+            TLI: Tlie_0012 Tlie_0489 Tlie_1226 Tlie_1446 Tlie_1551 Tlie_1780 Tlie_1797 Tlie_1914
+            AMO: Anamo_0077 Anamo_0095 Anamo_1467 Anamo_1576 Anamo_1966
+            IPA: Isop_2935
+            RRS: RoseRS_4359
+            RCA: Rcas_0715 Rcas_1863
+            CAU: Caur_1533
+            CAG: Cagg_1166 Cagg_2271
+            CHL: Chy400_1666
+            HAU: Haur_3590
+            TRO: trd_A0661
+            STI: Sthe_3386
+            ATM: ANT_14670 ANT_16440 ANT_17220
+            CAP: CLDAP_12620(aor) CLDAP_22600
+            TTH: TTC0012 TTC1834
+            TTJ: TTHA0152 TTHA0380
+            TTS: Ththe16_0233 Ththe16_0380
+            TTL: TtJL18_1700 TtJL18_1872
+            TSC: TSC_c00500(aor) TSC_c12760 TSC_c18780
+            THC: TCCBUS3UF1_12120 TCCBUS3UF1_16620 TCCBUS3UF1_20860
+            TOS: Theos_0390 Theos_1647 Theos_1851
+            OPR: Ocepr_0207 Ocepr_2171
+            HTH: HTH_1132(aor)
+            HTE: Hydth_1124
+            TAL: Thal_0420
+            TLE: Tlet_0469 Tlet_1346
+            TTA: Theth_0853 Theth_1019
+            PMO: Pmob_0381
+            KOL: Kole_1088
+            MPZ: Marpi_1140
+            CEX: CSE_00260(aor) CSE_09310(aor)
+            DDF: DEFDS_0764
+            FSI: Flexsi_1401
+            TYE: THEYE_A0109 THEYE_A0591 THEYE_A1699
+            TID: Thein_2108 Thein_2110
+            MOX: DAMO_2797(aor)
+            WWE: P147_WWE3C01G0673
+            MAC: MA1714 MA2962 MA3989(aor)
+            MBA: Mbar_A0696
+            MMA: MM_0921 MM_2645 MM_3326
+            MMAZ: MmTuc01_0943 MmTuc01_2710 MmTuc01_3431
+            MEV: Metev_1385 Metev_1807
+            MZH: Mzhil_0751
+            MPY: Mpsy_1578
+            MHZ: Metho_0168
+            MTP: Mthe_0900
+            MHI: Mhar_2265
+            MHU: Mhun_1005
+            MLA: Mlab_0187
+            MEM: Memar_0339
+            MPL: Mpal_1563
+            MPD: MCP_0618 MCP_0658
+            MEZ: Mtc_1223(aor-1) Mtc_2235(aor-2)
+            RCI: RCIX2090(aor-1) RRC230(aor-2)
+            AFU: AF0023(aor-1) AF0077(aor-2) AF0340(aor-3) AF2281(aor-4)
+            APO: Arcpr_0080 Arcpr_1332
+            AVE: Arcve_0051 Arcve_1916
+            AST: Asulf_00180 Asulf_00585 Asulf_01856 Asulf_02130 Asulf_02182
+            FPL: Ferp_1026 Ferp_1232 Ferp_1307 Ferp_1422 Ferp_1488 Ferp_2103 Ferp_2334
+            HMA: rrnAC1318(aor2) rrnAC2064(aor1)
+            HHI: HAH_1907(aor1) HAH_2534(aor2) HAH_2557(aor3)
+            HHN: HISP_09730 HISP_12895 HISP_13010
+            NPH: NP1432A(aor_2) NP4964A(aor_1) NP5016A(aor_4) NP6186A(aor_3)
+            NMO: Nmlp_1571(aor3) Nmlp_3660(aor2) Nmlp_3663(aor1)
+            HLA: Hlac_1050 Hlac_1370 Hlac_1464
+            HTU: Htur_0387 Htur_0664 Htur_0687 Htur_2361 Htur_4067 Htur_4718 Htur_4742
+            NMG: Nmag_2118 Nmag_2661 Nmag_3867
+            HVO: HVO_2183(aor4) HVO_B0244(aor1) HVO_B0256(aor3)
+            HME: HFX_2008(aor_3) HFX_2242(aor1)
+            HJE: HacjB3_04120 HacjB3_04725 HacjB3_14990
+            HBO: Hbor_06240 Hbor_26060 Hbor_31050
+            HXA: Halxa_0608 Halxa_1711 Halxa_3743 Halxa_4222
+            NAT: NJ7G_3998
+            NPE: Natpe_2115 Natpe_3174 Natpe_3597
+            NGE: Natgr_0016 Natgr_0412 Natgr_1073 Natgr_1265 Natgr_2925 Natgr_3276
+            NOU: Natoc_0227 Natoc_0900 Natoc_2097 Natoc_2929
+            TAC: Ta0810 Ta0834
+            TVO: TVN0795 TVN1239
+            PHO: PH0028 PH0892 PH1019 PH1274
+            PAB: PAB0647(aor-2) PAB0798(for) PAB2085(aor-1) PAB2330(aor-3)
+            PFU: PF0346 PF1203 PF1961
+            PFI: PFC_00810 PFC_05225 PFC_06635 PFC_08775
+            PYN: PNA2_0553 PNA2_1543 PNA2_1850
+            PYA: PYCH_05360 PYCH_06880 PYCH_09430
+            PYS: Py04_0091 Py04_0868 Py04_1188
+            TKO: TK0844 TK1066
+            TON: TON_0444 TON_0749 TON_1354 TON_1807
+            TGA: TGAM_0734(aor-1) TGAM_1913(aor-4)
+            TSI: TSIB_0476 TSIB_1009 TSIB_1133 TSIB_1619
+            TBA: TERMP_00788 TERMP_01323 TERMP_02145
+            THE: GQS_02990 GQS_04210 GQS_04540
+            THA: TAM4_178 TAM4_573
+            THM: CL1_0239 CL1_1348
+            TLT: OCC_00045 OCC_05029 OCC_08390
+            THS: TES1_0032 TES1_0723 TES1_1351
+            TNU: BD01_0256 BD01_1995
+            ABI: Aboo_0812 Aboo_1115 Aboo_1343 Aboo_1540
+            ACF: AciM339_0264 AciM339_0621 AciM339_1442 AciM339_1502
+            APE: APE_0266.1(aor)
+            SMR: Smar_0668 Smar_1199
+            SHC: Shell_0125 Shell_0845 Shell_1268
+            IHO: Igni_0025 Igni_1032
+            DKA: DKAM_0593 DKAM_0975
+            DMU: Desmu_0114
+            DFD: Desfe_0695 Desfe_1093
+            TAG: Tagg_0105 Tagg_0120 Tagg_0448
+            THG: TCELL_0599
+            HBU: Hbut_0351 Hbut_0737 Hbut_1001 Hbut_1553
+            PFM: Pyrfu_1589 Pyrfu_1808
+            PAI: PAE0622 PAE2052 PAE3427
+            PIS: Pisl_0738 Pisl_0970
+            PCL: Pcal_0077 Pcal_0204 Pcal_1040 Pcal_2057
+            PAS: Pars_1164 Pars_1880 Pars_2092 Pars_2285
+            PYR: P186_0602 P186_2141
+            POG: Pogu_0032 Pogu_0250 Pogu_1085 Pogu_2583
+            TNE: Tneu_1310 Tneu_1927
+            CMA: Cmaq_0005 Cmaq_0260 Cmaq_0338 Cmaq_0710 Cmaq_1137
+            TUZ: TUZN_1735 TUZN_2158
+            TTN: TTX_1294(aor-2) TTX_1396(for) TTX_1768(aor-3)
+            VDI: Vdis_0035 Vdis_0074 Vdis_0384 Vdis_0495 Vdis_2192
+            VMO: VMUT_0586 VMUT_0922 VMUT_0955 VMUT_1163 VMUT_1175 VMUT_1242
+            TPE: Tpen_0094 Tpen_0176 Tpen_1413 Tpen_1817
+            THB: N186_00660 N186_01390 N186_01805 N186_08490
+            ASC: ASAC_0698 ASAC_0762 ASAC_1249 ASAC_1295
+            CLG: Calag_0264 Calag_0832 Calag_1143
+            FFO: FFONT_0196 FFONT_0226 FFONT_0604 FFONT_0909
+            CSU: CSUB_C1530
+            KCR: Kcr_0013 Kcr_0257 Kcr_0275 Kcr_0779 Kcr_0921 Kcr_1084
+            HAH: Halar_1218 Halar_1250 Halar_1665 Halar_2177 Halar_2238 Halar_3117
+DBLINKS     ExplorEnz - The Enzyme Database: 1.2.7.5
+            IUBMB Enzyme Nomenclature: 1.2.7.5
+            ExPASy - ENZYME nomenclature database: 1.2.7.5
+            BRENDA, the Enzyme Database: 1.2.7.5
+            CAS: 138066-90-7
+///

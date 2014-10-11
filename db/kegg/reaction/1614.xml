@@ -1,0 +1,19 @@
+ENTRY       R01614                      Reaction
+NAME        Malonyl-CoA:4-coumaroyl-CoA malonyltransferase (cyclizing)
+DEFINITION  3 Malonyl-CoA + p-Coumaroyl-CoA <=> 4 CoA + Resveratrol + 4 CO2
+EQUATION    3 C00083 + C00223 <=> 4 C00010 + C03582 + 4 C00011
+COMMENT     multi-step reaction
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP00144  C00010_C00223 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP06633  C00011_C00223 leave
+            RP06634  C00223_C03582 main [RC:RC02855]
+            RP06635  C00083_C03582 trans
+            RP10882  C00083_C03582 trans
+            RP12789  C00011_C00083 leave
+            RP13392  C00083_C03582 trans
+ENZYME      2.3.1.95
+PATHWAY     rn00945  Stilbenoid, diarylheptanoid and gingerol biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13232  stilbene synthase [EC:2.3.1.95]
+///

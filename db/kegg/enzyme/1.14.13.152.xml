@@ -1,0 +1,48 @@
+ENTRY       EC 1.14.13.152              Enzyme
+NAME        geraniol 8-hydroxylase;
+            CYP76B6;
+            G10H;
+            CrG10H;
+            SmG10H
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     geraniol,NADPH:oxygen oxidoreductase (8-hydroxylating)
+REACTION    geraniol + NADPH + H+ + O2 = (6E)-8-hydroxygeraniol + NADP+ + H2O [RN:R08785]
+ALL_REAC    R08785
+SUBSTRATE   geraniol [CPD:C01500];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007]
+PRODUCT     (6E)-8-hydroxygeraniol [CPD:C17621];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001]
+COMMENT     Requires cytochrome P-450. Also hydroxylates nerol and citronellol, cf. EC 1.14.13.151 linalool 8-monooxygenase. The recommended numbering of geraniol gives 8-hydroxygeraniol as the product rather than 10-hydroxygeraniol as used by references 1-3. See prenol nomenclature {iupac/misc/prenol#p1::Pr-1}. The cloned enzyme also catalysed, but less efficiently, the 3'-hydroxylation of naringenin (cf. EC 1.14.13.21, flavonoid 3'-monooxygenase) [3].
+HISTORY     EC 1.14.13.152 created 2012
+REFERENCE   1  [PMID:11718718]
+  AUTHORS   Collu G, Unver N, Peltenburg-Looman AM, van der Heijden R, Verpoorte R, Memelink J.
+  TITLE     Geraniol 10-hydroxylase, a cytochrome P450 enzyme involved in terpenoid indole alkaloid biosynthesis.
+  JOURNAL   FEBS. Lett. 508 (2001) 215-20.
+  ORGANISM  Catharanthus roseus
+  SEQUENCE  [up:Q8VWZ7]
+REFERENCE   2  [PMID:20699579]
+  AUTHORS   Wang J, Liu Y, Cai Y, Zhang F, Xia G, Xiang F
+  TITLE     Cloning and functional analysis of geraniol 10-hydroxylase, a cytochrome P450 from Swertia mussotii Franch.
+  JOURNAL   Biosci. Biotechnol. Biochem. 74 (2010) 1583-90.
+  ORGANISM  Swertia mussotii
+  SEQUENCE  [up:D1MI46]
+REFERENCE   3  [PMID:21504162]
+  AUTHORS   Sung PH, Huang FC, Do YY, Huang PL
+  TITLE     Functional expression of geraniol 10-hydroxylase reveals its dual function in the biosynthesis of terpenoid and phenylpropanoid.
+  JOURNAL   J. Agric. Food. Chem. 59 (2011) 4637-43.
+  ORGANISM  Catharanthus roseus
+  SEQUENCE  [up:Q8VWZ7]
+PATHWAY     ec00902  Monoterpenoid biosynthesis
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K15099  geraniol 8-hydroxylase
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.152
+            IUBMB Enzyme Nomenclature: 1.14.13.152
+            ExPASy - ENZYME nomenclature database: 1.14.13.152
+            BRENDA, the Enzyme Database: 1.14.13.152
+///

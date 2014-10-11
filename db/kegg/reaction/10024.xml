@@ -1,0 +1,10 @@
+ENTRY       R10024                      Reaction
+NAME        artemisinic-alcohol,NADPH:oxygen 12-oxidoreductase
+DEFINITION  Artemisinic alcohol + Oxygen + NADPH + H+ <=> Artemisinic aldehyde + NADP+ + 2 H2O
+EQUATION    C20307 + C00007 + C00005 + C00080 <=> C20308 + C00006 + 2 C00001
+COMMENT     second step of three-step reaction (see R10026, R10023+R10024+R10025)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP15765  C20307_C20308 main [RC:RC02561]
+ENZYME      1.14.13.158
+///

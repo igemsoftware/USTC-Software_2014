@@ -1,0 +1,14 @@
+ENTRY       R08518                      Reaction
+NAME        17alpha-hydroxyprogesterone,hydrogen-donor:oxygen oxidoreductase (side-chain-cleaving, acetate-formig)
+DEFINITION  17alpha-Hydroxyprogesterone + Reduced acceptor + Oxygen <=> Androstenedione + Acetate + Acceptor + H2O
+EQUATION    C01176 + C00030 + C00007 <=> C00280 + C00033 + C00028 + C00001
+COMMENT     17alpha-hydroxylase/17,20-lyase
+            P-450 reductase is acceptor and re-reduced by NADPH
+RPAIR       RP00013  C00001_C00007 cofac
+            RP01796  C00280_C01176 main [RC:RC00607]
+            RP08577  C00007_C00033 leave
+            RP12714  C00033_C01176 main [RC:RC00923]
+ENZYME      1.14.99.9
+PATHWAY     rn00140  Steroid hormone biosynthesis
+ORTHOLOGY   K00512  steroid 17alpha-monooxygenase / 17alpha-hydroxyprogesterone aldolase [EC:1.14.99.9 4.1.2.30]
+///

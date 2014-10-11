@@ -1,0 +1,86 @@
+ENTRY       EC 1.2.1.76                 Enzyme
+NAME        succinate-semialdehyde dehydrogenase (acylating);
+            succinyl-coA reductase;
+            coenzyme-A-dependent succinate-semialdehyde dehydrogenase
+CLASS       Oxidoreductases;
+            Acting on the aldehyde or oxo group of donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     succinate semialdehyde:NADP+ oxidoreductase (CoA-acylating)
+REACTION    succinate semialdehyde + CoA + NADP+ = succinyl-CoA + NADPH + H+ [RN:R09280]
+ALL_REAC    R09280
+SUBSTRATE   succinate semialdehyde [CPD:C00232];
+            CoA [CPD:C00010];
+            NADP+ [CPD:C00006]
+PRODUCT     succinyl-CoA [CPD:C00091];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080]
+COMMENT     Catalyses the NADPH-dependent reduction of succinyl-CoA to succinate semialdehyde. The enzyme has been described in Clostridium kluyveri, where it participates in succinate fermentation [1], and in Metallosphaera sedula, where it participates in the 3-hydroxypropionate/4-hydroxybutyrate cycle, an autotrophic CO2 fixation pathway found in some thermoacidophilic archaea [2,3].
+HISTORY     EC 1.2.1.76 created 2009
+REFERENCE   1  [PMID:8444151]
+  AUTHORS   Sohling B, Gottschalk G
+  TITLE     Purification and characterization of a coenzyme-A-dependent succinate-semialdehyde dehydrogenase from Clostridium kluyveri.
+  JOURNAL   Eur. J. Biochem. 212 (1993) 121-7.
+REFERENCE   2  [PMID:17041055]
+  AUTHORS   Alber B, Olinger M, Rieder A, Kockelkorn D, Jobst B, Hugler M, Fuchs G
+  TITLE     Malonyl-coenzyme A reductase in the modified 3-hydroxypropionate cycle for autotrophic carbon fixation in archaeal Metallosphaera and Sulfolobus spp.
+  JOURNAL   J. Bacteriol. 188 (2006) 8551-9.
+  ORGANISM  Metallosphaera sedula, Sulfolobus tokodaii
+REFERENCE   3  [PMID:18079405]
+  AUTHORS   Berg IA, Kockelkorn D, Buckel W, Fuchs G
+  TITLE     A 3-hydroxypropionate/4-hydroxybutyrate autotrophic carbon dioxide assimilation pathway in Archaea.
+  JOURNAL   Science. 318 (2007) 1782-6.
+  ORGANISM  Metallosphaera sedula
+  SEQUENCE  [mse:Msed_0709]
+PATHWAY     ec00650  Butanoate metabolism
+            ec00720  Carbon fixation pathways in prokaryotes
+            ec01100  Metabolic pathways
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K15017  malonyl-CoA/succinyl-CoA reductase (NADPH)
+            K15038  succinyl-CoA reductase
+            K18119  succinate-semialdehyde dehydrogenase
+GENES       CKL: CKL_3015(sucD)
+            CKR: CKR_2663
+            CDF: CD630_23420(sucD)
+            CDC: CD196_2185(sucD)
+            CDL: CDR20291_2231(sucD)
+            CDG: CDBI1_11315
+            HAS: Halsa_0175
+            PGI: PG0687(sucD)
+            PGN: PGN_0723
+            PGT: PGTDC60_1813(sucD)
+            PAH: Poras_0443
+            OSP: Odosp_2058
+            TFO: BFO_1488
+            SSO: SSO1629(gapN-1) SSO1842(gapN-2) SSO2178(asd-2)
+            SOL: Ssol_2908
+            STO: ST0064 ST2171
+            SAI: Saci_1738 Saci_2147 Saci_2370
+            SACN: SacN8_08450 SacN8_10450 SacN8_11535
+            SACR: SacRon12I_08465 SacRon12I_10705 SacRon12I_11780
+            SACS: SUSAZ_08265
+            SIS: LS215_0550 LS215_2961
+            SIA: M1425_1049 M1425_2796
+            SIM: M1627_1112 M1627_2848
+            SID: M164_1027 M164_2777
+            SIY: YG5714_1027 YG5714_2976
+            SIN: YN1551_1850 YN1551_2101 YN1551_3167
+            SII: LD85_0963 LD85_1154 LD85_3126
+            SIH: SiH_0568 SiH_2755
+            SIR: SiRe_0909 SiRe_2691
+            SIC: SiL_0776 SiL_2637
+            MSE: Msed_0709 Msed_1119 Msed_1774
+            MCN: Mcup_1427
+            AHO: Ahos_0324 Ahos_2348
+            PIS: Pisl_0249
+            PCL: Pcal_1387
+            PYR: P186_0719
+            POG: Pogu_1297
+            TNE: Tneu_0421
+            CMA: Cmaq_0073
+            TUZ: TUZN_0139 TUZN_0951
+            TTN: TTX_1101
+DBLINKS     ExplorEnz - The Enzyme Database: 1.2.1.76
+            IUBMB Enzyme Nomenclature: 1.2.1.76
+            ExPASy - ENZYME nomenclature database: 1.2.1.76
+            BRENDA, the Enzyme Database: 1.2.1.76
+///

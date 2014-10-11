@@ -1,0 +1,39 @@
+ENTRY       EC 1.14.11.36               Enzyme
+NAME        pentalenolactone F synthase;
+            penD (gene name);
+            pntD (gene name);
+            ptlD (gene name)
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With 2-oxoglutarate as one donor, and incorporation of one atom of oxygen into each donor
+SYSNAME     pentalenolactone-D,2-oxoglutarate:oxygen oxidoreductase
+REACTION    pentalenolactone D + 2 2-oxoglutarate + 2 O2 = pentalenolactone F + 2 succinate + 2 CO2 + H2O (overall reaction) [RN:R10145];
+            (1a) pentalenolactone D + 2-oxoglutarate + O2 = pentalenolactone E + succinate + CO2 + H2O [RN:R10143];
+            (1b) pentalenolactone E + 2-oxoglutarate + O2 = pentalenolactone F + succinate + CO2 [RN:R10144]
+ALL_REAC    R10143 R10144 R10145
+SUBSTRATE   pentalenolactone D [CPD:C20399];
+            2-oxoglutarate [CPD:C00026];
+            O2 [CPD:C00007];
+            pentalenolactone E [CPD:C20398]
+PRODUCT     pentalenolactone F [CPD:C20397];
+            succinate [CPD:C00042];
+            CO2 [CPD:C00011];
+            H2O [CPD:C00001];
+            pentalenolactone E [CPD:C20398]
+COMMENT     Requires Fe(II) and ascorbate. Isolated from the bacteria Streptomyces exfoliatus, Streptomyces arenae and Streptomyces avermitilis. Part of the pentalenolactone biosynthesis pathway.
+HISTORY     EC 1.14.11.36 created 2012
+REFERENCE   1  [PMID:21250661]
+  AUTHORS   Seo MJ, Zhu D, Endo S, Ikeda H, Cane DE
+  TITLE     Genome mining in Streptomyces. Elucidation of the role of Baeyer-Villiger monooxygenases and non-heme iron-dependent dehydrogenase/oxygenases in the final  steps of the biosynthesis of pentalenolactone and neopentalenolactone.
+  JOURNAL   Biochemistry. 50 (2011) 1739-54.
+  ORGANISM  Streptomyces avermitilis
+  SEQUENCE  [sma:SAV_2995]
+ORTHOLOGY   K18057  pentalenolactone F synthase
+GENES       SMA: SAV_2995(ptlD)
+            SBH: SBI_09677
+            SCI: B446_29685
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.11.36
+            IUBMB Enzyme Nomenclature: 1.14.11.36
+            ExPASy - ENZYME nomenclature database: 1.14.11.36
+            BRENDA, the Enzyme Database: 1.14.11.36
+///

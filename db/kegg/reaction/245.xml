@@ -1,0 +1,14 @@
+ENTRY       R00245                      Reaction
+NAME        L-glutamate gamma-semialdehyde:NAD+ oxidoreductase
+DEFINITION  L-Glutamate 5-semialdehyde + NAD+ + H2O <=> L-Glutamate + NADH + H+
+EQUATION    C01165 + C00003 + C00001 <=> C00025 + C00004 + C00080
+COMMENT     the second step of two-step reaction (see R00707, R03314+R00245)
+            following after R03314
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP04453  C00025_C01165 main [RC:RC00080]
+            RP05695  C00001_C00025 leave
+ENZYME      1.2.1.88
+PATHWAY     rn00330  Arginine and proline metabolism
+ORTHOLOGY   K00294  1-pyrroline-5-carboxylate dehydrogenase [EC:1.2.1.88]
+            K13821  proline dehydrogenase / delta 1-pyrroline-5-carboxylate dehydrogenase [EC:1.5.5.2 1.2.1.88]
+///

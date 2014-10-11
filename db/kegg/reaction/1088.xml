@@ -1,0 +1,15 @@
+ENTRY       R01088                      Reaction
+NAME        L-leucine:NAD+ oxidoreductase (deaminating)
+DEFINITION  L-Leucine + H2O + NAD+ <=> 4-Methyl-2-oxopentanoate + Ammonia + NADH + H+
+EQUATION    C00123 + C00001 + C00003 <=> C00233 + C00014 + C00004 + C00080
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00424  C00123_C00233 main [RC:RC00006]
+            RP06433  C00001_C00233 leave
+            RP06434  C00014_C00123 leave
+ENZYME      1.4.1.9
+PATHWAY     rn00280  Valine, leucine and isoleucine degradation
+            rn00290  Valine, leucine and isoleucine biosynthesis
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K00263  leucine dehydrogenase [EC:1.4.1.9]
+///

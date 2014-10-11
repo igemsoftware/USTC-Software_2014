@@ -1,0 +1,113 @@
+ENTRY       EC 2.3.1.86                 Enzyme
+NAME        fatty-acyl-CoA synthase;
+            yeast fatty acid synthase;
+            FAS1 (gene name);
+            FAS2 (gene name)
+CLASS       Transferases;
+            Acyltransferases;
+            Transferring groups other than aminoacyl groups
+SYSNAME     acyl-CoA:malonyl-CoA C-acyltransferase (decarboxylating, oxoacyl- and enoyl- reducing)
+REACTION    acetyl-CoA + n malonyl-CoA + 2n NADPH + 4n H+ = long-chain-acyl-CoA + n CoA + n CO2 + 2n NADP+ [RN:R05190]
+ALL_REAC    R05190;
+            (other) R01624 R01626 R04355 R04429 R04533 R04534 R04535 R04536 R04537 R04543 R04544 R04566 R04568 R04724 R04726 R04952 R04953 R04954 R04955 R04957 R04958 R04960 R04961 R04963 R04964 R04965 R04966 R04968 R04969 R10700
+SUBSTRATE   acetyl-CoA [CPD:C00024];
+            malonyl-CoA [CPD:C00083];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080]
+PRODUCT     long-chain-acyl-CoA;
+            CoA [CPD:C00010];
+            CO2 [CPD:C00011];
+            NADP+ [CPD:C00006]
+COMMENT     The enzyme from yeasts (Ascomycota and Basidiomycota) is a multi-functional protein complex composed of two subunits. One subunit catalyses the reactions EC 1.1.1.100, 3-oxoacyl-[acyl-carrier-protein] reductase and EC 2.3.1.41, 3-oxoacyl-[acyl-carrier-protein] synthase, while the other subunit catalyses the reactions of EC 2.3.1.38, [acyl-carrier-protein] S-acetyltransferase, EC 2.3.1.39, [acyl-carrier-protein] S-malonyltransferase, EC 4.2.1.59, 3-hydroxypalmitoyl-[acyl-carrier-protein] dehydratase, EC 1.3.1.10, enoyl-[acyl-carrier-protein] reductase (NADPH, Si-specific) and EC 1.1.1.279, (R)-3-hydroxyacid ester dehydrogenase. The enzyme differs from the animal enzyme (EC 2.3.1.85) in that the enoyl reductase domain requires FMN as a cofactor, and the ultimate product is an acyl-CoA (usually palmitoyl-CoA) instead of a free fatty acid.
+HISTORY     EC 2.3.1.86 created 1984, modified 2003, modified 2013
+REFERENCE   1  [PMID:4590449]
+  AUTHORS   Schweizer E, Kniep B, Castorph H, Holzner U.
+  TITLE     Pantetheine-free mutants of the yeast fatty-acid-synthetase complex.
+  JOURNAL   Eur. J. Biochem. 39 (1973) 353-62.
+  ORGANISM  Saccharomyces cerevisiae
+REFERENCE   2  [PMID:6137188]
+  AUTHORS   Wakil SJ, Stoops JK, Joshi VC.
+  TITLE     Fatty acid synthesis and its regulation.
+  JOURNAL   Annu. Rev. Biochem. 52 (1983) 537-79.
+REFERENCE   3  [PMID:16950653]
+  AUTHORS   Tehlivets O, Scheuringer K, Kohlwein SD
+  TITLE     Fatty acid synthesis and elongation in yeast.
+  JOURNAL   Biochim. Biophys. Acta. 1771 (2007) 255-70.
+PATHWAY     ec00061  Fatty acid biosynthesis
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00667  fatty acid synthase subunit alpha, fungi type
+            K00668  fatty acid synthase subunit beta, fungi type
+GENES       SCE: YKL182W(FAS1) YPL231W(FAS2)
+            AGO: AGOS_AER085C AGOS_AFL138W
+            ERC: Ecym_2158 Ecym_3239
+            KLA: KLLA0B02717g KLLA0C15983g
+            LTH: KLTH0D15070g KLTH0G09526g KLTH0H03190g
+            PPA: PAS_chr1-1_0008 PAS_chr1-4_0295
+            VPO: Kpol_1002p24 Kpol_1055p60
+            ZRO: ZYRO0B13068g ZYRO0E07766g
+            CGR: CAGL0D00528g CAGL0E06138g
+            NCS: NCAS_0G01260(NCAS0G01260) NCAS_0J01680(NCAS0J01680)
+            NDI: NDAI_0F01390(NDAI0F01390) NDAI_0J02670(NDAI0J02670)
+            TPF: TPHA_0B02040(TPHA0B02040) TPHA_0H01860(TPHA0H01860)
+            TBL: TBLA_0C02010(TBLA0C02010) TBLA_0I03120(TBLA0I03120)
+            TDL: TDEL_0A06700(TDEL0A06700) TDEL_0C04130(TDEL0C04130) TDEL_0E00900(TDEL0E00900)
+            KAF: KAFR_0A05730(KAFR0A05730) KAFR_0F01200(KAFR0F01200)
+            DHA: DEHA2B08140g DEHA2B10032g
+            PIC: PICST_80966(FAS2) PICST_85125(FAS1)
+            PGU: PGUG_02105 PGUG_02173
+            LEL: LELG_02891 LELG_02892 LELG_03854
+            CAL: CaO19.13370 CaO19.5949 CaO19.8594(FAS1) CaO19.979(FAS1)
+            CTP: CTRG_02501 CTRG_05241
+            CDU: CD36_50220(FAS1) CD36_84800
+            COT: CORT_0C01740 CORT_0E04830
+            YLI: YALI0B15059g YALI0B19382g
+            CLU: CLUG_03422 CLUG_04160
+            NCR: NCU07307 NCU07308
+            SMP: SMAC_00840 SMAC_00841
+            PAN: PODANSg3685 PODANSg3686 PODANSg8559 PODANSg8560
+            TTT: THITE_2122453 THITE_2122457
+            MTM: MYCTH_2310228 MYCTH_2310232
+            MGR: MGG_04118 MGG_12154
+            FGR: FG00036.1 FG00037.1 FG05321.1 FG05322.1
+            NHE: NECHADRAFT_64009 NECHADRAFT_72277
+            TRE: TRIREDRAFT_48788 TRIREDRAFT_78591
+            VAL: VDBG_01018 VDBG_01020 VDBG_08384
+            SSL: SS1G_13073 SS1G_13074
+            BFU: BC1G_14051 BC1G_14055
+            ANI: AN3380.2 AN7873.2 AN7880.2 AN9407.2 AN9408.2
+            AFM: AFUA_3G04210 AFUA_3G04220
+            AOR: AOR_1_156104(AO090124000083) AOR_1_158104(AO090124000084) AOR_1_184024(AO090010000107) AOR_1_26014(AO090026000012) AOR_1_276024(AO090010000156) AOR_1_28014(AO090026000013) AOR_1_300024(AO090010000171) AOR_1_62054(AO090011000040) AOR_1_74054(AO090011000046)
+            ANG: ANI_1_1114084(An09g01740) ANI_1_1156084(An09g02010) ANI_1_1466104(An12g01980) ANI_1_202174(An10g00630) ANI_1_2488074(An08g10860) ANI_1_2494074(An08g10930) ANI_1_6014(An01g00060)
+            AFV: AFLA_038570 AFLA_038640 AFLA_089160 AFLA_089170 AFLA_116820 AFLA_116830 AFLA_117290 AFLA_117420 AFLA_139370 AFLA_139380
+            ACT: ACLA_060580 ACLA_060590 ACLA_093750 ACLA_093760
+            NFI: NFIA_006480 NFIA_006490
+            PCS: Pc14g00740 Pc14g00750 Pc21g10840 Pc21g10870
+            CIM: CIMG_08477 CIMG_08479 CIMG_08564 CIMG_08565
+            CPW: CPC735_061450 CPC735_061460 CPC735_062220 CPC735_062230
+            PBL: PAAG_01524 PAAG_01525
+            URE: UREG_02553 UREG_02554 UREG_04458 UREG_04459
+            ABE: ARB_02752 ARB_02757 ARB_06046 ARB_06048
+            TVE: TRV_06188 TRV_06193 TRV_06922 TRV_06923
+            AJE: HCAG_07636 HCAG_07637
+            PNO: SNOG_01107 SNOG_01108 SNOG_02166 SNOG_02167 SNOG_09089 SNOG_09091
+            PTE: PTT_02058 PTT_02059 PTT_10814 PTT_10815 PTT_18039
+            ZTR: MYCGRDRAFT_108403(FAS1) MYCGRDRAFT_69244
+            TML: GSTUM_00002095001
+            SPO: SPAC4A8.11c(fas2) SPAC926.09c(fas1)
+            CNE: CNE04360 CNE04370
+            CNB: CNBE4360 CNBE4370
+            CGI: CGB_E5650C CGB_E5660W
+            LBC: LACBIDRAFT_296983(FAS-2)
+            MPR: MPER_07767 MPER_12305
+            CCI: CC1G_07064
+            SCM: SCHCODRAFT_235165 SCHCODRAFT_82184
+            UMA: UM02971.1
+            PGR: PGTG_06184 PGTG_21688
+            ACAN: ACA1_069690
+            PIF: PITG_10922 PITG_10926 PITG_18025
+DBLINKS     ExplorEnz - The Enzyme Database: 2.3.1.86
+            IUBMB Enzyme Nomenclature: 2.3.1.86
+            ExPASy - ENZYME nomenclature database: 2.3.1.86
+            BRENDA, the Enzyme Database: 2.3.1.86
+            CAS: 94219-29-1
+///

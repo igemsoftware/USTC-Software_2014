@@ -1,0 +1,17 @@
+ENTRY       R06778                      Reaction
+DEFINITION  5-[[(4,7-Dihydroxy-2-oxo-2H-1-benzopyran-3-yl)amino]carbonyl]-4-methyl-1H-pyrrole-3-carboxylate + 3-Amino-4,7-dihydroxycoumarin + ATP + 2 S-Adenosyl-L-methionine <=> Coumermic acid + AMP + Diphosphate + 2 S-Adenosyl-L-homocysteine
+EQUATION    C20637 + C12468 + C00002 + 2 C00019 <=> C12479 + C00020 + C00013 + 2 C00021
+COMMENT     multi-step reaction
+            ligase, CouL
+            methyltransferase, CouO
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP16384  C12479_C20637 main [RC:RC03149]
+            RP16385  C12468_C12479 main [RC:RC03150]
+            RP16386  C00019_C12479 trans
+PATHWAY     rn00401  Novobiocin biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K12725  coumermycin A biosynthesis protein CouL
+            K17627  coumermycin A biosynthesis protein CouO
+///

@@ -1,0 +1,18 @@
+ENTRY       R09403                      Reaction
+NAME        L-isoleucine,NADPH:oxygen oxidoreductase (N-hydroxylating)
+DEFINITION  L-Isoleucine + 2 Oxygen + 2 NADPH + 2 H+ <=> (E)-2-Methylbutanal oxime + 2 NADP+ + CO2 + 3 H2O
+EQUATION    C00407 + 2 C00007 + 2 C00005 + 2 C00080 <=> C19491 + 2 C00006 + C00011 + 3 C00001
+COMMENT     three-step reaction (see R10027+R10028+R10029)
+            The enzyme can also accept L-valine as substrate, with a lower activity.(1.14.13.118)
+            3step reaction (similar to R00730+R04460+R07190)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP14712  C00007_C19491 leave
+            RP14714  C00407_C19491 main [RC:RC02339]
+            RP14715  C00011_C00407 leave
+ENZYME      1.14.13.117
+PATHWAY     rn00966  Glucosinolate biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+            rn01210  2-Oxocarboxylic acid metabolism
+ORTHOLOGY   K14984  isoleucine N-monooxygenase [EC:1.14.13.117]
+///

@@ -1,0 +1,18 @@
+ENTRY       R08767                      Reaction
+DEFINITION  p-Coumaroyl-CoA + CoA + NAD+ + H2O <=> 4-Hydroxybenzoyl-CoA + Acetyl-CoA + NADH + H+
+EQUATION    C00223 + C00010 + C00003 + C00001 <=> C02949 + C00024 + C00004 + C00080
+COMMENT     enzyme not yet characterized
+            multi-step reaction
+            possibly beta-oxidation (see R02685+R01778+R00391)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00482  C00010_C02949 main [RC:RC00004]
+            RP13762  C00223_C02949 main [RC:RC02968]
+            RP13763  C00024_C00223 main [RC:RC00936]
+            RP13764  C00001_C02949 leave
+PATHWAY     rn00130  Ubiquinone and other terpenoid-quinone biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+REFERENCE   1  [PMID:12232327]
+            Loscher R, Heide L.
+            Biosynthesis of p-Hydroxybenzoate from p-Coumarate and p-Coumaroyl-Coenzyme A in Cell-Free Extracts of Lithospermum erythrorhizon Cell Cultures.
+            Plant. Physiol. 106 (1994) 271-279.
+///

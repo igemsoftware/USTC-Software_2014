@@ -1,0 +1,432 @@
+ENTRY       EC 1.2.7.1                  Enzyme
+NAME        pyruvate synthase;
+            pyruvate oxidoreductase;
+            pyruvate synthetase;
+            pyruvate:ferredoxin oxidoreductase;
+            pyruvic-ferredoxin oxidoreductase;
+            2-oxobutyrate synthase;
+            alpha-ketobutyrate-ferredoxin oxidoreductase;
+            2-ketobutyrate synthase;
+            alpha-ketobutyrate synthase;
+            2-oxobutyrate-ferredoxin oxidoreductase;
+            2-oxobutanoate:ferredoxin 2-oxidoreductase (CoA-propionylating);
+            2-oxobutanoate:ferredoxin 2-oxidoreductase (CoA-propanoylating)
+CLASS       Oxidoreductases;
+            Acting on the aldehyde or oxo group of donors;
+            With an iron-sulfur protein as acceptor
+SYSNAME     pyruvate:ferredoxin 2-oxidoreductase (CoA-acetylating)
+REACTION    pyruvate + CoA + 2 oxidized ferredoxin = acetyl-CoA + CO2 + 2 reduced ferredoxin + 2 H+ [RN:R01196]
+ALL_REAC    R01196;
+            (other) R01199 R08034
+SUBSTRATE   pyruvate [CPD:C00022];
+            CoA [CPD:C00010];
+            oxidized ferredoxin [CPD:C00139]
+PRODUCT     acetyl-CoA [CPD:C00024];
+            CO2 [CPD:C00011];
+            reduced ferredoxin [CPD:C00138];
+            H+ [CPD:C00080]
+COMMENT     Contains thiamine diphosphate and [4Fe-4S] clusters. The enzyme also decarboxylates 2-oxobutyrate with lower efficiency, but shows no activity with 2-oxoglutarate. This enzyme is a member of the 2-oxoacid oxidoreductases, a family of enzymes that oxidatively decarboxylate different 2-oxoacids to form their CoA derivatives, and are differentiated based on their substrate specificity. For examples of other members of this family, see EC 1.2.7.3, 2-oxoglutarate synthase and EC 1.2.7.7, 3-methyl-2-oxobutanoate dehydrogenase (ferredoxin).
+HISTORY     EC 1.2.7.1 created 1972, modified 2003, modified 2013
+REFERENCE   1  [PMID:5217644]
+  AUTHORS   Evans MC, Buchanan BB.
+  TITLE     Photoreduction of ferredoxin and its use in carbon dioxide fixation by a subcellular system from a photosynthetic bacterium.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 53 (1965) 1420-5.
+  ORGANISM  Chlorobium thiosulfatophilum, Chromatium sp.
+REFERENCE   2  [PMID:4628267]
+  AUTHORS   Gehring U, Arnon DI.
+  TITLE     Purification and properties of  -ketoglutarate synthase from a photosynthetic bacterium.
+  JOURNAL   J. Biol. Chem. 247 (1972) 6963-9.
+  ORGANISM  Chlorobium thiosulfatophilum, Chromatium sp.
+REFERENCE   3  [PMID:5574389]
+  AUTHORS   Uyeda K, Rabinowitz JC.
+  TITLE     Pyruvate-ferredoxin oxidoreductase. 3. Purification and properties of the enzyme.
+  JOURNAL   J. Biol. Chem. 246 (1971) 3111-9.
+  ORGANISM  Clostridium acidi-urici
+REFERENCE   4  [PMID:4324891]
+  AUTHORS   Uyeda K, Rabinowitz JC.
+  TITLE     Pyruvate-ferredoxin oxidoreductase. IV. Studies on the reaction mechanism.
+  JOURNAL   J. Biol. Chem. 246 (1971) 3120-5.
+  ORGANISM  Clostridium acidi-urici
+REFERENCE   5  [PMID:10607667]
+  AUTHORS   Charon MH, Volbeda A, Chabriere E, Pieulle L, Fontecilla-Camps JC.
+  TITLE     Structure and electron transfer mechanism of pyruvate:ferredoxin oxidoreductase.
+  JOURNAL   Curr. Opin. Struct. Biol. 9 (1999) 663-9.
+  ORGANISM  Moorella thermoacetica
+PATHWAY     ec00010  Glycolysis / Gluconeogenesis
+            ec00020  Citrate cycle (TCA cycle)
+            ec00620  Pyruvate metabolism
+            ec00633  Nitrotoluene degradation
+            ec00640  Propanoate metabolism
+            ec00650  Butanoate metabolism
+            ec00680  Methane metabolism
+            ec00720  Carbon fixation pathways in prokaryotes
+            ec01100  Metabolic pathways
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K00169  pyruvate ferredoxin oxidoreductase, alpha subunit
+            K00170  pyruvate ferredoxin oxidoreductase, beta subunit
+            K00171  pyruvate ferredoxin oxidoreductase, delta subunit
+            K00172  pyruvate ferredoxin oxidoreductase, gamma subunit
+GENES       TNI: TVNIR_2011(porC_[H]) TVNIR_2012(porA_[H]) TVNIR_2013(porB_[H])
+            RFR: Rfer_2185 Rfer_2186 Rfer_2187
+            CBX: Cenrod_0415(porB) Cenrod_0416(porA) Cenrod_0417(porG)
+            LCH: Lcho_2149 Lcho_2150 Lcho_2151
+            RGE: RGE_28650(porC) RGE_28660(porA) RGE_28670(porB)
+            APP: CAP2UW1_2510 CAP2UW1_2511 CAP2UW1_2512
+            GCA: Galf_0060 Galf_0061 Galf_0062
+            HPY: HP1108(porC) HP1109(porD) HP1110(porA) HP1111
+            HEO: C694_05715 C694_05720(porD) C694_05725(porA) C694_05730
+            HPJ: jhp1035(porG) jhp1036(porD) jhp1037(porA) jhp1038(porB)
+            HPA: HPAG1_1047(porC) HPAG1_1048(porD) HPAG1_1049(porA) HPAG1_1050
+            HPS: HPSH_05695 HPSH_05700(porD) HPSH_05705(porA) HPSH_05710
+            HHP: HPSH112_05485 HPSH112_05490(porD) HPSH112_05495(porA) HPSH112_05500
+            HHQ: HPSH169_05470 HPSH169_05475(porD) HPSH169_05480(porA) HPSH169_05485
+            HHR: HPSH417_05235 HPSH417_05240(porD) HPSH417_05245(porA) HPSH417_05250
+            HPG: HPG27_1050 HPG27_1051(porD) HPG27_1052(porA) HPG27_1053
+            HPP: HPP12_1073(porG) HPP12_1074(porD) HPP12_1075(porA) HPP12_1076(porB)
+            HPB: HELPY_1077(porG) HELPY_1078(porD) HELPY_1079(porA) HELPY_1081(porB)
+            HPL: HPB8_393(porB) HPB8_394(porA) HPB8_395(porD) HPB8_396(porG)
+            HPC: HPPC_05385 HPPC_05390(porD) HPPC_05395(porA) HPPC_05400
+            HCA: HPPC18_05495 HPPC18_05500(porD) HPPC18_05505(porA) HPPC18_05510
+            HPM: HPSJM_05480 HPSJM_05485(porD) HPSJM_05490(porA) HPSJM_05495
+            HPE: HPELS_01115 HPELS_01120(porA) HPELS_01125(porD) HPELS_01130
+            HPO: HMPREF4655_21297(porG) HMPREF4655_21298(porD) HMPREF4655_21299(porA) HMPREF4655_21300(porB)
+            HPI: hp908_1103 hp908_1104 hp908_1105 hp908_1106
+            HPQ: hp2017_1060 hp2017_1061 hp2017_1062 hp2017_1063
+            HPW: hp2018_1064 hp2018_1065 hp2018_1066 hp2018_1067
+            HPU: HPCU_05615 HPCU_05620(porD) HPCU_05625(porA) HPCU_05630
+            HEF: HPF16_1051(porG) HPF16_1052(porD) HPF16_1053(porA) HPF16_1054(porB)
+            HPF: HPF30_0277(porB) HPF30_0278(porA) HPF30_0279(porD) HPF30_0280(porG)
+            HEQ: HPF32_1045(porG) HPF32_1046(porD) HPF32_1047(porA) HPF32_1048(porB)
+            HEX: HPF57_1071(porG) HPF57_1072(porD) HPF57_1073(porA) HPF57_1074(porB)
+            HPT: HPSAT_05305 HPSAT_05310(porD) HPSAT_05315(porA) HPSAT_05320
+            HPZ: HPKB_1039 HPKB_1040(porD) HPKB_1041(porA) HPKB_1042(porB)
+            HPV: HPV225_1127 HPV225_1128 HPV225_1129 HPV225_1130
+            HPX: HMPREF0462_1121(porG) HMPREF0462_1122(porD) HMPREF0462_1123(porA) HMPREF0462_1124(porB)
+            HEN: HPSNT_05500 HPSNT_05505(porD) HPSNT_05510(porA) HPSNT_05515
+            HPH: HPLT_05495 HPLT_05500(porD) HPLT_05505(porA) HPLT_05510
+            HEG: HPGAM_05710 HPGAM_05715(porD) HPGAM_05720(porA) HPGAM_05725
+            HPN: HPIN_05475 HPIN_05480(porD) HPIN_05485(porA) HPIN_05490
+            HEP: HPPN120_05380 HPPN120_05385(porD) HPPN120_05390(porA) HPPN120_05395
+            HEU: HPPN135_05665 HPPN135_05670(porD) HPPN135_05675(porA) HPPN135_05680
+            HES: HPSA_05390 HPSA_05395(porD) HPSA_05400(porA) HPSA_05405
+            HPYS: HPSA20_1182 HPSA20_1183 HPSA20_1184 HPSA20_1185 HPSA20_1186
+            HCN: HPB14_05185 HPB14_05190(porD) HPB14_05195(porA) HPB14_05200
+            HPD: KHP_1009(porG) KHP_1010(porD) KHP_1011(porA) KHP_1012(porB)
+            HEY: MWE_1290 MWE_1291(porD) MWE_1292(porA) MWE_1293
+            HER: C695_05720 C695_05725(porD) C695_05730(porA) C695_05735
+            HEI: C730_05715 C730_05720(porD) C730_05725(porA) C730_05730
+            HPYA: HPAKL117_05190 HPAKL117_05195(porD) HPAKL117_05200(porA) HPAKL117_05205
+            HPYK: HPAKL86_05760 HPAKL86_05765(porD) HPAKL86_05770(porA) HPAKL86_05775
+            HPYO: HPOK113_1069(porG) HPOK113_1070(porD) HPOK113_1071(porA) HPOK113_1072(porB)
+            HPYL: HPOK310_1005(porG) HPOK310_1006(porD) HPOK310_1007(porA) HPOK310_1008(porB)
+            HPYR: K747_05485 K747_05490(porA) K747_05495(porD) K747_05500(porC)
+            HPYI: K750_07140(porC) K750_07145(porD) K750_07150(porA) K750_07155
+            HPYU: K751_02085 K751_02090(porA) K751_02095(porD) K751_02100(porC)
+            HPYM: K749_00170 K749_00175(porA) K749_00180(porD) K749_00185(porC)
+            HEM: K748_06730 K748_06735(porA) K748_06740(porD) K748_06745(porC)
+            HEB: U063_1424 U063_1425 U063_1426 U063_1427
+            HEZ: U064_1429 U064_1430 U064_1431 U064_1432
+            HHE: HH0546(porB) HH0547(porA) HH0548(porD) HH0549(porG)
+            HAC: Hac_0430(porB) Hac_0431(porA) Hac_0432(porD) Hac_0433(porG)
+            HMS: HMU05400 HMU05410 HMU05420 HMU05430
+            HFE: HFELIS_07790 HFELIS_07800 HFELIS_07810 HFELIS_07820
+            HBI: HBZC1_16240 HBZC1_16250 HBZC1_16260 HBZC1_16270
+            HCE: HCW_08665 HCW_08670(porD) HCW_08675(porA) HCW_08680
+            HCM: HCD_08000 HCD_08005(porD) HCD_08010(porA) HCD_08015
+            HCP: HCN_0378(porG) HCN_0379(porD) HCN_0380(porA) HCN_0381(porB)
+            HCB: HCBAA847_0403 HCBAA847_0404 HCBAA847_0405 HCBAA847_0406(porB)
+            HHM: BN341_p0323 BN341_p0324 BN341_p0325 BN341_p0326
+            WSU: WS2128 WS2130(porA) WS2131(porD) WS2132(porC)
+            TDN: Suden_0096(porC) Suden_0097(porD) Suden_0098(porA) Suden_0099
+            SUA: Saut_1939 Saut_1940 Saut_1941 Saut_1942
+            SKU: Sulku_2329 Sulku_2330 Sulku_2331 Sulku_2332
+            SULR: B649_11040 B649_11045 B649_11050 B649_11055
+            ANT: Arnit_0284 Arnit_0285 Arnit_0286 Arnit_0287
+            ARC: ABLL_0240 ABLL_0241 ABLL_0242 ABLL_0243
+            NSA: Nitsa_1747 Nitsa_1748 Nitsa_1749 Nitsa_1750
+            NIS: NIS_1602 NIS_1603(porA) NIS_1604(porD) NIS_1605
+            SUN: SUN_0198(porC) SUN_0199(porD) SUN_0200(porA) SUN_0201(porB)
+            NAM: NAMH_0240 NAMH_0241(porD) NAMH_0242(porA) NAMH_0243
+            PCA: Pcar_1238 Pcar_1239 Pcar_1240
+            PPD: Ppro_0319 Ppro_0322 Ppro_0323 Ppro_0324 Ppro_0325 Ppro_0470 Ppro_0471 Ppro_0472
+            DPS: DP1199 DP1200 DP1201
+            DOL: Dole_1391 Dole_1392 Dole_1393 Dole_1394
+            DTO: TOL2_C02290(padF1) TOL2_C02300(padG1) TOL2_C02310(padI1) TOL2_C02320(padE1) TOL2_C40850(porA) TOL2_C40860(porB)
+            SAT: SYN_00154 SYN_00155 SYN_00156 SYN_00157 SYN_00691 SYN_00692 SYN_00693 SYN_00694
+            DAO: Desac_1353 Desac_1354 Desac_1355 Desac_1356
+            DTI: Desti_2540 Desti_2542 Desti_2543 Desti_5623 Desti_5624 Desti_5625 Desti_5626
+            SFU: Sfum_0114 Sfum_0115 Sfum_0543 Sfum_0544 Sfum_2792 Sfum_2793 Sfum_2794 Sfum_2795
+            DBR: Deba_3201 Deba_3202 Deba_3203 Deba_3204
+            HMR: Hipma_0588 Hipma_0589 Hipma_0590 Hipma_0591 Hipma_0796 Hipma_0797 Hipma_0798
+            MGY: MGMSR_1069(porB) MGMSR_1070(porA) MGMSR_1071(porC)
+            BSE: Bsel_1899 Bsel_1900
+            BCO: Bcell_2176 Bcell_2177
+            BACI: B1NLA3E_05255 B1NLA3E_05260
+            GTN: GTNG_1717(porA) GTNG_1718(porG)
+            GJF: M493_09450 M493_09455
+            GYM: GYMC10_1000 GYMC10_1001
+            PPY: PPE_02798 PPE_02799
+            PPM: PPSC2_c3173 PPSC2_c3174
+            PPO: PPM_2985(porA) PPM_2986(porG)
+            PPOL: X809_16070 X809_16075
+            PMS: KNP414_03246 KNP414_03247
+            PMQ: PM3016_3470 PM3016_3471
+            PMW: B2K_17915 B2K_17920
+            PTA: HPL003_23690 HPL003_23695
+            PLV: ERIC2_c40420(porA) ERIC2_c40430(porC)
+            PSAB: PSAB_14305 PSAB_14310
+            TCO: Theco_1702 Theco_1703
+            CTC: CTC02525(porB) CTC02526(porA) CTC02527(porD) CTC02528(porC)
+            CTET: BN906_02772(porB) BN906_02773(porA) BN906_02774(porD) BN906_02775(porC)
+            CNO: NT01CX_0144(porB) NT01CX_0145 NT01CX_0146(porD) NT01CX_0147(porG)
+            CKL: CKL_2996(porB) CKL_2997(porA) CKL_2998(porD) CKL_2999(porC)
+            CKR: CKR_2646 CKR_2647 CKR_2648 CKR_2649
+            CLS: CXIVA_20440(PorG) CXIVA_20450 CXIVA_20460(PorA) CXIVA_20470(PorB)
+            CLB: Clo1100_4033 Clo1100_4034 Clo1100_4035 Clo1100_4036
+            CTH: Cthe_2390 Cthe_2391 Cthe_2392 Cthe_2393 Cthe_2794 Cthe_2795 Cthe_2796
+            CTX: Clo1313_0020 Clo1313_0021 Clo1313_0022 Clo1313_0023 Clo1313_0382 Clo1313_0383 Clo1313_0384 Clo1313_0385
+            CCL: Clocl_2719 Clocl_2720 Clocl_2722
+            CLE: Clole_4159 Clole_4160 Clole_4161 Clole_4162
+            RHO: RHOM_00305 RHOM_00310
+            RIX: RO1_00510 RO1_00520
+            RIM: ROI_40260 ROI_40270
+            COO: CCU_01480 CCU_01490 CCU_01500
+            CST: CLOST_0753(porC) CLOST_0755(porA) CLOST_0756
+            STH: STH3262 STH3264
+            SWO: Swol_1374 Swol_1375 Swol_1376 Swol_1377 Swol_2234 Swol_2235 Swol_2236 Swol_2237
+            DDH: Desde_2138 Desde_2139 Desde_2140 Desde_2141
+            DDL: Desdi_1802 Desdi_1803 Desdi_1804 Desdi_1805
+            DGI: Desgi_1125 Desgi_1127 Desgi_1128
+            DAU: Daud_1962 Daud_1963 Daud_1964 Daud_1965 Daud_1966
+            DOR: Desor_4589 Desor_4590 Desor_4591 Desor_4592
+            FMA: FMG_0216 FMG_0217 FMG_0218
+            ELM: ELI_0277 ELI_0279 ELI_2787 ELI_2788 ELI_2789 ELI_2790
+            EAC: EAL2_808p03820(porC) EAL2_808p03830 EAL2_808p03840(porA) EAL2_808p03850(porB)
+            OVA: OBV_04850(porC) OBV_04860(porD) OBV_04870(porA) OBV_04880(porB) OBV_13470(porC) OBV_13480(porD) OBV_13490(porA) OBV_13500(porB)
+            BPRL: CL2_15570 CL2_15580 CL2_15590
+            TEP: TepRe1_2200 TepRe1_2201 TepRe1_2202 TepRe1_2203
+            TAE: TepiRe1_2368(porB) TepiRe1_2369(porA) TepiRe1_2370 TepiRe1_2371(porC)
+            MTA: Moth_0376 Moth_0377 Moth_0378 Moth_0379 Moth_1591 Moth_1592 Moth_1593 Moth_1921 Moth_1922 Moth_1923 Moth_1924
+            CSC: Csac_1458 Csac_1459 Csac_1460 Csac_1461 Csac_2248 Csac_2249
+            ATE: Athe_0874 Athe_0875 Athe_0876 Athe_0877 Athe_1708 Athe_1709
+            COB: COB47_0807 COB47_0808 COB47_0809 COB47_0810 COB47_0875 COB47_0876
+            CHD: Calhy_1041 Calhy_1042 Calhy_1813 Calhy_1814 Calhy_1815 Calhy_1816
+            COW: Calow_0714 Calow_0715 Calow_0716 Calow_0717 Calow_1450 Calow_1451
+            CKI: Calkr_0642 Calkr_0643 Calkr_0644 Calkr_0645 Calkr_1722 Calkr_1723
+            CKN: Calkro_1006 Calkro_1007 Calkro_1777 Calkro_1778 Calkro_1779 Calkro_1780
+            CLC: Calla_1121 Calla_1122 Calla_1719 Calla_1720 Calla_1721 Calla_1722
+            TOC: Toce_0451 Toce_0452 Toce_0453 Toce_2138 Toce_2139 Toce_2140 Toce_2141
+            CPO: COPRO5265_1196 COPRO5265_1197 COPRO5265_1198 COPRO5265_1199
+            TNR: Thena_0492 Thena_0493 Thena_0494 Thena_0495
+            MAS: Mahau_2007 Mahau_2008 Mahau_2009 Mahau_2010
+            HOR: Hore_20710 Hore_20720 Hore_20730 Hore_20740
+            HPK: Hprae_0075 Hprae_0076 Hprae_0077 Hprae_0078
+            AAR: Acear_0034 Acear_0035 Acear_0036 Acear_0037
+            HHL: Halha_0051 Halha_0052 Halha_0053 Halha_0054
+            NCA: Noca_2359 Noca_2360 Noca_2361
+            ACE: Acel_0700 Acel_0701 Acel_0702
+            MCU: HMPREF0573_10718(porG) HMPREF0573_10719(porA) HMPREF0573_10720(porB)
+            RXY: Rxyl_0919 Rxyl_0920 Rxyl_0921
+            CCU: Ccur_08360 Ccur_08370 Ccur_08380
+            ELE: Elen_0417 Elen_0418
+            EYY: EGYY_23120(PorB) EGYY_23130(PorA) EGYY_23140(PorG)
+            GPA: GPA_10310 GPA_10320 GPA_10330
+            AEQ: AEQU_0766 AEQU_0767 AEQU_0768 AEQU_0769
+            BHY: BHWA1_01937(porG) BHWA1_01938(porA)
+            BRM: Bmur_1768 Bmur_1769
+            BPO: BP951000_0935 BP951000_0936(porG)
+            BPJ: B2904_orf428 B2904_orf429
+            BPIP: BPP43_10395 BPP43_10400
+            BPW: WESB_2259 WESB_2260
+            BIP: Bint_2763(porA) Bint_2764(porG)
+            RSD: TGRD_278 TGRD_279 TGRD_280 TGRD_281
+            IPO: Ilyop_0104 Ilyop_0105 Ilyop_0106 Ilyop_0107
+            ACO: Amico_1313 Amico_1314 Amico_1315 Amico_1316
+            TLI: Tlie_1114 Tlie_1115 Tlie_1116 Tlie_1117
+            AMO: Anamo_1395 Anamo_1396 Anamo_1397
+            RMR: Rmar_2583 Rmar_2584 Rmar_2585
+            RMG: Rhom172_2599 Rhom172_2600 Rhom172_2601
+            DET: DET0724(porG) DET0725(porD) DET0726(porA) DET0727(porB)
+            DEH: cbdb_A680(porD) cbdb_A681(porA) cbdb_A682(porB) cbdb_B16(porG)
+            DEB: DehaBAV1_0656 DehaBAV1_0657 DehaBAV1_0658 DehaBAV1_0659
+            DEV: DhcVS_630(porG) DhcVS_631(porD) DhcVS_632(porA) DhcVS_633(porB)
+            DEG: DehalGT_0617 DehalGT_0618 DehalGT_0619 DehalGT_0620
+            DMC: btf_645(porC) btf_646(porD) btf_647(porA) btf_648(porB)
+            DMD: dcmb_691(porC) dcmb_692(porD) dcmb_693(porA) dcmb_694(porB)
+            DMG: GY50_0613(porG) GY50_0614(porD) GY50_0615(porA) GY50_0616(porB)
+            DLY: Dehly_0626 Dehly_0627 Dehly_0628 Dehly_0629
+            AAE: aq_1167(forA2) aq_1168(forB2) aq_1169(forG2) aq_1171a(fdx2) aq_1195(forA1) aq_1196(forB1) aq_1200(forG1)
+            HYA: HY04AAS1_0039 HY04AAS1_0040 HY04AAS1_0041 HY04AAS1_0042 HY04AAS1_1635 HY04AAS1_1636 HY04AAS1_1637
+            HHO: HydHO_0041 HydHO_0042 HydHO_0043 HydHO_0044 HydHO_1613 HydHO_1614 HydHO_1615
+            HYS: HydSN_0044 HydSN_0045 HydSN_0046 HydSN_0047 HydSN_1657 HydSN_1658 HydSN_1659
+            HTH: HTH_1095(forA) HTH_1096(forB) HTH_1097(forG) HTH_1098(forE) HTH_1551(porG) HTH_1552(porB) HTH_1553(porA)
+            HTE: Hydth_1087 Hydth_1088 Hydth_1089 Hydth_1090 Hydth_1539 Hydth_1540 Hydth_1541
+            TAL: Thal_0660 Thal_0661 Thal_0662 Thal_0663 Thal_0791 Thal_0792 Thal_0793
+            TRD: THERU_03295 THERU_03300 THERU_03305 THERU_06515 THERU_06520 THERU_06525 THERU_07745
+            SUL: SYO3AOP1_0612 SYO3AOP1_0613 SYO3AOP1_0614 SYO3AOP1_0615
+            SAF: SULAZ_0642 SULAZ_0643 SULAZ_0644 SULAZ_0645 SULAZ_0655 SULAZ_0656 SULAZ_0657
+            PMX: PERMA_0528 PERMA_0529 PERMA_0530 PERMA_0531
+            TAM: Theam_1392 Theam_1393 Theam_1394 Theam_1395
+            DTE: Dester_1070 Dester_1071 Dester_1072 Dester_1073
+            TMA: TM0015 TM0016 TM0017 TM0018
+            TMM: Tmari_0012 Tmari_0013 Tmari_0014 Tmari_0015
+            TMI: THEMA_04710 THEMA_04715(porA) THEMA_04720 THEMA_04725
+            TPT: Tpet_0905 Tpet_0906 Tpet_0907 Tpet_0908
+            TLE: Tlet_1774 Tlet_1775 Tlet_1776 Tlet_1777
+            TRQ: TRQ2_0927 TRQ2_0928 TRQ2_0929 TRQ2_0930
+            TNA: CTN_0680 CTN_0681 CTN_0682 CTN_0683
+            TNP: Tnap_0646 Tnap_0647 Tnap_0648 Tnap_0649
+            TTA: Theth_1824 Theth_1825 Theth_1826 Theth_1827
+            TME: Tmel_0340 Tmel_0341 Tmel_0342 Tmel_0343
+            TAF: THA_518 THA_519 THA_520 THA_521
+            FNO: Fnod_0863 Fnod_0864 Fnod_0865 Fnod_0866
+            FPE: Ferpe_1200 Ferpe_1201 Ferpe_1202 Ferpe_1203
+            PMO: Pmob_0584 Pmob_0585 Pmob_0586 Pmob_0587
+            KOL: Kole_0379 Kole_0380 Kole_0381 Kole_0382
+            MPZ: Marpi_1564 Marpi_1565 Marpi_1566 Marpi_1567
+            CEX: CSE_06840(porC) CSE_06850(porD) CSE_06860(porA) CSE_06870(porB)
+            DIN: Selin_1936 Selin_1937
+            DTH: DICTH_1983 DICTH_1984 DICTH_1985 DICTH_1986
+            DTU: Dtur_0260 Dtur_0261 Dtur_0262 Dtur_0263
+            TYE: THEYE_A0907 THEYE_A0908 THEYE_A0909 THEYE_A0910
+            NDE: NIDE0823(forB) NIDE0824(forC) NIDE0827(forA) NIDE0969(porC) NIDE0970(porB) NIDE0971(porA) NIDE1465(forB2) NIDE3873(vorB) NIDE3874(vorA) NIDE3875(vorCD)
+            LFC: LFE_0042 LFE_0043 LFE_0044 LFE_2331 LFE_2332 LFE_2333 LFE_2337 LFE_2338 LFE_2339
+            LFI: LFML04_2416(forG1) LFML04_2417 LFML04_2418 LFML04_2422(forG2) LFML04_2423(forB2) LFML04_2424(forA2)
+            TID: Thein_1418 Thein_1419 Thein_1420 Thein_1421
+            TOP: TOPB45_1598 TOPB45_1599 TOPB45_1600 TOPB45_1601
+            MJA: MJ_0266 MJ_0267 MJ_0268 MJ_0269
+            MFE: Mefer_0883 Mefer_0884 Mefer_0885 Mefer_0886
+            MVU: Metvu_1157 Metvu_1158 Metvu_1159 Metvu_1160
+            MFS: MFS40622_0474 MFS40622_0475 MFS40622_0476 MFS40622_0477
+            MIF: Metin_1337 Metin_1338 Metin_1339 Metin_1340
+            MIG: Metig_1353 Metig_1354 Metig_1355 Metig_1356
+            MMP: MMP1504(porB) MMP1505(porA) MMP1506(porD) MMP1507(porC)
+            MMQ: MmarC5_0070 MmarC5_0071 MmarC5_0072 MmarC5_0073
+            MMX: MmarC6_1167 MmarC6_1168 MmarC6_1169 MmarC6_1170
+            MMZ: MmarC7_0748 MmarC7_0749 MmarC7_0750 MmarC7_0751
+            MMD: GYY_08360 GYY_08365 GYY_08370 GYY_08375
+            MAE: Maeo_0462 Maeo_0463 Maeo_0464 Maeo_0465 Maeo_1281 Maeo_1282 Maeo_1283 Maeo_1284
+            MVN: Mevan_0813 Mevan_0814 Mevan_0815 Mevan_0816
+            MVO: Mvol_1074 Mvol_1075 Mvol_1076 Mvol_1077
+            MOK: Metok_0940 Metok_0941 Metok_0942 Metok_0943
+            MAC: MA0031(porB) MA0032(porA) MA0033(porD) MA0034(porG) MA2407(porB)
+            MBA: Mbar_A0999 Mbar_A1000 Mbar_A1001 Mbar_A1002 Mbar_A3180
+            MMA: MM_1339 MM_1340 MM_1341 MM_1342
+            MMAZ: MmTuc01_1386 MmTuc01_1387 MmTuc01_1388 MmTuc01_1389
+            MBU: Mbur_2155 Mbur_2156 Mbur_2157 Mbur_2158
+            MMH: Mmah_0351 Mmah_0352 Mmah_0353 Mmah_0354
+            MEV: Metev_1832 Metev_1833 Metev_1834 Metev_1835
+            MZH: Mzhil_2013 Mzhil_2014 Mzhil_2015 Mzhil_2016
+            MPY: Mpsy_1764 Mpsy_1765 Mpsy_1766 Mpsy_1767
+            MHZ: Metho_2438 Metho_2439 Metho_2440 Metho_2441
+            MTP: Mthe_1645 Mthe_1646 Mthe_1647 Mthe_1648
+            MCJ: MCON_1467(vorC) MCON_1468(porD) MCON_1469(porA) MCON_1470(porB)
+            MHI: Mhar_2216 Mhar_2217 Mhar_2218 Mhar_2219
+            MHU: Mhun_0450 Mhun_0451 Mhun_0452 Mhun_0453 Mhun_2393 Mhun_2394 Mhun_2395 Mhun_2396
+            MLA: Mlab_0047 Mlab_0048 Mlab_0049 Mlab_0050 Mlab_1415 Mlab_1416 Mlab_1417 Mlab_1418
+            MEM: Memar_0707 Memar_0708 Memar_0709 Memar_0710 Memar_2318 Memar_2319 Memar_2320 Memar_2321
+            MBG: BN140_0691(porB1) BN140_0692(porA1) BN140_0693(porD1) BN140_0694(porG) BN140_1332(porB3) BN140_1333(porA3) BN140_1334(porC) BN140_1335(porD3)
+            MPI: Mpet_0568 Mpet_0569 Mpet_0570 Mpet_0571 Mpet_2663 Mpet_2664 Mpet_2665 Mpet_2666
+            MBN: Mboo_0170 Mboo_0171 Mboo_0172 Mboo_0173 Mboo_0202 Mboo_0203 Mboo_0204 Mboo_0205 Mboo_0672 Mboo_0673 Mboo_0674 Mboo_0675
+            MFO: Metfor_2538 Metfor_2539 Metfor_2540 Metfor_2541 Metfor_2908 Metfor_2909 Metfor_2910 Metfor_2911
+            MPL: Mpal_2013 Mpal_2014 Mpal_2015 Mpal_2016 Mpal_2716 Mpal_2717 Mpal_2718 Mpal_2719
+            MPD: MCP_1255 MCP_1256 MCP_1257 MCP_1258 MCP_2611 MCP_2612 MCP_2613 MCP_2614
+            MEZ: Mtc_0840(porC-1) Mtc_0841(porD-1) Mtc_0842(porA-1) Mtc_0843(porB-1) Mtc_1763(porD-2) Mtc_1764(porC-2) Mtc_1765(porA-2) Mtc_1766(porB-2)
+            RCI: RCIX486(porC-1) RCIX488(porD-1) RCIX489(porA-1) RCIX490(porB-1) RRC106(porB-2) RRC107(porA-2) RRC109(porC-2) RRC110(porD-2)
+            MER: H729_01690 H729_01695 H729_01700 H729_01705 H729_05810
+            MTH: MTH1738 MTH1739 MTH1740
+            MMG: MTBMA_c03130(porB1) MTBMA_c03140(porA1) MTBMA_c03150(porD) MTBMA_c03160(porC)
+            MST: Msp_0334(porC) Msp_0335(porD) Msp_0336(porA) Msp_0337(porB)
+            MSI: Msm_0557 Msm_0558 Msm_0559 Msm_0560
+            MRU: mru_0548(porC) mru_0549(porD) mru_0550(porA) mru_0551(porB)
+            MEB: Abm4_1432(porC) Abm4_1433(porD) Abm4_1434(porA) Abm4_1435(porB)
+            MEL: Metbo_0487 Metbo_0488 Metbo_0489 Metbo_0490
+            MEW: MSWAN_1905 MSWAN_1906 MSWAN_1907 MSWAN_1908
+            METH: MBMB1_1538(porC) MBMB1_1539 MBMB1_1540(porA) MBMB1_1541(porB)
+            MFV: Mfer_0260 Mfer_0261 Mfer_0262 Mfer_0263
+            MKA: MK0080(PorG_1) MK0081(PorD) MK0082(PorA_1) MK0083(PorB_1)
+            MAX: MMALV_12080 MMALV_12090 MMALV_12100 MMALV_12110
+            AFU: AF1699(porG) AF1700(porD) AF1701(porA) AF1702(porB) AF2052(vorB) AF2053(vorA) AF2054(vorD) AF2055(vorG)
+            APO: Arcpr_0761 Arcpr_0762 Arcpr_0763 Arcpr_0764 Arcpr_1057 Arcpr_1058 Arcpr_1059 Arcpr_1060
+            AVE: Arcve_0796 Arcve_0797 Arcve_0801 Arcve_0802 Arcve_1205 Arcve_1206 Arcve_1207 Arcve_1208 Arcve_1543 Arcve_1544 Arcve_1545 Arcve_1546
+            AST: Asulf_00321 Asulf_00322 Asulf_00323 Asulf_00324 Asulf_00879 Asulf_00881
+            FPL: Ferp_0892 Ferp_0893 Ferp_0894 Ferp_0895 Ferp_1823 Ferp_1824 Ferp_1825 Ferp_1826
+            HUT: Huta_1479 Huta_1480 Huta_1481 Huta_1482
+            HTI: HTIA_1556(porB) HTIA_1557(porA) HTIA_1558(porD) HTIA_1559(porC)
+            TAR: TALC_01165 TALC_01166 TALC_01167 TALC_01168
+            PHO: PH0682(porD) PH0684(porA) PH0685
+            PAB: PAB1474(porD) PAB1475(porA) PAB1476
+            PFU: PF0965 PF0966(porA) PF0967(porD)
+            PFI: PFC_04055 PFC_04060(porA) PFC_04065(porD) PFC_04085
+            PYN: PNA2_1292 PNA2_1296 PNA2_1297 PNA2_1298
+            PYA: PYCH_06600 PYCH_06610 PYCH_06620 PYCH_06660
+            PYS: Py04_1076 Py04_1077 Py04_1078 Py04_1082
+            TKO: TK1982(porD) TK1983(porA) TK1984
+            TON: TON_1480(porD) TON_1481(porA) TON_1482
+            TGA: TGAM_0261(porB) TGAM_0262(porA) TGAM_0263(porD) TGAM_0267(porG)
+            TSI: TSIB_1378 TSIB_1379(porA) TSIB_1380(porD) TSIB_1384
+            TBA: TERMP_01554 TERMP_01555 TERMP_01556 TERMP_01560
+            THE: GQS_08110 GQS_08115(porA) GQS_08120(porD) GQS_08140
+            THA: TAM4_1107 TAM4_1335 TAM4_1386 TAM4_1397
+            THM: CL1_1243 CL1_1244 CL1_1245 CL1_1249
+            TLT: OCC_07471 OCC_07476(porA) OCC_07481(porD) OCC_07501
+            THS: TES1_1549 TES1_1550 TES1_1551 TES1_1555
+            TNU: BD01_1941 BD01_1945 BD01_1946 BD01_1947
+            ABI: Aboo_0298 Aboo_1437 Aboo_1438 Aboo_1439 Aboo_1440
+            ACF: AciM339_0766 AciM339_1066 AciM339_1067 AciM339_1068 AciM339_1069
+            SMR: Smar_0997 Smar_0998 Smar_0999 Smar_1000 Smar_1447 Smar_1448 Smar_1449 Smar_1450
+            SHC: Shell_0999 Shell_1000 Shell_1001 Shell_1002 Shell_1461 Shell_1462 Shell_1463 Shell_1464
+            IHO: Igni_1256 Igni_1257 Igni_1258 Igni_1259
+            DKA: DKAM_0578 DKAM_0579 DKAM_0580 DKAM_0581 DKAM_1185 DKAM_1186 DKAM_1187 DKAM_1188
+            DMU: Desmu_0329 Desmu_0330 Desmu_0331 Desmu_0332 Desmu_1189 Desmu_1190 Desmu_1191 Desmu_1192
+            DFD: Desfe_0502 Desfe_0503 Desfe_0504 Desfe_0505 Desfe_1296 Desfe_1297 Desfe_1298 Desfe_1299
+            TAG: Tagg_0386 Tagg_0387 Tagg_0388 Tagg_0389 Tagg_0826 Tagg_0827 Tagg_0828 Tagg_0829
+            IAG: Igag_1134 Igag_1135 Igag_1136 Igag_1137
+            THG: TCELL_0307 TCELL_0308 TCELL_0309 TCELL_0310 TCELL_1234 TCELL_1235 TCELL_1236 TCELL_1237
+            HBU: Hbut_0667 Hbut_0668 Hbut_0669 Hbut_0670 Hbut_0729 Hbut_0730 Hbut_0731 Hbut_0732
+            PFM: Pyrfu_0708 Pyrfu_0709 Pyrfu_0710 Pyrfu_0711
+            SSO: SSO11071(porD-2) SSO1206(porB-1) SSO1207(porA-1) SSO1208(porG-1) SSO2128(porD-like) SSO2129(porA-like) SSO2130(porB-like) SSO2756(porB-2) SSO2757(porA-2) SSO2758(porG-2) SSO7412(porD-1)
+            SOL: Ssol_0568 Ssol_0569 Ssol_0570 Ssol_0571 Ssol_2170 Ssol_2171 Ssol_2172 Ssol_2173 Ssol_2857 Ssol_2858 Ssol_2859
+            STO: ST1531 ST1532 ST1533 ST1787 ST1788
+            SAI: Saci_1088 Saci_2250(porC) Saci_2251(porD) Saci_2252(porA) Saci_2253(porB)
+            SACN: SacN8_05290 SacN8_10965 SacN8_10970 SacN8_10975 SacN8_10980
+            SACR: SacRon12I_05280 SacRon12I_11210 SacRon12I_11215 SacRon12I_11220 SacRon12I_11225
+            SACS: SUSAZ_05070 SUSAZ_05075 SUSAZ_05080 SUSAZ_10555 SUSAZ_10560 SUSAZ_10565 SUSAZ_10570
+            SIS: LS215_0368 LS215_0369 LS215_0370 LS215_0395 LS215_0396 LS215_0397 LS215_0398 LS215_2725 LS215_2726 LS215_2727 LS215_2728
+            SIA: M1425_0343 M1425_0344 M1425_0345 M1425_0371 M1425_0372 M1425_0373 M1425_0374 M1425_2566 M1425_2567 M1425_2568 M1425_2569
+            SIM: M1627_0344 M1627_0345 M1627_0346 M1627_0379 M1627_0380 M1627_0381 M1627_0382 M1627_2619 M1627_2620 M1627_2621 M1627_2622
+            SID: M164_0364 M164_0365 M164_0395 M164_0396 M164_0397 M164_0398 M164_2550 M164_2551 M164_2552 M164_2553 M164_2843
+            SIY: YG5714_0360 YG5714_0361 YG5714_0362 YG5714_0373 YG5714_0374 YG5714_0375 YG5714_0376 YG5714_2728 YG5714_2729 YG5714_2730 YG5714_2731
+            SIN: YN1551_0157 YN1551_0158 YN1551_0159 YN1551_0160 YN1551_2679 YN1551_2680 YN1551_2681 YN1551_2682 YN1551_2709 YN1551_2710 YN1551_2711
+            SII: LD85_0350 LD85_0351 LD85_0352 LD85_0383 LD85_0384 LD85_0385 LD85_0386 LD85_2876 LD85_2877 LD85_2878 LD85_2879
+            SIH: SiH_0345 SiH_0346 SiH_0347 SiH_0372 SiH_0373 SiH_0374 SiH_0375 SiH_2503 SiH_2504 SiH_2505 SiH_2506
+            SIR: SiRe_0338 SiRe_0339 SiRe_0340 SiRe_0363 SiRe_0364 SiRe_0365 SiRe_0366 SiRe_2379 SiRe_2380 SiRe_2381 SiRe_2382
+            SIC: SiL_0323 SiL_0324 SiL_0325 SiL_0351 SiL_0352 SiL_0353 SiL_0354 SiL_2400 SiL_2401 SiL_2402 SiL_2403
+            MSE: Msed_0306 Msed_0307 Msed_0308 Msed_0309 Msed_0507 Msed_0508 Msed_0509 Msed_0510 Msed_1199 Msed_1200 Msed_1201
+            MCN: Mcup_1586 Mcup_1587 Mcup_1588 Mcup_1589 Mcup_1758 Mcup_1759 Mcup_1760 Mcup_1761
+            AHO: Ahos_1949 Ahos_1950 Ahos_1951 Ahos_1952
+            PAI: PAE1040 PAE1041 PAE1042 PAE1043 PAE3274 PAE3275 PAE3276 PAE3279
+            PIS: Pisl_0324 Pisl_0325 Pisl_0326 Pisl_0497 Pisl_0498 Pisl_0499 Pisl_0500 Pisl_1230 Pisl_1231 Pisl_1232 Pisl_1233
+            PCL: Pcal_0665 Pcal_0666 Pcal_0667 Pcal_0668 Pcal_1767 Pcal_1768 Pcal_1769 Pcal_1770 Pcal_2050 Pcal_2051 Pcal_2052
+            PAS: Pars_0193 Pars_0194 Pars_0195 Pars_0196 Pars_1705 Pars_1706 Pars_1707 Pars_1708 Pars_2277 Pars_2278 Pars_2279
+            PYR: P186_1326 P186_1327 P186_1328 P186_1329 P186_2132 P186_2133 P186_2134 P186_2450 P186_2451 P186_2452 P186_2453
+            POG: Pogu_0426 Pogu_0427 Pogu_0428 Pogu_0429 Pogu_2284 Pogu_2285 Pogu_2286 Pogu_2287
+            TNE: Tneu_0176 Tneu_0177 Tneu_0178 Tneu_0179 Tneu_1526 Tneu_1527 Tneu_1528 Tneu_1529 Tneu_1795 Tneu_1796 Tneu_1797
+            CMA: Cmaq_1710 Cmaq_1711 Cmaq_1712 Cmaq_1713 Cmaq_1860 Cmaq_1861 Cmaq_1862 Cmaq_1863
+            TUZ: TUZN_0992 TUZN_0993 TUZN_0994 TUZN_1448 TUZN_1449 TUZN_1450 TUZN_1451 TUZN_1720 TUZN_1721 TUZN_1722 TUZN_1723
+            TTN: TTX_0208(oorCD) TTX_0209(oorA) TTX_0210(oorB) TTX_1782(oorC) TTX_1784(oorD) TTX_1785(oorA) TTX_1786(oorB) TTX_2033(oorB) TTX_2034(oorA) TTX_2035(oorD) TTX_2036(oorC)
+            VDI: Vdis_0222 Vdis_0522 Vdis_0523 Vdis_0524 Vdis_0692 Vdis_0693 Vdis_0694 Vdis_0695 Vdis_1935 Vdis_1936 Vdis_1937 Vdis_1938 Vdis_1986 Vdis_1987 Vdis_1988 Vdis_1989
+            VMO: VMUT_0347 VMUT_0348 VMUT_0349 VMUT_0350 VMUT_0397 VMUT_0398 VMUT_0399 VMUT_0400 VMUT_1197 VMUT_1198 VMUT_1199 VMUT_1424
+            TPE: Tpen_0540 Tpen_0541 Tpen_0542 Tpen_0543 Tpen_0571 Tpen_0572 Tpen_0573 Tpen_0574
+            THB: N186_03210 N186_03215(porD) N186_03220(porA) N186_03225 N186_04145 N186_04150 N186_04160
+            ASC: ASAC_0096 ASAC_0097 ASAC_0098 ASAC_0099 ASAC_1053 ASAC_1054 ASAC_1055 ASAC_1056
+            CLG: Calag_0567 Calag_0568 Calag_0569 Calag_0570 Calag_1088 Calag_1089 Calag_1090 Calag_1091
+            FFO: FFONT_0326 FFONT_0327 FFONT_0328 FFONT_0329 FFONT_0932 FFONT_0933 FFONT_0934 FFONT_1204 FFONT_1205 FFONT_1206 FFONT_1207
+            CSU: CSUB_C0068 CSUB_C0069 CSUB_C0070 CSUB_C0740 CSUB_C0741 CSUB_C0742 CSUB_C0743
+            KCR: Kcr_1226 Kcr_1227 Kcr_1228 Kcr_1229 Kcr_1291 Kcr_1293 Kcr_1525
+DBLINKS     ExplorEnz - The Enzyme Database: 1.2.7.1
+            IUBMB Enzyme Nomenclature: 1.2.7.1
+            ExPASy - ENZYME nomenclature database: 1.2.7.1
+            BRENDA, the Enzyme Database: 1.2.7.1
+            CAS: 9082-51-3
+///

@@ -1,0 +1,16 @@
+ENTRY       R05046                      Reaction
+NAME        formamidopyrimidine nucleoside triphosphate amidohydrolase
+DEFINITION  Formamidopyrimidine nucleoside triphosphate + H2O <=> 2,5-Diaminopyrimidine nucleoside triphosphate + Formate
+EQUATION    C05922 + C00001 <=> C05923 + C00058
+COMMENT     the second step of four-step reaction (see R00424, R00428+R05046+R05048+R04639)
+            following after R00428
+            subsequently R05048
+RPAIR       RP00812  C05922_C05923 main [RC:RC00263]
+            RP04649  C00058_C05922 main [RC:RC00323]
+            RP05683  C00001_C00058 leave
+ENZYME      3.5.4.16
+PATHWAY     rn00790  Folate biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01495  GTP cyclohydrolase I [EC:3.5.4.16]
+            K09007  GTP cyclohydrolase I [EC:3.5.4.16]
+///

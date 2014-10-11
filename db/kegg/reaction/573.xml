@@ -1,0 +1,15 @@
+ENTRY       R00573                      Reaction
+NAME        UTP:L-glutamine amido-ligase (ADP-forming)
+DEFINITION  ATP + UTP + L-Glutamine + H2O <=> ADP + Orthophosphate + CTP + L-Glutamate
+EQUATION    C00002 + C00075 + C00064 + C00001 <=> C00008 + C00009 + C00063 + C00025
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00024  C00025_C00064 main [RC:RC00010]
+            RP00197  C00063_C00075 main [RC:RC00074]
+            RP05695  C00001_C00025 leave
+            RP06215  C00063_C00064 trans
+ENZYME      6.3.4.2
+PATHWAY     rn00240  Pyrimidine metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01937  CTP synthase [EC:6.3.4.2]
+///

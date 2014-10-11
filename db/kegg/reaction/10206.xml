@@ -1,0 +1,14 @@
+ENTRY       R10206                      Reaction
+NAME        methanesulfonate,FMNH2:oxygen oxidoreductase
+DEFINITION  Methanesulfonic acid + Reduced FMN + Oxygen <=> FMN + Sulfite + H2O + Formaldehyde
+EQUATION    C11145 + C01847 + C00007 <=> C00061 + C00094 + C00001 + C00067
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00502  C00007_C00067 leave
+            RP00852  C00061_C01847 cofac [RC:RC00126]
+            RP14876  C00067_C11145 main [RC:RC02556]
+            RP14877  C00094_C11145 leave
+ENZYME      1.14.14.5
+PATHWAY     rn00920  Sulfur metabolism
+ORTHOLOGY   K00299  FMN reductase [EC:1.5.1.38]
+            K04091  alkanesulfonate monooxygenase [EC:1.14.14.5]
+///

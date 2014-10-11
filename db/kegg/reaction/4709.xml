@@ -1,0 +1,13 @@
+ENTRY       R04709                      Reaction
+NAME        Malonyl-CoA:3-hydroxybenzoyl-CoA malonyltransferase
+DEFINITION  3 Malonyl-CoA + 3-Hydroxybenzoyl-CoA <=> 4 CoA + 2,3',4,6-Tetrahydroxybenzophenone + 3 CO2
+EQUATION    3 C00083 + C05195 <=> 4 C00010 + C06355 + 3 C00011
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP08271  C00083_C06355 trans
+            RP08272  C00010_C05195 main [RC:RC00004]
+            RP08273  C05195_C06355 trans
+            RP12455  C00083_C06355 trans
+            RP12456  C00083_C06355 trans
+ENZYME      2.3.1.151
+///

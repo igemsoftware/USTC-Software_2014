@@ -1,0 +1,12 @@
+ENTRY       R02402                      Reaction
+NAME        Glutarate:CoA ligase (ADP-forming)
+DEFINITION  ATP + Glutarate + CoA <=> ADP + Orthophosphate + Glutaryl-CoA
+EQUATION    C00002 + C00489 + C00010 <=> C00008 + C00009 + C00527
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00103  C00010_C00527 main [RC:RC00004]
+            RP02183  C00489_C00527 main [RC:RC00014]
+ENZYME      6.2.1.6
+PATHWAY     rn00071  Fatty acid degradation
+            rn00310  Lysine degradation
+///

@@ -1,0 +1,101 @@
+ENTRY       EC 2.4.1.69                 Enzyme
+NAME        galactoside 2-alpha-L-fucosyltransferase;
+            blood group H alpha-2-fucosyltransferase;
+            guanosine diphosphofucose-galactoside 2-L-fucosyltransferase;
+            alpha-(1->2)-L-fucosyltransferase;
+            alpha-2-fucosyltransferase;
+            alpha-2-L-fucosyltransferase;
+            blood-group substance H-dependent fucosyltransferase;
+            guanosine diphosphofucose-glycoprotein 2-alpha-fucosyltransferase;
+            guanosine diphosphofucose-lactose fucosyltransferase;
+            GDP fucose-lactose fucosyltransferase;
+            guanosine diphospho-L-fucose-lactose fucosyltransferase;
+            guanosine diphosphofucose-beta-D-galactosyl-alpha-2-L-fucosyltransferase;
+            guanosine diphosphofucose-galactosylacetylglucosaminylgalactosylglucosylceramide alpha-L-fucosyltransferase;
+            guanosine diphosphofucose-glycoprotein 2-alpha-L-fucosyltransferase;
+            H-gene-encoded beta-galactoside alpha1->2fucosyltransferase;
+            secretor-type beta-galactoside alpha1->2fucosyltransferase;
+            beta-galactoside alpha1->2fucosyltransferase;
+            GDP-L-fucose:lactose fucosyltransferase;
+            GDP-beta-L-fucose:beta-D-galactosyl-R 2-alpha-L-fucosyltransferase
+CLASS       Transferases;
+            Glycosyltransferases;
+            Hexosyltransferases
+SYSNAME     GDP-beta-L-fucose:beta-D-galactosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-(1->3)-beta-D-galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide 2-alpha-L-fucosyltransferase
+REACTION    GDP-beta-L-fucose + beta-D-galactosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-(1->3)-beta-D-galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide = GDP + alpha-L-fucosyl-(1->2)-beta-D-galactosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-(1->3)-beta-D-galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide [RN:R04081]
+ALL_REAC    R04081 > R05968(G) R06024(G) R06031(G) R06035(G) R06041(G) R06085(G) R06086(G) R06089(G) R06090(G) R06156(G);
+            (other) R06170(G)
+SUBSTRATE   GDP-beta-L-fucose [CPD:C00325];
+            beta-D-galactosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-(1->3)-beta-D-galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide
+PRODUCT     GDP [CPD:C00035];
+            alpha-L-fucosyl-(1->2)-beta-D-galactosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-(1->3)-beta-D-galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide
+COMMENT     Free lactose can act as acceptor. Normally acts on a glycoconjugate where R (see reaction) is a glycoprotein or glycolipid. The action on glycolipid was previously listed as EC 2.4.1.89.
+HISTORY     EC 2.4.1.69 created 1972 (EC 2.4.1.89 created 1976, incorporated 1984), modified 2002
+REFERENCE   1  [PMID:804484]
+  AUTHORS   Basu S, Basu M, Chien JL.
+  TITLE     Enzymatic synthesis of a blood group H-related glycosphingolipid by an alpha-fucosyltransferase from bovine spleen.
+  JOURNAL   J. Biol. Chem. 250 (1975) 2956-62.
+  ORGANISM  Bos taurus
+REFERENCE   2  [PMID:7372640]
+  AUTHORS   Beyer TA, Hill RL.
+  TITLE     Enzymatic properties of the beta-galactoside alpha 1 leads to 2 fucosyltransferase from porcine submaxillary gland.
+  JOURNAL   J. Biol. Chem. 255 (1980) 5373-9.
+  ORGANISM  Sus scofa
+REFERENCE   3  [PMID:6246105]
+  AUTHORS   Beyer TA, Sadler JE, Hill RL.
+  TITLE     Purification to homogeneity of H blood group beta-galactoside alpha 1 leads to 2 fucosyltransferase from porcine submaxillary gland.
+  JOURNAL   J. Biol. Chem. 255 (1980) 5364-72.
+  ORGANISM  Sus scofa
+REFERENCE   4
+  AUTHORS   Grollman, A.P.
+  TITLE     GDP-L-fucose:lactose fucosyltransferase from mammary gland.
+  JOURNAL   Methods Enzymol. 8 (1966) 351-353.
+PATHWAY     ec00601  Glycosphingolipid biosynthesis - lacto and neolacto series
+            ec00603  Glycosphingolipid biosynthesis - globo series
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00718  galactoside 2-L-fucosyltransferase 1/2
+            K12245  bifunctional glycosyltransferase PgtA
+GENES       HSA: 2523(FUT1) 2524(FUT2)
+            PTR: 468944(FUT2) 468947(FUT1)
+            PPS: 100990363(FUT1) 100991035(FUT2)
+            GGO: 101148312 101149623(FUT1)
+            PON: 100171991(FUT1) 100445051(FUT2)
+            MCC: 718252(FUT1)
+            MCF: 102121606 102125198(FUT1) 102143763
+            MMU: 14343(Fut1) 14344(Fut2) 56546(Sec1)
+            RNO: 308586(Sec1) 58924(Fut2) 81919(Fut1)
+            CGE: 100751185 100757047
+            HGL: 101709834(Fut1) 101710190 101729848
+            TUP: 102471780 102474609(FUT1)
+            CFA: 484396(FUT1) 484398(FUT2)
+            AML: 100472596 100478397 100478902
+            FCA: 101080847(FUT1) 101085847(FUT2) 102902378
+            PTG: 102962287(FUT2) 102969895(FUT1)
+            BTA: 281174(FUT1) 281175(FUT2) 281483(SEC1)
+            BOM: 102282547(FUT1) 102283305 102283588
+            PHD: 102318927 102319282 102319984(FUT1)
+            CHX: 102185028 102185596(FUT1)
+            SSC: 100524201(FUT2A) 397138(FUT1) 397139(FUT2)
+            CFR: 102521344(FUT1) 102522076(FUT2) 102522586
+            ECB: 100054216 100054259 100054308 100054499(FUT1)
+            MYB: 102257351(FUT1) 102259445(FUT2)
+            MYD: 102760565 102767518 102768655(FUT1)
+            PALE: 102885708(FUT1) 102886704(FUT2)
+            MDO: 100009874 100009916 100010332 100018242
+            SHR: 100931578(FUT1)
+            OAA: 100085980(FUT1) 100681084(FUT2)
+            ASN: 102379237 102387217 102387476
+            PSS: 102460361 102460609
+            CMY: 102930615 102930836 102941010
+            ACS: 100561462
+            XLA: 398668(fut1)
+            XTR: 100493351 447958(fut1)
+            AME: 726095(GB16372)
+            TCA: 655912
+            PHU: Phum_PHUM354220
+DBLINKS     ExplorEnz - The Enzyme Database: 2.4.1.69
+            IUBMB Enzyme Nomenclature: 2.4.1.69
+            ExPASy - ENZYME nomenclature database: 2.4.1.69
+            BRENDA, the Enzyme Database: 2.4.1.69
+            CAS: 56093-23-3
+///

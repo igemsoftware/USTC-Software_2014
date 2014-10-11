@@ -1,0 +1,13 @@
+ENTRY       R07457                      Reaction
+DEFINITION  3-Dehydro-6-deoxoteasterone + 2 Oxygen + 2 Reduced flavoprotein <=> 3-Dehydroteasterone + 3 H2O + 2 Oxidized flavoprotein
+EQUATION    C15800 + 2 C00007 + 2 C03024 <=> C15792 + 3 C00001 + 2 C03161
+COMMENT     possibly two-step reaction (similar to R10669, R07450+R07451)
+            P-450 reductase (ec 1.6.2.4) is the flavoprotein and re-reduced by NADPH (see R08551)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP11996  C15792_C15800 main [RC:RC02079]
+            RP12299  C00007_C15792 leave
+ENZYME      1.14.-.-
+PATHWAY     rn00905  Brassinosteroid biosynthesis
+ORTHOLOGY   K09590  brassinosteroid-6-oxidase 1 [EC:1.14.-.-]
+            K12640  brassinosteroid-6-oxidase 2 [EC:1.14.-.-]
+///

@@ -1,0 +1,374 @@
+ENTRY       EC 1.14.13.39               Enzyme
+NAME        nitric-oxide synthase (NADPH dependent);
+            nitric oxide synthetase;
+            endothelium-derived relaxation factor-forming enzyme;
+            endothelium-derived relaxing factor synthase;
+            NO synthase;
+            NADPH-diaphorase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     L-arginine,NADPH:oxygen oxidoreductase (nitric-oxide-forming)
+REACTION    2 L-arginine + 3 NADPH + 3 H+ + 4 O2 = 2 L-citrulline + 2 nitric oxide + 3 NADP+ + 4 H2O (overall reaction) [RN:R00557];
+            (1a) 2 L-arginine + 2 NADPH + 2 H+ + 2 O2 = 2 Nomega-hydroxy-L-arginine + 2 NADP+ + 2 H2O  [RN:R00558];
+            (1b) 2 Nomega-hydroxy-L-arginine + NADPH + H+ + 2 O2 = 2 L-citrulline + 2 nitric oxide + NADP+ + 2 H2O [RN:R00111]
+ALL_REAC    R00111 R00557 R00558
+SUBSTRATE   L-arginine [CPD:C00062];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            Nomega-hydroxy-L-arginine
+PRODUCT     L-citrulline [CPD:C00327];
+            nitric oxide [CPD:C00533];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            Nomega-hydroxy-L-arginine
+COMMENT     Binds FAD, FMN, heme (iron protoporphyrin IX) and tetrahydrobiopterin. This eukaryotic enzyme, which is found in plants [4] and animals [1-3], consists of oxygenase and reductase domains that are linked via a regulatory calmodulin-binding domain. Upon calcium-induced calmodulin binding, the reductase and oxygenase domains form a complex, allowing electrons to flow from NADPH via FAD and FMN to the active center. May produce superoxide under certain conditions [3]. cf. EC 1.14.13.165, nitric-oxide synthase [NAD(P)H dependent].
+HISTORY     EC 1.14.13.39 created 1992, modified 2012
+REFERENCE   1  [PMID:1689048]
+  AUTHORS   Bredt DS, Snyder SH.
+  TITLE     Isolation of nitric oxide synthetase, a calmodulin-requiring enzyme.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 87 (1990) 682-5.
+  ORGANISM  Rattus norvegicus
+REFERENCE   2  [PMID:1706713]
+  AUTHORS   Stuehr DJ, Kwon NS, Nathan CF, Griffith OW, Feldman PL, Wiseman J
+  TITLE     N omega-hydroxy-L-arginine is an intermediate in the biosynthesis of nitric oxide from L-arginine.
+  JOURNAL   J. Biol. Chem. 266 (1991) 6259-63.
+REFERENCE   3  [PMID:11279231]
+  AUTHORS   Stuehr D, Pou S, Rosen GM
+  TITLE     Oxygen reduction by nitric-oxide synthases.
+  JOURNAL   J. Biol. Chem. 276 (2001) 14533-6.
+REFERENCE   4  [PMID:21119059]
+  AUTHORS   Foresi N, Correa-Aragunde N, Parisi G, Calo G, Salerno G, Lamattina L
+  TITLE     Characterization of a nitric oxide synthase from the plant kingdom: NO generation from the green alga Ostreococcus tauri is light irradiance and growth phase dependent.
+  JOURNAL   Plant. Cell. 22 (2010) 3816-30.
+PATHWAY     ec00330  Arginine and proline metabolism
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K00491  nitric-oxide synthase, bacterial
+            K13240  nitric-oxide synthase, brain
+            K13241  nitric-oxide synthase, inducible
+            K13242  nitric-oxide synthase, endothelial
+            K13253  nitric-oxide synthase, invertebrate
+            K13427  nitric-oxide synthase, plant
+GENES       HSA: 4842(NOS1) 4843(NOS2) 4846(NOS3)
+            PTR: 455026(NOS2) 463893(NOS3) 467139(NOS1)
+            PPS: 100974638(NOS3) 100976546 100996089(NOS1)
+            GGO: 101128007(NOS3) 101134923 101147071(NOS1)
+            PON: 100433069(NOS1) 100436584 100447953(NOS3)
+            MCC: 693781(NOS1) 706921(NOS2) 714231(NOS3)
+            MCF: 102121432(NOS2) 102123521(NOS1) 102143504(NOS3)
+            MMU: 18125(Nos1) 18126(Nos2) 18127(Nos3)
+            RNO: 24598(Nos1) 24599(Nos2) 24600(Nos3)
+            CGE: 100758127 100760062 100769961
+            HGL: 101699617(Nos2) 101711110(Nos3) 101711993(Nos1)
+            TUP: 102471872(NOS2) 102480558(NOS1) 102495986(NOS3)
+            CFA: 403784(NOS3) 403822(NOS2) 477498(NOS1)
+            AML: 100468087(NOS1) 100470060 100483990
+            FCA: 101087020(NOS2) 101096463(NOS3) 101100342(NOS1)
+            PTG: 102950049(NOS2) 102962715(NOS1) 102967516(NOS3)
+            BTA: 282876(NOS2) 287024(NOS3) 536132(NOS1)
+            BOM: 102265893(NOS2) 102267556(NOS3) 102280537(NOS1)
+            PHD: 102317388(NOS1) 102325091(NOS2) 102327398(NOS3)
+            CHX: 100860742(NOS2) 102185338(NOS3) 102185490(NOS1)
+            SSC: 396859(NOS2) 397557(NOS3)
+            CFR: 102508946(NOS1) 102518523(NOS2) 102524296(NOS3)
+            ECB: 100051079(NOS1) 100063339(NOS3) 791246(INOS)
+            MYB: 102253125(NOS2) 102256555(NOS3) 102260489(NOS1)
+            MYD: 102763635(NOS1) 102764374(NOS3) 102768087
+            PALE: 102878456(NOS2) 102879945(NOS3) 102884569(NOS1)
+            MDO: 100013712(NOS1) 100018035(NOS3) 100024271(NOS2)
+            SHR: 100913437(NOS3) 100921140(NOS1) 100927789(NOS2)
+            OAA: 100075386(NOS2) 100079842(NOS1) 100091599(NOS3)
+            GGA: 395807(NOS2) 427721(NOS1)
+            MGP: 100538441(NOS1) 692136(INOS)
+            TGU: 100230954(NOS2) 100231414(NOS1)
+            FAB: 101816936 101817488(NOS2) 101820761(NOS1)
+            PHI: 102106809(NOS1) 102108817(NOS2) 102112141(NOS3)
+            APLA: 101798766(NOS1) 101804455(NOS2)
+            FPG: 101916747(NOS1) 101918492(NOS3) 101921726(NOS2)
+            FCH: 102047821(NOS1) 102048023(NOS2) 102057360(NOS3)
+            CLV: 102084237(NOS3) 102086291(NOS2) 102093432(NOS1)
+            ASN: 102375419(NOS2) 102380334(NOS1) 102381196(NOS3)
+            PSS: 102444149(NOS1) 102446334(NOS2)
+            CMY: 102941829(NOS1) 102942806 102946684(NOS2)
+            ACS: 100557597 100561200 100562233(nos1)
+            XLA: 373705(nos1)
+            XTR: 100486016(nos3) 100494698(nos2) 100497595(nos1)
+            DRE: 404036(nos2a) 563654(nos2b) 60658(nos1)
+            TRU: 101066909
+            MZE: 101485683
+            OLA: 100049502(nnos)
+            XMA: 102233853
+            LCM: 102348281(NOS1) 102354990(NOS2)
+            BFO: BRAFLDRAFT_116914 BRAFLDRAFT_120590 BRAFLDRAFT_290770(NosC)
+            CIN: 100183039
+            SPU: 100888109 587111
+            DME: Dmel_CG6713(Nos)
+            DPO: Dpse_GA19805
+            DAN: Dana_GF14065
+            DER: Dere_GG10354
+            DPE: Dper_GL26383
+            DSE: Dsec_GM11413
+            DSI: Dsim_GD22223
+            DWI: Dwil_GK23979
+            DYA: Dyak_GE13295
+            DGR: Dgri_GH13337
+            DMO: Dmoj_GI17812
+            DVI: Dvir_GJ17639
+            AGA: AgaP_AGAP008255 AgaP_AGAP008257
+            AAG: AaeL_AAEL009745
+            CQU: CpipJ_CPIJ000366
+            AME: 503861(NOS)
+            NVI: 100313941(Nos)
+            TCA: 655549
+            BMOR: 100144542(NOS2)
+            API: 100160390
+            PHU: Phum_PHUM176630
+            ISC: IscW_ISCW018074
+            NVE: NEMVE_v1g110599
+            HMG: 100215023
+            TAD: TRIADDRAFT_18893 TRIADDRAFT_31504
+            ATH: AT3G47450(NOA1)
+            ALY: ARALYDRAFT_485109
+            CRB: CARUB_v10016901mg
+            EUS: EUTSA_v10010252mg
+            CIT: 102609531
+            CIC: CICLE_v10004670mg
+            TCC: TCM_014916
+            GMX: 100781340 100798614
+            MTR: MTR_2g060420
+            CAM: 101502582
+            FVE: 101301911
+            CSV: 101215455 101230254
+            RCU: RCOM_1500510
+            POP: POPTR_0001s00700g
+            VVI: 100265605
+            SLY: 778272(NOS1)
+            SOT: 102577659
+            OSA: 4328006
+            DOSA: Os02t0104700-01(Os02g0104700)
+            OBR: 102721991
+            BDI: 100824396
+            SBI: SORBI_04g000530(SORBIDRAFT_04g000530)
+            ZMA: 100381773
+            SITA: 101766392
+            ATR: s00106p00138610(AMTR_s00106p00138610)
+            SMO: SELMODRAFT_164227 SELMODRAFT_87746
+            PPP: PHYPADRAFT_21462
+            VCN: VOLCADRAFT_120437
+            OLU: OSTLU_37787
+            OTA: Ot17g00040
+            MIS: MICPUN_58144
+            CSL: COCSUDRAFT_26953
+            CVR: CHLNCDRAFT_141029
+            ZTR: MYCGRDRAFT_42401
+            EHX: EMIHUDRAFT_448312
+            SCL: sce1582(nos)
+            SCU: SCE1572_10085
+            BSU: BSU07630(nosA)
+            BSR: I33_0861
+            BSL: A7A1_0650
+            BSH: BSU6051_07630(nosA)
+            BSY: I653_03830
+            BSS: BSUW23_03875(nosA)
+            BST: GYO_1029
+            BSO: BSNT_01280(yflM)
+            BSN: BSn5_15720
+            BSQ: B657_07630(nosA)
+            BSUB: BEST7613_0755(nosA)
+            BSX: C663_0787
+            BSP: U712_03875
+            BLI: BL03064(nos)
+            BLD: BLi00785(nos)
+            BLH: BaLi_c08860(nosA)
+            BAO: BAMF_0731(nos)
+            BAY: RBAM_007830(yflM)
+            BAQ: BACAU_0755(nos)
+            BYA: BANAU_0700(yflM)
+            BAMP: B938_03755
+            BAML: BAM5036_0694(nosA)
+            BAMA: RBAU_0759(nosA)
+            BAMN: BASU_0734(nosA)
+            BAMB: BAPNAU_0711(nos)
+            BAZ: BAMTA208_03465(nos)
+            BQL: LL3_00786(nos)
+            BXH: BAXH7_00731(yflM)
+            BQY: MUS_0779(nos)
+            BAMI: KSO_015890
+            BAMC: U471_07660
+            BAMF: U722_03910
+            BAE: BATR1942_01420
+            BHA: BH0823
+            BAN: BA_5695
+            BAR: GBAA_5695
+            BAT: BAS5299
+            BAH: BAMEG_5743(nos)
+            BAI: BAA_5726(nos)
+            BAX: H9401_5438
+            BANT: A16_57100
+            BANR: A16R_57790
+            BAL: BACI_c54380(nos)
+            BCE: BC5444
+            BCA: BCE_5578
+            BCZ: BCZK5141(nos)
+            BCR: BCAH187_A5626(nos)
+            BCB: BCB4264_A5570
+            BCU: BCAH820_5540
+            BCG: BCG9842_B5379(nos)
+            BCQ: BCQ_5288(nos)
+            BCX: BCA_5597(nos)
+            BNC: BCN_5370
+            BCF: bcf_27340
+            BCER: BCK_08130
+            BCY: Bcer98_3961
+            BTK: BT9727_5126(nos)
+            BTL: BALH_4953(nos)
+            BTB: BMB171_C5040(nos)
+            BTT: HD73_5859
+            BTC: CT43_CH5486(nos)
+            BTF: YBT020_27155
+            BTM: MC28_4678(rplB)
+            BTG: BTB_c56450(nos)
+            BTI: BTG_21155
+            BTN: BTF1_25715
+            BTHT: H175_ch5579
+            BTHU: YBT1518_30590
+            BWE: BcerKBAB4_5238
+            BTY: Btoyo_2641
+            BCL: ABC1267
+            BPU: BPUM_0714(nos)
+            BPF: BpOF4_10365(nos)
+            BMQ: BMQ_0362(nos)
+            BMD: BMD_0363(nos)
+            BMH: BMWSH_4868(nos)
+            BSE: Bsel_2946
+            BCO: Bcell_0737
+            BJS: MY9_0854
+            BACI: B1NLA3E_08360
+            BIF: N288_20625
+            OIH: OB2691
+            GKA: GK1676
+            GTE: GTCCBUS3UF5_19370
+            GYC: GYMC61_2511
+            GYA: GYMC52_1640
+            GCT: GC56T3_1838
+            GGH: GHH_c16880(nos)
+            AFL: Aflv_0298
+            LSP: Bsph_0728
+            LGY: T479_01060
+            HHD: HBHAL_1332(nos)
+            SAU: SA1730
+            SAV: SAV1914
+            SAW: SAHV_1899
+            SAH: SaurJH1_2004
+            SAJ: SaurJH9_1970
+            SAM: MW1855
+            SAS: SAS1838
+            SAR: SAR2007
+            SAC: SACOL1976
+            SAX: USA300HOU_1916
+            SAA: SAUSA300_1895
+            SAO: SAOUHSC_02134
+            SAE: NWMN_1852
+            SAD: SAAV_1981
+            SUU: M013TW_1951
+            SUV: SAVC_08835
+            SUH: SAMSHR1132_17590
+            SUE: SAOV_2017
+            SUJ: SAA6159_01846
+            SUK: SAA6008_01935
+            SUC: ECTR2_1786
+            SUT: SAT0131_02042(sdaAB)
+            SUQ: HMPREF0772_11227(nos)
+            SUZ: MS7_1949(nos)
+            SUD: ST398NM01_2009
+            SUX: SAEMRSA15_18240
+            SUW: SATW20_19090
+            SUG: SAPIG2009
+            SUF: SARLGA251_17990
+            SAUA: SAAG_02434
+            SAUE: RSAU_001801(nos)
+            SAUN: SAKOR_01877
+            SAUS: SA40_1755
+            SAUU: SA957_1839
+            SAUZ: SAZ172_1927
+            SAB: SAB1851
+            SUY: SA2981_1871
+            SAUB: C248_1990
+            SAUM: BN843_19540
+            SAUC: CA347_2003(nos)
+            SAUR: SABB_02339(nos)
+            SEP: SE1598
+            SER: SERP1451
+            SHA: SH1038
+            SSP: SSP0877
+            SCA: Sca_1487(nos)
+            SLG: SLGD_01013
+            SLN: SLUG_10520
+            SSD: SPSINT_1667
+            SDT: SPSE_0828(nos)
+            SWA: A284_04430
+            SPAS: STP1_0432
+            ESI: Exig_0344
+            EAT: EAT1b_1019
+            EAN: Eab7_0319(nos)
+            EXM: U719_01775
+            MCL: MCCL_1651
+            BBE: BBR47_57280(nos)
+            PJD: Pjdr2_3338
+            GYM: GYMC10_4638
+            PPY: PPE_04584
+            PPM: PPSC2_c5090
+            PPO: PPM_4742(nos)
+            PPOL: X809_25820
+            PTA: HPL003_05435
+            PLV: ERIC2_c17570(nos)
+            AAC: Aaci_2338
+            AAD: TC41_2620(nos)
+            SIV: SSIL_3667
+            NBR: O3I_000985
+            RHA: RHA1_ro02793(nos)
+            RER: RER_13870(nos)
+            REY: O5Y_06535
+            ROP: ROP_24100(nos)
+            ROA: Pd630_LPD06889
+            SMA: SAV_1531(nos)
+            SCB: SCAB_31841(txtD)
+            SVE: SVEN_6572
+            SRO: Sros_2358
+            NML: Namu_4253
+            SEN: SACE_5845(nos) SACE_7255(nos)
+            AMD: AMED_4154(nos)
+            AMN: RAM_21160
+            AMM: AMES_4106(nos)
+            AMZ: B737_4106(nos)
+            AOI: AORI_5274(nos)
+            PDX: Psed_6636
+            AMI: Amir_1303
+            SESP: BN6_15480 BN6_84360(nos)
+            KAL: KALB_6966 KALB_8739
+            SAQ: Sare_3563
+            AMS: AMIS_72150
+            ASE: ACPL_7469(nos)
+            ACTN: L083_4136(nos)
+            AFS: AFR_37445
+            CAI: Caci_1733
+            CEP: Cri9333_1836
+            MIC: Mic7113_5682
+            ANB: ANA_C10702
+            DRA: DR_2597
+            DGE: Dgeo_0268
+            DDR: Deide_13130
+            DMR: Deima_0688
+            DPT: Deipr_0530
+            DGO: DGo_CA2502(nos)
+            DPD: Deipe_2456
+            NPH: NP1908A(nos)
+            NGE: Natgr_2846
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.39
+            IUBMB Enzyme Nomenclature: 1.14.13.39
+            ExPASy - ENZYME nomenclature database: 1.14.13.39
+            BRENDA, the Enzyme Database: 1.14.13.39
+            CAS: 125978-95-2
+///

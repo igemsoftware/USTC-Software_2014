@@ -1,0 +1,10 @@
+ENTRY       R02319                      Reaction
+NAME        NTP phosphohydrolase
+DEFINITION  Nucleoside triphosphate + H2O <=> NDP + Orthophosphate
+EQUATION    C00201 + C00001 <=> C00454 + C00009
+COMMENT     first step of two-step reaction (see R10443, R02319+R10442)
+RPAIR       RP05676  C00001_C00009 leave
+            RP10597  C00009_C00201 leave
+            RP11012  C00201_C00454 main [RC:RC00002]
+ENZYME      3.6.1.5         3.6.1.15
+///

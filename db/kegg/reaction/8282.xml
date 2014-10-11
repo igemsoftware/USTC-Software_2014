@@ -1,0 +1,12 @@
+ENTRY       R08282                      Reaction
+NAME        carboxyphosphamide:NAD+ oxidoreductase
+DEFINITION  Aldophosphamide + NAD+ + H2O <=> Carboxyphosphamide + NADH + H+
+EQUATION    C07645 + C00003 + C00001 <=> C07646 + C00004 + C00080
+COMMENT     NADP+ (see R08283)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP12806  C00001_C07646 leave
+            RP13146  C07645_C07646 main [RC:RC00080]
+ENZYME      1.2.1.5
+PATHWAY     rn00982  Drug metabolism - cytochrome P450
+ORTHOLOGY   K00129  aldehyde dehydrogenase (NAD(P)+) [EC:1.2.1.5]
+///

@@ -1,0 +1,16 @@
+ENTRY       R09621                      Reaction
+NAME        malonyl-CoA:benzoyl-CoA malonyltransferase (cyclizing)
+DEFINITION  3 Malonyl-CoA + S-Benzoate coenzyme A <=> 4 CoA + 3,5-Dihydroxybiphenyl + 4 CO2
+EQUATION    3 C00083 + C00512 <=> 4 C00010 + C19750 + 4 C00011
+COMMENT     multi-step reaction
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP00053  C00010_C00512 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP12789  C00011_C00083 leave
+            RP15055  C00512_C19750 trans
+            RP15056  C00083_C19750 trans
+            RP15057  C00083_C19750 trans
+            RP15058  C00083_C19750 trans
+            RP15059  C00011_C00512 leave
+ENZYME      2.3.1.177
+///

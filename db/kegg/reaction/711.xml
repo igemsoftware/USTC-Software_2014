@@ -1,0 +1,16 @@
+ENTRY       R00711                      Reaction
+NAME        Acetaldehyde:NADP+ oxidoreductase
+DEFINITION  Acetaldehyde + NADP+ + H2O <=> Acetate + NADPH + H+
+EQUATION    C00084 + C00006 + C00001 <=> C00033 + C00005 + C00080
+COMMENT     NAD+ (ec 1.2.1.5, see R00710)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00128  C00033_C00084 main [RC:RC00047]
+            RP05678  C00001_C00033 leave
+ENZYME      1.2.1.4         1.2.1.5         1.2.1.-
+PATHWAY     rn00010  Glycolysis / Gluconeogenesis
+            rn00620  Pyruvate metabolism
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K00129  aldehyde dehydrogenase (NAD(P)+) [EC:1.2.1.5]
+            K00138  aldehyde dehydrogenase [EC:1.2.1.-]
+///

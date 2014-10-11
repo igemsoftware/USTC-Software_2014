@@ -1,0 +1,14 @@
+ENTRY       R04941                      Reaction
+NAME        Selenocystathionine L-homocysteine-lyase (deaminating)
+DEFINITION  L-Selenocystathionine + H2O <=> Selenohomocysteine + Ammonia + Pyruvate
+EQUATION    C05699 + C00001 <=> C05698 + C00014 + C00022
+COMMENT     multi-step reaction
+RPAIR       RP00805  C05698_C05699 main [RC:RC00056]
+            RP04549  C00022_C05699 main [RC:RC01245]
+            RP10324  C00001_C00022 leave
+            RP10328  C00014_C05699 leave
+ENZYME      4.4.1.8
+PATHWAY     rn00450  Selenocompound metabolism
+ORTHOLOGY   K01760  cystathionine beta-lyase [EC:4.4.1.8]
+            K14155  cystathione beta-lyase [EC:4.4.1.8]
+///

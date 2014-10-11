@@ -1,0 +1,11 @@
+ENTRY       R08265                      Reaction
+DEFINITION  Morphine + Reduced flavoprotein + Oxygen <=> Normorphine + Formaldehyde + Oxidized flavoprotein + H2O
+EQUATION    C01516 + C03024 + C00007 <=> C11785 + C00067 + C03161 + C00001
+COMMENT     P450:N-demethylation
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00502  C00007_C00067 leave
+            RP13015  C01516_C11785 main [RC:RC01198]
+            RP13310  C00067_C01516 main [RC:RC02299]
+ENZYME      1.14.14.1
+PATHWAY     rn00982  Drug metabolism - cytochrome P450
+///

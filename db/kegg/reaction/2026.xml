@@ -1,0 +1,13 @@
+ENTRY       R02026                      Reaction
+NAME        O-acetyl-L-homoserine acetate-lyase (L-homocysteine forming)
+DEFINITION  O-Acetyl-L-homoserine + Thiosulfate + Thioredoxin + H+ <=> L-Homocysteine + Sulfite + Thioredoxin disulfide + Acetate
+EQUATION    C01077 + C00320 + C00342 + C00080 <=> C00155 + C00094 + C00343 + C00033
+COMMENT     multi-step reaction (similar to R01287)
+RPAIR       RP00030  C00342_C00343 cofac [RC:RC00013]
+            RP00110  C00094_C00320 leave [RC:RC02813]
+            RP00143  C00033_C01077 main [RC:RC00020]
+            RP00647  C00155_C01077 main [RC:RC02848]
+            RP06808  C00155_C00320 leave
+PATHWAY     rn00270  Cysteine and methionine metabolism
+            rn01100  Metabolic pathways
+///

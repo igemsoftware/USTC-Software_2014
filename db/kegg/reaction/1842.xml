@@ -1,0 +1,12 @@
+ENTRY       R01842                      Reaction
+NAME        Androstenedione 7alpha-hydroxylase
+DEFINITION  Androstenedione + Reduced flavoprotein + Oxygen <=> 7alpha-Hydroxyandrost-4-ene-3,17-dione + Oxidized flavoprotein + H2O
+EQUATION    C00280 + C03024 + C00007 <=> C05296 + C03161 + C00001
+COMMENT     CYP2A1
+            P-450 reductase (ec 1.6.2.4) is the flavoprotein and re-reduced by NADPH (see R08551)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP11055  C00280_C05296 main [RC:RC00661]
+            RP13377  C00007_C05296 leave
+ENZYME      1.14.14.1
+PATHWAY     rn00140  Steroid hormone biosynthesis
+///

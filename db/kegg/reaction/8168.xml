@@ -1,0 +1,16 @@
+ENTRY       R08168                      Reaction
+NAME        indole-3-acetaldehyde-oxime,NADPH:oxidoreductase
+DEFINITION  Indole-3-acetaldehyde oxime + L-Cysteine + NADPH + Oxygen + H+ <=> S-(Indolylmethylthiohydroximoyl)-L-cysteine + NADP+ + 2 H2O
+EQUATION    C02937 + C00097 + C00005 + C00007 + C00080 <=> C16518 + C00006 + 2 C00001
+COMMENT     two-step reaction (see R08607+R08608)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP13066  C02937_C16518 main [RC:RC02210]
+            RP13280  C00097_C16518 main [RC:RC01705]
+ENZYME      1.14.-.-
+PATHWAY     rn00380  Tryptophan metabolism
+            rn00966  Glucosinolate biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+            rn01210  2-Oxocarboxylic acid metabolism
+ORTHOLOGY   K11818  cytochrome P450, family 83, subfamily B, polypeptide 1 [EC:1.14.-.-]
+///

@@ -1,0 +1,16 @@
+ENTRY       R08840                      Reaction
+NAME        teasterone,reduced-flavoprotein:oxygen oxidoreductase (lactone-forming)
+DEFINITION  Teasterone + Reduced flavoprotein + Oxygen <=> 7-Oxateasterone + Oxidized flavoprotein + H2O
+EQUATION    C15791 + C03024 + C00007 <=> C17733 + C03161 + C00001
+COMMENT     P-450 reductase (ec 1.6.2.4) is the flavoprotein and re-reduced by NADPH (see R08551)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP13870  C00007_C17733 leave
+            RP13885  C15791_C17733 main [RC:RC01504]
+ENZYME      1.14.14.-
+PATHWAY     rn00905  Brassinosteroid biosynthesis
+ORTHOLOGY   K12640  brassinosteroid-6-oxidase 2 [EC:1.14.-.-]
+REFERENCE   1  [PMID:18685225]
+            Katsumata T, Hasegawa A, Fujiwara T, Komatsu T, Notomi M, Abe H, Natsume M, Kawaide H.
+            Arabidopsis CYP85A2 catalyzes lactonization reactions in the biosynthesis of 2-deoxy-7-oxalactone brassinosteroids.
+            Biosci. Biotechnol. Biochem. 72 (2008) 2110-7.
+///

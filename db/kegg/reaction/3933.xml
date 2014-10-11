@@ -1,0 +1,13 @@
+ENTRY       R03933                      Reaction
+NAME        20alpha,22beta-Dihydroxycholesterol,ferredoxin:oxygen oxidoreductase (side-chain-cleaving)
+DEFINITION  20alpha,22beta-Dihydroxycholesterol + Oxygen + 2 Reduced adrenal ferredoxin + 2 H+ <=> 4-Methylpentanal + Pregnenolone + 2 H2O + 2 Oxidized adrenal ferredoxin
+EQUATION    C05501 + C00007 + 2 C00662 + 2 C00080 <=> C02373 + C01953 + 2 C00001 + 2 C00667
+COMMENT     third step of R02724 (R01454+R04854+R03933 or R02723+R04855+R03933)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP03552  C01953_C05501 main [RC:RC01029]
+            RP03553  C02373_C05501 main [RC:RC01030]
+ENZYME      1.14.15.6
+PATHWAY     rn00140  Steroid hormone biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00498  cholesterol monooxygenase (side-chain-cleaving) [EC:1.14.15.6]
+///

@@ -1,0 +1,13 @@
+ENTRY       R04854                      Reaction
+NAME        20alpha-Hydroxycholesterol:oxygen oxidoreductase (side-chain-cleaving)
+DEFINITION  20alpha-Hydroxycholesterol + Oxygen + 2 Reduced adrenal ferredoxin + 2 H+ <=> 20alpha,22beta-Dihydroxycholesterol + H2O + 2 Oxidized adrenal ferredoxin
+EQUATION    C05500 + C00007 + 2 C00662 + 2 C00080 <=> C05501 + C00001 + 2 C00667
+COMMENT     second step of R02724 (R01454+R04854+R03933)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP04469  C05500_C05501 main [RC:RC01223]
+            RP12442  C00007_C05501 leave
+ENZYME      1.14.15.6
+PATHWAY     rn00140  Steroid hormone biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00498  cholesterol monooxygenase (side-chain-cleaving) [EC:1.14.15.6]
+///

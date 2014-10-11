@@ -1,0 +1,14 @@
+ENTRY       R02861                      Reaction
+DEFINITION  Nicotine + CO2 + H+ <=> 1-Methylpyrrolinium + Nicotinate
+EQUATION    C00745 + C00011 + C00080 <=> C06178 + C00253
+COMMENT     nicotine synthase
+            multi-step reaction
+            incomplete reaction (requiring NADPH [CPD:C00005] and oxygen [CPD:C00007])
+RPAIR       RP02559  C00253_C00745 main [RC:RC02875]
+            RP02560  C00745_C06178 main [RC:RC00794]
+            RP05931  C00011_C00253 leave
+PATHWAY     rn00760  Nicotinate and nicotinamide metabolism
+            rn00960  Tropane, piperidine and pyridine alkaloid biosynthesis
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+///

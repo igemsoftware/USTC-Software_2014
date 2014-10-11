@@ -1,0 +1,12 @@
+ENTRY       R04328                      Reaction
+DEFINITION  Lathosterol + CO2 + 4 H2O + 3 NADP+ <=> Methostenol + 3 Oxygen + 3 NADPH + 3 H+
+EQUATION    C01189 + C00011 + 4 C00001 + 3 C00006 <=> C05111 + 3 C00007 + 3 C00005 + 3 C00080
+COMMENT     methylsterol demethylase 1.14.13.72 + 1.1.1.170 + 1.1.1.270
+            multi-step reaction
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP05367  C00007_C00011 leave
+            RP08037  C00011_C05111 leave
+            RP11282  C01189_C05111 main [RC:RC01867]
+ENZYME      1.1.1.170       1.1.1.270       1.14.13.72
+///

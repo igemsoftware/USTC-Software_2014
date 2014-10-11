@@ -1,0 +1,19 @@
+ENTRY       R00713                      Reaction
+NAME        succinate-semialdehyde:NAD+ oxidoreductase
+DEFINITION  Succinate semialdehyde + NAD+ + H2O <=> Succinate + NADH + H+
+EQUATION    C00232 + C00003 + C00001 <=> C00042 + C00004 + C00080
+COMMENT     NADP+ (ec 1.2.1.16, see R00714)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00608  C00042_C00232 main [RC:RC00080]
+            RP05712  C00001_C00042 leave
+ENZYME      1.2.1.16        1.2.1.24
+PATHWAY     rn00250  Alanine, aspartate and glutamate metabolism
+            rn00350  Tyrosine metabolism
+            rn00650  Butanoate metabolism
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K00135  succinate-semialdehyde dehydrogenase / glutarate-semialdehyde dehydrogenase [EC:1.2.1.16 1.2.1.79 1.2.1.20]
+            K00139  succinate-semialdehyde dehydrogenase [EC:1.2.1.24]
+            K08324  succinate-semialdehyde dehydrogenase [EC:1.2.1.16 1.2.1.24]
+            K17761  succinate-semialdehyde dehydrogenase, mitochondrial [EC:1.2.1.24]
+///

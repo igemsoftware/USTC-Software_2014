@@ -1,0 +1,15 @@
+ENTRY       R09785                      Reaction
+NAME        L-arginine,2-oxoglutarate:oxygen oxidoreductase (succinate-forming);
+            L-arginine,2-oxoglutarate:oxygen 5-oxidoreductase (1-pyrroline-5-carboxylate-forming)
+DEFINITION  2-Oxoglutarate + L-Arginine + Oxygen <=> Succinate + CO2 + Guanidine + (S)-1-Pyrroline-5-carboxylate + H2O
+EQUATION    C00026 + C00062 + C00007 <=> C00042 + C00011 + C17349 + C03912 + C00001
+COMMENT     2-oxoglutarate-dependent ethylene/succinate-forming enzyme (catalyzing R09784 and R09785 at the rate of 2:1)
+            two-step reaction (see R10081+R10082)
+RPAIR       RP00013  C00001_C00007 leave
+            RP00015  C00026_C00042 cofac
+            RP05677  C00011_C00026 leave
+            RP05690  C00007_C00042 leave
+            RP15363  C00062_C03912 main [RC:RC02651]
+            RP15364  C00062_C17349 main [RC:RC02652]
+ENZYME      1.14.11.34
+///

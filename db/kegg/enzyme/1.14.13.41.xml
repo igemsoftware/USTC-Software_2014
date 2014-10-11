@@ -1,0 +1,71 @@
+ENTRY       EC 1.14.13.41               Enzyme
+NAME        tyrosine N-monooxygenase;
+            tyrosine N-hydroxylase;
+            CYP79A1
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     L-tyrosine,NADPH:oxygen oxidoreductase (N-hydroxylating)
+REACTION    L-tyrosine + 2 O2 + 2 NADPH + 2 H+ = (Z)-[4-hydroxyphenylacetaldehyde oxime] + 2 NADP+ + CO2 + 3 H2O (overall reaction) [RN:R08656];
+            (1a) L-tyrosine + O2 + NADPH + H+ = N-hydroxy-L-tyrosine + NADP+ + H2O [RN:R00730];
+            (1b) N-hydroxy-L-tyrosine + O2 + NADPH + H+ = N,N-dihydroxy-L-tyrosine + NADP+ + H2O [RN:R04460];
+            (1c) N,N-dihydroxy-L-tyrosine = (Z)-[4-hydroxyphenylacetaldehyde oxime] + CO2 + H2O [RN:R07190]
+ALL_REAC    R00730 R04460 R07190 R08656;
+            (other) R06585 R10671
+SUBSTRATE   L-tyrosine [CPD:C00082];
+            O2 [CPD:C00007];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            N-hydroxy-L-tyrosine [CPD:C03004];
+            N,N-dihydroxy-L-tyrosine [CPD:C15503]
+PRODUCT     (Z)-[4-hydroxyphenylacetaldehyde oxime] [CPD:C04353];
+            NADP+ [CPD:C00006];
+            CO2 [CPD:C00011];
+            H2O [CPD:C00001];
+            N-hydroxy-L-tyrosine [CPD:C03004];
+            N,N-dihydroxy-L-tyrosine [CPD:C15503]
+COMMENT     A heme-thiolate protein (P-450). This enzyme is involved in the biosynthesis of the cyanogenic glucoside dhurrin in sorghum, along with EC 1.14.13.68, 4-hydroxyphenylacetaldehyde oxime monooxygenase and EC 2.4.1.85, cyanohydrin beta-glucosyltransferase. Some 2-(4-hydroxyphenyl)-1-nitroethane is formed as a side product.
+HISTORY     EC 1.14.13.41 created 1992, modified 2001, modified 2005
+REFERENCE   1  [PMID:2250015]
+  AUTHORS   Halkier BA, Moller BL.
+  TITLE     The biosynthesis of cyanogenic glucosides in higher plants. Identification of three hydroxylation steps in the biosynthesis of dhurrin in Sorghum bicolor (L.) Moench and the involvement of 1-ACI-nitro-2-(p-hydroxyphenyl)ethane as an intermediate.
+  JOURNAL   J. Biol. Chem. 265 (1990) 21114-21.
+  ORGANISM  Sorghum bicolor
+REFERENCE   2  [PMID:7876084]
+  AUTHORS   Sibbesen O, Koch B, Halkier BA, Moller BL.
+  TITLE     Cytochrome P-450TYR is a multifunctional heme-thiolate enzyme catalyzing the conversion of L-tyrosine to p-hydroxyphenylacetaldehyde oxime in the biosynthesis of the cyanogenic glucoside dhurrin in Sorghum bicolor (L.) Moench.
+  JOURNAL   J. Biol. Chem. 270 (1995) 3506-11.
+  ORGANISM  Sorghum bicolor
+REFERENCE   3  [PMID:10938360]
+  AUTHORS   Bak S, Olsen CE, Halkier BA, Moller BL.
+  TITLE     Transgenic tobacco and Arabidopsis plants expressing the two multifunctional sorghum cytochrome P450 enzymes, CYP79A1 and CYP71E1, are cyanogenic and accumulate metabolites derived from intermediates in Dhurrin biosynthesis.
+  JOURNAL   Plant. Physiol. 123 (2000) 1437-48.
+  ORGANISM  Sorghum bicolor
+REFERENCE   4  [PMID:10759528]
+  AUTHORS   Nielsen JS, Moller BL.
+  TITLE     Cloning and expression of cytochrome P450 enzymes catalyzing the conversion of tyrosine to p-hydroxyphenylacetaldoxime in the biosynthesis of cyanogenic glucosides in Triglochin maritima.
+  JOURNAL   Plant. Physiol. 122 (2000) 1311-21.
+  ORGANISM  Triglochin maritima
+REFERENCE   5  [PMID:12114576]
+  AUTHORS   Busk PK, Moller BL.
+  TITLE     Dhurrin synthesis in sorghum is regulated at the transcriptional level and induced by nitrogen fertilization in older plants.
+  JOURNAL   Plant. Physiol. 129 (2002) 1222-31.
+  ORGANISM  Sorghum bicolor
+REFERENCE   6  [PMID:15665094]
+  AUTHORS   Kristensen C, Morant M, Olsen CE, Ekstrom CT, Galbraith DW, Moller BL, Bak S.
+  TITLE     Metabolic engineering of dhurrin in transgenic Arabidopsis plants with marginal inadvertent effects on the metabolome and transcriptome.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 102 (2005) 1779-84.
+  ORGANISM  Sorghum bicolor
+PATHWAY     ec00460  Cyanoamino acid metabolism
+            ec00966  Glucosinolate biosynthesis
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13027  tyrosine N-monooxygenase
+GENES       BDI: 100844710
+            SBI: SORBI_01g001200(SORBIDRAFT_01g001200)
+            SITA: 101771875 101781613
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.41
+            IUBMB Enzyme Nomenclature: 1.14.13.41
+            ExPASy - ENZYME nomenclature database: 1.14.13.41
+            BRENDA, the Enzyme Database: 1.14.13.41
+            CAS: 159447-19-5
+///

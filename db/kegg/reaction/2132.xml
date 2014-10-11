@@ -1,0 +1,14 @@
+ENTRY       R02132                      Reaction
+NAME        Thiamin:oxygen 5-oxidoreductase
+DEFINITION  Thiamine + 2 Oxygen + H2O <=> Thiamine acetic acid + 2 Hydrogen peroxide
+EQUATION    C00378 + 2 C00007 + C00001 <=> C02892 + 2 C00027
+COMMENT     two-step reaction (see R00033+R00072)
+RPAIR       RP00006  C00007_C00027 cofac [RC:RC02755]
+            RP01987  C00378_C02892 main [RC:RC00651]
+            RP06857  C00001_C02892 leave
+ENZYME      1.1.3.23
+REFERENCE   1  [PMID:2988447]
+            Gomez-Moreno C, Edmondson DE.
+            Evidence for an aldehyde intermediate in the catalytic mechanism of thiamine oxidase.
+            Arch. Biochem. Biophys. 239 (1985) 46-52.
+///

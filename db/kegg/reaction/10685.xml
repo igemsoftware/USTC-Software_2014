@@ -1,0 +1,16 @@
+ENTRY       R10685                      Reaction
+DEFINITION  NAD+ + Glycine + Sulfur donor <=> ADP-5-ethyl-4-methylthiazole-2-carboxylate + Nicotinamide + 3 H2O
+EQUATION    C00003 + C00037 + C17023 <=> C20784 + C00153 + 3 C00001
+COMMENT     thiamine thiazole synthase
+            multi-step reaction
+            Sulfur donor is enzyme itself (one cystein residue looses H2S to form dehydroalanie residue)
+RPAIR       RP00082  C00003_C00153 main [RC:RC00033]
+            RP16911  C00003_C20784 main [RC:RC03253]
+            RP16912  C00037_C20784 main [RC:RC03254]
+            RP16913  C00001_C00003 leave
+            RP16914  C00001_C00003 leave
+            RP16915  C00001_C00003 leave
+PATHWAY     rn00730  Thiamine metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K03146  thiamine thiazole synthase
+///

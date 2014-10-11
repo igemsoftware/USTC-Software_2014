@@ -1,0 +1,13 @@
+ENTRY       R00931                      Reaction
+NAME        propanoyl-CoA:oxaloacetate C-propanoyltransferase (thioester-hydrolysing, 1-carboxyethyl-forming);
+            2-methylcitrate oxaloacetate-lyase
+DEFINITION  2-Methylcitrate + CoA <=> Propanoyl-CoA + Oxaloacetate + H2O
+EQUATION    C02225 + C00010 <=> C00100 + C00036 + C00001
+RPAIR       RP00034  C00010_C00100 main [RC:RC00004]
+            RP01181  C00036_C02225 main [RC:RC00406]
+            RP06370  C00100_C02225 main [RC:RC02827]
+            RP13443  C00001_C02225 leave
+ENZYME      2.3.3.5
+PATHWAY     rn00640  Propanoate metabolism
+ORTHOLOGY   K01659  2-methylcitrate synthase [EC:2.3.3.5]
+///

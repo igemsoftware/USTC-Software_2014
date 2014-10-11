@@ -1,0 +1,11 @@
+ENTRY       R00925                      Reaction
+NAME        Propanoate:CoA ligase (AMP-forming)
+DEFINITION  ATP + Propanoate + CoA <=> AMP + Diphosphate + Propanoyl-CoA
+EQUATION    C00002 + C00163 + C00010 <=> C00020 + C00013 + C00100
+COMMENT     two-step reaction (see R01354+R00926)
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00034  C00010_C00100 main [RC:RC00004]
+            RP00117  C00100_C00163 main [RC:RC00014]
+ENZYME      6.2.1.1         6.2.1.17
+///

@@ -1,0 +1,450 @@
+ENTRY       EC 4.1.1.39                 Enzyme
+NAME        ribulose-bisphosphate carboxylase;
+            D-ribulose 1,5-diphosphate carboxylase;
+            D-ribulose-1,5-bisphosphate carboxylase;
+            RuBP carboxylase;
+            carboxydismutase;
+            diphosphoribulose carboxylase;
+            ribulose 1,5-bisphosphate carboxylase;
+            ribulose 1,5-bisphosphate carboxylase/oxygenase;
+            ribulose 1,5-diphosphate carboxylase;
+            ribulose 1,5-diphosphate carboxylase/oxygenase;
+            ribulose bisphosphate carboxylase/oxygenase;
+            ribulose diphosphate carboxylase;
+            ribulose diphosphate carboxylase/oxygenase;
+            rubisco;
+            3-phospho-D-glycerate carboxy-lyase (dimerizing)
+CLASS       Lyases;
+            Carbon-carbon lyases;
+            Carboxy-lyases
+SYSNAME     3-phospho-D-glycerate carboxy-lyase (dimerizing; D-ribulose-1,5-bisphosphate-forming)
+REACTION    2 3-phospho-D-glycerate + 2 H+ = D-ribulose 1,5-bisphosphate + CO2 + H2O [RN:R00024]
+ALL_REAC    R00024;
+            (other) R03140
+SUBSTRATE   3-phospho-D-glycerate [CPD:C00197];
+            H+ [CPD:C00080]
+PRODUCT     D-ribulose 1,5-bisphosphate [CPD:C01182];
+            CO2 [CPD:C00011];
+            H2O [CPD:C00001]
+COMMENT     Will utilize O2 instead of CO2, forming 3-phospho-D-glycerate and 2-phosphoglycolate.
+HISTORY     EC 4.1.1.39 created 1965, modified 2001, modified 2003
+REFERENCE   1  [PMID:4331471]
+  AUTHORS   Bowes G, Ogren WL, Hageman RH.
+  TITLE     Phosphoglycolate production catalyzed by ribulose diphosphate carboxylase.
+  JOURNAL   Biochem. Biophys. Res. Commun. 45 (1971) 716-22.
+  ORGANISM  Zea mays, Glycine max
+REFERENCE   2  [PMID:4310607]
+  AUTHORS   Wishnick M, Lane MD, Scrutton MC, Mildvan AS.
+  TITLE     The presence of tightly bound copper in ribulose diphosphate carboxylase from spinach.
+  JOURNAL   J. Biol. Chem. 244 (1969) 5761-3.
+  ORGANISM  Spinacia oleracea
+PATHWAY     ec00630  Glyoxylate and dicarboxylate metabolism
+            ec00710  Carbon fixation in photosynthetic organisms
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K01601  ribulose-bisphosphate carboxylase large chain
+            K01602  ribulose-bisphosphate carboxylase small chain
+GENES       ATH: AT1G67090(RBCS1A) AT5G38410 AT5G38420 AT5G38430 ArthCp030(rbcL)
+            ALY: ARALYDRAFT_475563 ARALYDRAFT_475602 ARALYDRAFT_475805 ARALYDRAFT_494136 ARALYDRAFT_494137 ARALYDRAFT_675829
+            CRB: CARUB_v10005847mg CARUB_v10007166mg CARUB_v10007296mg CARUB_v10021016mg
+            EUS: EUTSA_v10010325mg EUTSA_v10019199mg EUTSA_v10019202mg EUTSA_v10027955mg
+            CIT: 102612348 102612988 102623191 4271213(rbcL)
+            CIC: CICLE_v10009532mg CICLE_v10023403mg
+            TCC: TCM_009872 TCM_009873 TCM_012342 TCM_019454 TCM_039193 ThcaC_p028(rbcL)
+            GMX: 100500504 100527679 100794277 100806826 100807438 100810275 3989271(rbcL) 547605
+            MTR: MTR_065s0041 MTR_065s0049 MTR_103s0077 MTR_3g035490 MTR_3g035680 MTR_3g057130 MTR_4g051270 MTR_4g127870 MTR_5g075460 MTR_6g018300 MTR_6g018310 MTR_6g055010 MTR_7g021770 MTR_7g117930 MetrCp074(rbcL)
+            CAM: 101494759 6797517(rbcL)
+            FVE: 101290860 101303987 101305619 101315253 10251527(rbcL)
+            CSV: 101205003 101218354 101219300(RBCS) 101222206 101222421 101222684 101225869 3429289(rbcL)
+            RCU: RCOM_0030020 RCOM_0754280 RCOM_0835790 RCOM_1067650 RCOM_1158790 RCOM_1292340 RCOM_1301440 RCOM_1571640 RCOM_1653230 RCOM_1655340 RCOM_ORF00051(rbcL)
+            POP: POPTR_0004s09910g(POPTRDRAFT_813777) POPTR_0005s15660g POPTR_0010s04010g POPTR_0168s00220g POPTR_2555s00200g Poptr_cp030(rbcL)
+            VVI: 100256536 100267942 4025045(rbcL) 7498516(rbcL)
+            SLY: 101257875 101260565 101268337(Rbcs-3B) 3950460(rbcL) 543973(RBCS-1) 543974(RBCS-2A)
+            SOT: 102577450 102580042 102600888 102601229 102605737(RBCS-C) 4099985(rbcL)
+            OSA: 3131463(rbcL) 4328326 4338862 4341443 4351758 4351966 4352014 4352015 4352016 4352021
+            DOSA: Os01t0791033-00(Os01g0791033) Os01t0899425-00(Os01g0899425) Os02t0152400-01(Os02g0152400) Os05t0427800-00(Os05g0427800) Os10t0356000-00(Os10g0356000) Os12t0207600-00(Os12g0207600) Os12t0274700-01(Os12g0274700) Os12t0291100-01(Os12g0291100) Os12t0291200-00(Os12g0291200) Os12t0291400-01(Os12g0291400) Os12t0292400-01(Os12g0292400)
+            OBR: 102699550 102711124 102714067 102721219 102721499
+            BDI: 100825888 100829841 100834822 100838895 100840557 100845378 100845819 100846121 100846418 6439897(rbcL)
+            SBI: SORBI_03g020182(SORBIDRAFT_03g020182) SORBI_05g003480(SORBIDRAFT_05g003480) SORBI_05g025125(SORBIDRAFT_05g025125) SORBI_05g025130(SORBIDRAFT_05g025130) SORBI_08g001646(SORBIDRAFT_08g001646) SobiCp030(rbcL)
+            ZMA: 100279574 542212(ssu1) 845212(rbcL)
+            SITA: 101756247 101763225 101763632 101763714 101768366 101768770 101770259 W841_p054(rbcL)
+            ATR: AmtrCp030(rbcL) s00012p00184400(AMTR_s00012p00184400) s00025p00242020(AMTR_s00025p00242020) s00054p00039660(AMTR_s00054p00039660) s00079p00061090(AMTR_s00079p00061090) s00334p00013200(AMTR_s00334p00013200) s00606p00006850(AMTR_s00606p00006850)
+            SMO: SELMODRAFT_137874 SELMODRAFT_147927 SELMODRAFT_17395 SELMODRAFT_186173 SELMODRAFT_236158 SemoP_p024(rbcL)
+            PPP: PHYPADRAFT_106210 PHYPADRAFT_109367 PHYPADRAFT_110675 PHYPADRAFT_115069 PHYPADRAFT_116050 PHYPADRAFT_123666 PHYPADRAFT_125839 PHYPADRAFT_125887 PHYPADRAFT_125903 PHYPADRAFT_146969 PHYPADRAFT_151552 PHYPADRAFT_152025 PHYPADRAFT_168764 PHYPADRAFT_173430 PHYPADRAFT_201189 PHYPADRAFT_201973 PHYPADRAFT_221004 PHYPADRAFT_225236 PHYPADRAFT_226715 PHYPADRAFT_233894 PHYPADRAFT_59935 PHYPADRAFT_61317 PHYPADRAFT_77574 PHYPADRAFT_8310 PHYPADRAFT_87740 PHYPADRAFT_87752 PhpapaCp031(rbcL)
+            CRE: CHLREDRAFT_108283 CHLREDRAFT_60238(RBCS2B) CHLREDRAFT_82986(RBCS1) ChreCp049(rbcL)
+            VCN: VOLCADRAFT_106899 VOLCADRAFT_76826 VOLCADRAFT_83349(rbcS) VOLCADRAFT_96572 VOLCADRAFT_96573 VOLCADRAFT_96575 VOLCADRAFT_96577
+            OLU: OSTLU_28400 OSTLU_32608(rbcL) OSTLU_42060 OSTLU_89572
+            OTA: OstapCp59(rbcL) Ot07g01830 Ot18g02030(rbcS2)
+            MIS: MICPUN_104784(RBCS) MICPUN_104787(RBCS.1) MICPUN_96260(RBCL)
+            MPP: MICPUCDRAFT_37117 MICPUCDRAFT_37122 MICPUCDRAFT_57578 MICPUCDRAFT_66674
+            CSL: COCSUDRAFT_65708 CospP_p075(rbcL)
+            CVR: CHLNCDRAFT_29368 CHLNCDRAFT_59545 ChvaP_p029(rbcL)
+            CME: CymeCp013(rbcL)
+            GSL: Gasu_40760
+            CCP: CHC_950(rbcL)
+            TPS: THAPSDRAFT_bd2088(RBL)
+            PPF: Pput_1846
+            PPI: YSA_08807
+            MCA: MCA2743(rbcL) MCA2744(cbbS)
+            TCX: Tcr_0424 Tcr_0427(rbcL) Tcr_0428 Tcr_0838(rbcL) Tcr_0839
+            TCY: Thicy_1564 Thicy_1565
+            MEJ: Q7A_522 Q7A_523
+            NOC: Noc_0332 Noc_0333(rbcL)
+            NHL: Nhal_3435 Nhal_3436 Nhal_3442 Nhal_3443
+            NWA: Nwat_2772 Nwat_2773
+            ALV: Alvin_1365 Alvin_1366 Alvin_2545 Alvin_2749 Alvin_2750 Alvin_2751
+            TVI: Thivi_1570 Thivi_1571 Thivi_1992 Thivi_3125 Thivi_4238
+            TMB: Thimo_0765 Thimo_0766 Thimo_0884 Thimo_2808 Thimo_2947 Thimo_2948 Thimo_3339
+            AEH: Mlg_1168 Mlg_2836(rbcL) Mlg_2837
+            HHA: Hhal_0467 Hhal_1045 Hhal_1046(rbcL)
+            HHC: M911_12300(rbcL) M911_12305 M911_12380 M911_13230(rbcL) M911_13235 M911_16210
+            TGR: Tgr7_3202 Tgr7_3203(rbcL)
+            TKM: TK90_0858 TK90_0859
+            TNI: TVNIR_2991(cbbS_[H]) TVNIR_2992(cbbL_[H])
+            HNA: Hneap_0921 Hneap_0922(rbcL) Hneap_1095
+            CSA: Csal_3215
+            HEL: HELO_1481
+            MMW: Mmwyl1_3120
+            MME: Marme_1595
+            AFE: Lferr_1388 Lferr_1389(rbcL) Lferr_1814 Lferr_2660(rbcL) Lferr_2661
+            AFR: AFE_1690(cbbS-2) AFE_1691(rbcL) AFE_2155(cbbL2) AFE_3051(rbcL) AFE_3052(cbbS-1)
+            ACU: Atc_0926 Atc_0927 Atc_1661
+            AFI: Acife_1242 Acife_2231 Acife_2232 Acife_3144 Acife_3145
+            RMA: Rmag_0701
+            VOK: COSY_0653(cbbM)
+            REH: H16_B1394(cbbS2) H16_B1395(rbcL) PHG426(cbbSp) PHG427(rbcL)
+            CNC: CNE_2c13520(cbbS) CNE_2c13530(cbbL) CNE_BB1p11580
+            RME: Rmet_1500(cbbS) Rmet_1501(cbbL)
+            CTI: RALTA_B1701(cbbS) RALTA_B1702(rbcL)
+            BAC: BamMC406_5257
+            BXE: Bxe_B0441 Bxe_B2452 Bxe_B2453(rbcL)
+            BPH: Bphy_6496 Bphy_6497(rbcL)
+            BPY: Bphyt_7230
+            BUG: BC1001_3962 BC1001_3963
+            BGE: BC1002_3207 BC1002_3208
+            BGF: BC1003_5439 BC1003_5440
+            BYI: BYI23_B014300 BYI23_B014310 BYI23_D003670
+            BPX: BUPH_00546 BUPH_00547
+            BUO: BRPE64_BCDS01400 BRPE64_BCDS01410 BRPE64_DCDS09220
+            PPK: U875_18470
+            PPNO: DA70_10980
+            PRB: X636_15640
+            BBR: BB1035
+            BBM: BN115_0985
+            BBH: BN112_2412
+            AXY: AXYL_03869
+            AXN: AX27061_4162
+            AKA: TKWG_05245 TKWG_16015(rbcL) TKWG_16020
+            AMIM: MIM_c08190 MIM_c14370(cbxS) MIM_c14380(cbbL)
+            CDN: BN940_16196
+            RFR: Rfer_1391
+            POL: Bpro_0032 Bpro_0093
+            PNA: Pnap_1978
+            ACK: C380_11440
+            DAC: Daci_5642
+            VAP: Vapar_1945 Vapar_3031 Vapar_3032(rbcL)
+            VPE: Varpa_3601 Varpa_3886
+            VPD: VAPA_1c20780 VAPA_1c30970(cbxS) VAPA_1c30980(cbbL) VAPA_2c01390
+            MPT: Mpe_A1478(rbcL) Mpe_A1479(cbbS) Mpe_A2782(rbcL) Mpe_A2783(cbbS)
+            LCH: Lcho_3767
+            TIN: Tint_0115 Tint_0116 Tint_1655
+            THI: THI_0135(rbcL) THI_0136(cbbS) THI_2041(cbbM)
+            RGE: RGE_36050(cbbS) RGE_36060(cbbL)
+            NEU: NE1920(cbbS) NE1921(rbcL)
+            NET: Neut_0804(rbcL) Neut_0805
+            NIT: NAL212_0871 NAL212_0872 NAL212_2942 NAL212_2943
+            NII: Nit79A3_1254 Nit79A3_1255 Nit79A3_3235 Nit79A3_3236
+            NMU: Nmul_A0685 Nmul_A0686(rbcL)
+            AZA: AZKH_p0230(cbbS_rbcS) AZKH_p0231(cbbL_rbcL)
+            DAR: Daro_3637
+            TBD: Tbd_2623(cbbS) Tbd_2624(rbcL) Tbd_2638(cbbM)
+            SDR: SCD_n02031(cbbL) SCD_n02032(cbbS) SCD_n02850(cbbM)
+            APP: CAP2UW1_0825
+            SLT: Slit_0022 Slit_0985 Slit_0986
+            GCA: Galf_0034
+            DAS: Daes_2544
+            DHY: DESAM_22949(cbbM)
+            MLO: mll7006
+            MCI: Mesci_4283 Mesci_4284 Mesci_5314
+            MOP: Mesop_5541 Mesop_5542 Mesop_5775
+            MAM: Mesau_05257 Mesau_05270
+            SME: SM_b20197(cbbS) SM_b20198(rbcL) SM_b20393(rbcL)
+            SMK: Sinme_3785 Sinme_3974 Sinme_3975
+            SMQ: SinmeB_4281 SinmeB_4471 SinmeB_4472
+            SMX: SM11_pD1220(rbcL) SM11_pD1412(cbbL) SM11_pD1413(cbbS)
+            SMI: BN406_06279 BN406_06465(cbbL) BN406_06466(cbbS)
+            SMEG: C770_GR4pD1209 C770_GR4pD1397 C770_GR4pD1398
+            SMEL: SM2011_b20197(cbbS) SM2011_b20198(cbbL) SM2011_b20393(rbcL)
+            SMD: Smed_3724 Smed_3924(rbcL) Smed_3925
+            RHI: NGR_b22000(rbcL1) NGR_c06470(rbcL2)
+            SFH: SFHH103_05031(rbcL) SFHH103_05883(cbbL) SFHH103_05884(cbbS)
+            SFD: USDA257_c23120 USDA257_c31140(cbbS) USDA257_c31150(cbbL)
+            EAD: OV14_a1403(rbcL2) OV14_b0206(rbcL1)
+            ARA: Arad_9230(rbcL)
+            RET: RHE_PF00042(rbcL)
+            REC: RHECIAT_PC0000964(rbcL)
+            REL: REMIM1_PF00046
+            RLE: pRL120396(cbbl1)
+            RLT: Rleg2_4649
+            RLG: Rleg_4762
+            RLB: RLEG3_07495
+            RTR: RTCIAT899_PC04845
+            RHL: LPU83_pLPU83c0539(rbcL)
+            OAN: Oant_3067 Oant_4835
+            BJA: blr2585(rbcL) blr2586(cbbS)
+            BJU: BJ6T_64220 BJ6T_72220 BJ6T_72230
+            BRA: BRADO1659(rbcL) BRADO1660(cbbS) BRADO2274(rbcL) BRADO2275(cbbS)
+            BBT: BBta_0451(rbcL) BBta_0452(cbbS) BBta_2641(rbcL) BBta_2642(cbbS) BBta_6396(cbbS) BBta_6397(rbcL)
+            BRS: S23_53960(cbbS) S23_53970(cbbL)
+            AOL: S58_58780 S58_58790 S58_67690
+            RPA: RPA0262(rlp2) RPA1559(rbcL) RPA1560(cbbS) RPA2169(rlp1) RPA4641(cbbM)
+            RPB: RPB_0300 RPB_0951 RPB_3227 RPB_3963 RPB_3964(rbcL)
+            RPC: RPC_0252 RPC_1327(rbcL) RPC_1328 RPC_2184 RPC_2895
+            RPD: RPD_0462 RPD_1054 RPD_1548 RPD_1549(rbcL) RPD_2233 RPD_3721 RPD_3722(rbcL)
+            RPE: RPE_0422 RPE_1361(rbcL) RPE_1362 RPE_2686 RPE_3678
+            RPT: Rpal_0263 Rpal_1747(rbcL) Rpal_1748 Rpal_2462 Rpal_5122
+            RPX: Rpdx1_0372 Rpdx1_3352 Rpdx1_3959 Rpdx1_3960 Rpdx1_4819
+            NWI: Nwi_1986 Nwi_1987(rbcL) Nwi_2928 Nwi_2929(rbcL)
+            NHA: Nham_3750 Nham_3751(rbcL) Nham_4049(rbcL) Nham_4050 Nham_4332(rbcL) Nham_4333
+            OCG: OCA5_pHCG300470(cbbL) OCA5_pHCG300480(cbbS)
+            OCO: OCA4_pHCG3B00470(cbbL) OCA4_pHCG3B00480(cbbS)
+            XAU: Xaut_1917 Xaut_1918(rbcL) Xaut_2924
+            AZC: AZC_2687
+            SNO: Snov_0428 Snov_0429 Snov_3661
+            MET: M446_1732
+            MNO: Mnod_2420 Mnod_3435
+            MSL: Msil_1195(rbcL) Msil_1196 Msil_1244
+            RVA: Rvan_0009 Rvan_0010 Rvan_0192 Rvan_1970
+            RSP: RSP_1281(cbbS) RSP_1282(cbbL) RSP_3271(rbpL)
+            RSH: Rsph17029_2940 Rsph17029_2941(rbcL) Rsph17029_4004
+            RSQ: Rsph17025_2711 Rsph17025_2712(rbcL) Rsph17025_4020 Rsph17025_4063(rbcL) Rsph17025_4064
+            RSK: RSKD131_2680 RSKD131_2681(rbcL) RSKD131_3446 RSKD131_4141
+            RCP: RCAP_rcc00578(cbbS) RCAP_rcc00579(cbbL) RCAP_rcc01829(cbbM)
+            JAN: Jann_3063
+            PDE: Pden_1699(rbcL) Pden_1700
+            OAT: OAN307_c00690
+            ACR: Acry_0824(rbcL) Acry_0825 Acry_1067
+            AMV: ACMV_08240(rbcL) ACMV_10880(cbbS) ACMV_10890(cbbL)
+            RRU: Rru_A1998 Rru_A2400
+            RRF: F11_10265 F11_12335
+            RCE: RC1_0239(rbcL) RC1_0240(ccbS2) RC1_4061(rbcL) RC1_4062(cbbS1)
+            RPM: RSPPHO_00537(ccbS2) RSPPHO_00538(cbbL2) RSPPHO_02788 RSPPHO_03165(cbbM)
+            MAG: amb2696
+            MGY: MGMSR_0815(cbbM)
+            ALI: AZOLI_p10723(cbbS) AZOLI_p10724(cbbL)
+            ABS: AZOBR_p210197
+            PGV: SL003B_0987(cbbS) SL003B_0988(rbcL)
+            BSUB: BEST7613_5533(rbcS) BEST7613_5535(rbcL)
+            GYM: GYMC10_2998
+            PMS: KNP414_04768
+            PMQ: PM3016_4181
+            PMW: B2K_21690
+            BTS: Btus_2871 Btus_2872
+            CCL: Clocl_1256
+            SAY: TPY_0781(rbcS) TPY_0782(rbcL)
+            SAP: Sulac_2858 Sulac_2859
+            ADG: Adeg_1863
+            TNR: Thena_0423
+            VPR: Vpar_1263
+            NCY: NOCYR_3242 NOCYR_3243(cbbL)
+            NNO: NONO_c39820(rbcS) NONO_c39830(rbcL)
+            GOR: KTR9_2562
+            AAU: AAur_1905
+            ACH: Achl_1739
+            ARR: ARUE_c20370
+            MPH: MLP_19640
+            TCU: Tcur_1655 Tcur_1656
+            GOB: Gobs_1448 Gobs_2026
+            PDX: Psed_6249 Psed_6250
+            AFO: Afer_0119(rbcL) Afer_0120
+            MIN: Minf_1263(rbcS) Minf_1264(rbcL)
+            PLM: Plim_1373
+            IPA: Isop_2634
+            SYN: slr0009(rbcL) slr0012(rbcS)
+            SYZ: MYO_122490(rbcL) MYO_122510(rbcS)
+            SYY: SYNGTS_2225(rbcL) SYNGTS_2227(rbcS)
+            SYT: SYNGTI_2224(rbcL) SYNGTI_2226(rbcS)
+            SYS: SYNPCCN_2223(rbcL) SYNPCCN_2225(rbcS)
+            SYQ: SYNPCCP_2223(rbcL) SYNPCCP_2225(rbcS)
+            SYW: SYNW1717(rbcS) SYNW1718(rbcL)
+            SYC: syc0129_c(rbcS) syc0130_c(rbcL)
+            SYF: Synpcc7942_1426(rbcL) Synpcc7942_1427
+            SYD: Syncc9605_0752(rbcL) Syncc9605_0753
+            SYE: Syncc9902_1613 Syncc9902_1614(rbcL)
+            SYG: sync_1966(cbbS) sync_1967(rbcL)
+            SYR: SynRCC307_0819(rbcL) SynRCC307_0820
+            SYX: SynWH7803_0678(rbcL) SynWH7803_0679
+            SYP: SYNPCC7002_A1796(rbcS) SYNPCC7002_A1798(rbcL)
+            CYA: CYA_1194(rbcL) CYA_1196(cbbS)
+            CYB: CYB_2577(cbbS) CYB_2579(rbcL)
+            SYNE: Syn6312_2007 Syn6312_2009
+            SYNP: Syn7502_01667 Syn7502_01669
+            TEL: tll1504(rbcS) tll1506(rbcL)
+            THN: NK55_04160(rbcS) NK55_04170(rbcL)
+            MAR: MAE_47870(rbcS) MAE_47890(rbcL)
+            CYT: cce_3164(rbcS) cce_3166(rbcL)
+            CYP: PCC8801_1602(rbcL) PCC8801_1604
+            CYC: PCC7424_1365 PCC7424_1367(rbcL)
+            CYN: Cyan7425_3420 Cyan7425_3422(rbcL)
+            CYH: Cyan8802_1628(rbcL) Cyan8802_1630
+            CYJ: Cyan7822_2899 Cyan7822_2901
+            AMR: AM1_1783(rbcS) AM1_1785(rbcL)
+            CGC: Cyagr_0013 Cyagr_0014
+            CAN: Cyan10605_0642 Cyan10605_0644
+            CSN: Cyast_0117 Cyast_0119
+            DSL: Dacsa_1767 Dacsa_1769
+            HAO: PCC7418_3537 PCC7418_3539
+            GLP: Glo7428_1042 Glo7428_1044
+            CMP: Cha6605_0643 Cha6605_0645
+            TER: Tery_4408 Tery_4410(rbcL)
+            LEP: Lepto7376_0178 Lepto7376_0180
+            GEI: GEI7407_3808 GEI7407_3810
+            OAC: Oscil6304_0953 Oscil6304_0955
+            ONI: Osc7112_5803 Osc7112_5805
+            PSEU: Pse7367_0916 Pse7367_0918
+            CEP: Cri9333_4171 Cri9333_4173
+            MIC: Mic7113_2336 Mic7113_2338
+            ARP: NIES39_K02830(rbcS) NIES39_K02850(rbcL)
+            GVI: gvip295(rbcL) gvip297(rbcS)
+            GLJ: GKIL_0667(rbcS) GKIL_0669(rbcL)
+            ANA: alr1524(rbcL) alr1526(rbcS)
+            NPU: Npun_F4195(rbcL) Npun_F4197
+            NOS: Nos7107_1841 Nos7107_1843
+            NOP: Nos7524_1120 Nos7524_1122
+            AVA: Ava_3905 Ava_3907(rbcL)
+            ANB: ANA_C11337(rbcL) ANA_C11339(rbcS)
+            ACY: Anacy_0029 Anacy_0031
+            NAZ: Aazo_2151 Aazo_2153
+            CSG: Cylst_2043 Cylst_2045
+            CALO: Cal7507_0319 Cal7507_0321
+            CALT: Cal6303_3043 Cal6303_3045
+            RIV: Riv7116_3466 Riv7116_3468
+            PMA: Pro_0551(rbcL) Pro_0552(rbcS)
+            PMM: PMM0550(rbcL) PMM0551(rbcS)
+            PMT: PMT1204(rbcS) PMT1205(rbcL)
+            PMN: PMN2A_1879(rbcL) PMN2A_1880
+            PMI: PMT9312_0550(rbcL) PMT9312_0551
+            PMB: A9601_06061(rbcL) A9601_06071(rbcS)
+            PMC: P9515_06141(rbcL) P9515_06151(rbcS)
+            PMF: P9303_08081(rbcL) P9303_08091(rbcS)
+            PMG: P9301_05761(rbcL) P9301_05771(rbcS)
+            PMH: P9215_06311(rbcL) P9215_06321(rbcS)
+            PMJ: P9211_05521(rbcL) P9211_05531(rbcS)
+            PME: NATL1_06041(rbcL) NATL1_06051(rbcS)
+            CTHE: Chro_5313 Chro_5315
+            PLP: Ple7327_0312 Ple7327_0314
+            SCS: Sta7437_0331 Sta7437_0333
+            RMR: Rmar_1894
+            RMG: Rhom172_0971
+            NKO: Niako_3589
+            PHE: Phep_2747
+            SHG: Sph21_2161
+            EVI: Echvi_1692
+            DFE: Dfer_2138
+            CTE: CT1772(rbcL)
+            CPC: Cpar_0434
+            CCH: Cag_1640
+            CPH: Cpha266_2001
+            CPB: Cphamn1_2007
+            CLI: Clim_1970
+            PVI: Cvib_0464
+            PLT: Plut_0412
+            PPH: Ppha_2334
+            PAA: Paes_1801
+            CTS: Ctha_1707
+            TRO: trd_0132
+            CAP: CLDAP_27010(mtnW)
+            TOS: Theos_1734 Theos_1735
+            MRB: Mrub_0902
+            MRE: K649_04150
+            MSV: Mesil_0322 Mesil_3254 Mesil_3255
+            OPR: Ocepr_2186
+            TLE: Tlet_1684
+            NDE: NIDE1881(rlp)
+            LFC: LFE_2466
+            LFI: LFML04_2516
+            MOX: DAMO_2165(cbbL) DAMO_2166(cbbS)
+            SRB: P148_SR1C001G0674
+            MJA: MJ_1235(rbcL)
+            MFE: Mefer_1318(rbcL)
+            MVU: Metvu_0984(rbcL)
+            MFS: MFS40622_0859
+            MIG: Metig_1280
+            MOK: Metok_0719
+            MAC: MA4555(rbcL)
+            MBA: Mbar_A0902
+            MMA: MM_1249(rbcL)
+            MMAZ: MmTuc01_1292
+            MBU: Mbur_2322
+            MMH: Mmah_0928
+            MEV: Metev_0915
+            MZH: Mzhil_0258
+            MPY: Mpsy_0328
+            MHZ: Metho_1660 Metho_1955
+            MTP: Mthe_1616
+            MCJ: MCON_3086(cbbM)
+            MHI: Mhar_2262
+            MHU: Mhun_2315
+            MLA: Mlab_0558
+            MEM: Memar_1325(rbcL)
+            MBG: BN140_2166(rbcL)
+            MPI: Mpet_1902
+            MBN: Mboo_1105(rbcL)
+            MFO: Metfor_2181
+            MPL: Mpal_0258
+            MPD: MCP_1116(rbcL)
+            MEZ: Mtc_1074(rbcL)
+            RCI: RCIX222(rbcL)
+            MER: H729_08255
+            MAX: MMALV_01870
+            AFU: AF1638(rbcL)
+            APO: Arcpr_1634
+            AVE: Arcve_0786
+            AST: Asulf_01980
+            FPL: Ferp_1506
+            NPH: NP2770A(rbcL)
+            HMU: Hmuk_2766(rbcL)
+            NMG: Nmag_0732
+            HVO: HVO_0970(rbcL)
+            HME: HFX_0967(rbcL)
+            HBO: Hbor_21570
+            NAT: NJ7G_0819
+            TAR: TALC_00200
+            PHO: PH0939(rbcL)
+            PAB: PAB1580(rbcL)
+            PFU: PF1156(rbcL)
+            PFI: PFC_05005(rbcL)
+            PYN: PNA2_1620
+            PYA: PYCH_00090
+            PYS: Py04_1155
+            TKO: TK2290(rbcL)
+            TON: TON_1234(rbcL)
+            TGA: TGAM_1751(rbcL)
+            TSI: TSIB_1596(rbcL)
+            TBA: TERMP_00818
+            THE: GQS_09490(rbcL)
+            THA: TAM4_1764
+            THM: CL1_1487
+            TLT: OCC_12446
+            THS: TES1_0685
+            TNU: BD01_1640
+            ABI: Aboo_1084
+            ACF: AciM339_1392
+            SMR: Smar_1051(rbcL)
+            SHC: Shell_1412
+            DKA: DKAM_1140(rbcL)
+            DMU: Desmu_1141
+            DFD: Desfe_1247
+            TAG: Tagg_0906
+            IAG: Igag_1625
+            THG: TCELL_0363
+            HBU: Hbut_0503(rbcL)
+            TPE: Tpen_1227(rbcL)
+            THB: N186_07310
+DBLINKS     ExplorEnz - The Enzyme Database: 4.1.1.39
+            IUBMB Enzyme Nomenclature: 4.1.1.39
+            ExPASy - ENZYME nomenclature database: 4.1.1.39
+            BRENDA, the Enzyme Database: 4.1.1.39
+            CAS: 9027-23-0
+///

@@ -1,0 +1,13 @@
+ENTRY       R04806                      Reaction
+NAME        5beta-cholestane-3alpha,7alpha-diol,NADPH:oxygen oxidoreductase (26-hydroxylating)
+DEFINITION  3alpha,7alpha-Dihydroxy-5beta-cholestane + NADPH + Oxygen <=> 3alpha,7alpha,26-Trihydroxy-5beta-cholestane + NADP+ + H2O
+EQUATION    C05452 + C00005 + C00007 <=> C05444 + C00006 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP04437  C05444_C05452 main [RC:RC01216]
+            RP08314  C00007_C05444 leave
+ENZYME      1.14.13.15
+PATHWAY     rn00120  Primary bile acid biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00488  cholestanetriol 26-monooxygenase [EC:1.14.13.15]
+///

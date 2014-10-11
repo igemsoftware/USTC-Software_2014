@@ -1,0 +1,111 @@
+ENTRY       EC 1.14.13.100              Enzyme
+NAME        25/26-hydroxycholesterol 7alpha-hydroxylase;
+            25-hydroxycholesterol 7alpha-monooxygenase;
+            CYP7B1;
+            CYP7B1 oxysterol 7alpha-hydroxylase;
+            27-hydroxycholesterol 7-monooxygenase;
+            27-hydroxycholesterol 7alpha-hydroxylase;
+            cholest-5-ene-3beta,25-diol,NADPH:oxygen oxidoreductase (7alpha-hydroxylating);
+            25-hydroxycholesterol 7alpha-hydroxylase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     cholest-5-ene-3beta,25/26-diol,NADPH:oxygen oxidoreductase (7alpha-hydroxylating)
+REACTION    (1) cholest-5-ene-3beta,25-diol + NADPH + H+ + O2 = cholest-5-ene-3beta,7alpha,25-triol + NADP+ + H2O [RN:R07209];
+            (2) (25R)-cholest-5-ene-3beta,26-diol + NADPH + H+ + O2 = (25R)-cholest-5-ene-3beta,7alpha,26-triol + NADP+ + H2O [RN:R07372]
+ALL_REAC    R07209 R07372;
+            (other) R08727 R08943
+SUBSTRATE   cholest-5-ene-3beta,25-diol [CPD:C15519];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            (25R)-cholest-5-ene-3beta,26-diol
+PRODUCT     cholest-5-ene-3beta,7alpha,25-triol [CPD:C15520];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            (25R)-cholest-5-ene-3beta,7alpha,26-triol
+COMMENT     A heme-thiolate protein (P-450). Unlike EC 1.14.13.99, 24-hydroxycholesterol 7alpha-monooxygenase, which is specific for its oxysterol substrate, this enzyme can also metabolize the oxysterols 24,25-epoxycholesterol, 22-hydroxycholesterol and 24-hydroxycholesterol, but to a lesser extent [2].
+HISTORY     EC 1.14.13.100 created 2005, modified 2013 (EC 1.14.13.60 created 1999, incorporated 2013)
+REFERENCE   1
+  AUTHORS   Kumiko, O.M., Budai, K. and Javitt, N.B.
+  TITLE     Cholesterol and 27-hydroxycholesterol 7alpha-hydroxylation: evidence for two different enzymes.
+  JOURNAL   J. Lipid Res. 34 (1993) 581-588.
+REFERENCE   2  [PMID:7925343]
+  AUTHORS   Toll A, Wikvall K, Sudjana-Sugiaman E, Kondo KH, Bjorkhem I.
+  TITLE     7 alpha hydroxylation of 25-hydroxycholesterol in liver microsomes. Evidence that the enzyme involved is different from cholesterol 7 alpha-hydroxylase.
+  JOURNAL   Eur. J. Biochem. 224 (1994) 309-16.
+  ORGANISM  Homo sapiens, Rattus norvegicus, Sus scofa
+REFERENCE   3  [PMID:10748047]
+  AUTHORS   Li-Hawkins J, Lund EG, Bronson AD, Russell DW.
+  TITLE     Expression cloning of an oxysterol 7alpha-hydroxylase selective for 24-hydroxycholesterol.
+  JOURNAL   J. Biol. Chem. 275 (2000) 16543-9.
+  ORGANISM  Homo sapiens, Mus musculus
+REFERENCE   4  [PMID:12759897]
+  AUTHORS   Ren S, Marques D, Redford K, Hylemon PB, Gil G, Vlahcevic ZR, Pandak WM.
+  TITLE     Regulation of oxysterol 7alpha-hydroxylase (CYP7B1) in the rat.
+  JOURNAL   Metabolism. 52 (2003) 636-42.
+  ORGANISM  Rattus norvegicus
+  SEQUENCE  [rno:25429]
+REFERENCE   5  [PMID:12543708]
+  AUTHORS   Russell DW.
+  TITLE     The enzymes, regulation, and genetics of bile acid synthesis.
+  JOURNAL   Annu. Rev. Biochem. 72 (2003) 137-74.
+  ORGANISM  Mus musculus
+PATHWAY     ec00120  Primary bile acid biosynthesis
+            ec00140  Steroid hormone biosynthesis
+ORTHOLOGY   K07430  oxysterol 7-alpha-hydroxylase
+GENES       HSA: 9420(CYP7B1)
+            PTR: 743817(CYP7B1)
+            PPS: 100995737
+            GGO: 101124249
+            PON: 100439228
+            MCC: 710188
+            MCF: 102132453
+            MMU: 13123(Cyp7b1)
+            RNO: 25429(Cyp7b1)
+            CGE: 100754734
+            HGL: 101721563
+            TUP: 102468171
+            CFA: 486973(CYP7B1)
+            AML: 100477302
+            FCA: 101086873
+            PTG: 102970913
+            BTA: 529552(CYP7B1)
+            BOM: 102276071
+            PHD: 102328103
+            CHX: 102191152
+            SSC: 100286867(CYP7B1)
+            CFR: 102508530
+            ECB: 100064741
+            MYB: 102240967
+            MYD: 102767325
+            PALE: 102888293
+            MDO: 100029487(CYP7B1)
+            SHR: 100920521
+            OAA: 100081634
+            GGA: 420164(CYP7B1)
+            MGP: 100541042
+            TGU: 100224987
+            FAB: 101813216
+            PHI: 102104989
+            APLA: 101791081
+            FPG: 101918669
+            FCH: 102060263
+            CLV: 102096682
+            ASN: 102386823
+            PSS: 102462148
+            CMY: 102941409
+            ACS: 100564185
+            XTR: 100145642(cyp7b1)
+            DRE: 570455
+            MZE: 101467563
+            OLA: 101173499
+            XMA: 102223762
+            LCM: 102345159
+            CIN: 100184784
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.100
+            IUBMB Enzyme Nomenclature: 1.14.13.100
+            ExPASy - ENZYME nomenclature database: 1.14.13.100
+            BRENDA, the Enzyme Database: 1.14.13.100
+            CAS: 149316-80-3
+///

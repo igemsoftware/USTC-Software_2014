@@ -1,0 +1,11 @@
+ENTRY       R08043                      Reaction
+DEFINITION  2-Hydroxylamino-4,6-dinitrotoluene + NADH + H+ <=> 2-Amino-4,6-dinitrotoluene + NAD+ + H2O
+EQUATION    C16393 + C00004 + C00080 <=> C16395 + C00003 + C00001
+COMMENT     nitroreductase
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP10476  C00001_C16393 leave
+            RP12191  C16393_C16395 main [RC:RC01760]
+ENZYME      1.7.1.-
+PATHWAY     rn00633  Nitrotoluene degradation
+            rn01120  Microbial metabolism in diverse environments
+///

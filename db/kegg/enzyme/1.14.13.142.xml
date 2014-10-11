@@ -1,0 +1,161 @@
+ENTRY       EC 1.14.13.142              Enzyme
+NAME        3-ketosteroid 9alpha-monooxygenase;
+            KshAB;
+            3-ketosteroid 9alpha-hydroxylase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     androsta-1,4-diene-3,17-dione,NADH:oxygen oxidoreductase (9alpha-hydroxylating)
+REACTION    androsta-1,4-diene-3,17-dione + NADH + H+ + O2 = 9alpha-hydroxyandrosta-1,4-diene-3,17-dione + NAD+ + H2O [RN:R09860]
+ALL_REAC    R09860
+SUBSTRATE   androsta-1,4-diene-3,17-dione [CPD:C20144];
+            NADH [CPD:C00004];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007]
+PRODUCT     9alpha-hydroxyandrosta-1,4-diene-3,17-dione [CPD:C14909];
+            NAD+ [CPD:C00003];
+            H2O [CPD:C00001]
+COMMENT     The enzyme is involved in the cholesterol degradation pathway of several bacterial pathogens, such as Mycobacterium tuberculosis. It is a two-component system consisting of a terminal oxygenase (KshA) and a ferredoxin reductase (KshB). The oxygenase contains a Rieske-type iron-sulfur center and non-heme iron. The reductase component is a flavoprotein containing an NAD-binding domain and a plant-type iron-sulfur cluster. The product of the enzyme is unstable, and spontaneously converts to 3-hydroxy-9,10-seconandrost-1,3,5(10)-triene-9,17-dione.
+HISTORY     EC 1.14.13.142 created 2012
+REFERENCE   1  [PMID:19561185]
+  AUTHORS   Petrusma M, Dijkhuizen L, van der Geize R
+  TITLE     Rhodococcus rhodochrous DSM 43269 3-ketosteroid 9alpha-hydroxylase, a two-component iron-sulfur-containing monooxygenase with subtle steroid substrate  specificity.
+  JOURNAL   Appl. Environ. Microbiol. 75 (2009) 5300-7.
+REFERENCE   2  [PMID:19234303]
+  AUTHORS   Capyk JK, D'Angelo I, Strynadka NC, Eltis LD
+  TITLE     Characterization of 3-ketosteroid 9{alpha}-hydroxylase, a Rieske oxygenase in the cholesterol degradation pathway of Mycobacterium tuberculosis.
+  JOURNAL   J. Biol. Chem. 284 (2009) 9937-46.
+  ORGANISM  Mycobacterium tuberculosis
+  SEQUENCE  [mtu:Rv3526 Rv3571]
+REFERENCE   3  [PMID:21987574]
+  AUTHORS   Capyk JK, Casabon I, Gruninger R, Strynadka NC, Eltis LD
+  TITLE     Activity of 3-ketosteroid 9alpha-hydroxylase (KshAB) indicates cholesterol side chain and ring degradation occur simultaneously in Mycobacterium tuberculosis.
+  JOURNAL   J. Biol. Chem. 286 (2011) 40717-24.
+PATHWAY     ec00984  Steroid degradation
+            ec01100  Metabolic pathways
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K15982  3-ketosteroid 9alpha-monooxygenase subunit A
+            K15983  3-ketosteroid 9alpha-monooxygenase subunit B
+GENES       PSG: G655_23840
+            PPUT: L483_14105 L483_14320
+            PPUN: PP4_26740(kshA) PP4_27180(kshB)
+            PPUU: PputUW4_01666 PputUW4_01678
+            PSC: A458_17160
+            PSH: Psest_3453
+            PRE: PCA10_12240(kshA) PCA10_43650(kshB)
+            PKC: PKB_4313(ksha1) PKB_4319(kshB) PKB_4338(ksha3)
+            SPL: Spea_2121 Spea_2130
+            SHL: Shal_2093 Shal_2102
+            PHA: PSHAa0878 PSHAa2137
+            GPB: HDN1F_02750
+            REU: Reut_A1546 Reut_A1576
+            REH: H16_B0643 H16_B0672(hcaE)
+            CNC: CNE_2c05890 CNE_2c06190(kshA) CNE_BB1p00120(kshA)
+            CTI: RALTA_B0492 RALTA_B0514
+            BUR: Bcep18194_B1416 Bcep18194_B1448
+            BCJ: BCAM1620 BCAM1644
+            BCT: GEM_4012 GEM_4096 GEM_4102
+            CTT: CtCNB1_1306 CtCNB1_1359
+            NAR: Saro_3666
+            NPP: PP1Y_Mpl3383
+            SWI: Swit_3307
+            SPHM: G432_11540 G432_14050 G432_14385
+            MTU: Rv3526(kshA) Rv3571(kshB)
+            MTV: RVBD_3526 RVBD_3571
+            MTC: MT3676
+            MRA: MRA_3565 MRA_3610(hmp)
+            MTF: TBFG_13559 TBFG_13604
+            MTB: TBMG_03565 TBMG_03610
+            MTK: TBSG_03592 TBSG_03637
+            MTZ: TBXG_003541 TBXG_003585
+            MTG: MRGA327_21785 MRGA327_22045
+            MTE: CCDC5079_3267 CCDC5079_3312
+            MTUR: CFBS_3742 CFBS_3788(hmp)
+            MTL: CCDC5180_3219 CCDC5180_3264
+            MTO: MTCTRI2_3590 MTCTRI2_3636(hmp)
+            MTD: UDA_3526 UDA_3571(hmp)
+            MTN: ERDMAN_3866 ERDMAN_3918(hmp)
+            MTJ: J112_18980 J112_19230
+            MTUB: MT7199_3587 MT7199_3634
+            MTUC: J113_24655
+            MTUE: J114_18850 J114_19100
+            MTX: M943_18130 M943_18365
+            MTUH: I917_24735 I917_25090
+            MTUL: TBHG_03466 TBHG_03512
+            MBO: Mb3556 Mb3602(hmp)
+            MBB: BCG_3590 BCG_3636(hmp)
+            MBT: JTY_3591 JTY_3637(hmp)
+            MBM: BCGMEX_3588 BCGMEX_3634(hmp)
+            MBK: K60_036610 K60_037090
+            MAF: MAF_35380 MAF_35840(hmp)
+            MCE: MCAN_35371 MCAN_35841(hmp)
+            MCQ: BN44_110015 BN44_110066(hmp)
+            MCV: BN43_90021 BN43_90072(hmp)
+            MCX: BN42_90018 BN42_90069(hmp)
+            MCZ: BN45_100018 BN45_100085(hmp)
+            MPA: MAP0496c MAP1434
+            MAO: MAP4_2411 MAP4_3328 MAP4_3371
+            MAV: MAV_0590 MAV_0633 MAV_3037
+            MIT: OCO_04980 OCO_05430 OCO_28550 OCO_28760
+            MIR: OCQ_05140 OCQ_05580 OCQ_27130 OCQ_27340
+            MIA: OCU_05020 OCU_05470 OCU_28420 OCU_28620
+            MID: MIP_00939 MIP_00998 MIP_03683 MIP_03722
+            MYO: OEM_05040 OEM_05500 OEM_27010 OEM_27250
+            MSM: MSMEG_2870 MSMEG_2893 MSMEG_5925 MSMEG_6039
+            MSG: MSMEI_2796 MSMEI_2819(hmp) MSMEI_5766 MSMEI_5878(hmp)
+            MSA: Mycsm_04157 Mycsm_04176 Mycsm_05761 Mycsm_05841
+            MUL: MUL_4089 MUL_4142(hmp)
+            MVA: Mvan_2869 Mvan_2893 Mvan_5225 Mvan_5309
+            MGI: Mflv_1462 Mflv_1533 Mflv_4566
+            MSP: Mspyr1_09170 Mspyr1_39660 Mspyr1_47050
+            MAB: MAB_0080c MAB_0583c MAB_4173
+            MABB: MASS_0082 MASS_0552 MASS_2901 MASS_3633 MASS_3931 MASS_4172
+            MMV: MYCMA_0050(kshA) MYCMA_0296(kshB) MYCMA_1638(hmp) MYCMA_1991(kshA) MYCMA_2177(hmp) MYCMA_2322(kshA)
+            MMC: Mmcs_0296 Mmcs_0319 Mmcs_4640 Mmcs_4710
+            MKM: Mkms_0306 Mkms_0329 Mkms_4728 Mkms_4796
+            MJL: Mjls_0287 Mjls_0310 Mjls_4115 Mjls_5022 Mjls_5095
+            MJD: JDM601_3668 JDM601_3855(hmp) JDM601_4248(hmp) JDM601_4270
+            MMI: MMAR_5015 MMAR_5066(hmp)
+            MRH: MycrhN_2242 MycrhN_2306 MycrhN_3476 MycrhN_4240
+            MMM: W7S_02435 W7S_02660 W7S_13835 W7S_13945
+            MCB: Mycch_1569 Mycch_1592 Mycch_4570 Mycch_4587 Mycch_4676
+            MLI: MULP_05266 MULP_05324(hmp)
+            MKN: MKAN_11805 MKAN_12135
+            MNE: D174_08275 D174_24200 D174_24715
+            ASD: AS9A_0920 AS9A_0922(kshA)
+            NFA: nfa22480 nfa33560 nfa33740 nfa4750 nfa50680
+            NCY: NOCYR_0504 NOCYR_1557 NOCYR_2402 NOCYR_2420(ksh) NOCYR_2512 NOCYR_4851
+            NBR: O3I_002680 O3I_006885 O3I_038125
+            NNO: NONO_c05000 NONO_c36770 NONO_c44660 NONO_c51650(kshB1) NONO_c58770(kshB2) NONO_c58790(kshA) NONO_c68680
+            RHA: RHA1_ro04538(kshA) RHA1_ro05811 RHA1_ro05833(kshB) RHA1_ro06056 RHA1_ro09003(kshA)
+            RER: RER_07540(kshA) RER_13800(kshA) RER_17750(kshB) RER_51130(kshA)
+            REY: O5Y_03665 O5Y_04070 O5Y_06500 O5Y_08515 O5Y_18435 O5Y_24235
+            ROP: ROP_44530(kshA) ROP_58730(kshA2) ROP_58950(kshB) ROP_61150(kshB)
+            ROA: Pd630_LPD00990 Pd630_LPD02435 Pd630_LPD02458 Pd630_LPD02696 Pd630_LPD06716
+            REQ: REQ_06790 REQ_08980(kshA) REQ_10570 REQ_15470 REQ_36320 REQ_40110 REQ_42740 REQ_43730 REQ_45190
+            RPY: Y013_08850 Y013_19020 Y013_19240 Y013_19255
+            GBR: Gbro_0919 Gbro_3782
+            GPO: GPOL_c00590 GPOL_c36520 GPOL_c41100(kshA1) GPOL_c41200(kshA2) GPOL_c41340
+            GOR: KTR9_0819(kshA) KTR9_3740(kshB) KTR9_5394
+            TPR: Tpau_3849 Tpau_3851
+            SRT: Srot_0411
+            SALU: DC74_7441 DC74_7443
+            LXY: O159_24870
+            NCA: Noca_2518 Noca_2520
+            TCU: Tcur_3509 Tcur_3520
+            SVI: Svir_18640
+            AMD: AMED_2517 AMED_2519
+            AMN: RAM_12795 RAM_12805
+            AMM: AMES_2489 AMES_2491
+            AMZ: B737_2490 B737_2492
+            AOI: AORI_2479 AORI_2481
+            KAL: KALB_5125 KALB_5127
+            STP: Strop_2672 Strop_2674
+            SAQ: Sare_2880 Sare_2882
+            AMS: AMIS_19150 AMIS_19170
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.142
+            IUBMB Enzyme Nomenclature: 1.14.13.142
+            ExPASy - ENZYME nomenclature database: 1.14.13.142
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.14.13.142
+            BRENDA, the Enzyme Database: 1.14.13.142
+///

@@ -1,0 +1,13 @@
+ENTRY       R00654                      Reaction
+NAME        L-methionine methanethiol-lyase (deaminating;2-oxobutanoate-forming)
+DEFINITION  L-Methionine + H2O <=> Methanethiol + Ammonia + 2-Oxobutanoate
+EQUATION    C00073 + C00001 <=> C00409 + C00014 + C00109
+COMMENT     multi-step reaction (see R08635+R08637)
+RPAIR       RP00561  C00073_C00409 main [RC:RC00196]
+            RP01029  C00073_C00109 main [RC:RC00348]
+            RP05720  C00001_C00109 leave
+            RP05987  C00014_C00073 leave
+ENZYME      4.4.1.11
+PATHWAY     rn00270  Cysteine and methionine metabolism
+ORTHOLOGY   K01761  methionine-gamma-lyase [EC:4.4.1.11]
+///

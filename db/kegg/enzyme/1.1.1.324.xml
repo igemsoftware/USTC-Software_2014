@@ -1,0 +1,47 @@
+ENTRY       EC 1.1.1.324                Enzyme
+NAME        8-hydroxygeraniol dehydrogenase;
+            8-hydroxygeraniol oxidoreductase;
+            CYP76B10;
+            G10H;
+            CrG10H;
+            SmG10H;
+            acyclic monoterpene primary alcohol:NADP+ oxidoreductase
+CLASS       Oxidoreductases;
+            Acting on the CH-OH group of donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     (6E)-8-hydroxygeraniol:NADP+ oxidoreductase
+REACTION    (6E)-8-hydroxygeraniol + 2 NADP+ = (6E)-8-oxogeranial + 2 NADPH + 2 H+ (overall reaction) [RN:R08499];
+            (1a) (6E)-8-hydroxygeraniol + NADP+ = (6E)-8-hydroxygeranial + NADPH + H+ [RN:R09926];
+            (1b) (6E)-8-hydroxygeraniol + NADP+ = (6E)-8-oxogeraniol + NADPH + H+  [RN:R09927];
+            (1c) (6E)-8-hydroxygeranial + NADP+ = (6E)-8-oxogeranial + NADPH + H+  [RN:R09928];
+            (1d) (6E)-8-oxogeraniol + NADP+ = (6E)-8-oxogeranial + NADPH + H+ [RN:R09929]
+ALL_REAC    R08499 R09926 R09927 R09928 R09929
+SUBSTRATE   (6E)-8-hydroxygeraniol [CPD:C17621];
+            NADP+ [CPD:C00006];
+            (6E)-8-hydroxygeranial [CPD:C20222];
+            (6E)-8-oxogeraniol [CPD:C20223]
+PRODUCT     (6E)-8-oxogeranial [CPD:C17622];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            (6E)-8-hydroxygeranial [CPD:C20222];
+            (6E)-8-oxogeraniol [CPD:C20223]
+COMMENT     Contains Zn2+. The enzyme catalyses the oxidation of (6E)-8-hydroxygeraniol to (6E)-8-oxogeranial via either (6E)-8-hydroxygeranial or (6E)-8-oxogeraniol. Also acts on geraniol, nerol and citronellol. May be identical to EC 1.1.1.183 geraniol dehydrogenase. The recommended numbering of geraniol gives 8-hydroxygeraniol as the substrate rather than 10-hydroxygeraniol as used by references 1 and 2. See prenol nomenclature {iupac/misc/prenol#p1::Pr-1}.
+HISTORY     EC 1.1.1.324 created 2012
+REFERENCE   1  [PMID:1864846]
+  AUTHORS   Ikeda H, Esaki N, Nakai S, Hashimoto K, Uesato S, Soda K, Fujita T.
+  TITLE     Acyclic monoterpene primary alcohol:NADP+ oxidoreductase of Rauwolfia serpentina cells: the key enzyme in biosynthesis of monoterpene alcohols.
+  JOURNAL   J. Biochem. 109 (1991) 341-7.
+  ORGANISM  Rauwolfia serpentina
+REFERENCE   2  [PMID:7726550]
+  AUTHORS   Hallahan DL, West JM, Wallsgrove RM, Smiley DW, Dawson GW, Pickett JA, Hamilton JG
+  TITLE     Purification and characterization of an acyclic monoterpene primary alcohol:NADP+ oxidoreductase from catmint (Nepeta racemosa).
+  JOURNAL   Arch. Biochem. Biophys. 318 (1995) 105-12.
+  ORGANISM  Nepeta racemosa
+PATHWAY     ec00902  Monoterpenoid biosynthesis
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+DBLINKS     ExplorEnz - The Enzyme Database: 1.1.1.324
+            IUBMB Enzyme Nomenclature: 1.1.1.324
+            ExPASy - ENZYME nomenclature database: 1.1.1.324
+            BRENDA, the Enzyme Database: 1.1.1.324
+///

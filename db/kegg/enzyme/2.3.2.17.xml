@@ -1,0 +1,102 @@
+ENTRY       EC 2.3.2.17                 Enzyme
+NAME        N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-(N6-glycyl)-D-alanyl-D-alanine-diphosphoundecaprenyl-N-acetylglucosamine:glycine glycyltransferase;
+            femA (gene name);
+            N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-(N6-glycyl)-D-alanyl-D-alanine-ditrans,octacis-diphosphoundecaprenyl-N-acetylglucosamine:glycine glycyltransferase
+CLASS       Transferases;
+            Acyltransferases;
+            Aminoacyltransferases
+SYSNAME     MurNAc-L-Ala-D-isoglutaminyl-L-Lys-(N6-Gly)-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc:glycine glycyltransferase
+REACTION    MurNAc-L-Ala-D-isoglutaminyl-L-Lys-(N6-Gly)-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc + 2 glycyl-tRNAGly = MurNAc-L-Ala-D-isoglutaminyl-L-Lys-(N6-tri-Gly)-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc + 2 tRNAGly [RN:R08777]
+ALL_REAC    R08777
+SUBSTRATE   MurNAc-L-Ala-D-isoglutaminyl-L-Lys-(N6-Gly)-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc;
+            glycyl-tRNA(Gly) [CPD:C02412]
+PRODUCT     MurNAc-L-Ala-D-isoglutaminyl-L-Lys-(N6-tri-Gly)-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc;
+            tRNA(Gly) [CPD:C01642]
+COMMENT     This enzyme catalyses the successive transfer of two Gly moieties from charged tRNAs to MurNAc-L-Ala-D-isoglutaminyl-L-Lys-(N6-Gly)-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc, attaching them to a Gly residue previously attached by EC 2.3.2.16 (lipid II:glycine glycyltransferase) to the N6 of the L-Lys at position 3 of the pentapeptide. This is the second step in the synthesis of the pentaglycine interpeptide bridge that is used by Staphylococcus aureus for the crosslinking of different glycan strands to each other. The next step is catalysed by EC 2.3.2.18 (N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-(N6-triglycine)-D-alanyl-D-alanine-diphosphoundecaprenyl-N-acetylglucosamine:glycine glycyltransferase). This enzyme is essential for methicillin resistance [1].
+HISTORY     EC 2.3.2.17 created 2010
+REFERENCE   1  [PMID:2559314]
+  AUTHORS   Berger-Bachi B, Barberis-Maino L, Strassle A, Kayser FH
+  TITLE     FemA, a host-mediated factor essential for methicillin resistance in Staphylococcus aureus: molecular cloning and characterization.
+  JOURNAL   Mol. Gen. Genet. 219 (1989) 263-9.
+  ORGANISM  Staphylococcus aureus
+  SEQUENCE  [sau:SA1206]
+REFERENCE   2  [PMID:7590176]
+  AUTHORS   Johnson S, Kruger D, Labischinski H
+  TITLE     FemA of Staphylococcus aureus: isolation and immunodetection.
+  JOURNAL   FEMS. Microbiol. Lett. 132 (1995) 221-8.
+  ORGANISM  Staphylococcus aureus
+  SEQUENCE  [sao:SAOUHSC_01373]
+REFERENCE   3  [PMID:12176388]
+  AUTHORS   Benson TE, Prince DB, Mutchler VT, Curry KA, Ho AM, Sarver RW, Hagadorn JC, Choi GH, Garlick RL
+  TITLE     X-ray crystal structure of Staphylococcus aureus FemA.
+  JOURNAL   Structure. 10 (2002) 1107-15.
+  ORGANISM  Staphylococcus aureus
+  SEQUENCE  [saa:SAUSA300_1269]
+REFERENCE   4  [PMID:15228543]
+  AUTHORS   Schneider T, Senn MM, Berger-Bachi B, Tossi A, Sahl HG, Wiedemann I
+  TITLE     In vitro assembly of a complete, pentaglycine interpeptide bridge containing cell wall precursor (lipid II-Gly5) of Staphylococcus aureus.
+  JOURNAL   Mol. Microbiol. 53 (2004) 675-85.
+  ORGANISM  Staphylococcus aureus
+  SEQUENCE  [sao:SAOUHSC_01373]
+PATHWAY     ec00550  Peptidoglycan biosynthesis
+            ec01100  Metabolic pathways
+ORTHOLOGY   K11694  peptidoglycan pentaglycine glycine transferase (the second and third glycine)
+GENES       SAU: SA1206(femA)
+            SAV: SAV1374(femA)
+            SAW: SAHV_1362(femA)
+            SAH: SaurJH1_1464
+            SAJ: SaurJH9_1435
+            SAM: MW1261(femA)
+            SAS: SAS1314
+            SAR: SAR1387(femA)
+            SAC: SACOL1410(femA)
+            SAX: USA300HOU_1309(femA)
+            SAA: SAUSA300_1269(femA)
+            SAO: SAOUHSC_01373
+            SAE: NWMN_1286(femA)
+            SAD: SAAV_1356(femA)
+            SUU: M013TW_1320
+            SUV: SAVC_06120
+            SUH: SAMSHR1132_12170
+            SUE: SAOV_1384
+            SUJ: SAA6159_01241(femA)
+            SUK: SAA6008_01339(femA)
+            SUC: ECTR2_1231
+            SUT: SAT0131_01446(hlgB)
+            SUQ: HMPREF0772_11833(femA)
+            SUZ: MS7_1331
+            SUD: ST398NM01_1375
+            SUX: SAEMRSA15_12220(femA)
+            SUW: SATW20_13740(femA)
+            SUG: SAPIG1375
+            SUF: SARLGA251_12830(femA)
+            SAUA: SAAG_01984
+            SAUE: RSAU_001255(femA)
+            SAUN: SAKOR_01311
+            SAUS: SA40_1251(femA)
+            SAUU: SA957_1266(femA)
+            SAUZ: SAZ172_1385(femA)
+            SAB: SAB1229(femA)
+            SUY: SA2981_1328(femA)
+            SAUB: C248_1412(femA)
+            SAUM: BN843_12880
+            SAUC: CA347_1311(femA)
+            SAUR: SABB_00138(femA)
+            SEP: SE1057
+            SER: SERP0946(femA)
+            SHA: SH1532(femA)
+            SSP: SSP1371
+            SCA: Sca_1019(femA)
+            SLG: SLGD_01472
+            SLN: SLUG_14700(femA)
+            SSD: SPSINT_1097
+            SDT: SPSE_1403(femA)
+            SWA: A284_06765
+            SPAS: STP1_2404(femA2)
+            MCL: MCCL_1041(femA)
+            SIK: K710_1043
+DBLINKS     ExplorEnz - The Enzyme Database: 2.3.2.17
+            IUBMB Enzyme Nomenclature: 2.3.2.17
+            ExPASy - ENZYME nomenclature database: 2.3.2.17
+            BRENDA, the Enzyme Database: 2.3.2.17
+///

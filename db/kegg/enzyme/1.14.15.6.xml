@@ -1,0 +1,116 @@
+ENTRY       EC 1.14.15.6                Enzyme
+NAME        cholesterol monooxygenase (side-chain-cleaving);
+            cholesterol desmolase;
+            cytochrome P-450scc;
+            C27-side chain cleavage enzyme;
+            cholesterol 20-22-desmolase;
+            cholesterol C20-22 desmolase;
+            cholesterol side-chain cleavage enzyme;
+            cholesterol side-chain-cleaving enzyme;
+            steroid 20-22 desmolase;
+            steroid 20-22-lyase;
+            CYP11A1 (gene name)
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With reduced iron-sulfur protein as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     cholesterol,reduced-adrenodoxin:oxygen oxidoreductase (side-chain-cleaving)
+REACTION    cholesterol + 6 reduced adrenodoxin + 3 O2 = pregnenolone + 4-methylpentanal + 6 oxidized adrenodoxin + 4 H2O (overall reaction) [RN:R02724];
+            (1a) cholesterol + 2 reduced adrenodoxin + O2 = (22R)-22-hydroxycholesterol + 2 oxidized adrenodoxin + H2O;
+            (1b) (22R)-22-hydroxycholesterol + 2 reduced adrenodoxin + O2 = (20R,22R)-20,22-dihydroxycholesterol + 2 oxidized adrenodoxin + H2O;
+            (1c) (20R,22R)-20,22-dihydroxy-cholesterol + 2 reduced adrenodoxin + O2 = pregnenolone + 4-methylpentanal + 2 oxidized adrenodoxin + 2 H2O
+ALL_REAC    R02724;
+            (other) R01454 R02723 R03933 R04676 R04854 R04855
+SUBSTRATE   cholesterol [CPD:C00187];
+            reduced adrenodoxin [CPD:C00662];
+            O2 [CPD:C00007];
+            (22R)-22-hydroxycholesterol [CPD:C05502];
+            (20R,22R)-20,22-dihydroxy-cholesterol
+PRODUCT     pregnenolone [CPD:C01953];
+            4-methylpentanal [CPD:C02373];
+            oxidized adrenodoxin [CPD:C00667];
+            H2O [CPD:C00001];
+            (22R)-22-hydroxycholesterol [CPD:C05502];
+            (20R,22R)-20,22-dihydroxycholesterol
+COMMENT     A heme-thiolate protein (cytochrome P-450). The reaction proceeds in three stages, with two hydroxylations at C-22 and C-20 preceding scission of the side-chain between carbons 20 and 22. The initial source of the electrons is NADPH, which transfers the electrons to the adrenodoxin via EC 1.18.1.6, adrenodoxin-NADP+ reductase.
+HISTORY     EC 1.14.15.6 created 1983, modified 2013
+REFERENCE   1  [PMID:1238395]
+  AUTHORS   Burstein S, Middleditch BS, Gut M
+  TITLE     Mass spectrometric study of the enzymatic conversion of cholesterol to (22R)-22-hydroxycholesterol, (20R,22R)-20,22-dihydroxycholesterol, and pregnenolone, and of (22R)-22-hydroxycholesterol to the lgycol and pregnenolone in bovine adrenocortical preparations. Mode of oxygen incorporation.
+  JOURNAL   J. Biol. Chem. 250 (1975) 9028-37.
+  ORGANISM  Bos taurus
+REFERENCE   2  [PMID:7217084]
+  AUTHORS   Hanukoglu I, Spitsberg V, Bumpus JA, Dus KM, Jefcoate CR.
+  TITLE     Adrenal mitochondrial cytochrome P-450scc. Cholesterol and adrenodoxin interactions at equilibrium and during turnover.
+  JOURNAL   J. Biol. Chem. 256 (1981) 4321-8.
+  ORGANISM  Bos taurus
+REFERENCE   3  [PMID:3011431]
+  AUTHORS   Hanukoglu I, Hanukoglu Z
+  TITLE     Stoichiometry of mitochondrial cytochromes P-450, adrenodoxin and adrenodoxin reductase in adrenal cortex and corpus luteum. Implications for membrane organization and gene regulation.
+  JOURNAL   Eur. J. Biochem. 157 (1986) 27-31.
+  ORGANISM  Bos taurus
+REFERENCE   4  [PMID:21636783]
+  AUTHORS   Strushkevich N, MacKenzie F, Cherkesova T, Grabovec I, Usanov S, Park HW
+  TITLE     Structural basis for pregnenolone biosynthesis by the mitochondrial monooxygenase system.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 108 (2011) 10139-43.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:1583]
+REFERENCE   5  [PMID:21159775]
+  AUTHORS   Mast N, Annalora AJ, Lodowski DT, Palczewski K, Stout CD, Pikuleva IA
+  TITLE     Structural basis for three-step sequential catalysis by the cholesterol side chain cleavage enzyme CYP11A1.
+  JOURNAL   J. Biol. Chem. 286 (2011) 5607-13.
+  ORGANISM  Bos taurus
+  SEQUENCE  [bta:338048]
+PATHWAY     ec00140  Steroid hormone biosynthesis
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00498  cholesterol monooxygenase (side-chain-cleaving)
+GENES       HSA: 1583(CYP11A1)
+            PTR: 748998(CYP11A1)
+            PPS: 100979902
+            GGO: 101124697
+            PON: 100434677
+            MCC: 708065
+            MCF: 102120640(CYP11A)
+            MMU: 13070(Cyp11a1)
+            RNO: 29680(Cyp11a1)
+            HGL: 101704598
+            TUP: 102487565 102490722
+            CFA: 478365(CYP11A1)
+            AML: 100474049
+            FCA: 101085980
+            PTG: 102964439
+            BTA: 338048(CYP11A1)
+            BOM: 102282116
+            PHD: 102317428
+            CHX: 102173131(CYP11A1)
+            SSC: 403329(CYP11A1)
+            CFR: 102516700
+            ECB: 100034229(CYP11A1)
+            MYB: 102241006
+            MYD: 102765728
+            PALE: 102894190
+            MDO: 100029519
+            SHR: 100923284
+            GGA: 414838(CYP11A1)
+            TGU: 100151695(CYP11A1)
+            FAB: 101810676
+            PHI: 102109180
+            APLA: 101796693
+            FPG: 101916429
+            FCH: 102049639
+            CLV: 102096337
+            ASN: 102381626
+            PSS: 102455057
+            CMY: 102939633
+            XTR: 100495360
+            DRE: 563363 80374(cyp11a1)
+            TRU: 101063139
+            MZE: 101471001
+            OLA: 100302421(cyp11a)
+            XMA: 102235384
+            LCM: 102360223
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.15.6
+            IUBMB Enzyme Nomenclature: 1.14.15.6
+            ExPASy - ENZYME nomenclature database: 1.14.15.6
+            BRENDA, the Enzyme Database: 1.14.15.6
+            CAS: 37292-81-2 440354-98-3
+///

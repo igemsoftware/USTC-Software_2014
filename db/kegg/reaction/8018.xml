@@ -1,0 +1,11 @@
+ENTRY       R08018                      Reaction
+DEFINITION  4-Hydroxylamino-2,6-dinitrotoluene + NADH + H+ <=> 4-Amino-2,6-dinitrotoluene + NAD+ + H2O
+EQUATION    C16392 + C00004 + C00080 <=> C16394 + C00003 + C00001
+COMMENT     nitroreductase
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP10475  C00001_C16392 leave
+            RP12187  C16392_C16394 main [RC:RC01760]
+ENZYME      1.7.1.-
+PATHWAY     rn00633  Nitrotoluene degradation
+            rn01120  Microbial metabolism in diverse environments
+///

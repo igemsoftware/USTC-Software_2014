@@ -1,0 +1,15 @@
+ENTRY       R01940                      Reaction
+NAME        2-Oxoadipate:lipoamde 2-oxidoreductase(decarboxylating and acceptor-succinylating)
+DEFINITION  2-Oxoadipate + Enzyme N6-(lipoyl)lysine <=> [Dihydrolipoyllysine-residue succinyltransferase] S-glutaryldihydrolipoyllysine + CO2
+EQUATION    C00322 + C15972 <=> C06157 + C00011
+COMMENT     2-oxoglutarate dehydrogenase complex:dihydrolipoyllysine-residue succinyltransferase
+            a part of multi-step reaction (see R01933, R01940+R02571+R07618)
+            subsequently R02571
+RPAIR       RP01860  C06157_C15972 main [RC:RC00627]
+            RP01861  C00322_C06157 main [RC:RC02833]
+            RP05938  C00011_C00322 leave
+ENZYME      1.2.4.2
+PATHWAY     rn00310  Lysine degradation
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00164  2-oxoglutarate dehydrogenase E1 component [EC:1.2.4.2]
+///

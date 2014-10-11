@@ -1,0 +1,12 @@
+ENTRY       R04582                      Reaction
+NAME        Biotin:apo-[propionyl-CoA:carbon-dioxide ligase (ADP-forming)]
+DEFINITION  ATP + Biotin + Apo-[propionyl-CoA:carbon-dioxide ligase (ADP-forming)] <=> AMP + Diphosphate + [Propionyl-CoA:carbon-dioxide ligase (ADP-forming)]
+EQUATION    C00002 + C00120 + C04763 <=> C00020 + C00013 + C04727
+COMMENT     two-step reaction (see R01074 + R05145)
+            R05145 and R01074 are general reactions
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP12475  C00120_C04727 main [RC:RC00090]
+            RP12476  C04727_C04763 main [RC:RC00096]
+ENZYME      6.3.4.10
+///

@@ -1,0 +1,14 @@
+ENTRY       R08220                      Reaction
+NAME        capecitabine hydrolase
+DEFINITION  Capecitabine + H2O <=> 5'-Deoxy-5-fluorocytidine + 1-Pentanol + CO2
+EQUATION    C12650 + C00001 <=> C16635 + C16834 + C00011
+COMMENT     multi-step reaction
+RPAIR       RP05682  C00001_C00011 leave
+            RP13194  C12650_C16635 main [RC:RC02264]
+            RP13294  C12650_C16834 main [RC:RC00041]
+            RP13295  C00011_C12650 leave
+ENZYME      3.1.1.1
+PATHWAY     rn00983  Drug metabolism - other enzymes
+ORTHOLOGY   K01044  carboxylesterase 1 [EC:3.1.1.1]
+            K03927  carboxylesterase 2 [EC:3.1.1.1 3.1.1.84 3.1.1.56]
+///

@@ -1,0 +1,14 @@
+ENTRY       R00935                      Reaction
+NAME        (S)-Methylmalonate semialdehyde:NAD+ oxidoreductase (CoA-propanoylating)
+DEFINITION  (S)-Methylmalonate semialdehyde + CoA + NAD+ <=> Propanoyl-CoA + CO2 + NADH + H+
+EQUATION    C06002 + C00010 + C00003 <=> C00100 + C00011 + C00004 + C00080
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00034  C00010_C00100 main [RC:RC00004]
+            RP01185  C00100_C06002 main [RC:RC02817]
+            RP06372  C00011_C06002 leave
+ENZYME      1.2.1.27
+PATHWAY     rn00280  Valine, leucine and isoleucine degradation
+            rn00640  Propanoate metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00140  malonate-semialdehyde dehydrogenase (acetylating) / methylmalonate-semialdehyde dehydrogenase [EC:1.2.1.18 1.2.1.27]
+///

@@ -1,0 +1,228 @@
+ENTRY       EC 1.14.21.6                Enzyme
+NAME        lathosterol oxidase;
+            Delta7-sterol Delta5-dehydrogenase;
+            Delta7-sterol 5-desaturase;
+            Delta7-sterol-C5(6)-desaturase;
+            5-DES
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and the other dehydrogenated
+SYSNAME     5alpha-cholest-7-en-3beta-ol,NAD(P)H:oxygen 5-oxidoreductase
+REACTION    5alpha-cholest-7-en-3beta-ol + NAD(P)H + H+ + O2 = cholesta-5,7-dien-3beta-ol + NAD(P)+ + 2 H2O [RN:R03310 R07215]
+ALL_REAC    R03310 R07215;
+            (other) R07486 R07491 R07505
+SUBSTRATE   5alpha-cholest-7-en-3beta-ol [CPD:C01189];
+            NADH [CPD:C00004];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007]
+PRODUCT     cholesta-5,7-dien-3beta-ol [CPD:C01164];
+            NAD+ [CPD:C00003];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001]
+COMMENT     This enzyme catalyses the introduction of a C5 double bond into the B ring of Delta7-sterols to yield the corresponding Delta5,7-sterols in mammals, yeast and plants [4]. Forms part of the plant sterol biosynthesis pathway.
+HISTORY     EC 1.14.21.6 created 1972 as EC 1.3.3.2, transferred 2005 to EC 1.14.21.6
+REFERENCE   1  [PMID:14189869]
+  AUTHORS   DEMPSEY ME, SEATON JD, SCHROEPFER GJ Jr, TROCKMAN RW.
+  TITLE     THE INTERMEDIARY ROLE OF DELTA-5,7-CHOLESTADIEN-3-BETA-OL IN CHOLESTEROL BIOSYNTHESIS.
+  JOURNAL   J. Biol. Chem. 239 (1964) 1381-7.
+  ORGANISM  Rattus norvegicus
+REFERENCE   2  [PMID:9056262]
+  AUTHORS   Nishino H, Nakaya J, Nishi S, Kurosawa T, Ishibashi T.
+  TITLE     Temperature-induced differential kinetic properties between an initial burst and the following steady state in membrane-bound enzymes: studies on lathosterol 5-desaturase.
+  JOURNAL   Arch. Biochem. Biophys. 339 (1997) 298-304.
+  ORGANISM  Rattus norvegicus
+REFERENCE   3  [PMID:8561508]
+  AUTHORS   Taton M, Rahier A.
+  TITLE     Plant sterol biosynthesis: identification and characterization of higher plant delta 7-sterol C5(6)-desaturase.
+  JOURNAL   Arch. Biochem. Biophys. 325 (1996) 279-88.
+  ORGANISM  Zea mays
+REFERENCE   4  [PMID:10651635]
+  AUTHORS   Taton M, Husselstein T, Benveniste P, Rahier A.
+  TITLE     Role of highly conserved residues in the reaction catalyzed by recombinant Delta7-sterol-C5(6)-desaturase studied by site-directed mutagenesis.
+  JOURNAL   Biochemistry. 39 (2000) 701-11.
+  ORGANISM  Arabidopsis thaliana
+  SEQUENCE  [ath:AT3G02580]
+PATHWAY     ec00100  Steroid biosynthesis
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K00227  lathosterol oxidase
+GENES       HSA: 6309(SC5D)
+            PTR: 451624(SC5DL)
+            PPS: 100979606(SC5DL)
+            GGO: 101151866(SC5DL) 101152464
+            PON: 100459805(SC5DL)
+            MCC: 706827(SC5DL)
+            MCF: 101867112
+            MMU: 235293(Sc5d)
+            RNO: 114100(Sc5d)
+            CGE: 100752960
+            HGL: 101713479
+            TUP: 102481940(SC5D)
+            CFA: 610411(SC5D)
+            AML: 100467645
+            FCA: 101099997(SC5D)
+            PTG: 102956406(SC5D)
+            BTA: 100141284 525154(SC5DL)
+            BOM: 102283021(SC5D)
+            PHD: 102340338(SC5D)
+            CHX: 102180515(SC5D)
+            SSC: 100520925(SC5D)
+            CFR: 102520592(SC5D)
+            ECB: 100063543(SC5D)
+            MYB: 102246367(SC5D)
+            MYD: 102754805(SC5D)
+            PALE: 102891666(SC5D)
+            MDO: 100030841(SC5D)
+            SHR: 100932949(SC5DL)
+            OAA: 100073392(SC5D)
+            GGA: 100857756(SC5DL)
+            MGP: 100538497
+            TGU: 100226384
+            FAB: 101811093(SC5D)
+            PHI: 102109366(SC5D)
+            APLA: 101803446(SC5D)
+            FPG: 101920444(SC5D)
+            FCH: 102057522(SC5D)
+            CLV: 102095349(SC5D)
+            ASN: 102385911(SC5D)
+            PSS: 102463426(SC5D)
+            CMY: 102931181(SC5D)
+            ACS: 100566753
+            XLA: 447026(sc5d)
+            XTR: 100490845
+            DRE: 447891(sc5d)
+            TRU: 101067117
+            MZE: 101470905 101479398
+            OLA: 101173647
+            XMA: 102219081
+            LCM: 102365779(SC5D)
+            BFO: BRAFLDRAFT_117097 BRAFLDRAFT_288915
+            SPU: 588561
+            BMOR: 101737328
+            NVE: NEMVE_v1g243571
+            TAD: TRIADDRAFT_18639
+            AQU: 100635449
+            ATH: AT3G02580(STE1) AT3G02590
+            ALY: ARALYDRAFT_330295 ARALYDRAFT_477495 ARALYDRAFT_477496 ARALYDRAFT_896235 ARALYDRAFT_915873
+            CRB: CARUB_v10014344mg
+            EUS: EUTSA_v10011706mg EUTSA_v10021274mg EUTSA_v10021293mg
+            CIT: 102630557
+            CIC: CICLE_v10012450mg
+            TCC: TCM_019400
+            GMX: 100779333 100782638 100790906
+            CAM: 101511716
+            FVE: 101292472
+            CSV: 101204738
+            RCU: RCOM_1728170
+            POP: POPTR_0004s09680g(POPTRDRAFT_831136) POPTR_0005s15430g
+            VVI: 100257622 100262743 100265283
+            SLY: 101256156 101264777 101265087
+            SOT: 102587419 102594482 102602151
+            OSA: 4325687
+            DOSA: Os01t0134500-01(Os01g0134500)
+            OBR: 102707173
+            BDI: 100823877
+            SBI: SORBI_03g007010(SORBIDRAFT_03g007010)
+            ZMA: 100282407 100282855
+            SITA: 101780951
+            ATR: s00079p00182550(AMTR_s00079p00182550)
+            SMO: SELMODRAFT_146325 SELMODRAFT_182646
+            PPP: PHYPADRAFT_135889
+            CRE: CHLREDRAFT_59933
+            VCN: VOLCADRAFT_81225
+            OLU: OSTLU_6297
+            OTA: Ot05g00940
+            MIS: MICPUN_112695
+            MPP: MICPUCDRAFT_55427
+            CSL: COCSUDRAFT_15746
+            CVR: CHLNCDRAFT_37407
+            CME: CYME_CMC055C
+            GSL: Gasu_09900
+            CCP: CHC_T00006481001
+            SCE: YLR056W(ERG3)
+            AGO: AGOS_AFR151C
+            ERC: Ecym_1501
+            KLA: KLLA0F08855g
+            LTH: KLTH0G18304g
+            PPA: PAS_chr1-4_0367
+            VPO: Kpol_1035p33
+            ZRO: ZYRO0F03212g
+            CGR: CAGL0F01793g
+            NDI: NDAI_0C06430(NDAI0C06430)
+            TPF: TPHA_0D00440(TPHA0D00440) TPHA_0P00250(TPHA0P00250)
+            TBL: TBLA_0D02520(TBLA0D02520)
+            TDL: TDEL_0C00670(TDEL0C00670)
+            KAF: KAFR_0D01010(KAFR0D01010)
+            DHA: DEHA2F08866g
+            PIC: PICST_28450(ERG3)
+            LEL: LELG_01797
+            CAL: CaO19.767(ERG3) CaO19.8387(ERG3)
+            CTP: CTRG_04480
+            CDU: CD36_04520(ERG3)
+            COT: CORT_0B06770
+            YLI: YALI0D20878g
+            CLU: CLUG_05120
+            NCR: NCU04983 NCU06207
+            SMP: SMAC_07109 SMAC_08592
+            PAN: PODANSg5469
+            TTT: THITE_64954
+            MTM: MYCTH_112329
+            MGR: MGG_08832
+            FGR: FG02502.1 FG04994.1
+            NHE: NECHADRAFT_43685 NECHADRAFT_45966
+            TRE: TRIREDRAFT_78130
+            VAL: VDBG_00635 VDBG_08651
+            SSL: SS1G_08964
+            BFU: BC1G_12308
+            ANI: AN6506.2
+            AFM: AFUA_6G05140
+            AOR: AOR_1_42114(AO090701000022)
+            ANG: ANI_1_28134(An15g00150)
+            AFV: AFLA_010890 AFLA_054820
+            ACT: ACLA_020750 ACLA_095400
+            NFI: NFIA_051710 NFIA_094510
+            PCS: Pc12g04600
+            CIM: CIMG_02610 CIMG_10100
+            CPW: CPC735_037410
+            PBL: PAAG_03651
+            URE: UREG_03145
+            ABE: ARB_04289 ARB_05812
+            TVE: TRV_05362 TRV_06270
+            AJE: HCAG_06888
+            PNO: SNOG_09349
+            PTE: PTT_15444
+            ZTR: MYCGRDRAFT_74506(ERG3)
+            TML: GSTUM_00007875001
+            SPO: SPAC1687.16c(erg31)
+            CNE: CNA05010
+            CNB: CNBA4830
+            CGI: CGB_A5290W
+            LBC: LACBIDRAFT_190564(ERG3)
+            CCI: CC1G_12572
+            SCM: SCHCODRAFT_67790
+            UMA: UM03593.1
+            MGL: MGL_0204
+            MBR: MONBRDRAFT_32318
+            DFA: DFA_02096
+            ACAN: ACA1_035520
+            TET: TTHERM_00758950 TTHERM_01194720
+            PTM: GSPATT00019548001
+            PTI: PHATRDRAFT_14208
+            PIF: PITG_21426
+            EHX: EMIHUDRAFT_220113 EMIHUDRAFT_435021 EMIHUDRAFT_441353 EMIHUDRAFT_442614
+            TBR: Tb927.8.3240(Tb08.28L1.250)
+            TCR: 473111.10 507853.10
+            LMA: LMJF_23_1300
+            LIF: LINJ_23_1560
+            LDO: LDBPK_231560
+            LMI: LMXM_23_1300
+            LBZ: LBRM_23_1420
+            NGR: NAEGRDRAFT_77816
+            HCH: HCH_01597
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.21.6
+            IUBMB Enzyme Nomenclature: 1.14.21.6
+            ExPASy - ENZYME nomenclature database: 1.14.21.6
+            BRENDA, the Enzyme Database: 1.14.21.6
+            CAS: 37255-37-1
+///

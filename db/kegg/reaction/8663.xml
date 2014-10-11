@@ -1,0 +1,18 @@
+ENTRY       R08663                      Reaction
+NAME        L-valine,NADPH:oxygen oxidoreductase (N-hydroxylating, decarboxylating)
+DEFINITION  L-Valine + 2 Oxygen + 2 NADPH + 2 H+ <=> (E)-2-Methylpropanal oxime + 3 H2O + 2 NADP+ + CO2
+EQUATION    C00183 + 2 C00007 + 2 C00005 + 2 C00080 <=> C03219 + 3 C00001 + 2 C00006 + C00011
+COMMENT     three-step reaction (see R10031+R10032+R10033)
+            The enzyme can also accept L-isoleucine as substrate, with a lower activity.(1.14.13.117)
+            3step reaction (similar to R00730+R04460+R07190)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP06563  C00011_C00183 leave
+            RP13646  C00183_C03219 main [RC:RC02339]
+            RP13647  C00007_C03219 leave
+ENZYME      1.14.13.118
+PATHWAY     rn00966  Glucosinolate biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+            rn01210  2-Oxocarboxylic acid metabolism
+ORTHOLOGY   K13401  valine N-monooxygenase [EC:1.14.13.118]
+///

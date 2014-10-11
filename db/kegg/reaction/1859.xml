@@ -1,0 +1,24 @@
+ENTRY       R01859                      Reaction
+NAME        Propanoyl-CoA:carbon-dioxide ligase (ADP-forming)
+DEFINITION  ATP + Propanoyl-CoA + HCO3- <=> ADP + Orthophosphate + (S)-Methylmalonyl-CoA
+EQUATION    C00002 + C00100 + C00288 <=> C00008 + C00009 + C00683
+COMMENT     possibly two-step reaction (similar to R00742 or R04385+R04386)
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00264  C00100_C00683 main [RC:RC00097]
+            RP01803  C00288_C00683 main [RC:RC00609]
+ENZYME      6.4.1.3
+PATHWAY     rn00280  Valine, leucine and isoleucine degradation
+            rn00630  Glyoxylate and dicarboxylate metabolism
+            rn00640  Propanoate metabolism
+            rn00720  Carbon fixation pathways in prokaryotes
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+ORTHOLOGY   K01964  acetyl-CoA/propionyl-CoA carboxylase [EC:6.4.1.2 6.4.1.3]
+            K01965  propionyl-CoA carboxylase alpha chain [EC:6.4.1.3]
+            K01966  propionyl-CoA carboxylase beta chain [EC:6.4.1.3]
+            K15036  acetyl-CoA/propionyl-CoA carboxylase [EC:6.4.1.2 6.4.1.3]
+            K15037  biotin carboxyl carrier protein
+            K15052  propionyl-CoA carboxylase [EC:6.4.1.3]
+///

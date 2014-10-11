@@ -1,0 +1,10 @@
+ENTRY       R10443                      Reaction
+NAME        nucleoside triphosphate phosphohydrolase (nucleoside monophosphoate-forming)
+DEFINITION  Nucleoside triphosphate + 2 H2O <=> Nucleoside 5'-phosphate + 2 Orthophosphate
+EQUATION    C00201 + 2 C00001 <=> C01117 + 2 C00009
+COMMENT     two-step reaction (see R02319+R10442)
+RPAIR       RP05676  C00001_C00009 leave
+            RP10597  C00009_C00201 leave
+            RP16366  C00201_C01117 main [RC:RC00002]
+ENZYME      3.6.1.5
+///

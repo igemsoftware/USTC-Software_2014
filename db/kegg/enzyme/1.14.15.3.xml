@@ -1,0 +1,332 @@
+ENTRY       EC 1.14.15.3                Enzyme
+NAME        alkane 1-monooxygenase;
+            alkane 1-hydroxylase;
+            omega-hydroxylase;
+            fatty acid omega-hydroxylase;
+            alkane monooxygenase;
+            1-hydroxylase;
+            alkane hydroxylase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With reduced iron-sulfur protein as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     alkane,reduced-rubredoxin:oxygen 1-oxidoreductase
+REACTION    octane + reduced rubredoxin + O2 = 1-octanol + oxidized rubredoxin + H2O [RN:R02879]
+ALL_REAC    R02879;
+            (other) R01347 R01348 R02281 R07041 R07046 R08390
+SUBSTRATE   octane [CPD:C01387];
+            reduced rubredoxin [CPD:C00340];
+            O2 [CPD:C00007]
+PRODUCT     1-octanol [CPD:C00756];
+            oxidized rubredoxin [CPD:C00435];
+            H2O [CPD:C00001]
+COMMENT     Some enzymes in this group are heme-thiolate proteins (P-450). Also hydroxylates fatty acids in the omega-position.
+HISTORY     EC 1.14.15.3 created 1972
+REFERENCE   1  [PMID:4317878]
+  AUTHORS   Cardini G, Jurtshuk P.
+  TITLE     The enzymatic hydroxylation of n-octane by Corynebacterium sp. strain 7E1C.
+  JOURNAL   J. Biol. Chem. 245 (1970) 2789-96.
+  ORGANISM  Corynebacterium sp.
+REFERENCE   2  [PMID:4395379]
+  AUTHORS   McKenna EJ, Coon MJ.
+  TITLE     Enzymatic omega-oxidation. IV. Purification and properties of the omega-hydroxylase of Pseudomonas oleovorans.
+  JOURNAL   J. Biol. Chem. 245 (1970) 3882-9.
+  ORGANISM  Pseudomonas oleovorans
+REFERENCE   3  [PMID:4294330]
+  AUTHORS   Peterson JA, Kusunose M, Kusunose E, Coon MJ.
+  TITLE     Enzymatic omega-oxidation. II. Function of rubredoxin as the electron carrier in omega-hydroxylation.
+  JOURNAL   J. Biol. Chem. 242 (1967) 4334-40.
+  ORGANISM  Pseudomonas oleovorans
+PATHWAY     ec00071  Fatty acid degradation
+            ec00590  Arachidonic acid metabolism
+            ec00830  Retinol metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00496  alkane 1-monooxygenase
+            K07425  alkane 1-monooxygenase
+            K17687  alkane 1-monooxygenase
+            K17688  alkane 1-monooxygenase
+GENES       HSA: 1579(CYP4A11) 284541(CYP4A22)
+            PTR: 456835 739864
+            PPS: 100972678 100972920
+            PON: 100173781 100189632
+            MCC: 709461
+            MCF: 102124651(CYP4A11)
+            MMU: 100040843(Cyp4a32) 13117(Cyp4a10) 13118(Cyp4a12b) 13119(Cyp4a14) 230639(Cyp4a29) 277753(Cyp4a12a) 435802(Cyp4a30b) 666168(Cyp4a31)
+            RNO: 24306(Cyp4a2) 266674(Cyp4a8) 298423(Cyp4a3) 50549(Cyp4a1)
+            CGE: 100767149 100767636 100767921 100768783
+            TUP: 102476589
+            CFA: 475366(CYP4A38) 482506(CYP4A37) 610385(CYP4A11)
+            AML: 100470061
+            FCA: 101083281
+            PTG: 102968736
+            BTA: 511890(CYP4A11) 516085(CYP4A22)
+            BOM: 102286095
+            PHD: 102323302 102328255
+            CHX: 102174619
+            SSC: 100522145 403326(CYP4A24)
+            CFR: 102523990
+            ECB: 100064020
+            MYD: 102774956
+            MDO: 100023663
+            SHR: 100924766
+            ENL: A3UG_02310
+            SRR: SerAS9_1141
+            SRL: SOD_c10380(alkB1)
+            SRY: M621_05855
+            SRS: SerAS12_1141
+            SRA: SerAS13_1141
+            PSD: DSC_08960
+            PAE: PA1525(alkB2) PA2574(alkB1)
+            PAU: PA14_30810(alkB1) PA14_44700(alkB2)
+            PAP: PSPA7_2642 PSPA7_3808
+            PAG: PLES_27201(alkB1) PLES_38031(alkB2)
+            PAF: PAM18_2419(alkB1) PAM18_3523(alkB2)
+            PNC: NCGM2_2412(alkB2) NCGM2_3586(alkB1)
+            PDK: PADK2_12360 PADK2_18100
+            PSG: G655_12135 G655_17595
+            PRP: M062_08150 M062_13675
+            PAEP: PA1S_gp0371 PA1S_gp5107
+            PAER: PA1R_gp0371 PA1R_gp5107
+            PAEM: U769_12320 U769_18135
+            PAEL: T223_13960 T223_19460
+            PAES: SCV20265_2681 SCV20265_3892
+            PAEU: BN889_01620(alkB2) BN889_02835(alkB1)
+            PAEG: AI22_15585 AI22_21160
+            PFL: PFL_2935(alkB)
+            PPRC: PFLCHA0_c29810(alkB1)
+            PFS: PFLU3535
+            PFC: PflA506_2496(alkB)
+            PPZ: H045_10220
+            PMY: Pmen_0443 Pmen_2750
+            PMK: MDS_1928
+            PDR: H681_15325
+            PSK: U771_18830
+            PKC: PKB_2028(alkB2)
+            PRW: PsycPRwf_2053
+            ACI: ACIAD1411(alkM)
+            ACD: AOLE_10550 AOLE_13390
+            ACB: A1S_1641
+            ABM: ABSDF1860(alkM)
+            ABY: ABAYE2014(alkM)
+            ABC: ACICU_01666
+            ABN: AB57_1863
+            ABB: ABBFA_001858
+            ABX: ABK1_2124
+            ABZ: ABZJ_01827
+            ABR: ABTJ_02041
+            ABD: ABTW07_1882
+            ABH: M3Q_2018
+            ABAD: ABD1_16260(alkM)
+            ABJ: BJAB07104_02087
+            ABAB: BJAB0715_01848 BJAB0715_01849
+            ABAJ: BJAB0868_01788
+            ABAZ: P795_9080
+            ACC: BDGL_001009(alkM)
+            MAQ: Maqu_0440 Maqu_0610 Maqu_2843
+            MHC: MARHY2735(alkM) MARHY2847(alkB)
+            MAD: HP15_2574(alkB) HP15_2892(alkB)
+            MBS: MRBBS_1602(alkB1)
+            GNI: GNIT_1689
+            LPN: lpg2997
+            LPU: LPE509_00009
+            LPH: LPV_3385
+            LPO: LPO_3336
+            LPM: LP6_3036
+            LPF: lpl2925
+            LPP: lpp3068
+            LPC: LPC_3312
+            LPA: lpa_04391
+            LPE: lp12_2989
+            LLO: LLO_2382
+            CYQ: Q91_1900 Q91_2049 Q91_2194
+            CZA: CYCME_0227 CYCME_0377 CYCME_0540
+            HCH: HCH_04734(alkB)
+            ABO: ABO_0122(alkB2) ABO_2707(alkB1)
+            ADI: B5T_00103(alkB2) B5T_00721 B5T_04393
+            TOL: TOL_1175 TOL_1423 TOL_2658
+            TOR: R615_10390 R615_11545
+            SAGA: M5M_18065
+            GPB: HDN1F_04190(alkM)
+            RPI: Rpic_4109
+            RPF: Rpic12D_4221
+            BMA: BMA0635(alkB)
+            BMV: BMASAVP1_A2377(alkB)
+            BML: BMA10229_A2910(alkB)
+            BMN: BMA10247_1692(alkB)
+            BPS: BPSL2350
+            BPM: BURPS1710b_2801
+            BPL: BURPS1106A_2735(alkB)
+            BPD: BURPS668_2678(alkB)
+            BPR: GBP346_A2857
+            BPSE: BDL_3139
+            BPSU: BBN_1088
+            BPZ: BP1026B_I0975
+            BPQ: BPC006_I2776
+            BPK: BBK_2605 BBK_2606
+            BTE: BTH_I1814
+            BTD: BTI_1284
+            BVI: Bcep1808_0897
+            BUR: Bcep18194_A4085 Bcep18194_B1222
+            BCN: Bcen_0501
+            BCH: Bcen2424_0980
+            BCM: Bcenmc03_0941
+            BCJ: BCAL3029
+            BAM: Bamb_0841
+            BAC: BamMC406_0853
+            BMU: Bmul_2418
+            BMJ: BMULJ_00816(alkB)
+            BCT: GEM_2246 GEM_2548
+            BXE: Bxe_B1208
+            BPY: Bphyt_5401
+            BGL: bglu_1g25240
+            BGD: bgla_1g28520
+            BUK: MYA_0870
+            ACK: C380_12125
+            MPT: Mpe_B0606(alkB)
+            BBA: Bd2197
+            BBAT: Bdt_2153
+            BBAC: EP01_07265
+            HDN: Hden_0732
+            RVA: Rvan_1309
+            CAK: Caul_5439
+            SIT: TM1040_2646
+            RSP: RSP_1467
+            RSH: Rsph17029_0118
+            RSQ: Rsph17025_0065
+            RSK: RSKD131_2858
+            RCP: RCAP_rcc02390
+            JAN: Jann_0394 Jann_1213
+            PDE: Pden_2098
+            PAMI: JCM7686_3074
+            DSH: Dshi_0027(alkB1)
+            PSF: PSE_3490(alkB)
+            PGA: PGA1_c33550
+            PGL: PGA2_c31810
+            PGD: Gal_03414
+            OAT: OAN307_c47130(alkB1)
+            OAR: OA238_c27230
+            LMD: METH_19350
+            RED: roselon_00148 roselon_00871
+            NPP: PP1Y_AT15765 PP1Y_AT31329
+            ACR: Acry_1262
+            AMV: ACMV_13020(alkB)
+            RCE: RC1_0393(alkB)
+            PBR: PB2503_09204
+            BACI: B1NLA3E_14035
+            MTU: Rv3252c(alkB)
+            MTV: RVBD_3252c
+            MTC: MT3350(alkB)
+            MRA: MRA_3293(alkB)
+            MTF: TBFG_13281
+            MTB: TBMG_03300
+            MTK: TBSG_03323
+            MTZ: TBXG_003280
+            MTG: MRGA327_20020
+            MTE: CCDC5079_3000
+            MTUR: CFBS_3441(alkB)
+            MTL: CCDC5180_2963
+            MTO: MTCTRI2_3319(alkB)
+            MTD: UDA_3252c(alkB)
+            MTN: ERDMAN_3566(alkB)
+            MTJ: J112_17475
+            MTUB: MT7199_3294
+            MTUC: J113_22685
+            MTUE: J114_17435
+            MTX: M943_16800
+            MTUL: TBHG_03188
+            MBO: Mb3280c(alkB)
+            MBB: BCG_3281c(alkB)
+            MBT: JTY_3277(alkB)
+            MBM: BCGMEX_3279c(alkB)
+            MBK: K60_033810
+            MAF: MAF_32630(alkB)
+            MCE: MCAN_32711(alkB)
+            MCQ: BN44_70036(alkB)
+            MCV: BN43_60261(alkB)
+            MCX: BN42_41302(alkB)
+            MCZ: BN45_60281(alkB)
+            MPA: MAP3364c
+            MAO: MAP4_0418
+            MAV: MAV_4215
+            MIT: OCO_40740
+            MIR: OCQ_42010
+            MIA: OCU_40650
+            MID: MIP_06136
+            MYO: OEM_41000
+            MSM: MSMEG_1839
+            MSG: MSMEI_1797(alkB)
+            MSA: Mycsm_01384
+            MUL: MUL_2749(alkB_1)
+            MVA: Mvan_1742 Mvan_3100
+            MGI: Mflv_3369 Mflv_4721
+            MSP: Mspyr1_27000 Mspyr1_40540
+            MAB: MAB_3598c
+            MABB: MASS_3605
+            MMV: MYCMA_1974(alkB)
+            MMC: Mmcs_1333
+            MKM: Mkms_1350
+            MJL: Mjls_1369
+            MJD: JDM601_2991(alkB) JDM601_3998(alkB)
+            MMI: MMAR_1291(alkB) MMAR_3516(alkB_1)
+            MRH: MycrhN_0412
+            MMM: W7S_20340
+            MCB: Mycch_1351 Mycch_2783
+            MLI: MULP_01451(alkB) MULP_03769(alkB_1)
+            MKN: MKAN_04295 MKAN_21250
+            MNE: D174_00375 D174_08465
+            ASD: AS9A_2113 AS9A_2121 AS9A_3799
+            CJK: jk1916(alkM)
+            CVA: CVAR_0139(alkB)
+            CTER: A606_11475
+            CFN: CFAL_02965
+            CGY: CGLY_01080(alkB)
+            NFA: nfa46140 nfa46180
+            NCY: NOCYR_2725(alkB) NOCYR_2826(alkB) NOCYR_4338(alkB) NOCYR_4341(alkA)
+            NBR: O3I_035125 O3I_035145
+            NNO: NONO_c08910 NONO_c46180(alkB) NONO_c63170 NONO_c63220
+            RHA: RHA1_ro02534(alkB)
+            RER: RER_07460(alkB) RER_21620(alkB)
+            REY: O5Y_03630 O5Y_10330 O5Y_11270 O5Y_25995
+            ROP: ROP_22570(alkB) ROP_pROB01-04350(alkB)
+            ROA: Pd630_LPD06759
+            REQ: REQ_33430(alkB)
+            RPY: Y013_07620 Y013_10875 Y013_14995
+            GBR: Gbro_4212
+            GOR: KTR9_2914
+            TPR: Tpau_2750
+            SRT: Srot_0768
+            SCI: B446_00650 B446_34640
+            NCA: Noca_0122
+            TCU: Tcur_0560
+            FRA: Francci3_1251
+            FRE: Franean1_2192
+            FRI: FraEuI1c_2181
+            FAL: FRAAL1986
+            AMD: AMED_6400
+            AMN: RAM_32810
+            AMM: AMES_6308
+            AMZ: B737_6308
+            AOI: AORI_4274
+            MAU: Micau_3940
+            MIL: ML5_4476
+            AMS: AMIS_28610
+            ASE: ACPL_4910(alkB)
+            CAI: Caci_1373
+            CWO: Cwoe_5739
+            SLR: L21SP2_3309
+            TPX: Turpa_1759
+            HHY: Halhy_3303
+            BBD: Belba_3611
+            RSI: Runsl_1388
+            EOL: Emtol_2027
+            MTT: Ftrac_0880
+            FBC: FB2170_05910
+            NDO: DDD_1421
+            POM: MED152_06505
+            OHO: Oweho_0550
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.15.3
+            IUBMB Enzyme Nomenclature: 1.14.15.3
+            ExPASy - ENZYME nomenclature database: 1.14.15.3
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.14.15.3
+            BRENDA, the Enzyme Database: 1.14.15.3
+            CAS: 9059-16-9
+///

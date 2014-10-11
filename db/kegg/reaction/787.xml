@@ -1,0 +1,16 @@
+ENTRY       R00787                      Reaction
+NAME        ammonia:NAD+ oxidoreductase
+DEFINITION  Ammonia + 3 NAD+ + 2 H2O <=> Nitrite + 3 NADH + 3 H+
+EQUATION    C00014 + 3 C00003 + 2 C00001 <=> C00088 + 3 C00004 + 3 C00080
+COMMENT     NADPH (see R00789)
+            NH3 + H2O <=> NH4OH
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP05706  C00001_C00088 leave
+            RP05887  C00014_C00088 main [RC:RC00176]
+ENZYME      1.7.1.4         1.7.1.15
+PATHWAY     rn00910  Nitrogen metabolism
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K00362  nitrite reductase (NADH) large subunit [EC:1.7.1.15]
+            K00363  nitrite reductase (NADH) small subunit [EC:1.7.1.15]
+            K17877  nitrite reductase (NAD(P)H) [EC:1.7.1.4]
+///

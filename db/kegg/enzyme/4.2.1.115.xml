@@ -1,0 +1,230 @@
+ENTRY       EC 4.2.1.115                Enzyme
+NAME        UDP-N-acetylglucosamine 4,6-dehydratase (configuration-inverting);
+            FlaA1;
+            UDP-N-acetylglucosamine 5-inverting 4,6-dehydratase;
+            PseB;
+            UDP-N-acetylglucosamine hydro-lyase (inverting;
+            UDP-2-acetamido-2,6-dideoxy-beta-L-arabino-hex-4-ulose-forming)
+CLASS       Lyases;
+            Carbon-oxygen lyases;
+            Hydro-lyases
+SYSNAME     UDP-N-acetyl-alpha-D-glucosamine hydro-lyase (inverting; UDP-2-acetamido-2,6-dideoxy-beta-L-arabino-hex-4-ulose-forming)
+REACTION    UDP-N-acetyl-alpha-D-glucosamine = UDP-2-acetamido-2,6-dideoxy-beta-L-arabino-hex-4-ulose + H2O [RN:R09697]
+ALL_REAC    R09697
+SUBSTRATE   UDP-N-acetyl-alpha-D-glucosamine [CPD:C00043]
+PRODUCT     UDP-2-acetamido-2,6-dideoxy-beta-L-arabino-hex-4-ulose [CPD:C19823];
+            H2O [CPD:C00001]
+COMMENT     Contains NADP+ as a cofactor. This is the first enzyme in the biosynthetic pathway of pseudaminic acid [3], a sialic-acid-like sugar that is unique to bacteria and is used by Helicobacter pylori to modify its flagellin. This enzyme plays a critical role in H. pylori's pathogenesis, being involved in the synthesis of both functional flagella and lipopolysaccharides [1,2]. It is completely inhibited by UDP-alpha-D-galactose. The reaction results in the chirality of the C-5 atom being inverted. It is thought that Lys-133 acts sequentially as a catalytic acid, protonating the C-6 hydroxy group and as a catalytic base, abstracting the C-5 proton, resulting in the elimination of water. This enzyme belongs to the short-chain dehydrogenase/reductase family of enzymes.
+HISTORY     EC 4.2.1.115 created 2009
+REFERENCE   1  [PMID:16651261]
+  AUTHORS   Ishiyama N, Creuzenet C, Miller WL, Demendi M, Anderson EM, Harauz G, Lam JS, Berghuis AM
+  TITLE     Structural studies of FlaA1 from Helicobacter pylori reveal the mechanism for inverting 4,6-dehydratase activity.
+  JOURNAL   J. Biol. Chem. 281 (2006) 24489-95.
+  ORGANISM  Helicobacter pylori
+  SEQUENCE  [hpy:HP0840]
+REFERENCE   2  [PMID:12791140]
+  AUTHORS   Schirm M, Soo EC, Aubry AJ, Austin J, Thibault P, Logan SM
+  TITLE     Structural, genetic and functional characterization of the flagellin glycosylation process in Helicobacter pylori.
+  JOURNAL   Mol. Microbiol. 48 (2003) 1579-92.
+  ORGANISM  Helicobacter pylori
+  SEQUENCE  [hpy:HP0840]
+REFERENCE   3  [PMID:16751642]
+  AUTHORS   Schoenhofen IC, McNally DJ, Brisson JR, Logan SM
+  TITLE     Elucidation of the CMP-pseudaminic acid pathway in Helicobacter pylori: synthesis from UDP-N-acetylglucosamine by a single enzymatic reaction.
+  JOURNAL   Glycobiology. 16 (2006) 8C-14C.
+  ORGANISM  Helicobacter pylori
+  SEQUENCE  [hpy:HP0840]
+PATHWAY     ec00520  Amino sugar and nucleotide sugar metabolism
+ORTHOLOGY   K15894  UDP-N-acetylglucosamine 4,6-dehydratase
+GENES       PPW: PputW619_3711
+            PPRC: PFLCHA0_c16590(capD1)
+            PFO: Pfl01_1518
+            PFE: PSF113_1546
+            PSV: PVLB_17290
+            SON: SO_3271(pseB)
+            SDN: Sden_1286
+            SBL: Sbal_2967
+            SBP: Sbal223_1396
+            SBS: Sbal117_3106
+            SBB: Sbal175_1380
+            SLO: Shew_1318
+            SPC: Sputcn32_2629
+            SHN: Shewana3_1302
+            SHW: Sputw3181_1378
+            SHL: Shal_1393
+            PAT: Patl_3080
+            PSM: PSM_A2264
+            AMC: MADE_1005870
+            AMAC: MASE_04775
+            AMB: AMBAS45_05010
+            AMG: AMEC673_04900
+            AMK: AMBLS11_04890
+            AMAA: amad1_05150
+            AMAL: I607_05025
+            AMAE: I876_05320
+            AMAO: I634_05345
+            AMAD: I636_05155
+            AMAI: I635_05125
+            AMAG: I533_04925
+            ALT: ambt_13320
+            GAG: Glaag_1254
+            GNI: GNIT_2393
+            GPS: C427_3693
+            LPM: LP6_0759(capD1)
+            LPE: lp12_0789
+            FNA: OOM_1612
+            FNL: M973_07010
+            MMW: Mmwyl1_3560
+            MPC: Mar181_2777
+            AHA: AHA_4150
+            AHY: AHML_09440
+            ASA: ASA_0163
+            RPF: Rpic12D_0580
+            BPH: Bphy_3011
+            HPY: HP0840
+            HEO: C694_04305
+            HPJ: jhp0778
+            HPA: HPAG1_0825
+            HPS: HPSH_02600
+            HHP: HPSH112_02785
+            HHQ: HPSH169_04300
+            HHR: HPSH417_04070
+            HPG: HPG27_798
+            HPP: HPP12_0846
+            HPB: HELPY_0515(flaA1)
+            HPL: HPB8_1050
+            HPC: HPPC_04255
+            HCA: HPPC18_04145
+            HPM: HPSJM_04275
+            HPE: HPELS_02315
+            HPO: HMPREF4655_20756(capD)
+            HPI: hp908_0855
+            HPQ: hp2017_0822
+            HPW: hp2018_0823(pseB)
+            HPU: HPCU_04445
+            HEF: HPF16_0521(flmA)
+            HPF: HPF30_0491(flmA)
+            HEQ: HPF32_0807(flmA)
+            HEX: HPF57_0862(flmA)
+            HPT: HPSAT_02560
+            HPZ: HPKB_0505
+            HPV: HPV225_0860
+            HPX: HMPREF0462_0567(pseB)
+            HEN: HPSNT_04355
+            HPH: HPLT_04255
+            HEG: HPGAM_04345
+            HPN: HPIN_02400
+            HEP: HPPN120_04155
+            HEU: HPPN135_04130
+            HES: HPSA_04085
+            HPYS: HPSA20_0892(pseB)
+            HCN: HPB14_02465
+            HPD: KHP_0488(flaA1)
+            HER: C695_04315
+            HEI: C730_04315
+            HPYA: HPAKL117_04030
+            HPYK: HPAKL86_02850
+            HPYO: HPOK113_0853(flmA)
+            HPYL: HPOK310_0505(flmA)
+            HPYR: K747_11220
+            HPYI: K750_04740
+            HPYU: K751_04920
+            HPYM: K749_03075
+            HEM: K748_01515
+            HEB: U063_1144
+            HEZ: U064_1148
+            HHE: HH1333(flmA)
+            HAC: Hac_1210(flaA1)
+            HMS: HMU09920(flaA1)
+            HFE: HFELIS_04250(flaA1)
+            HBI: HBZC1_08130
+            HCE: HCW_07265
+            HCM: HCD_01650
+            HCP: HCN_1966(flmA)
+            HCB: HCBAA847_2217(flmA)
+            HHM: BN341_p1324
+            WSU: WS2061
+            SUA: Saut_0143
+            SKU: Sulku_0150
+            SULR: B649_00715
+            CJE: Cj1293(pseB)
+            CJB: BN148_1293(pseB)
+            CJJ: CJJ81176_1310(flmA)
+            CJU: C8J_1236
+            CJN: ICDCCJ_1241
+            CJI: CJSA_1231(pseB)
+            CJM: CJM1_1275(flmA)
+            CJS: CJS3_1390(pseB)
+            CJP: A911_06280
+            CJEJ: N564_01311(pseB)
+            CJEU: N565_01348(pseB)
+            CJEN: N755_01343(pseB)
+            CJEI: N135_01381(pseB)
+            CJR: CJE1485(flmA)
+            CJD: JJD26997_0429(flmA)
+            CJZ: M635_02160
+            CJX: BN867_12860
+            CFF: CFF8240_1633
+            CFV: CFVI03293_1657(pseB)
+            CCV: CCV52592_0560
+            CLA: Cla_1298(pseB)
+            CCOL: BN865_08360c
+            CCC: G157_02355
+            CCQ: N149_1254
+            CAMP: CFT03427_1585(pseB)
+            ABU: Abu_2243(pseB)
+            ABT: ABED_2053
+            ABL: A7H1H_2189(pseB)
+            ANT: Arnit_2953
+            SDL: Sdel_2208
+            SBA: Sulba_2442
+            SMUL: SMUL_3172(pseB)
+            NAM: NAMH_1609
+            DHY: DESAM_21320
+            DRT: Dret_0609
+            DSF: UWK_02414
+            DAT: HRM2_36710
+            HMR: Hipma_1640
+            BJU: BJ6T_37190
+            NWI: Nwi_0643
+            NHA: Nham_1193
+            CCR: CC_0233
+            CCS: CCNA_00233
+            CAK: Caul_4634
+            CSE: Cseg_0181
+            PZU: PHZ_c0080(flmA)
+            AEX: Astex_0414
+            PDE: Pden_0093 Pden_3558
+            MMR: Mmar10_1957
+            HBA: Hbal_0201
+            MAG: amb0716
+            MGY: MGMSR_0132
+            AZL: AZL_f00050
+            ALI: AZOLI_p60173
+            ABS: AZOBR_p60065
+            MGM: Mmc1_2409
+            PEL: SAR11G3_00103
+            APM: HIMB5_00011070
+            GMC: GY4MC1_0346
+            DRU: Desru_1217
+            SSG: Selsp_0053
+            SRI: SELR_23760
+            AMS: AMIS_4210
+            ACTN: L083_0617
+            AFS: AFR_02690
+            PCU: pc0349
+            PUV: PUV_20480(capD)
+            WCH: wcw_1563(flaA1)
+            TAI: Taci_0679
+            PSEU: Pse7367_0075
+            NPU: Npun_R0690
+            CALO: Cal7507_5352
+            HTE: Hydth_1527
+            DIN: Selin_0876
+            DAP: Dacet_0426
+            NMR: Nmar_0146
+DBLINKS     ExplorEnz - The Enzyme Database: 4.2.1.115
+            IUBMB Enzyme Nomenclature: 4.2.1.115
+            ExPASy - ENZYME nomenclature database: 4.2.1.115
+            BRENDA, the Enzyme Database: 4.2.1.115
+///

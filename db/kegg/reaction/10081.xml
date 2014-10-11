@@ -1,0 +1,12 @@
+ENTRY       R10081                      Reaction
+NAME        L-arginine,2-oxoglutarate:oxygen oxidoreductase (5-hydroxylating)
+DEFINITION  2-Oxoglutarate + L-Arginine + Oxygen <=> Succinate + CO2 + L-Hydroxyarginine
+EQUATION    C00026 + C00062 + C00007 <=> C00042 + C00011 + C20330
+COMMENT     first step of two-step reaction (see R09785, R10081+R10082)
+RPAIR       RP00015  C00026_C00042 cofac
+            RP05677  C00011_C00026 leave
+            RP05690  C00007_C00042 leave
+            RP15873  C00062_C20330 main [RC:RC03047]
+            RP15874  C00007_C20330 leave
+ENZYME      1.14.11.34
+///

@@ -1,0 +1,11 @@
+ENTRY       R08520                      Reaction
+DEFINITION  [Thyroglobulin]-L-tyrosine + Iodine <=> [Thyroglobulin]-3-iodo-L-tyrosine + Hydroiodic acid
+EQUATION    C16733 + C01382 <=> C16732 + C05590
+COMMENT     thyroid peroxidase, TPO
+            following after R02810
+            subsequently R08521 or R08522
+RPAIR       RP10512  C01382_C05590 leave
+            RP12716  C16732_C16733 main [RC:RC00949]
+            RP12717  C01382_C16732 leave
+ENZYME      1.11.1.8
+///

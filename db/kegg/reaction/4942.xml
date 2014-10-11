@@ -1,0 +1,12 @@
+ENTRY       R04942                      Reaction
+NAME        L-Serine hydro-lyase (adding homocysteine)
+DEFINITION  L-Serine + Selenohomocysteine <=> L-Selenocystathionine + H2O
+EQUATION    C00065 + C05698 <=> C05699 + C00001
+COMMENT     multi-step reaction
+RPAIR       RP00805  C05698_C05699 main [RC:RC00056]
+            RP04551  C00065_C05699 main [RC:RC01246]
+            RP05699  C00001_C00065 leave
+ENZYME      4.2.1.22
+ORTHOLOGY   K01697  cystathionine beta-synthase [EC:4.2.1.22]
+            K10150  cysteine synthase / O-phosphoserine sulfhydrylase / cystathionine beta-synthase [EC:2.5.1.47 2.5.1.65 4.2.1.22]
+///

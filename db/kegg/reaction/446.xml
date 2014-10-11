@@ -1,0 +1,13 @@
+ENTRY       R00446                      Reaction
+NAME        L-lysine:NAD+ 6-oxidoreductase (deaminating)
+DEFINITION  L-Lysine + NAD+ + H2O <=> L-2-Aminoadipate 6-semialdehyde + NADH + Ammonia + H+
+EQUATION    C00047 + C00003 + C00001 <=> C04076 + C00004 + C00014 + C00080
+COMMENT     first step of two-step reaction (see R10054, R00446+R02317)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00405  C00047_C04076 main [RC:RC00062]
+            RP05798  C00001_C04076 leave
+            RP12294  C00014_C00047 leave
+ENZYME      1.4.1.18
+PATHWAY     rn00960  Tropane, piperidine and pyridine alkaloid biosynthesis
+            rn01100  Metabolic pathways
+///

@@ -1,0 +1,12 @@
+ENTRY       R03038                      Reaction
+NAME        L-Alanine:tRNA(Ala) ligase (AMP-forming)
+DEFINITION  ATP + L-Alanine + tRNA(Ala) <=> AMP + Diphosphate + L-Alanyl-tRNA
+EQUATION    C00002 + C00041 + C01635 <=> C00020 + C00013 + C00886
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP02709  C00041_C00886 main [RC:RC00523]
+            RP02710  C00886_C01635 main [RC:RC00055]
+ENZYME      6.1.1.7
+PATHWAY     rn00970  Aminoacyl-tRNA biosynthesis
+ORTHOLOGY   K01872  alanyl-tRNA synthetase [EC:6.1.1.7]
+///

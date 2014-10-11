@@ -1,0 +1,15 @@
+ENTRY       R05456                      Reaction
+NAME        4-keto-anhydrotetracycline:FADH2 oxidoreductase (7-halogenating)
+DEFINITION  4-Keto-anhydrotetracycline + FADH2 + Cl- + Oxygen + H+ <=> 4-Ketoanhydrochlortetracycline + FAD + 2 H2O
+EQUATION    C06627 + C01352 + C00698 + C00007 + C00080 <=> C06626 + C00016 + 2 C00001
+COMMENT     chl gene
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00018  C00016_C01352 cofac [RC:RC00126]
+            RP05066  C06626_C06627 main [RC:RC00949]
+            RP08687  C00698_C06626 leave
+ENZYME      1.14.14.-
+PATHWAY     rn00253  Tetracycline biosynthesis
+            rn01057  Biosynthesis of type II polyketide products
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K14257  FADH2 O2-dependent halogenase II [EC:1.14.14.-]
+///

@@ -1,0 +1,10 @@
+ENTRY       R09870                      Reaction
+NAME        S-adenosyl-L-methionine:trans-resveratrol 3-O-methyltransferase
+DEFINITION  S-Adenosyl-L-methionine + Resveratrol <=> S-Adenosyl-L-homocysteine + 3-Methoxy-4',5-dihydroxy-trans-stilbene
+EQUATION    C00019 + C03582 <=> C00021 + C20154
+COMMENT     first step of two-step reaction (see R09872, R09870+R09871)
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP15493  C03582_C20154 main [RC:RC00392]
+            RP15494  C00019_C20154 trans
+ENZYME      2.1.1.240
+///

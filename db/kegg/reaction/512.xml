@@ -1,0 +1,15 @@
+ENTRY       R00512                      Reaction
+NAME        ATP:CMP phosphotransferase
+DEFINITION  ATP + CMP <=> ADP + CDP
+EQUATION    C00002 + C00055 <=> C00008 + C00112
+RPAIR       RP00003  C00002_C00008 main [RC:RC00002]
+            RP00451  C00055_C00112 main [RC:RC00002]
+            RP06187  C00002_C00112 trans
+ENZYME      2.7.4.14        2.7.4.25
+PATHWAY     rn00240  Pyrimidine metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00945  cytidylate kinase [EC:2.7.4.14]
+            K13799  pantoate ligase / cytidylate kinase [EC:6.3.2.1 2.7.4.14]
+            K13800  UMP-CMP kinase [EC:2.7.4.- 2.7.4.14]
+            K13809  UMP-CMP kinase 2, mitochondrial [EC:2.7.4.14]
+///

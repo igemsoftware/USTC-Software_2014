@@ -1,0 +1,12 @@
+ENTRY       R06622                      Reaction
+DEFINITION  NADPH + 2-Hydroxycyclohexan-1-one + H+ + Oxygen <=> NADP+ + 1-Oxa-2-oxo-3-hydroxycycloheptane + H2O
+EQUATION    C00005 + C01147 + C00080 + C00007 <=> C00006 + C12314 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP09043  C01147_C12314 main [RC:RC01550]
+            RP12365  C00007_C12314 leave
+ENZYME      1.14.13.22
+PATHWAY     rn00930  Caprolactam degradation
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K03379  cyclohexanone monooxygenase [EC:1.14.13.22]
+///

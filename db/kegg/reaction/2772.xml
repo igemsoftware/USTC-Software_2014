@@ -1,0 +1,13 @@
+ENTRY       R02772                      Reaction
+NAME        dTDP-4-acetamido-4,6-dideoxy-D-glucose:2-oxoglutarate aminotransferase
+DEFINITION  dTDP-4-acetamido-4,6-dideoxy-D-glucose + 2-Oxoglutarate + CoA <=> dTDP-4-oxo-6-deoxy-D-glucose + L-Glutamate + Acetyl-CoA
+EQUATION    C06018 + C00026 + C00010 <=> C11907 + C00025 + C00024
+COMMENT     multi-step reaction (R02773 and an unknown N-acetyltransferase)
+RPAIR       RP00007  C00010_C00024 main [RC:RC00004]
+            RP00014  C00025_C00026 main [RC:RC00006]
+            RP08110  C00026_C11907 trans
+            RP10736  C00024_C06018 trans
+            RP10759  C00025_C06018 trans
+            RP11209  C06018_C11907 main [RC:RC01848]
+ENZYME      2.6.1.33
+///

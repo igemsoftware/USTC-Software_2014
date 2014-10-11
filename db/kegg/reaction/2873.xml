@@ -1,0 +1,11 @@
+ENTRY       R02873                      Reaction
+NAME        squalene,NADPH:oxygen oxidoreductase (2,3-epoxidizing)
+DEFINITION  Squalene + Reduced acceptor + Oxygen <=> (S)-2,3-Epoxysqualene + Acceptor + H2O
+EQUATION    C00751 + C00030 + C00007 <=> C01054 + C00028 + C00001
+COMMENT     Acceptor may be ferricytochrome b5, and re-reduced by NADPH
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00567  C00751_C01054 main [RC:RC00201]
+            RP05852  C00007_C01054 leave
+ENZYME      1.14.13.132
+ORTHOLOGY   K00511  squalene monooxygenase [EC:1.14.13.132]
+///

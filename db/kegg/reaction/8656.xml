@@ -1,0 +1,13 @@
+ENTRY       R08656                      Reaction
+NAME        L-tyrosine,NADPH:oxygen oxidoreductase (N-hydroxylating, decarboxylating)
+DEFINITION  L-Tyrosine + 2 Oxygen + 2 NADPH + 2 H+ <=> (Z)-4-Hydroxyphenylacetaldehyde oxime + 2 NADP+ + 3 H2O + CO2
+EQUATION    C00082 + 2 C00007 + 2 C00005 + 2 C00080 <=> C04353 + 2 C00006 + 3 C00001 + C00011
+COMMENT     multi-step reaction (ec 1.14.13.41, R00730+R04460+R07190)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP06291  C00011_C00082 leave
+            RP13629  C00082_C04353 main [RC:RC02295]
+            RP13630  C00007_C04353 leave
+ENZYME      1.14.13.41
+ORTHOLOGY   K13027  tyrosine N-monooxygenase [EC:1.14.13.41]
+///

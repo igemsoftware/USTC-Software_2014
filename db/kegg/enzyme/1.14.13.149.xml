@@ -1,0 +1,467 @@
+ENTRY       EC 1.14.13.149              Enzyme
+NAME        phenylacetyl-CoA 1,2-epoxidase;
+            ring 1,2-phenylacetyl-CoA epoxidase;
+            phenylacetyl-CoA monooxygenase;
+            PaaAC;
+            PaaABC(D)E
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     phenylacetyl-CoA:oxygen oxidoreductase (1,2-epoxidizing)
+REACTION    phenylacetyl-CoA + NADPH + H+ + O2 = 2-(1,2-epoxy-1,2-dihydrophenyl)acetyl-CoA + NADP+ + H2O [RN:R09838]
+ALL_REAC    R09838
+SUBSTRATE   phenylacetyl-CoA [CPD:C00582];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007]
+PRODUCT     2-(1,2-epoxy-1,2-dihydrophenyl)acetyl-CoA [CPD:C20062];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001]
+COMMENT     Part of the aerobic pathway of phenylacetate catabolism in Escherichia coli and Pseudomonas putida.
+HISTORY     EC 1.14.13.149 created 2012
+REFERENCE   1  [PMID:20660314]
+  AUTHORS   Teufel R, Mascaraque V, Ismail W, Voss M, Perera J, Eisenreich W, Haehnel W, Fuchs G
+  TITLE     Bacterial phenylalanine and phenylacetate catabolic pathway revealed.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 107 (2010) 14390-5.
+  ORGANISM  Escherichia coli, Pseudomonas putida
+  SEQUENCE  [eco:b1388 b1390]
+REFERENCE   2  [PMID:20823522]
+  AUTHORS   Grishin AM, Ajamian E, Zhang L, Cygler M
+  TITLE     Crystallization and preliminary X-ray analysis of PaaAC, the main component of the hydroxylase of the Escherichia coli phenylacetyl-coenzyme A oxygenase complex.
+  JOURNAL   Acta. Crystallogr. Sect. F. Struct. Biol. Cryst. Commun. 66 (2010) 1045-9.
+  ORGANISM  Escherichia coli
+  SEQUENCE  [eco:b1388]
+REFERENCE   3  [PMID:21247899]
+  AUTHORS   Grishin AM, Ajamian E, Tao L, Zhang L, Menard R, Cygler M.
+  TITLE     Structural and functional studies of the Escherichia coli phenylacetyl-CoA monooxygenase complex.
+  JOURNAL   J. Biol. Chem. 286 (2011) 10735-43.
+  ORGANISM  Escherichia coli
+  SEQUENCE  [eco:b1388]
+PATHWAY     ec00360  Phenylalanine metabolism
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K02609  ring-1,2-phenylacetyl-CoA epoxidase subunit PaaA
+            K02611  ring-1,2-phenylacetyl-CoA epoxidase subunit PaaC
+GENES       ECO: b1388(paaA) b1390(paaC)
+            ECJ: Y75_p1365(paaA) Y75_p1367(paaC)
+            ECD: ECDH10B_1513(paaA) ECDH10B_1515(paaC)
+            EBW: BWG_1217(paaA) BWG_1219(paaC)
+            EOJ: ECO26_1992(paaA) ECO26_1994(paaC)
+            EOI: ECO111_1782(paaA) ECO111_1784(paaC)
+            EOH: ECO103_1525(paaA) ECO103_1527(paaC)
+            ECX: EcHS_A1475(paaA) EcHS_A1477(paaI)
+            ECW: EcE24377A_1573(paaA) EcE24377A_1575(paaI)
+            ECY: ECSE_1473(paaA) ECSE_1475
+            ECR: ECIAI1_1388(paaA) ECIAI1_1390(paaC)
+            ECK: EC55989_1524(paaA) EC55989_1526(paaC)
+            ELH: ETEC_1463 ETEC_1465
+            ESO: O3O_12100(paaA) O3O_12110
+            ESM: O3M_13495 O3M_13505(paaA)
+            ESL: O3K_13520 O3K_13530(paaA)
+            ECL: EcolC_2265 EcolC_2267(paaA)
+            EKO: EKO11_2423 EKO11_2425
+            EKF: KO11_15200(paaA) KO11_15210(paaC)
+            EDH: EcDH1_2255
+            EDJ: ECDH1ME8569_1334(paaC)
+            EUN: UMNK88_1795 UMNK88_1797
+            ELW: ECW_m1522(paaG) ECW_m1524(paaI)
+            ELL: WFL_07435(paaA) WFL_07445(paaC)
+            ELP: P12B_c1736(paaC) P12B_c1738(paaA)
+            ECOA: APECO78_10675(paaA) APECO78_10685
+            ECOL: LY180_07260(paaA) LY180_07270
+            ECOO: ECRM13514_1995(paaI) ECRM13514_1997(paaG)
+            EFE: EFER_1606(paaC) EFER_1608(paaA)
+            ENC: ECL_02151 ECL_02153
+            ENO: ECENHK_10305(paaA) ECENHK_10315
+            ECLO: ENC_11690 ENC_11710
+            EEC: EcWSU1_02053(paaA) EcWSU1_02055(paaC)
+            ENL: A3UG_10340(paaA) A3UG_10350
+            ESC: Entcl_2420 Entcl_2422
+            EAS: Entas_2026 Entas_2028
+            EAU: DI57_08525 DI57_08535(paaA)
+            EAE: EAE_20510 EAE_20520(paaA)
+            EAR: ST548_p7279 ST548_p7281
+            KPN: KPN_01469(paaA) KPN_01471(paaC)
+            KPU: KP1_2472(paaA) KP1_2474(paaC)
+            KPM: KPHS_23690 KPHS_23710
+            KPP: A79E_2768 A79E_2770
+            KPE: KPK_2998(paaC) KPK_3000(paaA)
+            KPO: KPN2242_10125(paaA) KPN2242_10135
+            KPR: KPR_2872(paaC) KPR_2874(paaA)
+            KPJ: N559_2860 N559_2862
+            KPI: D364_07195(paaA) D364_07205
+            KVA: Kvar_2896 Kvar_2898
+            KOX: KOX_19420(paaA) KOX_19430
+            KOE: A225_2754 A225_2756
+            SPE: Spro_3072(paaA) Spro_3074
+            SRR: SerAS9_3143 SerAS9_3145
+            SRL: SOD_c28750(paaA) SOD_c28770(paaC)
+            SRY: M621_15705(paaA) M621_15715
+            SRS: SerAS12_3144 SerAS12_3146
+            SRA: SerAS13_3146 SerAS13_3148
+            SMAF: D781_2880 D781_2882
+            SMW: SMWW4_v1c30940(paaA) SMWW4_v1c30960(paaI)
+            SLQ: M495_15670(paaA) M495_15680
+            XBO: XBJ1_0125(paaC) XBJ1_0127(paaA)
+            XNE: XNC1_4616(paaA) XNC1_4618(paaC)
+            PSI: S70_09335(paaA) S70_09345
+            EBT: EBL_c16560(paaA) EBL_c16580(paaC)
+            ROR: RORB6_07540 RORB6_07550(paaA)
+            EBF: D782_2330 D782_2332
+            PPU: PP_3276 PP_3278(paaA)
+            PPF: Pput_2481(paaA) Pput_2483
+            PPG: PputGB1_2618(paaA) PputGB1_2620
+            PPW: PputW619_2631(paaA) PputW619_2633
+            PPT: PPS_2693 PPS_2695
+            PPB: PPUBIRD1_2494(paaA) PPUBIRD1_2496
+            PPI: YSA_10782 YSA_10784
+            PPX: T1E_5595(paaA) T1E_5597(paaC)
+            PPUH: B479_13130(paaA) B479_13140
+            PPUT: L483_17275(paaA) L483_17285
+            PPUN: PP4_26010(paaC) PP4_26030(paaA)
+            PFL: PFL_3133(paaG) PFL_3135(paaI)
+            PPRC: PFLCHA0_c31640(paaA) PFLCHA0_c31660(paaC)
+            PEN: PSEEN2798(paaA) PSEEN2800(paaI)
+            PMK: MDS_2867 MDS_2869
+            PRE: PCA10_32710(paaA) PCA10_32730(paaC)
+            PSV: PVLB_12555 PVLB_12565(paaA) PVLB_26477 PVLB_26487(paaA)
+            PMON: X969_12800(paaA) X969_12810
+            PMOT: X970_12445(paaA) X970_12455
+            PKC: PKB_2685(paac3) PKB_2687(paaA)
+            ACD: AOLE_12925 AOLE_12935(paaA)
+            ACB: A1S_1336(paaA) A1S_1338
+            ABY: ABAYE2373(paaC) ABAYE2375(paaA)
+            ABC: ACICU_01336(paaA) ACICU_01338
+            ABN: AB57_1519(paaA) AB57_1521(paaI)
+            ABB: ABBFA_002199 ABBFA_002201(paaA)
+            ABX: ABK1_1784 ABK1_1786
+            ABZ: ABZJ_01498 ABZJ_01500
+            ABR: ABTJ_02369 ABTJ_02371
+            ABD: ABTW07_1507(paaA) ABTW07_1509
+            ABH: M3Q_1697 M3Q_1699
+            ABAD: ABD1_13450(paaA) ABD1_13470(paaC)
+            ABJ: BJAB07104_01500 BJAB07104_01502
+            ABAB: BJAB0715_01519 BJAB0715_01521
+            ABAJ: BJAB0868_01450 BJAB0868_01452
+            ABAZ: P795_10695 P795_10705
+            ACC: BDGL_000682(paaA) BDGL_000684(paaC)
+            SWD: Swoo_0219 Swoo_0221(paaA)
+            MAD: HP15_2697 HP15_2699
+            MBS: MRBBS_3299(paaA) MRBBS_3301(paaC)
+            AMH: I633_22411
+            AMAA: amad1_21353
+            AMAL: I607_20062
+            AMAE: I876_09790
+            AMAO: I634_09845
+            AMAI: I635_21354
+            PIN: Ping_0650(paaA) Ping_0652
+            CZA: CYCME_2336 CYCME_2339
+            ADI: B5T_00821 B5T_00823(paaI)
+            MMW: Mmwyl1_3093 Mmwyl1_3095(paaA)
+            RSO: RSp0604(paaA) RSp0606(paaC)
+            RSL: RPSI07_mp0485(paaA) RPSI07_mp0487(paaC)
+            RSN: RSPO_m00937(paaA) RSPO_m00940(paaC)
+            RSM: CMR15_mp10553(paaA) CMR15_mp10555(paaC)
+            RSE: F504_4619 F504_4621
+            RPI: Rpic_4565 Rpic_4567(paaA)
+            RPF: Rpic12D_3493 Rpic12D_3495(paaA)
+            REU: Reut_A3206(paaA) Reut_A3208 Reut_B3735(paaA) Reut_B3737
+            REH: H16_A3520(paaA) H16_A3522(paaC1) H16_B1361(paaC2) H16_B1363(paaA)
+            CNC: CNE_1c34670(paaA) CNE_1c34690(paaC) CNE_2c13200(paaC) CNE_2c13220(paaA)
+            RME: Rmet_3369(paaA) Rmet_3371(paaC)
+            CTI: RALTA_A2973(paaA) RALTA_A2975(paaI2) RALTA_B1607(paaI3) RALTA_B1609(paaA)
+            BMA: BMA2573(paaA) BMA2575(paaC)
+            BMV: BMASAVP1_A0010(paaI) BMASAVP1_A0012(paaA) BMASAVP1_A3111(paaA) BMASAVP1_A3113(paaC)
+            BML: BMA10229_A1982(paaC) BMA10229_A1985(paaA)
+            BMN: BMA10247_3535(paaC)
+            BPS: BPSL3230(paaA) BPSL3232(paaC)
+            BPM: BURPS1710b_0007(paaA) BURPS1710b_0009(paaI)
+            BPL: BURPS1106A_3836(paaA) BURPS1106A_3838(paaI)
+            BPD: BURPS668_3775(paaA) BURPS668_3777(paaI)
+            BPR: GBP346_A3962(paaA) GBP346_A3964(paaI)
+            BPSE: BDL_2154 BDL_2156
+            BPSU: BBN_177 BBN_179
+            BPZ: BP1026B_I3472 BP1026B_I3474(paaC)
+            BPQ: BPC006_I3886 BPC006_I3888
+            BPK: BBK_1629 BBK_1631
+            BTE: BTH_I3097(paaA) BTH_I3099(paaI)
+            BTD: BTI_321 BTI_323
+            BVI: Bcep1808_0310 Bcep1808_0312(paaA)
+            BUR: Bcep18194_A3427 Bcep18194_A3429(paaA)
+            BCN: Bcen_2776(paaA) Bcen_2778
+            BCH: Bcen2424_0328 Bcen2424_0330(paaA)
+            BCM: Bcenmc03_0308 Bcenmc03_0310(paaA)
+            BCJ: BCAL0214(paaC) BCAL0216(paaA)
+            BAM: Bamb_0247 Bamb_0249(paaA)
+            BAC: BamMC406_0256 BamMC406_0258(paaA)
+            BMU: Bmul_0230 Bmul_0232(paaA)
+            BMJ: BMULJ_03031(paaA) BMULJ_03033(paaC)
+            BCT: GEM_0239 GEM_0241
+            BXE: Bxe_A0293 Bxe_A0295(paaA)
+            BPH: Bphy_2857(paaA) Bphy_2859
+            BPY: Bphyt_3662(paaA) Bphyt_3664
+            BGL: bglu_1g02390 bglu_1g02410 bglu_2g11520
+            BUG: BC1001_3299 BC1001_3301
+            BGE: BC1002_2915 BC1002_2917 BC1002_6726 BC1002_6728
+            BGF: BC1003_3259 BC1003_3261
+            BRH: RBRH_00381 RBRH_00383
+            BGD: bgla_1g02740 bgla_1g02760
+            BYI: BYI23_A014530(paaI) BYI23_A014550(paaA) BYI23_A024660(paaA) BYI23_A024680(paaI)
+            BUK: MYA_0250 MYA_0252
+            BPX: BUPH_03654 BUPH_03656
+            BUO: BRPE64_ACDS14820 BRPE64_ACDS14840 BRPE64_ACDS26070 BRPE64_ACDS26090
+            PPK: U875_24790 U875_24800(paaA)
+            PPNO: DA70_17555 DA70_17565
+            PRB: X636_09315(paaA) X636_09325
+            BPE: BP2682(paaC) BP2684(paaA)
+            BPC: BPTD_2639(paaC) BPTD_2641(paaA)
+            BPER: BN118_2330(paaC) BN118_2332(paaA)
+            BPA: BPP1673(paaA) BPP1675(paaC)
+            BPAR: BN117_1692(paaC)
+            BBR: BB3433(paaC) BB3435(paaA)
+            BBM: BN115_3221(paaC) BN115_3223(paaA)
+            BBH: BN112_1237(paaC) BN112_1239(paaA)
+            BPT: Bpet1924(paaA) Bpet1926(paaC)
+            BAV: BAV1380(paaA) BAV1382(paaC)
+            BHO: D560_2524 D560_2526(paaC)
+            AXY: AXYL_01762(paaA) AXYL_01764
+            AXO: NH44784_003271 NH44784_003291
+            AXN: AX27061_1655 AX27061_1657
+            PUT: PT7_1462 PT7_1464
+            VEI: Veis_3945(paaA) Veis_3947
+            DAC: Daci_0810(paaA) Daci_0812
+            DEL: DelCs14_5722 DelCs14_5724
+            VAP: Vapar_1233 Vapar_1235(paaA)
+            VPE: Varpa_1326 Varpa_1328
+            VPD: VAPA_1c12990(paaC) VAPA_1c13010(paaA)
+            RTA: Rta_06970(paaC) Rta_06990(paaA)
+            MPT: Mpe_A0987(paaA) Mpe_A0989
+            HSE: Hsero_4125(paaA) Hsero_4127(paaC)
+            LCH: Lcho_3572 Lcho_3574(paaA)
+            TIN: Tint_3002 Tint_3004
+            THI: THI_3553(paaC) THI_3555(paaA)
+            EBA: ebA3547(paaA) ebA3550(paaC) ebA5720(paaA) ebA5722(paaC2)
+            AZO: azo0304(paaA) azo0306(paaC)
+            AZA: AZKH_0414(paaA) AZKH_0416(paaC)
+            DAR: Daro_0377(paaA) Daro_0379
+            TMZ: Tmz1t_1504 Tmz1t_1506(paaA)
+            BMX: BMS_2002
+            SME: SM_b21638(paaC) SM_b21640(paaA)
+            SMK: Sinme_4185 Sinme_4187
+            SMQ: SinmeB_4681 SinmeB_4683
+            SMX: SM11_pD0063(paaA) SM11_pD0065(paaC)
+            SMI: BN406_05148(paaA) BN406_05150(paaC)
+            SMEG: C770_GR4pD0063 C770_GR4pD0065
+            SMEL: SM2011_b21638(paaC) SM2011_b21640(paaA)
+            SMD: Smed_4147(paaA) Smed_4149
+            RHI: NGR_c26170(paaI) NGR_c26190(paaA)
+            SFH: SFHH103_02468(paaC) SFHH103_02470(paaA)
+            SFD: USDA257_c50070(paaC) USDA257_c50090(paaA)
+            RTR: RTCIAT899_PC02390(paaG) RTCIAT899_PC02400(paaI)
+            RHL: LPU83_pLPU83d0261(paaC) LPU83_pLPU83d0263(paaA)
+            BJA: blr2891(paaA) blr2893(paaC)
+            BJU: BJ6T_68730 BJ6T_68750
+            BRA: BRADO2519(paaA) BRADO2521(paaC)
+            BBT: BBta_2865(paaA) BBta_2867(paaC)
+            BRS: S23_51220(paaC) S23_51240
+            AOL: S58_50900(paaC) S58_50920(paaA)
+            RPA: RPA3766(paaC) RPA3768(paaA)
+            RPB: RPB_3639 RPB_3641(paaA)
+            RPC: RPC_0689 RPC_0691(paaA)
+            RPD: RPD_1824(paaA) RPD_1826
+            RPE: RPE_0988(paaA) RPE_0990
+            RPT: Rpal_4287 Rpal_4289(paaA)
+            RPX: Rpdx1_1576 Rpdx1_1578
+            NHA: Nham_0928(paaA) Nham_0930
+            XAU: Xaut_0896(paaA) Xaut_0898
+            MNO: Mnod_3354 Mnod_3356(paaA) Mnod_7197 Mnod_7199(paaA)
+            HMC: HYPMC_3354 HYPMC_3357
+            SIL: SPO0755(paaI) SPO0757(paaA)
+            SIT: TM1040_3724(paaA) TM1040_3726
+            JAN: Jann_0653 Jann_0655(paaA)
+            PDE: Pden_4808 Pden_4810(paaA)
+            PAMI: JCM7686_1151 JCM7686_1153
+            DSH: Dshi_3818(paaA) Dshi_3820
+            PSF: PSE_1786 PSE_1788
+            PGA: PGA1_c04060(paaC) PGA1_c04080(paaA)
+            PGL: PGA2_c03610(paaC) PGA2_c03630(paaA)
+            PGD: Gal_03094 Gal_03096
+            LMD: METH_03525 METH_03535(paaA)
+            RED: roselon_02366 roselon_02368
+            SWI: Swit_0753(paaA) Swit_0755
+            ACR: Acry_2608(paaA) Acry_2610
+            AMV: ACMV_29330(paaG) ACMV_29350(paaI)
+            GXY: GLX_22990(paaA) GLX_23010(paaI)
+            AZL: AZL_d01600(paaC) AZL_d01620(paaA)
+            ALI: AZOLI_p40265(paaC) AZOLI_p40267(paaA)
+            TMO: TMO_0573(paaA) TMO_c0224(paaA)
+            PGV: SL003B_2145(paaA) SL003B_2147(paaI)
+            BHA: BH0196(paaA) BH0198(phaG)
+            BIF: N288_11260(paaA) N288_11270
+            GKA: GK1995 GK2042 GK2044(paaA)
+            GTN: GTNG_1895 GTNG_1927(paaC) GTNG_1929(paaA)
+            GTH: Geoth_1576 Geoth_1578
+            GTE: GTCCBUS3UF5_23160 GTCCBUS3UF5_23180
+            GYC: GYMC61_2833 GYMC61_2867 GYMC61_2869(paaA)
+            GYA: GYMC52_1962 GYMC52_1997 GYMC52_1999
+            GCT: GC56T3_1484 GC56T3_1486 GC56T3_1514
+            GMC: GY4MC1_1484 GY4MC1_1486
+            GGH: GHH_c20850(paaI) GHH_c20870(paaG)
+            GJF: M493_10275 M493_10460 M493_10470(paaA) M493_14050
+            ESI: Exig_0389(paaA) Exig_0391
+            EAN: Eab7_0365(paaA) Eab7_0367(paaC)
+            EXM: U719_02000(paaA) U719_02010
+            BBE: BBR47_49860(paaC) BBR47_49880(paaA)
+            PLV: ERIC2_c09910(paaA) ERIC2_c09930(paaC)
+            AAC: Aaci_0807(paaA) Aaci_0809
+            AAD: TC41_0805(paaA) TC41_0807(paaC)
+            BTS: Btus_1232 Btus_1234
+            STH: STH2484(paaC) STH2486(paaA)
+            TMR: Tmar_2134 Tmar_2136
+            SAY: TPY_2408(paaA) TPY_3280(paaC) TPY_3282
+            SAP: Sulac_1629 Sulac_1631 Sulac_3164
+            MAB: MAB_0906 MAB_0908
+            MMV: MYCMA_0468(paaA) MYCMA_0470(paaC)
+            CGT: cgR_0647(paaA) cgR_0649
+            CGS: C624_03290(paaA) C624_03300
+            CGG: C629_03290(paaA) C629_03300
+            CEF: CE0667(paaA) CE0669
+            CUA: CU7111_0583 CU7111_0585(paaA)
+            CHN: A605_13635(paaA) A605_13645
+            CMD: B841_12425(paaA) B841_12435
+            CCG: CCASEI_13680(paaA) CCASEI_13690
+            CVT: B843_10475 B843_10485(paaA)
+            CGY: CGLY_12455(paaA) CGLY_12465(paaC)
+            NFA: nfa21610(paaA) nfa21630
+            RHA: RHA1_ro02857(paaI) RHA1_ro02859(paaA)
+            RER: RER_55480(paaI) RER_55500(paaG)
+            REY: O5Y_26450 O5Y_26460(paaA)
+            ROP: ROP_25800(paaI) ROP_25820(paaA)
+            ROA: Pd630_LPD07019 Pd630_LPD07021
+            GPO: GPOL_c41670 GPOL_c41690
+            SCO: SCO7471(paaA) SCO7473(paaC)
+            SMA: SAV_4352(paaC) SAV_4354(paaA)
+            SGR: SGR_3739 SGR_3741(paaA)
+            SCB: SCAB_82281(paaA) SCAB_82301(paaC)
+            SSX: SACTE_3265 SACTE_3267
+            SVL: Strvi_0288 Strvi_0290
+            SCT: SCAT_3069(paaA) SCAT_3071(paaC)
+            SCY: SCATT_30590 SCATT_30610
+            SFA: Sfla_3216 Sfla_3218
+            SBH: SBI_05420(paaC) SBI_05422(paaA)
+            SHY: SHJG_1257 SHJG_1259 SHJG_1714 SHJG_5233 SHJG_5235
+            SHO: SHJGH_1092 SHJGH_1094 SHJGH_1479 SHJGH_4997 SHJGH_4999
+            SVE: SVEN_3613 SVEN_3615 SVEN_6199
+            SDV: BN159_7591(paaA) BN159_7593
+            SALB: XNR_2161 XNR_2163 XNR_5884 XNR_5886
+            STRP: F750_3528(paaG) F750_3530(paaI)
+            SFI: SFUL_3499 SFUL_3501
+            SCI: B446_29855(paaA) B446_29865
+            SRC: M271_24930(paaA) M271_24940
+            SALU: DC74_4166 DC74_4168
+            KSK: KSE_62110(paaA) KSE_62130(paaC)
+            MTS: MTES_2788(paaA) MTES_2790
+            ART: Arth_3216 Arth_3218(paaA)
+            AAU: AAur_3224(paaI) AAur_3226(paaA)
+            ACH: Achl_2962 Achl_2964(paaA)
+            AAI: AARI_24320(paaI) AARI_24340(paaG)
+            APN: Asphe3_30840 Asphe3_30860
+            ARR: ARUE_c33620(paaC) ARUE_c33640(paaA)
+            RSA: RSal33209_2660(paaC) RSal33209_2662(paaA)
+            KRH: KRH_02130(paaC) KRH_02150(paaA)
+            MLU: Mlut_20150(paaA) Mlut_20170
+            KSE: Ksed_09290(paaA) Ksed_09310
+            ICA: Intca_2189 Intca_2191
+            NCA: Noca_3157 Noca_3159(paaA)
+            KFL: Kfla_2970 Kfla_2972
+            NDA: Ndas_1763 Ndas_2479 Ndas_2481
+            NAL: B005_5183 B005_5185
+            SRO: Sros_3765
+            ACE: Acel_1441 Acel_1443(paaA)
+            NML: Namu_2489 Namu_2491(paaA)
+            GOB: Gobs_1905 Gobs_1907
+            BSD: BLASA_2822(paaA) BLASA_2824(paaC)
+            MMAR: MODMU_2292(paaC) MODMU_2294(paaA)
+            SEN: SACE_3544(paaA) SACE_3546
+            SVI: Svir_26510 Svir_26530(paaA)
+            AMD: AMED_1564(paaA) AMED_1566(paaC)
+            AMN: RAM_07945(paaA) RAM_07955
+            AMM: AMES_1554(paaA) AMES_1556(paaC)
+            AMZ: B737_1555(paaA) B737_1557(paaC)
+            AOI: AORI_1648(paaA) AORI_1650(paaC)
+            PDX: Psed_2700 Psed_2702
+            AMI: Amir_6690 Amir_6692(paaA)
+            SESP: BN6_80430(paaI) BN6_80450(paaA)
+            KAL: KALB_2105 KALB_2107
+            STP: Strop_4071 Strop_4073(paaA)
+            SAQ: Sare_4470 Sare_4472(paaA)
+            MAU: Micau_0381 Micau_0383
+            MIL: ML5_0357 ML5_0359
+            VMA: VAB18032_06055(paaA) VAB18032_06065
+            AMS: AMIS_43480 AMIS_43500
+            ASE: ACPL_2909(paaI) ACPL_2911(paaA)
+            ACTN: L083_4741(paaI) L083_4744(paaA)
+            AFS: AFR_20810(paaA) AFR_20820
+            CAI: Caci_1744(paaA) Caci_1746
+            SNA: Snas_1238 Snas_1240
+            RXY: Rxyl_1756
+            RRD: RradSPS_1666 RradSPS_1670
+            CWO: Cwoe_2198 Cwoe_2200
+            AYM: YM304_03130(paaG) YM304_03160(paaI)
+            GAU: GAU_0263(paaA) GAU_0265(paaC)
+            GBA: J421_3716 J421_3718
+            RMR: Rmar_1543 Rmar_1545
+            RMG: Rhom172_1248 Rhom172_1250
+            CPI: Cpin_0787(paaA) Cpin_0789
+            NKO: Niako_6205 Niako_6207
+            HHY: Halhy_3787 Halhy_3789
+            SGN: SGRA_p0034(paaA) SGRA_p0036(paaC)
+            HSW: Hsw_1459 Hsw_1461
+            MTT: Ftrac_0268 Ftrac_0271
+            FBR: FBFL15_1508(paaC) FBFL15_1510(paaA)
+            CAT: CA2559_05320 CA2559_05335
+            LAN: Lacal_1609 Lacal_1611
+            ASL: Aeqsu_1776 Aeqsu_1779
+            PTQ: P700755_000803 P700755_000805
+            NDO: DDD_2171(paaA) DDD_2174(paaC)
+            FBA: FIC_02217 FIC_02286(paaA)
+            FTE: Fluta_2402 Fluta_2404
+            OHO: Oweho_2263 Oweho_2267
+            STI: Sthe_2567 Sthe_2569
+            DRA: DR_2384 DR_2386(paaA)
+            DGE: Dgeo_1916 Dgeo_1918(paaA)
+            DDR: Deide_04560(paaA) Deide_04580(paaC)
+            DGO: DGo_CA2889(paaA) DGo_CA2891(paaC)
+            DPD: Deipe_0818 Deipe_0820
+            TRA: Trad_1145 Trad_1147
+            TTH: TTC0606(paaC) TTC0608(paaA)
+            TTJ: TTHA0970 TTHA0972(paaA)
+            TTS: Ththe16_0988 Ththe16_0990
+            TTL: TtJL18_1078 TtJL18_1080
+            TSC: TSC_c12150(paaG2) TSC_c12170(paaI)
+            THC: TCCBUS3UF1_12270 TCCBUS3UF1_12290
+            TOS: Theos_0990 Theos_0992
+            MRB: Mrub_2410 Mrub_2412
+            MRE: K649_10475 K649_10485(paaA)
+            MSV: Mesil_3043 Mesil_3045
+            MHD: Marky_1366 Marky_1368
+            HMA: rrnB0249(paaC) rrnB0252(paaA)
+            HHI: HAH_4363(paaC) HAH_4365(paaA)
+            HHN: HISP_17040 HISP_17050
+            HTU: Htur_2886 Htur_2888 Htur_4171 Htur_4174
+            NMG: Nmag_1025 Nmag_1027
+            HVO: HVO_A0507(paaA) HVO_A0509(paaI)
+            HME: HFX_6377(paaC) HFX_6379(paaA)
+            HJE: HacjB3_15606 HacjB3_15621
+            HBO: Hbor_36280 Hbor_36300
+            NAT: NJ7G_1914 NJ7G_1916
+            NGE: Natgr_1244 Natgr_1246
+            HRU: Halru_1659 Halru_1661
+            NOU: Natoc_0733 Natoc_0736 Natoc_1119 Natoc_1121
+            SALI: L593_02395(paaA) L593_02405
+            HAH: Halar_3581 Halar_3583
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.149
+            IUBMB Enzyme Nomenclature: 1.14.13.149
+            ExPASy - ENZYME nomenclature database: 1.14.13.149
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.14.13.149
+            BRENDA, the Enzyme Database: 1.14.13.149
+///

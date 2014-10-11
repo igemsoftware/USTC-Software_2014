@@ -1,0 +1,181 @@
+ENTRY       EC 1.1.1.145                Enzyme
+NAME        3beta-hydroxy-Delta5-steroid dehydrogenase;
+            progesterone reductase;
+            Delta5-3beta-hydroxysteroid dehydrogenase;
+            3beta-hydroxy-5-ene steroid dehydrogenase;
+            3beta-hydroxy steroid dehydrogenase/isomerase;
+            3beta-hydroxy-Delta5-C27-steroid dehydrogenase/isomerase;
+            3beta-hydroxy-Delta5-C27-steroid oxidoreductase;
+            3beta-hydroxy-5-ene-steroid oxidoreductase;
+            steroid-Delta5-3beta-ol dehydrogenase;
+            3beta-HSDH;
+            5-ene-3-beta-hydroxysteroid dehydrogenase;
+            3beta-hydroxy-5-ene-steroid dehydrogenase
+CLASS       Oxidoreductases;
+            Acting on the CH-OH group of donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     3beta-hydroxy-Delta5-steroid:NAD+ 3-oxidoreductase
+REACTION    a 3beta-hydroxy-Delta5-steroid + NAD+ = a 3-oxo-Delta5-steroid + NADH + H+ [RN:R03176]
+ALL_REAC    R03176;
+            (other) R01837 R02216 R02499 R02840 R03327 R04163 R04678 R04849 R09920
+SUBSTRATE   3beta-hydroxy-Delta5-steroid [CPD:C03836];
+            NAD+ [CPD:C00003]
+PRODUCT     3-oxo-Delta5-steroid [CPD:C01034];
+            NADH [CPD:C00004];
+            H+ [CPD:C00080]
+COMMENT     This activity is found in several bifunctional enzymes that catalyse the oxidative conversion of Delta5-3-hydroxy steroids to a Delta4-3-oxo configuration. This conversion is carried out in two separate, sequential reactions; in the first reaction, which requires NAD+, the enzyme catalyses the dehydrogenation of the 3beta-hydroxy steroid to a 3-oxo intermediate. In the second reaction the reduced coenzyme, which remains attached to the enzyme, activates the isomerization of the Delta5 form to a Delta4 form (cf. EC 5.3.3.1, steroid Delta-isomerase). Substrates include dehydroepiandrosterone (which is converted into androst-5-ene-3,17-dione), pregnenolone (converted to progesterone) and cholest-5-en-3-one, an intermediate of cholesterol degradation.
+HISTORY     EC 1.1.1.145 created 1972
+REFERENCE   1  [PMID:4226148]
+  AUTHORS   Cheatum SG, Watten JC.
+  TITLE     Purification and properties of 3-beta-hydroxysteroid dehydrogenase and delta-5-3-ketosteroid isomerase from bovine corpora lutea.
+  JOURNAL   Biochim. Biophys. Acta. 122 (1966) 1-13.
+  ORGANISM  Bos taurus
+REFERENCE   2  [PMID:14220672]
+  AUTHORS   KORITZ SB.
+  TITLE     THE CONVERSION OF PREGNENOLONE TO PROGESTERONE BY SMALL PARTICLES FROM RAT ADRENAL.
+  JOURNAL   Biochemistry. 3 (1964) 1098-102.
+  ORGANISM  Rattus norvegicus
+REFERENCE   3
+  AUTHORS   Neville, A.M., Orr, J.C. and Engel, L.L.
+  TITLE     Delta5-3beta-Hydroxy steroid dehydrogenase activities of bovine adrenal cortex.
+  JOURNAL   Biochem. J. 107 (1968) 20.
+PATHWAY     ec00140  Steroid hormone biosynthesis
+            ec00984  Steroid degradation
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00070  3beta-hydroxy-delta5-steroid dehydrogenase / steroid delta-isomerase
+            K16045  3beta-hydroxy-delta5-steroid dehydrogenase / steroid delta-isomerase
+GENES       HSA: 3283(HSD3B1) 3284(HSD3B2)
+            PTR: 457165(HSD3B2) 469446(HSD3B1)
+            PPS: 100982464(HSD3B2) 100983009
+            GGO: 101141801 101146563(HSD3B2)
+            PON: 100451655(HSD3B1) 100452394(HSD3B2)
+            MCC: 100424395 713091(HSD3B1)
+            MCF: 102133592(HSD3B1) 102134747 102135110
+            MMU: 15492(Hsd3b1) 15493(Hsd3b2) 15495(Hsd3b4) 15496(Hsd3b5) 15497(Hsd3b6)
+            RNO: 100911116 100911154 24470(Hsd3b5) 29632(Hsd3b6) 360348(Hsd3b1) 682974(Hsd3b)
+            CGE: 100770922 100772588
+            HGL: 101707488(Hsd3b1) 101707858
+            TUP: 102470981 102471410
+            CFA: 483146(HSD3B2)
+            AML: 100464280(HSD3B1)
+            FCA: 100616070(HSD3B1)
+            PTG: 102957262
+            BTA: 281824(HSD3B1)
+            BOM: 102274088
+            PHD: 102328070
+            CHX: 100860869(3BHSD)
+            SSC: 445539(HSD3B1)
+            CFR: 102512447
+            ECB: 100034078(HSD3B1)
+            MYB: 102250585(HAO2)
+            MYD: 102773058
+            PALE: 102891879
+            MDO: 100012668
+            SHR: 100913530
+            OAA: 100080135
+            GGA: 396015(HSD3B2)
+            TGU: 751770(HSD3B1)
+            FAB: 101817697
+            PHI: 102101526
+            APLA: 101793560 101803865
+            FPG: 101921564
+            FCH: 102052697
+            CLV: 102087460
+            ASN: 102367786
+            PSS: 102453952
+            CMY: 102934871
+            ACS: 100561899
+            XLA: 734818(hsd3b1)
+            XTR: 100490622
+            DRE: 373131(hsd3b1) 553532
+            TRU: 101069884
+            MZE: 101485719
+            OLA: 100144358(3bhsd)
+            XMA: 102228303
+            LCM: 102345588
+            BFO: BRAFLDRAFT_221648 BRAFLDRAFT_245803
+            DME: Dmel_CG7724
+            DPO: Dpse_GA20545
+            DAN: Dana_GF10105 Dana_GF19644
+            DER: Dere_GG13606
+            DSE: Dsec_GM25688
+            DSI: Dsim_GD14693
+            DWI: Dwil_GK12665
+            DYA: Dyak_GE19901
+            DGR: Dgri_GH16404
+            DMO: Dmoj_GI12485
+            DVI: Dvir_GJ12388
+            AGA: AgaP_AGAP006654
+            AAG: AaeL_AAEL000733
+            CQU: CpipJ_CPIJ003056
+            NVI: 100120136
+            ISC: IscW_ISCW007167 IscW_ISCW018715
+            TSP: Tsp_09898
+            MTU: Rv1106c
+            MTV: RVBD_1106c
+            MTC: MT1137
+            MRA: MRA_1117
+            MTF: TBFG_11128
+            MTB: TBMG_02877
+            MTK: TBSG_02893
+            MTZ: TBXG_002857
+            MTG: MRGA327_06925
+            MTI: MRGA423_06915
+            MTE: CCDC5079_1022
+            MTUR: CFBS_1174
+            MTL: CCDC5180_1014
+            MTO: MTCTRI2_1136
+            MTD: UDA_1106c
+            MTN: ERDMAN_1239
+            MTJ: J112_05975
+            MTUB: MT7199_1133
+            MTUC: J113_07785
+            MTUE: J114_05980
+            MTX: M943_05820
+            MTUH: I917_07855
+            MTUL: TBHG_01091
+            MBO: Mb1136c
+            MBB: BCG_1166c
+            MBT: JTY_1139
+            MBM: BCGMEX_1138c
+            MBK: K60_011910
+            MAF: MAF_11210
+            MCE: MCAN_11161
+            MCQ: BN44_11231
+            MCV: BN43_30163
+            MCX: BN42_20954
+            MCZ: BN45_30150
+            MLE: ML1942
+            MLB: MLBr_01942
+            MPA: MAP2688
+            MAO: MAP4_1128
+            MAV: MAV_1225
+            MIT: OCO_11340
+            MIR: OCQ_11350
+            MIA: OCU_11320
+            MID: MIP_01824
+            MYO: OEM_11450
+            MSM: MSMEG_5228
+            MSG: MSMEI_5091
+            MSA: Mycsm_05045
+            MUL: MUL_0172
+            MVA: Mvan_4635
+            MGI: Mflv_2075
+            MSP: Mspyr1_14990
+            MMC: Mmcs_4109
+            MKM: Mkms_4185
+            MJL: Mjls_4340
+            MJD: JDM601_1056
+            MMI: MMAR_4359
+            MRH: MycrhN_3550
+            MMM: W7S_05545
+            MCB: Mycch_4050
+            MLI: MULP_04570
+            MKN: MKAN_07985
+            MNE: D174_21420
+DBLINKS     ExplorEnz - The Enzyme Database: 1.1.1.145
+            IUBMB Enzyme Nomenclature: 1.1.1.145
+            ExPASy - ENZYME nomenclature database: 1.1.1.145
+            BRENDA, the Enzyme Database: 1.1.1.145
+            CAS: 9044-85-3
+///

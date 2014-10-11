@@ -1,0 +1,14 @@
+ENTRY       R03145                      Reaction
+NAME        pyruvate:ubiquinone oxidoreductase
+DEFINITION  Pyruvate + Ubiquinone + H2O <=> Acetate + Ubiquinol + CO2
+EQUATION    C00022 + C00399 + C00001 <=> C00033 + C00390 + C00011
+COMMENT     previously called pyruvate:ferricytochrome-b1 oxidoreductase (ec 1.2.2.2)
+            ubiquinol is re-oxidized by ferricytochrome in respiratory chain
+RPAIR       RP00162  C00390_C00399 cofac [RC:RC00061]
+            RP02797  C00022_C00033 main [RC:RC00860]
+            RP05678  C00001_C00033 leave
+            RP05698  C00011_C00022 leave
+ENZYME      1.2.5.1
+PATHWAY     rn00620  Pyruvate metabolism
+ORTHOLOGY   K00156  pyruvate dehydrogenase (quinone) [EC:1.2.5.1]
+///

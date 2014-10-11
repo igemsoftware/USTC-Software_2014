@@ -1,0 +1,14 @@
+ENTRY       R01814                      Reaction
+NAME        L-Tryptophan,tetrahydrobiopterin:oxygen oxidoreductase (5-hydroxylating)
+DEFINITION  Tetrahydrobiopterin + L-Tryptophan + Oxygen <=> 5-Hydroxy-L-tryptophan + Dihydrobiopterin + H2O
+EQUATION    C00272 + C00078 + C00007 <=> C00643 + C00268 + C00001
+COMMENT     two-step reaction (see R07213+R04734)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00063  C00268_C00272 cofac [RC:RC00023]
+            RP01776  C00078_C00643 main [RC:RC00490]
+            RP06720  C00007_C00643 leave
+ENZYME      1.14.16.4
+PATHWAY     rn00380  Tryptophan metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00502  tryptophan 5-monooxygenase [EC:1.14.16.4]
+///

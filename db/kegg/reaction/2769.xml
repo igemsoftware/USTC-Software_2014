@@ -1,0 +1,12 @@
+ENTRY       R02769                      Reaction
+NAME        phosphoenolpyruvate:N-acyl-D-mannosamine-6-phosphate C-(1-carboxyvinyl)transferase (phosphate-hydrolysing, 2-carboxy-2-oxoethyl-forming);
+            N-acylneuraminate 9-phosphate pyruvate-lyase (pyruvate-phosphorylating)
+DEFINITION  N-Acylneuraminate 9-phosphate + Orthophosphate <=> N-Acyl-D-mannosamine 6-phosphate + Phosphoenolpyruvate + H2O
+EQUATION    C01200 + C00009 <=> C00686 + C00074 + C00001
+COMMENT     multi-step reaction
+RPAIR       RP00122  C00009_C00074 leave
+            RP02484  C00686_C01200 main [RC:RC00159]
+            RP07170  C00074_C01200 trans
+            RP15462  C00001_C01200 leave
+ENZYME      2.5.1.57
+///

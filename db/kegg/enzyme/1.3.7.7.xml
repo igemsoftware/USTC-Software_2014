@@ -1,0 +1,192 @@
+ENTRY       EC 1.3.7.7                  Enzyme
+NAME        ferredoxin:protochlorophyllide reductase (ATP-dependent);
+            light-independent protochlorophyllide reductase
+CLASS       Oxidoreductases;
+            Acting on the CH-CH group of donors;
+            With an iron-sulfur protein as acceptor
+SYSNAME     ATP-dependent ferredoxin:protochlorophyllide-a 7,8-oxidoreductase
+REACTION    chlorophyllide a + oxidized ferredoxin + 2 ADP + 2 phosphate = protochlorophyllide a + reduced ferredoxin + 2 ATP + 2 H2O [RN:R06282]
+ALL_REAC    R06282
+SUBSTRATE   chlorophyllide a [CPD:C02139];
+            oxidized ferredoxin [CPD:C00139];
+            ADP [CPD:C00008];
+            phosphate [CPD:C00009]
+PRODUCT     protochlorophyllide a [CPD:C02880];
+            reduced ferredoxin [CPD:C00138];
+            ATP [CPD:C00002];
+            H2O [CPD:C00001]
+COMMENT     Occurs in photosynthetic bacteria, cyanobacteria, green algae and gymnosperms. The enzyme catalyses trans-reduction of the D-ring of protochlorophyllide; the product has the (7S,8S)-configuration. Unlike EC 1.3.1.33 (protochlorophyllide reductase), light is not required. The enzyme contains a [4Fe-4S] cluster, and structurally resembles the Fe protein/MoFe protein complex of nitrogenase (EC 1.18.6.1), which catalyses an ATP-driven reduction.
+HISTORY     EC 1.3.7.7 created 2011, modified 2013
+REFERENCE   1  [PMID:8199775]
+  AUTHORS   Fujita Y, Matsumoto H, Takahashi Y, Matsubara H
+  TITLE     Identification of a nifDK-like gene (ORF467) involved in the biosynthesis of chlorophyll in the cyanobacterium Plectonema boryanum.
+  JOURNAL   Plant. Cell. Physiol. 34 (1993) 305-14.
+  ORGANISM  Plectonema boryanum
+  SEQUENCE  [up:Q04607]
+REFERENCE   2  [PMID:18358835]
+  AUTHORS   Nomata J, Ogawa T, Kitashima M, Inoue K, Fujita Y
+  TITLE     NB-protein (BchN-BchB) of dark-operative protochlorophyllide reductase is the catalytic component containing oxygen-tolerant Fe-S clusters.
+  JOURNAL   FEBS. Lett. 582 (2008) 1346-50.
+  ORGANISM  Rhodobacter capsulatus
+  SEQUENCE  [rcp:RCAP_rcc00665 RCAP_rcc00664]
+REFERENCE   3  [PMID:20400946]
+  AUTHORS   Muraki N, Nomata J, Ebata K, Mizoguchi T, Shiba T, Tamiaki H, Kurisu G, Fujita Y
+  TITLE     X-ray crystal structure of the light-independent protochlorophyllide reductase.
+  JOURNAL   Nature. 465 (2010) 110-4.
+  ORGANISM  Rhodobacter capsulatus
+  SEQUENCE  [rcp:RCAP_rcc00665 RCAP_rcc00664]
+PATHWAY     ec00860  Porphyrin and chlorophyll metabolism
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K04037  light-independent protochlorophyllide reductase subunit L
+            K04038  light-independent protochlorophyllide reductase subunit N
+            K04039  light-independent protochlorophyllide reductase subunit B
+GENES       SMO: SELMODRAFT_137820 SELMODRAFT_137838 SemoP_p069(chlN) SemoP_p070(chlL)
+            PPP: PhpapaCp084(chlN) PhpapaCp085(chlL)
+            CRE: ChreCp009(chlL) ChreCp056(chlN)
+            VCN: VOLCADRAFT_36866
+            CSL: CospP_p031(chlN) CospP_p032(chlL)
+            CVR: ChvaP_p023(chlL) ChvaP_p024(chlN)
+            ALV: Alvin_2639 Alvin_2641 Alvin_2642
+            TVI: Thivi_2407 Thivi_2409 Thivi_2410
+            TMB: Thimo_3022 Thimo_3024 Thimo_3025
+            HHA: Hhal_1634(chlL) Hhal_1636 Hhal_1637
+            HHC: M911_08225 M911_08230 M911_11045(chlL)
+            RGE: RGE_33460(bchN) RGE_33470(bchB) RGE_33490(bchL)
+            BRA: BRADO1639(bchN) BRADO1640(bchB) BRADO1642(chlL)
+            BBT: BBta_6414(chlL) BBta_6416(bchB) BBta_6417(bchN)
+            BRS: S23_19380(bchN) S23_19390(bchB) S23_19410(bchL)
+            AOL: S58_58960 S58_58980 S58_58990
+            RPA: RPA1542(bchN) RPA1543(bchB) RPA1545(chlL)
+            RPB: RPB_3978(chlL) RPB_3980 RPB_3981
+            RPC: RPC_1313 RPC_1314 RPC_1316(chlL)
+            RPD: RPD_3733(chlL) RPD_3735 RPD_3736
+            RPE: RPE_1347 RPE_1348 RPE_1350(chlL)
+            RPT: Rpal_1730 Rpal_1731 Rpal_1733(chlL)
+            RPX: Rpdx1_3975 Rpdx1_3977 Rpdx1_3978
+            MEX: Mext_4813(chlL) Mext_4815 Mext_4816
+            MEA: Mex_1p5270(bchL) Mex_1p5272(bchB) Mex_1p5273(bchN)
+            MDI: METDI5870(bchL) METDI5872(bchB) METDI5873(bchN)
+            MCH: Mchl_5280(chlL) Mchl_5282 Mchl_5283
+            MRD: Mrad2831_1845(chlL) Mrad2831_1847 Mrad2831_1848
+            MET: M446_3718 M446_3719 M446_3721(chlL)
+            MPO: Mpop_5358(chlL) Mpop_5360 Mpop_5361
+            MSL: Msil_2039(chlL) Msil_2041 Msil_2042
+            RVA: Rvan_0995 Rvan_0997 Rvan_0998
+            BSB: Bresu_3064 Bresu_3065 Bresu_3067
+            RSP: RSP_0285(bchN) RSP_0286(bchB) RSP_0288(bchL)
+            RSH: Rsph17029_1928 Rsph17029_1929 Rsph17029_1931(chlL)
+            RSQ: Rsph17025_1007(chlL) Rsph17025_1009 Rsph17025_1010
+            RSK: RSKD131_1611 RSKD131_1612 RSKD131_1614(chlL)
+            RCP: RCAP_rcc00662(bchL) RCAP_rcc00664(bchB) RCAP_rcc00665(bchN)
+            JAN: Jann_0158(chlL) Jann_0160 Jann_0161
+            RDE: RD1_0136(chlL) RD1_0138(bchB) RD1_0139(bchN)
+            RLI: RLO149_p940710(bchN) RLO149_p940720(bchB) RLO149_p940740(bchL)
+            DSH: Dshi_3534(bchN) Dshi_3535(bchB) Dshi_3537(chlL)
+            RED: roselon_01096 roselon_01097 roselon_01100
+            AMV: ACMV_18960(bchN) ACMV_18970(bchB) ACMV_18990(bchL)
+            RRU: Rru_A0620(chlL) Rru_A0622 Rru_A0623
+            RRF: F11_03180(chlL) F11_03190 F11_03195
+            RCE: RC1_2112(chlL) RC1_2114(bchB) RC1_2115(bchN)
+            RPM: RSPPHO_00023(bchN) RSPPHO_00024(bchB) RSPPHO_00026(bchL)
+            BSUB: BEST7613_4456(chlN) BEST7613_4458(chlL) BEST7613_5615(chlB)
+            HMO: HM1_0685(bchB) HM1_0686(bchN) HM1_0687(chlL)
+            RXY: Rxyl_0605
+            RRD: RradSPS_2244 RradSPS_2245
+            CTM: Cabther_A1044 Cabther_A1045 Cabther_B0078
+            SYN: slr0749(chlL) slr0750(chlN) slr0772(chlB)
+            SYZ: MYO_121700(chlB) MYO_130750(chlL) MYO_130760(chlN)
+            SYY: SYNGTS_2150(chlB) SYNGTS_3039(chlL) SYNGTS_3040(chlN)
+            SYT: SYNGTI_2149(chlB) SYNGTI_3038(chlL) SYNGTI_3039(chlN)
+            SYS: SYNPCCN_2148(chlB) SYNPCCN_3037(chlL) SYNPCCN_3038(chlN)
+            SYQ: SYNPCCP_2148(chlB) SYNPCCP_3037(chlL) SYNPCCP_3038(chlN)
+            SYW: SYNW1723(chlN) SYNW1724(chlB) SYNW1725(chlL)
+            SYC: syc0136_c(chlN) syc0137_c(chlL) syc2256_d(chlB)
+            SYF: Synpcc7942_1419(chlL) Synpcc7942_1420 Synpcc7942_1838
+            SYD: Syncc9605_0741(chlL) Syncc9605_0746 Syncc9605_0747
+            SYE: Syncc9902_1619 Syncc9902_1620 Syncc9902_1621(chlL)
+            SYG: sync_1973(chlN) sync_1974(chlB) sync_1975(chlL)
+            SYR: SynRCC307_1564(chlN) SynRCC307_1565(chlB) SynRCC307_1566(chlL)
+            SYX: SynWH7803_0670(chlL) SynWH7803_0671(chlB) SynWH7803_0672(chlN)
+            SYP: SYNPCC7002_A1652(chlB) SYNPCC7002_A2345(chlN) SYNPCC7002_A2347(chlL)
+            CYA: CYA_0895(chlB) CYA_2382(chlL) CYA_2385(chlN)
+            CYB: CYB_1013(chlN) CYB_1016(chlL) CYB_2193(chlB)
+            SYNE: Syn6312_1205 Syn6312_1207 Syn6312_1582
+            SYNP: Syn7502_00235 Syn7502_02381 Syn7502_02382
+            TEL: tll2345(chlN) tll2347(chlL) tll2392(chlB)
+            THN: NK55_02205(chlB) NK55_08865(chlL)
+            MAR: MAE_16230(chlL) MAE_16250(chlN) MAE_53860(chlB)
+            CYT: cce_1954(chlB) cce_4532(chlL) cce_4534(chlN)
+            CYP: PCC8801_0789 PCC8801_0791(chlL) PCC8801_2892
+            CYC: PCC7424_0359 PCC7424_2373 PCC7424_2375(chlL)
+            CYN: Cyan7425_3666 Cyan7425_3939(chlL) Cyan7425_3941
+            CYH: Cyan8802_0817 Cyan8802_0819(chlL) Cyan8802_3204
+            CYJ: Cyan7822_0387 Cyan7822_5364 Cyan7822_5367
+            AMR: AM1_1444(chlN) AM1_1445(chlL) AM1_1539(chlB)
+            CGC: Cyagr_0022 Cyagr_0023 Cyagr_0024
+            CAN: Cyan10605_1486 Cyan10605_1751 Cyan10605_1752
+            CSN: Cyast_0617 Cyast_1027 Cyast_1028
+            DSL: Dacsa_1185 Dacsa_1186 Dacsa_1832
+            HAO: PCC7418_0278 PCC7418_1056 PCC7418_1057
+            GLP: Glo7428_1354 Glo7428_1356 Glo7428_1608
+            CMP: Cha6605_3485 Cha6605_4481 Cha6605_4482
+            CYU: UCYN_05200 UCYN_07810 UCYN_07820
+            TER: Tery_1530 Tery_1532(chlL) Tery_3812
+            LEP: Lepto7376_0274 Lepto7376_0276 Lepto7376_3140
+            GEI: GEI7407_0687 GEI7407_0690 GEI7407_3804
+            OAC: Oscil6304_0210 Oscil6304_0212 Oscil6304_4765
+            ONI: Osc7112_5030 Osc7112_5032 Osc7112_5075
+            PSEU: Pse7367_0393 Pse7367_0394 Pse7367_1691
+            CEP: Cri9333_3341 Cri9333_3342 Cri9333_4624
+            MIC: Mic7113_2553 Mic7113_2554 Mic7113_4690
+            ARP: NIES39_L01300(chlB) NIES39_L05610(chlL) NIES39_L05630(chlN)
+            GVI: gvip017(chlB) gvip327(chlN) gvip328(chlL)
+            GLJ: GKIL_1146(chlB) GKIL_3933(chlN) GKIL_3934(chlL)
+            ANA: all5076(chlN) all5078(chlL) alr3441(chlB)
+            NPU: Npun_R4420 Npun_R4422(chlL) Npun_R4932
+            NOS: Nos7107_1417 Nos7107_1419 Nos7107_2455
+            NOP: Nos7524_4546 Nos7524_5003 Nos7524_5005
+            AVA: Ava_2330 Ava_2332(chlL) Ava_3466
+            ANB: ANA_C11498 ANA_C12003(bchL) ANA_C12004(bchB) ANA_C12005(bchN)
+            ACY: Anacy_4067 Anacy_4069 Anacy_5053
+            NAZ: Aazo_2304 Aazo_2306 Aazo_3531
+            CSG: Cylst_0047 Cylst_2976 Cylst_2978
+            CALO: Cal7507_3531 Cal7507_3533 Cal7507_4592
+            CALT: Cal6303_1058 Cal6303_3518 Cal6303_3520
+            RIV: Riv7116_2692 Riv7116_2694 Riv7116_5386
+            PMA: Pro_0544(chlL) Pro_0545(chlB) Pro_0546(chlN)
+            PMM: PMM0543(chlL) PMM0544(chlB) PMM0545(chlN)
+            PMT: PMT1215(chlN) PMT1216(chlB) PMT1217(chlL)
+            PMN: PMN2A_1872(chlL) PMN2A_1873 PMN2A_1874
+            PMI: PMT9312_0543(chlL) PMT9312_0544 PMT9312_0545
+            PMB: A9601_05991(chlL) A9601_06001(chlB) A9601_06011(chlN)
+            PMC: P9515_06071(chlL) P9515_06081(chlB) P9515_06091(chlN)
+            PMF: P9303_07931(chlL) P9303_07941(chlB) P9303_07951(chlN)
+            PMG: P9301_05691(chlL) P9301_05701(chlB) P9301_05711(chlN)
+            PMH: P9215_06241(chlL) P9215_06251(chlB) P9215_06261(chlN)
+            PMJ: P9211_05451(chlL) P9211_05461(chlB) P9211_05471(chlN)
+            PME: NATL1_05971(chlL) NATL1_05981(chlN) NATL1_05991(chlB)
+            CTHE: Chro_0243 Chro_4522 Chro_4524
+            PLP: Ple7327_2234 Ple7327_3088 Ple7327_3089
+            SCS: Sta7437_3128 Sta7437_3756 Sta7437_3758
+            CTE: CT2150(chlL) CT2151(bchB) CT2152(bchN)
+            CPC: Cpar_0219 Cpar_0220 Cpar_0221(chlL)
+            CCH: Cag_1813(chlL) Cag_1814 Cag_1815
+            CPH: Cpha266_2386(chlL) Cpha266_2387 Cpha266_2388
+            CPB: Cphamn1_2258(chlL) Cphamn1_2259 Cphamn1_2260
+            CLI: Clim_2192(chlL) Clim_2193 Clim_2194
+            PVI: Cvib_0281 Cvib_0282 Cvib_0283(chlL)
+            PLT: Plut_0215 Plut_0216 Plut_0217(chlL)
+            PPH: Ppha_0324 Ppha_0325 Ppha_0326(chlL)
+            PAA: Paes_2027(chlL) Paes_2028 Paes_2029
+            CTS: Ctha_1371(chlL) Ctha_1372 Ctha_1373
+            RRS: RoseRS_1908(chlL) RoseRS_1909 RoseRS_1910
+            RCA: Rcas_1536 Rcas_1537 Rcas_1538(chlL)
+            CAU: Caur_2554(chlL) Caur_2556 Caur_2557
+            CAG: Cagg_3478(chlL) Cagg_3480 Cagg_3481
+            CHL: Chy400_2758(chlL) Chy400_2760 Chy400_2761
+DBLINKS     ExplorEnz - The Enzyme Database: 1.3.7.7
+            IUBMB Enzyme Nomenclature: 1.3.7.7
+            ExPASy - ENZYME nomenclature database: 1.3.7.7
+            BRENDA, the Enzyme Database: 1.3.7.7
+///

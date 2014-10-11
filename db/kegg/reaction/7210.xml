@@ -1,0 +1,14 @@
+ENTRY       R07210                      Reaction
+NAME        alkanesulfonate, reduced-FMN:oxygen oxidoreductase
+DEFINITION  Alkanesulfonate + Reduced FMN + Oxygen <=> Aldehyde + FMN + Sulfite + H2O
+EQUATION    C15521 + C01847 + C00007 <=> C00071 + C00061 + C00094 + C00001
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00852  C00061_C01847 cofac [RC:RC00126]
+            RP10362  C00071_C15521 main [RC:RC01779]
+            RP10363  C00007_C00071 leave
+            RP10364  C00094_C15521 leave
+ENZYME      1.14.14.5
+PATHWAY     rn00920  Sulfur metabolism
+ORTHOLOGY   K00299  FMN reductase [EC:1.5.1.38]
+            K04091  alkanesulfonate monooxygenase [EC:1.14.14.5]
+///

@@ -1,0 +1,16 @@
+ENTRY       R05290                      Reaction
+DEFINITION  Toluate + Oxygen + NADH + H+ <=> cis-1,2-Dihydroxy-4-methylcyclohexa-3,5-diene-1-carboxylate + NAD+
+EQUATION    C01454 + C00007 + C00004 + C00080 <=> C06729 + C00003
+COMMENT     NADPH (see R05291)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00828  C01454_C06729 main [RC:RC00270]
+            RP06104  C00007_C06729 leave
+ENZYME      1.14.12.-
+PATHWAY     rn00622  Xylene degradation
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K05549  benzoate/toluate 1,2-dioxygenase alpha subunit [EC:1.14.12.10 1.14.12.-]
+            K05550  benzoate/toluate 1,2-dioxygenase beta subunit [EC:1.14.12.10 1.14.12.-]
+            K05784  benzoate/toluate 1,2-dioxygenase reductase subunit [EC:1.18.1.-]
+///

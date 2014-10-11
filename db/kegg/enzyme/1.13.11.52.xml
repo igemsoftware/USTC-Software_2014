@@ -1,0 +1,204 @@
+ENTRY       EC 1.13.11.52               Enzyme
+NAME        indoleamine 2,3-dioxygenase;
+            IDO (ambiguous);
+            tryptophan pyrrolase (ambiguous)
+CLASS       Oxidoreductases;
+            Acting on single donors with incorporation of molecular oxygen (oxygenases);
+            With incorporation of two atoms of oxygen
+SYSNAME     D-tryptophan:oxygen 2,3-oxidoreductase (decyclizing)
+REACTION    (1) D-tryptophan + O2 = N-formyl-D-kynurenine [RN:R07362];
+            (2) L-tryptophan + O2 = N-formyl-L-kynurenine [RN:R00678]
+ALL_REAC    R00678 R07362;
+            (other) R02702 R02909 R03628
+SUBSTRATE   D-tryptophan [CPD:C00525];
+            O2 [CPD:C00007];
+            L-tryptophan [CPD:C00078]
+PRODUCT     N-formyl-D-kynurenine [CPD:C15605];
+            N-formyl-L-kynurenine [CPD:C02700]
+COMMENT     A protohemoprotein. Requires ascorbic acid and methylene blue for activity. This enzyme has broader substrate specificity than EC 1.13.11.11, tryptophan 2,3-dioxygenase [1]. It is induced in response to pathological conditions and host-defense mechanisms and its distribution in mammals is not confined to the liver [2]. While the enzyme is more active with D-tryptophan than L-tryptophan, its only known function to date is in the metabolism of L-tryptophan [2,6]. Superoxide radicals can replace O2 as oxygen donor [4,7].
+HISTORY     EC 1.13.11.52 created 2006
+REFERENCE   1  [PMID:6065097]
+  AUTHORS   Yamamoto S, Hayaishi O.
+  TITLE     Tryptophan pyrrolase of rabbit intestine. D- and L-tryptophan-cleaving enzyme or enzymes.
+  JOURNAL   J. Biol. Chem. 242 (1967) 5260-6.
+  ORGANISM  Oryctolagus cuniculus
+REFERENCE   2  [PMID:2428037]
+  AUTHORS   Yasui H, Takai K, Yoshida R, Hayaishi O.
+  TITLE     Interferon enhances tryptophan metabolism by inducing pulmonary indoleamine 2,3-dioxygenase: its possible occurrence in cancer patients.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 83 (1986) 6622-6.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:3620]
+REFERENCE   3  [PMID:2419335]
+  AUTHORS   Takikawa O, Yoshida R, Kido R, Hayaishi O.
+  TITLE     Tryptophan degradation in mice initiated by indoleamine 2,3-dioxygenase.
+  JOURNAL   J. Biol. Chem. 261 (1986) 3648-53.
+  ORGANISM  Mus musculus
+  SEQUENCE  [mmu:15930]
+REFERENCE   4  [PMID:194886]
+  AUTHORS   Hirata F, Ohnishi T, Hayaishi O.
+  TITLE     Indoleamine 2,3-dioxygenase. Characterization and properties of enzyme. O2- complex.
+  JOURNAL   J. Biol. Chem. 252 (1977) 4637-42.
+  ORGANISM  Rattus norvegicus
+REFERENCE   5  [PMID:10719243]
+  AUTHORS   Dang Y, Dale WE, Brown OR.
+  TITLE     Comparative effects of oxygen on indoleamine 2,3-dioxygenase and tryptophan 2,3-dioxygenase of the kynurenine pathway.
+  JOURNAL   Free. Radic. Biol. Med. 28 (2000) 615-24.
+  ORGANISM  Homo sapiens, Rattus norvegicus
+  SEQUENCE  [rno:66029]
+REFERENCE   6  [PMID:12766158]
+  AUTHORS   Littlejohn TK, Takikawa O, Truscott RJ, Walker MJ.
+  TITLE     Asp274 and his346 are essential for heme binding and catalytic function of human indoleamine 2,3-dioxygenase.
+  JOURNAL   J. Biol. Chem. 278 (2003) 29525-31.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:3620]
+REFERENCE   7  [PMID:10731095]
+  AUTHORS   Thomas SR, Stocker R.
+  TITLE     Redox reactions related to indoleamine 2,3-dioxygenase and tryptophan metabolism along the kynurenine pathway.
+  JOURNAL   Redox. Rep. 4 (1999) 199-220.
+REFERENCE   8  [PMID:2334706]
+  AUTHORS   Sono M.
+  TITLE     Spectroscopic and equilibrium studies of ligand and organic substrate binding to indolamine 2,3-dioxygenase.
+  JOURNAL   Biochemistry. 29 (1990) 1451-60.
+  ORGANISM  Oryctolagus cuniculus
+PATHWAY     ec00380  Tryptophan metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00463  indoleamine 2,3-dioxygenase
+GENES       HSA: 169355(IDO2) 3620(IDO1)
+            PTR: 464134(IDO1) 472744(IDO2)
+            PPS: 100969906(IDO2) 100970596(IDO1)
+            GGO: 101131712(IDO1) 101134018(IDO2)
+            PON: 100435160(IDO2) 100436652(IDO1)
+            MCC: 574370(IDO1) 707424(IDO2)
+            MCF: 102126825(IDO1) 102129002(IDO2)
+            MMU: 15930(Ido1) 209176(Ido2)
+            RNO: 66029(Ido1) 681319(Ido2)
+            CGE: 100754111(Ido2) 100754402
+            HGL: 101723386(Ido2) 101723745(Ido1)
+            TUP: 102485305(IDO2) 102494474(IDO1)
+            CFA: 475574(IDO1) 482846(IDO2)
+            AML: 100480334(IDO2) 100480587
+            FCA: 101096722(IDO2) 101096977(IDO1)
+            PTG: 102959839(IDO2) 102969142(IDO1)
+            BTA: 506281(IDO1) 513810(IDO2)
+            BOM: 102264395(IDO1) 102267516(IDO2)
+            PHD: 102314881(IDO2) 102344186(IDO1)
+            CHX: 102184119(IDO1) 102184590(IDO2)
+            SSC: 100519341 100519877(IDO1)
+            CFR: 102512459(IDO2) 102518520
+            ECB: 100056686(IDO2)
+            MYB: 102256119(IDO1) 102256420(IDO2)
+            MYD: 102755941(IDO2) 102756580(IDO1)
+            PALE: 102878670(IDO2) 102896453(IDO1)
+            MDO: 100032999(IDO1) 100033003(IDO2)
+            SHR: 100926615(IDO1) 100926876(IDO2)
+            OAA: 100085939(IDO2) 100086385(IDO1)
+            GGA: 426785(INDOL1)
+            MGP: 100548413
+            TGU: 100219367(IDO2)
+            FAB: 101810571(IDO2)
+            PHI: 102102902(IDO2)
+            APLA: 101791377(IDO2)
+            FPG: 101914440(IDO2)
+            FCH: 102055026(IDO2)
+            CLV: 102086320(IDO2)
+            ASN: 102376360(IDO2)
+            PSS: 102453712(IDO2) 102455437(IDO1)
+            CMY: 102945834(IDO2) 102946062(IDO1)
+            ACS: 100560005
+            XLA: 100037099(ido1)
+            XTR: 448488(ido1)
+            DRE: 571967(ido1)
+            TRU: 101074760
+            MZE: 101472607 101479436
+            OLA: 101167965 101169805
+            XMA: 102229086 102236092
+            LCM: 102364348(IDO2)
+            BFO: BRAFLDRAFT_126354
+            SPU: 577419
+            BMY: Bm1_01790
+            LOA: LOAG_11225
+            TSP: Tsp_04838
+            SMM: Smp_133900
+            NVE: NEMVE_v1g244579
+            CRE: CHLREDRAFT_170294
+            CVR: CHLNCDRAFT_133396
+            SCE: YJR078W(BNA2)
+            AGO: AGOS_ACR188C
+            ERC: Ecym_4655
+            LTH: KLTH0C05412g
+            PPA: PAS_chr1-4_0083
+            VPO: Kpol_520p15
+            ZRO: ZYRO0F13376g
+            TPF: TPHA_0B01500(TPHA0B01500)
+            TDL: TDEL_0C03080(TDEL0C03080)
+            DHA: DEHA2G12188g
+            PIC: PICST_87443(BNA2)
+            PGU: PGUG_04309
+            LEL: LELG_04075
+            CAL: CaO19.583
+            CTP: CTRG_05778
+            CDU: CD36_51480
+            COT: CORT_0F00140
+            YLI: YALI0F26455g
+            CLU: CLUG_01155
+            NCR: NCU01402 NCU05752
+            SMP: SMAC_08377 SMAC_08948 SMAC_08990
+            PAN: PODANSg2504 PODANSg762 PODANSg7893
+            TTT: THITE_2106420 THITE_2110987 THITE_2120385
+            MTM: MYCTH_2300294 MYCTH_2303249 MYCTH_2307600
+            MGR: MGG_00755 MGG_13773 MGG_14348
+            FGR: FG02657.1 FG04828.1 FG09040.1
+            NHE: NECHADRAFT_70501 NECHADRAFT_70795 NECHADRAFT_85363
+            TRE: TRIREDRAFT_123550 TRIREDRAFT_54260 TRIREDRAFT_64330
+            VAL: VDBG_00295 VDBG_04314 VDBG_09667
+            SSL: SS1G_00858 SS1G_08222 SS1G_10307
+            BFU: BC1G_03469 BC1G_09032
+            ANI: AN1858.2 AN2509.2 AN9108.2
+            AFM: AFUA_3G14250 AFUA_4G09830 AFUA_7G02010
+            AOR: AOR_1_1074084(AO090020000618) AOR_1_2200154(AO090003001248) AOR_1_980074(AO090038000578)
+            ANG: ANI_1_1150184(An04g07210) ANI_1_530084(An09g04250) ANI_1_90104(An12g00660)
+            AFV: AFLA_025840 AFLA_071180 AFLA_098110
+            ACT: ACLA_041740 ACLA_049060 ACLA_065510
+            NFI: NFIA_063050 NFIA_106220 NFIA_114740
+            PCS: Pc13g15680 Pc21g12230 Pc22g11860
+            CIM: CIMG_00126 CIMG_07803
+            CPW: CPC735_041970 CPC735_060120
+            PBL: PAAG_05853 PAAG_06866
+            URE: UREG_00231 UREG_02134
+            ABE: ARB_03636 ARB_04584 ARB_05733
+            TVE: TRV_00864 TRV_01957 TRV_04509
+            AJE: HCAG_01148 HCAG_04432
+            PNO: SNOG_02815 SNOG_10574 SNOG_10794
+            PTE: PTT_07650 PTT_08299 PTT_13994
+            ZTR: MYCGRDRAFT_52885 MYCGRDRAFT_73635 MYCGRDRAFT_75056
+            TML: GSTUM_00005398001 GSTUM_00007145001
+            PPL: POSPLDRAFT_102140
+            LBC: LACBIDRAFT_157851 LACBIDRAFT_253793 LACBIDRAFT_253815 LACBIDRAFT_256000 LACBIDRAFT_257063 LACBIDRAFT_306113 LACBIDRAFT_327015
+            MPR: MPER_12716
+            CCI: CC1G_01112 CC1G_02499 CC1G_12399
+            SCM: SCHCODRAFT_113210 SCHCODRAFT_17654 SCHCODRAFT_33516 SCHCODRAFT_61392
+            UMA: UM03728.1
+            PGR: PGTG_06521 PGTG_09355
+            MBR: MONBRDRAFT_23639 MONBRDRAFT_31854
+            TET: TTHERM_00035520
+            EHX: EMIHUDRAFT_213134 EMIHUDRAFT_452099
+            GTT: GUITHDRAFT_149065
+            NOC: Noc_1709
+            NHL: Nhal_1432
+            ELI: ELI_06040
+            MAI: MICA_2463
+            MAN: A11S_2397
+            ASD: AS9A_2778
+            SCB: SCAB_15261
+            MMAR: MODMU_2501
+            GAU: GAU_3278(indO)
+            SACI: Sinac_2518
+            FGI: FGOP10_01262
+            NDE: NIDE0784
+            HRU: Halru_2529
+DBLINKS     ExplorEnz - The Enzyme Database: 1.13.11.52
+            IUBMB Enzyme Nomenclature: 1.13.11.52
+            ExPASy - ENZYME nomenclature database: 1.13.11.52
+            BRENDA, the Enzyme Database: 1.13.11.52
+            CAS: 9014-51-1
+///

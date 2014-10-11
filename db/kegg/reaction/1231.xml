@@ -1,0 +1,16 @@
+ENTRY       R01231                      Reaction
+NAME        Xanthosine-5'-phosphate:L-glutamine amido-ligase (AMP-forming)
+DEFINITION  ATP + Xanthosine 5'-phosphate + L-Glutamine + H2O <=> AMP + Diphosphate + GMP + L-Glutamate
+EQUATION    C00002 + C00655 + C00064 + C00001 <=> C00020 + C00013 + C00144 + C00025
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00024  C00025_C00064 main [RC:RC00010]
+            RP00573  C00144_C00655 main [RC:RC00204]
+            RP05695  C00001_C00025 leave
+            RP06495  C00064_C00144 trans
+            RP06496  C00020_C00655 trans
+ENZYME      6.3.5.2
+PATHWAY     rn00230  Purine metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K01951  GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+///

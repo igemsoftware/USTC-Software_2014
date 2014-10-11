@@ -1,0 +1,16 @@
+ENTRY       R05259                      Reaction
+NAME        Parathion,reduced-flavoprotein:oxygen oxidoreductase
+DEFINITION  Parathion + Reduced flavoprotein + Oxygen <=> Paraoxon + Oxidized flavoprotein + Sulfur + H2O
+EQUATION    C06604 + C03024 + C00007 <=> C06606 + C03161 + C00087 + C00001
+COMMENT     P-450 reductase is the flavoprotein and re-reduced by NADPH (see R08551)
+            The product sulfur is reactive (e.g. forming hydrodisulfide with cysteine residue)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP04860  C06604_C06606 main [RC:RC01311]
+            RP13353  C00007_C06606 leave
+            RP13354  C00087_C06604 leave
+ENZYME      1.14.14.1
+PATHWAY     rn00627  Aminobenzoate degradation
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K00493  unspecific monooxygenase [EC:1.14.14.1]
+            K14338  cytochrome P450 / NADPH-cytochrome P450 reductase [EC:1.14.14.1 1.6.2.4]
+///

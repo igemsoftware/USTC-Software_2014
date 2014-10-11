@@ -1,0 +1,11 @@
+ENTRY       R00668                      Reaction
+NAME        L-ornithine:2-oxoglutarate aminotransferase
+DEFINITION  L-Ornithine + 2-Oxoglutarate <=> delta-1-Pyrroline-5-carboxylate + L-Glutamate + H2O
+EQUATION    C00077 + C00026 <=> C04322 + C00025 + C00001
+COMMENT     two-step reaction (R00667+R03314)
+RPAIR       RP00014  C00025_C00026 main [RC:RC00006]
+            RP01040  C00077_C04322 main [RC:RC00353]
+            RP05697  C00001_C00026 leave
+            RP06031  C00025_C00077 trans
+ENZYME      2.6.1.13        2.6.1.68
+///

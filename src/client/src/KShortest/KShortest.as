@@ -1,0 +1,184 @@
+package KShortest
+{
+	import flash.display.Sprite;
+	import flash.events.Event;
+	import flash.events.MouseEvent;
+	import flash.net.URLLoader;
+	import flash.net.URLRequest;
+	import flash.net.URLRequestMethod;
+	import flash.net.URLVariables;
+	
+	import Assembly.BioParts.BioBlock;
+	import Assembly.Canvas.Net;
+	
+	import GUI.Assembly.HitBox;
+	import GUI.Assembly.LabelTextField;
+	import GUI.Assembly.TextInput;
+	import GUI.RichGrid.RichGrid;
+	import GUI.RichUI.RichButton;
+	
+	import IEvent.FocusItemEvent;
+	
+	import Layout.LayoutManager;
+	
+	import Style.FilterPacket;
+	
+	import fl.events.ListEvent;
+	
+	public class KShortest extends Sprite
+	{
+		public var searchbn:RichButton=new RichButton(0,60,30);
+		public var searchorder:TextInput=new TextInput();
+		private var grid:RichGrid=new RichGrid();
+		private var data:Array=[];
+		private var order_lb:LabelTextField=new LabelTextField("Route Limit:");
+		private var label_y:int=10;
+		private var input_y:int=30
+		
+		private var searchable:Boolean=false;
+		private var hitA:HitBox=new HitBox();
+		
+		private var resPre:LinkWayPreviewer=new LinkWayPreviewer();
+		
+		private static var pre:KShortestNodePreviewer=new KShortestNodePreviewer();
+		
+		public function KShortest(){
+			
+			/*<object_id> means the id of objective data.   you can replace string like '54abd652987a55fee' to <object_id>
+			the format is [ [<object_id>,<object_id>,<object_id>,.....], [<object_id>,<object_id>,....], .....]
+			is a list of list of object_id, each list inside is a path, more front,more short */
+			
+			searchbn.label="Search";
+			searchbn.setSize(100,30);
+			
+			addChild(hitA);
+			addChild(pre);
+			addChild(searchbn);
+			addChild(searchorder);
+			addChild(order_lb);
+			addChild(grid);
+			addChild(resPre);
+			
+			searchorder.setSize(50,26);
+			searchorder.text="5";
+			
+			grid.columns=["N","Route"];
+			grid.columnWidths=[60,700];
+			
+			searchbn.addEventListener(MouseEvent.CLICK,post);
+			grid.addEventListener(ListEvent.ITEM_CLICK,function (e:ListEvent):void{
+				resPre.GiveNodes(e.item.Path);
+			});
+			
+			setSize(600,350);
+			
+			addEventListener(Event.ADDED_TO_STAGE,function (e):void{
+				GlobalVaribles.eventDispatcher.addEventListener(FocusItemEvent.FOCUS_CHANGE,GlobalVaribles_Focus_ChangeHandler);
+				grid.dataProvider=[];
+				resPre.clear();
+				GlobalVaribles_Focus_ChangeHandler();
+			});
+			
+			addEventListener(Event.REMOVED_FROM_STAGE,function (e):void{
+				GlobalVaribles.eventDispatcher.removeEventListener(FocusItemEvent.FOCUS_CHANGE,GlobalVaribles_Focus_ChangeHandler);
+			});
+			
+		}
+		
+		public function setSize(w:Number,h:Number):void{
+			
+			hitA.setSize(w,h);
+			
+			grid.setSize(w,h-200);
+			
+			pre.setSize(w);
+			
+			LayoutManager.setHorizontalLayout(this,LayoutManager.LAYOUT_ALIGN_RIGHT,w,50,20,searchbn);
+			
+			LayoutManager.setHorizontalLayout(this,LayoutManager.LAYOUT_ALIGN_RIGHT,w,5,5,order_lb,searchorder);
+			
+			grid.y=120;
+			
+			resPre.y=grid.y+grid.Height+5;
+			
+			resPre.setSize(w);
+			
+		}
+		
+		private var Loader:URLLoader=new URLLoader();
+		
+		protected function post(event:MouseEvent):void
+		{
+			grid.dataProvider=[];
+			if(searchable){
+				var handle:String=GlobalVaribles.kShort_ADDRESS;
+				var searchRequest:URLRequest=new URLRequest(handle);
+				
+				var postvar:URLVariables=new URLVariables();
+				
+				postvar.id1=pre.node1.ID;
+				postvar.id2=pre.node2.ID;
+				postvar.order=searchorder.text;
+				
+				searchRequest.method=URLRequestMethod.POST;
+				searchRequest.data=postvar;
+				
+				Loader.load(searchRequest);
+				
+				Loader.addEventListener(Event.COMPLETE,shownode);
+			}
+		}
+		
+		protected function shownode(e:Event):void{
+			var id:String;
+			id=e.target.data;
+			trace(id)
+			id='{"results":'+id.split("\'").join("\"")+"}";
+			var result:Object=JSON.parse(id).results;
+			data=[];
+			if(result.length!=0){
+				for(var i:int=0;i<result.length;i++){
+					var tmp:Object=result[i];
+					var str:String;
+					for(var j:int=0;j<tmp.length;j++){
+						if(j==0)str=tmp[j].NAME+" →";
+						else if(j==tmp.length-1) str+=tmp[j].NAME;
+						else str+=tmp[j].NAME+" →";
+					}
+					data.push({N:i+1,Route:str,Path:tmp});
+				}
+			}
+			else{
+				data.push({N:"Error",Route:"Route Not Found"});
+			}
+			
+			grid.dataProvider=data;
+		}
+		
+		protected function GlobalVaribles_Focus_ChangeHandler(event:FocusItemEvent=null):void
+		{
+			// TODO Auto-generated method stub
+			var i:int=0;
+			var nodes:Array=[];
+			
+			Loader.removeEventListener(Event.COMPLETE,shownode);
+			for each (var node:BioBlock in Net.PickList) 
+			{
+				nodes[i]=node.NodeLink;
+				i++;
+				if(i==2)break;
+				
+			}
+			pre.GiveNodes(nodes[0],nodes[1]);
+			if(i==2){
+				searchbn.filters=[FilterPacket.HighLightGlow];
+				searchable=true;
+				grid.dataProvider=[];
+				resPre.clear();
+			}else{
+				searchbn.filters=[];
+				searchable=false;
+			}
+		}
+	}
+}

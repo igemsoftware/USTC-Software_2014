@@ -1,0 +1,11 @@
+ENTRY       R09812                      Reaction
+NAME        pentalenene,NADPH:oxygen 13-oxidoreductase (hydroxylating)
+DEFINITION  Pentalenene + NADPH + H+ + Oxygen <=> Pentalen-13-ol + NADP+ + H2O
+EQUATION    C01841 + C00005 + C00080 + C00007 <=> C19938 + C00006 + C00001
+COMMENT     first step of two-step reaction (see R09814, R09812+R09813)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP15403  C01841_C19938 main [RC:RC00724]
+            RP15404  C00007_C19938 leave
+ENZYME      1.14.13.133
+///

@@ -1,0 +1,14 @@
+ENTRY       R00789                      Reaction
+NAME        ammonia:NADP+ oxidoreductase
+DEFINITION  Ammonia + 3 NADP+ + 2 H2O <=> Nitrite + 3 NADPH + 3 H+
+EQUATION    C00014 + 3 C00006 + 2 C00001 <=> C00088 + 3 C00005 + 3 C00080
+COMMENT     NADH (see R00787)
+            NH3 + H2O <=> NH4OH
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP05706  C00001_C00088 leave
+            RP05887  C00014_C00088 main [RC:RC00176]
+ENZYME      1.7.1.4
+PATHWAY     rn00910  Nitrogen metabolism
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K17877  nitrite reductase (NAD(P)H) [EC:1.7.1.4]
+///

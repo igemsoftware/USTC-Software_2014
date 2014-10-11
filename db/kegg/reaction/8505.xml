@@ -1,0 +1,12 @@
+ENTRY       R08505                      Reaction
+NAME        cholesterol 26-hydroxylase
+DEFINITION  Cholesterol + Oxygen + NADPH + H+ <=> Cholest-5-ene-3beta,26-diol + NADP+ + H2O
+EQUATION    C00187 + C00007 + C00005 + C00080 <=> C15610 + C00006 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP11203  C00007_C15610 leave
+            RP12944  C00187_C15610 main [RC:RC01216]
+ENZYME      1.14.13.15
+PATHWAY     rn00120  Primary bile acid biosynthesis
+ORTHOLOGY   K00488  cholestanetriol 26-monooxygenase [EC:1.14.13.15]
+///

@@ -1,0 +1,21 @@
+ENTRY       R06453                      Reaction
+DEFINITION  Malonyl-CoA + 6 Methylmalonyl-CoA + 6 NADPH + 6 H+ <=> 8,8a-Deoxyoleandolide + 7 CoA + 7 CO2 + H2O + 6 NADP+
+EQUATION    C00083 + 6 C02557 + 6 C00005 + 6 C00080 <=> C11989 + 7 C00010 + 7 C00011 + C00001 + 6 C00006
+COMMENT     8,8a-deoxyoleandolide synthase,OleA1-3
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00051  C00010_C00083 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP05961  C00010_C02557 main [RC:RC00004]
+            RP06096  C00011_C02557 leave
+            RP08515  C00001_C02557 leave
+            RP08971  C02557_C11989 main [RC:RC02831]
+            RP12841  C02557_C11989 main [RC:RC02826]
+            RP12879  C00083_C11989 main [RC:RC02918]
+            RP12912  C02557_C11989 main [RC:RC02828]
+            RP12951  C02557_C11989 main [RC:RC02829]
+            RP12995  C02557_C11989 main [RC:RC02830]
+            RP13198  C02557_C11989 main [RC:RC02826]
+PATHWAY     rn00522  Biosynthesis of 12-, 14- and 16-membered macrolides
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K16007  8,8a-deoxyoleandolide synthase
+///

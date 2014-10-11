@@ -1,0 +1,13 @@
+ENTRY       R04850                      Reaction
+NAME        17alpha,21-dihydroxypregnenolone:oxygen oxidoreductase (11-hydroxylating)
+DEFINITION  17alpha,21-Dihydroxypregnenolone + Reduced ferredoxin + Oxygen <=> 11beta,17alpha,21-Trihydroxypregnenolone + Oxidized ferredoxin + H2O
+EQUATION    C05487 + C00138 + C00007 <=> C05489 + C00139 + C00001
+COMMENT     Oxidized ferredoxin is reduced by NADPH (see R01195)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP04466  C05487_C05489 main [RC:RC00661]
+            RP08321  C00007_C05489 leave
+ENZYME      1.14.15.4
+PATHWAY     rn00140  Steroid hormone biosynthesis
+ORTHOLOGY   K00497  steroid 11beta-monooxygenase [EC:1.14.15.4]
+            K07433  steroid 11beta-monooxygenase / corticosterone 18-monooxygenase [EC:1.14.15.4 1.14.15.5]
+///

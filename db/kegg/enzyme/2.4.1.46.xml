@@ -1,0 +1,100 @@
+ENTRY       EC 2.4.1.46                 Enzyme
+NAME        monogalactosyldiacylglycerol synthase;
+            uridine diphosphogalactose-1,2-diacylglycerol galactosyltransferase;
+            UDP-galactose:diacylglycerol galactosyltransferase;
+            MGDG synthase;
+            UDP galactose-1,2-diacylglycerol galactosyltransferase;
+            UDP-galactose-diacylglyceride galactosyltransferase;
+            UDP-galactose:1,2-diacylglycerol 3-beta-D-galactosyltransferase;
+            1beta-MGDG;
+            1,2-diacylglycerol 3-beta-galactosyltransferase;
+            UDP-galactose:1,2-diacyl-sn-glycerol 3-beta-D-galactosyltransferase
+CLASS       Transferases;
+            Glycosyltransferases;
+            Hexosyltransferases
+SYSNAME     UDP-alpha-D-galactose:1,2-diacyl-sn-glycerol 3-beta-D-galactosyltransferase
+REACTION    UDP-alpha-D-galactose + a 1,2-diacyl-sn-glycerol = UDP + a 1,2-diacyl-3-O-(beta-D-galactosyl)-sn-glycerol [RN:R02691]
+ALL_REAC    R02691
+SUBSTRATE   UDP-alpha-D-galactose [CPD:C00052];
+            1,2-diacyl-sn-glycerol [CPD:C00641]
+PRODUCT     UDP [CPD:C00015];
+            1,2-diacyl-3-O-(beta-D-galactosyl)-sn-glycerol
+COMMENT     This enzyme adds only one galactosyl group to the diacylglycerol; EC 2.4.1.241, digalactosyldiacylglycerol synthase, adds a galactosyl group to the product of the above reaction. There are three isoforms in Arabidopsis that can be divided into two types, A-type (MGD1) and B-type (MGD2 and MGD3). MGD1 is the isoform responsible for the bulk of monogalactosyldiacylglycerol (MGDG) synthesis in Arabidopsis [4].
+HISTORY     EC 2.4.1.46 created 1972, modified 2003, modified 2005
+REFERENCE   1  [PMID:4838219]
+  AUTHORS   Veerkamp JH.
+  TITLE     Biochemical changes in Bifidobacterium bifidum var. pennsylvanicus after cell-wall inhibition. VI. Biosynthesis of the galactosyldiglycerides.
+  JOURNAL   Biochim. Biophys. Acta. 348 (1974) 23-34.
+  ORGANISM  Bifidobacterium bifidum
+REFERENCE   2  [PMID:5681471]
+  AUTHORS   Wenger DA, Petitpas JW, Pieringer RA.
+  TITLE     The metabolism of glyceride glycolipids. II. Biosynthesis of monogalactosyl diglyceride from uridine diphosphate galactose and diglyceride in brain.
+  JOURNAL   Biochemistry. 7 (1968) 3700-7.
+  ORGANISM  Rattus norvegicus
+REFERENCE   3  [PMID:10518794]
+  AUTHORS   Miege C, Marechal E, Shimojima M, Awai K, Block MA, Ohta H, Takamiya K, Douce R, Joyard J.
+  TITLE     Biochemical and topological properties of type A MGDG synthase, a spinach chloroplast envelope enzyme catalyzing the synthesis of both prokaryotic and eukaryotic MGDG.
+  JOURNAL   Eur. J. Biochem. 265 (1999) 990-1001.
+  ORGANISM  Spinacia oleracea
+  SEQUENCE  [up:Q9SM44]
+REFERENCE   4  [PMID:15590685]
+  AUTHORS   Benning C, Ohta H.
+  TITLE     Three enzyme systems for galactoglycerolipid biosynthesis are coordinately regulated in plants.
+  JOURNAL   J. Biol. Chem. 280 (2005) 2397-400.
+  ORGANISM  Arabidopsis sp.
+PATHWAY     ec00561  Glycerolipid metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K03715  1,2-diacylglycerol 3-beta-galactosyltransferase
+GENES       ATH: AT2G11810(MGDC) AT4G31780(MGD1) AT5G20410(MGD2)
+            ALY: ARALYDRAFT_488950 ARALYDRAFT_899522 ARALYDRAFT_913288
+            CRB: CARUB_v10000862mg CARUB_v10006327mg CARUB_v10013637mg
+            EUS: EUTSA_v10013431mg EUTSA_v10022676mg EUTSA_v10024883mg
+            CIT: 102614331 102616808 102624996
+            CIC: CICLE_v10007936mg CICLE_v10008213mg CICLE_v10010220mg
+            TCC: TCM_036877 TCM_038181
+            GMX: 100794727 100804814 100806325 547469(MGD1)
+            MTR: MTR_139s0002 MTR_139s0008 MTR_1g013650 MTR_4g115920
+            CAM: 101510704 101515157
+            FVE: 101295108 101304410 101315455
+            CSV: 101209030 101215352 101230488
+            RCU: RCOM_0003390 RCOM_0920510
+            POP: POPTR_0006s06210g POPTR_0006s28230g(POPTRDRAFT_562015) POPTR_0018s02800g(POPTRDRAFT_835845) POPTR_0025s00590g
+            VVI: 100247378 100248939
+            SLY: 101246362 101259856 101263085
+            SOT: 102578822 102588275 102600797 102600922
+            OSA: 4331045 4345212 4347099
+            DOSA: Os02t0802700-01(Os02g0802700) Os08t0299400-01(Os08g0299400) Os09t0423600-01(Os09g0423600)
+            OBR: 102704776 102712378 102717644
+            BDI: 100822971 100838296 100844719
+            SBI: SORBI_02g025070(SORBIDRAFT_02g025070) SORBI_04g036240(SORBIDRAFT_04g036240) SORBI_07g027910(SORBIDRAFT_07g027910)
+            ZMA: 100274282 100281388(si660066d07) 100383973
+            SITA: 101760868 101764122 101764643
+            ATR: s00019p00072350(AMTR_s00019p00072350) s00033p00201820(AMTR_s00033p00201820)
+            SMO: SELMODRAFT_271007(MGD)
+            PPP: PHYPADRAFT_105339 PHYPADRAFT_117530
+            CRE: CHLREDRAFT_113664
+            VCN: VOLCADRAFT_58564
+            OLU: OSTLU_119506(MgdA)
+            MIS: MICPUN_107335(MGDA)
+            MPP: MICPUCDRAFT_45255
+            CSL: COCSUDRAFT_35261
+            CME: CYME_CMI271C
+            GSL: Gasu_04690 Gasu_39500 Gasu_56730
+            CCP: CHC_T00008381001 CHC_T00008619001 CHC_T00008753001 CHC_T00009002001
+            PTI: PHATRDRAFT_14125
+            TPS: THAPSDRAFT_264013 THAPS_263200
+            NGD: NGA_0081800(MGD)
+            EHX: EMIHUDRAFT_414703 EMIHUDRAFT_467938 EMIHUDRAFT_470522 EMIHUDRAFT_73870
+            GTT: GUITHDRAFT_118033 GUITHDRAFT_142007 GUITHDRAFT_146693 GUITHDRAFT_149692 GUITHDRAFT_156659
+            AJS: Ajs_1204
+            CTH: Cthe_2414
+            TBE: Trebr_1442
+            SUS: Acid_2769 Acid_4334
+            PLP: Ple7327_0258
+            CAP: CLDAP_04530
+DBLINKS     ExplorEnz - The Enzyme Database: 2.4.1.46
+            IUBMB Enzyme Nomenclature: 2.4.1.46
+            ExPASy - ENZYME nomenclature database: 2.4.1.46
+            BRENDA, the Enzyme Database: 2.4.1.46
+            CAS: 37277-55-7
+///

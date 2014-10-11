@@ -1,0 +1,13 @@
+ENTRY       R01778                      Reaction
+NAME        (3S)-3-hydroxyacyl-CoA:NAD+ oxidoreductase
+DEFINITION  (3S)-3-Hydroxyacyl-CoA + NAD+ <=> 3-Oxoacyl-CoA + NADH + H+
+EQUATION    C00640 + C00003 <=> C00264 + C00004 + C00080
+COMMENT     general reaction
+            the enzyme ec 1.1.1.35 has broad specificity to acyl chain-length, while ec 1.1.1.211 is long-chain specific
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP01748  C00264_C00640 main [RC:RC00103]
+ENZYME      1.1.1.35        1.1.1.211
+PATHWAY     rn00062  Fatty acid elongation
+ORTHOLOGY   K00022  3-hydroxyacyl-CoA dehydrogenase [EC:1.1.1.35]
+            K07515  enoyl-CoA hydratase / long-chain 3-hydroxyacyl-CoA dehydrogenase [EC:4.2.1.17 1.1.1.211]
+///

@@ -1,0 +1,33 @@
+ENTRY       EC 3.5.4.30                 Enzyme
+NAME        dCTP deaminase (dUMP-forming)
+CLASS       Hydrolases;
+            Acting on carbon-nitrogen bonds, other than peptide bonds;
+            In cyclic amidines
+SYSNAME     dCTP aminohydrolase (dUMP-forming)
+REACTION    dCTP + 2 H2O = dUMP + diphosphate + NH3 [RN:R07307]
+ALL_REAC    R07307
+SUBSTRATE   dCTP [CPD:C00458];
+            H2O [CPD:C00001]
+PRODUCT     dUMP [CPD:C00365];
+            diphosphate [CPD:C00013];
+            NH3 [CPD:C00014]
+COMMENT     Requires Mg2+. Is highly specific for dCTP as substrate as dCMP, CTP, CDP, CMP, cytosine or deoxycytosine are not deaminated. While most bacteria require two enzymes to form dUMP from dCTP (EC 3.5.4.13, dCTP deaminase and EC 3.6.1.23, dUTP diphosphatase), the archaeon Methanocaldococcus jannaschii uses a single enzyme to carry out both functions. This enzyme can also act as a dUTP diphosphatase, but more slowly.
+HISTORY     EC 3.5.4.30 created 2003
+REFERENCE   1  [PMID:12538648]
+  AUTHORS   Li H, Xu H, Graham DE, White RH.
+  TITLE     The Methanococcus jannaschii dCTP deaminase is a bifunctional deaminase and diphosphatase.
+  JOURNAL   J. Biol. Chem. 278 (2003) 11100-6.
+  ORGANISM  Methanococcus jannaschii
+  SEQUENCE  [mja:MJ_0430]
+PATHWAY     ec00240  Pyrimidine metabolism
+ORTHOLOGY   K09887  dCTP deaminase (dUMP-forming)
+GENES       MJA: MJ_0430
+            MFE: Mefer_1292
+            MVU: Metvu_0792
+            MFS: MFS40622_1697
+            MMX: MmarC6_1247
+DBLINKS     ExplorEnz - The Enzyme Database: 3.5.4.30
+            IUBMB Enzyme Nomenclature: 3.5.4.30
+            ExPASy - ENZYME nomenclature database: 3.5.4.30
+            BRENDA, the Enzyme Database: 3.5.4.30
+///

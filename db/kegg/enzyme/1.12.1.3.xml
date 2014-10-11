@@ -1,0 +1,177 @@
+ENTRY       EC 1.12.1.3                 Enzyme
+NAME        hydrogen dehydrogenase (NADP+);
+            NADP+-linked hydrogenase;
+            NADP+-reducing hydrogenase;
+            hydrogenase (ambiguous);
+            hydrogenase I (ambiguous)
+CLASS       Oxidoreductases;
+            Acting on hydrogen as donor;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     hydrogen:NADP+ oxidoreductase
+REACTION    H2 + NADP+ = H+ + NADPH [RN:R07181]
+ALL_REAC    R07181
+SUBSTRATE   H2 [CPD:C00282];
+            NADP+ [CPD:C00006]
+PRODUCT     H+ [CPD:C00080];
+            NADPH [CPD:C00005]
+COMMENT     The protein from the bacterium Desulfovibrio fructosovorans is an iron-sulfur protein that exclusively functions as a hydrogen dehydrogenase [1], while the enzyme from the archaeon Pyrococcus furiosus is a nickel, iron, iron-sulfur protein, that is part of a heterotetrameric complex where the alpha and delta subunits function as a hydrogenase while the beta and gamma subunits function as sulfur reductase (EC 1.12.98.4, sulfhydrogenase). Different from EC 1.12.1.5, hydrogen dehydrogenase [NAD(P)+].
+HISTORY     EC 1.12.1.3 created 2002, modified 2013
+REFERENCE   1  [PMID:9703971]
+  AUTHORS   de Luca G, de Philip P, Rousset M, Belaich JP, Dermoun Z.
+  TITLE     The NADP-reducing hydrogenase of Desulfovibrio fructosovorans: evidence for a native complex with hydrogen-dependent methyl-viologen-reducing activity.
+  JOURNAL   Biochem. Biophys. Res. Commun. 248 (1998) 591-6.
+  ORGANISM  Desulfovibrio fructosovorans
+  SEQUENCE  [up:Q46508 Q46507 Q46506 Q46505]
+REFERENCE   2  [PMID:2538471]
+  AUTHORS   Bryant FO, Adams MW
+  TITLE     Characterization of hydrogenase from the hyperthermophilic archaebacterium, Pyrococcus furiosus.
+  JOURNAL   J. Biol. Chem. 264 (1989) 5070-9.
+  ORGANISM  Pyrococcus furiosus
+  SEQUENCE  [pfu:PF0894 PF0893]
+REFERENCE   3  [PMID:8389482]
+  AUTHORS   Ma K, Schicho RN, Kelly RM, Adams MW
+  TITLE     Hydrogenase of the hyperthermophile Pyrococcus furiosus is an elemental sulfur reductase or sulfhydrogenase: evidence for a sulfur-reducing hydrogenase ancestor.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 90 (1993) 5341-4.
+  ORGANISM  Pyrococcus furiosus
+REFERENCE   4
+  AUTHORS   Ma, K., Zhou, Z.H. and Adams, M.W.
+  TITLE     Hydrogen production from pyruvate by enzymes purified from the hyperthermophilic archaeon, Pyrococcus furiosus: A key role for NADPH.
+  JOURNAL   FEMS Microbiol. Lett. 122 (1994) 245-250.
+REFERENCE   5  [PMID:18156274]
+  AUTHORS   van Haaster DJ, Silva PJ, Hagedoorn PL, Jongejan JA, Hagen WR
+  TITLE     Reinvestigation of the steady-state kinetics and physiological function of the soluble NiFe-hydrogenase I of Pyrococcus furiosus.
+  JOURNAL   J. Bacteriol. 190 (2008) 1584-7.
+ORTHOLOGY   K17992  NADP-reducing hydrogenase subunit HndB
+            K17993  sulfhydrogenase subunit alpha
+            K17994  sulfhydrogenase subunit delta
+            K18330  NADP-reducing hydrogenase subunit HndA
+            K18331  NADP-reducing hydrogenase subunit HndC
+            K18332  NADP-reducing hydrogenase subunit HndD
+GENES       GEB: GM18_1856 GM18_1857 GM18_1858 GM18_1859
+            PCA: Pcar_1602(hndA-3) Pcar_1603(hndB-3) Pcar_1604(hndC-3) Pcar_1605(hndD-3) Pcar_1633(hndD-2) Pcar_1634(hndC-2) Pcar_1635(hndB-2) Pcar_1636(hndA-2) Pcar_1845(hndB-1) Pcar_1846(hndA-1)
+            PPD: Ppro_3516 Ppro_3517 Ppro_3518
+            DMA: DMR_02450 DMR_02460 DMR_02470(nuoF) DMR_02480
+            DAT: HRM2_16520
+            DTI: Desti_2752 Desti_2753
+            DBR: Deba_1519 Deba_1520
+            CCE: Ccel_2232 Ccel_2233 Ccel_2234 Ccel_2236
+            CLS: CXIVA_23660 CXIVA_23670(NuoF) CXIVA_23680 CXIVA_23700(NuoE)
+            CLB: Clo1100_2676 Clo1100_2677 Clo1100_2678 Clo1100_2680
+            AMT: Amet_0638 Amet_0639 Amet_0640 Amet_0641 Amet_4100
+            CTH: Cthe_0338 Cthe_0340 Cthe_0341 Cthe_0342
+            CTX: Clo1313_1881 Clo1313_1882 Clo1313_1883 Clo1313_1885
+            CCL: Clocl_1309 Clocl_1311 Clocl_1312 Clocl_1313
+            ESR: ES1_19890 ES1_19910
+            ESU: EUS_11300 EUS_11320
+            CSS: Cst_c09400(nuoE) Cst_c09420 Cst_c09430(nuoF2) Cst_c09440
+            CSD: Clst_0900(fhbA) Clst_0902(fdx1) Clst_0903(fhbB) Clst_0904(fhbC)
+            RCH: RUM_16060 RUM_16080 RUM_16090 RUM_16100
+            CLE: Clole_2394 Clole_2395 Clole_2396 Clole_2397
+            CCT: CC1_10620 CC1_10630 CC1_10640
+            CPY: Cphy_3801 Cphy_3803 Cphy_3804 Cphy_3805
+            CSH: Closa_3390 Closa_3392 Closa_3393 Closa_3394
+            DAE: Dtox_0172 Dtox_0173 Dtox_0174 Dtox_0176
+            DKU: Desku_2307 Desku_2308 Desku_2309 Desku_2311
+            TJR: TherJR_2550 TherJR_2551 TherJR_2552
+            DMI: Desmer_4360
+            DED: DHBDCA_p1587(hymC) DHBDCA_p1588(hymB) DHBDCA_p1589 DHBDCA_p1590(hymA) DHBDCA_p1640
+            DEC: DCF50_p1597(hymC) DCF50_p1598(hymB) DCF50_p1599 DCF50_p1600(hymA) DCF50_p1649
+            DRS: DEHRE_11735 DEHRE_11740 DEHRE_11745 DEHRE_11750 DEHRE_12025
+            ELM: ELI_0845 ELI_0846 ELI_0847
+            EAC: EAL2_c04310(hymC)
+            AWO: Awo_c26970(hydA1) Awo_c26980(hydB) Awo_c26990(hydD)
+            TTE: TTE0892 TTE0893(NuoF) TTE0894(NuoG)
+            TEX: Teth514_2138 Teth514_2139 Teth514_2140
+            THX: Thet_0795 Thet_0796 Thet_0797
+            TPD: Teth39_1456 Teth39_1457 Teth39_1458
+            TIT: Thit_0828 Thit_0829 Thit_0830
+            TMT: Tmath_0867 Tmath_0868 Tmath_0869
+            TBO: Thebr_1491 Thebr_1492 Thebr_1493
+            TWI: Thewi_0978 Thewi_0979 Thewi_0980
+            TEP: TepRe1_1888 TepRe1_1889 TepRe1_1890
+            TAE: TepiRe1_2033(hndD) TepiRe1_2034(hndC) TepiRe1_2035
+            MTA: Moth_1718
+            TPZ: Tph_c18450
+            CSC: Csac_1860 Csac_1862 Csac_1863 Csac_1864
+            ATE: Athe_1295 Athe_1297 Athe_1298 Athe_1299
+            COB: COB47_1258 COB47_1259 COB47_1260 COB47_1262
+            CHD: Calhy_1427 Calhy_1428 Calhy_1429 Calhy_1431
+            COW: Calow_1086 Calow_1088 Calow_1089 Calow_1090
+            CKI: Calkr_1280 Calkr_1282 Calkr_1283 Calkr_1284
+            CKN: Calkro_1402 Calkro_1403 Calkro_1404 Calkro_1406
+            CLC: Calla_0683 Calla_0685 Calla_0686 Calla_0687
+            TOC: Toce_0693 Toce_0695 Toce_0696 Toce_0697
+            TTM: Tthe_1116 Tthe_1118 Tthe_1119 Tthe_1120
+            TTO: Thethe_01060 Thethe_01062 Thethe_01063 Thethe_01064
+            TXY: Thexy_1580 Thexy_1581 Thexy_1582 Thexy_1584
+            TSH: Tsac_2126 Tsac_2127 Tsac_2128 Tsac_2130
+            CPO: COPRO5265_0177 COPRO5265_0179 COPRO5265_0180(nuoF) COPRO5265_0181
+            MAS: Mahau_1250 Mahau_1252 Mahau_1253 Mahau_1254
+            NTH: Nther_0098
+            HOR: Hore_06320
+            HAS: Halsa_1862 Halsa_1863 Halsa_1864 Halsa_1866
+            HPK: Hprae_1627 Hprae_1628 Hprae_1629 Hprae_1631
+            AAR: Acear_0268 Acear_0269 Acear_0271 Acear_2301
+            HHL: Halha_0377 Halha_2285 Halha_2286 Halha_2287 Halha_2289
+            TBE: Trebr_0332 Trebr_0333
+            TAZ: TREAZ_3248
+            TPED: TPE_0917
+            SCD: Spica_2775
+            SSM: Spirs_0474 Spirs_3688 Spirs_3689
+            STA: STHERM_c13750 STHERM_c13760
+            STQ: Spith_1508 Spith_1509
+            SFC: Spiaf_1750 Spiaf_2407
+            SLR: L21SP2_0274 L21SP2_0275
+            SBU: SpiBuddy_2313 SpiBuddy_2314
+            SGP: SpiGrapes_2477 SpiGrapes_2478
+            TAI: Taci_0147 Taci_0148 Taci_0149 Taci_0150
+            ACO: Amico_1557
+            TLI: Tlie_1619
+            AMO: Anamo_0024 Anamo_1679
+            BACC: BRDCF_07135 BRDCF_07140 BRDCF_07145 BRDCF_07150
+            PDI: BDI_1042 BDI_1043 BDI_1044 BDI_1045
+            OSP: Odosp_0184 Odosp_0185 Odosp_0186 Odosp_0187
+            DOI: FH5T_03065 FH5T_03070 FH5T_03075 FH5T_03080
+            ATM: ANT_17790
+            TMA: TM0011
+            TMM: Tmari_0008
+            TMI: THEMA_04745
+            TPT: Tpet_0912
+            TLE: Tlet_1521
+            TRQ: TRQ2_0934
+            TNA: CTN_0687
+            TNP: Tnap_0642
+            TTA: Theth_1566
+            TME: Tmel_1171
+            TAF: THA_1558
+            FNO: Fnod_0994
+            FPE: Ferpe_1120
+            PMO: Pmob_0723 Pmob_0724 Pmob_0725 Pmob_0726
+            KOL: Kole_0181
+            MPZ: Marpi_1894 Marpi_1895 Marpi_1896 Marpi_1897
+            MPG: Theba_0464
+            CEX: CSE_11970
+            DTH: DICTH_0768
+            DTU: Dtur_0918
+            PHO: PH1292 PH1294
+            PAB: PAB0640(hydD-2) PAB0641(hydA-2) PAB1786 PAB1787
+            PFU: PF0893 PF0894 PF1331 PF1332
+            PFI: PFC_03675 PFC_03680 PFC_05870 PFC_05875
+            PYN: PNA2_1551 PNA2_1553 PNA2_1665 PNA2_1666
+            PYA: PYCH_00040 PYCH_00050 PYCH_08370 PYCH_08380
+            PYS: Py04_0892 Py04_0893 Py04_1129 Py04_1130
+            TKO: TK2069 TK2070
+            TON: TON_0052 TON_0053 TON_0534 TON_0535
+            TSI: TSIB_0284 TSIB_0285 TSIB_1522 TSIB_1523
+            TBA: TERMP_00069 TERMP_00070 TERMP_00536 TERMP_00537
+            THE: GQS_02470 GQS_02475 GQS_04985 GQS_04990
+            THA: TAM4_296 TAM4_701 TAM4_99
+            THM: CL1_0143 CL1_0144 CL1_0643 CL1_0644
+            TLT: OCC_03062 OCC_03067 OCC_12216 OCC_12221
+            KCR: Kcr_0321 Kcr_0322
+DBLINKS     ExplorEnz - The Enzyme Database: 1.12.1.3
+            IUBMB Enzyme Nomenclature: 1.12.1.3
+            ExPASy - ENZYME nomenclature database: 1.12.1.3
+            BRENDA, the Enzyme Database: 1.12.1.3
+            CAS: 9027-05-8
+///

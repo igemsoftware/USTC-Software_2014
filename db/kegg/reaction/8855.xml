@@ -1,0 +1,13 @@
+ENTRY       R08855                      Reaction
+NAME        Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-gamma-D-glutamyl-L-lysyl-D-alanyl-D-alanine:L-glutamine amido-ligase (ADP-forming)
+DEFINITION  Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-gamma-D-glutamyl-L-lysyl-D-alanyl-D-alanine + L-Glutamine + ATP + H2O <=> Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-isoglutaminyl-L-lysyl-D-alanyl-D-alanine + L-Glutamate + ADP + Orthophosphate
+EQUATION    C05893 + C00064 + C00002 + C00001 <=> C05894 + C00025 + C00008 + C00009
+COMMENT     NH3 can act instead of L-glutamine (see R05030)
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00024  C00025_C00064 main [RC:RC00010]
+            RP04637  C05893_C05894 main [RC:RC00358]
+            RP05695  C00001_C00025 leave
+            RP13913  C00064_C05894 trans
+ENZYME      6.3.5.-
+///

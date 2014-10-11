@@ -1,0 +1,13 @@
+ENTRY       R00316                      Reaction
+NAME        ATP:acetate adenylyltransferase
+DEFINITION  ATP + Acetate <=> Diphosphate + Acetyl adenylate
+EQUATION    C00002 + C00033 <=> C00013 + C05993
+COMMENT     the first step of two-step reaction (see R00235, R00316+R00236)
+            subsequently R00236
+RPAIR       RP00009  C00002_C00013 leave
+            RP04833  C00033_C05993 main [RC:RC00043]
+            RP08575  C00002_C05993 trans
+ENZYME      6.2.1.1
+PATHWAY     rn00620  Pyruvate metabolism
+ORTHOLOGY   K01895  acetyl-CoA synthetase [EC:6.2.1.1]
+///

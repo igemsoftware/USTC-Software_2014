@@ -1,0 +1,13 @@
+ENTRY       R02211                      Reaction
+NAME        Progesterone,hydrogen-donor:oxygen oxidoreductase (17-alpha-hydroxylating)
+DEFINITION  Progesterone + Reduced acceptor + Oxygen <=> 17alpha-Hydroxyprogesterone + Acceptor + H2O
+EQUATION    C00410 + C00030 + C00007 <=> C01176 + C00028 + C00001
+COMMENT     P-450 reductase is the acceptor and re-reduced by NADPH
+RPAIR       RP00013  C00001_C00007 cofac
+            RP02044  C00410_C01176 main [RC:RC00660]
+            RP06901  C00007_C01176 leave
+ENZYME      1.14.99.9
+PATHWAY     rn00140  Steroid hormone biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00512  steroid 17alpha-monooxygenase / 17alpha-hydroxyprogesterone aldolase [EC:1.14.99.9 4.1.2.30]
+///

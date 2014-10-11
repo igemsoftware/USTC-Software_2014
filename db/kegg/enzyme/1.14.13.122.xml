@@ -1,0 +1,93 @@
+ENTRY       EC 1.14.13.122              Enzyme
+NAME        chlorophyllide-a oxygenase;
+            chlorophyllide a oxygenase;
+            chlorophyll-b synthase;
+            CAO
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     chlorophyllide-a:oxygen 71-oxidoreductase
+REACTION    chlorophyllide a + 2 O2 + 2 NADPH + 2 H+ = chlorophyllide b + 3 H2O +  NADP+ (overall reaction) [RN:R10080];
+            (1a) chlorophyllide a + O2 + NADPH + H+ = 71-hydroxychlorophyllide a + H2O + NADP+ [RN:R08203];
+            (1b) 71-hydroxychlorophyllide a + O2 + NADPH + H+ = chlorophyllide b + 2 H2O + NADP+ [RN:R08204]
+ALL_REAC    R08203 R08204 R10080
+SUBSTRATE   chlorophyllide a [CPD:C02139];
+            O2 [CPD:C00007];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            71-hydroxychlorophyllide a
+PRODUCT     chlorophyllide b [CPD:C16541];
+            H2O [CPD:C00001];
+            NADP+ [CPD:C00006];
+            71-hydroxychlorophyllide a
+COMMENT     Chlorophyll b is required for the assembly of stable light-harvesting complexes (LHCs) in the chloroplast of green algae, cyanobacteria and plants [2,3]. Contains a mononuclear iron centre [3]. The enzyme catalyses two successive hydroxylations at the 7-methyl group of chlorophyllide a. The second step yields the aldehyde hydrate, which loses H2O spontaneously to form chlorophyllide b [2]. Chlorophyll a and protochlorophyllide a are not substrates [2].
+HISTORY     EC 1.14.13.122 created 2006 as EC 1.13.12.14, transferred 2011 to EC 1.14.13.122, modified 2011
+REFERENCE   1  [PMID:10468639]
+  AUTHORS   Espineda CE, Linford AS, Devine D, Brusslan JA.
+  TITLE     The AtCAO gene, encoding chlorophyll a oxygenase, is required for chlorophyll b synthesis in Arabidopsis thaliana.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 96 (1999) 10507-11.
+  ORGANISM  Arabidopsis thaliana
+  SEQUENCE  [ath:AT1G44446]
+REFERENCE   2  [PMID:10758481]
+  AUTHORS   Oster U, Tanaka R, Tanaka A, Rudiger W.
+  TITLE     Cloning and functional expression of the gene encoding the key enzyme for chlorophyll b biosynthesis (CAO) from Arabidopsis thaliana.
+  JOURNAL   Plant. J. 21 (2000) 305-10.
+  ORGANISM  Arabidopsis thaliana
+  SEQUENCE  [ath:AT1G44446]
+REFERENCE   3  [PMID:15086960]
+  AUTHORS   Eggink LL, LoBrutto R, Brune DC, Brusslan J, Yamasato A, Tanaka A, Hoober JK.
+  TITLE     Synthesis of chlorophyll b: localization of chlorophyllide a oxygenase and discovery of a stable radical in the catalytic subunit.
+  JOURNAL   BMC. Plant. Biol. 4 (2004) 5.
+  ORGANISM  Chlamydomonas reinhardtii
+  SEQUENCE  [cre:CHLREDRAFT_195951]
+REFERENCE   4  [PMID:8307032]
+  AUTHORS   Porra RJ, Schafer W, Cmiel E, Katheder I, Scheer H.
+  TITLE     The derivation of the formyl-group oxygen of chlorophyll b in higher plants from molecular oxygen. Achievement of high enrichment of the 7-formyl-group oxygen from 18O2 in greening maize leaves.
+  JOURNAL   Eur. J. Biochem. 219 (1994) 671-9.
+  ORGANISM  Zea mays
+PATHWAY     ec00860  Porphyrin and chlorophyll metabolism
+            ec01100  Metabolic pathways
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13600  chlorophyllide a oxygenase
+GENES       ATH: AT1G44446(CH1)
+            ALY: ARALYDRAFT_473812
+            CRB: CARUB_v10008806mg
+            EUS: EUTSA_v10011377mg
+            CIT: 102606628
+            CIC: CICLE_v10000821mg
+            TCC: TCM_035122
+            GMX: 100780485 100805998 100806298 100820586
+            MTR: MTR_1g030550
+            CAM: 101515232
+            FVE: 101307553
+            CSV: 101205768(CSCAO) 101230065
+            RCU: RCOM_1030770
+            POP: POPTR_0002s08380g(POPTRDRAFT_1071581) POPTR_0005s20060g(POPTRDRAFT_716668)
+            VVI: 100247245
+            SLY: 101244441 101261422
+            SOT: 102592765 102594460
+            OSA: 4349430 4349433
+            DOSA: Os10t0567100-01(Os10g0567100) Os10t0567400-01(Os10g0567400)
+            OBR: 102716534
+            BDI: 100823044
+            SBI: SORBI_03g046660(SORBIDRAFT_03g046660)
+            ZMA: 100274228 100284976(pco079065e)
+            SITA: 101772993
+            ATR: s00017p00159790(AMTR_s00017p00159790)
+            SMO: SELMODRAFT_118803 SELMODRAFT_131716
+            PPP: PHYPADRAFT_145243 PHYPADRAFT_149091
+            CRE: CHLREDRAFT_195951(CAO)
+            VCN: VOLCADRAFT_64158
+            OLU: OSTLU_5015
+            OTA: Ot12g01450
+            MIS: MICPUN_104843(CAO2) MICPUN_56065(CAO1)
+            MPP: MICPUCDRAFT_60555(CAO)
+            CSL: COCSUDRAFT_18877
+            CVR: CHLNCDRAFT_54799
+            ACAN: ACA1_033380
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.122
+            IUBMB Enzyme Nomenclature: 1.14.13.122
+            ExPASy - ENZYME nomenclature database: 1.14.13.122
+            BRENDA, the Enzyme Database: 1.14.13.122
+            CAS: 216503-73-0
+///

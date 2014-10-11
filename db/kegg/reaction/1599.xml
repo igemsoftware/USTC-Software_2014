@@ -1,0 +1,10 @@
+ENTRY       R01599                      Reaction
+NAME        Arachidonate,reduced acceptor:oxygen oxidoreductase
+DEFINITION  Arachidonate + Reduced acceptor + 2 Oxygen <=> Prostaglandin H2 + Acceptor + H2O
+EQUATION    C00219 + C00030 + 2 C00007 <=> C00427 + C00028 + C00001
+COMMENT     multi-step reaction (dioxygenase x2 and peroxidase, see R01590+R00073)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP01626  C00219_C00427 main [RC:RC00562]
+            RP13394  C00007_C00427 leave
+ENZYME      1.14.99.1
+///

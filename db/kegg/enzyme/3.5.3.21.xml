@@ -1,0 +1,33 @@
+ENTRY       EC 3.5.3.21                 Enzyme
+NAME        methylenediurea deaminase;
+            methylenediurease
+CLASS       Hydrolases;
+            Acting on carbon-nitrogen bonds, other than peptide bonds;
+            In linear amidines
+SYSNAME     methylenediurea aminohydrolase
+REACTION    methylenediurea + 2 H2O = N-(hydroxymethyl)urea + 2 NH3 + CO2 (overall reaction) [RN:R05169];
+            (1a) methylenediurea + H2O = N-(carboxyaminomethyl)urea + NH3 [RN:R05170];
+            (1b) N-(carboxyaminomethyl)urea = N-(aminomethyl)urea + CO2 (spontaneous) [RN:R05171];
+            (1c) N-(aminomethyl)urea + H2O = N-(hydroxymethyl)urea + NH3 (spontaneous) [RN:R05172]
+ALL_REAC    R05169 R05170 R05171 R05172
+SUBSTRATE   methylenediurea [CPD:C06381];
+            H2O [CPD:C00001];
+            N-(carboxyaminomethyl)urea [CPD:C06382];
+            N-(aminomethyl)urea [CPD:C06383]
+PRODUCT     N-(hydroxymethyl)urea [CPD:C06384];
+            NH3 [CPD:C00014];
+            CO2 [CPD:C00011];
+            N-(carboxyaminomethyl)urea [CPD:C06382];
+            N-(aminomethyl)urea [CPD:C06383]
+COMMENT     Methylenediurea is hydrolysed and decarboxylated to give an aminated methylurea, which then spontaneously hydrolyses to hydroxymethylurea. The enzyme from Ochrobactrum anthropi also hydrolyses dimethylenetriurea and trimethylenetetraurea as well as ureidoglycolate, which is hydrolysed to urea and glyoxylate, and allantoate, which is hydrolysed to ureidoglycolate, ammonia and carbon dioxide.
+HISTORY     EC 3.5.3.21 created 1999
+REFERENCE   1
+  AUTHORS   Jahns, T., Schepp, R., Kaltwasser, H.
+  TITLE     Purification and characterisation of an enzyme from a strain of Ochrobactrum anthropi that degrades condensation products of urea and formaldehyde (ureaform).
+  JOURNAL   Can. J. Microbiol. 43 (1997) 1111-1117.
+DBLINKS     ExplorEnz - The Enzyme Database: 3.5.3.21
+            IUBMB Enzyme Nomenclature: 3.5.3.21
+            ExPASy - ENZYME nomenclature database: 3.5.3.21
+            BRENDA, the Enzyme Database: 3.5.3.21
+            CAS: 205830-62-2
+///

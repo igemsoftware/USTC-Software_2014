@@ -1,0 +1,16 @@
+ENTRY       R04463                      Reaction
+NAME        5'-Phosphoribosylformylglycinamide:L-glutamine amido-ligase (ADP-forming)
+DEFINITION  ATP + 5'-Phosphoribosyl-N-formylglycinamide + L-Glutamine + H2O <=> ADP + Orthophosphate + 2-(Formamido)-N1-(5'-phosphoribosyl)acetamidine + L-Glutamate
+EQUATION    C00002 + C04376 + C00064 + C00001 <=> C00008 + C00009 + C04640 + C00025
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00024  C00025_C00064 main [RC:RC00010]
+            RP04102  C04376_C04640 main [RC:RC01160]
+            RP05695  C00001_C00025 leave
+            RP08123  C00064_C04640 trans
+ENZYME      6.3.5.3
+PATHWAY     rn00230  Purine metabolism
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K01952  phosphoribosylformylglycinamidine synthase [EC:6.3.5.3]
+///

@@ -1,0 +1,12 @@
+ENTRY       R08046                      Reaction
+DEFINITION  4-Amino-2,6-dinitrotoluene + 3 NADH + 3 H+ <=> 2,4-Diamino-6-nitrotoluene + 3 NAD+ + 2 H2O
+EQUATION    C16394 + 3 C00004 + 3 C00080 <=> C16396 + 3 C00003 + 2 C00001
+COMMENT     nitroreductase
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP10477  C00001_C16394 leave
+            RP12194  C16394_C16396 main [RC:RC01333]
+            RP12256  C00001_C16394 leave
+ENZYME      1.7.1.-
+PATHWAY     rn00633  Nitrotoluene degradation
+            rn01120  Microbial metabolism in diverse environments
+///

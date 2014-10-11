@@ -1,0 +1,13 @@
+ENTRY       R03310                      Reaction
+NAME        5alpha-cholest-7-en-3beta-ol, NADH:oxygen 5-oxidoreductase
+DEFINITION  Lathosterol + NADH + H+ + Oxygen <=> 7-Dehydrocholesterol + NAD+ + 2 H2O
+EQUATION    C01189 + C00004 + C00080 + C00007 <=> C01164 + C00003 + 2 C00001
+COMMENT     NADPH (see R07215)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP02931  C01164_C01189 main [RC:RC00904]
+ENZYME      1.14.21.6
+PATHWAY     rn00100  Steroid biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00227  lathosterol oxidase [EC:1.14.21.6]
+///

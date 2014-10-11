@@ -1,0 +1,12 @@
+ENTRY       R08659                      Reaction
+NAME        (Z)-4-hydroxyphenylacetaldehyde-oxime,NADPH:oxygen oxidoreductase (adding cysteine)
+DEFINITION  (Z)-4-Hydroxyphenylacetaldehyde oxime + Oxygen + NADPH + L-Cysteine + H+ <=> S-(Hydroxyphenylacetothiohydroximoyl)-L-cysteine + NADP+ + 2 H2O
+EQUATION    C04353 + C00007 + C00005 + C00097 + C00080 <=> C17238 + C00006 + 2 C00001
+COMMENT     multi-step reaction (similar to R08168, R08607+R08608)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP13631  C04353_C17238 main [RC:RC02210]
+            RP13632  C00097_C17238 main [RC:RC01705]
+ENZYME      1.14.-.-
+ORTHOLOGY   K11818  cytochrome P450, family 83, subfamily B, polypeptide 1 [EC:1.14.-.-]
+///

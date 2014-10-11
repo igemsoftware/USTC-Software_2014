@@ -1,0 +1,151 @@
+ENTRY       EC 1.13.11.18               Enzyme
+NAME        sulfur dioxygenase;
+            sulfur oxygenase;
+            sulfur:oxygen oxidoreductase
+CLASS       Oxidoreductases;
+            Acting on single donors with incorporation of molecular oxygen (oxygenases);
+            With incorporation of two atoms of oxygen
+SYSNAME     S-sulfanylglutathione:oxygen oxidoreductase
+REACTION    sulfur + O2 + H2O = sulfite + 2 H+ (overall reaction) [RN:R00781];
+            (1a) glutathione + sulfur = S-sulfanylglutathione (spontaneous) [RN:R08677];
+            (1b) S-sulfanylglutathione + O2 + H2O = glutathione + sulfite + 2 H+ [RN:R08678]
+ALL_REAC    R00781 R08677 R08678
+SUBSTRATE   sulfur [CPD:C00087];
+            O2 [CPD:C00007];
+            H2O [CPD:C00001];
+            glutathione [CPD:C00051];
+            S-sulfanylglutathione [CPD:C17267]
+PRODUCT     sulfite [CPD:C00094];
+            H+ [CPD:C00080];
+            S-sulfanylglutathione [CPD:C17267];
+            glutathione [CPD:C00051]
+COMMENT     An iron protein. Glutathione (GSH) plays a catalytic role in elemental sulfur activation, but is not consumed during the enzymic reaction. GSH and elemental sulfur react non-enzymically to yield S-sulfanylglutathione and it is only in this form that the sulfur can be oxidized to yield sulfite. The sulfite can be further converted into sulfate, thiosulfate or S-sulfoglutathione (GSSO3-) non-enzymically [2].
+HISTORY     EC 1.13.11.18 created 1972
+REFERENCE   1  [PMID:5968172]
+  AUTHORS   Suzuki I, Silver M.
+  TITLE     The initial product and properties of the sulfur-oxidizing enzyme of thiobacilli.
+  JOURNAL   Biochim. Biophys. Acta. 122 (1966) 22-33.
+  ORGANISM  Thiobacillus thioparus, Thiobacillus thiooxidans
+REFERENCE   2  [PMID:12855721]
+  AUTHORS   Rohwerder T, Sand W.
+  TITLE     The sulfane sulfur of persulfides is the actual substrate of the sulfur-oxidizing enzymes from Acidithiobacillus and Acidiphilium spp.
+  JOURNAL   Microbiology. 149 (2003) 1699-710.
+  ORGANISM  Acidiphilium acidophilum, Acidithiobacillus ferrooxidans, Acidithiobacillus thiooxidans
+PATHWAY     ec00920  Sulfur metabolism
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K17725  sulfur dioxygenase
+GENES       HSA: 23474(ETHE1)
+            PTR: 456093(ETHE1)
+            PPS: 100983420(ETHE1)
+            GGO: 101138346(ETHE1)
+            PON: 100458034(ETHE1)
+            MCC: 718089(ETHE1)
+            MCF: 102135821(ETHE1)
+            MMU: 66071(Ethe1)
+            RNO: 292710(Ethe1)
+            CGE: 100769786
+            HGL: 101700567(Ethe1)
+            TUP: 102495095(ETHE1)
+            CFA: 612416(ETHE1)
+            AML: 100470121
+            FCA: 101092565(ETHE1)
+            PTG: 102966568(ETHE1)
+            BTA: 509150(ETHE1)
+            BOM: 102274866(ETHE1)
+            PHD: 102330175(ETHE1)
+            CHX: 102183356(ETHE1)
+            SSC: 100523003(ETHE1)
+            CFR: 102515553(ETHE1)
+            ECB: 100146195(ETHE1)
+            MYB: 102243740(ETHE1)
+            MYD: 102751781(ETHE1)
+            PALE: 102885174(ETHE1)
+            GGA: 426450(ETHE1)
+            PHI: 102114459
+            ASN: 102372675(ETHE1)
+            CMY: 102948016
+            ACS: 100561649
+            XLA: 379091(ethe1)
+            XTR: 448221(ethe1)
+            DRE: 405865(ethe1)
+            TRU: 101079181
+            MZE: 101473226 101473515 101473809
+            OLA: 101159221
+            XMA: 102231791
+            LCM: 102365540
+            BFO: BRAFLDRAFT_265332 BRAFLDRAFT_90177
+            CIN: 100177990
+            SPU: 585574
+            DME: Dmel_CG30022 Dmel_CG30023(sprt)
+            DPO: Dpse_GA24963 Dpse_GA30463 Dpse_GA30464
+            DAN: Dana_GF12395
+            DER: Dere_GG22649
+            DPE: Dper_GL10395 Dper_GL10396
+            DSE: Dsec_GM20431
+            DSI: Dsim_GD25902
+            DWI: Dwil_GK21885
+            DYA: Dyak_GE13523
+            DGR: Dgri_GH20506
+            DMO: Dmoj_GI21050
+            DVI: Dvir_GJ21974
+            AGA: AgaP_AGAP003337
+            AAG: AaeL_AAEL009700
+            CQU: CpipJ_CPIJ017624
+            AME: 410023(GB14390) 551510(GB12363)
+            NVI: 100120487 100123965
+            TCA: 662252 662355
+            BMOR: 101745571
+            API: 100167168 100575278
+            PHU: Phum_PHUM102450 Phum_PHUM613050
+            ISC: IscW_ISCW019663
+            CEL: CELE_C33A12.7(ethe-1)
+            CBR: CBG20009
+            BMY: Bm1_46955 Bm1_46960
+            LOA: LOAG_00527
+            TSP: Tsp_00017 Tsp_12937
+            SMM: Smp_080670 Smp_165640
+            NVE: NEMVE_v1g184895
+            HMG: 100205916
+            ATH: AT1G53580(GLY3)
+            ALY: ARALYDRAFT_682477
+            CRB: CARUB_v10009889mg
+            EUS: EUTSA_v10011701mg
+            CIT: 102607739
+            CIC: CICLE_v10021343mg
+            TCC: TCM_001986 TCM_032258
+            GMX: 100780846
+            CAM: 101498546
+            FVE: 101313434
+            CSV: 101221943
+            RCU: RCOM_1192450
+            POP: POPTR_0001s38910g(POPTRDRAFT_749057) POPTR_0005s22640g(POPTRDRAFT_831572)
+            VVI: 100248855 100262655
+            SLY: 101254405 101268552
+            SOT: 102586950 102595113
+            OSA: 4326319
+            DOSA: Os01t0667200-01(Os01g0667200)
+            OBR: 102722159
+            BDI: 100826131
+            SBI: SORBI_03g030620(SORBIDRAFT_03g030620)
+            ZMA: 100283164(IDP546)
+            SITA: 101785668
+            ATR: s00014p00246150(AMTR_s00014p00246150)
+            SMO: SELMODRAFT_76878 SELMODRAFT_95147
+            PPP: PHYPADRAFT_119599 PHYPADRAFT_132965
+            OLU: OSTLU_38033
+            OTA: Ot10g01270
+            MIS: MICPUN_93387
+            MPP: MICPUCDRAFT_32964
+            GSL: Gasu_08440
+            PTI: PHATRDRAFT_16707(GLO_1)
+            TPS: THAPSDRAFT_17946
+            NGD: NGA_0000302
+            EHX: EMIHUDRAFT_436379 EMIHUDRAFT_68628
+            GTT: GUITHDRAFT_155822 GUITHDRAFT_166280 GUITHDRAFT_96377
+            NGR: NAEGRDRAFT_82995 NAEGRDRAFT_83261
+DBLINKS     ExplorEnz - The Enzyme Database: 1.13.11.18
+            IUBMB Enzyme Nomenclature: 1.13.11.18
+            ExPASy - ENZYME nomenclature database: 1.13.11.18
+            BRENDA, the Enzyme Database: 1.13.11.18
+            CAS: 37256-58-9
+///

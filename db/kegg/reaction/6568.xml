@@ -1,0 +1,19 @@
+ENTRY       R06568                      Reaction
+NAME        malonyl-CoA:4-coumaroyl-CoA malonyltransferase (cyclizing, reducing)
+DEFINITION  p-Coumaroyl-CoA + 3 Malonyl-CoA + NADPH + H+ <=> Isoliquiritigenin + 4 CoA + 3 CO2 + NADP+ + H2O
+EQUATION    C00223 + 3 C00083 + C00005 + C00080 <=> C08650 + 4 C00010 + 3 C00011 + C00006 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00051  C00010_C00083 main [RC:RC00004]
+            RP00144  C00010_C00223 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP08518  C00001_C00083 leave
+            RP09027  C00223_C08650 main [RC:RC02726]
+            RP10886  C00083_C08650 trans
+            RP14010  C00083_C08650 trans
+            RP14011  C00083_C08650 trans
+ENZYME      2.3.1.170
+PATHWAY     rn00941  Flavonoid biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K00660  chalcone synthase [EC:2.3.1.74]
+            K08243  Polyketide reductase
+///

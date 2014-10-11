@@ -1,0 +1,12 @@
+ENTRY       R01853                      Reaction
+NAME        RCH2NH2:oxygen oxidoreductase(deaminating)(flavin-containing);
+            RCH2NH2:oxygen oxidoreductase (deaminating) (copper-containing)
+DEFINITION  Primary amine + H2O + Oxygen <=> Aldehyde + Ammonia + Hydrogen peroxide
+EQUATION    C00375 + C00001 + C00007 <=> C00071 + C00014 + C00027
+COMMENT     general reaction
+RPAIR       RP00006  C00007_C00027 cofac [RC:RC02755]
+            RP05878  C00001_C00071 leave
+            RP06132  C00014_C00375 leave
+            RP10099  C00071_C00375 main [RC:RC01708]
+ENZYME      1.4.3.4         1.4.3.21
+///

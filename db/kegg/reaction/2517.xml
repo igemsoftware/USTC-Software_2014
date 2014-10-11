@@ -1,0 +1,14 @@
+ENTRY       R02517                      Reaction
+NAME        3-hydroxyphenylacetate,NADPH:oxygen oxidoreductase (6-hydroxylating)
+DEFINITION  3-Hydroxyphenylacetate + Oxygen + NADPH + H+ <=> Homogentisate + NADP+ + H2O
+EQUATION    C05593 + C00007 + C00005 + C00080 <=> C00544 + C00006 + C00001
+COMMENT     NADH (see R02515)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP00553  C00544_C05593 main [RC:RC00046]
+            RP05728  C00007_C00544 leave
+ENZYME      1.14.13.63
+PATHWAY     rn00643  Styrene degradation
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K10438  3-hydroxyphenylacetate 6-hydroxylase [EC:1.14.13.63]
+///

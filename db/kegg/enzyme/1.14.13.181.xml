@@ -1,0 +1,42 @@
+ENTRY       EC 1.14.13.181              Enzyme
+NAME        13-deoxydaunorubicin hydroxylase;
+            DoxA
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     13-deoxydaunorubicin,NADPH:oxygen oxidoreductase (13-hydroxylating)
+REACTION    (1) 13-deoxydaunorubicin + NADPH + H+ + O2 = 13-dihydrodaunorubicin + NADP+ + H2O [RN:R06688];
+            (2) 13-dihydrodaunorubicin + NADPH + H+ + O2 = daunorubicin + NADP+ + 2 H2O [RN:R06689]
+ALL_REAC    R06688 R06689;
+            (other) R06690 R06691 R06692
+SUBSTRATE   13-deoxydaunorubicin [CPD:C12429];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            13-dihydrodaunorubicin [CPD:C12430]
+PRODUCT     13-dihydrodaunorubicin [CPD:C12430];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            daunorubicin [CPD:C01907]
+COMMENT     The enzymes from the Gram-positive bacteria Streptomyces sp. C5 and Streptomyces peucetius show broad substrate specificity for structures based on an anthracycline aglycone, but have a strong preference for 4-methoxy anthracycline intermediates (13-deoxydaunorubicin and 13-dihydrodaunorubicin) over their 4-hydroxy analogues (13-deoxycarminomycin and 13-dihydrocarminomycin), as well as a preference for substrates hydroxylated at the C-13 rather than the C-14 position.
+HISTORY     EC 1.14.13.181 created 2013
+REFERENCE   1  [PMID:9864343]
+  AUTHORS   Walczak RJ, Dickens ML, Priestley ND, Strohl WR
+  TITLE     Purification, properties, and characterization of recombinant Streptomyces sp. strain C5 DoxA, a cytochrome P-450 catalyzing multiple steps in doxorubicin biosynthesis.
+  JOURNAL   J. Bacteriol. 181 (1999) 298-304.
+  ORGANISM  Streptomyces sp.
+  SEQUENCE  [up:Q59971]
+REFERENCE   2  [PMID:9098063]
+  AUTHORS   Dickens ML, Priestley ND, Strohl WR.
+  TITLE     In vivo and in vitro bioconversion of epsilon-rhodomycinone glycoside to doxorubicin: functions of DauP, DauK, and DoxA.
+  JOURNAL   J. Bacteriol. 179 (1997) 2641-50.
+  ORGANISM  Streptomyces sp.
+  SEQUENCE  [up:Q59971]
+PATHWAY     ec01057  Biosynthesis of type II polyketide products
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K15955  13-deoxydaunorubicin hydroxylase
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.181
+            IUBMB Enzyme Nomenclature: 1.14.13.181
+            ExPASy - ENZYME nomenclature database: 1.14.13.181
+            BRENDA, the Enzyme Database: 1.14.13.181
+///

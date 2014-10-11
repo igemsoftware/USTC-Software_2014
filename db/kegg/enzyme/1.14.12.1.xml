@@ -1,0 +1,165 @@
+ENTRY       EC 1.14.12.1                Enzyme
+NAME        anthranilate 1,2-dioxygenase (deaminating, decarboxylating);
+            anthranilate hydroxylase;
+            anthranilic hydroxylase;
+            anthranilic acid hydroxylase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of two atoms of oxygen into the other donor
+SYSNAME     anthranilate,NAD(P)H:oxygen oxidoreductase (1,2-hydroxylating, deaminating, decarboxylating)
+REACTION    anthranilate + NAD(P)H + 2 H+ + O2 = catechol + CO2 + NAD(P)+ + NH3 [RN:R00823 R00825]
+ALL_REAC    R00823 R00825
+SUBSTRATE   anthranilate [CPD:C00108];
+            NADH [CPD:C00004];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007]
+PRODUCT     catechol [CPD:C00090];
+            CO2 [CPD:C00011];
+            NAD+ [CPD:C00003];
+            NADP+ [CPD:C00006];
+            NH3 [CPD:C00014]
+COMMENT     Requires Fe2+.
+HISTORY     EC 1.14.12.1 created 1972
+REFERENCE   1
+  AUTHORS   Kobayashi, S. and Hayaishi, O.
+  TITLE     Anthranilic acid conversion to catechol (Pseudomonas).
+  JOURNAL   Methods Enzymol. 17A (1970) 505-510.
+REFERENCE   2  [PMID:14209949]
+  AUTHORS   TANIUCHI H, HATANAKA M, KUNO S, HAYAISHI O, NAKAJIMA M, KURIHARA N.
+  TITLE     ENZYMATIC FORMATION OF CATECHOL FROM ANTHRANILIC ACID.
+  JOURNAL   J. Biol. Chem. 239 (1964) 2204-11.
+  ORGANISM  Pseudomonas fluorescens, Pseudomonas sp.
+PATHWAY     ec00627  Aminobenzoate degradation
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K05599  anthranilate 1,2-dioxygenase (deaminating, decarboxylating) large subunit
+            K05600  anthranilate 1,2-dioxygenase (deaminating, decarboxylating) small subunit
+            K16319  anthranilate 1,2-dioxygenase large subunit
+            K16320  anthranilate 1,2-dioxygenase small subunit
+GENES       PLU: plu1000 plu1001
+            SFO: Z042_01300 Z042_01305
+            EBT: EBL_c12070 EBL_c12080
+            PSD: DSC_14480 DSC_14600 DSC_14605 DSC_14835 DSC_14840
+            PAE: PA2512(antA) PA2513(antB)
+            PAU: PA14_32150(antB) PA14_32160(antA)
+            PAP: PSPA7_2724(antB) PSPA7_2725(antA)
+            PAG: PLES_27821(antB) PLES_27831(antA)
+            PAF: PAM18_2526(antB) PAM18_2527(antA)
+            PNC: NCGM2_3517(antA) NCGM2_3518(antB)
+            PDK: PADK2_12680 PADK2_12685
+            PSG: G655_12460 G655_12465
+            PRP: M062_13060 M062_13065
+            PAEP: PA1S_gp0306 PA1S_gp0307
+            PAER: PA1R_gp0306 PA1R_gp0307
+            PAEM: U769_12660 U769_12665
+            PAEL: T223_14280 T223_14285
+            PAES: SCV20265_2796 SCV20265_2797
+            PAEU: BN889_02736(antA) BN889_02737(antB)
+            PAEG: AI22_20835 AI22_20840
+            PFL: PFL_0758(antB) PFL_0759(antA)
+            PPRC: PFLCHA0_c07680(xylY1) PFLCHA0_c07690(xylX1)
+            PFS: PFLU5194 PFLU5195
+            PFC: PflA506_4487(antA) PflA506_4488(antB)
+            PRE: PCA10_14970(antB) PCA10_14980(antA) PCA10_p0060(antB) PCA10_p0070(antA)
+            PKC: PKB_2111(antB) PKB_2112(antA) PKB_3280 PKB_3629
+            ACI: ACIAD2669(antA) ACIAD2670(antB)
+            ACD: AOLE_09970 AOLE_09975
+            ABM: ABSDF1970(antB) ABSDF1971(antA)
+            ABY: ABAYE1896(antA) ABAYE1897(antB)
+            ABC: ACICU_01784 ACICU_01785
+            ABN: AB57_1977(antB) AB57_1978(antA)
+            ABB: ABBFA_001746(antA) ABBFA_001747(antB)
+            ABX: ABK1_2243 ABK1_2244
+            ABZ: ABZJ_01953 ABZJ_01954
+            ABR: ABTJ_01921 ABTJ_01922
+            ABD: ABTW07_1997 ABTW07_1998
+            ABH: M3Q_2137 M3Q_2138
+            ABAD: ABD1_17400(antB) ABD1_17410(antA)
+            ABJ: BJAB07104_01964 BJAB07104_01965
+            ABAB: BJAB0715_01969 BJAB0715_01970
+            ABAJ: BJAB0868_01911 BJAB0868_01912
+            ABAZ: P795_8450 P795_8455
+            ACC: BDGL_001117(antB) BDGL_001118(antA)
+            TTU: TERTU_1474 TERTU_1475
+            CYQ: Q91_0966 Q91_1469 Q91_2230
+            CZA: CYCME_0995 CYCME_1638 CYCME_2548
+            PSE: NH8B_0399(antB) NH8B_0400(antA)
+            REU: Reut_B3776
+            REH: H16_B0801
+            CNC: CNE_2c07490(bphA) CNE_BB1p12630(hcaE) CNE_BB1p12640
+            RME: Rmet_3712(nagH)
+            BMA: BMAA0203 BMAA0204
+            BMV: BMASAVP1_1378 BMASAVP1_1379
+            BML: BMA10229_1575 BMA10229_1576
+            BMN: BMA10247_A0234 BMA10247_A0235
+            BPS: BPSS1887 BPSS1888
+            BPM: BURPS1710b_A0982 BURPS1710b_A0983
+            BPL: BURPS1106A_A2562 BURPS1106A_A2563
+            BPD: BURPS668_A2706 BURPS668_A2707
+            BPR: GBP346_A0961 GBP346_A0962
+            BPSE: BDL_5292 BDL_5293
+            BPSU: BBN_5351 BBN_5352
+            BPZ: BP1026B_II2026 BP1026B_II2027
+            BPQ: BPC006_II2524 BPC006_II2525
+            BPK: BBK_4625 BBK_4626
+            BTE: BTH_II0488 BTH_II0489
+            BTD: BTI_5102 BTI_5103
+            BVI: Bcep1808_4162 Bcep1808_4163
+            BUR: Bcep18194_B2324 Bcep18194_B2325
+            BCN: Bcen_4587 Bcen_4588
+            BCH: Bcen2424_3775 Bcen2424_3776
+            BCM: Bcenmc03_3747 Bcenmc03_3748
+            BCJ: BCAM0810 BCAM0811
+            BAM: Bamb_5502 Bamb_5503
+            BAC: BamMC406_3667 BamMC406_3668
+            BMU: Bmul_4956 Bmul_4957
+            BMJ: BMULJ_03557(andAc) BMULJ_03558(andAd)
+            BCT: GEM_4989 GEM_4990
+            BXE: Bxe_A1101 Bxe_A1102 Bxe_A1107(ohbB) Bxe_A1108(ohbA) Bxe_B1108 Bxe_B1109 Bxe_B2751 Bxe_B2752 Bxe_C0941 Bxe_C0942 Bxe_C1121(andAc)
+            BGL: bglu_2g21220 bglu_2g21230
+            BUG: BC1001_2081 BC1001_2082
+            BGE: BC1002_7006 BC1002_7007
+            BGD: bgla_2g22320 bgla_2g22330
+            BYI: BYI23_D006360 BYI23_D010460(tphA) BYI23_D010470
+            BUK: MYA_3862
+            BUO: BRPE64_DCDS11800
+            BPE: BP0584
+            BPC: BPTD_0593
+            BPA: BPP0274 BPP2193
+            BPAR: BN117_1352
+            BBR: BB0277 BB1590 BB1591
+            BBM: BN115_1544 BN115_1545
+            BBH: BN112_1865 BN112_1866
+            BPT: Bpet1540 Bpet1541
+            BAV: BAV0657 BAV0658 BAV1583
+            AXY: AXYL_02469 AXYL_03917 AXYL_03918 AXYL_06586 AXYL_06587
+            AXN: AX27061_2910 AX27061_2911
+            AKA: TKWG_00630
+            VEI: Veis_4604 Veis_4605
+            VAP: Vapar_4290
+            HSE: Hsero_3663(nagH) Hsero_3664(nagG)
+            SUR: STAUR_1173(ohbA)
+            MSL: Msil_1468 Msil_1469
+            PHL: KKY_2640 KKY_2641
+            NAR: Saro_3860 Saro_3867 Saro_3868
+            NPP: PP1Y_AT15578 PP1Y_AT15588 PP1Y_AT15646 PP1Y_AT31639 PP1Y_AT31702 PP1Y_AT31705
+            SJP: SJA_C1-25220(andAc) SJA_C1-25230(andAd)
+            AZL: AZL_a06710 AZL_a06720
+            ALI: AZOLI_p11024 AZOLI_p11025
+            MVA: Mvan_0493
+            MGI: Mflv_0562 Mflv_0657
+            MSP: Mspyr1_01670
+            MMC: Mmcs_1647
+            MKM: Mkms_1673 Mkms_5631
+            MJL: Mjls_1622 Mjls_2232
+            MRH: MycrhN_3163 MycrhN_3164
+            RHA: RHA1_ro08176(tpaAa) RHA1_ro08177(tpaAb) RHA1_ro10198(tpaAb) RHA1_ro10199(tpaAa)
+            AAU: AAur_pTC10252 AAur_pTC10253
+            PDX: Psed_0075
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.12.1
+            IUBMB Enzyme Nomenclature: 1.14.12.1
+            ExPASy - ENZYME nomenclature database: 1.14.12.1
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.14.12.1
+            BRENDA, the Enzyme Database: 1.14.12.1
+            CAS: 9059-17-0
+///

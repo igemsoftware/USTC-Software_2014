@@ -1,0 +1,16 @@
+ENTRY       R05621                      Reaction
+DEFINITION  Benzoate + NADH + H+ + Oxygen <=> (1R,6S)-1,6-Dihydroxycyclohexa-2,4-diene-1-carboxylate + NAD+
+EQUATION    C00180 + C00004 + C00080 + C00007 <=> C06321 + C00003
+COMMENT     BenA,BenB,BenC
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00847  C00180_C06321 main [RC:RC00270]
+            RP06123  C00007_C06321 leave
+ENZYME      1.14.12.10
+PATHWAY     rn00362  Benzoate degradation
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K05549  benzoate/toluate 1,2-dioxygenase alpha subunit [EC:1.14.12.10 1.14.12.-]
+            K05550  benzoate/toluate 1,2-dioxygenase beta subunit [EC:1.14.12.10 1.14.12.-]
+            K05784  benzoate/toluate 1,2-dioxygenase reductase subunit [EC:1.18.1.-]
+///

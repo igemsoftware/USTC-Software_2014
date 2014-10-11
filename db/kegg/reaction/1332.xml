@@ -1,0 +1,13 @@
+ENTRY       R01332                      Reaction
+NAME        beta-D-mannan hydrolases
+DEFINITION  1,4-beta-D-Mannan + (n-1) H2O <=> n D-Mannose
+EQUATION    C02492 + (n-1) C00001 <=> n C00159
+COMMENT     multi-step reaction
+            endo-hydrolysis (ec 3.2.1.78, see R08612)
+            exo-hydrolysis (ec 3.2.1.25, see R08614)
+RPAIR       RP01437  C00159_C02492 main [RC:RC00467]
+            RP05741  C00001_C00159 leave
+ENZYME      3.2.1.25        3.2.1.78
+PATHWAY     rn00051  Fructose and mannose metabolism
+ORTHOLOGY   K01218  mannan endo-1,4-beta-mannosidase [EC:3.2.1.78]
+///

@@ -1,0 +1,15 @@
+ENTRY       R10672                      Reaction
+NAME        4-hydroxyphenylacetaldehyde-oxime,NADPH:oxygen oxidoreductase (adding cysteine)
+DEFINITION  (E)-4-Hydroxyphenylacetaldehyde-oxime + L-Cysteine + NADPH + Oxygen + H+ <=> S-(Hydroxyphenylacetothiohydroximoyl)-L-cysteine + NADP+ + 2 H2O
+EQUATION    C04350 + C00097 + C00005 + C00007 + C00080 <=> C17238 + C00006 + 2 C00001
+COMMENT     multi-step reaction (similar to R08168, R08607+R08608)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP13632  C00097_C17238 main [RC:RC01705]
+            RP16780  C04350_C17238 main [RC:RC02210]
+ENZYME      1.14.-.-
+PATHWAY     rn00966  Glucosinolate biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+            rn01210  2-Oxocarboxylic acid metabolism
+ORTHOLOGY   K11818  cytochrome P450, family 83, subfamily B, polypeptide 1 [EC:1.14.-.-]
+///

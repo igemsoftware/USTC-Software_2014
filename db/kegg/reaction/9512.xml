@@ -1,0 +1,15 @@
+ENTRY       R09512                      Reaction
+NAME        9H-carbazole,NADPH:oxygen oxidoreductase (2,3-hydroxylating)
+DEFINITION  Carbazole + NADPH + H+ + Oxygen <=> 2'-Aminobiphenyl-2,3-diol + NADP+
+EQUATION    C08060 + C00005 + C00080 + C00007 <=> C08061 + C00006
+COMMENT     NADH (see R05414)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP05020  C08060_C08061 main [RC:RC01370]
+            RP08655  C00007_C08061 leave
+ENZYME      1.14.12.22
+PATHWAY     rn00621  Dioxin degradation
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K15751  carbazole 1,9a-dioxygenase, terminal dioxygenase component [EC:1.14.12.22]
+            K15752  carbazole 1,9a-dioxygenase, ferredoxin component
+            K15753  carbazole 1,9a-dioxygenase, ferredoxin reductase component
+///

@@ -1,0 +1,10 @@
+ENTRY       R00389                      Reaction
+NAME        carboxylic acid:CoA ligase (AMP-forming)
+DEFINITION  ATP + Carboxylate + CoA <=> AMP + Diphosphate + Acyl-CoA
+EQUATION    C00002 + C00060 + C00010 <=> C00020 + C00013 + C00040
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00019  C00010_C00040 main [RC:RC00004]
+            RP00865  C00040_C00060 main [RC:RC00281]
+ENZYME      6.2.1.2
+///

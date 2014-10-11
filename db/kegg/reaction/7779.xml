@@ -1,0 +1,14 @@
+ENTRY       R07779                      Reaction
+NAME        bromoxynil,NADPH:oxygen oxidoreductase
+DEFINITION  Bromoxynil + 2 NADPH + 2 H+ + Oxygen <=> 2,6-Dibromohydroquinone + 2 NADP+ + Hydrogen cyanide + H2O
+EQUATION    C04178 + 2 C00005 + 2 C00080 + C00007 <=> C16248 + 2 C00006 + C01326 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP10575  C00007_C16248 leave
+            RP11298  C01326_C04178 leave
+            RP11483  C04178_C16248 main [RC:RC01932]
+ENZYME      1.14.13.50
+PATHWAY     rn00364  Fluorobenzoate degradation
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K03391  pentachlorophenol monooxygenase [EC:1.14.13.50]
+///

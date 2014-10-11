@@ -1,0 +1,90 @@
+ENTRY       EC 1.14.15.12               Enzyme
+NAME        pimeloyl-[acyl-carrier protein] synthase;
+            bioI (gene name);
+            P450BioI;
+            CYP107H1
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With reduced iron-sulfur protein as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     acyl-[acyl-carrier protein],reduced-flavodoxin:oxygen oxidoreductase (pimeloyl-[acyl-carrier protein] forming)
+REACTION    a long-chain acyl-[acyl-carrier protein] + 2 reduced flavodoxin + 3 O2 = pimeloyl-[acyl-carrier protein] + an n-alkanal + 2 oxidized flavodoxin + 3 H2O (overall reaction) [RN:R10123];
+            (1a) a long-chain acyl-[acyl-carrier protein] + reduced flavodoxin + O2 = a (7S)-7-hydroxy-long-chain-acyl-[acyl-carrier protein] + oxidized flavodoxin + H2O;
+            (1b) a (7S)-7-hydroxy-long-chain-acyl-[acyl-carrier protein] + reduced flavodoxin + O2 = a (7R,8R)-7,8-dihydroxy-long-chain-acyl-[acyl-carrier protein] + oxidized flavodoxin + H2O;
+            (1c) a (7R,8R)-7,8-dihydroxy-long-chain-acyl-[acyl-carrier protein] + reduced flavodoxin + O2 = a 7-oxoheptanoyl-[acyl-carrier protein] + an n-alkanal + oxidized flavodoxin + 2 H2O;
+            (1d) a 7-oxoheptanoyl-[acyl-carrier protein] + oxidized flavodoxin + H2O = a pimeloyl-[acyl-carrier protein] + reduced flavodoxin + H+
+ALL_REAC    R10123
+SUBSTRATE   long-chain acyl-[acyl-carrier protein] [CPD:C20683];
+            reduced flavodoxin [CPD:C02745];
+            O2 [CPD:C00007];
+            (7S)-7-hydroxy-long-chain-acyl-[acyl-carrier protein];
+            (7R,8R)-7,8-dihydroxy-long-chain-acyl-[acyl-carrier protein];
+            7-oxoheptanoyl-[acyl-carrier protein];
+            oxidized flavodoxin [CPD:C02869];
+            H2O [CPD:C00001]
+PRODUCT     pimeloyl-[acyl-carrier protein] [CPD:C19845];
+            n-alkanal [CPD:C15596];
+            oxidized flavodoxin [CPD:C02869];
+            H2O [CPD:C00001];
+            (7S)-7-hydroxy-long-chain-acyl-[acyl-carrier protein];
+            (7R,8R)-7,8-dihydroxy-long-chain-acyl-[acyl-carrier protein];
+            7-oxoheptanoyl-[acyl-carrier protein];
+            reduced flavodoxin [CPD:C02745];
+            H+ [CPD:C00080]
+COMMENT     A heme-thiolate protein (P-450). The enzyme catalyses an oxidative C-C bond cleavage of long-chain acyl-[acyl-carrier protein]s of various lengths to generate pimeloyl-[acyl-carrier protein], an intermediate in the biosynthesis of biotin. The preferred substrate of the enzyme from the bacterium Bacillus subtilis is palmitoyl-[acyl-carrier protein] which then gives heptanal as the alkanal. The mechanism is similar to EC 1.14.15.6, cholesterol monooxygenase (side-chain-cleaving), followed by a hydroxylation step, which may occur spontaneously [2].
+HISTORY     EC 1.14.15.12 created 2013
+REFERENCE   1  [PMID:11368323]
+  AUTHORS   Stok JE, De Voss J.
+  TITLE     Expression, purification, and characterization of BioI: a carbon-carbon bond cleaving cytochrome P450 involved in biotin biosynthesis in Bacillus subtilis.
+  JOURNAL   Arch. Biochem. Biophys. 384 (2000) 351-60.
+  ORGANISM  Bacillus subtilis
+  SEQUENCE  [bsu:BSU30190]
+REFERENCE   2  [PMID:14737344]
+  AUTHORS   Cryle MJ, De Voss JJ
+  TITLE     Carbon-carbon bond cleavage by cytochrome p450(BioI)(CYP107H1).
+  JOURNAL   Chem. Commun. (Camb).  (2004) 86-7.
+  ORGANISM  Bacillus subtilis
+  SEQUENCE  [bsu:BSU30190]
+REFERENCE   3  [PMID:18838690]
+  AUTHORS   Cryle MJ, Schlichting I.
+  TITLE     Structural insights from a P450 Carrier Protein complex reveal how specificity is achieved in the P450(BioI) ACP complex.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 105 (2008) 15696-701.
+  ORGANISM  Bacillus subtilis
+  SEQUENCE  [bsu:BSU30190]
+REFERENCE   4  [PMID:20658980]
+  AUTHORS   Cryle MJ
+  TITLE     Selectivity in a barren landscape: the P450(BioI)-ACP complex.
+  JOURNAL   Biochem. Soc. Trans. 38 (2010) 934-9.
+PATHWAY     ec00780  Biotin metabolism
+ORTHOLOGY   K16593  pimeloyl-[acyl-carrier protein] synthase
+GENES       BSU: BSU30190(bioI)
+            BSR: I33_3073(bioI)
+            BSL: A7A1_1657
+            BSH: BSU6051_30190(bioI)
+            BSY: I653_14450
+            BSS: BSUW23_14625(bioI)
+            BST: GYO_3267(bioI)
+            BSO: BSNT_04397(bioI)
+            BSN: BSn5_05935
+            BSQ: B657_30190(bioI)
+            BSUB: BEST7613_5338(bioI)
+            BSX: C663_2864(bioI)
+            BLI: BL00957(bioI)
+            BLD: BLi00771(bioI)
+            BAO: BAMF_1919(bioI)
+            BAY: RBAM_018240(bioI)
+            BAQ: BACAU_1782(bioI)
+            BYA: BANAU_1949(bioI)
+            BAMP: B938_09435
+            BAML: BAM5036_1761(bioI)
+            BAZ: BAMTA208_07910(bioI)
+            BQL: LL3_02009(bioI)
+            BXH: BAXH7_01611(bioI)
+            BQY: MUS_2177(bioI)
+            BAMI: KSO_010245
+            BAE: BATR1942_12885
+            BPF: BpOF4_16075(bioI)
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.15.12
+            IUBMB Enzyme Nomenclature: 1.14.15.12
+            ExPASy - ENZYME nomenclature database: 1.14.15.12
+            BRENDA, the Enzyme Database: 1.14.15.12
+///

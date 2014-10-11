@@ -1,0 +1,130 @@
+ENTRY       EC 1.14.12.19               Enzyme
+NAME        3-phenylpropanoate dioxygenase;
+            HcaA1A2CD;
+            Hca dioxygenase;
+            3-phenylpropionate dioxygenase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of two atoms of oxygen into the other donor
+SYSNAME     3-phenylpropanoate,NADH:oxygen oxidoreductase (2,3-hydroxylating)
+REACTION    (1) 3-phenylpropanoate + NADH + H+ + O2 = 3-(cis-5,6-dihydroxycyclohexa-1,3-dien-1-yl)propanoate + NAD+ [RN:R06782];
+            (2) (2E)-3-phenylprop-2-enoate + NADH + H+ + O2 = (2E)-3-(2,3-dihydroxyphenyl)prop-2-enoate + NAD+
+ALL_REAC    R06782;
+            (other) R06783
+SUBSTRATE   3-phenylpropanoate;
+            NADH [CPD:C00004];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            (2E)-3-phenylprop-2-enoate
+PRODUCT     3-(cis-5,6-dihydroxycyclohexa-1,3-dien-1-yl)propanoate [CPD:C11588];
+            NAD+ [CPD:C00003];
+            (2E)-3-(2,3-dihydroxyphenyl)prop-2-enoate [CPD:C12623]
+COMMENT     This enzyme catalyses a step in the pathway of phenylpropanoid compounds degradation. It catalyses the insertion of both atoms of molecular oxygen into positions 2 and 3 of the phenyl ring of 3-phenylpropanoate or (2E)-3-phenylprop-2-enoate.
+HISTORY     EC 1.14.12.19 created 2005, modified 2011
+REFERENCE   1  [PMID:9603882]
+  AUTHORS   Diaz E, Ferrandez A, Garcia JL.
+  TITLE     Characterization of the hca cluster encoding the dioxygenolytic pathway for initial catabolism of 3-phenylpropionic acid in Escherichia coli K-12.
+  JOURNAL   J. Bacteriol. 180 (1998) 2915-23.
+  ORGANISM  Escherichia coli
+  SEQUENCE  [eco:b2538 b2539]
+REFERENCE   2  [PMID:6345502]
+  AUTHORS   Burlingame R, Chapman PJ.
+  TITLE     Catabolism of phenylpropionic acid and its 3-hydroxy derivative by Escherichia coli.
+  JOURNAL   J. Bacteriol. 155 (1983) 113-21.
+  ORGANISM  Escherichia coli
+PATHWAY     ec00360  Phenylalanine metabolism
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K05708  3-phenylpropionate/trans-cinnamate dioxygenase alpha subunit
+            K05709  3-phenylpropionate/trans-cinnamate dioxygenase beta subunit
+GENES       ECO: b2538(hcaE) b2539(hcaF)
+            ECJ: Y75_p2491(hcaE) Y75_p2492(hcaF)
+            ECD: ECDH10B_2705(hcaE) ECDH10B_2706(hcaF)
+            EBW: BWG_2302(hcaE) BWG_2303(hcaF)
+            ECOK: ECMDS42_2082(hcaE) ECMDS42_2083(hcaF)
+            ECE: Z3809(hcaA1) Z3810(hcaA2)
+            ECS: ECs3404 ECs3405
+            ECF: ECH74115_3771(hcaF)
+            ETW: ECSP_3482(hcaE) ECSP_3483(hcaF)
+            ELX: CDCO157_3171 CDCO157_3172
+            EOJ: ECO26_3585(hcaE) ECO26_3586(hcaF)
+            EOI: ECO111_3262(hcaE) ECO111_3263(hcaF)
+            EOH: ECO103_3055(hcaE)
+            EOK: G2583_3068(hcaE) G2583_3069(hcaF)
+            ELR: ECO55CA74_15185 ECO55CA74_15190
+            ECX: EcHS_A2690(hcaE) EcHS_A2691(hcaF)
+            ECW: EcE24377A_2824(hcaF)
+            ECM: EcSMS35_2691(hcaE) EcSMS35_2692(hcaF)
+            ECY: ECSE_2825 ECSE_2826
+            ECR: ECIAI1_2590(hcaE) ECIAI1_2591(hcaF)
+            ECK: EC55989_2824(hcaE) EC55989_2825(hcaF)
+            ECT: ECIAI39_2739(hcaE) ECIAI39_2740(hcaF)
+            EOC: CE10_2970(hcaE) CE10_2971(hcaF)
+            EUM: ECUMN_2858(hcaE) ECUMN_2859(hcaF)
+            ELO: EC042_2742(hcaE) EC042_2743(hcaF)
+            ELH: ETEC_2695 ETEC_2696
+            ESO: O3O_18925 O3O_18930
+            ESM: O3M_06765 O3M_06770
+            ESL: O3K_06720 O3K_06725
+            ECL: EcolC_1138 EcolC_1139
+            EBR: ECB_02430(hcaE) ECB_02431(hcaF)
+            EBD: ECBD_1145 ECBD_1146
+            EKO: EKO11_1194 EKO11_1195
+            EKF: KO11_10125(hcaF) KO11_10130(hcaE)
+            EDH: EcDH1_1129 EcDH1_1130
+            EDJ: ECDH1ME8569_2465(hcaE) ECDH1ME8569_2466(hcaF)
+            EUN: UMNK88_3191 UMNK88_3192
+            ELW: ECW_m2764(hcaE) ECW_m2765(hcaF)
+            ELL: WFL_13535(hcaE) WFL_13540(hcaF)
+            ELP: P12B_c2638(hcaA) P12B_c2639(hcaF)
+            EBL: ECD_02430(hcaE) ECD_02431(hcaF)
+            EBE: B21_02394(hcaE) B21_02395(hcaF)
+            ECOA: APECO78_16420 APECO78_16425
+            ECOL: LY180_13020 LY180_13025
+            ECOO: ECRM13514_3370(hcaA1) ECRM13514_3371(hcaA2)
+            SFL: SF2585(hcaA1) SF2586(hcaA2)
+            SFX: S2757(hcaA1) S2758(hcaA2)
+            SFV: SFV_2586(hcaA1) SFV_2587(hcaA2)
+            SFE: SFxv_2841(hcaE) SFxv_2842(hcaF)
+            SSN: SSON_2620(hcaA1) SSON_2621(hcaA2)
+            SSJ: SSON53_15215 SSON53_15220
+            SBO: SBO_2562(hcaA1) SBO_2563(hcaA2)
+            PLU: plu2204(hcaE) plu2205(hcaF)
+            PAY: PAU_02356(hcaF) PAU_02357(hcaE)
+            CFD: CFNIH1_24125 CFNIH1_24130
+            EBF: D782_1130 D782_1131
+            VEJ: VEJY3_06605 VEJY3_06610
+            VFU: vfu_A01965 vfu_A01966
+            CYQ: Q91_0870 Q91_0977(hcaF) Q91_2056 Q91_2174
+            CZA: CYCME_0248 CYCME_0369 CYCME_1622
+            DEL: DelCs14_1743
+            NAR: Saro_3840
+            NPP: PP1Y_AT15795 PP1Y_AT31297
+            SWI: Swit_0890
+            MSA: Mycsm_01912 Mycsm_01988
+            MVA: Mvan_4415
+            MAB: MAB_4370c
+            MMV: MYCMA_2425(hcaE)
+            CDR: CDHC03_1952(hcaE)
+            CAZ: CARG_03210 CARG_03270
+            NNO: NONO_c29020
+            REQ: REQ_35060
+            GOR: KTR9_1265
+            SCB: SCAB_2191(hcaE)
+            FRI: FraEuI1c_4097
+            TRO: trd_A0341
+            SAI: Saci_2059
+            SACR: SacRon12I_10260
+            SACS: SUSAZ_05365 SUSAZ_09335
+            SIS: LS215_0748
+            SIA: M1425_0846
+            SIM: M1627_0911
+            SID: M164_0864
+            SIY: YG5714_0780
+            SII: LD85_0977
+            SIH: SiH_0732
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.12.19
+            IUBMB Enzyme Nomenclature: 1.14.12.19
+            ExPASy - ENZYME nomenclature database: 1.14.12.19
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.14.12.19
+            BRENDA, the Enzyme Database: 1.14.12.19
+///

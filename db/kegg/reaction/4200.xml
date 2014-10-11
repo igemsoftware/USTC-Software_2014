@@ -1,0 +1,12 @@
+ENTRY       R04200                      Reaction
+NAME        D-threo-2,4-diaminopentanoate:NAD+ oxidoreductase (deaminating)
+DEFINITION  (2R,4S)-2,4-Diaminopentanoate + H2O + NAD+ <=> 2-Amino-4-oxopentanoic acid + Ammonia + NADH + H+
+EQUATION    C03943 + C00001 + C00003 <=> C03341 + C00014 + C00004 + C00080
+COMMENT     R04201 (NADP)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00741  C03341_C03943 main [RC:RC00249]
+            RP06056  C00001_C03341 leave
+            RP06057  C00014_C03943 leave
+ENZYME      1.4.1.12
+PATHWAY     rn00472  D-Arginine and D-ornithine metabolism
+///

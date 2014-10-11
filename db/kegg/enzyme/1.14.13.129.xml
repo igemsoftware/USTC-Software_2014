@@ -1,0 +1,210 @@
+ENTRY       EC 1.14.13.129              Enzyme
+NAME        beta-carotene 3-hydroxylase;
+            beta-carotene 3,3'-monooxygenase;
+            CrtZ
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     beta-carotene,NADH:oxygen 3-oxidoreductase
+REACTION    beta-carotene + 2 NADH + 2 H+ + 2 O2 = zeaxanthin + 2 NAD+ + 2 H2O (overall reaction) [RN:R09747];
+            (1a) beta-carotene + NADH + H+ + O2 = beta-cryptoxanthin + NAD+ + H2O [RN:R07558];
+            (1b) beta-cryptoxanthin + NADH + H+ + O2 = zeaxanthin + NAD+ + H2O [RN:R07559]
+ALL_REAC    R07558 R07559 R09747;
+            (other) R07530 R07561 R07562 R07568 R07569 R07570 R07572 R07851
+SUBSTRATE   beta-carotene [CPD:C02094];
+            NADH [CPD:C00004];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            beta-cryptoxanthin [CPD:C08591]
+PRODUCT     zeaxanthin [CPD:C06098];
+            NAD+ [CPD:C00003];
+            H2O [CPD:C00001];
+            beta-cryptoxanthin [CPD:C08591]
+COMMENT     Requires ferredoxin and Fe(II). Also acts on other carotenoids with a beta-end group. In some species canthaxanthin is the preferred substrate.
+HISTORY     EC 1.14.13.129 created 2011
+REFERENCE   1  [PMID:8798688]
+  AUTHORS   Sun Z, Gantt E, Cunningham FX Jr
+  TITLE     Cloning and functional analysis of the beta-carotene hydroxylase of Arabidopsis thaliana.
+  JOURNAL   J. Biol. Chem. 271 (1996) 24349-52.
+  ORGANISM  Arabidopsis thaliana
+  SEQUENCE  [ath:AT4G25700]
+REFERENCE   2  [PMID:9045623]
+  AUTHORS   Fraser PD, Miura Y, Misawa N
+  TITLE     In vitro characterization of astaxanthin biosynthetic enzymes.
+  JOURNAL   J. Biol. Chem. 272 (1997) 6128-35.
+  ORGANISM  Pantoea ananatis
+REFERENCE   3  [PMID:9523693]
+  AUTHORS   Fraser PD, Shimada H, Misawa N
+  TITLE     Enzymic confirmation of reactions involved in routes to astaxanthin formation, elucidated using a direct substrate in vitro assay.
+  JOURNAL   Eur. J. Biochem. 252 (1998) 229-36.
+REFERENCE   4  [PMID:9555077]
+  AUTHORS   Bouvier F, Keller Y, d'Harlingue A, Camara B
+  TITLE     Xanthophyll biosynthesis: molecular and functional characterization of carotenoid hydroxylases from pepper fruits (Capsicum annuum L.).
+  JOURNAL   Biochim. Biophys. Acta. 1391 (1998) 320-8.
+  ORGANISM  Capsicum annuum
+  SEQUENCE  [up:O49815 O49814]
+REFERENCE   5  [PMID:10524195]
+  AUTHORS   Linden H
+  TITLE     Carotenoid hydroxylase from Haematococcus pluvialis: cDNA sequence, regulation and functional complementation.
+  JOURNAL   Biochim. Biophys. Acta. 1446 (1999) 203-12.
+  ORGANISM  Haematococcus pluvialis
+  SEQUENCE  [up:Q9SPK6]
+REFERENCE   6  [PMID:12591618]
+  AUTHORS   Zhu C, Yamamura S, Nishihara M, Koiwa H, Sandmann G
+  TITLE     cDNAs for the synthesis of cyclic carotenoids in petals of Gentiana lutea and their regulation during flower development.
+  JOURNAL   Biochim. Biophys. Acta. 1625 (2003) 305-8.
+  ORGANISM  Gentiana lutea
+  SEQUENCE  [up:B3SGL0]
+REFERENCE   7  [PMID:16614859]
+  AUTHORS   Choi SK, Matsuda S, Hoshino T, Peng X, Misawa N
+  TITLE     Characterization of bacterial beta-carotene 3,3'-hydroxylases, CrtZ, and P450 in  astaxanthin biosynthetic pathway and adonirubin production by gene combination in Escherichia coli.
+  JOURNAL   Appl. Microbiol. Biotechnol. 72 (2006) 1238-46.
+  ORGANISM  Brevundimonas sp., Paracoccus sp., Pantoea ananatis
+PATHWAY     ec00906  Carotenoid biosynthesis
+ORTHOLOGY   K15746  beta-carotene 3-hydroxylase
+GENES       ATH: AT4G25700(BETA-OHASE_1) AT5G52570(BETA-OHASE_2)
+            ALY: ARALYDRAFT_492254 ARALYDRAFT_495328
+            CRB: CARUB_v10005328mg CARUB_v10026847mg
+            EUS: EUTSA_v10014816mg EUTSA_v10025794mg
+            CIT: 102578021(Chyb) 102617763
+            CIC: CICLE_v10005481mg CICLE_v10022121mg
+            TCC: TCM_015247 TCM_016325
+            GMX: 100785541 100802778 100813368 547758
+            MTR: MTR_1g100070
+            CAM: 101509699 101511972
+            FVE: 101291246 101308227
+            CSV: 101212140 101214325 101231983
+            RCU: RCOM_1582530 RCOM_1688060
+            POP: POPTR_0001s09770g(POPTRDRAFT_180252) POPTR_0004s07230g(POPTRDRAFT_1075961) POPTR_0017s01240g
+            VVI: 100232875(BCH1) 100268009
+            SLY: 544133(CrtR-b1) 544297(CrtR-b2)
+            SOT: 102582135 102591473
+            OSA: 4331460 4336753 4349224
+            DOSA: Os03t0125100-01(Os03g0125100) Os04t0578400-01(Os04g0578400) Os10t0533500-00(Os10g0533500)
+            OBR: 102701304 102710199 102719474
+            BDI: 100836591 100837035
+            SBI: SORBI_01g048860(SORBIDRAFT_01g048860) SORBI_06g026190(SORBIDRAFT_06g026190)
+            ZMA: 100273156 100276364 100281693 732775(HYD1) 732825(HYD3)
+            SITA: 101757118 101770294
+            ATR: s00001p00259440(AMTR_s00001p00259440) s00059p00077790(AMTR_s00059p00077790)
+            SMO: SELMODRAFT_121550 SELMODRAFT_122500 SELMODRAFT_125253 SELMODRAFT_126723 SELMODRAFT_131603 SELMODRAFT_14977
+            PPP: PHYPADRAFT_34090
+            CRE: CHLREDRAFT_164400(CHYB)
+            VCN: VOLCADRAFT_68369(chyB)
+            OLU: OSTLU_9013
+            OTA: Ot10g01980
+            MIS: MICPUN_76186
+            MPP: MICPUCDRAFT_38006(CRTR)
+            CSL: COCSUDRAFT_30875
+            CVR: CHLNCDRAFT_24463
+            TPS: THAPSDRAFT_263437
+            ESA: ESA_00341
+            CSZ: CSSP291_01535
+            PAM: PANA_4163(crtZ)
+            PLF: PANA5342_p10304(crtZ)
+            PAJ: PAJ_p0121(crtZ)
+            PAQ: PAGR_p229
+            PVA: Pvag_pPag30170(crtZ)
+            PAO: Pat9b_5262
+            PSTS: E05_04180(crtZ)
+            PPU: PP_3246
+            PPF: Pput_2516
+            PPG: PputGB1_2647
+            PPW: PputW619_2665
+            PPT: PPS_2732
+            PPB: PPUBIRD1_2531(crtZ)
+            PPI: YSA_10718
+            PPX: T1E_5632(crtZ)
+            PPUH: B479_13325
+            PPUT: L483_17455
+            PPUN: PP4_25760(crtZ)
+            PEN: PSEEN3115(crtZ)
+            PSA: PST_3871(crtZ)
+            PSZ: PSTAB_3822(crtZ)
+            PSR: PSTAA_3964(crtZ)
+            PSC: A458_02110
+            PSH: Psest_0406
+            PFV: Psefu_2398
+            PSV: PVLB_12475
+            PMON: X969_13000
+            PMOT: X970_12645
+            RTA: Rta_07680
+            SCL: sce0583(crtZ)
+            SCU: SCE1572_04045
+            XAU: Xaut_4535
+            RVA: Rvan_0152
+            CAK: Caul_1710
+            BSB: Bresu_2276
+            NAR: Saro_1168
+            NPP: PP1Y_AT11105
+            SAL: Sala_2128
+            SJP: SJA_C1-06860(crtZ)
+            SCH: Sphch_2465
+            SSY: SLG_38860(crtZ)
+            ELI: ELI_03325
+            PBR: PB2503_11004
+            AFO: Afer_0482
+            AYM: YM304_38780(crtZ)
+            SFC: Spiaf_2627
+            SLR: L21SP2_3046
+            CPI: Cpin_5618
+            NKO: Niako_7021
+            PHE: Phep_2089
+            PSN: Pedsa_2221
+            HHY: Halhy_4786
+            SGN: SGRA_1065(crtR)
+            CMR: Cycma_2040
+            BBD: Belba_0853
+            EVI: Echvi_1255
+            CHU: CHU_2038(crtZ)
+            DFE: Dfer_2033
+            SLI: Slin_5702
+            RSI: Runsl_1382
+            FLI: Fleli_3595
+            EOL: Emtol_1191
+            FAE: FAES_0647
+            HSW: Hsw_1151
+            MTT: Ftrac_1469
+            GFO: GFO_2501(crtZ)
+            FJO: Fjoh_0059
+            FPS: FP1451(crtZ)
+            FBR: FBFL15_2142(crtZ)
+            FCO: FCOL_07415
+            FIN: KQS_04640(crtZ)
+            RBI: RB2501_11837
+            ZPR: ZPR_0874
+            CAT: CA2559_00925
+            FBC: FB2170_07634
+            CAO: Celal_2445
+            CLY: Celly_0461
+            KDI: Krodi_1945
+            LAN: Lacal_0057
+            ZGA: zobellia_2972(crtZ)
+            MRS: Murru_2223
+            ASL: Aeqsu_0297
+            PTQ: P700755_000614
+            NDO: DDD_2395(crtZ)
+            POM: MED152_02565(crtZ1) MED152_02665(crtZ3)
+            FBA: FIC_01508
+            FTE: Fluta_0905
+            OHO: Oweho_0789
+            PTO: PTO1531
+            SSO: SSO2906(crtZ)
+            SOL: Ssol_0702
+            SAI: Saci_1733(crtZ)
+            SACN: SacN8_08425
+            SACR: SacRon12I_08440
+            SACS: SUSAZ_08240
+            SIA: M1425_0409
+            SIM: M1627_0423
+            SID: M164_0447
+            SIY: YG5714_1669
+            SIN: YN1551_0909
+            MSE: Msed_1074
+            MCN: Mcup_1040
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.129
+            IUBMB Enzyme Nomenclature: 1.14.13.129
+            ExPASy - ENZYME nomenclature database: 1.14.13.129
+            BRENDA, the Enzyme Database: 1.14.13.129
+            CAS: 133425-64-6
+///

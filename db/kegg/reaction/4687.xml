@@ -1,0 +1,12 @@
+ENTRY       R04687                      Reaction
+NAME        2,5-Diaminohexanoate:NAD+ oxidoreductase (deaminating)
+DEFINITION  2,5-Diaminohexanoate + H2O + NAD+ <=> 2-Amino-5-oxohexanoate + Ammonia + NADH + H+
+EQUATION    C05161 + C00001 + C00003 <=> C05825 + C00014 + C00004 + C00080
+COMMENT     NADPH (see R04688)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00779  C05161_C05825 main [RC:RC00249]
+            RP06070  C00001_C05825 leave
+            RP06071  C00014_C05161 leave
+ENZYME      1.4.1.12
+PATHWAY     rn00310  Lysine degradation
+///

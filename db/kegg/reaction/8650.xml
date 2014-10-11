@@ -1,0 +1,16 @@
+ENTRY       R08650                      Reaction
+DEFINITION  L-Aspartate 4-semialdehyde + Glycerone phosphate <=> 3-Amino-4-hydroxybenzoate + Orthophosphate + 2 H2O
+EQUATION    C00441 + C00111 <=> C12115 + C00009 + 2 C00001
+COMMENT     multi-step reaction
+            GriI, GriH
+            Mn2+ is required for this reaction.
+RPAIR       RP03922  C00009_C00111 leave
+            RP06942  C00001_C00441 leave
+            RP08015  C00001_C00111 leave
+            RP13617  C00441_C12115 main [RC:RC02335]
+            RP13618  C00111_C12115 trans
+REFERENCE   1  [PMID:17003031]
+            Suzuki H, Ohnishi Y, Furusho Y, Sakuda S, Horinouchi S.
+            Novel benzene ring biosynthesis from C(3) and C(4) primary metabolites by two enzymes.
+            J. Biol. Chem. 281 (2006) 36944-51.
+///

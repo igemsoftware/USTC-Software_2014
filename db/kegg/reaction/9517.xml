@@ -1,0 +1,13 @@
+ENTRY       R09517                      Reaction
+NAME        anthranilate,FAD:oxygen oxidoreductase (3-hydroxylating)
+DEFINITION  Anthranilate + FADH2 + Oxygen <=> 3-Hydroxyanthranilate + FAD + H2O
+EQUATION    C00108 + C01352 + C00007 <=> C00632 + C00016 + C00001
+RPAIR       RP00013  C00001_C00007 cofac
+            RP00018  C00016_C01352 cofac [RC:RC00126]
+            RP01777  C00108_C00632 main [RC:RC00046]
+            RP06721  C00007_C00632 leave
+ENZYME      1.14.14.8
+PATHWAY     rn00380  Tryptophan metabolism
+ORTHOLOGY   K16901  anthranilate 3-monooxygenase (FAD) / 4-hydroxyphenylacetate 3-monooxygenase [EC:1.14.14.8 1.14.14.9]
+            K16902  FAD reductase [NAD(P)H] [EC:1.5.1.45]
+///

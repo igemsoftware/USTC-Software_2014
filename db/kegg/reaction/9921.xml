@@ -1,0 +1,14 @@
+ENTRY       R09921                      Reaction
+NAME        stemod-13(17)-ene,NADPH:oxygen 19-oxidoreductase
+DEFINITION  Stemod-13(17)-ene + 3 Oxygen + 3 NADPH + 3 H+ <=> syn-Stemoden-19-oate + 3 NADP+ + 4 H2O
+EQUATION    C18224 + 3 C00007 + 3 C00005 + 3 C00080 <=> C20208 + 3 C00006 + 4 C00001
+COMMENT     three-step reaction (similar to R09862+R09863+R09864)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP15562  C18224_C20208 main [RC:RC01952]
+            RP15563  C00007_C20208 leave
+ENZYME      1.14.13.144
+PATHWAY     rn00904  Diterpenoid biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K16085  9beta-pimara-7,15-diene oxidase [EC:1.14.13.144]
+///

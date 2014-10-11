@@ -1,0 +1,19 @@
+ENTRY       R08569                      Reaction
+NAME        2-amino-3,7-dideoxy-D-threo-hept-6-ulosonate:NAD+ oxidoreductase (deaminating)
+DEFINITION  2-Amino-3,7-dideoxy-D-threo-hept-6-ulosonic acid + H2O + NAD+ <=> 3-Dehydroquinate + Ammonia + NADH + H+
+EQUATION    C16850 + C00001 + C00003 <=> C00944 + C00014 + C00004 + C00080
+COMMENT     two-step reaction (oxidative deamination, cyclization)
+            possibly intermediate (3,7-dideoxy-D-threo-hept-2,6-diulosonic acid)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP07336  C00001_C00944 leave
+            RP13331  C00944_C16850 main [RC:RC02302]
+            RP13332  C00014_C16850 leave
+ENZYME      1.4.1.24
+PATHWAY     rn00400  Phenylalanine, tyrosine and tryptophan biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K11646  3-dehydroquinate synthase II [EC:1.4.1.24]
+REFERENCE   1  [PMID:15182204]
+            White RH.
+            L-Aspartate semialdehyde and a 6-deoxy-5-ketohexose 1-phosphate are the precursors to the aromatic amino acids in Methanocaldococcus jannaschii.
+            Biochemistry. 43 (2004) 7618-27.
+///

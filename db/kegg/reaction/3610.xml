@@ -1,0 +1,13 @@
+ENTRY       R03610                      Reaction
+NAME        calcidiol,NADPH:oxygen oxidoreductase (1-hydroxylating)
+DEFINITION  Calcidiol + Oxygen + NADPH + H+ <=> Calcitriol + NADP+ + H2O
+EQUATION    C01561 + C00007 + C00005 + C00080 <=> C01673 + C00006 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP03220  C01561_C01673 main [RC:RC00723]
+            RP07634  C00007_C01673 leave
+ENZYME      1.14.13.13
+PATHWAY     rn00100  Steroid biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K07438  25-hydroxyvitamin D3 1alpha-hydroxylase [EC:1.14.13.13]
+///

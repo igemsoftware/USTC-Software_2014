@@ -1,0 +1,15 @@
+ENTRY       R08701                      Reaction
+NAME        tRNA uridine 5-carboxymethylaminomethyl modification
+DEFINITION  tRNA containing 2-thiouridine + Glycine + Folinic acid + Reduced acceptor <=> tRNA containing 5-carboxymethylaminomethyl-2-thiouridine + Tetrahydrofolate + Acceptor + H2O
+EQUATION    C17322 + C00037 + C03479 + C00030 <=> C17323 + C00101 + C00028 + C00001
+COMMENT     multi-step reaction
+            unclear reaction
+RPAIR       RP02826  C00101_C03479 main [RC:RC00870]
+            RP13467  C17322_C17323 main [RC:RC00209]
+            RP13468  C00037_C17323 main [RC:RC00053]
+            RP13469  C03479_C17323 trans
+REFERENCE   1  [PMID:17062623]
+            Yim L, Moukadiri I, Bjork GR, Armengod ME.
+            Further insights into the tRNA modification process controlled by proteins MnmE and GidA of Escherichia coli.
+            Nucleic. Acids. Res. 34 (2006) 5892-905.
+///

@@ -1,0 +1,15 @@
+ENTRY       R08923                      Reaction
+NAME        (+)-pulegone,NADPH:oxygen oxidoreductase (9-hydroxylating)
+DEFINITION  Pulegone + NADPH + H+ + Oxygen <=> (+)-Menthofuran + NADP+ + 2 H2O
+EQUATION    C09893 + C00005 + C00080 + C00007 <=> C18025 + C00006 + 2 C00001
+COMMENT     multi-step reaction (9-hydroxylation, cyclization and dehydration)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP14091  C00001_C09893 leave
+            RP14092  C00007_C18025 leave
+            RP15436  C09893_C18025 main [RC:RC02978]
+ENZYME      1.14.13.104
+PATHWAY     rn00902  Monoterpenoid biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K15093  (+)-menthofuran synthase [EC:1.14.13.104]
+///

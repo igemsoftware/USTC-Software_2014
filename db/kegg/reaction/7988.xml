@@ -1,0 +1,15 @@
+ENTRY       R07988                      Reaction
+NAME        malonyl-CoA:caffeoyl-CoA malonyltransferase (cyclizing)
+DEFINITION  Caffeoyl-CoA + 3 Malonyl-CoA <=> Eriodictyol chalcone + 4 CoA + 3 CO2
+EQUATION    C00323 + 3 C00083 <=> C15525 + 4 C00010 + 3 C00011
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP00073  C00010_C00323 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP10896  C00083_C15525 trans
+            RP11075  C00323_C15525 main [RC:RC02726]
+            RP12264  C00083_C15525 trans
+            RP12265  C00083_C15525 trans
+ENZYME      2.3.1.74
+PATHWAY     rn00941  Flavonoid biosynthesis
+ORTHOLOGY   K00660  chalcone synthase [EC:2.3.1.74]
+///

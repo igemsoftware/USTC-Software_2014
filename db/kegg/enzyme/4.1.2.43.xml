@@ -1,0 +1,375 @@
+ENTRY       EC 4.1.2.43                 Enzyme
+NAME        3-hexulose-6-phosphate synthase;
+            D-arabino-3-hexulose 6-phosphate formaldehyde-lyase;
+            3-hexulosephosphate synthase;
+            3-hexulose phosphate synthase;
+            HPS
+CLASS       Lyases;
+            Carbon-carbon lyases;
+            Aldehyde-lyases
+SYSNAME     D-arabino-hex-3-ulose-6-phosphate formaldehyde-lyase (D-ribulose-5-phosphate-forming)
+REACTION    D-arabino-hex-3-ulose 6-phosphate = D-ribulose 5-phosphate + formaldehyde [RN:R05338]
+ALL_REAC    R05338
+SUBSTRATE   D-arabino-hex-3-ulose 6-phosphate [CPD:C06019]
+PRODUCT     D-ribulose 5-phosphate [CPD:C00199];
+            formaldehyde [CPD:C00067]
+COMMENT     Requires Mg2+ or Mn2+ for maximal activity [1]. The enzyme is specific for D-ribulose 5-phosphate as substrate as ribose 5-phosphate, xylulose 5-phosphate, allulose 6-phosphate and fructose 6-phosphate cannot act as substrate. In addition to formaldehyde, the enzyme can also use glycolaldehyde and methylglyoxal [7]. This enzyme, along with EC 5.3.1.27, 6-phospho-3-hexuloisomerase, plays a key role in the ribulose-monophosphate cycle of formaldehyde fixation, which is present in many microorganisms that are capable of utilizing C1-compounds [1]. The hyperthermophilic and anaerobic archaeon Pyrococcus horikoshii OT3 constitutively produces a bifunctional enzyme that sequentially catalyses the reactions of this enzyme and EC 5.3.1.27, 6-phospho-3-hexuloisomerase [6]. This enzyme is a member of the orotidine 5'-monophosphate decarboxylase (OMPDC) suprafamily [5].
+HISTORY     EC 4.1.2.43 created 2008
+REFERENCE   1  [PMID:4219834]
+  AUTHORS   Ferenci T, Strom T, Quayle JR
+  TITLE     Purification and properties of 3-hexulose phosphate synthase and phospho-3-hexuloisomerase from Methylococcus capsulatus.
+  JOURNAL   Biochem. J. 144 (1974) 477-86.
+REFERENCE   2  [PMID:564713]
+  AUTHORS   Kato N, Ohashi H, Tani Y, Ogata K
+  TITLE     3-Hexulosephosphate synthase from Methylomonas aminofaciens 77a. Purification, properties and kinetics.
+  JOURNAL   Biochim. Biophys. Acta. 523 (1978) 236-44.
+REFERENCE   3  [PMID:8595859]
+  AUTHORS   Yanase H, Ikeyama K, Mitsui R, Ra S, Kita K, Sakai Y, Kato N
+  TITLE     Cloning and sequence analysis of the gene encoding 3-hexulose-6-phosphate synthase from the methylotrophic bacterium, Methylomonas aminofaciens 77a, and its expression in Escherichia coli.
+  JOURNAL   FEMS. Microbiol. Lett. 135 (1996) 201-5.
+  ORGANISM  Methylomonas aminofaciens
+  SEQUENCE  [up:Q48907]
+REFERENCE   4  [PMID:16278835]
+  AUTHORS   Yurimoto H, Kato N, Sakai Y
+  TITLE     Assimilation, dissimilation, and detoxification of formaldehyde, a central metabolic intermediate of methylotrophic metabolism.
+  JOURNAL   Chem. Rec. 5 (2005) 367-75.
+REFERENCE   5  [PMID:16428816]
+  AUTHORS   Kato N, Yurimoto H, Thauer RK
+  TITLE     The physiological role of the ribulose monophosphate pathway in bacteria and archaea.
+  JOURNAL   Biosci. Biotechnol. Biochem. 70 (2006) 10-21.
+REFERENCE   6  [PMID:15901685]
+  AUTHORS   Orita I, Yurimoto H, Hirai R, Kawarabayasi Y, Sakai Y, Kato N
+  TITLE     The archaeon Pyrococcus horikoshii possesses a bifunctional enzyme for formaldehyde fixation via the ribulose monophosphate pathway.
+  JOURNAL   J. Bacteriol. 187 (2005) 3636-42.
+REFERENCE   7
+  AUTHORS   Kato, N., Miyamoto, N., Shimao, M. and Sakazawa, C.
+  TITLE     3-Hexulose phosphate pynthase from a new facultative methylotroph, Mycobacterium gastri MB19.
+  JOURNAL   Agric. Biol. Chem. 52 (1988) 2659-2661.
+PATHWAY     ec00030  Pentose phosphate pathway
+            ec00680  Methane metabolism
+            ec01100  Metabolic pathways
+            ec01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K08093  3-hexulose-6-phosphate synthase
+            K13812  bifunctional enzyme Fae/Hps
+            K13831  3-hexulose-6-phosphate synthase / 6-phospho-3-hexuloisomerase
+GENES       EUM: ECUMN_2963
+            STM: STM2755
+            SEO: STM14_3320
+            SEV: STMMW_27231
+            SEY: SL1344_2739(hxlA)
+            SEM: STMDT12_C28070
+            SEJ: STMUK_2743
+            SEB: STM474_2890
+            SEF: UMN798_2989(hxlA)
+            SETU: STU288_13940
+            SETC: CFSAN001921_03340
+            SENR: STMDT2_26611
+            SEND: DT104_27571
+            SEH: SeHA_C2929(hxlA)
+            SHB: SU5_03243
+            SENH: CFSAN002069_18505
+            SEEH: SEEH1578_22575
+            SOD: Sant_0061
+            KPN: KPN_02957
+            MCA: MCA2738 MCA3043 MCA3049
+            MMT: Metme_0742 Metme_4080
+            MAH: MEALZ_1912(hpsi2) MEALZ_3953(hps1)
+            MEJ: Q7A_2498 Q7A_2501
+            MEC: Q7C_1679 Q7C_1682
+            MFA: Mfla_0250 Mfla_1654
+            MMB: Mmol_0313 Mmol_1338
+            MEH: M301_0304 M301_1547
+            MEI: Msip34_0268
+            MEP: MPQ_0281(sgbH) MPQ_1561
+            NSA: Nitsa_1660
+            DAO: Desac_1176
+            BSU: BSU03460(hxlA)
+            BSR: I33_0397(hxlA)
+            BSL: A7A1_1851
+            BSH: BSU6051_03460(hxlA)
+            BSY: I653_01730
+            BSS: BSUW23_01790(hxlA)
+            BST: GYO_0559(hxlA)
+            BSO: BSNT_00615(hxlA)
+            BSN: BSn5_13315
+            BSQ: B657_03460(hxlA)
+            BSUB: BEST7613_0346(hxlA)
+            BSX: C663_0338(hxlA)
+            BSP: U712_01790
+            BLI: BL02045(hxlA)
+            BLD: BLi02805(hxlA)
+            BLH: BaLi_c29000(hxlA)
+            BAO: BAMF_0310(hxlA)
+            BAY: RBAM_003630(hxlA)
+            BAQ: BACAU_0303(hxlA)
+            BYA: BANAU_0305(hxlA)
+            BAMP: B938_01575
+            BAML: BAM5036_0322(hxlA)
+            BAMA: RBAU_0337(hxlA)
+            BAMN: BASU_0321(hxlA)
+            BAMB: BAPNAU_0307(hxlA)
+            BAZ: BAMTA208_01555(hxlA)
+            BQL: LL3_00318(hxlA)
+            BXH: BAXH7_00321(hxlA)
+            BQY: MUS_0325(hxlA)
+            BAMI: KSO_017855
+            BAMC: U471_03230
+            BAMF: U722_01860
+            BAE: BATR1942_20410
+            BCL: ABC3351(hxlA)
+            BPU: BPUM_2333(hxlA)
+            BMQ: BMQ_0891(hxlA) BMQ_1538(hxlA) BMQ_2942(hxlA)
+            BMD: BMD_0891(hxlA) BMD_1519(hxlA) BMD_2971(hxlA)
+            BMH: BMWSH_3691 BMWSH_4350(hxlA)
+            BAG: Bcoa_0968
+            BJS: MY9_0361
+            BIF: N288_21395 N288_22430
+            OIH: OB2806
+            GTN: GTNG_1490
+            GTH: Geoth_3109
+            GMC: GY4MC1_3093
+            GGH: GHH_c21400(hxlA)
+            GJF: M493_16830
+            SAU: SA0528
+            SAV: SAV0570
+            SAW: SAHV_0568
+            SAH: SaurJH1_0607 SaurJH1_2812
+            SAJ: SaurJH9_0593 SaurJH9_2736
+            SAM: MW0525
+            SAS: SAS0528
+            SAR: SAR0574
+            SAC: SACOL0617
+            SAX: USA300HOU_0564
+            SAA: SAUSA300_0555
+            SAO: SAOUHSC_00553
+            SAE: NWMN_0533
+            SAD: SAAV_0533(hxlA)
+            SUU: M013TW_0558
+            SUV: SAVC_02440
+            SUH: SAMSHR1132_05140
+            SUE: SAOV_0605
+            SUJ: SAA6159_00524(hxlA)
+            SUK: SAA6008_00578(hxlA)
+            SUC: ECTR2_524(hxlA)
+            SUT: SAT0131_00631(fumC)
+            SUQ: HMPREF0772_12618(sgbH)
+            SUZ: MS7_0560(hxlA)
+            SUD: ST398NM01_0645
+            SUX: SAEMRSA15_04970
+            SUW: SATW20_06400
+            SUG: SAPIG0645(hxlA)
+            SUF: SARLGA251_05060
+            SAUA: SAAG_00991
+            SAUE: RSAU_000524(hps)
+            SAUN: SAKOR_00559
+            SAUS: SA40_0511
+            SAUU: SA957_0526
+            SAUZ: SAZ172_0572
+            SAB: SAB0520
+            SUY: SA2981_0547
+            SAUB: C248_0645
+            SAUM: BN843_5640
+            SAUC: CA347_586(hxlA)
+            SAUR: SABB_00621
+            SEP: SE0341
+            SER: SERP0216
+            SHA: SH2420
+            SSP: SSP1619 SSP1626 SSP2148
+            SCA: Sca_0226 Sca_0711
+            SLG: SLGD_02315
+            SLN: SLUG_22330
+            SSD: SPSINT_0249
+            SDT: SPSE_2213(hxlA)
+            SWA: A284_00525 A284_10445 A284_12317
+            SPAS: STP1_1658
+            ESI: Exig_2372
+            EAN: Eab7_2216
+            EXM: U719_13055
+            MCL: MCCL_0037
+            PJD: Pjdr2_1185
+            GYM: GYMC10_3885
+            PPY: PPE_04673
+            PPM: PPSC2_c5186
+            PPO: PPM_4826(hxlA)
+            PPOL: X809_26275
+            PMS: KNP414_07885(hxlA)
+            PMQ: PM3016_7402
+            PMW: B2K_37330
+            PTA: HPL003_05880
+            PSAB: PSAB_01345 PSAB_23295
+            LBR: LVIS_0442
+            LBK: LVISKB_0449
+            LCB: LCABL_04190 LCABL_04490(hps)
+            LCZ: LCAZH_0412
+            LCS: LCBD_0422 LCBD_0453
+            LCE: LC2W_0417 LC2W_0448
+            LCW: BN194_04270 BN194_04560
+            LCL: LOCK919_0475
+            LBN: LBUCD034_0077(hxlA)
+            LSN: LSA_03490
+            LPI: LBPG_03035
+            LPQ: AF91_01140
+            PCE: PECL_1750
+            OOE: OEOE_0131
+            LMM: MI1_09731
+            AUR: HMPREF9243_0240(hxlA)
+            CAC: CA_C0396
+            CAE: SMB_G0404(sgbH)
+            CAY: CEA_G0406
+            CBE: Cbei_4647
+            CSR: Cspa_c49610
+            ROB: CK5_18950
+            EUC: EC1_08720
+            RHA: RHA1_ro11329
+            ROA: Pd630_LPD04589
+            CMI: CMM_1123(sgaH)
+            CMS: CMS_1443(hps)
+            CMC: CMN_01092(sgaH)
+            ART: Arth_3708
+            AAU: AAur_0494(hps)
+            AAI: AARI_06580(rmpA)
+            APN: Asphe3_02200
+            ARR: ARUE_c04640(rmpA)
+            BDE: BDP_0013
+            TRS: Terro_1472
+            STR: Sterm_1849 Sterm_3212
+            CPI: Cpin_5671
+            CMR: Cycma_4041
+            EVI: Echvi_3532
+            ZPR: ZPR_1061
+            CAO: Celal_3937
+            ZGA: zobellia_3942(hxlA)
+            MPG: Theba_2591
+            MJA: MJ_0644 MJ_1447
+            MFE: Mefer_0259 Mefer_1012
+            MVU: Metvu_0541 Metvu_1176
+            MFS: MFS40622_0906 MFS40622_1056
+            MIF: Metin_1286 Metin_1445
+            MIG: Metig_0604 Metig_0664
+            MMP: MMP1270
+            MMQ: MmarC5_0321
+            MMX: MmarC6_1403
+            MMZ: MmarC7_0516
+            MMD: GYY_07185
+            MAE: Maeo_0614 Maeo_1123
+            MVN: Mevan_0582
+            MOK: Metok_0605 Metok_1249
+            MAC: MA4504 MA4608
+            MBA: Mbar_A0935 Mbar_A1170
+            MMA: MM_1215 MM_1279
+            MMAZ: MmTuc01_1255 MmTuc01_1325
+            MBU: Mbur_1994
+            MMH: Mmah_0234 Mmah_1222
+            MEV: Metev_0697 Metev_1698
+            MZH: Mzhil_0262 Mzhil_0311
+            MPY: Mpsy_1396 Mpsy_1425
+            MHZ: Metho_0261 Metho_0283
+            MTP: Mthe_0455 Mthe_0988
+            MCJ: MCON_0429 MCON_1383
+            MHI: Mhar_0019 Mhar_1869
+            MHU: Mhun_0647 Mhun_1628
+            MLA: Mlab_0996 Mlab_1453
+            MEM: Memar_0744 Memar_1085
+            MBG: BN140_1075 BN140_1140
+            MPI: Mpet_0679 Mpet_0801
+            MBN: Mboo_0707 Mboo_0772
+            MFO: Metfor_2057 Metfor_2503
+            MPL: Mpal_1036 Mpal_2121
+            MPD: MCP_0861 MCP_2904(fae_hps)
+            MEZ: Mtc_0381(fae) Mtc_1411
+            RCI: RCIX1492 RCIX775(fae-hps)
+            MER: H729_09025
+            MTH: MTH1474 MTH888
+            MMG: MTBMA_c00570(fae_hps) MTBMA_c12830
+            MST: Msp_1358 Msp_1498
+            MSI: Msm_0426 Msm_1213
+            MRU: mru_0712 mru_2131
+            MEB: Abm4_0046 Abm4_0441
+            MEL: Metbo_0071 Metbo_2333
+            MEW: MSWAN_0017 MSWAN_0326
+            METH: MBMB1_0009(fae-hps) MBMB1_0388
+            MFV: Mfer_0465 Mfer_0572
+            MKA: MK0153(SgbH) MK1449(MenG)
+            MAX: MMALV_16840
+            AFU: AF0861(hps-1) AF1305(hps-2)
+            APO: Arcpr_1052 Arcpr_1797
+            AVE: Arcve_1411 Arcve_1683
+            AST: Asulf_00326 Asulf_01087
+            FPL: Ferp_2129 Ferp_2198
+            TAR: TALC_01565
+            PHO: PH1938
+            PAB: PAB1222(hps)
+            PFU: PF0220
+            PFI: PFC_00160
+            PYN: PNA2_0868
+            PYA: PYCH_13020
+            PYS: Py04_0376
+            TKO: TK0475
+            TON: TON_0336
+            TGA: TGAM_1891(hps)
+            TSI: TSIB_0428
+            TBA: TERMP_00758
+            THE: GQS_03555
+            THA: TAM4_82
+            THM: CL1_0365
+            TLT: OCC_09933
+            THS: TES1_0756
+            TNU: BD01_0222
+            ABI: Aboo_0457
+            ACF: AciM339_0590
+            APE: APE_0952.1(hxlA)
+            ACJ: ACAM_0624(hxlA)
+            SMR: Smar_0492
+            SHC: Shell_0310
+            IHO: Igni_0269
+            DKA: DKAM_1456
+            DMU: Desmu_0149
+            DFD: Desfe_0079
+            TAG: Tagg_1068
+            IAG: Igag_1921
+            THG: TCELL_0740
+            HBU: Hbut_0129
+            PFM: Pyrfu_0648
+            SSO: SSO0202(hpS-2)
+            SOL: Ssol_1184
+            STO: ST0238
+            SAI: Saci_0802
+            SACN: SacN8_03890
+            SACR: SacRon12I_03880
+            SACS: SUSAZ_03625
+            SIS: LS215_2094
+            SIA: M1425_1931
+            SIM: M1627_2009
+            SID: M164_1939
+            SIY: YG5714_2053
+            SIN: YN1551_0865
+            SII: LD85_2191
+            SIH: SiH_1876
+            SIR: SiRe_1804
+            SIC: SiL_1785
+            MSE: Msed_0227
+            MCN: Mcup_1845
+            AHO: Ahos_0599
+            PAI: PAE1679
+            PIS: Pisl_1686
+            PCL: Pcal_0568
+            PAS: Pars_1830
+            PYR: P186_0040
+            POG: Pogu_0300
+            TNE: Tneu_0708
+            CMA: Cmaq_1871
+            TUZ: TUZN_2015
+            TTN: TTX_1521(hps)
+            VDI: Vdis_1817
+            VMO: VMUT_0258
+            TPE: Tpen_0372
+            THB: N186_02880
+            ASC: ASAC_0959
+            CLG: Calag_0067
+            FFO: FFONT_0403
+            KCR: Kcr_1307
+DBLINKS     ExplorEnz - The Enzyme Database: 4.1.2.43
+            IUBMB Enzyme Nomenclature: 4.1.2.43
+            ExPASy - ENZYME nomenclature database: 4.1.2.43
+            BRENDA, the Enzyme Database: 4.1.2.43
+///

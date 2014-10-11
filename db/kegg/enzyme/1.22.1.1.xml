@@ -1,0 +1,124 @@
+ENTRY       EC 1.22.1.1                 Enzyme
+NAME        iodotyrosine deiodinase;
+            iodotyrosine dehalogenase 1;
+            DEHAL1
+CLASS       Oxidoreductases;
+            Acting on halogen in donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     NADP+:L-tyrosine oxidoreductase (iodinating)
+REACTION    L-tyrosine + 2 NADP+ + 2 I- = 3,5-diiodo-L-tyrosine + 2 NADPH + 2 H+ (overall reaction) [RN:R10059];
+            (1a) L-tyrosine + NADP+ + I- = 3-iodo-L-tyrosine + NADPH + H+ [RN:R09521];
+            (1b) 3-iodo-L-tyrosine + NADP+ + I- = 3,5-diiodo-L-tyrosine + NADPH + H+ [RN:R09522]
+ALL_REAC    R09521 R09522 R10059
+SUBSTRATE   L-tyrosine [CPD:C00082];
+            NADP+ [CPD:C00006];
+            I- [CPD:C00708];
+            3-iodo-L-tyrosine [CPD:C02515]
+PRODUCT     3,5-diiodo-L-tyrosine [CPD:C01060];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            3-iodo-L-tyrosine [CPD:C02515]
+COMMENT     The enzyme activity has only been demonstrated in the direction of 3-deiodination. Present in a transmembrane flavoprotein. Requires FMN.
+HISTORY     EC 1.22.1.1 created 2010
+REFERENCE   1  [PMID:4394169]
+  AUTHORS   Rosenberg IN
+  TITLE     Purification of iodotyrosine deiodinase from bovine thyroid.
+  JOURNAL   Metabolism. 19 (1970) 785-98.
+  ORGANISM  Bos taurus
+REFERENCE   2  [PMID:15289438]
+  AUTHORS   Gnidehou S, Caillou B, Talbot M, Ohayon R, Kaniewski J, Noel-Hudson MS, Morand S, Agnangji D, Sezan A, Courtin F, Virion A, Dupuy C
+  TITLE     Iodotyrosine dehalogenase 1 (DEHAL1) is a transmembrane protein involved in the recycling of iodide close to the thyroglobulin iodination site.
+  JOURNAL   FASEB. J. 18 (2004) 1574-6.
+  ORGANISM  Homo sapiens
+  SEQUENCE  [hsa:389434]
+REFERENCE   3  [PMID:16316988]
+  AUTHORS   Friedman JE, Watson JA Jr, Lam DW, Rokita SE
+  TITLE     Iodotyrosine deiodinase is the first mammalian member of the NADH oxidase/flavin  reductase superfamily.
+  JOURNAL   J. Biol. Chem. 281 (2006) 2812-9.
+  ORGANISM  Homo sapiens, Mus musculus
+REFERENCE   4  [PMID:19436071]
+  AUTHORS   Thomas SR, McTamney PM, Adler JM, Laronde-Leblanc N, Rokita SE
+  TITLE     Crystal structure of iodotyrosine deiodinase, a novel flavoprotein responsible for iodide salvage in thyroid glands.
+  JOURNAL   J. Biol. Chem. 284 (2009) 19659-67.
+  ORGANISM  Homo sapiens
+ORTHOLOGY   K17231  iodotyrosine deiodinase
+GENES       HSA: 389434(IYD)
+            PTR: 472159(IYD)
+            PPS: 100984862(IYD)
+            GGO: 101134826(IYD)
+            PON: 100127058(IYD)
+            MCC: 705471(IYD)
+            MCF: 102137987(IYD)
+            MMU: 70337(Iyd)
+            RNO: 308129(Iyd)
+            CGE: 100766759
+            HGL: 101721889(Iyd)
+            TUP: 102468639(IYD)
+            CFA: 476244(IYD)
+            AML: 100476845
+            FCA: 101100136(IYD)
+            PTG: 102961413(IYD)
+            BTA: 534110(IYD)
+            BOM: 102270351(IYD)
+            PHD: 102340056(IYD)
+            CHX: 102171610(IYD)
+            SSC: 403124(IYD)
+            CFR: 102518380(IYD)
+            ECB: 100147582(IYD)
+            MYB: 102251589(IYD)
+            MYD: 102768666 102768952
+            PALE: 102879253(IYD)
+            MDO: 100032091(IYD)
+            SHR: 100913424(IYD)
+            OAA: 100074313(IYD)
+            GGA: 421631(IYD)
+            MGP: 100542007
+            TGU: 100219876(IYD)
+            FAB: 101817326(IYD)
+            PHI: 102107342(IYD)
+            APLA: 101792350(IYD)
+            FPG: 101919057(IYD)
+            FCH: 102046732(IYD)
+            CLV: 102093624(IYD)
+            ASN: 102382246(IYD)
+            PSS: 102454348(IYD)
+            CMY: 102935978(IYD)
+            ACS: 100566819
+            XLA: 447152(iyd)
+            XTR: 496718(iyd)
+            DRE: 100330940 568107(iyd)
+            TRU: 101074588
+            MZE: 101464367
+            OLA: 101165685
+            XMA: 102217045
+            LCM: 102346446
+            BFO: BRAFLDRAFT_99981
+            SPU: 592720
+            DME: Dmel_CG6279
+            DPO: Dpse_GA19483
+            DAN: Dana_GF10551
+            DER: Dere_GG13943
+            DPE: Dper_GL24919
+            DSE: Dsec_GM24778
+            DSI: Dsim_GD12829
+            DWI: Dwil_GK12308
+            DYA: Dyak_GE20241
+            DGR: Dgri_GH16259
+            DMO: Dmoj_GI13193
+            DVI: Dvir_GJ11969
+            AGA: AgaP_AGAP005435
+            AAG: AaeL_AAEL009735
+            CQU: CpipJ_CPIJ012177
+            AME: 413740(GB11154)
+            NVI: 100122307
+            TCA: 654861
+            BMOR: 101741567
+            PHU: Phum_PHUM509030
+            LOA: LOAG_00270
+            NVE: NEMVE_v1g105379
+            HMG: 100199794
+DBLINKS     ExplorEnz - The Enzyme Database: 1.22.1.1
+            IUBMB Enzyme Nomenclature: 1.22.1.1
+            ExPASy - ENZYME nomenclature database: 1.22.1.1
+            BRENDA, the Enzyme Database: 1.22.1.1
+///

@@ -1,0 +1,74 @@
+ENTRY       EC 1.5.1.43                 Enzyme
+NAME        carboxynorspermidine synthase;
+            carboxynorspermidine dehydrogenase;
+            carboxyspermidine dehydrogenase;
+            CASDH;
+            CANSDH;
+            VC1624 (gene name)
+CLASS       Oxidoreductases;
+            Acting on the CH-NH group of donors;
+            With NAD+ or NADP+ as acceptor
+SYSNAME     carboxynorspermidine:NADP+ oxidoreductase
+REACTION    (1) carboxynorspermidine + H2O + NADP+ = L-aspartate 4-semialdehyde + propane-1,3-diamine + NADPH + H+ [RN:R09080];
+            (2) carboxyspermidine + H2O + NADP+ = L-aspartate 4-semialdehyde + putrescine + NADPH + H+ [RN:R09079]
+ALL_REAC    R09079 R09080
+SUBSTRATE   carboxynorspermidine [CPD:C18174];
+            H2O [CPD:C00001];
+            NADP+ [CPD:C00006];
+            carboxyspermidine [CPD:C18172]
+PRODUCT     L-aspartate 4-semialdehyde [CPD:C00441];
+            propane-1,3-diamine [CPD:C00986];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            putrescine [CPD:C00134]
+COMMENT     The reaction takes place in the opposite direction. Part of a bacterial polyamine biosynthesis pathway. L-aspartate 4-semialdehyde and propane-1,3-diamine/putrescine form a Schiff base that is reduced to form carboxynorspermidine/carboxyspermidine, respectively [1]. The enzyme from the bacterium Vibrio cholerae is essential for biofilm formation [2]. The enzyme from Campylobacter jejuni only produces carboxyspermidine in vivo even though it also can produce carboxynorspermidine in vitro [3].
+HISTORY     EC 1.5.1.43 created 2012
+REFERENCE   1  [PMID:1955861]
+  AUTHORS   Nakao H, Shinoda S, Yamamoto S
+  TITLE     Purification and some properties of carboxynorspermidine synthase participating in a novel biosynthetic pathway for norspermidine in Vibrio alginolyticus.
+  JOURNAL   J. Gen. Microbiol. 137 (1991) 1737-42.
+  ORGANISM  Vibrio alginolyticus
+REFERENCE   2  [PMID:19196710]
+  AUTHORS   Lee J, Sperandio V, Frantz DE, Longgood J, Camilli A, Phillips MA, Michael AJ.
+  TITLE     An alternative polyamine biosynthetic pathway is widespread in bacteria and essential for biofilm formation in Vibrio cholerae.
+  JOURNAL   J. Biol. Chem. 284 (2009) 9899-907.
+  ORGANISM  Vibrio cholerae
+  SEQUENCE  [vch:VC1624]
+REFERENCE   3  [PMID:22025614]
+  AUTHORS   Hanfrey CC, Pearson BM, Hazeldine S, Lee J, Gaskin DJ, Woster PM, Phillips MA, Michael AJ
+  TITLE     Alternative spermidine biosynthetic route is critical for growth of Campylobacter jejuni and is the dominant polyamine pathway in human gut microbiota.
+  JOURNAL   J. Biol. Chem. 286 (2011) 43301-12.
+PATHWAY     ec00330  Arginine and proline metabolism
+ORTHOLOGY   K13746  carboxynorspermidine synthase
+GENES       VCH: VC1624
+            VCE: Vch1786_I1124
+            VCJ: VCD_002750
+            VCO: VC0395_A1231
+            VCR: VC395_1742
+            VCM: VCM66_1564
+            VCI: O3Y_07890
+            VCL: VCLMA_A1414
+            VVU: VV1_3049
+            VVY: VV1237
+            VVM: VVMO6_01981
+            VPA: VP1941
+            VPB: VPBB_1783
+            VPK: M636_12125
+            VPF: M634_11915
+            VHA: VIBHAR_02740
+            VAG: N646_1023
+            VSP: VS_1946
+            VEX: VEA_003102
+            VEJ: VEJY3_10185
+            VFU: vfu_A01725
+            VNI: VIBNI_A2071
+            VAN: VAA_01989
+            LAG: N175_09070
+            VSA: VSAL_I2137
+            PPR: PBPRA2229
+            PIN: Ping_2289
+DBLINKS     ExplorEnz - The Enzyme Database: 1.5.1.43
+            IUBMB Enzyme Nomenclature: 1.5.1.43
+            ExPASy - ENZYME nomenclature database: 1.5.1.43
+            BRENDA, the Enzyme Database: 1.5.1.43
+///

@@ -1,0 +1,12 @@
+ENTRY       R10497                      Reaction
+NAME        S-adenosyl-L-methionine:25S rRNA (adenine2142-N1)-methyltransferase;
+            S-adenosyl-L-methionine:25S rRNA (adenine645-N1)-methyltransferase
+DEFINITION  S-Adenosyl-L-methionine + Adenine in rRNA <=> S-Adenosyl-L-homocysteine + N1-Methyladenine in rRNA
+EQUATION    C00019 + C20648 <=> C00021 + C20647
+COMMENT     The enzyme ec 2.1.1.286 methylates adenine2142 at N1 in 25S rRNA.
+            The enzyme ec 2.1.1.287 methylates adenine645 at N1 in 25S rRNA.
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP16492  C20647_C20648 main [RC:RC03171]
+            RP16493  C00019_C20647 trans
+ENZYME      2.1.1.286       2.1.1.287
+///

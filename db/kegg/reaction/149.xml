@@ -1,0 +1,20 @@
+ENTRY       R00149                      Reaction
+NAME        Carbon-dioxide:ammonia ligase (ADP-forming,carbamate-phosphorylating)
+DEFINITION  2 ATP + Ammonia + CO2 + H2O <=> 2 ADP + Orthophosphate + Carbamoyl phosphate
+EQUATION    2 C00002 + C00014 + C00011 + C00001 <=> 2 C00008 + C00009 + C00169
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP03826  C00002_C00169 trans
+            RP05676  C00001_C00009 ligase
+            RP06023  C00011_C00169 leave [RC:RC02803]
+            RP06025  C00014_C00169 main [RC:RC02804]
+ENZYME      6.3.4.16
+PATHWAY     rn00250  Alanine, aspartate and glutamate metabolism
+            rn00330  Arginine and proline metabolism
+            rn00910  Nitrogen metabolism
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+            rn01230  Biosynthesis of amino acids
+ORTHOLOGY   K01948  carbamoyl-phosphate synthase (ammonia) [EC:6.3.4.16]
+///

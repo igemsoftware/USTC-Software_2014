@@ -1,0 +1,99 @@
+ENTRY       EC 3.6.3.10                 Enzyme
+NAME        H+/K+-exchanging ATPase;
+            H+-K+-ATPase;
+            H,K-ATPase;
+            (K+ + H+)-ATPase
+CLASS       Hydrolases;
+            Acting on acid anhydrides;
+            Acting on acid anhydrides to catalyse transmembrane movement of substances
+SYSNAME     ATP phosphohydrolase (H+/K+-exchanging)
+REACTION    ATP + H2O + H+in + K+out = ADP + phosphate + H+out + K+in [RN:R00086]
+ALL_REAC    R00086
+SUBSTRATE   ATP [CPD:C00002];
+            H2O [CPD:C00001];
+            H+ [CPD:C00080];
+            K+ [CPD:C00238]
+PRODUCT     ADP [CPD:C00008];
+            phosphate [CPD:C00009];
+            H+ [CPD:C00080];
+            K+ [CPD:C00238]
+COMMENT     A P-type ATPase that undergoes covalent phosphorylation during the transport cycle. A gastric mucosal enzyme that catalyses the efflux of one H+ and the influx of one K+ per ATP hydrolysed.
+HISTORY     EC 3.6.3.10 created 1984 as EC 3.6.1.36, transferred 2000 to EC 3.6.3.10
+REFERENCE   1  [PMID:5682852]
+  AUTHORS   Sachs G, Collier RH, Shoemaker RL, Hirschowitz BI.
+  TITLE     The energy source for gastric H+ secretion.
+  JOURNAL   Biochim. Biophys. Acta. 162 (1968) 210-9.
+  ORGANISM  frog
+REFERENCE   2  [PMID:2552824]
+  AUTHORS   Hersey SJ, Perez A, Matheravidathu S, Sachs G.
+  TITLE     Gastric H+-K+-ATPase in situ: evidence for compartmentalization.
+  JOURNAL   Am. J. Physiol. 257 (1989) G539-47.
+  ORGANISM  Oryctolagus cuniculus
+REFERENCE   3  [PMID:2158765]
+  AUTHORS   Rabon EC, Reuben MA.
+  TITLE     The mechanism and structure of the gastric H,K-ATPase.
+  JOURNAL   Annu. Rev. Physiol. 52 (1990) 321-44.
+PATHWAY     ec00190  Oxidative phosphorylation
+ORTHOLOGY   K01541  H+/K+-exchanging ATPase
+            K01542  H+/K+-exchanging ATPase alpha polypeptide
+            K01543  H+/K+-exchanging ATPase beta polypeptide
+            K01544  non-gastric H+/K+-exchanging ATPase
+GENES       HSA: 479(ATP12A) 495(ATP4A) 496(ATP4B)
+            PTR: 452489(ATP12A) 738405(ATP4B) 747915(ATP4A)
+            PPS: 100979788(ATP12A) 100980523(ATP4A) 100991047(ATP4B)
+            GGO: 101138827(ATP4A) 101141471(ATP4B) 101142592(ATP12A)
+            PON: 100435235(ATP4A) 100459814(ATP4B)
+            MCC: 100426215 698222(ATP4B) 721488
+            MCF: 102116356 102119167(ATP12A) 102124568(ATP4A) 102131451(ATP4B)
+            MMU: 11944(Atp4a) 11945(Atp4b) 192113(Atp12a)
+            RNO: 171028(Atp12a) 24216(Atp4a) 24217(Atp4b)
+            CGE: 100750430 100765522 100767384
+            HGL: 101697924(Atp4b) 101711071 101724247(Atp4a)
+            TUP: 102472050(ATP4B) 102475043(ATP12A) 102480463(ATP4A)
+            CFA: 403820(ATP12A) 404020(ATP4B) 431686(ATP4A)
+            AML: 100465081 100465461(ATP12A) 100477747
+            FCA: 101091583(ATP12A) 101092078(ATP4B) 101100771(ATP4A)
+            PTG: 102957326(ATP12A) 102964110(ATP4A) 102971257(ATP4B)
+            BTA: 521163(ATP4A) 530703(ATP12A) 614308(ATP4B)
+            BOM: 102273487(ATP4A) 102275089(ATP12A) 102276541(ATP4B)
+            PHD: 102316191(ATP4B) 102336396(ATP4A)
+            CHX: 102172639(ATP12A) 102180792(ATP4A) 102185581(ATP4B)
+            SSC: 100521921(ATP12A) 397131(ATP4B) 397552(ATP4A)
+            CFR: 102505116(ATP4A) 102505590(ATP12A) 102520241(ATP4B)
+            ECB: 100052912(ATP12A) 100069135(ATP4B) 100147108(ATP4A)
+            MYB: 102246595(ATP12A) 102249396(ATP4A) 102259435(ATP4B)
+            MYD: 102753224(ATP4A) 102760948(ATP4B) 102774686(ATP12A)
+            PALE: 102881537(ATP4B) 102882245(ATP4A)
+            MDO: 100013166(ATP4A) 100016220(ATP4B) 100022970(ATP12A) 100022999 100023029
+            SHR: 100914456 100914716 100914816(ATP4B) 100926385(ATP4A)
+            OAA: 100092554(ATP12A)
+            GGA: 386581(ATP4B) 419743(ATP12A)
+            MGP: 100548075 100550873
+            TGU: 100219097 100230086 100230444(ATP4B)
+            FAB: 101805703(ATP4B) 101807408 101818630
+            PHI: 102099301 102107731 102110942(ATP4B)
+            APLA: 101793299(ATP4B) 101800708 101802953
+            FPG: 101911437 101912680 101923846(ATP4B)
+            FCH: 102051647(ATP4B) 102055866 102056385
+            CLV: 102085251 102088772 102093855(ATP4B) 102096447(ATP12A)
+            ASN: 102374285(ATP4B) 102387741(ATP4A) 102388005
+            PSS: 102450978(ATP4A) 102452724 102457968(ATP4B)
+            CMY: 102933065 102936245(ATP4A) 102942318(ATP4B)
+            ACS: 100560046 100563430 100563553
+            XLA: 379283(atp12a-b) 379459(atp4b) 380512(atp12a-a) 399450(atp4a) 447127 733327
+            XTR: 100488221 448282(atp4b) 594945(atp12a)
+            MZE: 101464178 101482966
+            LCM: 102352096(ATP4A) 102355665(ATP4B)
+            PIC: PICST_60178(PMR2)
+            AFM: AFUA_5G00730
+            CCI: CC1G_09151
+            SPN: SP_2101
+            SPD: SPD_1927
+            SPR: spr1911(ctpC)
+            SPV: SPH_2289
+            SSO: SSO2896
+DBLINKS     ExplorEnz - The Enzyme Database: 3.6.3.10
+            IUBMB Enzyme Nomenclature: 3.6.3.10
+            ExPASy - ENZYME nomenclature database: 3.6.3.10
+            BRENDA, the Enzyme Database: 3.6.3.10
+///

@@ -1,0 +1,11 @@
+ENTRY       R08055                      Reaction
+DEFINITION  N6-(delta2-Isopentenyl)-adenosine 5'-monophosphate + Reduced flavoprotein + Oxygen <=> trans-Zeatin riboside  monophosphate + Oxidized flavoprotein + H2O
+EQUATION    C04713 + C03024 + C00007 <=> C16430 + C03161 + C00001
+COMMENT     CYP735A
+            P-450 reductase (ec 1.6.2.4) is the flavoprotein and re-reduced by NADPH (see R08551)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP10482  C00007_C16430 leave
+            RP11519  C04713_C16430 main [RC:RC01137]
+PATHWAY     rn00908  Zeatin biosynthesis
+ORTHOLOGY   K10717  cytokinin trans-hydroxylase
+///

@@ -1,0 +1,10 @@
+ENTRY       R08206                      Reaction
+DEFINITION  17alpha-Hydroxyprogesterone + NADPH + H+ + Oxygen <=> Androstenedione + Acetate + NADP+ + H2O
+EQUATION    C01176 + C00005 + C00080 + C00007 <=> C00280 + C00033 + C00006 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP01796  C00280_C01176 main [RC:RC00607]
+            RP08577  C00007_C00033 leave
+            RP12714  C00033_C01176 main [RC:RC00923]
+ENZYME      1.14.13.54
+///

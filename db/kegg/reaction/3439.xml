@@ -1,0 +1,11 @@
+ENTRY       R03439                      Reaction
+NAME        kynurenate:oxygen oxidoreductase (hydroxylating)
+DEFINITION  4-Hydroxy-2-quinolinecarboxylic acid + Oxygen + NADH + H+ <=> 7,8-Dihydro-7,8-dihydroxykynurenate + NAD+
+EQUATION    C01717 + C00007 + C00004 + C00080 <=> C01249 + C00003
+COMMENT     NADPH (see R03440)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00247  C01249_C01717 main [RC:RC00091]
+            RP05830  C00007_C01249 leave
+ENZYME      1.14.99.2
+PATHWAY     rn00380  Tryptophan metabolism
+///

@@ -1,0 +1,55 @@
+ENTRY       EC 1.14.15.9                Enzyme
+NAME        spheroidene monooxygenase;
+            CrtA;
+            acyclic carotenoid 2-ketolase;
+            spirilloxantin monooxygenase;
+            2-oxo-spirilloxanthin monooxygenase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With reduced iron-sulfur protein as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     spheroidene,reduced-ferredoxin:oxygen oxidoreductase (spheroiden-2-one-forming)
+REACTION    (1) spheroidene + reduced ferredoxin + O2 = spheroiden-2-one + oxidized ferredoxin + H2O [RN:R07537];
+            (2) spirilloxantin + reduced ferredoxin + O2 = 2-oxospirilloxanthin + oxidized ferredoxin + H2O [RN:R07525];
+            (3) 2'-oxospirilloxanthin + reduced ferredoxin + O2 = 2,2'-dioxospirilloxanthin + oxidized ferredoxin + H2O [RN:R07526]
+ALL_REAC    R07525 R07526 R07537;
+            (other) R07538
+SUBSTRATE   spheroidene [CPD:C15900];
+            reduced ferredoxin [CPD:C00138];
+            O2 [CPD:C00007];
+            spirilloxantin;
+            2-oxospirilloxanthin [CPD:C15884]
+PRODUCT     spheroiden-2-one [CPD:C15903];
+            oxidized ferredoxin [CPD:C00139];
+            H2O [CPD:C00001];
+            2-oxospirilloxanthin [CPD:C15884];
+            2,2'-dioxospirilloxanthin [CPD:C15885]
+COMMENT     The enzyme is involved in spheroidenone biosynthesis and in 2,2'-dioxospirilloxanthin biosynthesis. The enzyme from Rhodobacter sphaeroides contains heme at its active site [1].
+HISTORY     EC 1.14.15.9 created 2012
+REFERENCE   1  [PMID:20851979]
+  AUTHORS   Lee PC, Holtzapple E, Schmidt-Dannert C
+  TITLE     Novel activity of Rhodobacter sphaeroides spheroidene monooxygenase CrtA expressed in Escherichia coli.
+  JOURNAL   Appl. Environ. Microbiol. 76 (2010) 7328-31.
+  ORGANISM  Rhodobacter capsulatus
+  SEQUENCE  [rcp:RCAP_rcc00678]
+REFERENCE   2  [PMID:19136077]
+  AUTHORS   Gerjets T, Steiger S, Sandmann G
+  TITLE     Catalytic properties of the expressed acyclic carotenoid 2-ketolases from Rhodobacter capsulatus and Rubrivivax gelatinosus.
+  JOURNAL   Biochim. Biophys. Acta. 1791 (2009) 125-31.
+  ORGANISM  Rhodobacter capsulatus
+  SEQUENCE  [rcp:RCAP_rcc00678]
+PATHWAY     ec00906  Carotenoid biosynthesis
+ORTHOLOGY   K09847  spheroidene monooxygenase
+GENES       RSP: RSP_0272(crtA)
+            RSH: Rsph17029_1915
+            RSQ: Rsph17025_1023
+            RSK: RSKD131_1598
+            RCP: RCAP_rcc00678(crtA)
+            JAN: Jann_0144
+            RDE: RD1_0121(crtA)
+            RLI: RLO149_p940060(crtA)
+            DSH: Dshi_3501(crtA)
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.15.9
+            IUBMB Enzyme Nomenclature: 1.14.15.9
+            ExPASy - ENZYME nomenclature database: 1.14.15.9
+            BRENDA, the Enzyme Database: 1.14.15.9
+///

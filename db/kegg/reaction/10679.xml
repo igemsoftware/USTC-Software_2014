@@ -1,0 +1,13 @@
+ENTRY       R10679                      Reaction
+NAME        N-acetyl-L-aspartate:L-glutamate ligase (ADP, N-acetyl-L-aspartyl-L-glutamyl-L-glutamate-forming)
+DEFINITION  2 ATP + N-Acetyl-L-aspartate + 2 L-Glutamate <=> 2 ADP + 2 Orthophosphate + N-Acetylaspartylglutamylglutamate
+EQUATION    2 C00002 + C01042 + 2 C00025 <=> 2 C00008 + 2 C00009 + C20776
+COMMENT     two-step reaction (see R10678+R10693)
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP16836  C01042_C20776 main [RC:RC00141]
+            RP16837  C00025_C20776 main [RC:RC01227]
+            RP16838  C00025_C20776 main [RC:RC00064]
+ENZYME      6.3.2.42
+ORTHOLOGY   K18311  N-acetylaspartylglutamate/N-acetylaspartylglutamylglutamate synthase [EC:6.3.2.41 6.3.2.42]
+///

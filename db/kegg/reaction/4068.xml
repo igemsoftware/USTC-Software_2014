@@ -1,0 +1,13 @@
+ENTRY       R04068                      Reaction
+NAME        Imidazole-4-acetate:5-phosphoribosyl-diphosphate ligase (ADP- and pyrophosphate- forming)
+DEFINITION  ATP + Imidazole-4-acetate + 5-Phospho-alpha-D-ribose 1-diphosphate + H2O <=> ADP + Orthophosphate + 1-(5-Phosphoribosyl)imidazole-4-acetate + Diphosphate
+EQUATION    C00002 + C02835 + C00119 + C00001 <=> C00008 + C00009 + C04437 + C00013
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP00665  C00013_C00119 leave
+            RP03694  C02835_C04437 main [RC:RC01067]
+            RP05676  C00001_C00009 leave
+            RP07888  C00119_C04437 trans
+ENZYME      6.3.4.8
+PATHWAY     rn00340  Histidine metabolism
+///

@@ -1,0 +1,14 @@
+ENTRY       R02613                      Reaction
+NAME        Phenethylamine:oxygen oxidoreductase (deaminating)
+DEFINITION  Phenethylamine + Oxygen + H2O <=> Phenylacetaldehyde + Ammonia + Hydrogen peroxide
+EQUATION    C05332 + C00007 + C00001 <=> C00601 + C00014 + C00027
+COMMENT     see R02612 (1.4.99.4)
+RPAIR       RP00006  C00007_C00027 cofac [RC:RC02755]
+            RP00603  C00601_C05332 main [RC:RC00062]
+            RP05902  C00001_C00601 leave
+            RP05903  C00014_C05332 leave
+ENZYME      1.4.3.4         1.4.3.21
+PATHWAY     rn00360  Phenylalanine metabolism
+ORTHOLOGY   K00274  monoamine oxidase [EC:1.4.3.4]
+            K00276  primary-amine oxidase [EC:1.4.3.21]
+///

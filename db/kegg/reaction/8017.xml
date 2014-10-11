@@ -1,0 +1,14 @@
+ENTRY       R08017                      Reaction
+DEFINITION  Trinitrotoluene + 2 NADH + 2 H+ <=> 4-Hydroxylamino-2,6-dinitrotoluene + 2 NAD+ + H2O
+EQUATION    C16391 + 2 C00004 + 2 C00080 <=> C16392 + 2 C00003 + C00001
+COMMENT     nitroreductase
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP12185  C16391_C16392 main [RC:RC00250]
+            RP12658  C00001_C16391 leave
+ENZYME      1.-.-.-
+PATHWAY     rn00633  Nitrotoluene degradation
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K10678  nitroreductase [EC:1.-.-.-]
+            K10679  nitroreductase / dihydropteridine reductase [EC:1.-.-.- 1.5.1.34]
+            K10680  N-ethylmaleimide reductase [EC:1.-.-.-]
+///

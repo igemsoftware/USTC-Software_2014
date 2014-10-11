@@ -1,0 +1,16 @@
+ENTRY       R08675                      Reaction
+NAME        hexahomomethionine,NADPH:oxygen oxidoreductase (N-hydroxylating, decarboxylating)
+DEFINITION  Hexahomomethionine + 2 Oxygen + 2 NADPH + 2 H+ <=> 9-Methylthiononanaldoxime + 3 H2O + 2 NADP+ + CO2
+EQUATION    C17233 + 2 C00007 + 2 C00005 + 2 C00080 <=> C17253 + 3 C00001 + 2 C00006 + C00011
+COMMENT     multi-step reaction (similar to R08656, R00730+R04460+R07190)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP13677  C17233_C17253 main [RC:RC02295]
+            RP13678  C00007_C17253 leave
+            RP13679  C00011_C17233 leave
+ENZYME      1.14.13.-
+PATHWAY     rn00966  Glucosinolate biosynthesis
+            rn01210  2-Oxocarboxylic acid metabolism
+ORTHOLOGY   K12154  cytochrome P450, family 79, subfamily F, polypeptide 1 [EC:1.14.13.-]
+            K12155  cytochrome P450, family 79, subfamily F, polypeptide 2 [EC:1.14.13.-]
+///

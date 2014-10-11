@@ -1,0 +1,59 @@
+ENTRY       EC 1.12.98.4                Enzyme
+NAME        sulfhydrogenase;
+            sulfur reductase
+CLASS       Oxidoreductases;
+            Acting on hydrogen as donor;
+            With other, known, acceptors
+SYSNAME     H2:polysulfide oxidoreductase
+REACTION    H2 + (sulfide)n = hydrogen sulfide + (sulfide)n-1 [RN:R10390]
+ALL_REAC    R10390
+SUBSTRATE   H2 [CPD:C00282];
+            (sulfide)n [CPD:C19692]
+PRODUCT     hydrogen sulfide [CPD:C00283];
+            (sulfide)n-1
+COMMENT     An iron-sulfur protein. The enzyme from the hyperthermophilic archaeon Pyrococcus furiosus is part of two heterotetrameric complexes where the beta and gamma subunits function as sulfur reductase and the alpha and delta subunits function as hydrogenases (EC 1.12.1.3, hydrogen dehydrogenase [NADP+] and EC 1.12.1.4, hydrogen dehydrogenase [NAD(P)+], respectively). Sulfur can also be used as substrate, but since it is insoluble in aqueous solution and polysulfide is generated abiotically by the reaction of hydrogen sulfide and sulfur, polysulfide is believed to be the true substrate [2].
+HISTORY     EC 1.12.98.4 created 1992 as EC 1.97.1.3, transferred 2013 to EC 1.12.98.4
+REFERENCE   1
+  AUTHORS   Zophel, A., Kennedy, M.C., Beinert, H. and Kroneck, P.M.H.
+  TITLE     Investigations on microbial sulfur respiration. 1. Activation and reduction of elemental sulfur in several strains of Eubacteria.
+  JOURNAL   Arch. Microbiol. 150 (1988) 72-77.
+REFERENCE   2  [PMID:8389482]
+  AUTHORS   Ma K, Schicho RN, Kelly RM, Adams MW
+  TITLE     Hydrogenase of the hyperthermophile Pyrococcus furiosus is an elemental sulfur reductase or sulfhydrogenase: evidence for a sulfur-reducing hydrogenase ancestor.
+  JOURNAL   Proc. Natl. Acad. Sci. U. S. A. 90 (1993) 5341-4.
+  ORGANISM  Pyrococcus furiosus
+  SEQUENCE  [pfu:PF0891 PF0892]
+REFERENCE   3
+  AUTHORS   Ma, K., Zhou, Z.H. and Adams, M.W.
+  TITLE     Hydrogen production from pyruvate by enzymes purified from the hyperthermophilic archaeon, Pyrococcus furiosus: A key role for NADPH.
+  JOURNAL   FEMS Microbiol. Lett. 122 (1994) 245-250.
+REFERENCE   4  [PMID:10714990]
+  AUTHORS   Ma K, Weiss R, Adams MW
+  TITLE     Characterization of hydrogenase II from the hyperthermophilic archaeon Pyrococcus furiosus and assessment of its role in sulfur reduction.
+  JOURNAL   J. Bacteriol. 182 (2000) 1864-71.
+  ORGANISM  Pyrococcus furiosus
+  SEQUENCE  [pfu:PF1329 PF1330]
+PATHWAY     ec00920  Sulfur metabolism
+ORTHOLOGY   K17995  sulfhydrogenase subunit gamma (sulfur reductase)
+            K17996  sulfhydrogenase subunit beta (sulfur reductase)
+GENES       PHO: PH1290 PH1291
+            PAB: PAB0638(hydB-2) PAB0639(hydG-2) PAB1784 PAB1785
+            PFU: PF0891 PF0892 PF1329 PF1330
+            PFI: PFC_03665 PFC_03670 PFC_05860 PFC_05865
+            PYN: PNA2_1554 PNA2_1555 PNA2_1667 PNA2_1668
+            PYA: PYCH_00020 PYCH_00030 PYCH_08390 PYCH_08400
+            PYS: Py04_0890 Py04_0891 Py04_1131 Py04_1132
+            TKO: TK2071 TK2072
+            TON: TON_0054 TON_0055 TON_0536 TON_0537
+            TSI: TSIB_0282 TSIB_0283 TSIB_1520 TSIB_1521
+            TBA: TERMP_00067 TERMP_00068 TERMP_00538 TERMP_00539
+            THE: GQS_02460 GQS_02465 GQS_04975 GQS_04980
+            THA: TAM4_114 TAM4_307 TAM4_579 TAM4_858
+            THM: CL1_0141 CL1_0142 CL1_0641 CL1_0642
+            TLT: OCC_03052 OCC_03057 OCC_12226 OCC_12231
+            KCR: Kcr_0323 Kcr_0324
+DBLINKS     ExplorEnz - The Enzyme Database: 1.12.98.4
+            IUBMB Enzyme Nomenclature: 1.12.98.4
+            ExPASy - ENZYME nomenclature database: 1.12.98.4
+            BRENDA, the Enzyme Database: 1.12.98.4
+///

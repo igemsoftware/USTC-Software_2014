@@ -1,0 +1,107 @@
+ENTRY       EC 1.2.7.7                  Enzyme
+NAME        3-methyl-2-oxobutanoate dehydrogenase (ferredoxin);
+            2-ketoisovalerate ferredoxin reductase;
+            3-methyl-2-oxobutanoate synthase (ferredoxin);
+            VOR;
+            branched-chain ketoacid ferredoxin reductase;
+            branched-chain oxo acid ferredoxin reductase;
+            keto-valine-ferredoxin oxidoreductase;
+            ketoisovalerate ferredoxin reductase;
+            2-oxoisovalerate ferredoxin reductase
+CLASS       Oxidoreductases;
+            Acting on the aldehyde or oxo group of donors;
+            With an iron-sulfur protein as acceptor
+SYSNAME     3-methyl-2-oxobutanoate:ferredoxin oxidoreductase (decarboxylating; CoA-2-methylpropanoylating)
+REACTION    3-methyl-2-oxobutanoate + CoA + 2 oxidized ferredoxin = S-(2-methylpropanoyl)-CoA + CO2 + 2 reduced ferredoxin + H+ [RN:R07160]
+ALL_REAC    R07160;
+            (other) R08566 R08567
+SUBSTRATE   3-methyl-2-oxobutanoate [CPD:C00141];
+            CoA [CPD:C00010];
+            oxidized ferredoxin [CPD:C00139]
+PRODUCT     S-(2-methylpropanoyl)-CoA;
+            CO2 [CPD:C00011];
+            reduced ferredoxin [CPD:C00138];
+            H+ [CPD:C00080]
+COMMENT     The enzyme is CoA-dependent and contains thiamine diphosphate and iron-sulfur clusters. Preferentially utilizes 2-oxo-acid derivatives of branched chain amino acids, e.g. 3-methyl-2-oxopentanoate, 4-methyl-2-oxo-pentanoate, 2-oxobutyrate and 3-methylthiopropanamine. This enzyme is a member of the 2-oxoacid oxidoreductases, a family of enzymes that oxidatively decarboxylate different 2-oxoacids to form their CoA derivatives, and are differentiated based on their substrate specificity. For examples of other members of this family, see EC 1.2.7.1, pyruvate synthase, and EC 1.2.7.3, 2-oxoglutarate synthase.
+HISTORY     EC 1.2.7.7 created 2003
+REFERENCE   1  [PMID:8550513]
+  AUTHORS   Heider J, Mai X, Adams MW.
+  TITLE     Characterization of 2-ketoisovalerate ferredoxin oxidoreductase, a new and reversible coenzyme A-dependent enzyme involved in peptide fermentation by hyperthermophilic archaea.
+  JOURNAL   J. Bacteriol. 178 (1996) 780-7.
+  ORGANISM  Pyrococcus furiosus, Pyrococcus sp., Thermococcus litoralis, Thermococcus sp.
+REFERENCE   2  [PMID:9108258]
+  AUTHORS   Tersteegen A, Linder D, Thauer RK, Hedderich R.
+  TITLE     Structures and functions of four anabolic 2-oxoacid oxidoreductases in Methanobacterium thermoautotrophicum.
+  JOURNAL   Eur. J. Biochem. 244 (1997) 862-8.
+  ORGANISM  Methanobacterium thermoautotrophicum
+REFERENCE   3  [PMID:11265457]
+  AUTHORS   Schut GJ, Menon AL, Adams MW.
+  TITLE     2-keto acid oxidoreductases from Pyrococcus furiosus and Thermococcus litoralis.
+  JOURNAL   Methods. Enzymol. 331 (2001) 144-58.
+  ORGANISM  Pyrococcus furiosus, Thermococcus litoralis
+PATHWAY     ec00280  Valine, leucine and isoleucine degradation
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00186  2-oxoisovalerate ferredoxin oxidoreductase, alpha subunit
+            K00187  2-oxoisovalerate ferredoxin oxidoreductase, beta subunit
+            K00188  2-oxoisovalerate ferredoxin oxidoreductase, delta subunit
+            K00189  2-oxoisovalerate ferredoxin oxidoreductase, gamma subunit
+GENES       AFW: Anae109_4113 Anae109_4114
+            SLR: L21SP2_0406 L21SP2_0407
+            ABA: Acid345_0952 Acid345_0953
+            SUS: Acid_1870 Acid_1871
+            MMP: MMP1271(vorA) MMP1272(vorB) MMP1273(vorC)
+            MMQ: MmarC5_0318 MmarC5_0319 MmarC5_0320
+            MMX: MmarC6_1400 MmarC6_1401 MmarC6_1402
+            MMZ: MmarC7_0517 MmarC7_0518 MmarC7_0519
+            MMD: GYY_07190 GYY_07195 GYY_07200
+            MVN: Mevan_0583 Mevan_0584 Mevan_0585
+            MVO: Mvol_0718 Mvol_0719 Mvol_0720
+            MAC: MA2909(vorA) MA2910(vorB) MA2911(vorC)
+            MBA: Mbar_A2173 Mbar_A2174 Mbar_A2175
+            MMA: MM_3181(vorC) MM_3182(vorB) MM_3183(vorA)
+            MMAZ: MmTuc01_3277 MmTuc01_3278 MmTuc01_3279
+            MBU: Mbur_0605 Mbur_0606 Mbur_0607
+            MMH: Mmah_1010 Mmah_1011 Mmah_1012
+            MZH: Mzhil_0902 Mzhil_0903 Mzhil_0904
+            MPY: Mpsy_0059 Mpsy_0060 Mpsy_0061
+            MHZ: Metho_2048 Metho_2049 Metho_2050
+            MTP: Mthe_0156 Mthe_0157
+            MCJ: MCON_0778(vorA) MCON_0779(vorB)
+            MHI: Mhar_0583 Mhar_0584
+            MER: H729_05815(vorD) H729_05820 H729_05825
+            MTH: MTH703 MTH704 MTH705
+            MMG: MTBMA_c10900(vorC) MTBMA_c10910(vorB) MTBMA_c10930(vorA2)
+            MSI: Msm_0331 Msm_0332 Msm_0333
+            MRU: mru_1431(vorB) mru_1432(vorA) mru_1433(vorC)
+            MEL: Metbo_2452 Metbo_2453 Metbo_2454
+            MEW: MSWAN_0187 MSWAN_0188 MSWAN_0189
+            METH: MBMB1_0178 MBMB1_0179(vorB) MBMB1_0180(vorA)
+            MFV: Mfer_0416 Mfer_0417 Mfer_0506
+            TAC: Ta0626m Ta0627 Ta0628m Ta0629
+            TVO: TVN0833 TVN0834 TVN0835 TVN0836
+            PHO: PH0678 PH0679(vorD) PH0680(vorA) PH0681
+            PAB: PAB1470 PAB1471(vorD) PAB1472(vorA) PAB1473
+            PFU: PF0968 PF0969(vorA) PF0970(vorD) PF0971
+            PFI: PFC_04070 PFC_04075(vorA) PFC_04080(vorD)
+            PYN: PNA2_1293 PNA2_1294 PNA2_1295
+            PYA: PYCH_06630 PYCH_06640 PYCH_06650
+            PYS: Py04_1079 Py04_1080 Py04_1081
+            TKO: TK1978 TK1979(vorD) TK1980(vorA) TK1981
+            TON: TON_1476 TON_1477(vorD) TON_1478(vorA) TON_1479
+            TGA: TGAM_0264(vorB) TGAM_0265(vorA) TGAM_0266(vorD)
+            TSI: TSIB_1381 TSIB_1382(vorA) TSIB_1383(vorD)
+            TBA: TERMP_01557 TERMP_01558 TERMP_01559
+            THE: GQS_08125 GQS_08130(vorA) GQS_08135(vorD)
+            THA: TAM4_1398 TAM4_1406 TAM4_1460
+            THM: CL1_1246 CL1_1247 CL1_1248
+            TLT: OCC_07486 OCC_07491(porA) OCC_07496(vorD)
+            THS: TES1_1552 TES1_1553 TES1_1554
+            TNU: BD01_1942 BD01_1943 BD01_1944
+            ABI: Aboo_0299 Aboo_0300 Aboo_0301
+            ACF: AciM339_0763 AciM339_0764 AciM339_0765
+            KCR: Kcr_1292
+DBLINKS     ExplorEnz - The Enzyme Database: 1.2.7.7
+            IUBMB Enzyme Nomenclature: 1.2.7.7
+            ExPASy - ENZYME nomenclature database: 1.2.7.7
+            BRENDA, the Enzyme Database: 1.2.7.7
+///

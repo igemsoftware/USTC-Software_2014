@@ -1,0 +1,12 @@
+ENTRY       R08218                      Reaction
+NAME        L-serine:tRNASec ligase (AMP-forming)
+DEFINITION  ATP + L-Serine + tRNA(Sec) <=> AMP + Diphosphate + L-Seryl-tRNA(Sec)
+EQUATION    C00002 + C00065 + C16636 <=> C00020 + C00013 + C06481
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP12926  C00065_C06481 main [RC:RC00523]
+            RP13085  C06481_C16636 main [RC:RC00055]
+ENZYME      6.1.1.11
+PATHWAY     rn00970  Aminoacyl-tRNA biosynthesis
+ORTHOLOGY   K01875  seryl-tRNA synthetase [EC:6.1.1.11]
+///

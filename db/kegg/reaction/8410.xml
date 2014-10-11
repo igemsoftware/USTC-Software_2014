@@ -1,0 +1,10 @@
+ENTRY       R08410                      Reaction
+DEFINITION  Xanthine + 2 S-Adenosyl-L-methionine <=> Theophylline + 2 S-Adenosyl-L-homocysteine
+EQUATION    C00385 + 2 C00019 <=> C07130 + 2 C00021
+COMMENT     multi-step reaction
+            possibly intermediate ([CPD:C16357] or [CPD:C16358])
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP12968  C00385_C07130 main [RC:RC02171]
+            RP13314  C00019_C07130 trans
+            RP13315  C00019_C07130 trans
+///

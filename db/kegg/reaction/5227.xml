@@ -1,0 +1,16 @@
+ENTRY       R05227                      Reaction
+NAME        hydrogenobyrinic-acid-a,c-diamide:cobalt cobalt-ligase (ADP-forming)
+DEFINITION  Hydrogenobyrinate a,c diamide + Cobalt ion + ATP + H2O <=> Cob(II)yrinate a,c diamide + Orthophosphate + ADP + H+
+EQUATION    C06503 + C00175 + C00002 + C00001 <=> C06504 + C00009 + C00008 + C00080
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP05676  C00001_C00009 leave
+            RP08538  C00175_C06504 leave
+            RP11666  C06503_C06504 main [RC:RC02000]
+ENZYME      6.6.1.2
+PATHWAY     rn00860  Porphyrin and chlorophyll metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K02230  cobaltochelatase CobN [EC:6.6.1.2]
+            K09882  cobaltochelatase CobS [EC:6.6.1.2]
+            K09883  cobaltochelatase CobT [EC:6.6.1.2]
+///

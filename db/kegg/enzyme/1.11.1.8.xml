@@ -1,0 +1,147 @@
+ENTRY       EC 1.11.1.8                 Enzyme
+NAME        iodide peroxidase;
+            thyroid peroxidase;
+            iodotyrosine deiodase;
+            iodinase;
+            iodoperoxidase (heme type);
+            iodide peroxidase-tyrosine iodinase;
+            iodotyrosine deiodinase;
+            monoiodotyrosine deiodinase;
+            thyroperoxidase;
+            tyrosine iodinase;
+            TPO
+CLASS       Oxidoreductases;
+            Acting on a peroxide as acceptor;
+            Peroxidases
+SYSNAME     iodide:hydrogen-peroxide oxidoreductase
+REACTION    (1) 2 iodide + H2O2 + 2 H+ = diiodine + 2 H2O [RN:R02810];
+            (2) [thyroglobulin]-L-tyrosine + iodide + H2O2 = [thyroglobulin]-3-iodo-L-tyrosine + 2 H2O;
+            (3) [thyroglobulin]-3-iodo-L-tyrosine + iodide + H2O2 = [thyroglobulin]-3,5-diiodo-L-tyrosine + 2 H2O;
+            (4) 2 [thyroglobulin]-3,5-diiodo-L-tyrosine + H2O2 = [thyroglobulin]-L-thyroxine + [thyroglobulin]-aminoacrylate + 2 H2O [RN:R08523];
+            (5) [thyroglobulin]-3-iodo-L-tyrosine + [thyroglobulin]-3,5-diiodo-L-tyrosine + H2O2 = [thyroglobulin]-3,5,3'-triiodo-L-thyronine + [thyroglobulin]-aminoacrylate + 2 H2O [RN:R08522]
+ALL_REAC    R02810 R08522 R08523;
+            (other) R03208 R03539 R03953 R03973 R08520 R08521
+SUBSTRATE   iodide [CPD:C00708];
+            H2O2 [CPD:C00027];
+            H+ [CPD:C00080];
+            [thyroglobulin]-L-tyrosine [CPD:C16733];
+            [thyroglobulin]-3-iodo-L-tyrosine [CPD:C16732];
+            [thyroglobulin]-3,5-diiodo-L-tyrosine [CPD:C16731]
+PRODUCT     diiodine [CPD:C01382];
+            H2O [CPD:C00001];
+            [thyroglobulin]-3-iodo-L-tyrosine [CPD:C16732];
+            [thyroglobulin]-3,5-diiodo-L-tyrosine [CPD:C16731];
+            [thyroglobulin]-L-thyroxine [CPD:C16729];
+            [thyroglobulin]-aminoacrylate [CPD:C16734];
+            [thyroglobulin]-3,5,3'-triiodo-L-thyronine [CPD:C16730]
+COMMENT     Thyroid peroxidase catalyses the biosynthesis of the thyroid hormones L-thyroxine and triiodo-L-thyronine. It catalyses both the iodination of tyrosine residues in thyroglobulin (forming mono- and di-iodinated forms) and their coupling to form either L-thyroxine or triiodo-L-thyronine.
+HISTORY     EC 1.11.1.8 created 1961, modified 2012
+REFERENCE   1  [PMID:13718859]
+  AUTHORS   CUNNINGHAM BA, KIRKWOOD S.
+  TITLE     Enzyme systems concerned with the synthesis of monoiodotyrosine. III. Ion requirements of the soluble system.
+  JOURNAL   J. Biol. Chem. 236 (1961) 485-9.
+  ORGANISM  Rattus norvegicus
+REFERENCE   2  [PMID:13964156]
+  AUTHORS   HOSOYA T, KONDO Y, UI N.
+  TITLE     Peroxidase activity in thyroid gland and partial purification of the enzyme.
+  JOURNAL   J. Biochem. 52 (1962) 180-9.
+  ORGANISM  Sus scofa
+REFERENCE   3  [PMID:12325367]
+  AUTHORS   Coval ML, Taurog A.
+  TITLE     Purification and iodinating activity of hog thyroid peroxidase.
+  JOURNAL   J. Biol. Chem. 242 (1967) 5510-23.
+  ORGANISM  Sus scofa
+REFERENCE   4  [PMID:7021557]
+  AUTHORS   Gavaret JM, Cahnmann HJ, Nunez J
+  TITLE     Thyroid hormone synthesis in thyroglobulin. The mechanism of the coupling reaction.
+  JOURNAL   J. Biol. Chem. 256 (1981) 9167-73.
+REFERENCE   5  [PMID:7142155]
+  AUTHORS   Ohtaki S, Nakagawa H, Nakamura M, Yamazaki I
+  TITLE     One- and two-electron oxidations of tyrosine, monoiodotyrosine, and diiodotyrosine catalyzed by hog thyroid peroxidase.
+  JOURNAL   J. Biol. Chem. 257 (1982) 13398-403.
+REFERENCE   6  [PMID:6706930]
+  AUTHORS   Magnusson RP, Taurog A, Dorris ML
+  TITLE     Mechanism of iodide-dependent catalatic activity of thyroid peroxidase and lactoperoxidase.
+  JOURNAL   J. Biol. Chem. 259 (1984) 197-205.
+REFERENCE   7  [PMID:2996435]
+  AUTHORS   Virion A, Courtin F, Deme D, Michot JL, Kaniewski J, Pommier J
+  TITLE     Spectral characteristics and catalytic properties of thyroid peroxidase-H2O2 compounds in the iodination and coupling reactions.
+  JOURNAL   Arch. Biochem. Biophys. 242 (1985) 41-7.
+REFERENCE   8  [PMID:1497352]
+  AUTHORS   Rawitch AB, Pollock G, Yang SX, Taurog A
+  TITLE     Thyroid peroxidase glycosylation: the location and nature of the N-linked oligosaccharide units in porcine thyroid peroxidase.
+  JOURNAL   Arch. Biochem. Biophys. 297 (1992) 321-7.
+  ORGANISM  Sus scrofa
+  SEQUENCE  [up:P09933] [ssc:100515541 445522]
+REFERENCE   9  [PMID:8448141]
+  AUTHORS   Sun W, Dunford HB
+  TITLE     Kinetics and mechanism of the peroxidase-catalyzed iodination of tyrosine.
+  JOURNAL   Biochemistry. 32 (1993) 1324-31.
+REFERENCE   10 [PMID:8651700]
+  AUTHORS   Taurog A, Dorris ML, Doerge DR
+  TITLE     Mechanism of simultaneous iodination and coupling catalyzed by thyroid peroxidase.
+  JOURNAL   Arch. Biochem. Biophys. 330 (1996) 24-32.
+REFERENCE   11 [PMID:16098474]
+  AUTHORS   Ruf J, Carayon P
+  TITLE     Structural and functional aspects of thyroid peroxidase.
+  JOURNAL   Arch. Biochem. Biophys. 445 (2006) 269-77.
+PATHWAY     ec00350  Tyrosine metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00431  thyroid peroxidase
+GENES       HSA: 7173(TPO)
+            PTR: 470287(TPO)
+            PPS: 100996140(TPO)
+            GGO: 101154382
+            PON: 100456793(TPO)
+            MCC: 721610(TPO)
+            MCF: 102125126(TPO)
+            MMU: 22018(Tpo)
+            RNO: 54314(Tpo)
+            CGE: 100774668
+            HGL: 101704548(Tpo)
+            TUP: 102498362(TPO)
+            CFA: 403521(TPO)
+            AML: 100482359
+            FCA: 101098706(TPO)
+            PTG: 102968585(TPO)
+            BTA: 525013(TPO)
+            BOM: 102270919(TPO)
+            PHD: 102328542(TPO)
+            CHX: 102182976(TPO)
+            SSC: 100515541 445522(TPO)
+            CFR: 102509347(TPO)
+            ECB: 100072955(TPO)
+            MYB: 102261673(TPO)
+            MYD: 102752073(TPO)
+            PALE: 102894645(TPO)
+            MDO: 100032350(TPO)
+            SHR: 100914346(TPO) 100922174
+            OAA: 100080616(TPO)
+            GGA: 776120(TPO)
+            MGP: 100547103(TPO)
+            TGU: 100218312(TPO)
+            FAB: 101810932(TPO)
+            PHI: 102101957(TPO)
+            APLA: 101799650(TPO)
+            FPG: 101922364(TPO)
+            FCH: 102045733(TPO)
+            CLV: 102095211(TPO)
+            ASN: 102375780(TPO)
+            PSS: 102447524(TPO)
+            CMY: 102940210(TPO)
+            ACS: 100562991
+            XTR: 100036738(tpo)
+            DRE: 100331172 569363
+            TRU: 101062981 101079869
+            MZE: 101470734 101472649
+            OLA: 101156451 101167362
+            XMA: 102230399 102232241
+            LCM: 102362813(TPO)
+            BFO: BRAFLDRAFT_67515 BRAFLDRAFT_67523
+            CIN: 100183311(tpo)
+DBLINKS     ExplorEnz - The Enzyme Database: 1.11.1.8
+            IUBMB Enzyme Nomenclature: 1.11.1.8
+            ExPASy - ENZYME nomenclature database: 1.11.1.8
+            BRENDA, the Enzyme Database: 1.11.1.8
+            CAS: 9031-28-1
+///

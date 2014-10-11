@@ -1,0 +1,110 @@
+ENTRY       EC 1.14.99.9                Enzyme
+NAME        steroid 17alpha-monooxygenase;
+            steroid 17alpha-hydroxylase;
+            cytochrome P-45017alpha;
+            cytochrome P-450 (P-45017alpha,lyase);
+            17alpha-hydroxylase-C17,20 lyase;
+            CYP17;
+            CYP17A1 (gene name)
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            Miscellaneous
+SYSNAME     steroid,NADPH---hemoprotein reductase:oxygen oxidoreductase (17alpha-hydroxylating)
+REACTION    a C21-steroid + [reduced NADPH---hemoprotein reductase] + O2 = a 17alpha-hydroxy-C21-steroid + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R02131]
+ALL_REAC    R02131 > R02211 R03783 R04852 R04853;
+            (other) R08517 R08518
+SUBSTRATE   C21-steroid;
+            [reduced NADPH---hemoprotein reductase];
+            O2 [CPD:C00007]
+PRODUCT     17alpha-hydroxy-C21-steroid;
+            [oxidized NADPH---hemoprotein reductase];
+            H2O [CPD:C00001]
+COMMENT     Requires NADPH and EC 1.6.2.4, NADPH---hemoprotein reductase. A microsomal hemeprotein that catalyses two independent reactions at the same active site - the 17alpha-hydroxylation of pregnenolone and progesterone, which is part of glucocorticoid hormones biosynthesis, and the conversion of the 17alpha-hydroxylated products via a 17,20-lyase reaction to form androstenedione and dehydroepiandrosterone, leading to sex hormone biosynthesis (EC 4.1.2.30, 7alpha-hydroxyprogesterone aldolase). The ratio of the 17alpha-hydroxylase and 17,20-lyase activities is an important factor in determining the directions of steroid hormone biosynthesis towards biosynthesis of glucocorticoid or sex hormones.
+HISTORY     EC 1.14.99.9 created 1961 as EC 1.99.1.9, transferred 1965 to EC 1.14.1.7, transferred 1972 to EC 1.14.99.9, modified 2013
+REFERENCE   1  [PMID:13549484]
+  AUTHORS   LYNN WS Jr, BROWN RH.
+  TITLE     The conversion of progesterone to androgens by testes.
+  JOURNAL   J. Biol. Chem. 232 (1958) 1015-30.
+  ORGANISM  Rattus norvegicus, Cavia porcellus
+REFERENCE   2  [PMID:6966286]
+  AUTHORS   Yoshida KI, Oshima H, Troen P.
+  TITLE     Studies of the human testis. XIII. Properties of nicotinamide adenine dinucleotide (reduced form)-linked 17 alpha-hydroxylation.
+  JOURNAL   J. Clin. Endocrinol. Metab. 50 (1980) 895-9.
+  ORGANISM  Homo sapiens
+REFERENCE   3  [PMID:12693981]
+  AUTHORS   Gilep AA, Estabrook RW, Usanov SA
+  TITLE     Molecular cloning and heterologous expression in E. coli of cytochrome P45017alpha. Comparison of structural and functional properties of substrate-specific cytochromes P450 from different species.
+  JOURNAL   Biochemistry. (Mosc). 68 (2003) 86-98.
+  ORGANISM  Bison bison, Ovis aries, Capra hircus
+  SEQUENCE  [up:Q9GMC7 Q29497] [chx:102182663]
+REFERENCE   4  [PMID:17386955]
+  AUTHORS   Kolar NW, Swart AC, Mason JI, Swart P
+  TITLE     Functional expression and characterisation of human cytochrome P45017alpha in Pichia pastoris.
+  JOURNAL   J. Biotechnol. 129 (2007) 635-44.
+REFERENCE   5  [PMID:18707589]
+  AUTHORS   Pechurskaya TA, Lukashevich OP, Gilep AA, Usanov SA
+  TITLE     Engineering, expression, and purification of "soluble" human cytochrome P45017alpha and its functional characterization.
+  JOURNAL   Biochemistry. (Mosc). 73 (2008) 806-11.
+PATHWAY     ec00140  Steroid hormone biosynthesis
+            ec01100  Metabolic pathways
+ORTHOLOGY   K00512  steroid 17alpha-monooxygenase / 17alpha-hydroxyprogesterone aldolase
+GENES       HSA: 1586(CYP17A1)
+            PTR: 450141(CYP17A1)
+            PPS: 100989182
+            GGO: 101152080
+            PON: 100439753
+            MCC: 678693(CYP17A1)
+            MCF: 102133235
+            MMU: 13074(Cyp17a1)
+            RNO: 25146(Cyp17a1)
+            CGE: 100758683
+            HGL: 101726496
+            TUP: 102472543
+            CFA: 477807(CYP17A1)
+            AML: 100476785
+            FCA: 493967(CYP17A1)
+            PTG: 102966057
+            BTA: 101908425 281739(CYP17A1) 784256
+            BOM: 102270241 102270532
+            PHD: 102338504
+            CHX: 102173561 102182376 102182663
+            SSC: 403330(CYP17A1)
+            CFR: 102519078
+            ECB: 100034232(CYP17A1)
+            MYB: 102259343
+            MYD: 102761363
+            PALE: 102884618
+            SHR: 100915970
+            OAA: 100080906
+            GGA: 425056(CYP17A1)
+            MGP: 100540331
+            FAB: 101821194
+            PHI: 102104333
+            APLA: 101792920
+            FPG: 101910363
+            FCH: 102054501
+            CLV: 102093575
+            ASN: 102372221
+            PSS: 102457785
+            CMY: 102945773
+            ACS: 100553634 100553834
+            XLA: 100036774(cyp17a1)
+            XTR: 100145650(cyp17a1)
+            DRE: 399692(cyp17a1)
+            TRU: 100125766(cyp17a2) 100125798(cyp17a1)
+            MZE: 101475441 101477086
+            OLA: 100125816(cyp17) 101170547(cyp17a2)
+            XMA: 102221767 102238057
+            LCM: 102350866 102365866
+            BFO: BRAFLDRAFT_60656 BRAFLDRAFT_94132
+            CIT: 102620707
+            CIC: CICLE_v10028257mg CICLE_v10028268mg
+            FVE: 101301461
+            CSV: 101218082
+            SOT: 102593723
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.99.9
+            IUBMB Enzyme Nomenclature: 1.14.99.9
+            ExPASy - ENZYME nomenclature database: 1.14.99.9
+            BRENDA, the Enzyme Database: 1.14.99.9
+            CAS: 9029-67-8
+///

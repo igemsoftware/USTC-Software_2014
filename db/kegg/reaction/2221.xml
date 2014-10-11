@@ -1,0 +1,14 @@
+ENTRY       R02221                      Reaction
+NAME        Sinapate:CoA ligase (AMP-forming)
+DEFINITION  ATP + Sinapate + CoA <=> AMP + Diphosphate + Sinapoyl-CoA
+EQUATION    C00002 + C00482 + C00010 <=> C00020 + C00013 + C00411
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00095  C00010_C00411 main [RC:RC00004]
+            RP02049  C00411_C00482 main [RC:RC00131]
+ENZYME      6.2.1.12
+PATHWAY     rn00940  Phenylpropanoid biosynthesis
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K01904  4-coumarate--CoA ligase [EC:6.2.1.12]
+///

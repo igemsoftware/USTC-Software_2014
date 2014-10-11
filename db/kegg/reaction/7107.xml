@@ -1,0 +1,13 @@
+ENTRY       R07107                      Reaction
+NAME        Trichloroethanol, NADPH:oxygen oxidoreductase (RH-hydroxylating or -epoxidizing)
+DEFINITION  Trichloroethanol + 2 NADPH + 2 Oxygen + 2 H+ <=> Trichloroacetate + 2 NADP+ + 3 H2O
+EQUATION    C07490 + 2 C00005 + 2 C00007 + 2 C00080 <=> C11150 + 2 C00006 + 3 C00001
+COMMENT     CYP2E1
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP10032  C00007_C11150 leave
+            RP10195  C07490_C11150 main [RC:RC01695]
+ENZYME      1.14.13.-
+PATHWAY     rn00980  Metabolism of xenobiotics by cytochrome P450
+ORTHOLOGY   K07415  cytochrome P450, family 2, subfamily E, polypeptide 1 [EC:1.14.13.-]
+///

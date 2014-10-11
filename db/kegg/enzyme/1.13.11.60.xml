@@ -1,0 +1,65 @@
+ENTRY       EC 1.13.11.60               Enzyme
+NAME        linoleate 8R-lipoxygenase;
+            linoleic acid 8R-dioxygenase;
+            5,8-LDS (bifunctional enzyme);
+            7,8-LDS (bifunctional enzyme);
+            5,8-linoleate diol synthase (bifunctional enzyme);
+            7,8-linoleate diol synthase (bifunctional enzyme);
+            PpoA
+CLASS       Oxidoreductases;
+            Acting on single donors with incorporation of molecular oxygen (oxygenases);
+            With incorporation of two atoms of oxygen
+SYSNAME     linoleate:oxygen (8R)-oxidoreductase
+REACTION    linoleate + O2 = (8R,9Z,12Z)-8-hydroperoxyoctadeca-9,12-dienoate [RN:R07061]
+ALL_REAC    R07061
+SUBSTRATE   linoleate [CPD:C01595];
+            O2 [CPD:C00007]
+PRODUCT     (8R,9Z,12Z)-8-hydroperoxyoctadeca-9,12-dienoate [CPD:C14831]
+COMMENT     The enzyme contains heme [1,4]. The bifunctional enzyme from Aspergillus nidulans uses different heme domains to catalyse two separate reactions. Linoleic acid is oxidized within the N-terminal heme peroxidase domain to (8R,9Z,12Z)-8-hydroperoxyoctadeca-9,12-dienoate, which is subsequently isomerized by the C-terminal P450 heme thiolate domain to (5S,8R,9Z,12Z)-5,8-dihydroxyoctadeca-9,12-dienoate (cf. EC 5.4.4.5, 9,12-octadecadienoate 8-hydroperoxide 8R-isomerase) [1]. The bifunctional enzyme from Gaeumannomyces graminis also catalyses the oxidation of linoleic acid to (8R,9Z,12Z)-8-hydroperoxyoctadeca-9,12-dienoate, but its second domain isomerizes it to (7S,8S,9Z,12Z)-5,8-dihydroxyoctadeca-9,12-dienoate (cf. EC 5.4.4.6, 9,12-octadecadienoate 8-hydroperoxide 8S-isomerase) [4].
+HISTORY     EC 1.13.11.60 created 2011
+REFERENCE   1  [PMID:19286665]
+  AUTHORS   Brodhun F, Gobel C, Hornung E, Feussner I
+  TITLE     Identification of PpoA from Aspergillus nidulans as a fusion protein of a fatty acid heme dioxygenase/peroxidase and a cytochrome P450.
+  JOURNAL   J. Biol. Chem. 284 (2009) 11792-805.
+  ORGANISM  Aspergillus nidulans
+  SEQUENCE  [ani:AN1967.2]
+REFERENCE   2  [PMID:8117115]
+  AUTHORS   Hamberg M, Zhang LY, Brodowsky ID, Oliw EH.
+  TITLE     Sequential oxygenation of linoleic acid in the fungus Gaeumannomyces graminis: stereochemistry of dioxygenase and hydroperoxide isomerase reactions.
+  JOURNAL   Arch. Biochem. Biophys. 309 (1994) 77-80.
+  ORGANISM  Gaeumannomyces graminis
+REFERENCE   3  [PMID:18586008]
+  AUTHORS   Garscha U, Oliw E
+  TITLE     Pichia expression and mutagenesis of 7,8-linoleate diol synthase change the dioxygenase and hydroperoxide isomerase.
+  JOURNAL   Biochem. Biophys. Res. Commun. 373 (2008) 579-83.
+  ORGANISM  Gaeumannomyces graminis, Magnaporthe grisea
+REFERENCE   4  [PMID:8662736]
+  AUTHORS   Su C, Oliw EH.
+  TITLE     Purification and characterization of linoleate 8-dioxygenase from the fungus Gaeumannomyces graminis as a novel hemoprotein.
+  JOURNAL   J. Biol. Chem. 271 (1996) 14112-8.
+  ORGANISM  Gaeumannomyces graminis
+  SEQUENCE  [up:Q9UUS2]
+PATHWAY     ec00591  Linoleic acid metabolism
+ORTHOLOGY   K17863  linoleate 8R-lipoxygenase / 9,12-octadecadienoate 8-hydroperoxide 8R-isomerase
+            K17864  linoleate 8R-lipoxygenase / 9,12-octadecadienoate 8-hydroperoxide 8S-isomerase
+GENES       PAN: PODANSg09720
+            MGR: MGG_13239
+            ANI: AN1967.2
+            AFM: AFUA_4G10770
+            AOR: AOR_1_2026154(AO090003001138)
+            ANG: ANI_1_966184(An04g05880)
+            AFV: AFLA_026790
+            ACT: ACLA_049940
+            NFI: NFIA_105320
+            PCS: Pc22g06980
+            CIM: CIMG_01479
+            CPW: CPC735_049620
+            PBL: PAAG_02631
+            URE: UREG_05116
+            TVE: TRV_04981
+            AJE: HCAG_01669
+DBLINKS     ExplorEnz - The Enzyme Database: 1.13.11.60
+            IUBMB Enzyme Nomenclature: 1.13.11.60
+            ExPASy - ENZYME nomenclature database: 1.13.11.60
+            BRENDA, the Enzyme Database: 1.13.11.60
+///

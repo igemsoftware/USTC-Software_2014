@@ -1,0 +1,17 @@
+ENTRY       R00706                      Reaction
+NAME        3-Oxopropanoate:NADP+ oxidoreductase (decarboxylating, CoA-acetylating)
+DEFINITION  3-Oxopropanoate + CoA + NADP+ <=> Acetyl-CoA + CO2 + NADPH + H+
+EQUATION    C00222 + C00010 + C00006 <=> C00024 + C00011 + C00005 + C00080
+COMMENT     NAD+ (see R00705)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00007  C00010_C00024 main [RC:RC00004]
+            RP00606  C00024_C00222 main [RC:RC02723]
+            RP05854  C00011_C00222 leave
+ENZYME      1.2.1.18
+PATHWAY     rn00410  beta-Alanine metabolism
+            rn00562  Inositol phosphate metabolism
+            rn00640  Propanoate metabolism
+            rn01100  Metabolic pathways
+            rn01200  Carbon metabolism
+ORTHOLOGY   K00140  malonate-semialdehyde dehydrogenase (acetylating) / methylmalonate-semialdehyde dehydrogenase [EC:1.2.1.18 1.2.1.27]
+///

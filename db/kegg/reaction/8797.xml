@@ -1,0 +1,17 @@
+ENTRY       R08797                      Reaction
+DEFINITION  Feruloyl-CoA + Malonyl-CoA + Hexanoyl-CoA + H2O <=> 1-Dehydro-[6]-gingerdione + 3 CoA + 2 CO2
+EQUATION    C00406 + C00083 + C05270 + C00001 <=> C17746 + 3 C00010 + 2 C00011
+COMMENT     several steps reaction
+            polyketide synthase(s)
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP00065  C00010_C00406 main [RC:RC00004]
+            RP05682  C00001_C00011 leave
+            RP05694  C00011_C00083 leave
+            RP10342  C00010_C05270 main [RC:RC00004]
+            RP12789  C00011_C00083 leave
+            RP13799  C00406_C17746 main [RC:RC02969]
+            RP13800  C00083_C17746 trans
+            RP13801  C05270_C17746 trans
+PATHWAY     rn00945  Stilbenoid, diarylheptanoid and gingerol biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+///

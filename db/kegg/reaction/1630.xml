@@ -1,0 +1,15 @@
+ENTRY       R01630                      Reaction
+NAME        protocatechuate,NADPH:oxygen oxidoreductase (1-hydroxylating, decarboxylating)
+DEFINITION  3,4-Dihydroxybenzoate + Oxygen + NADPH + H+ <=> Benzene-1,2,4-triol + CO2 + NADP+ + H2O
+EQUATION    C00230 + C00007 + C00005 + C00080 <=> C02814 + C00011 + C00006 + C00001
+COMMENT     NADH (see R01629)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP00628  C00230_C02814 main [RC:RC00115]
+            RP00630  C00007_C02814 leave
+            RP05789  C00011_C00230 leave
+ENZYME      1.13.11.-       1.14.13.64
+PATHWAY     rn00362  Benzoate degradation
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+///

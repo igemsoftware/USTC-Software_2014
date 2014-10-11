@@ -1,0 +1,13 @@
+ENTRY       R01158                      Reaction
+NAME        L-histidinol:NAD+ oxidoreductase
+DEFINITION  L-Histidinol + 2 NAD+ + H2O <=> L-Histidine + 2 NADH + 2 H+
+EQUATION    C00860 + 2 C00003 + C00001 <=> C00135 + 2 C00004 + 2 C00080
+COMMENT     two-step reaction (see R03012+R01163)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP01336  C00135_C00860 main [RC:RC00463]
+            RP05888  C00001_C00135 leave
+ENZYME      1.1.1.23
+PATHWAY     rn01230  Biosynthesis of amino acids
+ORTHOLOGY   K00013  histidinol dehydrogenase [EC:1.1.1.23]
+            K14152  phosphoribosyl-ATP pyrophosphohydrolase / phosphoribosyl-AMP cyclohydrolase / histidinol dehydrogenase [EC:3.6.1.31 3.5.4.19 1.1.1.23]
+///

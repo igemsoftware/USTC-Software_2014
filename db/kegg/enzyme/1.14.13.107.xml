@@ -1,0 +1,127 @@
+ENTRY       EC 1.14.13.107              Enzyme
+NAME        limonene 1,2-monooxygenase
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     limonene,NAD(P)H:oxygen oxidoreductase
+REACTION    (1) (S)-limonene + NAD(P)H + H+ + O2 = 1,2-epoxymenth-8-ene + NAD(P)+ + H2O [RN:R09385 R09389];
+            (2) (R)-limonene + NAD(P)H + H+ + O2 = 1,2-epoxymenth-8-ene + NAD(P)+ + H2O [RN:R06398 R09393]
+ALL_REAC    R06398 R09385 R09389 R09393
+SUBSTRATE   (S)-limonene;
+            NADH [CPD:C00004];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            (R)-limonene
+PRODUCT     1,2-epoxymenth-8-ene;
+            NAD+ [CPD:C00003];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001]
+COMMENT     A flavoprotein (FAD). Limonene is the most widespread terpene and is formed by more than 300 plants. Rhodococcus erythropolis DCL14, a Gram-positive bacterium, is able to grow on both (S)-limonene and (R)-limonene as the sole source of carbon and energy. NADPH can act instead of NADH, although more slowly. It has not been established if the product formed is optically pure or a mixture of two enantiomers.
+HISTORY     EC 1.14.13.107 created 2009
+REFERENCE   1  [PMID:10224006]
+  AUTHORS   van der Werf MJ, Swarts HJ, de Bont JA.
+  TITLE     Rhodococcus erythropolis DCL14 contains a novel degradation pathway for limonene.
+  JOURNAL   Appl. Environ. Microbiol. 65 (1999) 2092-102.
+  ORGANISM  Rhodococcus erythropolis
+  SEQUENCE  [up:Q9EUT9]
+PATHWAY     ec00903  Limonene and pinene degradation
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K14733  limonene 1,2-monooxygenase
+GENES       MES: Meso_3721
+            PLA: Plav_1646
+            BJA: bll0895
+            BJU: BJ6T_09070
+            BRA: BRADO0508
+            BBT: BBta_7675
+            BRS: S23_69110
+            AOL: S58_71450
+            PZU: PHZ_c1133
+            RDE: RD1_3871
+            RLI: RLO149_c005640(limB)
+            SPHM: G432_04655
+            SSY: SLG_34780
+            MTU: Rv3618
+            MTV: RVBD_3618
+            MTC: MT3720
+            MRA: MRA_3654
+            MTF: TBFG_13649
+            MTB: TBMG_03655
+            MTK: TBSG_03680
+            MTZ: TBXG_003627
+            MTG: MRGA327_22290
+            MTI: MRGA423_22835
+            MTE: CCDC5079_3355 CCDC5079_3356
+            MTUR: CFBS_3834
+            MTL: CCDC5180_3308
+            MTO: MTCTRI2_3683
+            MTD: UDA_3618
+            MTN: ERDMAN_3962
+            MTJ: J112_19455
+            MTUB: MT7199_3681
+            MTUC: J113_25305
+            MTUE: J114_19330
+            MTX: M943_18580
+            MTUL: TBHG_03556
+            MCE: MCAN_36301
+            MCQ: BN44_120007
+            MCV: BN43_90117
+            MCX: BN42_90118
+            MCZ: BN45_100130
+            MPA: MAP1645
+            MAO: MAP4_2193 MAP4_3422
+            MAV: MAV_2779
+            MIT: OCO_04520 OCO_26110
+            MIR: OCQ_04680 OCQ_24690
+            MIA: OCU_04550 OCU_25970
+            MID: MIP_00873 MIP_03599 MIP_03607 MIP_03648
+            MYO: OEM_04580 OEM_24600
+            MSM: MSMEG_6107
+            MSG: MSMEI_5948
+            MSA: Mycsm_02075 Mycsm_05927
+            MUL: MUL_2949
+            MVA: Mvan_1925
+            MGI: Mflv_4429
+            MSP: Mspyr1_38290
+            MAB: MAB_0527c
+            MABB: MASS_0495
+            MMV: MYCMA_0262(limB)
+            MMC: Mmcs_4772
+            MKM: Mkms_4858
+            MJL: Mjls_5158
+            MJD: JDM601_3901
+            MMI: MMAR_2824
+            MRH: MycrhN_6318
+            MMM: W7S_02200 W7S_12680
+            MCB: Mycch_1625
+            MLI: MULP_02587 MULP_05376
+            MKN: MKAN_00970 MKAN_12460
+            MNE: D174_25035
+            NCY: NOCYR_3944(limB)
+            RHA: RHA1_ro09085
+            RER: RER_46450
+            REY: O5Y_21925
+            ROP: ROP_46710(limB)
+            REQ: REQ_44050
+            GPO: GPOL_c09000
+            SCO: SCP1.240c(mmyO)
+            SCT: SCAT_0119(limB)
+            SCY: SCATT_01270
+            SBH: SBI_00943
+            SHY: SHJG_4007
+            SHO: SHJGH_3772
+            SRC: M271_44285
+            SALU: DC74_7652
+            NAL: B005_2518(limB)
+            GOB: Gobs_2267
+            BSD: BLASA_2848(limB) BLASA_3512(limB2)
+            MMAR: MODMU_2453(limB)
+            PDX: Psed_5126
+            SESP: BN6_21310(limB)
+            AYM: YM304_25770(limB)
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.107
+            IUBMB Enzyme Nomenclature: 1.14.13.107
+            ExPASy - ENZYME nomenclature database: 1.14.13.107
+            UM-BBD (Biocatalysis/Biodegradation Database): 1.14.13.107
+            BRENDA, the Enzyme Database: 1.14.13.107
+///

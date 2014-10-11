@@ -1,0 +1,18 @@
+ENTRY       R06767                      Reaction
+DEFINITION  Coumermic acid + 2 dTDP-5-dimethyl-L-lyxose + 2 S-Adenosyl-L-methionine <=> Coumermycin D + 2 dTDP + 2 S-Adenosyl-L-homocysteine
+EQUATION    C12479 + 2 C12481 + 2 C00019 <=> C12480 + 2 C00363 + 2 C00021
+COMMENT     glycosyl transferase, CouM
+            O-methyltransferase, CouP
+            two-step reaction
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP09129  C00363_C12481 main [RC:RC00005]
+            RP09572  C12479_C12480 main [RC:RC01684]
+            RP09769  C00019_C12480 trans
+            RP09871  C12480_C12481 trans
+            RP12352  C12480_C12481 trans
+            RP12353  C00019_C12480 trans
+PATHWAY     rn00401  Novobiocin biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K12726  coumermycin A biosynthesis protein CouM
+            K12727  coumermycin A biosynthesis protein CouP
+///

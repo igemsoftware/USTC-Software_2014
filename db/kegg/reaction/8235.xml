@@ -1,0 +1,13 @@
+ENTRY       R08235                      Reaction
+NAME        6-mercaptopurin:oxygen oxidoreductase
+DEFINITION  6-Mercaptopurine + 2 H2O + 2 Oxygen <=> 6-Thiourate + 2 Hydrogen peroxide
+EQUATION    C02380 + 2 C00001 + 2 C00007 <=> C16613 + 2 C00027
+COMMENT     two-step reaction
+RPAIR       RP00006  C00007_C00027 cofac [RC:RC02755]
+            RP12824  C00001_C16613 leave
+            RP13033  C02380_C16613 main [RC:RC02199]
+            RP13300  C00001_C16613 leave
+ENZYME      1.17.3.2
+PATHWAY     rn00983  Drug metabolism - other enzymes
+ORTHOLOGY   K00106  xanthine dehydrogenase/oxidase [EC:1.17.1.4 1.17.3.2]
+///

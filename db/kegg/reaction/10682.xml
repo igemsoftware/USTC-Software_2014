@@ -1,0 +1,12 @@
+ENTRY       R10682                      Reaction
+DEFINITION  6-Deoxocastasterone + 3 Oxygen + 3 Reduced flavoprotein <=> Brassinolide + 4 H2O + 3 Oxidized flavoprotein
+EQUATION    C15802 + 3 C00007 + 3 C03024 <=> C08814 + 4 C00001 + 3 C03161
+COMMENT     three-step reaction (see R07450+R07451+R07471)
+            P-450 reductase (ec 1.6.2.4) is the flavoprotein and re-reduced by NADPH (see R08551)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP16842  C08814_C15802 main [RC:RC03235]
+            RP16843  C00007_C08814 leave
+            RP16844  C00007_C08814 leave
+ENZYME      1.14.-.-
+ORTHOLOGY   K12640  brassinosteroid-6-oxidase 2 [EC:1.14.-.-]
+///

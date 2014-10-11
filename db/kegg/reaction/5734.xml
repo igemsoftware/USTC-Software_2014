@@ -1,0 +1,12 @@
+ENTRY       R05734                      Reaction
+NAME        3beta-hydroxy-4beta-methyl-5alpha-cholest-7-ene-4alpha-carbaldehyde,NADH:oxygen oxidoreductase (hydroxylating)
+DEFINITION  3beta-Hydroxy-4beta-methyl-5alpha-cholest-7-ene-4alpha-carbaldehyde + NADH + H+ + Oxygen <=> 3beta-Hydroxy-4beta-methyl-5alpha-cholest-7-ene-4alpha-carboxylate + NAD+ + H2O
+EQUATION    C11509 + C00004 + C00080 + C00007 <=> C04840 + C00003 + C00001
+COMMENT     This catalyzes three-step reaction. (see R10057, R04501+R05733+R05734)
+            see R05738 (NADPH)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP06125  C00007_C04840 leave
+            RP09135  C04840_C11509 main [RC:RC01563]
+ENZYME      1.14.13.72
+///

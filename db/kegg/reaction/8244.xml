@@ -1,0 +1,15 @@
+ENTRY       R08244                      Reaction
+NAME        6-thioxanthine 5'-monophosphate:L-glutamine amido-ligase (AMP-forming)
+DEFINITION  6-Thioxanthine 5'-monophosphate + ATP + L-Glutamine + H2O <=> 6-Thioguanosine monophosphate + AMP + Diphosphate + L-Glutamate
+EQUATION    C16618 + C00002 + C00064 + C00001 <=> C16619 + C00020 + C00013 + C00025
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP00024  C00025_C00064 main [RC:RC00010]
+            RP05695  C00001_C00025 leave
+            RP12906  C00020_C16618 trans
+            RP12925  C00064_C16619 trans
+            RP13247  C16618_C16619 main [RC:RC00204]
+ENZYME      6.3.5.2
+PATHWAY     rn00983  Drug metabolism - other enzymes
+ORTHOLOGY   K01951  GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+///

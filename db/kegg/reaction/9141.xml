@@ -1,0 +1,14 @@
+ENTRY       R09141                      Reaction
+DEFINITION  Trichloroethene + NADH + H+ + Oxygen <=> TCE epoxide + NAD+ + H2O
+EQUATION    C06790 + C00004 + C00080 + C00007 <=> C11148 + C00003 + C00001
+COMMENT     toluene 2-monooxygenase (ec 1.14.13.-)
+            Soluble methane monooxygenase (ec 1.14.13.25)
+            NADPH (ec 1.14.13.25, see R07098)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP10031  C00007_C11148 leave
+            RP10188  C06790_C11148 main [RC:RC01732]
+ENZYME      1.14.13.25      1.14.13.-
+PATHWAY     rn00625  Chloroalkane and chloroalkene degradation
+            rn01120  Microbial metabolism in diverse environments
+///

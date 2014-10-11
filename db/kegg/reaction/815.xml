@@ -1,0 +1,13 @@
+ENTRY       R00815                      Reaction
+NAME        phenol,NADPH:oxogen oxidoreductase (2-hydroxylating)
+DEFINITION  Phenol + Oxygen + NADPH + H+ <=> Catechol + NADP+ + H2O
+EQUATION    C00146 + C00007 + C00005 + C00080 <=> C00090 + C00006 + C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP01117  C00090_C00146 main [RC:RC00046]
+            RP05745  C00007_C00090 leave
+ENZYME      1.14.13.7
+PATHWAY     rn00627  Aminobenzoate degradation
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K03380  phenol 2-monooxygenase [EC:1.14.13.7]
+///

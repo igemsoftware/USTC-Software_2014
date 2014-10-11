@@ -1,0 +1,11 @@
+ENTRY       R00047                      Reaction
+NAME        6-hydroxynicotinate,hydrogen-donor:oxygen oxidoreductase (3-hydroxylating, decarboxylating)
+DEFINITION  Oxygen + 6-Hydroxynicotinate + Reduced acceptor <=> 2,5-Dihydroxypyridine + CO2 + Acceptor + H2O
+EQUATION    C00007 + C01020 + C00030 <=> C01059 + C00011 + C00028 + C00001
+COMMENT     the enzyme from Pseudomonas fluorescens TN5 uses NADH as hydrogen-donor (see R08764)
+RPAIR       RP00013  C00001_C00007 cofac
+            RP03032  C01020_C01059 main [RC:RC00115]
+            RP05929  C00007_C01059 leave
+            RP07517  C00011_C01020 leave
+ENZYME      1.14.99.-
+///

@@ -1,0 +1,15 @@
+ENTRY       R05712                      Reaction
+NAME        ammonia:ferricytochrome-c oxidoreductase
+DEFINITION  Ammonia + 2 H2O + 6 Ferricytochrome c <=> Nitrite + 6 Ferrocytochrome c + 6 H+
+EQUATION    C00014 + 2 C00001 + 6 C00125 <=> C00088 + 6 C00126 + 6 C00080
+RPAIR       RP00038  C00125_C00126 cofac [RC:RC00016]
+            RP05706  C00001_C00088 leave
+            RP05887  C00014_C00088 main [RC:RC00176]
+            RP12393  C00001_C00088 leave
+ENZYME      1.7.2.2
+PATHWAY     rn00910  Nitrogen metabolism
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K03385  nitrite reductase (cytochrome c-552) [EC:1.7.2.2]
+            K04016  cytochrome c-type biogenesis protein NrfE
+            K15876  cytochrome c nitrite reductase small subunit
+///

@@ -1,0 +1,14 @@
+ENTRY       R00209                      Reaction
+NAME        pyruvate:NAD+ 2-oxidoreductase (CoA-acetylating);
+            pyruvate dehydrogenase complex
+DEFINITION  Pyruvate + CoA + NAD+ <=> Acetyl-CoA + CO2 + NADH + H+
+EQUATION    C00022 + C00010 + C00003 <=> C00024 + C00011 + C00004 + C00080
+COMMENT     multi-step reaction (see R01699+R02569+R07618)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00007  C00010_C00024 main [RC:RC00004]
+            RP00285  C00022_C00024 main [RC:RC02742]
+            RP05698  C00011_C00022 leave
+ENZYME      1.2.4.1         1.8.1.4         2.3.1.12
+PATHWAY     rn01100  Metabolic pathways
+            rn01200  Carbon metabolism
+///

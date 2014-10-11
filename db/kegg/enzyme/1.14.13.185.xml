@@ -1,0 +1,51 @@
+ENTRY       EC 1.14.13.185              Enzyme
+NAME        pikromycin synthase;
+            PikC;
+            CYP107L1
+CLASS       Oxidoreductases;
+            Acting on paired donors, with incorporation or reduction of molecular oxygen;
+            With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor
+SYSNAME     narbomycin,NADH:oxygen oxidoreductase (pikromycin-forming)
+REACTION    (1) narbomycin + NADPH + H+ + O2 = pikromycin + NADP+ + H2O [RN:R06464];
+            (2) narbomycin + NADPH + H+ + O2 = neopikromycin + NADP+ + H2O [RN:R10626];
+            (3) narbomycin + 2 NADPH + 2 H+ + 2 O2 = novapikromyin + 2 NADP+ + 2 H2O [RN:R10627];
+            (4) 10-deoxymethymycin + NADPH + H+ + O2 = methymycin + NADP+ + H2O [RN:R06463];
+            (5) 10-deoxymethymycin + NADPH + H+ + O2 = neomethymycin + NADP+ + H2O [RN:R06462];
+            (6) 10-deoxymethymycin + 2 NADPH + 2 H+ + 2 O2 = novamethymycin + 2 NADP+ + 2 H2O [RN:R10628]
+ALL_REAC    R06462 R06463 R06464 R10626 R10627 R10628
+SUBSTRATE   narbomycin [CPD:C11998];
+            NADPH [CPD:C00005];
+            H+ [CPD:C00080];
+            O2 [CPD:C00007];
+            10-deoxymethymycin [CPD:C11994]
+PRODUCT     pikromycin [CPD:C11999];
+            NADP+ [CPD:C00006];
+            H2O [CPD:C00001];
+            neopikromycin [CPD:C20739];
+            novapikromyin [CPD:C20740];
+            methymycin [CPD:C11996];
+            neomethymycin [CPD:C11995];
+            novamethymycin [CPD:C20741]
+COMMENT     A heme-thiolate protein (cytochrome P-450). Involved in the biosynthesis of a number of bacterial macrolide antibiotics containing a desosamine glycoside unit. With narbomycin it hydroxylates at either C-12 to give pikromycin or C-14 to give neopikromycin or both positions to give narvopikromycin. With 10-deoxymethymycin it hydroxylates at either C-10 to give methymycin or C-12 to give neomethymycin or both positions to give novamethymycin.
+HISTORY     EC 1.14.13.185 created 2014
+REFERENCE   1  [PMID:9831532]
+  AUTHORS   Xue Y, Wilson D, Zhao L, Liu Hw, Sherman DH
+  TITLE     Hydroxylation of macrolactones YC-17 and narbomycin is mediated by the pikC-encoded cytochrome P450 in Streptomyces venezuelae.
+  JOURNAL   Chem. Biol. 5 (1998) 661-7.
+REFERENCE   2  [PMID:16825192]
+  AUTHORS   Sherman DH, Li S, Yermalitskaya LV, Kim Y, Smith JA, Waterman MR, Podust LM
+  TITLE     The structural basis for substrate anchoring, active site selectivity, and product formation by P450 PikC from Streptomyces venezuelae.
+  JOURNAL   J. Biol. Chem. 281 (2006) 26289-97.
+REFERENCE   3  [PMID:19124459]
+  AUTHORS   Li S, Ouellet H, Sherman DH, Podust LM
+  TITLE     Analysis of transient and catalytic desosamine-binding pockets in cytochrome P-450 PikC from Streptomyces venezuelae.
+  JOURNAL   J. Biol. Chem. 284 (2009) 5723-30.
+PATHWAY     ec00522  Biosynthesis of 12-, 14- and 16-membered macrolides
+            ec01052  Type I polyketide structures
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K16006  pikromycin synthase
+DBLINKS     ExplorEnz - The Enzyme Database: 1.14.13.185
+            IUBMB Enzyme Nomenclature: 1.14.13.185
+            ExPASy - ENZYME nomenclature database: 1.14.13.185
+            BRENDA, the Enzyme Database: 1.14.13.185
+///

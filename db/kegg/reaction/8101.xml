@@ -1,0 +1,15 @@
+ENTRY       R08101                      Reaction
+NAME        2-fluorobenzoate,NADH:oxygen oxidoreductase (1,2-hydroxylating)
+DEFINITION  2-Fluorobenzoate + NADH + H+ + Oxygen <=> 6-Fluorocyclohexadiene-cis,cis-1,2-diol-1-carboxylate + NAD+
+EQUATION    C02359 + C00004 + C00080 + C00007 <=> C16481 + C00003
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP10590  C00007_C16481 leave
+            RP11392  C02359_C16481 main [RC:RC01378]
+ENZYME      1.14.12.10
+PATHWAY     rn00364  Fluorobenzoate degradation
+            rn01120  Microbial metabolism in diverse environments
+            rn01220  Degradation of aromatic compounds
+ORTHOLOGY   K05549  benzoate/toluate 1,2-dioxygenase alpha subunit [EC:1.14.12.10 1.14.12.-]
+            K05550  benzoate/toluate 1,2-dioxygenase beta subunit [EC:1.14.12.10 1.14.12.-]
+            K05784  benzoate/toluate 1,2-dioxygenase reductase subunit [EC:1.18.1.-]
+///

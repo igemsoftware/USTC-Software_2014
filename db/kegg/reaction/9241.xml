@@ -1,0 +1,12 @@
+ENTRY       R09241                      Reaction
+DEFINITION  2,4-Dinitrotoluene + 3 NADPH + 3 H+ <=> 2-Amino-4-nitrotoluene + 3 NADP+ + 2 H2O
+EQUATION    C11006 + 3 C00005 + 3 C00080 <=> C16398 + 3 C00006 + 2 C00001
+COMMENT     NADPH nitroreductase
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP14508  C11006_C16398 main [RC:RC01333]
+            RP14509  C00001_C11006 leave
+            RP14510  C00001_C11006 leave
+ENZYME      1.7.1.-
+PATHWAY     rn00633  Nitrotoluene degradation
+            rn01120  Microbial metabolism in diverse environments
+///

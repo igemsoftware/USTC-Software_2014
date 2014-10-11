@@ -1,0 +1,18 @@
+ENTRY       R08764                      Reaction
+NAME        6-hydroxynicotinate,NADH:oxygen oxidoreductase (3-hydroxylating, decarboxylating)
+DEFINITION  6-Hydroxynicotinate + NADH + Oxygen + H+ <=> 2,5-Dihydroxypyridine + NAD+ + CO2 + H2O
+EQUATION    C01020 + C00004 + C00007 + C00080 <=> C01059 + C00003 + C00011 + C00001
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP03032  C01020_C01059 main [RC:RC00115]
+            RP05929  C00007_C01059 leave
+            RP07517  C00011_C01020 leave
+ENZYME      1.14.13.114
+PATHWAY     rn00760  Nicotinate and nicotinamide metabolism
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K14974  6-hydroxynicotinate 3-monooxygenase [EC:1.14.13.114]
+REFERENCE   1  [PMID:10091591]
+            Nakano H, Wieser M, Hurh B, Kawai T, Yoshida T, Yamane T, Nagasawa T.
+            Purification, characterization and gene cloning of 6-hydroxynicotinate 3-monooxygenase from Pseudomonas fluorescens TN5.
+            Eur. J. Biochem. 260 (1999) 120-6.
+///

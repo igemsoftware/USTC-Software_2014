@@ -1,0 +1,21 @@
+ENTRY       R00226                      Reaction
+NAME        pyruvate:pyruvate acetaldehydetransferase (decarboxylating);
+            (S)-2-acetolactate pyruvate-lyase (carboxylating)
+DEFINITION  (S)-2-Acetolactate + CO2 <=> 2 Pyruvate
+EQUATION    C06010 + C00011 <=> 2 C00022
+COMMENT     TPP-dependent enzymatic reaction (R00014+R04672)
+RPAIR       RP00291  C00022_C06010 main [RC:RC00106]
+            RP05698  C00011_C00022 leave
+            RP12734  C00022_C06010 trans
+ENZYME      2.2.1.6
+PATHWAY     rn00290  Valine, leucine and isoleucine biosynthesis
+            rn00650  Butanoate metabolism
+            rn00660  C5-Branched dibasic acid metabolism
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+            rn01210  2-Oxocarboxylic acid metabolism
+            rn01230  Biosynthesis of amino acids
+ORTHOLOGY   K01652  acetolactate synthase I/II/III large subunit [EC:2.2.1.6]
+            K01653  acetolactate synthase I/III small subunit [EC:2.2.1.6]
+            K11258  acetolactate synthase II small subunit [EC:2.2.1.6]
+///

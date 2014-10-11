@@ -1,0 +1,15 @@
+ENTRY       R10058                      Reaction
+NAME        4,4-dimethyl-5alpha-cholest-7-en-3beta-ol,NADPH:oxygen oxidoreductase (hydroxylating)
+DEFINITION  4,4-Dimethyl-5alpha-cholest-7-en-3beta-ol + 3 NADPH + 3 H+ + 3 Oxygen <=> 3beta-Hydroxy-4beta-methyl-5alpha-cholest-7-ene-4alpha-carboxylate + 3 NADP+ + 4 H2O
+EQUATION    C04530 + 3 C00005 + 3 C00080 + 3 C00007 <=> C04840 + 3 C00006 + 4 C00001
+COMMENT     three-step reaction (see R05736+R05737+R05738)
+            see R10057 (NADH)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 leave
+            RP06125  C00007_C04840 leave
+            RP15848  C04530_C04840 main [RC:RC01952]
+ENZYME      1.14.13.72
+ORTHOLOGY   K07750  methylsterol monooxygenase [EC:1.14.13.72]
+            K14423  4,4-dimethyl-9beta,19-cyclopropylsterol-4alpha-methyl oxidase [EC:1.14.13.72]
+            K14424  4-alpha-methyl-delta7-sterol-4alpha-methyl oxidase [EC:1.14.13.72]
+///

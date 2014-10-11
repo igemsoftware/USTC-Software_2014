@@ -1,0 +1,36 @@
+ENTRY       EC 6.2.1.39                 Enzyme
+NAME        [butirosin acyl-carrier protein]---L-glutamate ligase;
+            [BtrI acyl-carrier protein]---L-glutamate ligase;
+            BtrJ
+CLASS       Ligases;
+            Forming carbon-sulfur bonds;
+            Acid-thiol ligases
+SYSNAME     [BtrI acyl-carrier protein]:L-glutamate ligase (ADP-forming)
+REACTION    (1) ATP + L-glutamate + BtrI acyl-carrier protein = ADP + phosphate + L-glutamyl-[BtrI acyl-carrier protein] [RN:R08905];
+            (2) ATP + L-glutamate + 4-amino butanoyl-[BtrI acyl-carrier protein] = ADP + phosphate + 4-(gamma-L-glutamylamino)butanoyl-[BtrI acyl-carrier protein] [RN:R08906]
+ALL_REAC    R08905 R08906
+SUBSTRATE   ATP [CPD:C00002];
+            L-glutamate [CPD:C00025];
+            BtrI acyl-carrier protein;
+            4-amino butanoyl-[BtrI acyl-carrier protein]
+PRODUCT     ADP [CPD:C00008];
+            phosphate [CPD:C00009];
+            L-glutamyl-[BtrI acyl-carrier protein];
+            4-(gamma-L-glutamylamino)butanoyl-[BtrI acyl-carrier protein]
+COMMENT     Catalyses two steps in the biosynthesis of the side chain of the aminoglycoside antibiotics of the butirosin family. The enzyme adds one molecule of L-glutamate to a dedicated acyl-carrier protein, and following decarboxylation of the product by EC 4.1.1.95, L-glutamyl-[BtrI acyl-carrier protein] decarboxylase, adds a second L-glutamate molecule.
+            Requires Mg2+ or Mn2+, and activity is enhanced in the presence of Mn2+.
+HISTORY     EC 6.2.1.39 created 2012
+REFERENCE   1  [PMID:15975512]
+  AUTHORS   Li Y, Llewellyn NM, Giri R, Huang F, Spencer JB
+  TITLE     Biosynthesis of the unique amino acid side chain of butirosin: possible protective-group chemistry in an acyl carrier protein-mediated pathway.
+  JOURNAL   Chem. Biol. 12 (2005) 665-75.
+  ORGANISM  Bacillus circulans
+  SEQUENCE  [up:Q4H4E7]
+PATHWAY     ec00524  Butirosin and neomycin biosynthesis
+            ec01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K13559  [BtrI acyl-carrier protein]--L-glutamate ligase
+DBLINKS     ExplorEnz - The Enzyme Database: 6.2.1.39
+            IUBMB Enzyme Nomenclature: 6.2.1.39
+            ExPASy - ENZYME nomenclature database: 6.2.1.39
+            BRENDA, the Enzyme Database: 6.2.1.39
+///

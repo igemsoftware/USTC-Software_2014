@@ -1,0 +1,11 @@
+ENTRY       R07641                      Reaction
+DEFINITION  2 ATP + HCO3- + Ammonia <=> 2 ADP + Orthophosphate + Carbamoyl phosphate
+EQUATION    2 C00002 + C00288 + C00014 <=> 2 C00008 + C00009 + C00169
+COMMENT     multi-step reaction
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP03826  C00002_C00169 trans
+            RP06025  C00014_C00169 leave [RC:RC02804]
+            RP10992  C00169_C00288 leave
+ENZYME      6.3.5.5
+///

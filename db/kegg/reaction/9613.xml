@@ -1,0 +1,11 @@
+ENTRY       R09613                      Reaction
+NAME        S-adenosyl-L-methionine:3'O-tricetin 5'-O-methyltransferase
+DEFINITION  S-Adenosyl-L-methionine + 3'-O-Methyltricetin <=> S-Adenosyl-L-homocysteine + Tricin
+EQUATION    C00019 + C19739 <=> C00021 + C10193
+COMMENT     second step of two-step reaction (see R09611, R09612+R09613)
+            second step of three-step reaction (see R09679, R09612+R09613+R09678)
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP15043  C00019_C10193 trans
+            RP15045  C10193_C19739 main [RC:RC00392]
+ENZYME      2.1.1.169       2.1.1.175
+///

@@ -1,0 +1,21 @@
+ENTRY       R00335                      Reaction
+NAME        GTP phosphohydrolase
+DEFINITION  GTP + H2O <=> GDP + Orthophosphate
+EQUATION    C00044 + C00001 <=> C00035 + C00009
+COMMENT     also hydrolyzing GDP (ec 3.6.1.5, see R00328)
+            signalling (ec 3.6.5.1)
+            cell-regulating (ec 3.6.5.2)
+            mRNA-translation-assisting (ec 3.6.5.3)
+            protein-synthesis-assisting (ec 3.6.5.4)
+            vesicle-releasing (ec 3.6.5.5)
+            microtubule-releasing (ec 3.6.5.6)
+RPAIR       RP00055  C00035_C00044 main [RC:RC00002]
+            RP00227  C00009_C00044 leave
+            RP05676  C00001_C00009 leave
+ENZYME      3.6.1.5         3.6.5.1         3.6.5.2         3.6.5.3         
+            3.6.5.4         3.6.5.5         3.6.5.6
+PATHWAY     rn00230  Purine metabolism
+ORTHOLOGY   K01510  apyrase [EC:3.6.1.5]
+            K14641  apyrase [EC:3.6.1.5]
+            K14642  golgi apyrase [EC:3.6.1.5]
+///

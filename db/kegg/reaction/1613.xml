@@ -1,0 +1,18 @@
+ENTRY       R01613                      Reaction
+NAME        Malonyl-CoA:4-Coumaroyl-CoA malonyltransferase(cyclizing)
+DEFINITION  p-Coumaroyl-CoA + 3 Malonyl-CoA <=> Naringenin chalcone + 4 CoA + 3 CO2
+EQUATION    C00223 + 3 C00083 <=> C06561 + 4 C00010 + 3 C00011
+COMMENT     multi-step reaction
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP00144  C00010_C00223 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP06631  C00083_C06561 trans
+            RP06632  C00223_C06561 main [RC:RC02726]
+            RP10885  C00083_C06561 trans
+            RP13393  C00083_C06561 trans
+ENZYME      2.3.1.74
+PATHWAY     rn00941  Flavonoid biosynthesis
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K00660  chalcone synthase [EC:2.3.1.74]
+///

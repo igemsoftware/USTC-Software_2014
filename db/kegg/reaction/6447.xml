@@ -1,0 +1,16 @@
+ENTRY       R06447                      Reaction
+NAME        (2E,6E)-farnesyl-diphosphate:isopentenyl-diphosphate cistransferase (adding 8 isopentenyl units)
+DEFINITION  trans,trans-Farnesyl diphosphate + 8 Isopentenyl diphosphate <=> di-trans,poly-cis-Undecaprenyl diphosphate + 8 Diphosphate
+EQUATION    C00448 + 8 C00129 <=> C04574 + 8 C00013
+COMMENT     8-step reaction
+            see R05555+R08748+R08749+R08750+R08751+R08752+R08753+R07269
+RPAIR       RP05713  C00013_C00448 leave
+            RP05863  C00013_C00129 leave
+            RP10971  C00129_C04574 trans
+            RP12711  C00129_C04574 main [RC:RC00279]
+            RP15711  C00448_C04574 main [RC:RC02839]
+ENZYME      2.5.1.31
+PATHWAY     rn00900  Terpenoid backbone biosynthesis
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K00806  undecaprenyl diphosphate synthase [EC:2.5.1.31]
+///

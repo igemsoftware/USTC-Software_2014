@@ -1,0 +1,17 @@
+ENTRY       R10243                      Reaction
+DEFINITION  Tetrahydrofolate + Acetyl-CoA <=> 5-Methyltetrahydrofolate + CoA + CO
+EQUATION    C00101 + C00024 <=> C00440 + C00010 + C00237
+COMMENT     two-step reaction (see R08433+R02289)
+RPAIR       RP00007  C00010_C00024 main [RC:RC00004]
+            RP00302  C00101_C00440 main [RC:RC00113]
+            RP12899  C00024_C00237 leave [RC:RC02963]
+            RP16240  C00024_C00440 main [RC:RC02977]
+ENZYME      2.1.1.258       2.3.1.169
+PATHWAY     rn00720  Carbon fixation pathways in prokaryotes
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+ORTHOLOGY   K00194  acetyl-CoA decarbonylase/synthase complex subunit delta [EC:2.1.1.245]
+            K00197  acetyl-CoA decarbonylase/synthase complex subunit gamma [EC:2.1.1.245]
+            K14138  acetyl-CoA synthase [EC:2.3.1.169]
+            K15023  5-methyltetrahydrofolate corrinoid/iron sulfur protein methyltransferase [EC:2.1.1.258]
+///

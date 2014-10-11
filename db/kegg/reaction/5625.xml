@@ -1,0 +1,15 @@
+ENTRY       R05625                      Reaction
+NAME        Phenylphosphate synthase
+DEFINITION  Phenol + ATP + H2O <=> Phenolic phosphate + AMP + Orthophosphate
+EQUATION    C00146 + C00002 + C00001 <=> C02734 + C00020 + C00009
+COMMENT     multi-step reaction
+            forming protein phosphohistidine intermediate
+RPAIR       RP00010  C00002_C00009 leave
+            RP05225  C00146_C02734 main [RC:RC00151]
+            RP05676  C00001_C00009 leave
+            RP12346  C00002_C00020 main [RC:RC00002]
+            RP12762  C00002_C02734 trans
+ENZYME      2.7.9.-
+PATHWAY     rn00627  Aminobenzoate degradation
+            rn01120  Microbial metabolism in diverse environments
+///

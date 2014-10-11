@@ -1,0 +1,14 @@
+ENTRY       R08655                      Reaction
+NAME        L-phenylalanine,NADPH:oxygen oxidoreductase (N-hydroxylating, decarboxylating)
+DEFINITION  L-Homophenylalanine + 2 Oxygen + 2 NADPH + 2 H+ <=> 3-Phenylpropionaldoxim + 2 NADP+ + CO2 + 3 H2O
+EQUATION    C17235 + 2 C00007 + 2 C00005 + 2 C00080 <=> C17236 + 2 C00006 + C00011 + 3 C00001
+COMMENT     multi-step reaction
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP13626  C17235_C17236 main [RC:RC02295]
+            RP13627  C00011_C17235 leave
+            RP13628  C00007_C17236 leave
+ENZYME      1.14.13.-
+PATHWAY     rn00966  Glucosinolate biosynthesis
+            rn01210  2-Oxocarboxylic acid metabolism
+///

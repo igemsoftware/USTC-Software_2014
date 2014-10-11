@@ -1,0 +1,871 @@
+ENTRY       EC 3.5.99.2                 Enzyme
+NAME        aminopyrimidine aminohydrolase;
+            thiaminase;
+            thiaminase II;
+            tenA (gene name)
+CLASS       Hydrolases;
+            Acting on carbon-nitrogen bonds, other than peptide bonds;
+            In other compounds
+SYSNAME     4-amino-5-aminomethyl-2-methylpyrimidine aminohydrolase
+REACTION    (1) 4-amino-5-aminomethyl-2-methylpyrimidine + H2O = 4-amino-5-hydroxymethyl-2-methylpyrimidine + ammonia [RN:R09993];
+            (2) thiamine + H2O = 4-amino-5-hydroxymethyl-2-methylpyrimidine + 5-(2-hydroxyethyl)-4-methylthiazole [RN:R02133]
+ALL_REAC    R02133 R09993
+SUBSTRATE   4-amino-5-aminomethyl-2-methylpyrimidine [CPD:C20267];
+            H2O [CPD:C00001];
+            thiamine [CPD:C00378]
+PRODUCT     4-amino-5-hydroxymethyl-2-methylpyrimidine [CPD:C01279];
+            ammonia [CPD:C00014];
+            5-(2-hydroxyethyl)-4-methylthiazole [CPD:C04294]
+COMMENT     Previously known as thiaminase II, this enzyme is involved in the regeneration of the thiamine pyrimidine from degraded products, rather than in thiamine degradation, and participates in thiamine salvage pathways.
+HISTORY     EC 3.5.99.2 created 1961, modified 2011
+REFERENCE   1  [PMID:13243520]
+  AUTHORS   FUJITA A, NOSE Y, KURATANIK.
+  TITLE     The second type of bacterial thiaminase.
+  JOURNAL   J. Vitaminol. (Kyoto). 1 (1954) 1-7.
+  ORGANISM  Bacillus aneurinolyticus
+REFERENCE   2
+  AUTHORS   Ikehata, H.
+  TITLE     Purification of thiaminase II.
+  JOURNAL   J. Gen. Appl. Microbiol. 6 (1960) 30-39.
+REFERENCE   3  [PMID:15709744]
+  AUTHORS   Toms AV, Haas AL, Park JH, Begley TP, Ealick SE
+  TITLE     Structural characterization of the regulatory proteins TenA and TenI from Bacillus subtilis and identification of TenA as a thiaminase II.
+  JOURNAL   Biochemistry. 44 (2005) 2319-29.
+  ORGANISM  Bacillus subtilis
+  SEQUENCE  [bsu:BSU11650]
+REFERENCE   4  [PMID:15858269]
+  AUTHORS   Benach J, Edstrom WC, Lee I, Das K, Cooper B, Xiao R, Liu J, Rost B, Acton TB, Montelione GT, Hunt JF
+  TITLE     The 2.35 A structure of the TenA homolog from Pyrococcus furiosus supports an enzymatic function in thiamine metabolism.
+  JOURNAL   Acta. Crystallogr. D. Biol. Crystallogr. 61 (2005) 589-98.
+  ORGANISM  Pyrococcus furiosus
+REFERENCE   5  [PMID:17618314]
+  AUTHORS   Jenkins AH, Schyns G, Potot S, Sun G, Begley TP
+  TITLE     A new thiamin salvage pathway.
+  JOURNAL   Nat. Chem. Biol. 3 (2007) 492-7.
+  ORGANISM  Bacillus halodurans
+REFERENCE   6  [PMID:18054064]
+  AUTHORS   Jenkins AL, Zhang Y, Ealick SE, Begley TP
+  TITLE     Mutagenesis studies on TenA: a thiamin salvage enzyme from Bacillus subtilis.
+  JOURNAL   Bioorg. Chem. 36 (2008) 29-32.
+REFERENCE   7  [PMID:21904031]
+  AUTHORS   French JB, Begley TP, Ealick SE
+  TITLE     Structure of trifunctional THI20 from yeast.
+  JOURNAL   Acta. Crystallogr. D. Biol. Crystallogr. 67 (2011) 784-91.
+PATHWAY     ec00730  Thiamine metabolism
+            ec01100  Metabolic pathways
+ORTHOLOGY   K03707  thiaminase (transcriptional activator TenA)
+GENES       OLU: OSTLU_88734
+            OTA: Ot12g01020
+            MPP: MICPUCDRAFT_52894
+            EBI: EbC_03310(tenA) EbC_27190
+            SOD: Sant_2375
+            EAE: EAE_19500
+            EAR: ST548_p7073
+            KPN: KPN_01727 KPN_01799
+            KPU: KP1_2770 KP1_2847
+            KPM: KPHS_26710 KPHS_27520
+            KPP: A79E_2438 A79E_2508
+            KPE: KPK_2557 KPK_2654
+            KPO: KPN2242_11510 KPN2242_11885
+            KPR: KPR_2432
+            KPJ: N559_2503 N559_2577
+            KPI: D364_08845 D364_09225
+            KVA: Kvar_2503 Kvar_2608
+            KOX: KOX_20340 KOX_20695
+            KOE: A225_2936 A225_3000
+            SPE: Spro_3122
+            SRR: SerAS9_3209
+            SRL: SOD_c29420
+            SRY: M621_16050
+            SRS: SerAS12_3210
+            SRA: SerAS13_3212
+            SMW: SMWW4_v1c31720
+            SLQ: M495_16025
+            PVA: Pvag_pPag30438
+            PAO: Pat9b_5574
+            EBT: EBL_c17320
+            ROR: RORB6_05910 RORB6_06385
+            EBF: D782_2178
+            HIN: HI0358
+            HIT: NTHI0476
+            HIP: CGSHiEE_01220
+            HIQ: CGSHiGG_04595
+            HIF: HIBPF03060
+            HIL: HICON_11180
+            HIU: HIB_04700
+            HIE: R2846_0221
+            HIZ: R2866_0217
+            HIK: HifGL_000121
+            HPR: PARA_11450
+            PMU: PM1264
+            PMV: PMCN06_1929(tenA)
+            PUL: NT08PM_2201
+            PMP: Pmu_19250
+            MVR: X781_21000
+            APL: APL_0537
+            APJ: APJL_0528
+            APA: APP7_0577
+            GAN: UMN179_01811
+            VPA: VPA0132
+            VPB: VPBB_A0123
+            VPK: M636_08140
+            VPF: M634_18720
+            VHA: VIBHAR_06842
+            VCA: M892_18375
+            VAG: N646_3565
+            VSP: VS_II1086
+            VEX: VEA_000867
+            VEJ: VEJY3_16191
+            VFU: vfu_B00548
+            VNI: VIBNI_A1377
+            VFI: VF_A0320
+            VFM: VFMJ11_A0358
+            VSA: VSAL_II0490
+            PPR: PBPRB0684
+            PPU: PP_3186
+            PPF: Pput_2530 Pput_2531
+            PPG: PputGB1_2663 PputGB1_2664
+            PPW: PputW619_2677 PputW619_2678
+            PPT: PPS_2741 PPS_2742
+            PPB: PPUBIRD1_2552 PPUBIRD1_2553
+            PPI: YSA_10688 YSA_10690
+            PPX: T1E_1036 T1E_1037
+            PPUH: B479_13360 B479_13365
+            PPUT: L483_17545 L483_17550
+            PPUN: PP4_25620 PP4_25630
+            PRE: PCA10_17890
+            PSV: PVLB_15380 PVLB_15385
+            PMON: X969_13045 X969_13050
+            PMOT: X970_12690 X970_12695
+            ACI: ACIAD3452
+            ACD: AOLE_00945
+            ACB: A1S_3290
+            ABM: ABSDF3398
+            ABY: ABAYE0200
+            ABC: ACICU_03486
+            ABN: AB57_3737
+            ABB: ABBFA_000191
+            ABX: ABK1_3536
+            ABR: ABTJ_00197
+            ABD: ABTW07_3694
+            ABH: M3Q_23
+            ABAD: ABD1_31850
+            ABJ: BJAB07104_03579
+            ABAB: BJAB0715_03669
+            ABAJ: BJAB0868_03533
+            ABAZ: P795_0975
+            ACC: BDGL_002754(thiED)
+            MAD: HP15_2778
+            MBS: MRBBS_1086
+            GPS: C427_4772
+            PIN: Ping_2374
+            PSY: PCNPT3_05610
+            FNA: OOM_0367
+            FNL: M973_02335
+            SSAL: SPISAL_00520
+            SPIU: SPICUR_05455
+            HEL: HELO_3147
+            OCE: GU3_15145
+            GAP: GAPWK_1774
+            SALV: SALWKB2_0181
+            BPSE: BDL_2297
+            BPSU: BBN_305
+            BPZ: BP1026B_I0180
+            BPK: BBK_1794
+            AXY: AXYL_06210
+            AXO: NH44784_024611
+            AXN: AX27061_5826
+            CDN: BN940_08646
+            CTT: CtCNB1_3611
+            HAR: HEAR0909 HEAR0910
+            MMS: mma_0874(tenA1) mma_0875(tenA2)
+            HPY: HP1287
+            HEO: C694_06650
+            HPJ: jhp1207
+            HPA: HPAG1_1226
+            HPS: HPSH_06665
+            HHP: HPSH112_06455
+            HHQ: HPSH169_06400
+            HHR: HPSH417_06325
+            HPG: HPG27_1239
+            HPP: HPP12_1253
+            HPB: HELPY_1263
+            HPL: HPB8_194(tenA)
+            HPC: HPPC_06330
+            HCA: HPPC18_06435
+            HPM: HPSJM_06450
+            HPE: HPELS_06680
+            HPO: HMPREF4655_21479(tenA)
+            HPI: hp908_1286
+            HPQ: hp2017_1245
+            HPW: hp2018_1250
+            HPU: HPCU_06585
+            HEF: HPF16_1220
+            HPF: HPF30_0111
+            HEQ: HPF32_1215
+            HEX: HPF57_1245
+            HPT: HPSAT_06220
+            HPZ: HPKB_1222
+            HPV: HPV225_1321
+            HPX: HMPREF0462_1302(tenA)
+            HEN: HPSNT_06465
+            HPH: HPLT_06465
+            HEG: HPGAM_06655
+            HPN: HPIN_06780
+            HEP: HPPN120_06330
+            HEU: HPPN135_06605
+            HES: HPSA_06325
+            HPYS: HPSA20_1392
+            HCN: HPB14_06115
+            HPD: KHP_1182(tenA)
+            HEY: MWE_1495
+            HER: C695_06660
+            HEI: C730_06660
+            HPYA: HPAKL117_06115
+            HPYO: HPOK113_1241
+            HPYL: HPOK310_1178
+            HPYR: K747_04580
+            HPYI: K750_02030
+            HPYU: K751_01175
+            HPYM: K749_07345
+            HEM: K748_05765
+            HEB: U063_0319
+            HEZ: U064_0320
+            HCM: HCD_00505
+            CJE: Cj0440c
+            CJB: BN148_0440c
+            CJJ: CJJ81176_0466
+            CJU: C8J_0415
+            CJN: ICDCCJ_406
+            CJI: CJSA_0412
+            CJM: CJM1_0424
+            CJS: CJS3_0429
+            CJP: A911_02145
+            CJEJ: N564_00421
+            CJEU: N565_00472
+            CJEN: N755_00470
+            CJEI: N135_00488
+            CJR: CJE0491
+            CJD: JJD26997_1497
+            CJZ: M635_06545
+            CJX: BN867_04120
+            CLA: Cla_0284
+            CCOL: BN865_16360
+            CCC: G157_06460
+            CCQ: N149_0435
+            DPS: DP2367 DP2510
+            SUR: STAUR_1071(tenA)
+            WOL: WD0139
+            WRI: WRi_001140
+            WEN: wHa_00570
+            WED: wNo_08030 wNo_08040
+            WPI: WPa_1143 WPa_1144
+            SFD: USDA257_c24460
+            RET: RHE_CH00249
+            REC: RHECIAT_CH0000284
+            REL: REMIM1_CH00251
+            RLE: RL0255 pRL90219
+            RLT: Rleg2_4256
+            RLG: Rleg_4521 Rleg_6167
+            RLB: RLEG3_01155 RLEG3_33765
+            RLU: RLEG12_32575
+            BME: BMEI1738
+            BMI: BMEA_A0219
+            BMZ: BM28_A0222
+            BMG: BM590_A0220
+            BMW: BMNI_I0208
+            BMF: BAB1_0213
+            BMB: BruAb1_0207
+            BMC: BAbS19_I02000
+            BAA: BAA13334_I00123
+            BMS: BR0212
+            BSI: BS1330_I0212
+            BMT: BSUIS_A0211
+            BSV: BSVBI22_A0212
+            BOV: BOV_0203
+            BCS: BCAN_A0214
+            BSK: BCA52141_I1350
+            BOL: BCOUA_I0212
+            BMR: BMI_I215
+            BPP: BPI_I213
+            BCET: V910_101764
+            BCEE: V568_101980
+            OAN: Oant_0279
+            BJA: bll7388
+            BJU: BJ6T_15650 BJ6T_32990
+            BRS: S23_59930
+            NWI: Nwi_0858
+            OCA: OCAR_5192 OCAR_6442
+            OCG: OCA5_c16060 OCA5_c27760
+            OCO: OCA4_c16060 OCA4_c27750
+            AZC: AZC_1878
+            SNO: Snov_3390 Snov_3481
+            MEX: Mext_4454
+            MEA: Mex_1p4898
+            MDI: METDI5490
+            MCH: Mchl_4918
+            MRD: Mrad2831_3392
+            MPO: Mpop_4968
+            MNO: Mnod_7784
+            BID: Bind_1209
+            SIL: SPO0051
+            SIT: TM1040_3656
+            RSP: RSP_3694
+            RSH: Rsph17029_3429
+            RDE: RD1_0753(tenA) RD1_0755(tenA) RD1_3613(tenA)
+            RLI: RLO149_c039610(thi4) RLO149_c039630
+            PDE: Pden_0035
+            PAMI: JCM7686_0107
+            DSH: Dshi_0908
+            PSF: PSE_3005(tenA) PSE_4898(tenA)
+            OAT: OAN307_c22790
+            OAR: OA238_c15950 OA238_c18360 OA238_c18380 OA238_c39810 OA238_c39830
+            GDI: GDI_2186
+            GDJ: Gdia_0406
+            GXY: GLX_25490
+            GXL: H845_491
+            RRU: Rru_A2025
+            RRF: F11_10415
+            RCE: RC1_1613
+            RPM: RSPPHO_02117
+            AZL: AZL_d02610(tenA)
+            ALI: AZOLI_p40372
+            TMO: TMO_0834 TMO_c0587
+            PGV: SL003B_2357(tenA)
+            PEL: SAR11G3_00431
+            APB: SAR116_1969 SAR116_1970
+            BSU: BSU11650(tenA)
+            BSR: I33_1299
+            BSL: A7A1_0982
+            BSH: BSU6051_11650(tenA)
+            BSY: I653_05920
+            BSS: BSUW23_05890(tenA)
+            BST: GYO_1470
+            BSO: BSNT_01948(tenA)
+            BSN: BSn5_17740
+            BSQ: B657_11650(tenA)
+            BSUB: BEST7613_1155(tenA)
+            BSX: C663_1193
+            BSP: U712_05995
+            BLI: BL01592(tenA) BL02647
+            BLD: BLi01259(tenA) BLi04205
+            BLH: BaLi_c13940(tenA) BaLi_c41970
+            BAO: BAMF_1239(tenA)
+            BAY: RBAM_011660(tenA)
+            BAQ: BACAU_1127(tenA)
+            BYA: BANAU_1072(tenA)
+            BAMP: B938_05670
+            BAML: BAM5036_1066(tenA)
+            BAMA: RBAU_1128(tenA)
+            BAMN: BASU_1105(tenA)
+            BAMB: BAPNAU_2629(tenA)
+            BAZ: BAMTA208_11775(tenA)
+            BQL: LL3_01246(tenA)
+            BXH: BAXH7_02404(tenA)
+            BQY: MUS_1210(tenA)
+            BAMI: KSO_014010
+            BAMC: U471_11630
+            BAMF: U722_05945
+            BAE: BATR1942_03470
+            BHA: BH2679(tenA)
+            BAN: BA_0725 BA_2611(tenA)
+            BAR: GBAA_0725 GBAA_2611(tenA)
+            BAT: BAS0691 BAS2436
+            BAH: BAMEG_1983(tenA) BAMEG_3834
+            BAI: BAA_0832 BAA_2675(tenA)
+            BAX: H9401_0694 H9401_2488
+            BANT: A16_08100 A16_26470
+            BANR: A16R_08180 A16R_26820
+            BAL: BACI_c07560(tenA1) BACI_c25910(tenA2)
+            BCE: BC0742 BC2551
+            BCA: BCE_0795 BCE_2629(tenA)
+            BCZ: BCZK0635(tenA) BCZK2357(tenA)
+            BCR: BCAH187_A0879 BCAH187_A2668(tenA)
+            BCB: BCB4264_A0782 BCB4264_A2584(tenA)
+            BCU: BCAH820_0802 BCAH820_2628(tenA)
+            BCG: BCG9842_B2739(tenA) BCG9842_B4549
+            BCQ: BCQ_0816(tenA) BCQ_2485(tenA)
+            BCX: BCA_0788 BCA_2702(tenA)
+            BNC: BCN_0703 BCN_2481
+            BCF: bcf_03825
+            BCER: BCK_04510 BCK_21750
+            BCY: Bcer98_0612 Bcer98_1892
+            BTK: BT9727_0635(tenA) BT9727_2391(tenA)
+            BTL: BALH_0661(tenA) BALH_2351
+            BTB: BMB171_C0635 BMB171_C2313(tenA)
+            BTT: HD73_0860 HD73_3393
+            BTC: CT43_CH0703 CT43_CH2541(tenA)
+            BTF: YBT020_03905 YBT020_13030
+            BTM: MC28_0005 MC28_1809
+            BTG: BTB_c08180(tenA1) BTB_c26650(tenA2)
+            BTI: BTG_06675 BTG_17510
+            BTN: BTF1_01340 BTF1_10280
+            BTHT: H175_ch0709 H175_ch2584
+            BTHU: YBT1518_04640 YBT1518_14400
+            BWE: BcerKBAB4_0641 BcerKBAB4_2523
+            BTY: Btoyo_3423
+            BCL: ABC0669(tenA) ABC0756
+            BPU: BPUM_1094(tenA) BPUM_3574
+            BPF: BpOF4_13155(tenA)
+            BMQ: BMQ_0885 BMQ_2141
+            BMD: BMD_0885 BMD_2097
+            BMH: BMWSH_3107 BMWSH_4357(tenA)
+            BSE: Bsel_2597
+            BCO: Bcell_4225
+            BCK: BCO26_0615(tenA)
+            BAG: Bcoa_0561
+            BJS: MY9_1270
+            BACI: B1NLA3E_08245
+            OIH: OB0475 OB0641
+            GKA: GK0618
+            GTH: Geoth_3211
+            GTE: GTCCBUS3UF5_6860
+            GWC: GWCH70_0606
+            GYC: GYMC61_1410
+            GYA: GYMC52_0531
+            GCT: GC56T3_2943
+            GMC: GY4MC1_3191
+            GGH: GHH_c05710(tenA)
+            GJF: M493_03225
+            AFL: Aflv_2320(tenA)
+            AXL: AXY_04970(tenA)
+            HHD: HBHAL_4925(tenA)
+            SAU: SA1897
+            SAV: SAV2094
+            SAW: SAHV_2079
+            SAH: SaurJH1_2169
+            SAJ: SaurJH9_2131
+            SAM: MW2017
+            SAS: SAS1998
+            SAR: SAR2183(tenA)
+            SAC: SACOL2086
+            SAA: SAUSA300_2050
+            SAO: SAOUHSC_02331
+            SAE: NWMN_1998
+            SAD: SAAV_2148
+            SUU: M013TW_2052
+            SUV: SAVC_09350
+            SUH: SAMSHR1132_19180
+            SUE: SAOV_2135c(tenA)
+            SUJ: SAA6159_02008(tenA)
+            SUK: SAA6008_02132(tenA)
+            SUC: ECTR2_1950
+            SUT: SAT0131_02254
+            SUQ: HMPREF0772_11097(tenA)
+            SUZ: MS7_2110(tenA)
+            SUD: ST398NM01_2137
+            SUX: SAEMRSA15_20030(tenA)
+            SUW: SATW20_22330(tenA)
+            SUG: SAPIG2137
+            SUF: SARLGA251_18960(tenA)
+            SAUA: SAAG_02307
+            SAUE: RSAU_001933(tenA)
+            SAUN: SAKOR_02061
+            SAUS: SA40_1851(tenA)
+            SAUU: SA957_1935(tenA)
+            SAUZ: SAZ172_2198(tenA)
+            SAB: SAB1978c(tenA)
+            SUY: SA2981_2035(tenA)
+            SAUB: C248_2107(tenA)
+            SAUM: BN843_21310
+            SAUC: CA347_2174(tenA)
+            SAUR: SABB_02420(tenA)
+            SEP: SE1693
+            SER: SERP1701
+            SHA: SH0940(tenA)
+            SSP: SSP0789
+            SCA: Sca_1596(tenA) Sca_2227
+            SLG: SLGD_00928
+            SLN: SLUG_09710(tenA)
+            SSD: SPSINT_1757 SPSINT_2025
+            SDT: SPSE_0455 SPSE_0732(tenA)
+            SWA: A284_03995
+            SPAS: STP1_0529
+            LMO: lmo0315
+            LMF: LMOf2365_0333
+            LMH: LMHCC_2318
+            LMC: Lm4b_00334
+            LMN: LM5578_0353
+            LMY: LM5923_0352
+            LMT: LMRG_00008
+            LMG: LMKG_01602
+            LMS: LMLG_0735
+            LMJ: LMOG_02516
+            LMQ: LMM7_0345(tenA)
+            LML: lmo4a_0335
+            LMP: MUO_01750
+            LMW: LMOSLCC2755_0319
+            LMX: LMOSLCC2372_0317
+            LMZ: LMOSLCC2482_0320
+            LMON: LMOSLCC2376_0292
+            LMOC: LMOSLCC5850_0318
+            LMOS: LMOSLCC7179_0302
+            LMOO: LMOSLCC2378_0332
+            LMOY: LMOSLCC2479_0316
+            LMOT: LMOSLCC2540_0327
+            LMOA: LMOATCC19117_0331
+            LMOL: LMOL312_0313
+            LMOG: BN389_03360(tenA)
+            LMOE: BN418_0346 BN418_0347
+            LMOB: BN419_0358
+            LMOJ: LM220_02325
+            LMOZ: LM1816_05383
+            LMOD: LMON_0323
+            LIN: lin0340
+            LWE: lwe0286
+            ESI: Exig_0935
+            EAT: EAT1b_1530
+            EAN: Eab7_0906
+            EXM: U719_04900
+            MCL: MCCL_0787(tenA) MCCL_1749
+            BBE: BBR47_31010(tenA)
+            PJD: Pjdr2_5407
+            GYM: GYMC10_1136
+            PPY: PPE_03732
+            PPM: PPSC2_c4211
+            PPO: PPM_3946(tenA)
+            PPOL: X809_20835
+            PMS: KNP414_06160 KNP414_06564(tenA)
+            PMQ: PM3016_5784 PM3016_6172
+            PMW: B2K_29445 B2K_31325
+            PTA: HPL003_00375
+            AAC: Aaci_1931
+            AAD: TC41_2031(tenA)
+            SIV: SSIL_1334
+            LLA: L0228(tenA)
+            LLK: LLKF_1951(tenA)
+            LLT: CVCAS_1711(tenA)
+            LLS: lilo_1761(tenA)
+            LLD: P620_10060
+            LLC: LACR_1950
+            LLM: llmg_1961(tenA)
+            LLR: llh_3495
+            LLN: LLNZ_10110
+            LLI: uc509_1733(tenA)
+            LLW: kw2_1757
+            SPN: SP_0722
+            SPD: SPD_0628(tenA)
+            SPR: spr0634(tenA)
+            SPW: SPCG_0671(tenA)
+            SPX: SPG_0655
+            SNE: SPN23F_06470
+            SPV: SPH_0809
+            SNM: SP70585_0769
+            SJJ: SPJ_0662
+            SPP: SPP_0733
+            SNT: SPT_0738
+            SNC: HMPREF0837_11006(tenA)
+            SNB: SP670_0771
+            SNP: SPAP_0698
+            SNI: INV104_06010
+            SNV: SPNINV200_06370
+            SNX: SPNOXC_06540
+            SND: MYY_0758
+            SNU: SPNA45_01053
+            SPNG: HMPREF1038_00738(tenA)
+            SPNE: SPN034156_17030
+            SPNU: SPN034183_06550
+            SPNM: SPN994038_06440
+            SPNO: SPN994039_06450
+            SPNN: T308_03380
+            SAG: SAG0839
+            SAN: gbs0857
+            SAK: SAK_0962
+            SGC: A964_0842(tenA)
+            SAGS: SaSA20_0714(tenA)
+            SAGL: GBS222_0710
+            SAGM: BSA_9270
+            SAGR: SAIL_9830
+            SGA: GALLO_1181(tenA)
+            SGG: SGGBAA2069_c11710(tenA)
+            SGT: SGGB_1175(tenA)
+            SOR: SOR_1405(tenA)
+            STB: SGPB_1039(tenA)
+            STD: SPPN_03685
+            SIF: Sinf_1014(tenA)
+            LSA: LSA1095
+            LBR: LVIS_1830
+            LBK: LVISKB_1814
+            LCA: LSEI_0297
+            LCB: LCABL_03130(tenA)
+            LCZ: LCAZH_0345
+            LCS: LCBD_0314(theD)
+            LCE: LC2W_0306(theD)
+            LCW: BN194_03180(tenA)
+            LCL: LOCK919_0336
+            LFE: LAF_0359
+            LRH: LGG_00366(tenA)
+            LRG: LRHM_0354
+            LRL: LC705_00355(tenA)
+            LRA: LRHK_366
+            LRO: LOCK900_0347
+            LRC: LOCK908_0363
+            LBH: Lbuc_0449 Lbuc_0546
+            LBN: LBUCD034_0492(tena1) LBUCD034_0583 LBUCD034_2361(tena3)
+            LPI: LBPG_02484
+            LPQ: AF91_00885
+            PPE: PEPE_0561
+            PPEN: T256_03060
+            PCE: PECL_1555
+            EFA: EF2767
+            EFL: EF62_2919(tenA)
+            EFI: OG1RF_12127(tenA)
+            EFD: EFD32_2381
+            EFS: EFS1_2231
+            EFN: DENG_02711(tenA)
+            EHR: EHR_13955
+            ENE: ENT_19320
+            MPS: MPTP_0977
+            MPX: MPD5_0967
+            LME: LEUM_1546
+            LMM: MI1_06925
+            LMK: LMES_0914 LMES_1329
+            LCI: LCK_01393
+            LKI: LKI_00680 LKI_07545
+            LGS: LEGAS_0465(tenA)
+            LEC: LGMK_02000 LGMK_04610
+            LCN: C270_01710 C270_04125
+            LGE: C269_02280
+            WKO: WKK_02270
+            CPE: CPE2546
+            CPF: CPF_2870(tenA)
+            CBK: CLL_A1417
+            CBN: CbC4_0598
+            CBT: CLH_1337
+            CBE: Cbei_2088
+            CLJ: CLJU_c25410
+            CAH: CAETHG_0610
+            FPA: FPR_28330
+            CCT: CC1_13460
+            CSO: CLS_07220
+            CAD: Curi_c17920(tenA)
+            OVA: OBV_30950
+            TMR: Tmar_1325 Tmar_1992
+            SAY: TPY_3620(tenA)
+            SAP: Sulac_1299
+            BPRS: CK3_22260
+            NTH: Nther_2482
+            HAS: Halsa_0718
+            SMIR: SMM_0102(tenA)
+            MSM: MSMEG_3478
+            MSG: MSMEI_3397
+            MSA: Mycsm_00836 Mycsm_00837
+            MVA: Mvan_2973
+            MGI: Mflv_3256
+            MSP: Mspyr1_25840
+            MMC: Mmcs_0357
+            MKM: Mkms_0367
+            MJL: Mjls_0346
+            MJD: JDM601_2729
+            MRH: MycrhN_1731 MycrhN_1732
+            MNE: D174_03550 D174_03555
+            ASD: AS9A_2937
+            CVA: CVAR_2054
+            CTER: A606_08230
+            CCG: CCASEI_00610 CCASEI_00615
+            CGY: CGLY_04945
+            NFA: nfa14600
+            NCY: NOCYR_1518
+            NBR: O3I_009810
+            RHA: RHA1_ro01597
+            RER: RER_40080 RER_52700
+            REY: O5Y_18600 O5Y_25020
+            ROP: ROP_13010
+            ROA: Pd630_LPD05737
+            REQ: REQ_15870
+            GOR: KTR9_3809
+            SRC: M271_01785
+            KSK: KSE_39800
+            AAU: AAur_0504
+            ARR: ARUE_c04760(tenA)
+            RSA: RSal33209_3250(tenA)
+            RMU: RMDY18_08940
+            PPC: HMPREF9154_0874
+            MPH: MLP_01210 MLP_51630
+            KFL: Kfla_2096 Kfla_6656
+            TFU: Tfu_2953
+            NDA: Ndas_5262
+            NAL: B005_1899
+            TCU: Tcur_0089
+            SRO: Sros_0123 Sros_2138 Sros_3844 Sros_6338
+            FRE: Franean1_5033
+            FAL: FRAAL1555
+            GOB: Gobs_0096 Gobs_0097
+            BSD: BLASA_0103 BLASA_0104(tenA) BLASA_4996
+            KRA: Krad_0855
+            SEN: SACE_1298 SACE_7151
+            TBI: Tbis_0044 Tbis_1301
+            PDX: Psed_5477
+            BLO: BL0804
+            BLN: Blon_1460
+            BLON: BLIJ_1506
+            BLA: BLA_1213(tenA)
+            BLC: Balac_0685
+            BLT: Balat_0685
+            BBB: BIF_00231
+            BBC: BLC1_0658
+            BNM: BALAC2494_00445
+            BLV: BalV_0662
+            BLW: W7Y_0689
+            BLS: W91_0712
+            BANI: Bl12_0642
+            BANL: BLAC_03445
+            BNI: BANAN_03410
+            BDE: BDP_1341(tenA) BDP_2140(tenA)
+            BBV: HMPREF9228_0903
+            BBRU: Bbr_0964(tenA)
+            BTP: D805_1323
+            GVG: HMPREF0421_21010(pet)
+            GVH: HMPREF9231_0569
+            RXY: Rxyl_2784
+            RRD: RradSPS_0582 RradSPS_0583 RradSPS_2426
+            CWO: Cwoe_5519
+            PUV: PUV_24790
+            LBI: LEPBI_I0967
+            LBF: LBF_0933
+            BHY: BHWA1_02511(tenA)
+            BRM: Bmur_2169
+            BPO: BP951000_0072(tenA)
+            BPJ: B2904_orf1361
+            BPIP: BPP43_02745
+            BPW: WESB_1504
+            BIP: Bint_0735(tenA)
+            STR: Sterm_1156
+            AMO: Anamo_2050
+            PSL: Psta_0416
+            IPA: Isop_2016
+            SYC: syc0455_d(tenA)
+            SYF: Synpcc7942_1094
+            CYA: CYA_0413
+            CYB: CYB_2439
+            MAR: MAE_47490
+            CYC: PCC7424_1007 PCC7424_2909
+            CYJ: Cyan7822_0028
+            HAO: PCC7418_0728 PCC7418_1729
+            GLP: Glo7428_1010
+            TER: Tery_0805
+            GEI: GEI7407_3674
+            OAC: Oscil6304_1299 Oscil6304_4070
+            ONI: Osc7112_4827
+            MIC: Mic7113_0479
+            ANA: alr2769
+            NPU: Npun_R3311
+            NOP: Nos7524_4426
+            AVA: Ava_0021
+            ACY: Anacy_5979
+            CSG: Cylst_6548
+            CALO: Cal7507_3305
+            CALT: Cal6303_4996
+            RIV: Riv7116_1326
+            PMM: PMM0357
+            PMI: PMT9312_0361
+            PMB: A9601_03941
+            PMC: P9515_04021
+            PMG: P9301_03931
+            PMH: P9215_03991
+            CTHE: Chro_1595 Chro_2842
+            PLP: Ple7327_0097 Ple7327_1166
+            SCS: Sta7437_1947
+            SRU: SRU_0332
+            SRM: SRM_00411(tenA)
+            RMR: Rmar_0151 Rmar_2462
+            RMG: Rhom172_0147 Rhom172_2465
+            BBD: Belba_3158
+            EVI: Echvi_0214
+            DFE: Dfer_4829
+            SLI: Slin_3497
+            LBY: Lbys_0380
+            FLI: Fleli_0178
+            ZPR: ZPR_1973
+            CAT: CA2559_10853
+            WVI: Weevi_1388
+            MRS: Murru_2593
+            PTQ: P700755_003170
+            CTS: Ctha_0667
+            RRS: RoseRS_1028
+            RCA: Rcas_1431
+            CAU: Caur_0797
+            CHL: Chy400_0862
+            HAU: Haur_2439
+            TRO: trd_0539 trd_0540
+            STI: Sthe_3424
+            CAP: CLDAP_22980
+            TRA: Trad_2257
+            MSV: Mesil_0826
+            OPR: Ocepr_0007
+            MHD: Marky_1936
+            NDE: NIDE1200
+            TTR: Tter_0644 Tter_2438
+            HMA: rrnAC1765(tenA) rrnAC1767(tenA-2)
+            HHI: HAH_2295(tenA) HAH_2296(tenA-2)
+            HHN: HISP_11685 HISP_11690
+            HWA: HQ2369A(tenA)
+            HWC: Hqrw_2630(tenA)
+            NPH: NP4082A
+            NMO: Nmlp_1839(tenA1) Nmlp_2310(tenA2)
+            HLA: Hlac_2986 Hlac_2987
+            HUT: Huta_0684 Huta_0685
+            HTU: Htur_2707
+            NMG: Nmag_0869
+            HVO: HVO_B0380 HVO_B0381
+            HME: HFX_5295(tenA-2) HFX_5296(tenA)
+            HJE: HacjB3_01130 HacjB3_01135
+            HBO: Hbor_30560 Hbor_30570
+            HXA: Halxa_2795
+            NAT: NJ7G_3269
+            NGE: Natgr_2811
+            HRU: Halru_0039
+            NOU: Natoc_1476 Natoc_1856 Natoc_1857
+            FAC: FACI_IFERC01G1311
+            PHO: PH1161
+            PAB: PAB1641
+            PFU: PF1338
+            PFI: PFC_05905
+            PYN: PNA2_1769
+            PYS: Py04_0939 Py04_0940
+            TSI: TSIB_0466
+            APE: APE_0669.1(tenA)
+            ACJ: ACAM_0495(tenA)
+            SMR: Smar_0054
+            SHC: Shell_0762
+            SSO: SSO2598(tenA-2)
+            SOL: Ssol_0407
+            STO: ST1007
+            SAI: Saci_1230
+            SACN: SacN8_06000
+            SACR: SacRon12I_05995
+            SACS: SUSAZ_05865
+            SIS: LS215_2880
+            SIA: M1425_2713
+            SIM: M1627_2767
+            SID: M164_2698
+            SIY: YG5714_2893
+            SIN: YN1551_3080
+            SII: LD85_3039
+            SIH: SiH_2671
+            SIR: SiRe_2608
+            SIC: SiL_2557
+            MSE: Msed_1351
+            MCN: Mcup_0881
+            AHO: Ahos_2099
+            PAI: PAE0170
+            PIS: Pisl_1974
+            PCL: Pcal_1316
+            PAS: Pars_2186
+            PYR: P186_0930
+            POG: Pogu_2702
+            TNE: Tneu_1074
+            CMA: Cmaq_0480
+            TUZ: TUZN_0831
+            TTN: TTX_0325(tenA)
+            VDI: Vdis_2464
+            VMO: VMUT_0803
+            FFO: FFONT_0756
+            HAH: Halar_1067 Halar_1068
+DBLINKS     ExplorEnz - The Enzyme Database: 3.5.99.2
+            IUBMB Enzyme Nomenclature: 3.5.99.2
+            ExPASy - ENZYME nomenclature database: 3.5.99.2
+            UM-BBD (Biocatalysis/Biodegradation Database): 3.5.99.2
+            BRENDA, the Enzyme Database: 3.5.99.2
+            CAS: 9024-80-0
+///

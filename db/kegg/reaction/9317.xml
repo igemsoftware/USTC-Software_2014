@@ -1,0 +1,12 @@
+ENTRY       R09317                      Reaction
+DEFINITION  Methyl-Co(III) corrinoid protein + CoA + CO2 + Reduced ferredoxin <=> Acetyl-CoA + Co(I) corrinoid protein + H2O + Oxidized ferredoxin
+EQUATION    C06020 + C00010 + C00011 + C00138 <=> C00024 + C06021 + C00001 + C00139
+COMMENT     carbon monoxide dehydrogenase/acetyl-CoA synthase
+            multi-step reaction (see R07157+R08433)
+RPAIR       RP00007  C00010_C00024 main [RC:RC00004]
+            RP05682  C00001_C00011 leave
+            RP12900  C00024_C06020 trans [RC:RC02964]
+            RP13068  C06020_C06021 main [RC:RC01144]
+            RP14655  C00011_C00024 leave
+ENZYME      1.2.7.4         2.3.1.169
+///

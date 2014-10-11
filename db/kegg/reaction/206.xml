@@ -1,0 +1,19 @@
+ENTRY       R00206                      Reaction
+NAME        ATP:pyruvate,phosphate phosphotransferase
+DEFINITION  ATP + Pyruvate + Orthophosphate <=> AMP + Phosphoenolpyruvate + Diphosphate
+EQUATION    C00002 + C00022 + C00009 <=> C00020 + C00074 + C00013
+COMMENT     multi-step reaction
+RPAIR       RP00036  C00022_C00074 main [RC:RC00015]
+            RP00190  C00009_C00013 leave
+            RP12346  C00002_C00020 main [RC:RC00002]
+            RP12347  C00002_C00074 trans
+            RP12763  C00002_C00013 leave
+ENZYME      2.7.9.1
+PATHWAY     rn00620  Pyruvate metabolism
+            rn00710  Carbon fixation in photosynthetic organisms
+            rn00720  Carbon fixation pathways in prokaryotes
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+            rn01200  Carbon metabolism
+ORTHOLOGY   K01006  pyruvate, orthophosphate dikinase [EC:2.7.9.1]
+///

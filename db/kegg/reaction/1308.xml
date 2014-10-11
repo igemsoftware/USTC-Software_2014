@@ -1,0 +1,11 @@
+ENTRY       R01308                      Reaction
+DEFINITION  4-Hydroxybenzoate + Acetate + NADH + H+ <=> 4-Coumarate + 2 H2O + NAD+
+EQUATION    C00156 + C00033 + C00004 + C00080 <=> C00811 + 2 C00001 + C00003
+COMMENT     beta-oxidation, three-step reaction (addition of water, oxidation, 
+            cleavage)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP01422  C00033_C00811 main [RC:RC00493]
+            RP01423  C00156_C00811 main [RC:RC00494]
+            RP05739  C00001_C00156 leave
+PATHWAY     rn00360  Phenylalanine metabolism
+///

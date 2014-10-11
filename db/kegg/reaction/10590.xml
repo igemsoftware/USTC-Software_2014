@@ -1,0 +1,12 @@
+ENTRY       R10590                      Reaction
+NAME        anthraniloyl-CoA:malonyl-CoA C-anthraniloyltransferase (decarboxylating)
+DEFINITION  Malonyl-CoA + Anthraniloyl-CoA <=> 2 CoA + 4-Hydroxy-2-quinolone + CO2
+EQUATION    C00083 + C02247 <=> 2 C00010 + C16716 + C00011
+RPAIR       RP00051  C00010_C00083 main [RC:RC00004]
+            RP01211  C00010_C02247 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP16703  C02247_C16716 trans
+            RP16704  C00083_C16716 trans
+ENZYME      2.3.1.230
+ORTHOLOGY   K18003  2-heptyl-4(1H)-quinolone synthase [EC:2.3.1.230]
+///

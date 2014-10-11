@@ -1,0 +1,14 @@
+ENTRY       R00794                      Reaction
+NAME        nitrite:NAD+ oxidoreductase;
+            NADH:nitrate oxidoreductase
+DEFINITION  Nitrite + NAD+ + H2O <=> Nitrate + NADH + H+
+EQUATION    C00088 + C00003 + C00001 <=> C00244 + C00004 + C00080
+COMMENT     NADP+ (ec 1.7.1.2, see R00796)
+RPAIR       RP00002  C00003_C00004 cofac [RC:RC00001]
+            RP00048  C00088_C00244 main [RC:RC02812]
+            RP05725  C00001_C00244 leave
+ENZYME      1.7.1.1         1.7.1.2
+PATHWAY     rn00910  Nitrogen metabolism
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K10534  nitrate reductase (NAD(P)H) [EC:1.7.1.1 1.7.1.2 1.7.1.3]
+///

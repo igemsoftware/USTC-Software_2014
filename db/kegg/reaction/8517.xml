@@ -1,0 +1,15 @@
+ENTRY       R08517                      Reaction
+NAME        17alpha-hydroxypregnenolone,hydrogen-donor:oxygen oxidoreductase (side-chain-cleaving, acetate-formig)
+DEFINITION  17alpha-Hydroxypregnenolone + Reduced acceptor + Oxygen <=> Dehydroepiandrosterone + Acetate + Acceptor + H2O
+EQUATION    C05138 + C00030 + C00007 <=> C01227 + C00033 + C00028 + C00001
+COMMENT     17alpha-hydroxylase/17,20-lyase
+            P-450 reductase is acceptor and re-reduced by NADPH
+RPAIR       RP00013  C00001_C00007 cofac
+            RP03017  C00033_C05138 main [RC:RC00923]
+            RP07501  C01227_C05138 main [RC:RC00607]
+            RP08577  C00007_C00033 leave
+ENZYME      1.14.99.9
+PATHWAY     rn00140  Steroid hormone biosynthesis
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00512  steroid 17alpha-monooxygenase / 17alpha-hydroxyprogesterone aldolase [EC:1.14.99.9 4.1.2.30]
+///

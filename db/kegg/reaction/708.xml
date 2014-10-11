@@ -1,0 +1,16 @@
+ENTRY       R00708                      Reaction
+NAME        (S)-1-pyrroline-5-carboxylate:NADP+ oxidoreductase
+DEFINITION  (S)-1-Pyrroline-5-carboxylate + NADP+ + 2 H2O <=> L-Glutamate + NADPH + H+
+EQUATION    C03912 + C00006 + 2 C00001 <=> C00025 + C00005 + C00080
+COMMENT     possibly two-step reaction
+            NADH (see R00707)
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00607  C00025_C03912 main [RC:RC00216]
+            RP05695  C00001_C00025 leave
+ENZYME      1.2.1.88
+PATHWAY     rn00250  Alanine, aspartate and glutamate metabolism
+            rn00330  Arginine and proline metabolism
+            rn01100  Metabolic pathways
+ORTHOLOGY   K00294  1-pyrroline-5-carboxylate dehydrogenase [EC:1.2.1.88]
+            K13821  proline dehydrogenase / delta 1-pyrroline-5-carboxylate dehydrogenase [EC:1.5.5.2 1.2.1.88]
+///

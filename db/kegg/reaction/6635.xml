@@ -1,0 +1,16 @@
+ENTRY       R06635                      Reaction
+DEFINITION  Acetyl-CoA + 7 Malonyl-CoA + Acyl-carrier protein <=> 3,5,7,9,11,13,15-Heptaoxo-hexadecanoyl-[acp] + 7 CO2 + 7 CoA
+EQUATION    C00024 + 7 C00083 + C00229 <=> C12348 + 7 C00011 + 7 C00010
+RPAIR       RP00007  C00010_C00024 main [RC:RC00004]
+            RP00051  C00010_C00083 main [RC:RC00004]
+            RP05694  C00011_C00083 leave
+            RP09778  C00024_C12348 main [RC:RC02729]
+            RP09801  C00083_C12348 main [RC:RC02931]
+            RP12364  C00083_C12348 main [RC:RC02932]
+ENZYME      2.3.1.-
+PATHWAY     rn01056  Biosynthesis of type II polyketide backbone
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K05551  act minimal PKS ketosynthase (KS/KS alpha) [EC:2.3.1.-]
+            K05552  act minimal PKS chain-length factor (CLF/KS beta) [EC:2.3.1.-]
+            K05553  act minimal PKS acyl carrier protein
+///

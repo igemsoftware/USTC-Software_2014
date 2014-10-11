@@ -1,0 +1,11 @@
+ENTRY       R09679                      Reaction
+NAME        S-adenosyl-L-methionine:tricetin 3',4',5'-O-trimethyltransferase
+DEFINITION  3 S-Adenosyl-L-methionine + Tricetin <=> 3 S-Adenosyl-L-homocysteine + 3',4',5'-O-Trimethyltricetin
+EQUATION    3 C00019 + C10192 <=> 3 C00021 + C19807
+COMMENT     three-step reaction (see R09612+R09613+R09678)
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP15168  C00019_C19807 trans
+            RP15169  C00019_C19807 trans
+            RP15171  C10192_C19807 main [RC:RC02394]
+ENZYME      2.1.1.169
+///

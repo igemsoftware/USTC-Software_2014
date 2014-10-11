@@ -1,0 +1,15 @@
+ENTRY       R05731                      Reaction
+NAME        sterol,NADPH:oxygen oxidoreductase (14-methyl cleaving)
+DEFINITION  Obtusifoliol + 3 Oxygen + 3 NADPH + 3 H+ <=> 4alpha-Methyl-5alpha-ergosta-8,14,24(28)-trien-3beta-ol + Formate + 3 NADP+ + 4 H2O
+EQUATION    C01943 + 3 C00007 + 3 C00005 + 3 C00080 <=> C11508 + C00058 + 3 C00006 + 4 C00001
+RPAIR       RP00001  C00005_C00006 cofac [RC:RC00001]
+            RP00013  C00001_C00007 cofac
+            RP05322  C01943_C11508 main [RC:RC01442]
+            RP05742  C00007_C00058 leave
+            RP08822  C00058_C01943 leave
+ENZYME      1.14.13.70
+PATHWAY     rn00100  Steroid biosynthesis
+            rn01100  Metabolic pathways
+            rn01110  Biosynthesis of secondary metabolites
+ORTHOLOGY   K05917  sterol 14-demethylase [EC:1.14.13.70]
+///

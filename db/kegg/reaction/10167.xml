@@ -1,0 +1,10 @@
+ENTRY       R10167                      Reaction
+NAME        S-adenosyl-L-methionine:squalene C-methyltransferase
+DEFINITION  S-Adenosyl-L-methionine + Squalene <=> S-Adenosyl-L-homocysteine + 3-Methyl-1,2-didehydro-2,3-dihydrosqualene
+EQUATION    C00019 + C00751 <=> C00021 + C20411
+COMMENT     first step of two-step reaction (see R10169, R10167+R10168)
+RPAIR       RP00004  C00019_C00021 main [RC:RC00003]
+            RP15981  C00751_C20411 main [RC:RC02680]
+            RP15982  C00019_C20411 trans
+ENZYME      2.1.1.262
+///

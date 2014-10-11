@@ -1,0 +1,15 @@
+ENTRY       R01600                      Reaction
+NAME        ATP:beta-D-glucose 6-phosphotransferase
+DEFINITION  ATP + beta-D-Glucose <=> ADP + beta-D-Glucose 6-phosphate
+EQUATION    C00002 + C00221 <=> C00008 + C01172
+RPAIR       RP00003  C00002_C00008 main [RC:RC00002]
+            RP01627  C00221_C01172 main [RC:RC00017]
+            RP06627  C00002_C01172 trans
+ENZYME      2.7.1.1         2.7.1.2
+PATHWAY     rn00010  Glycolysis / Gluconeogenesis
+            rn01110  Biosynthesis of secondary metabolites
+            rn01120  Microbial metabolism in diverse environments
+ORTHOLOGY   K00844  hexokinase [EC:2.7.1.1]
+            K00845  glucokinase [EC:2.7.1.2]
+            K12407  glucokinase [EC:2.7.1.2]
+///

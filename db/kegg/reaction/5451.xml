@@ -1,0 +1,17 @@
+ENTRY       R05451                      Reaction
+NAME        2,4-dichlorobenzoate:CoA ligase
+DEFINITION  CoA + ATP + 2,4-Dichlorobenzoate <=> Diphosphate + 2,4-Dichlorobenzoyl-CoA + AMP
+EQUATION    C00010 + C00002 + C06670 <=> C00013 + C06671 + C00020
+RPAIR       RP00008  C00002_C00020 ligase
+            RP00009  C00002_C00013 ligase
+            RP05061  C00010_C06671 main [RC:RC00004]
+            RP05062  C06670_C06671 main [RC:RC00174]
+ENZYME      6.2.1.-
+PATHWAY     rn00364  Fluorobenzoate degradation
+            rn01100  Metabolic pathways
+            rn01120  Microbial metabolism in diverse environments
+REFERENCE   1  [PMID:1476446]
+            Schmitz A, Gartemann KH, Fiedler J, Grund E, Eichenlaub R.
+            Cloning and sequence analysis of genes for dehalogenation of 4-chlorobenzoate from Arthrobacter sp. strain SU.
+            Appl. Environ. Microbiol. 58 (1992) 4068-71.
+///

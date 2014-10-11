@@ -1,0 +1,12 @@
+ENTRY       R10561                      Reaction
+DEFINITION  (R)-5-Phosphomevalonate + ATP <=> Isopentenyl phosphate + ADP + Orthophosphate + CO2
+EQUATION    C01107 + C00002 <=> C20345 + C00008 + C00009 + C00011
+COMMENT     phosphomevalonate decarboxylase
+RPAIR       RP00003  C00002_C00008 ligase [RC:RC00002]
+            RP00010  C00002_C00009 ligase
+            RP16606  C01107_C20345 main [RC:RC00453]
+            RP16607  C00011_C01107 leave
+ENZYME      4.1.1.-
+PATHWAY     rn00900  Terpenoid backbone biosynthesis
+ORTHOLOGY   K17942  phosphomevalonate decarboxylase [EC:4.1.1.-]
+///

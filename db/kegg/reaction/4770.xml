@@ -1,0 +1,13 @@
+ENTRY       R04770                      Reaction
+NAME        Selenomethionine methanethiol-lyase (deaminating)
+DEFINITION  L-Selenomethionine + H2O <=> Methaneselenol + Ammonia + 2-Oxobutanoate
+EQUATION    C05335 + C00001 <=> C05703 + C00014 + C00109
+RPAIR       RP04403  C00109_C05335 main [RC:RC01209]
+            RP04404  C05335_C05703 main [RC:RC01210]
+            RP05720  C00001_C00109 leave
+            RP08302  C00014_C05335 leave
+ENZYME      4.4.1.1         4.4.1.11
+PATHWAY     rn00450  Selenocompound metabolism
+ORTHOLOGY   K01758  cystathionine gamma-lyase [EC:4.4.1.1]
+            K01761  methionine-gamma-lyase [EC:4.4.1.11]
+///
