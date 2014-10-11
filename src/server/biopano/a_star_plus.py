@@ -187,11 +187,11 @@ def a_star(request):
 		time_point['database reading'] = n_count_time - database_saving
 
 		# initial vars
-		edge = MakeArray(link_count*2)
-		edge2 = MakeArray(link_count*2)
-		next = MakeArray(link_count*2)
-		next2 = MakeArray(link_count*2)
-		ww = MakeArray(link_count*2)
+		edge = MakeArray(link_count*2 + 1)
+		edge2 = MakeArray(link_count*2 + 1)
+		next = MakeArray(link_count*2 + 1)
+		next2 = MakeArray(link_count*2 + 1)
+		ww = MakeArray(link_count*2 + 1)
 		point = MakeArray(node_count)
 		point2 = MakeArray(node_count)
 		dis = [inf for i in xrange(node_count + 1)]
