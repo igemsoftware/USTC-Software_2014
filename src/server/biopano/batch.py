@@ -10,11 +10,9 @@ import urllib
 def node_batch(request):
     if request.method == 'PATCH':
         #return HttpResponse('Please relocate node by PATCH request')
-        try:
-            body = QueryDict(request.body)
-        except AttributeError:
-            return HttpResponse('json.loads failed')
-        para_list = json.loads(body['para_list'])
+        body = request.body
+        paras = QueryDict(body)
+        para_list = json.loads(paras['para_list'])
         for para in para_list:
             sub_request = request
             sub_request.body = urllib.urlencode(para)
