@@ -167,7 +167,7 @@ def a_star(request):
 
 		# boost by database saving
 		db = MongoClient()['igemdata_new']
-		information = db.boost_store.find_one({'last_update_time': {'$exists': 1}})
+		information = db.boost_store.find_one({})
 		if (information is None) or (information['last_update_time'] != datetime.now().day):
 			build_store()
 		#build_store()
@@ -254,6 +254,6 @@ def a_star(request):
 		result_text = json.dumps(path_list)
 		return HttpResponse(result_text)
 
-	elif request.method == 'GET':
-		return HttpResponse("{'status':'error', 'reason':'no GET method setting'}")
+	elif request.method != 'GET':
+		return HttpResponse("{'status':'error', 'reason':'only POST method setting'}")
 
