@@ -10,9 +10,9 @@ from func_box import *
 
 def insert(db, coll_name, data):
     """ insert data into db.<coll_name>
-    @param coll_name: string
-    @param data: dict
-    @return: ObjectId of the new record, otherwise a dict containing reason for the error
+    
+    data should be a python dict object.coll_name is a string, and db is the object represents the database,
+    generated using pymongo. For more information, see <http://api.mongodb.org/python/current/tutorial.html>
     """
     if validate(data):
         obj_id = None
@@ -28,7 +28,14 @@ def insert(db, coll_name, data):
 def add_node(db, data, pid, x=0, y=0):
     """ add_node from data into database
 
+    This method does the following things:
+    1.add a record in db.node using the 'data'.
+    2.add a reference record of the node into db.node_ref collection under the name of the project that 'pid' represents.
+
+
     @param data: dict
+    @parem pid: int
+    @param db: database object generated using pymongo.For more information, see <http://api.mongodb.org/python/current/tutorial.html>
     @return: a tuple (<node_id>,<noderef_id>) <node_id>,<noderef_id> are all ObjectId
     """
     node_id = insert(db, 'node', data)
@@ -59,8 +66,16 @@ def add_node(db, data, pid, x=0, y=0):
 def add_link(db, data, pid, id1, id2):
     """ add link from data into database
 
+    This method does the following things:
+    1.add a record in db.link using the 'data'.
+    2.add a reference record of the node into db.link_ref collection under the name of the project that 'pid' represents.
+    The record keeps a reference to id1,id2(they are the primary key of two node_refs)
+
+
     @param data: dict
     @para id1,id2: string
+    @parem pid: int
+    @param db: database object generated using pymongo.For more information, see <http://api.mongodb.org/python/current/tutorial.html>
     @return: a tuple (<link_id>,<linkref_id>) <link_id>,<linkref_id> are all ObjectId
     """
     link_id = insert(db, 'link', data)
@@ -89,6 +104,11 @@ def add_link(db, data, pid, id1, id2):
 
 def fork_node(db, node_id, pid, x=0, y=0):
     """ make a reference of the node
+
+    the method will merely add a record in db.node_ref consisting of 
+    1. reference to node_id;
+    2. pid;
+    3. the position of the node in user's screen(the x, y param)
 
     @param node_id: string
     @param pid: a int object, a string that can be converted to int is alse OK
@@ -123,6 +143,11 @@ def fork_node(db, node_id, pid, x=0, y=0):
 
 def fork_link(db, node_id, pid, id1, id2):
     """ make a reference of the link
+
+    the method will merely add a record in db.link_ref consisting of 
+    1. reference to link_id;
+    2. pid;
+    3. the position of the node in user's screen(the x, y param)
 
     @param node_id: string
     @param id1, id2: string or ObjectId
@@ -190,6 +215,9 @@ def change_loc(db, noderef_id, x=0, y=0):
 
 def delete(db, coll_name, ref_id):
     """ delete a ref
+
+    Cause the 'db.node' collection actually does not delete anyone record, the method only delete
+    a reference record belonging to the user himself/herself.
 
     :param coll_name: 'link' or 'node'
     :param ref_id: string or ObjectId
