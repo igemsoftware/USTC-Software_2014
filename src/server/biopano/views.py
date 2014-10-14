@@ -65,8 +65,11 @@ def look_around(request, **kwargs):
 
 
 def request_show(request):
-    body = request.body
-    paras = QueryDict(body)
-    result = 'body:\t ' + body + '\nparas:\n' + str(paras) + '\nid1:\t' + str(paras.get('id1'))
-
-    return HttpResponse(result)
+    if request.method == 'POST':
+        body = request.body
+        paras = QueryDict(body)
+        para_list = json.loads(paras['paralist'])
+        result = 'body:\t ' + body + '\nparas:\n' + str(paras) + '\npara_list:\t' + str(type(para_list)) + '\t' + str(para_list)
+        return HttpResponse(result)
+    else:
+        return HttpResponse("{'status':'error', 'reason': 'requires POST method setting'} ")

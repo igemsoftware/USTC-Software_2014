@@ -7,94 +7,94 @@ import json
 import urllib
 
 
-def node_batch(request):
-    if request.method == 'PATCH':
-        #return HttpResponse('Please relocate node by PATCH request')
-        body = request.body
-        paras = QueryDict(body)
-        para_list = json.loads(paras['paralist'])
-        for para in para_list:
-            sub_request = request
-            sub_request.body = urllib.urlencode(para)
-            _id = para['id']
+def batch(request):
+    order_list_str = request.POST['orderlist']
+    order_list = json.loads(order_list_str)
+    result_list = []
+    for order in order_list:
+        if 'PATCH_NODE'in order.keys():
+            #return HttpResponse('Please relocate node by PATCH request')
+            one_order_result = []
+            para_list = order['PATCH_NODE']
+            for para in para_list:
+                sub_request = request
+                sub_request.POST = para
+                sub_request.method = 'PATCH'
 
-            receiver = get_del_addref_node(sub_request, _id)
-            if receiver.content != "{'status': 'success}":
-                return HttpResponse("{'status': 'error', 'id': " + _id + "}")
-        return HttpResponse("{'status': 'success}")
+                receiver = get_del_addref_node(sub_request, ID=str(para['ID']))
+                #one_order_result.append(json.loads(receiver.content))
+            #result_list.append(one_order_result)
 
-    elif request.method == 'POST':
-        para_list = request.POST['para_list']
-        para_list = json.loads(para_list)
-        result_list = []
-        for para in para_list:
-            sub_request = request
-            sub_request.POST = para
+        elif 'ADD_NODE' in order.keys():
+            para_list = order['ADD_NODE']
+            one_order_result = []
+            for para in para_list:
+                sub_request = request
+                sub_request.POST = para
 
-            receiver = add_node(sub_request)
-            result_list.append(json.loads(receiver.content))
-        result_text = json.dumps(result_list)
-        return HttpResponse(result_text)
+                receiver = add_node(sub_request)
+                one_order_result.append(json.loads(receiver.content))
+            result_list.append(one_order_result)
 
-    elif request.method == 'DELETE':
-        body = QueryDict(request.body)
-        ref_id_list = json.loads(body['paralist'])
-        for ref_id in ref_id_list:
-            sub_request = request
-            sub_request.body = ''
-            get_del_addref_node(sub_request, ref_id['id'])
+        elif 'DELETE_NODE' in order.keys():
+            ref_id_list = order['DELETE_NODE']
+            one_order_result = []
+            for ref_id in ref_id_list:
+                sub_request = request
+                sub_request.POST = ref_id
+                sub_request.method = 'DELETE'
+                receiver = get_del_addref_node(sub_request, ID=str(ref_id['ID']))
+                #one_order_result.append(json.loads(receiver.content))
+            #result_list.append(one_order_result)
 
-    elif request.method == 'PUT':
-        body = QueryDict(request.body)
-        para_list = json.loads(body['paralist'])
-        result_list = []
-        for para in para_list:
-            sub_request = request
-            sub_request.body = urllib.urlencode(para)
-            receiver = get_del_addref_node(sub_request)
-            result_list.append(json.loads(receiver.content))
-        result_text = json.dumps(result_list)
-        return HttpResponse(result_text)
+        elif 'PUT_NODE'in order.keys():
+            para_list = order['PUT_NODE']
+            one_order_result = []
+            for para in para_list:
+                sub_request = request
+                sub_request.POST = para
+                sub_request.method = 'PUT'
+                receiver = get_del_addref_node(sub_request, ID=str(para['ID']))
+                #one_order_result.append(json.loads(receiver.content))
 
+            #result_list.append(one_order_result)
 
-def link_batch(request):
-    if request.method == 'POST':
-        #return HttpResponse('{"function": "add_batch", "error": "POST method is requested"}')
-        para_list = request.POST['para_list']
-        para_list = json.loads(para_list)
-        result_list = []
-        for para in para_list:
-            sub_request = request
-            sub_request.POST = para
+        elif 'ADD_LINK' in order.keys():
+            #return HttpResponse('{"function": "add_batch", "error": "POST method is requested"}')
+            para_list = order['ADD_LINK']
+            one_order_result = []
+            for para in para_list:
+                sub_request = request
+                sub_request.POST = para
 
-            receiver = add_link(sub_request)
-            result_list.append(json.loads(receiver.content))
-        result_text = json.dumps(result_list)
-        return HttpResponse(result_text)
+                receiver = add_link(sub_request)
+                one_order_result.append(json.loads(receiver.content))
+            result_list.append(one_order_result)
 
-    elif request.method == 'DELETE':
-        body = QueryDict(request.body)
-        para_list = json.loads(body['paralist'])
-        result_list = []
-        for para in para_list:
-            sub_request = request
-            sub_request.body = urllib.urlencode(para)
-            receiver = get_del_addref_link(sub_request)
-            result_list.append(json.loads(receiver.content))
-        result_text = json.dumps(result_list)
-        return HttpResponse(result_text)
+        elif 'DELETE_LINK'in order.keys():
+            para_list = order['DELETE_LINK']
+            one_order_result = []
+            for para in para_list:
+                sub_request = request
+                sub_request.POST = para
+                sub_request.method = 'DELETE'
+                receiver = get_del_addref_link(sub_request, ID=str(para['ID']))
+                #one_order_result.append(json.loads(receiver.content))
+            #result_list.append(one_order_result)
 
-    elif request.method == 'PUT':
-        body = QueryDict(request.body)
-        para_list = json.loads(body['paralist'])
-        result_list = []
-        for para in para_list:
-            sub_request = request
-            sub_request.body = urllib.urlencode(para)
-            receiver = get_del_addref_link(sub_request, para_list['id'])
-            result_list.append(json.loads(receiver.content))
-        result_text = json.dumps(result_list)
-        return HttpResponse(result_text)
+        elif 'PUT_LINK' in order.keys():
+            para_list = order['PUT_LINK']
+            one_order_result = []
+            for para in para_list:
+                sub_request = request
+                sub_request.POST = para
+                sub_request.method = 'PUT'
+                receiver = get_del_addref_link(sub_request, ID=str(para['ID']))
+                #one_order_result.append(json.loads(receiver.content))
+            #result_list.append(one_order_result)
+    result_text = json.dumps(result_list)
+    return HttpResponse(result_text)
+
 
 
 
