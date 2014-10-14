@@ -1,5 +1,11 @@
-__author__ = 'feiyicheng'
+"""
+This module gives several methods that helps users to interact with our database without knowing the components of 
+it. These methods simply encapsulate the interaction with the database and will return error reason when you are doing 
+something illegal, so you can use these methods to get to our database conveniently and safely. What's more, they are 
+concise enough for anyone who wants to implement their own functions to custom their own version.
+"""
 
+__author__ = 'feiyicheng'
 import json
 from pymongo import Connection
 from bson.objectid import ObjectId
