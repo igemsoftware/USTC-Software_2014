@@ -31,6 +31,7 @@ def batch(request):
             for para in para_list:
                 sub_request = request
                 sub_request.POST = para
+                sub_request.method = 'POST'
 
                 receiver = add_node(sub_request)
                 one_order_result.append(json.loads(receiver.content))
@@ -66,6 +67,7 @@ def batch(request):
             for para in para_list:
                 sub_request = request
                 sub_request.POST = para
+                sub_request.method = 'POST'
 
                 receiver = add_link(sub_request)
                 one_order_result.append(json.loads(receiver.content))
