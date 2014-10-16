@@ -460,8 +460,9 @@ def get_del_addref_link(request, **kwargs):
         '''
         get the detail info of a record
         '''
+        BANNED_ATTRI = {'_id': 0, 'REF': 0, 'REF_COUNT': 0, 'ID': 0}
         try:
-            link = db.link.find_one({'_id': ObjectId(kwargs['ID'])})
+            link = db.link.find_one({'_id': ObjectId(kwargs['ID'])}, BANNED_ATTRI)
         except KeyError:
             return HttpResponse("{'status':'error', 'reason':'key <_id> does not exist'}")
 
