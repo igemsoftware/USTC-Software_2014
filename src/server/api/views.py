@@ -491,7 +491,7 @@ def get_del_addref_link(request, **kwargs):
 
 
 # @login_required
-def search_json_link(request, **kwargs):
+def search_json_link(request):
     """ an api used for complex searching
 
     User passes in a json query using POST method, and this method will return the
