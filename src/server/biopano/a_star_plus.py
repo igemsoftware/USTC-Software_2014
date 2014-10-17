@@ -253,7 +253,7 @@ def a_star(request):
 		Astar_time = datetime.now()
 		time_point['Astar'] = Astar_time - SPFA_time
 		result_text = json.dumps(path_list)
-		return HttpResponse(result_text)
+		return HttpResponse(result_text + str(time_point))
 
 	elif request.method != 'GET':
 		return HttpResponse("{'status':'error', 'reason':'only POST method setting'}")
