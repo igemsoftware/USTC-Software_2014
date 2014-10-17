@@ -56,7 +56,7 @@ def add_node(request):
                 return HttpResponse("{'status':'error', 'reason':'insert failed'}")
 
             # add refs between two records
-            db.node.update({'_id': node_id}, {'$push': {'refs': noderef_id}}, True)
+            db.node.update({'_id': node_id}, {'$push': {'REF': noderef_id}}, True)
             db.node_ref.update({'_id': noderef_id}, {'$set': {'node_id': node_id}})
 
             # return the _id of this user's own record of this node
@@ -107,7 +107,7 @@ def get_del_addref_node(request, **kwargs):
             return HttpResponse("{'status':'error', 'reason':'project not found'}")
 
         # remove ref in specific node record
-        db.node.update({'_id': noderef['node_id']}, {'$pull': {"node_refs": noderef['_id']}})
+        db.node.update({'_id': noderef['node_id']}, {'$pull': {"REF": noderef['_id']}})
 
         # remove node_ref record
         db.node_ref.remove({'_id': noderef['_id']})
@@ -350,7 +350,7 @@ def add_link(request):
                 return HttpResponse("{'status':'error', 'reason':'insert failed'}")
 
             # add refs between two records
-            db.link.update({'_id': link_id}, {'$push': {'refs': linkref_id}}, True)
+            db.link.update({'_id': link_id}, {'$push': {'REF': linkref_id}}, True)
             db.link_ref.update({'_id': linkref_id}, {'$set': {'link_id': link_id,
                                                               'id1': ObjectId(request.POST['id1']),
                                                               'id2': ObjectId(request.POST['id2'])}})
@@ -411,7 +411,7 @@ def get_del_addref_link(request, **kwargs):
             return HttpResponse("{'status':'error', 'reason':'project not found'}")
 
         # remove ref in specific node record
-        db.link.update({'_id': linkref['link_id']}, {'$pull': {"link_refs": linkref['_id']}})
+        db.link.update({'_id': linkref['link_id']}, {'$pull': {"REF": linkref['_id']}})
 
         # remove node_ref record
         db.link_ref.remove({'_id': linkref['_id']})
