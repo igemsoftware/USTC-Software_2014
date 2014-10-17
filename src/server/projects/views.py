@@ -1,6 +1,6 @@
 __author__ = 'feiyicheng'
 
-from pymongo import Connection
+from pymongo import MongoClient
 from django.shortcuts import HttpResponse
 from django.contrib.auth.models import User
 from django.db.models import Q
@@ -9,10 +9,8 @@ import json
 from .models import Project
 from decorators import logged_in
 from django.http import QueryDict
+from IGEMServer.settings import db_write
 
-# connect the database
-conn = Connection()
-db = conn.igemdata_new
 
 def search(request, *args, **kwargs):
     """
@@ -250,7 +248,7 @@ def list_or_create(request, *args, **kwargs):
                     else:
                         exec("new_prj.{0} = paras['{1}']".format(key, key))
                         new_prj.save()
-                db.project.insert({'pid': new_prj.pk, 'node': [], 'link': []})
+                db_write.project.insert({'pid': new_prj.pk, 'node': [], 'link': []})
 
                 return HttpResponse("{'status':'success','pid':'%d'}" % (new_prj.pk, ))
         except AttributeError:

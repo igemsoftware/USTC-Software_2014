@@ -2,18 +2,16 @@ __author__ = 'feiyicheng'
 
 import json
 from django.shortcuts import HttpResponse
-from pymongo import Connection
+from pymongo import  MongoClient
 from bson.objectid import ObjectId
 import bson
 from dict2xml import dict2xml
 from func_box import *
 from decorators import project_verified, logged_in, project_verified_exclude_get, logged_in_exclude_get
 from projects.models import Project
+from IGEMServer.settings import db_write, db_read
 from django.http import QueryDict
 
-# connect the database
-conn = Connection()
-db = conn.igemdata_new
 
 
 @logged_in
@@ -35,29 +33,29 @@ def add_node(request):
         '''
         if validate_node(json.loads(request.POST['info'])):
             # all the information is valid(including the group)
-            node_id = db.node.insert(json.loads(request.POST['info']))
-            noderef_id = db.node_ref.insert(
+            node_id = db_write.node.insert(json.loads(request.POST['info']))
+            noderef_id = db_write.node_ref.insert(
                 {'pid': int(request.POST['pid']) if 'pid' in request.POST.keys() else 0,
                  'x': float(request.POST['x']) if 'x' in request.POST.keys() else '0',
                  'y': float(request.POST['y']) if 'y' in request.POST.keys() else '0',
                 }
             )
 
-            prj_id = db.project.find_one({'pid': int(request.POST['pid'])})
+            prj_id = db_read.project.find_one({'pid': int(request.POST['pid'])})
             if prj_id is None:
-                prj_id = db.project.insert({'pid': int(request.POST['pid']), 'node': [], 'link': []})
-                prj_id = db.project.find_one({'_id': prj_id})
+                prj_id = db_write.project.insert({'pid': int(request.POST['pid']), 'node': [], 'link': []})
+                prj_id = db_read.project.find_one({'_id': prj_id})
             else:
                 pass
-            db.project.update({'_id': prj_id['_id']}, {'$push': {'node': noderef_id}}, True)
+            db_write.project.update({'_id': prj_id['_id']}, {'$push': {'node': noderef_id}}, True)
 
             # fail to insert into database
             if not node_id or not noderef_id:
                 return HttpResponse("{'status':'error', 'reason':'insert failed'}")
 
             # add refs between two records
-            db.node.update({'_id': node_id}, {'$push': {'REF': noderef_id}}, True)
-            db.node_ref.update({'_id': noderef_id}, {'$set': {'node_id': node_id}})
+            db_write.node.update({'_id': node_id}, {'$push': {'REF': noderef_id}}, True)
+            db_write.node_ref.update({'_id': noderef_id}, {'$set': {'node_id': node_id}})
 
             # return the _id of this user's own record of this node
             data = {
@@ -97,8 +95,8 @@ def get_del_addref_node(request, **kwargs):
             DELETE A REF IN COLLECTION<node_ref>
         '''
         paras = request.POST
-        project = db.project.find_one({'pid': int(paras['pid'])})
-        noderef = db.node_ref.find_one({'_id': ObjectId(kwargs['ID'])})
+        project = db_read.project.find_one({'pid': int(paras['pid'])})
+        noderef = db_read.node_ref.find_one({'_id': ObjectId(kwargs['ID'])})
 
         # not found
         if noderef is None:
@@ -107,11 +105,11 @@ def get_del_addref_node(request, **kwargs):
             return HttpResponse("{'status':'error', 'reason':'project not found'}")
 
         # remove ref in specific node record
-        db.node.update({'_id': noderef['node_id']}, {'$pull': {"REF": noderef['_id']}})
+        db_write.node.update({'_id': noderef['node_id']}, {'$pull': {"REF": noderef['_id']}})
 
         # remove node_ref record
-        db.node_ref.remove({'_id': noderef['_id']})
-        db.project.update({'_id': project['_id']}, {'$pull': {"node": noderef['_id']}})
+        db_write.node_ref.remove({'_id': noderef['_id']})
+        db_write.project.update({'_id': project['_id']}, {'$pull': {"node": noderef['_id']}})
 
         return HttpResponse("{'status': 'success'}")
 
@@ -121,7 +119,7 @@ def get_del_addref_node(request, **kwargs):
         '''
         paras = request.POST
         try:
-            node = db.node.find_one({'_id': ObjectId(kwargs['ID'])})
+            node = db_read.node.find_one({'_id': ObjectId(kwargs['ID'])})
         except KeyError:
             return HttpResponse("{'status':'error', 'reason':'key <_id> does not exist'}")
 
@@ -130,25 +128,25 @@ def get_del_addref_node(request, **kwargs):
             return HttpResponse("{'status':'error', 'reason':'object not found'}")
 
         # node exists
-        noderef_id = db.node_ref.insert({'pid': int(paras['pid']) if 'pid' in paras.keys() else 0,
+        noderef_id = db_write.node_ref.insert({'pid': int(paras['pid']) if 'pid' in paras.keys() else 0,
                                          'x': paras['x'] if 'x' in paras.keys() else '0',
                                          'y': paras['y'] if 'y' in paras.keys() else '0',
                                          'node_id': node['_id']}
         )
 
         if noderef_id:
-            prj_id = db.project.find_one({'pid': int(request.POST['pid'])})
+            prj_id = db_read.project.find_one({'pid': int(request.POST['pid'])})
             if prj_id is None:
-                prj_id = db.project.insert({
+                prj_id = db_write.project.insert({
                     'pid': int(request.POST['pid']),
                     'node': [],
                     'link': [],
                 }
                 )
-                prj_id = db.project.find_one({'_id': prj_id})
+                prj_id = db_read.project.find_one({'_id': prj_id})
             else:
                 pass
-            db.project.update({'_id': prj_id['_id']}, {'$push': {'node': noderef_id}}, True)
+            db_write.project.update({'_id': prj_id['_id']}, {'$push': {'node': noderef_id}}, True)
 
             data = {'status': 'success', 'ref_id': str(noderef_id)}
             return HttpResponse(json.dumps(data))
@@ -162,7 +160,7 @@ def get_del_addref_node(request, **kwargs):
         '''
         BANNED_ATTRI = {'_id': 0, 'REF': 0, 'REF_COUNT': 0, 'ID': 0, 'FATHER': 0, 'CHILD': 0}
         try:
-            node = db.node.find_one({'_id': ObjectId(kwargs['ID'])}, BANNED_ATTRI)
+            node = db_read.node.find_one({'_id': ObjectId(kwargs['ID'])}, BANNED_ATTRI)
         except KeyError:
             return HttpResponse("{'status':'error', 'reason':'key <_id> does not exist'}")
 
@@ -206,11 +204,11 @@ def get_del_addref_node(request, **kwargs):
         except ValueError:
             return HttpResponse("{'status': 'error','reason':'the x, y value should be float'}")
 
-        node = db.node_ref.find_one({'_id': ObjectId(old_ref_id)})
+        node = db_read.node_ref.find_one({'_id': ObjectId(old_ref_id)})
         if not node:
             return HttpResponse("{'status': 'error','reason':'unable to find the record matching ref_id given'}")
         else:
-            db.node_ref.update({'_id': ObjectId(old_ref_id)}, {'$set': {'x': x, 'y': y}})
+            db_write.node_ref.update({'_id': ObjectId(old_ref_id)}, {'$set': {'x': x, 'y': y}})
             return HttpResponse("{'status': 'success}")
 
     else:
@@ -281,7 +279,7 @@ def search_json_node(request):
         # for key in queryinstance.keys():
         # if key == 'NAME' or key == "TYPE":
         # queryinstance[key] = {"$regex": queryinstance[key]}
-        results = db.node.find(queryinstance, filterinstance).limit(limit)
+        results = db_read.node.find(queryinstance, filterinstance).limit(limit)
 
         if 'format' in request.POST.keys():
             # noinspection PyDictCreation
@@ -338,8 +336,8 @@ def add_link(request):
         # request.POST is all information of the link
         if validate_link(json.loads(request.POST['info'])):
             # all the information is valid(including the group)
-            link_id = db.link.insert(json.loads(request.POST['info']))
-            linkref_id = db.link_ref.insert(
+            link_id = db_write.link.insert(json.loads(request.POST['info']))
+            linkref_id = db_write.link_ref.insert(
                 {
                     'pid': int(request.POST['pid']) if 'pid' in request.POST.keys() else 0,
                 }
@@ -350,18 +348,18 @@ def add_link(request):
                 return HttpResponse("{'status':'error', 'reason':'insert failed'}")
 
             # add refs between two records
-            db.link.update({'_id': link_id}, {'$push': {'REF': linkref_id}}, True)
-            db.link_ref.update({'_id': linkref_id}, {'$set': {'link_id': link_id,
+            db_write.link.update({'_id': link_id}, {'$push': {'REF': linkref_id}}, True)
+            db_write.link_ref.update({'_id': linkref_id}, {'$set': {'link_id': link_id,
                                                               'id1': ObjectId(request.POST['id1']),
                                                               'id2': ObjectId(request.POST['id2'])}})
 
-            prj_id = db.project.find_one({'pid': int(request.POST['pid'])})
+            prj_id = db_read.project.find_one({'pid': int(request.POST['pid'])})
             if prj_id is None:
-                prj_id = db.project.insert({'pid': int(request.POST['pid']), 'node': [], 'link': []})
-                prj_id = db.project.find_one({'_id': prj_id})
+                prj_id = db_write.project.insert({'pid': int(request.POST['pid']), 'node': [], 'link': []})
+                prj_id = db_read.project.find_one({'_id': prj_id})
             else:
                 pass
-            db.project.update({'_id': prj_id['_id']}, {'$push': {'link': linkref_id}}, True)
+            db_write.project.update({'_id': prj_id['_id']}, {'$push': {'link': linkref_id}}, True)
 
             # return the _id of this user's own record of this link
             data = {
@@ -401,8 +399,8 @@ def get_del_addref_link(request, **kwargs):
             DELETE A REF IN COLLECTION<link_ref>
         '''
         paras = request.POST
-        project = db.project.find_one({'pid': int(paras['pid'])})
-        linkref = db.link_ref.find_one({'_id': ObjectId(kwargs['ID'])})
+        project = db_read.project.find_one({'pid': int(paras['pid'])})
+        linkref = db_read.link_ref.find_one({'_id': ObjectId(kwargs['ID'])})
 
         # not found
         if linkref is None:
@@ -411,11 +409,11 @@ def get_del_addref_link(request, **kwargs):
             return HttpResponse("{'status':'error', 'reason':'project not found'}")
 
         # remove ref in specific node record
-        db.link.update({'_id': linkref['link_id']}, {'$pull': {"REF": linkref['_id']}})
+        db_write.link.update({'_id': linkref['link_id']}, {'$pull': {"REF": linkref['_id']}})
 
         # remove node_ref record
-        db.link_ref.remove({'_id': linkref['_id']})
-        db.project.update({'_id': project['_id']}, {'$pull': {"link": linkref['_id']}})
+        db_write.link_ref.remove({'_id': linkref['_id']})
+        db_write.project.update({'_id': project['_id']}, {'$pull': {"link": linkref['_id']}})
 
         return HttpResponse("{'status': 'success'}")
 
@@ -425,7 +423,7 @@ def get_del_addref_link(request, **kwargs):
         '''
         paras = request.POST
         try:
-            link = db.link.find_one({'_id': ObjectId(kwargs['ID'])})
+            link = db_read.link.find_one({'_id': ObjectId(kwargs['ID'])})
         except KeyError:
             return HttpResponse("{'status':'error', 'reason':'key <_id> does not exist'}")
 
@@ -434,7 +432,7 @@ def get_del_addref_link(request, **kwargs):
             return HttpResponse("{'status':'error', 'reason':'object not found'}")
 
         # link exists
-        linkref_id = db.link_ref.insert(
+        linkref_id = db_write.link_ref.insert(
             {
                 'pid': int(paras['pid']) if 'pid' in paras.keys() else 0,
                 'link_id': ObjectId(kwargs['ID']),
@@ -443,13 +441,13 @@ def get_del_addref_link(request, **kwargs):
             }
         )
         if linkref_id:
-            prj_id = db.project.find_one({'pid': int(request.POST['pid'])})
+            prj_id = db_read.project.find_one({'pid': int(request.POST['pid'])})
             if prj_id is None:
-                prj_id = db.project.insert({'pid': int(request.POST['pid']), 'node': [], 'link': []})
-                prj_id = db.project.find_one({'_id': prj_id})
+                prj_id = db_write.project.insert({'pid': int(request.POST['pid']), 'node': [], 'link': []})
+                prj_id = db_read.project.find_one({'_id': prj_id})
             else:
                 pass
-            db.project.update({'_id': prj_id['_id']}, {'$push': {'link': linkref_id}}, True)
+            db_write.project.update({'_id': prj_id['_id']}, {'$push': {'link': linkref_id}}, True)
 
             data = {'status': 'success', 'ref_id': str(linkref_id)}
             return HttpResponse(json.dumps(data))
@@ -462,7 +460,7 @@ def get_del_addref_link(request, **kwargs):
         '''
         BANNED_ATTRI = {'_id': 0, 'REF': 0, 'REF_COUNT': 0, 'ID': 0}
         try:
-            link = db.link.find_one({'_id': ObjectId(kwargs['ID'])}, BANNED_ATTRI)
+            link = db_read.link.find_one({'_id': ObjectId(kwargs['ID'])}, BANNED_ATTRI)
         except KeyError:
             return HttpResponse("{'status':'error', 'reason':'key <_id> does not exist'}")
 
@@ -549,7 +547,7 @@ def search_json_link(request):
                         item['_id'] = ObjectId(item['_id'])
                     new.append(item)
                 queryinstance[key] = new
-        results = db.link.find(queryinstance, filterinstance).limit(limit)
+        results = db_read.link.find(queryinstance, filterinstance).limit(limit)
 
         if 'format' in request.POST.keys():
             if request.POST['format'] == 'xml':
@@ -593,15 +591,15 @@ def search_json_link(request):
 def get_project(request, **kwargs):
     if request.method == 'GET':
         pid = int(kwargs['pid'])
-        project = db.project.find_one({'pid': pid})
+        project = db_read.project.find_one({'pid': pid})
         if project is None:
             return HttpResponse("{'status': 'error','reason':'project not found'}")
         nodeset = []
         linkset = []
         for noderef_id in project['node']:
-            noderef = db.node_ref.find_one({'_id': noderef_id})
+            noderef = db_read.node_ref.find_one({'_id': noderef_id})
             node_id = noderef['node_id']
-            node = db.node.find_one({'_id': node_id})
+            node = db_read.node.find_one({'_id': node_id})
             data = {
                 '_id': str(node_id),
                 'ref_id': str(noderef_id),
@@ -612,9 +610,9 @@ def get_project(request, **kwargs):
             }
             nodeset.append(data)
         for linkref_id in project['link']:
-            linkref = db.link_ref.find_one({'_id': linkref_id})
+            linkref = db_read.link_ref.find_one({'_id': linkref_id})
             link_id = linkref['link_id']
-            link = db.link.find_one({'_id': link_id})
+            link = db_read.link.find_one({'_id': link_id})
             data = {
                 '_id': str(link_id),
                 'ref_id': str(linkref_id),

@@ -4,10 +4,8 @@ it. These methods simply encapsulate the interaction with the database and will 
 something illegal, so you can use these methods to get to our database conveniently and safely. What's more, they are 
 concise enough for anyone who wants to implement their own functions to custom their own version.
 """
-å
 __author__ = 'feiyicheng'
 import json
-from pymongo import Connection
 from bson.objectid import ObjectId
 from dict2xml import dict2xml
 from projects.models import Project
