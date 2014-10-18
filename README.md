@@ -92,11 +92,11 @@ Code Platform: [GitLab](http://dev/biopano.org/)
 
 ## For Developer
 
-Biopano server is written by python, using Django Framework. The client is written by ActionScript. We use Git as our version control system. Welcome you to participate in the development!
+Biopano server is written by python, using Django Framework. The client is written by ActionScript. We use Git as our version control system. Welcome to participate in the development!
 
 ## Contact Us
 
-Any question please hesitate to tell us:
+Any question? Please tell us:
 
 * <support@biopano.org>
 * [Twitter](https://twitter.com/USTC_Software)
