@@ -71,7 +71,33 @@ Continuous Integration System: [Jenkins](http://ci.biopano.org/)
 
 Code Platform: [GitLab](http://dev/biopano.org/)
 
+## Members of the Team
+
+* Yuechuan Xue <yuechuanxue@biopano.org>
+* Shensen Zhao <zss@biopano.org>
+* Long Zhou <zl@biopano.org>
+* Yifan Gao <gyf@biopano.org>
+* Gloden Boss <jzy@biopano.org>
+* Taixin Lin <ltx@biopano.org>
+* Longzhi Gan <glz@biopano.org>
+* Yichen Fei <fyc@biopano.org>
+* Huayu Zhang <zhy@biopano.org>
+* Luxin Han <hlx@biopano.org>
+* Wenshuo Wang <wws@biopano.org>
+* Chenxiao Dong <dcx@biopano.org>
+* Zhiyuan Zhang <zzy@biopano.org>
+* Tianlong Chen <ctl@biopano.org>
+* Chuanpin Yu <ycp@biopano.org>
+* Linfan Chen <clf@biopano.org>
 
 ## For Developer
 
-Biopano server is written in python, using Django Framework. The client is written in ActionScript. We use Git as our version control system. Welcome you to participate in the development!
+Biopano server is written by python, using Django Framework. The client is written by ActionScript. We use Git as our version control system. Welcome you to participate in the development!
+
+## Contact Us
+
+Any question please hesitate to tell us:
+
+* <support@biopano.org>
+* [Twitter](https://twitter.com/USTC_Software)
+* [facebook](https://www.facebook.com/USTCSoftware)
