@@ -71,7 +71,10 @@ package FunctionPanel
 			if(WindowList[tar.ID]==null){
 				var c:ContextSheet=JSONContentFetcher.fetch(tar);
 				var scroll:Scroll=new Scroll(c);
-				WindowList[tar.ID]=new FreeWindow(tar.Name,scroll,500,400,tar.x,tar.y);
+				WindowList[tar.ID]=new FreeWindow(tar.Name,scroll);
+				WindowList[tar.ID].addEventListener("destory",function (e):void{
+					WindowList[tar.ID]=null;
+				});
 				
 				if (editable) {
 					var ok_b:RichButton=new RichButton();
@@ -120,16 +123,13 @@ package FunctionPanel
 					WindowList[tar.ID].ButtonField=[edit];
 				}				
 				if(tar.constructor==CompressedNode){
-					WindowSpace.addWindow(WindowList[tar.ID],
-						function ():void{Tween.DeployWindowFromNet(WindowList[tar.ID],tar.x,tar.y,tar.skindata.radius,tar.skindata.radius)},
-						function ():void{Tween.CloseWindowToNet(WindowList[tar.ID],tar.x,tar.y,tar.skindata.radius,tar.skindata.radius),WindowList[tar.ID]=null;}
-					);
+					WindowSpace.addWindow(WindowList[tar.ID],function (e):void{Tween.CloseWindowToNet(WindowList[tar.ID],tar.x,tar.y,tar.skindata.radius,tar.skindata.radius)});
 					
+					Tween.DeployWindowFromNet(WindowList[tar.ID],tar.x,tar.y,tar.skindata.radius,tar.skindata.radius);
 				}else{
-					WindowSpace.addWindow(WindowList[tar.ID],
-						function ():void{Tween.DeployWindowFromNet(WindowList[tar.ID],tar.x,tar.y,50,50)},
-						function (e):void{Tween.CloseWindowToNet(WindowList[tar.ID],tar.x,tar.y,50,50),WindowList[tar.ID]=null;}
-					);
+					WindowSpace.addWindow(WindowList[tar.ID],function (e):void{Tween.CloseWindowToNet(WindowList[tar.ID],tar.x,tar.y,50,50)});
+					
+					Tween.DeployWindowFromNet(WindowList[tar.ID],tar.x,tar.y,50,50);
 				}
 			}
 		}

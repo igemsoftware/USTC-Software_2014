@@ -18,8 +18,6 @@ package LoginAccount
 	import GUI.Assembly.TextInput;
 	import GUI.Scroll.Scroll;
 	
-	import IvyBoard.ProjectDetailPanel;
-	
 	import Layout.ReminderManager;
 	
 	
@@ -66,6 +64,8 @@ package LoginAccount
 			
 			searchBox.addEventListener(Event.CHANGE,search);
 			
+			
+			flushWorkerList();
 		}
 		
 		
@@ -82,8 +82,6 @@ package LoginAccount
 				});
 			}
 			
-			
-			ProjectDetailPanel.refreshDetail();
 			redraw();
 		}
 		

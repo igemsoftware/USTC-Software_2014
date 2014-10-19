@@ -25,26 +25,15 @@ package GUI.Windows{
 			halfArea.graphics.drawRoundRect(2,2,w/2-4,h-4,10,10);
 			halfArea.filters=[FilterPacket.blueGlow];
 		}
-		public static function addWindow(tar,openfunction=null,closefunction=null):void{
+		public static function addWindow(tar,closefunction=null):void{
 			if(!windowSpace.contains(tar)){
 				windowSpace.addChild(tar);
-				
 				tar.addEventListener("focused",chg_focus);
-				
-				if(openfunction==null){
-					Tween.OpenWindow(tar);
-				}else{
-					openfunction();
-				}
-				
+				tar.addEventListener("destory",destoryBoard);
 				if(closefunction==null){
 					tar.addEventListener("close",defaultFadeoutWindow);
 				}else{
-					tar.addEventListener("close",close);
-					function close(e):void{
-						tar.removeEventListener("close",close);
-						closefunction();
-					}
+					tar.addEventListener("close",closefunction);
 				}
 			
 				if (tar.hasOwnProperty("flexable")&&tar.flexable) {
@@ -53,27 +42,8 @@ package GUI.Windows{
 					tar.addEventListener("startDrag",startDragBoard_evt);
 				}
 			}else{
-				windowSpace.addChild(tar);
+				windowSpace.swapChildren(tar,windowSpace.getChildAt(windowSpace.numChildren-1))
 			}
-		}
-		
-		public static function FloatWindow(tar):void{
-			if(!windowSpace.contains(tar)){
-				windowSpace.addChild(tar);
-				
-				tar.addEventListener("focused",chg_focus);
-
-				Tween.floatIn(tar);
-
-				tar.addEventListener("close",defaultFloatdownWindow);
-			
-			}else{
-				windowSpace.addChild(tar);
-			}
-		}
-		
-		public static function addMask(tar,level):void{
-			windowSpace.addChildAt(tar,windowSpace.getChildIndex(level));
 		}
 		
 		public static function contains(tar):Boolean{
@@ -94,15 +64,14 @@ package GUI.Windows{
 			}
 		}
 		protected static function chg_focus(e):void{
-			windowSpace.addChild(e.target);
+			windowSpace.swapChildren(e.target,windowSpace.getChildAt(windowSpace.numChildren-1));
+		}
+		protected static function destoryBoard(e):void{
+			removeWindow(e.target);
 		}
 		protected static function defaultFadeoutWindow(e):void{
 			e.target.removeEventListener("close",defaultFadeoutWindow);
-			Tween.CloseWindow(e.target);
-		}
-		protected static function defaultFloatdownWindow(e):void{
-			e.target.removeEventListener("close",defaultFloatdownWindow);
-			Tween.FloatDownWindow(e.target);
+			Tween.fadeOut(e.target);
 		}
 		protected static function startDragBoard_evt(event:Event):void{
 			windowSpace.addEventListener(Event.ENTER_FRAME,testEdge);

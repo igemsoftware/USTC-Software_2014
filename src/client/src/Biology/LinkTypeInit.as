@@ -12,29 +12,18 @@ package Biology{
 		public static var LinkTypeList:Array=new Array();
 		public static var LinkTypeIndexList:Array=new Array();
 		
-		public function LinkTypeInit(force=false){
+		public function LinkTypeInit(){
 			var f:File;
 			var fs:FileStream = new FileStream();
 			
-			if(force){
-				trace("Force restore Default");
-				try{
-					f=File.applicationStorageDirectory.resolvePath("bioNexusType.xml");
-					f.deleteFile();
-				}catch(error:Error) {
-				}
+			try{
+				f=File.applicationStorageDirectory.resolvePath("bioNexusType.xml");
+				fs.open(f, flash.filesystem.FileMode.READ);
+				trace("Load user Line Type");
+			}catch(error:Error) {
+				trace("No user Line Type");
 				f=File.applicationDirectory.resolvePath("bioNexusType.xml");
 				fs.open(f, flash.filesystem.FileMode.READ);
-			}else{
-				try{
-					f=File.applicationStorageDirectory.resolvePath("bioNexusType.xml");
-					fs.open(f, flash.filesystem.FileMode.READ);
-					trace("Load user Line Type");
-				}catch(error:Error) {
-					trace("No user Line Type");
-					f=File.applicationDirectory.resolvePath("bioNexusType.xml");
-					fs.open(f, flash.filesystem.FileMode.READ);
-				}
 			}
 			
 			var xml:XMLList = XML(fs.readUTFBytes(fs.bytesAvailable)).children();

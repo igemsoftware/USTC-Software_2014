@@ -1,6 +1,8 @@
 package 
 {
 	import flash.events.EventDispatcher;
+	import flash.net.URLRequest;
+	import flash.security.X500DistinguishedName;
 	
 	import Assembly.Compressor.CompressedLine;
 	import Assembly.Compressor.CompressedNode;
@@ -30,16 +32,17 @@ package
 		public static var ServerAvailable:Boolean=false;
 		
 		public static const SERVER_ADDRESS:String="master.server.ailuropoda.org";
+		public static const SEQUENCE_ADDRESS:String="http://master.biopano.org/biopano/find_way/";
 		public static const NODE_INTERFACE:String="http://"+SERVER_ADDRESS+"/data/node/";
 		public static const LINK_INTERFACE:String="http://"+SERVER_ADDRESS+"/data/link/";
 		public static const SEARCH_INTERFACE:String="http://"+SERVER_ADDRESS+"/search/node/";
 		
-		public static const SEQUENCE_ADDRESS:String="http://"+SERVER_ADDRESS+"/biopano/alignment/";
-		public static const kShort_ADDRESS:String="http://"+SERVER_ADDRESS+"/biopano/find_way/"
+		
 		
 		
 		
 		public static const PROJECT_INTERFACE:String="http://"+SERVER_ADDRESS+"/project/";
+		public static const PROJECT_DELETE:String=PROJECT_INTERFACE+"delete/";
 		public static const PROJECT_MY:String=PROJECT_INTERFACE+"project/";
 		
 		public static const PROJECT_SEARCH_USER:String="http://"+SERVER_ADDRESS+"/search/user/";
@@ -70,8 +73,6 @@ package
 		public static const SKIN_WINDOW_COLOR:uint=0x909090;
 		
 		public static var token:String;
-		public static var userName:String;
-		
 	
 	}
 }

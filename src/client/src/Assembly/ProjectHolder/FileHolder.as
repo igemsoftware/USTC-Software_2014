@@ -11,6 +11,7 @@ package Assembly.ProjectHolder{
 	public class FileHolder{
 		
 		public static var currentFile:File;
+		private static var originFileContent:ByteArray;
 		
 		public function FileHolder(){
 			
@@ -27,7 +28,8 @@ package Assembly.ProjectHolder{
 				tmpFile.load();
 			});
 			tmpFile.addEventListener(Event.COMPLETE,function (e):void{
-			
+				
+				originFileContent=tmpFile.data;
 				currentFile=tmpFile;
 				
 			},false,100);
@@ -72,5 +74,8 @@ package Assembly.ProjectHolder{
 			})
 		}
 		
+		public static function revertFile():ByteArray{
+			return originFileContent;
+		}
 	}
 }

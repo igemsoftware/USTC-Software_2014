@@ -152,6 +152,7 @@
 			}
 		}
 		
+		
 		public function setSize(w:Number,h:Number):void{
 			var left:Number=-Math.floor(x/50)*50;
 			var right:Number=left+w;
@@ -253,7 +254,7 @@
 			
 			if (tar.Instance==null) {
 				if (tar.constructor==CompressedNode) {
-					BlockSpace.browseChild(tar);
+					WakeBlock(tar);
 				}else if (tar.constructor==CompressedLine) {
 					WakeLine(tar);
 				}
@@ -307,7 +308,6 @@
 			x=cx;
 			y=cy;
 		}
-		
 		
 	}
 	

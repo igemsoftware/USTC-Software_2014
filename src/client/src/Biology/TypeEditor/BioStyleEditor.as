@@ -45,7 +45,7 @@ package Biology.TypeEditor{
 		private var _list:RichList=new RichList();
 		private var _title:TitleTextField=new TitleTextField("Choose a type");
 		
-		
+
 		
 		private var dp:DataProvider;
 		
@@ -82,7 +82,7 @@ package Biology.TypeEditor{
 			
 			LayoutManager.UnifyScale(80,25,ok_b,cancel_b,apply_b);
 			
-			
+			_list.dataProvider=nodeApplyData;
 			
 			_title.x=LIST_WIDTH+20;
 			
@@ -91,9 +91,9 @@ package Biology.TypeEditor{
 			//addChild(_box);
 			addChild(_list);
 			addChild(_title);
+	
 			setSize(500,330);
 			
-			_list.dataProvider=nodeApplyData;
 			_list.addEventListener(ListEvent.ITEM_CLICK,setSelection);
 			
 			nodebtn.addEventListener(MouseEvent.CLICK,function (e):void{Mode=1});

@@ -38,7 +38,7 @@ package Assembly.Compressor
 		
 		public var modified:Boolean=false;
 
-		public function CompressedLine(id:String ,nam:String,obj1:CompressedNode,obj2:CompressedNode,type:LinkType,_detail:String="")
+		public function CompressedLine(id:String ,nam:String,obj1:CompressedNode,obj2:CompressedNode,type:LinkType,_detail:String=null)
 		{
 			Name=nam;
 			ID=id;

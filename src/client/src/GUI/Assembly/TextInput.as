@@ -7,7 +7,6 @@ package GUI.Assembly{
 	import flash.events.KeyboardEvent;
 	import flash.text.TextField;
 	import flash.text.TextFieldType;
-	import flash.ui.Keyboard;
 	
 	import GUI.FlexibleLayoutObject;
 	import GUI.Scroll.Scroll;
@@ -66,7 +65,6 @@ package GUI.Assembly{
 			}else{
 				
 				addChild(_textf);
-				_textf.addEventListener(KeyboardEvent.KEY_DOWN,Enter_mon);
 			}
 			
 			if(searchBar){
@@ -110,13 +108,6 @@ package GUI.Assembly{
 			
 		}
 		
-		protected function Enter_mon(event:KeyboardEvent):void
-		{
-			if(event.keyCode==Keyboard.ENTER){
-				dispatchEvent(new Event("Enter"))
-			}
-		}
-		
 		public function set hintText(s:String):void{
 			if(hintTF==null){
 				hintTF=new TextField();
@@ -134,7 +125,7 @@ package GUI.Assembly{
 			
 			if(scroll!=null){
 				_textf.width=w;
-				_textf.height=Math.max(_textf.textHeight+5,h);
+				_textf.height=_textf.textHeight+5;
 				scroll.setSize(w,h);
 				
 			}else{

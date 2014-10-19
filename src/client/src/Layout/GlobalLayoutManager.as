@@ -22,8 +22,6 @@ package Layout{
 	import Layout.Sorpotions.Sorption;
 	
 	import Style.Tween;
-	import flash.geom.PerspectiveProjection;
-	import flash.geom.Point;
 	
 	public class GlobalLayoutManager extends Sprite{
 		
@@ -236,11 +234,6 @@ package Layout{
 			
 			control_panel.setCenter(stage.stageWidth/2,stage.stageHeight/2);
 			WindowSpace.setStageScale(stage.stageWidth,stage.stageHeight);
-			
-			var p:PerspectiveProjection=new PerspectiveProjection();
-			p.projectionCenter=new Point(StageWidth/2,StageHeight/2);
-			this.transform.perspectiveProjection=p;
-			
 		}
 	}
 }

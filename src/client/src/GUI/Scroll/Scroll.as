@@ -1,10 +1,13 @@
 package GUI.Scroll{
+	import flash.desktop.IFilePromise;
 	import flash.display.Shape;
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import flash.text.TextField;
-		
+	
+	import mx.core.mx_internal;
+	
 	import GUI.FlexibleLayoutObject;
 	
 	
@@ -51,8 +54,6 @@ package GUI.Scroll{
 			}
 		}
 		public function negativeRedraw(e=null):void{
-			
-			
 			ScrollBar.setSize();
 			scrolling();
 		}

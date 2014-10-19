@@ -52,8 +52,8 @@ package Assembly.Compressor{
 				var sright:int=originBytes.readInt();
 				var sbuttom:int=originBytes.readInt();
 				
-				var aimw:int=sright-sleft+1;
-				var aimh:int=sbuttom-stop+1;
+				var aimw:int=sright-sleft;
+				var aimh:int=sbuttom-stop;
 				
 				_data=new BitMapGraphics(right-left+1,buttom-top+1,true,0);
 				
@@ -82,6 +82,8 @@ package Assembly.Compressor{
 				returnImage.writeInt(aimh);
 				
 				_data.copyPixelsToByteArray(new Rectangle(sleft-left,stop-top,aimw,aimh),returnImage);
+				
+				//			trace("[Compressor]:Copy Complete")
 				
 				returnMutex.unlock();
 				

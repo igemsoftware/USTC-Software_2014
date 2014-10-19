@@ -69,7 +69,7 @@ protected static function try_setpos(event:MouseEvent):void
 }
 
 
-public static function loadCompressedBlock(id:String,refID:String,_name:String,px:Number,py:Number,biotp:String,detail:String=""):CompressedNode {
+public static function loadCompressedBlock(id:String,refID:String,_name:String,px:Number,py:Number,biotp:String,detail:String=null):CompressedNode {
 	if (Block_space[id]==null) {
 		var tar:CompressedNode=Block_space[id]=new CompressedNode(id,_name,NodeTypeInit.BiotypeList[biotp],px,py,detail);
 		trace("refID : ",refID);

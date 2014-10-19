@@ -6,7 +6,6 @@ package Assembly.Compressor{
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.geom.Point;
-	import flash.geom.Rectangle;
 	import flash.system.MessageChannel;
 	import flash.system.Worker;
 	import flash.system.WorkerDomain;
@@ -79,10 +78,14 @@ package Assembly.Compressor{
 					var w:int=returnBytes.readInt();
 					var h:int=returnBytes.readInt();
 					
-					_data=new BitmapData(w,h,true,0);
+					if(w>0&&h>0){
+						_data=new BitmapData(w,h,true,0);
 						
-					_data.setPixels(new Rectangle(0,0,w,h),returnBytes);
-					
+						_data.setPixels(_data.rect,returnBytes);
+						
+					}else{
+						_data=new BitmapData(1,1,true,0);
+					}
 					_map.bitmapData=_data;
 					
 					returnMutex.unlock();

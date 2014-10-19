@@ -24,7 +24,7 @@ package Assembly.ProjectHolder
 		
 		private var hint:Clound_inf=new Clound_inf();
 		
-		private var pro_name:TextInput=new TextInput();
+		public var pro_name:TextInput=new TextInput();
 		
 		private var ok_b:RichButton=new RichButton(RichButton.RIGHT_EDGE);
 		
@@ -32,13 +32,8 @@ package Assembly.ProjectHolder
 		
 		private var hitA:HitBox=new HitBox(hint.width+10,hint.height+60);
 		
-		private var upload:Boolean=false;
-		
-		public function CreateProjectPanel(defNam:String,upld=false)
+		public function CreateProjectPanel()
 		{
-			
-			pro_name.text=defNam;
-			
 			ok_b.label="Conform";
 			ok_b.setSize(100,pro_name.Height);
 			LayoutManager.setHorizontalLayout(this,LayoutManager.LAYOUT_ALIGN_LEFT_STICK,10,10,5,hint.width-110,project_hint,pro_name);
@@ -50,8 +45,6 @@ package Assembly.ProjectHolder
 			addChild(hint);
 			addChild(ok_b);
 			ok_b.addEventListener(MouseEvent.CLICK,click_evt);
-			
-			upload=upld;
 			
 		}
 		
@@ -79,11 +72,9 @@ package Assembly.ProjectHolder
 					if(tmpJson.status=="success"){
 						trace("PID : ",tmpJson.pid);
 						
-						if(upload){
-							ReminderManager.remind("Create project complete. Now synchronizating...");
-						}else{
-							ReminderManager.remind("Create project complete.");
-						}
+						
+						
+						ReminderManager.remind("Create project complete. Now synchronizating...");
 					}else{
 						
 						ReminderManager.remind("Fail to Upload : "+tmpJson.reason);

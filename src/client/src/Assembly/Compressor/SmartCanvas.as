@@ -93,7 +93,7 @@ package Assembly.Compressor{
 			if (node.Instance==null) {
 				Net.WakeBlock(node);
 			}
-			if (!floatCanvas.contains(node.Instance)){
+			if (!floatCanvas.contains(node.Instance)) {
 				compressedCanvas.RemoveChild(node);
 				floatCanvas.addChild(node.Instance);
 				node.Instance.redraw();

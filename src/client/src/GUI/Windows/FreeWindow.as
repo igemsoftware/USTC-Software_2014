@@ -7,7 +7,6 @@ package GUI.Windows{
 	import flash.geom.Rectangle;
 	import flash.text.TextField;
 	
-	import Layout.GlobalLayoutManager;
 	
 	import Style.FilterPacket;
 	import Style.FontPacket;
@@ -36,11 +35,7 @@ package GUI.Windows{
 		
 		private var IconField:Array=[];
 		
-		public function FreeWindow(titl:String,content=null,sw=500,sh=400,sx=null,sy=null){
-			if(sx==null){
-				sx=GlobalLayoutManager.StageWidth/2
-				sy=GlobalLayoutManager.StageHeight/2
-			}
+		public function FreeWindow(titl:String,content=null,sw=500,sh=400){
 			
 			this.cacheAsBitmap=true;
 			
@@ -205,6 +200,21 @@ package GUI.Windows{
 			removeEventListener(MouseEvent.MOUSE_MOVE,moving_evt);
 			stage.removeEventListener(MouseEvent.MOUSE_UP,stopdraging);
 			dispatchEvent(new Event("stopDrag"));
+		}
+		
+		public function fadeOut(e):void{
+			removeEventListener(Event.ENTER_FRAME,showUp);
+			this.x=(this.x*3+EX)/4;
+			this.y=(this.y*3+EY)/4;
+			this.width=(this.width*3+EW)/4;
+			this.height=(this.height*3+EH)/4;
+			this.alpha=this.alpha*3/4;
+			protectTick++;
+			if (Math.abs(this.x-EX)<1||protectTick>18) {
+				removeEventListener(Event.ENTER_FRAME,fadeOut);
+				detailTarget.detailOpened=false;
+				dispatchEvent(new Event("destory"));
+			}
 		}
 		
 		public function set ButtonField(field:Array):void{

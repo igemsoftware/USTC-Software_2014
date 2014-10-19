@@ -24,7 +24,7 @@ package Assembly.Compressor
 		public function restore():void{
 			removeChildren(0);
 			
-			floatCanvas=new Sprite();
+			floatCanvas=new Sprite;
 			compressedCanvas=new CompressedLineSpace();
 			
 			compressedCanvas.addEventListener(MouseEvent.MOUSE_DOWN,Down_evt);

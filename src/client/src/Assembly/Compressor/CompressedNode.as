@@ -57,7 +57,7 @@ package Assembly.Compressor
 		public var centerBlock:CompressedNode;
 		
 		
-		public function CompressedNode(id:String,titl:String,biotype:NodeType,px:Number,py:Number,_detail=""){
+		public function CompressedNode(id:String,titl:String,biotype:NodeType,px:Number,py:Number,_detail=null){
 			x=px*I3DPlate.scaleXY;
 			y=py*I3DPlate.scaleXY;
 			

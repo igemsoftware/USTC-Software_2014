@@ -7,12 +7,8 @@ package Assembly.ProjectHolder
 	import GUI.Windows.Panel;
 	import GUI.Windows.WindowSpace;
 	
-	import IvyBoard.ProjectDetailPanel;
-	
-	import Layout.ReminderManager;
-	
 	import LoginAccount.AuthorizedURLLoader;
-	
+
 	public class ProjectManager
 	{
 		
@@ -30,28 +26,27 @@ package Assembly.ProjectHolder
 		public static var describe:String="";
 		public static var species:String="";
 		
+		private static var uploadpane:CreateProjectPanel=new CreateProjectPanel();
+		
+		private static var uploadWin:Panel=new Panel("Upload Project",uploadpane);
+		
+		
 		
 		public function ProjectManager()
 		{
 		}
 		
 		public static function Upload():void{
+			uploadpane.pro_name.text=ProjectName;
 			
-			WindowSpace.addWindow(new Panel("Upload Project to Cloud",new CreateProjectPanel(ProjectName,true)));
-			
-		}
-		
-		public static function Create():void{
-			
-			WindowSpace.addWindow(new Panel("Create a Project on Cloud",new CreateProjectPanel("new Project")));
+			WindowSpace.addWindow(uploadWin);
 			
 		}
 		
 		public static function openProject(pid:int):void
 		{
-			trace(GlobalVaribles.PROJECT_INTERFACE+pid+"/");
 			var urequest:URLRequest=new URLRequest(GlobalVaribles.PROJECT_INTERFACE+pid+"/");
-			
+				
 			var loader:AuthorizedURLLoader=new AuthorizedURLLoader();
 			loader.load(urequest);
 			loader.addEventListener(Event.COMPLETE,openProject_cmp);
@@ -70,16 +65,11 @@ package Assembly.ProjectHolder
 			ProjectManager.species=project.result.species;
 			ProjectManager.describe=project.result.description;
 			
-			ProjectManager.co_works=[];
-			
 			for each (var worker:Object in project.result.collaborators)
 			{
 				ProjectManager.co_works.push(new WorkerInfo(worker.username,worker.uid,new BitmapData(200,200)));
 			}
 			
-			ProjectDetailPanel.refreshDetail();
-			
-			ReminderManager.remind("Now synchronizing...")
 			var projectLoader:AuthorizedURLLoader=new AuthorizedURLLoader(new URLRequest(GlobalVaribles.PROJECT_LOAD_PROJECT))
 			projectLoader.addEventListener(Event.COMPLETE,loadProject);
 		}
@@ -88,7 +78,6 @@ package Assembly.ProjectHolder
 		{
 			trace(event.target.data);
 			GxmlContainer.loadJsonNet(event.target.data);
-			ReminderManager.remind("Synchronizing Complete")
 		}
 	}
 }

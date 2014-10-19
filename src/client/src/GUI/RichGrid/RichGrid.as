@@ -50,7 +50,7 @@ package GUI.RichGrid
 		private var autoHeight:Boolean=false;
 		private var sortAble:Boolean;
 		
-		public function RichGrid(editable=false,selectable=false,multiSelection=false,sortable=true,autoheight=false,html=false,double=false){
+		public function RichGrid(editable=false,selectable=false,multiSelection=false,sortable=true,autoheight=false){
 			edit=editable
 			multi=multiSelection;
 			sortAble=sortable;
@@ -64,7 +64,7 @@ package GUI.RichGrid
 				});
 			}
 			
-			sheet=new Table(editable,selectable,multiSelection,true,html,double);
+			sheet=new Table(editable,selectable,multiSelection,autoheight);
 			
 			
 			addChild(back);

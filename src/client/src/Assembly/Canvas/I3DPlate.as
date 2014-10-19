@@ -18,8 +18,6 @@ package Assembly.Canvas
 		
 		public static var scaleXY:Number=1;
 		
-		private static var _lock:Boolean=false;
-		
 		public static var PlateLocation:Array=[0,0];
 		
 		
@@ -30,30 +28,20 @@ package Assembly.Canvas
 			
 			addEventListener(MouseEvent.MOUSE_WHEEL,Rdelta);
 		}
-		public static function lock():void
-		{
-			
-			_lock=true;
-			
-		}
-		public static function unlock():void
-		{
-			_lock=false;
-		}
+		
 		protected static var AimScale:Number=1;
 		private static var dragStartX:Number=0,dragStartY:Number=0,currentX:Number=0,currentY:Number=0;
 		
 		private function Rdelta(e):void {
-			if(!_lock){
-				AimScale-=e.delta*0.04;
-				if (AimScale>1) {
-					AimScale=1;
-				}
-				if (AimScale<0.2) {
-					AimScale=0.2;
-				}
-				addEventListener(Event.ENTER_FRAME,dragScale);
+			
+			AimScale-=e.delta*0.04;
+			if (AimScale>1) {
+				AimScale=1;
 			}
+			if (AimScale<0.2) {
+				AimScale=0.2;
+			}
+			addEventListener(Event.ENTER_FRAME,dragScale);
 		}
 		
 		protected function dragScale(event:Event):void
@@ -69,18 +57,16 @@ package Assembly.Canvas
 		}
 		
 		protected static function MoveStage(event:MouseEvent):void {
-			if(!_lock){
-				currentX=plate.x;
-				currentY=plate.y;
-				dragStartX=plate.stage.mouseX;
-				dragStartY=plate.stage.mouseY;
-				if(event.type==MouseEvent.RIGHT_MOUSE_DOWN){
-					plate.stage.addEventListener(MouseEvent.RIGHT_MOUSE_UP,endMoveStage);
-				}else if(event.type==MouseEvent.MOUSE_DOWN){
-					plate.stage.addEventListener(MouseEvent.MOUSE_UP,endMoveStage);
-				}
-				plate.stage.addEventListener(MouseEvent.MOUSE_MOVE,movingStage);
+			currentX=plate.x;
+			currentY=plate.y;
+			dragStartX=plate.stage.mouseX;
+			dragStartY=plate.stage.mouseY;
+			if(event.type==MouseEvent.RIGHT_MOUSE_DOWN){
+				plate.stage.addEventListener(MouseEvent.RIGHT_MOUSE_UP,endMoveStage);
+			}else if(event.type==MouseEvent.MOUSE_DOWN){
+				plate.stage.addEventListener(MouseEvent.MOUSE_UP,endMoveStage);
 			}
+			plate.stage.addEventListener(MouseEvent.MOUSE_MOVE,movingStage);
 		}
 		private static function movingStage(e):void{
 			

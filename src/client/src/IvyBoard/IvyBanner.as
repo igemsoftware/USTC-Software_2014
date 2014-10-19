@@ -66,14 +66,12 @@ package IvyBoard
 				Tween.fadeOut(Icon_Inf.Circle);
 				Tween.fadeOut(Icon_Edit.Circle);
 				Tween.fadeOut(Icon_Add.Circle);
-				Tween.fadeOut(Icon_Connect.Circle);
 			}else {
 				Banner_back.aimY=-52;
 				Tween.SlideY(Banner_back);
 				Tween.smoothIn(Icon_Inf.Circle);
 				Tween.smoothIn(Icon_Edit.Circle);
 				Tween.smoothIn(Icon_Add.Circle);
-				Tween.smoothIn(Icon_Connect.Circle);
 			}
 		}
 	}

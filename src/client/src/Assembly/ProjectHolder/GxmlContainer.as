@@ -1,5 +1,6 @@
 package Assembly.ProjectHolder{
 	
+	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	import flash.filesystem.File;
@@ -17,8 +18,6 @@ package Assembly.ProjectHolder{
 	
 	import FunctionPanel.PerspectiveViewer;
 	
-	import IvyBoard.ProjectDetailPanel;
-	
 	import Layout.Sorpotions.Navigator;
 	
 	import Style.TweenX;
@@ -34,11 +33,9 @@ package Assembly.ProjectHolder{
 		
 		public static var ProjectName:String="USTCsoftware";
 		
-		public static var GXMLVersion:int=2;
+		public static var GXMLVersion:int=1;
 		
 		public static var currentProject:File;
-		
-		private static var restoreData:Object={Type:"New"};
 		
 		public static var FileListener:EventDispatcher=new EventDispatcher;
 		
@@ -68,8 +65,6 @@ package Assembly.ProjectHolder{
 		
 		private static function toNew():void{
 			FileHolder.New();
-			
-			restoreData={Type:"New"};
 			
 			Net.restore();
 			
@@ -129,17 +124,9 @@ package Assembly.ProjectHolder{
 		}
 		
 		public static function Revert(e=null):void{
-			if(currentStep!=0&&restoreData!=null){
+			if(currentStep!=0){
 				Asker.ask("Your project will return to the original status and you will not be able to undo this operation, are you sure?",function ():void{
-					
-					if(restoreData.Type=="New"){
-						Net.restore();
-					}else if(restoreData.Type=="XML"){
-						loadXMLNet(restoreData.Net);
-					}else{
-						loadJsonNet(restoreData.Net);
-					}
-					
+					loadXMLNet(XML(String(FileHolder.revertFile())));
 					RestoreRecord();
 				},function ():void{},false);
 			}
@@ -151,13 +138,7 @@ package Assembly.ProjectHolder{
 			var tmpxml:XML=new XML();
 			var linkxml:XML=new XML();
 			Gxml=
-				<Net Version={GXMLVersion}>
-					<Project>
-						<ProjectName>{ProjectManager.ProjectName}</ProjectName>
-						<ProjectID>{ProjectManager.ProjectID}</ProjectID>
-						<species>{ProjectManager.species}</species>
-						<describe>{ProjectManager.describe}</describe>
-					</Project>
+				<Net NetName={ProjectName} Version={GXMLVersion}>
 				</Net>;
 			blockxml=
 				<Blocks></Blocks>;
@@ -194,21 +175,9 @@ package Assembly.ProjectHolder{
 		
 		private static function loadXMLNet(Gxml:XML):void {
 			Net.restore();
-			
-			restoreData={Type:"XML",Net:Gxml}
-			
-			var project:XMLList=Gxml.Project;
 			var blocks:XMLList=Gxml.child("Blocks").children();
 			var links:XMLList=Gxml.child("Links").children();
 			var i:int=0;
-			
-			ProjectManager.ProjectName=project.ProjectName;
-			ProjectManager.ProjectID=project.ProjectID;
-			ProjectManager.species=project.species;
-			ProjectManager.describe=project.describe;
-			
-			ProjectDetailPanel.refreshDetail();
-			
 			for each(var block:XML in  blocks){
 				Net.loadCompressedBlock(block.@id,block.refID,block.NAME,block.x,block.y,block.TYPE,block.detail);
 				i++;
@@ -235,8 +204,6 @@ package Assembly.ProjectHolder{
 		
 		public static function loadJsonNet(Gjson:String):void {
 			Net.restore();
-			
-			restoreData={Type:"JSON",Net:Gjson}
 			
 			var Gobj:Object=JSON.parse(Gjson);
 			

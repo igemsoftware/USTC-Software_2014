@@ -159,6 +159,7 @@ private static function recordMultiNodeExistance(arr:Array,status:int):ByteArray
 			
 			_encodedMap.writeUTF(node.Type.Type);
 			
+
 			_encodedMap.writeUTF(node.detail);
 		
 			for each (arrow in node.Arrowlist) {

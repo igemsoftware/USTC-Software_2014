@@ -11,6 +11,7 @@ package Dock
 	import Layout.GlobalLayoutManager;
 	
 	import Style.FilterPacket;
+	import Style.Tween;
 	
 	public class LatinBoard extends Sprite
 	{
@@ -25,8 +26,6 @@ package Dock
 			addChild(Base);
 			setContent(content);
 			
-			content.addEventListener("close",toclose);
-			
 			addEventListener(Event.ADDED_TO_STAGE,function (w):void{
 				stage.addEventListener(MouseEvent.MOUSE_DOWN,outtest);
 				aimY=GlobalLayoutManager.StageHeight-GlobalLayoutManager.DOCK_HEIGHT-Height-4;
@@ -36,26 +35,22 @@ package Dock
 		protected function outtest(e):void{
 			
 			if(!hitTestPoint(stage.mouseX,stage.mouseY)&&e.target!=target&&!FrontCoverSpace.coverSpace.hitTestPoint(stage.mouseX,stage.mouseY)){
-				toclose()
+				stage.removeEventListener(MouseEvent.MOUSE_DOWN,outtest);
+				
+				Tween.floatOut(this);
+				target.filters=[];
+				target.mouseEnabled=true;
 			}
 		}
-		
-		private function toclose(e=null):void{
-			stage.removeEventListener(MouseEvent.MOUSE_DOWN,outtest);
-			target.filters=[];
-			target.mouseEnabled=true;
-			
-			dispatchEvent(new Event("close"));
-		}
-		
 		public function showAt(tar):void{
 			if(target!=tar||!WindowSpace.contains(this)){
 				tar.filters=[FilterPacket.HighLightGlow];
 				this.x=tar.x-50;
 				target=tar;
-				WindowSpace.FloatWindow(this);
+				WindowSpace.addWindow(this);
 				
 				setSize(Content.width+Align*2,Content.height+Align*2);
+				Tween.floatIn(this);
 			}
 		}
 		

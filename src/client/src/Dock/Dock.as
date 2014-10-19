@@ -7,6 +7,7 @@ package Dock{
 	import flash.geom.Point;
 	
 	import Assembly.ProjectHolder.GxmlContainer;
+	import Assembly.ProjectHolder.ProjectManager;
 	import Assembly.ProjectHolder.SyncManager;
 	
 	import Biology.TypeEditor.BioStyleEditor;
@@ -21,14 +22,9 @@ package Dock{
 	import ICON.OPEN_BUTTON;
 	import ICON.SAVE_BUTTON;
 	
-	import IgemPartAPI.BioBrickHelper;
-	import IgemPartAPI.SequencePanel;
-	
 	import Layout.GlobalLayoutManager;
 	
-	import LoginAccount.LoginPanel;
-	import LoginAccount.ProjectManagePanel;
-	import KShortest.KShortest;
+	import LoginAccount.LoginChoosePanel;
 	
 	public class Dock extends Sprite{
 		
@@ -50,30 +46,25 @@ package Dock{
 		public var option:IconButton=new IconButton(Option_button,"Option");
 		public var layoutButton:IconButton=new IconButton(Icon_Layout,"Layout");
 		public var Biotype:IconButton=new IconButton(Icon_design,"Design");
+		public var login_b:IconButton=new IconButton(ICON_Login,"Login");
 		public var sync_b:IconButton=new IconButton(Icon_SYNC,"Sync");
-		public var cloud_b:IconButton=new IconButton(Icon_Cloud,"Cloud");
-		public var bioBrick_b:IconButton=new IconButton(Icon_bioBrick,"BioBrick");
-		public var Blast_b:IconButton=new IconButton(Icon_Blast,"Blast");
-		public var Kshort_b:IconButton=new IconButton(Icon_KShort,"K-Short");
+		public var upload_b:IconButton=new IconButton(Icon_upload,"Share");
 		
 		public var per_b:IconButton=new IconButton(Icon_Perspective,"Perspective View");
 		public var FullScreen:IconButton=new IconButton(Icon_FullScreen,"Full Screen");
 		
-		public var DockList:Array=[cloud_b,new_b,load_b,save_b,saveAs_b,back_b,forward_b,revert_b,per_b,option,layoutButton,Biotype,bioBrick_b,Blast_b,Kshort_b,FullScreen];
+		public var DockList:Array=[new_b,load_b,save_b,saveAs_b,back_b,forward_b,revert_b,per_b,print,option,layoutButton,Biotype,login_b,sync_b,upload_b,FullScreen];
 		
 		public var Width:int;
 		
 		private var designPanel:Panel;
 		
-		private var ProjectPane:ProjectManagePanel=new ProjectManagePanel()
+		private var loginPane:LoginChoosePanel=new LoginChoosePanel()
 		
 		private var latin:LatinBoard=new LatinBoard(new OptionPanel());
-		private var ProjectLatin:LatinBoard=new LatinBoard(ProjectPane);
+		private var loginlatin:LatinBoard=new LatinBoard(loginPane);
 		private var persectivePanel:Panel;
 		
-		private var loginPanel:Panel;
-		
-		private var KShortPanel:Panel;
 		
 		
 		public function Dock(){
@@ -100,27 +91,29 @@ package Dock{
 			per_b.addEventListener("click",function (e):void{
 				if (persectivePanel==null) {
 					persectivePanel=new Panel("Perspective View",new PerspectiveViewer());
+					WindowSpace.addWindow(persectivePanel);
+					persectivePanel.addEventListener("destory",function (e):void{
+						persectivePanel=null;
+					});
 				}
-				WindowSpace.addWindow(persectivePanel);
 			});
 			
 			option.addEventListener("click",opt_evt);
+			login_b.addEventListener("click",function (e):void{
+				loginlatin.showAt(login_b);
+			});
 			
 			sync_b.addEventListener(MouseEvent.CLICK,SyncManager.SYNC);
-			
-			
-			bioBrick_b.addEventListener(MouseEvent.CLICK,upload_evt);
-			Blast_b.addEventListener(MouseEvent.CLICK,Blast_evt);
-			Kshort_b.addEventListener(MouseEvent.CLICK,Kshort_evt);
-			
-			
-			cloud_b.addEventListener(MouseEvent.CLICK,cloud_evt);
+			upload_b.addEventListener(MouseEvent.CLICK,upload_evt);
 			
 			Biotype.addEventListener(MouseEvent.CLICK,function (e):void{
 				if (designPanel==null) {
 					designPanel=new Panel("BioType Editor",new BioStyleEditor());
+					WindowSpace.addWindow(designPanel);
+					designPanel.addEventListener("destory",function (e):void{
+						designPanel=null;
+					});
 				}
-				WindowSpace.addWindow(designPanel);
 			});
 			layoutButton.addEventListener(MouseEvent.CLICK,chg_layout);
 			FullScreen.addEventListener(MouseEvent.CLICK,function (e):void{
@@ -136,41 +129,9 @@ package Dock{
 			});
 		}
 		
-		protected function Kshort_evt(event:MouseEvent):void
-		{
-			if(KShortPanel==null){
-				KShortPanel=new Panel("K-Shortest Path",new KShortest());
-			}
-			WindowSpace.addWindow(KShortPanel);
-		}
-		
-		private var spanel:Panel;
-		protected function Blast_evt(event:MouseEvent):void
-		{
-			if(spanel==null){
-				spanel=new Panel("Blast",new SequencePanel())
-			}
-			WindowSpace.addWindow(spanel);
-		}
-		
-		protected function cloud_evt(event:MouseEvent):void
-		{
-			// TODO Auto-generated method stub
-			if(GlobalVaribles.token==null){
-				if(loginPanel==null){
-					loginPanel=new Panel("Sign in BioPano Cloud",new LoginPanel());
-				}
-				
-				WindowSpace.addWindow(loginPanel);
-			}else{
-				ProjectPane.refreshList();
-				ProjectLatin.showAt(cloud_b);
-			}
-		}
-		
 		protected function upload_evt(event:MouseEvent):void
 		{
-			WindowSpace.addWindow(new Panel("BioBrick Assistant",new BioBrickHelper()));
+			ProjectManager.Upload();
 		}
 		
 		protected function opt_evt(event:MouseEvent):void
@@ -193,7 +154,7 @@ package Dock{
 			back.setSize(w);
 
 			latin.resetLocation();
-			ProjectLatin.resetLocation();
+			loginlatin.resetLocation();
 			
 		}
 	}

@@ -87,7 +87,7 @@ public static function WakeLine(line:CompressedLine):void{
 	LineSpace.wakeLine(line);
 }
 
-public static function loadLink(id:String,refID:String,nam:String,obj1:CompressedNode,obj2:CompressedNode,type="Default",detail="",picked=false):CompressedLine {
+public static function loadLink(id:String,refID:String,nam:String,obj1:CompressedNode,obj2:CompressedNode,type="Default",detail=null,picked=false):CompressedLine {
 	if(obj1==null||obj2==null){
 		trace("Try Link Before Node Created");
 		trace("\t",id);

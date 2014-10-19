@@ -1,6 +1,4 @@
 package Style{
-	import flash.display.Bitmap;
-	import flash.display.BitmapData;
 	import flash.events.Event;
 	import flash.geom.Point;
 	
@@ -8,7 +6,6 @@ package Style{
 	import Assembly.Canvas.Net;
 	
 	import GUI.Windows.FreeWindow;
-	import GUI.Windows.WindowSpace;
 	
 	import Layout.GlobalLayoutManager;
 	import Layout.Sorpotions.Navigator;
@@ -97,7 +94,6 @@ package Style{
 		
 		
 		public static function GlideNet(x:Number,y:Number):void{
-			I3DPlate.lock();
 			Net.ani_container.aimx=x;
 			Net.ani_container.aimy=y;
 			Net.ani_container.removeEventListener(Event.ENTER_FRAME,sgliding);
@@ -108,7 +104,7 @@ package Style{
 			if (Math.abs(I3DPlate.plate.y-Net.ani_container.aimy)<0.5&&Math.abs(I3DPlate.plate.x-Net.ani_container.aimx)<0.5) {
 				I3DPlate.movePlateTo(Net.ani_container.aimx,Net.ani_container.aimy);
 				Net.ani_container.removeEventListener(Event.ENTER_FRAME,sgliding);
-				I3DPlate.unlock();
+				
 			}
 			Navigator.refreshRange();
 		}
@@ -241,122 +237,6 @@ package Style{
 				e.target.removeEventListener(Event.ENTER_FRAME,floatingIn);
 			}
 		}
-		
-		
-		/////////Amazing Window!!
-		
-		public static function OpenWindow(tar):void{
-			tar.visible=false;
-			
-			var _cach:BitmapData=new BitmapData(tar.width,tar.height,true,0);
-			
-			_cach.draw(tar)
-			
-			var bitmap:Bitmap=new Bitmap(_cach)
-				
-			var skin:WindowOpener=new WindowOpener();
-			skin.win=tar;
-
-			skin.addChild(bitmap);
-			
-			bitmap.x=-bitmap.width/2;
-			bitmap.y=-bitmap.height/2;
-			
-			skin.x=tar.x+bitmap.width/2;
-			skin.y=tar.y+bitmap.height/2;
-			
-			skin.rotationY=120;
-			skin.z=1000;
-			skin.alpha=0;
-			
-			WindowSpace.addMask(skin,tar);
-
-			skin.addEventListener(Event.ENTER_FRAME,OpeningWindow);
-		}
-		private static function OpeningWindow(e):void{
-			e.target.rotationY/=1.5;
-			e.target.z/=1.5;
-			e.target.alpha+=0.1
-			if (Math.abs(e.target.rotationY)<0.5) {
-				e.target.win.visible=true;
-				WindowSpace.removeWindow(e.target);
-				e.target.removeEventListener(Event.ENTER_FRAME,OpeningWindow);
-			}
-		}
-		
-		
-		public static function CloseWindow(tar):void{
-			
-			
-			var _cach:BitmapData=new BitmapData(tar.width,tar.height,true,0);
-			
-			_cach.draw(tar)
-			
-			var bitmap:Bitmap=new Bitmap(_cach)
-			
-			var skin:WindowOpener=new WindowOpener();
-			skin.win=tar;
-			
-			skin.addChild(bitmap);
-			
-			bitmap.x=-bitmap.width/2;
-			bitmap.y=-bitmap.height/2;
-			
-			skin.x=tar.x+bitmap.width/2;
-			skin.y=tar.y+bitmap.height/2;
-			
-			WindowSpace.addMask(skin,tar);
-			WindowSpace.removeWindow(tar);
-			
-			skin.addEventListener(Event.ENTER_FRAME,CloseingWindow);
-		}
-		private static function CloseingWindow(e):void{
-			e.target.rotationX-=10;
-			e.target.alpha/=1.5
-			e.target.z+=50;
-			e.target.y-=30;
-			if (Math.abs(e.target.alpha)<0.1) {
-				WindowSpace.removeWindow(e.target);
-				e.target.removeEventListener(Event.ENTER_FRAME,CloseingWindow);
-			}
-		}
-		
-		public static function FloatDownWindow(tar):void{
-			
-			
-			var _cach:BitmapData=new BitmapData(tar.width,tar.height,true,0);
-			
-			_cach.draw(tar)
-			
-			var bitmap:Bitmap=new Bitmap(_cach)
-			
-			var skin:WindowOpener=new WindowOpener();
-			skin.win=tar;
-			
-			skin.addChild(bitmap);
-			
-			bitmap.x=-bitmap.width/2;
-			bitmap.y=-bitmap.height/2;
-			
-			skin.x=tar.x+bitmap.width/2;
-			skin.y=tar.y+bitmap.height/2;
-			
-			WindowSpace.addMask(skin,tar);
-			WindowSpace.removeWindow(tar);
-			
-			skin.addEventListener(Event.ENTER_FRAME,FloatingDownWindow);
-		}
-		private static function FloatingDownWindow(e):void{
-			e.target.y+=3;
-			e.target.alpha/=1.4
-			if (Math.abs(e.target.alpha)<0.1) {
-				WindowSpace.removeWindow(e.target);
-				e.target.removeEventListener(Event.ENTER_FRAME,FloatingDownWindow);
-			}
-		}
-
-		
-		
 		public static function floatLeft(tar):void{
 			tar.x=tar.aimX+40;
 			tar.alpha=0;
@@ -443,49 +323,26 @@ package Style{
 		}
 		public static function CloseWindowToNet(win:FreeWindow,x,y,w,h):void{
 			
-			
-			
 			var stagePoint:Point=I3DPlate.plate.localToGlobal(new Point(x,y));
 			
-			var _cach:BitmapData=new BitmapData(win.width,win.height,true,0);
+			win.aimX=stagePoint.x-w/2;
+			win.aimY=stagePoint.y-h/2;
+			win.aimW=w;
+			win.aimH=h;
 			
-			_cach.draw(win)
-			
-			var bitmap:Bitmap=new Bitmap(_cach)
-			
-			var skin:WindowOpener=new WindowOpener();
-			skin.win=win;
-			
-			skin.addChild(bitmap);
-			
-			bitmap.x=-bitmap.width/2;
-			bitmap.y=-bitmap.height/2;
-			
-			skin.x=win.x+bitmap.width/2;
-			skin.y=win.y+bitmap.height/2;
-			
-			WindowSpace.addMask(skin,win);
-			WindowSpace.removeWindow(win);
-			
-			skin.addEventListener(Event.ENTER_FRAME,FloatingDownWindow);
-			
-			skin.aimX=stagePoint.x
-			skin.aimY=stagePoint.y;
-			skin.aimW=w;
-			skin.aimH=h;
-			
-			skin.addEventListener(Event.ENTER_FRAME,Closeing);
+			win.addEventListener(Event.ENTER_FRAME,Closeing);
 		}
 		private static function Closeing(e:Event):void{
-			e.target.x=(e.target.x*3+e.target.aimX)/4;
-			e.target.y=(e.target.y*3+e.target.aimY)/4;
-			e.target.width=(e.target.width*3+e.target.aimW)/4;
-			e.target.height=(e.target.height*3+e.target.aimH)/4;
-			e.target.alpha/=1.1;
+			e.target.x=(e.target.x*2+e.target.aimX)/3;
+			e.target.y=(e.target.y*2+e.target.aimY)/3;
+			e.target.width=(e.target.width*2+e.target.aimW)/3;
+			e.target.height=(e.target.height*2+e.target.aimH)/3;
+			e.target.alpha/=1.2;
 			
-			if (Math.abs(e.target.width-e.target.aimW)<1) {	
+			if (Math.abs(e.target.x-e.target.aimX)<1) {	
 				e.target.removeEventListener(Event.ENTER_FRAME,Closeing);
-				WindowSpace.removeWindow(e.target);
+				e.target.dispatchEvent(new Event("destory"));
+			
 			}
 		}
 	}

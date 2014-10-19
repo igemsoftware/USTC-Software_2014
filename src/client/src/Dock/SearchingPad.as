@@ -186,21 +186,19 @@ package Dock
 					preview.GiveNode(list.selectedItem.id,list.selectedItem.label,list.selectedItem.type);
 					
 					var locPoint:Point=new Point();
-					locPoint.y=list.y;
+					locPoint.y=-list.rowHeight*(list.dataProvider.length);
 					locPoint.x=-preview.W-2;
 					var absPoint:Point=localToGlobal(locPoint);
 					preview.aimX=absPoint.x;
 					if (absPoint.y+preview.height>GlobalLayoutManager.StageHeight-10) {
 						absPoint.y=GlobalLayoutManager.StageHeight-preview.height-10;
 					}
-					preview.x=absPoint.x;
+					preview.y=absPoint.x;
 					preview.y=absPoint.y;
 					
 					if (!WindowSpace.contains(preview)) {
-						WindowSpace.addWindow(preview,
-							function ():void{Tween.floatLeft(preview);},
-							function ():void{Tween.FloatDownWindow(preview);}
-						);
+						WindowSpace.addWindow(preview);
+						Tween.floatLeft(preview);
 					}
 				}else{
 					preview.dispatchEvent(new Event("close"));

@@ -99,11 +99,7 @@ package Assembly.ExpandThread{
 					ReminderManager.remind("Busy")
 				}
 			}else{
-				if(mode==EXPAND){
-					ExpandList[tar.ID]=mode;
-				}else{
-					ReminderManager.remind("is already Expanding");
-				}
+				ReminderManager.remind("is already Expanding")
 			}
 			return null;
 		}
@@ -174,20 +170,13 @@ package Assembly.ExpandThread{
 		private static function AutoLink(tar:CompressedNode,edges:Array):void{
 			var hasAutoline:Boolean=false;
 			trace("[Main]:PreExpandReceive");
-			var tmpName:String
 			for each (var branch:ExpandBranch in edges) {
 				
 				if(GxmlContainer.Block_space[branch.node_id]!=null){
-					
-					if(LinkTypeInit.LinkTypeList[branch.LinkType]==null){
-						tmpName=branch.LinkType;
-					}else{
-						tmpName=LinkTypeInit.LinkTypeList[branch.LinkType].label
-					}
 					if(branch.DIRECT==0){
-						Net.loadLink(branch.link_id,"",tmpName,GxmlContainer.Block_space[branch.node_id],branch.father,branch.LinkType);
+						Net.loadLink(branch.link_id,"",LinkTypeInit.LinkTypeList[branch.LinkType].label,GxmlContainer.Block_space[branch.node_id],branch.father,branch.LinkType);
 					}else{
-						Net.loadLink(branch.link_id,"",tmpName,branch.father,GxmlContainer.Block_space[branch.node_id],branch.LinkType);
+						Net.loadLink(branch.link_id,"",LinkTypeInit.LinkTypeList[branch.LinkType].label,branch.father,GxmlContainer.Block_space[branch.node_id],branch.LinkType);
 					}
 					hasAutoline=true;
 				}
@@ -268,9 +257,9 @@ package Assembly.ExpandThread{
 				
 				try{
 					if(branch.DIRECT==0){
-						Net.loadLink(branch.link_id,"",null,GxmlContainer.Block_space[branch.node_id],branch.father,branch.LinkType,"",true);
+						Net.loadLink(branch.link_id,"",null,GxmlContainer.Block_space[branch.node_id],branch.father,branch.LinkType,null,true);
 					}else{
-						Net.loadLink(branch.link_id,"",null,branch.father,GxmlContainer.Block_space[branch.node_id],branch.LinkType,"",true);
+						Net.loadLink(branch.link_id,"",null,branch.father,GxmlContainer.Block_space[branch.node_id],branch.LinkType,null,true);
 					}
 					trace("[main]:Create Link:",branch.link_id);
 				}catch(error:Error) {

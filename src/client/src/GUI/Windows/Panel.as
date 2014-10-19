@@ -6,10 +6,9 @@ package GUI.Windows{
 	import flash.events.MouseEvent;
 	import flash.text.TextField;
 	
-	import Layout.GlobalLayoutManager;
-	
 	import Style.FilterPacket;
 	import Style.FontPacket;
+	import Style.Tween;
 	
 	
 	public class Panel extends Sprite{
@@ -18,19 +17,13 @@ package GUI.Windows{
 		public var backGround:Sprite=new Sprite();
 		public var backGroundShadow:Shape=new Shape();
 		private var closeButton:close_button=new close_button();
+		public var aimY:Number;
 		public var Content:*;
 		public var flexable:Boolean=false;
 		
 		private var SX:Number,SY:Number;
 		
-		public function Panel(nam,Target:Object,sx=null,sy=null){
-			
-			
-			if(sx==null){
-				sx=GlobalLayoutManager.StageWidth/2
-				sy=GlobalLayoutManager.StageHeight/2
-			}
-			
+		public function Panel(nam,Target:Object,sx=300,sy=300){
 			var w:Number,h:Number;
 			
 			this.cacheAsBitmap=true;
@@ -38,13 +31,13 @@ package GUI.Windows{
 			Content=Target;
 			
 			if(Target.hasOwnProperty("Height")){
-				SY=sy-Content.Height/2-30;
+				SY=sy-Content.Height/2;
 			}else{
-				SY=sy-Content.height/2-30;
+				SY=sy-Content.height/2;
 			}
 			SX=sx-Content.width/2;
 			this.x=SX;
-			this.y=SY;
+			aimY=SY;
 			
 			title.x=title.y=9;
 			title.defaultTextFormat=FontPacket.WhiteTitleText;
@@ -80,6 +73,8 @@ package GUI.Windows{
 			addEventListener(MouseEvent.MOUSE_DOWN,focus_evt);
 			this.addEventListener(MouseEvent.MOUSE_DOWN,draging);
 			Target.addEventListener("close",close);
+			Target.addEventListener("closeDelay",close_delay);
+			Tween.floatIn(this);
 		}
 		
 		protected function focus_evt(event:MouseEvent):void{
@@ -106,10 +101,23 @@ package GUI.Windows{
 			closeButton.y=10;
 		}
 		protected function close(e):void{
-			dispatchEvent(new Event("close"));
+			Tween.floatOut(this);
 		}
 		
-	
+		protected function close_delay(e):void{
+			addEventListener(Event.ENTER_FRAME,tick_evt);
+			Content.addEventListener("close",close);
+			Content.addEventListener("closeDelay",close_delay);
+		}
+		private var ticks:uint=0;
+		protected function tick_evt(event:Event):void{
+			ticks++;
+			if (ticks>50) {
+				Tween.floatOut(this);
+				removeEventListener(Event.ENTER_FRAME,tick_evt);
+			}
+		}
+		
 		protected function draging(event:MouseEvent):void{
 			if (event.target==backGround) {
 				this.startDrag();

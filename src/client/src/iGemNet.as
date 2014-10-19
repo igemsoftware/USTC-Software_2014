@@ -17,11 +17,10 @@ package{
 	
 	import Layout.GlobalLayoutManager;
 	
-	import SmartLayout.LayoutRunner;
-	
 	import Style.FontPacket;
 	
 	import fl.managers.StyleManager;
+	import SmartLayout.LayoutRunner;
 	
 	
 	public class iGemNet extends GlobalLayoutManager{
@@ -37,14 +36,12 @@ package{
 		
 		/*Show Version*/
 		
-		public static const Version:String="BioPano 10 Technical Preview";
-		public static const Title:String="BioPanorama 10 @ iGEM Software 2014";
+		public static const Version:String="BioPano 2.975 ProjectOnCloud 1003";
+		public static const Title:String="BioPanorama 2.975 @ iGEM Software 2014";
 		
 		public var User_Data:SharedObject;
 		
 		new LayoutRunner;
-		
-		public const ForceVersion:String="3.1";
 		
 		
 		public function iGemNet(){
@@ -56,7 +53,7 @@ package{
 			
 			User_Data=SharedObject.getLocal("UserAppreciation");
 			
-			if(User_Data.data.valid==ForceVersion){
+			if(User_Data.data.valid!=null){
 				
 				GlobalVaribles.showIconMap=User_Data.data.showIconMap;
 				
@@ -72,13 +69,9 @@ package{
 				
 				GlobalVaribles.token=User_Data.data.token;
 				
-				GlobalVaribles.userName=User_Data.data.userName;
-				
 			}else{
 				
-				new LinkTypeInit(true);
-				
-				User_Data.data.valid=ForceVersion;
+				User_Data.data.valid=true;
 				
 				User_Data.data.showIconMap=true;
 				
@@ -91,8 +84,6 @@ package{
 				User_Data.data.showGrid=true;
 				
 				User_Data.data.token="";
-				
-				User_Data.data.userName=""
 			}
 			
 			stage.addEventListener(Event.DEACTIVATE,function (e):void{
@@ -109,8 +100,6 @@ package{
 				
 				////////Token
 				User_Data.data.token=GlobalVaribles.token;
-				
-				User_Data.data.userName=GlobalVaribles.userName;
 			});
 			
 			////////////

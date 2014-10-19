@@ -7,6 +7,7 @@ package IvyBoard
 	
 	import Layout.GlobalLayoutManager;
 	
+	import LoginAccount.ProjectDetailPanel;
 	
 	public class Ivy
 	{
@@ -62,7 +63,7 @@ package IvyBoard
 						{
 							Board.loadPanel([
 								{label:"Project Information",Object:project_panel}
-							],"Project Information");
+							],"Connection");
 							break;
 						}
 						
