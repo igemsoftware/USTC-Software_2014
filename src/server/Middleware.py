@@ -1,9 +1,10 @@
 __author__ = 'feiyicheng'
 
-from rest_framework.authtoken.models import Token
+# from rest_framework.authtoken.models import Token
+from my_auth.models import Token_mongo
 from django.shortcuts import HttpResponse
 from rest_framework import HTTP_HEADER_ENCODING, exceptions
-from django.contrib.auth.models import AnonymousUser
+from mongoengine.django.auth import User, AnonymousUser
 from django.http import QueryDict
 
 
@@ -26,7 +27,7 @@ class TokenMiddleware(object):
     else the request will be reject with return some error information.
 
     """
-    model = Token
+    model = Token_mongo
 
     def process_request(self, request):
         """ authenticate the user if Token is provide in the HttpRequest header
@@ -64,9 +65,11 @@ class TokenMiddleware(object):
 
         key = auth[1]
         try:
-            token = self.model.objects.get(key=key)
-        except self.model.DoesNotExist:
+            token = self.model.objects.get(token=key)
+        except Exception as e:
+            print(e.message)
             return HttpResponse("{'status':'error', 'reason':'invalid token'}")
+
 
         if not token.user.is_active:
             raise exceptions.AuthenticationFailed('User inactive or deleted')

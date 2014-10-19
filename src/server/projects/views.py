@@ -2,14 +2,17 @@ __author__ = 'feiyicheng'
 
 from pymongo import MongoClient
 from django.shortcuts import HttpResponse
-from django.contrib.auth.models import User
-from django.db.models import Q
+# from django.contrib.auth.models import User
+from mongoengine.django.auth import User
+from mongoengine.queryset import Q
 from django.core.exceptions import ObjectDoesNotExist
 import json
-from .models import Project
+# from .models import Project
+from .models import ProjectFile
 from decorators import logged_in
 from django.http import QueryDict
 from IGEMServer.settings import db_write
+from bson.objectid import ObjectId
 
 
 def search(request, *args, **kwargs):
@@ -31,10 +34,8 @@ def search(request, *args, **kwargs):
         except:
             return HttpResponse("{'status':'error', 'reason':'requet string not conform to json format'}")
 
-        try:
-            author_id = int(para['authorid'])
-        except KeyError:
-            author_id = None
+        author_id = para['authorid']
+
         try:
             prj_name = para['name']
         except KeyError:
@@ -45,21 +46,21 @@ def search(request, *args, **kwargs):
 
         if author_id:
             if prj_name:
-                results = Project.objects.filter(name__icontains=prj_name,
-                                                 author=User.objects.get(pk=author_id))
+                results = ProjectFile.objects.filter(name__icontains=prj_name,
+                                                 author=User.objects.get(pk=ObjectId(author_id)))
             else:
-                results = Project.objects.filter(author=User.objects.get(pk=author_id))
+                results = ProjectFile.objects.filter(author=User.objects.get(pk= ObjectId(author_id)))
         else:
-            results = Project.objects.filter(name__icontains=prj_name)
+            results = ProjectFile.objects.filter(name__icontains=prj_name)
 
         clean_results = []
         for result in results:
             clean_result = {
                 'author': result.author.username,
-                'authorid': result.author.pk,
-                'pid': result.id,
+                'authorid': str(result.author.pk),
+                'pid': str(result.pk),
                 'name': result.name,
-                'collaborators': [coll.pk for coll in result.collaborators.all()],
+                'collaborators': [str(coll.pk) for coll in result.collaborators],
             }
             clean_results.append(clean_result)
 
@@ -80,14 +81,14 @@ def del_project(request, *args, **kwargs):
     """
     if request.method == 'GET':
         user = request.user
-        prj_id = _get_prj_id_int(kwargs['prj_id'])
+        prj_id = kwargs['prj_id']
         if not prj_id:
             return HttpResponse("{'status':'error', 'reason':'prj_id not found'}")
 
         if user.is_authenticated():
             if _is_author(prj_id, user):
                 # the user operating is the author of the project, he/she has the power to delete id
-                Project.objects.get(id=prj_id).delete()
+                ProjectFile.objects.get(pk=ObjectId(prj_id)).delete()
                 return HttpResponse("{'status':'success'}")
 
             else:
@@ -111,7 +112,7 @@ def modify_project(request, *args, **kwargs):
     # POST paras should cover all fields expected to be modified
     if request.method == 'PUT':
         user = request.user
-        prj_id = _get_prj_id_int(kwargs['prj_id'])
+        prj_id = kwargs['prj_id']
         query = request.POST
         if not prj_id:
             return HttpResponse("{'status':'error', 'reason':'prj_id not found'}")
@@ -119,7 +120,7 @@ def modify_project(request, *args, **kwargs):
         if user.is_authenticated():
             if _is_author(prj_id, user):
                 try:
-                    project = Project.objects.get(id=prj_id)
+                    project = ProjectFile.objects.get(pk=ObjectId(prj_id))
                 except ObjectDoesNotExist as e:
                     return HttpResponse("{'status':'error', 'reason':'cannot find project with that id'}")
 
@@ -133,7 +134,7 @@ def modify_project(request, *args, **kwargs):
                     except Exception as e:
                         return HttpResponse("{'status':'error', 'reason':'wrong key provided'}")
 
-                return HttpResponse("{'status':'success', 'prj_id':%d}" % project.pk)
+                return HttpResponse("{'status':'success', 'prj_id':%s}" % str(project.pk))
             else:
                 return HttpResponse("{'status':'error', 'reason':'No access! Only the author of the project \
                 has the right to delete it'}")
@@ -145,14 +146,14 @@ def modify_project(request, *args, **kwargs):
 def add_or_del_collaborator(request, *args, **kwargs):
     if request.method == 'DELETE':
         user = request.user
-        prj_id = _get_prj_id_int(kwargs['prj_id'])
+        prj_id = kwargs['prj_id']
         uid = int(kwargs['uid'])
         if prj_id is None:
             return HttpResponse("{'status':'error', 'reason':'prj id should be a integer'}")
         if _is_author(prj_id, user):
-            project = Project.objects.get(pk=prj_id)
-            coll = User.objects.get(pk=uid)
-            if coll in project.collaborators.all():
+            project = ProjectFile.objects.get(pk=ObjectId(prj_id))
+            coll = User.objects.get(pk=ObjectId(uid))
+            if coll in project.collaborators:
                 project.collaborators.remove(coll)
                 return HttpResponse("{'status':'success'}")
             else:
@@ -163,7 +164,7 @@ def add_or_del_collaborator(request, *args, **kwargs):
 
     elif request.method == 'POST':
         user = request.user
-        prj_id = _get_prj_id_int(kwargs['prj_id'])
+        prj_id = kwargs['prj_id']
         if not prj_id:
             return HttpResponse("{'status':'error', 'reason':'prj_id should be a integer'}")
 
@@ -176,12 +177,12 @@ def add_or_del_collaborator(request, *args, **kwargs):
 
         if user.is_authenticated():
 
-            prj = Project.objects.get(id=prj_id)
+            prj = ProjectFile.objects.get(pk=ObjectId(prj_id))
             try:
-                collaborator = User.objects.get(pk=uid)
+                collaborator = User.objects.get(pk=ObjectId(uid))
             except ObjectDoesNotExist:
                 return HttpResponse("{'status':'error', 'reason':'cannot find a user matching the input username'}")
-            prj.collaborators.add(collaborator)
+            prj.collaborators.append(collaborator)
             return HttpResponse("{'status':'success'}")
         else:
             return HttpResponse("{'status':'error', 'reason':'user not logged in'}")
@@ -199,24 +200,24 @@ def list_or_create(request, *args, **kwargs):
         user = request.user
         clean_results = []
 
-        results_author = user.projects_authored.all()
+        results_author = [project for project in ProjectFile.objects.all() if project.author == user]
         for result in results_author:
             if result.is_active:
                 clean_result = {
                     'author': result.author.username.encode('ascii', 'replace'),
-                    'authorid': result.author.pk,
-                    'pid': result.pk,
+                    'authorid': str(result.author.pk),
+                    'pid': str(result.pk),
                     'name': result.name.encode('ascii', 'replace'),
                 }
                 clean_results.append(clean_result)
 
-        results_collaborated = user.projects_collaborated.all()
+        results_collaborated = [project for project in ProjectFile.objects.all() if user in project.collaborators]
         for result in results_collaborated:
             if result.is_active:
                 clean_result = {
                     'author': result.author.username.encode('ascii', 'replace'),
-                    'authorid': result.author.pk,
-                    'pid': result.pk,
+                    'authorid': str(result.author.pk),
+                    'pid': str(result.pk),
                     'name': result.name.encode('ascii', 'replace'),
                 }
                 clean_results.append(clean_result)
@@ -234,11 +235,9 @@ def list_or_create(request, *args, **kwargs):
 
         try:
             if user.is_authenticated():
-                new_prj = Project.objects.create(name=prj_name, author=user, is_active=True)
+                new_prj = ProjectFile.objects.create(name=prj_name, author=user, is_active=True)
                 attrset = ['description', 'species']
-                # new_prj = Project.objects.get(pk=new_prj.pk)
-                # if len(paras) == 0:
-                #     return HttpResponse("{'status':'success','pid':'%d'}" % (new_prj.pk, ))
+
                 for key in paras.keys():
                     if not key in attrset:
                         if key == 'prj_name':
@@ -250,7 +249,7 @@ def list_or_create(request, *args, **kwargs):
                         new_prj.save()
                 db_write.project.insert({'pid': new_prj.pk, 'node': [], 'link': []})
 
-                return HttpResponse("{'status':'success','pid':'%d'}" % (new_prj.pk, ))
+                return HttpResponse("{'status':'success','pid':'%s'}" % (str(new_prj.pk), ))
         except AttributeError:
             raise AttributeError("hehe")
 
@@ -262,27 +261,27 @@ def list_or_create(request, *args, **kwargs):
 def get_one(request, *args, **kwargs):
     if request.method == 'GET':
         user = request.user
-        prj_id = _get_prj_id_int(kwargs['prj_id'])
+        prj_id = kwargs['prj_id']
         if not prj_id:
             return HttpResponse("{'status':'error', 'reason':'prj_id not found'}")
 
         if user.is_authenticated():
             try:
-                project = Project.objects.get(pk=prj_id)
+                project = ProjectFile.objects.get(pk=ObjectId(prj_id))
             except ObjectDoesNotExist:
                 return HttpResponse("{'status':'error', 'reason':'cannot find project matching the given id'}")
-            if not (user == project.author or user in project.collaborators.all()):
+            if not (user == project.author or user in project.collaborators):
                 return HttpResponse("{'status':'error', 'reason':'you dont have the access to the whole profile'}")
             else:
                 clean_result = {
                     'author': project.author.username.encode('ascii', 'replace'),
-                    'authorid': project.author.pk,
-                    'pid': project.id,
+                    'authorid': str(project.author.pk),
+                    'pid': str(project.pk),
                     'prj_name': project.name.encode('ascii', 'replace'),
                     'species': project.species.encode('ascii', 'replace'),
                     'description': project.description.encode('ascii', 'replace'),
-                    'collaborators': [{'uid': coll.pk, 'username': coll.username} for coll \
-                                      in project.collaborators.all()],
+                    'collaborators': [{'uid': str(coll.pk), 'username': coll.username} for coll \
+                                      in project.collaborators],
                 }
             data_dict = {'status': 'success', 'result': clean_result}
             return HttpResponse(json.dumps(data_dict))
@@ -291,7 +290,7 @@ def get_one(request, *args, **kwargs):
             return HttpResponse("{'status':'error', 'reason':'you should be logged in'}")
     elif request.method == 'PUT':
         user = request.user
-        prj_id = _get_prj_id_int(kwargs['prj_id'])
+        prj_id = kwargs['prj_id']
         query = QueryDict(request.body)
         if not prj_id:
             return HttpResponse("{'status':'error', 'reason':'prj_id not found'}")
@@ -299,7 +298,7 @@ def get_one(request, *args, **kwargs):
         if user.is_authenticated():
             if _is_author(prj_id, user):
                 try:
-                    project = Project.objects.get(id=prj_id)
+                    project = ProjectFile.objects.get(pk=ObjectId(prj_id))
                 except ObjectDoesNotExist as e:
                     return HttpResponse("{'status':'error', 'reason':'cannot find project with that id'}")
 
@@ -313,7 +312,7 @@ def get_one(request, *args, **kwargs):
                     except Exception as e:
                         return HttpResponse("{'status':'error', 'reason':'wrong key provided'}")
 
-                return HttpResponse("{'status':'success', 'prj_id':%d}" % project.pk)
+                return HttpResponse("{'status':'success', 'prj_id':%s}" % str(project.pk))
 
             else:
                 return HttpResponse("{'status':'error', 'reason':'No access! Only the author of the project \
@@ -323,14 +322,14 @@ def get_one(request, *args, **kwargs):
 
     elif request.method == 'DELETE':
         user = request.user
-        prj_id = _get_prj_id_int(kwargs['prj_id'])
+        prj_id = kwargs['prj_id']
         if not prj_id:
             return HttpResponse("{'status':'error', 'reason':'prj_id not found'}")
 
         if user.is_authenticated():
             if _is_author(prj_id, user):
                 # the user operating is the author of the project, he/she has the power to delete id
-                Project.objects.get(id=prj_id).delete()
+                ProjectFile.objects.get(pk=ObjectId(prj_id)).delete()
                 return HttpResponse("{'status':'success'}")
 
             else:
@@ -366,7 +365,7 @@ def search_user(request, *args, **kwargs):
                     'username': result.username,
                     'first_name': result.first_name,
                     'last_name': result.last_name,
-                    'id': result.pk,
+                    'id': str(result.pk),
                 }
                 clean_results.append(clean_result)
 
@@ -389,19 +388,19 @@ def switch_project(request, *args, **kwargs):
         return HttpResponse("{'status':'success', 'id':'%d'}" % (prj.id, ))
 '''
 
-
-def _get_prj_id_int(prj_id_str):
-    """
-    convert a string to in else return None
-    :param prj_id_str: a number in string format
-    :return:
-    """
-    try:
-        prj_id = int(prj_id_str)
-    except ValueError:
-        return None
-    else:
-        return prj_id
+#
+# def _get_prj_id_int(prj_id_str):
+#     """
+#     convert a string to in else return None
+#     :param prj_id_str: a number in string format
+#     :return:
+#     """
+#     try:
+#         prj_id = int(prj_id_str)
+#     except ValueError:
+#         return None
+#     else:
+#         return prj_id
 
 
 def _is_author(prj_id, user):
@@ -411,7 +410,7 @@ def _is_author(prj_id, user):
     :param user:  the user object
     :return: True if the user is the author of the project else False
     """
-    prj = Project.objects.get(id=prj_id)
+    prj = ProjectFile.objects.get(pk=ObjectId(prj_id))
     if user == prj.author:
         return True
     else:

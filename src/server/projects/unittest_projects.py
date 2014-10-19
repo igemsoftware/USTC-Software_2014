@@ -4,7 +4,6 @@ from django.test import TestCase
 import random
 import sys
 from django.http.request import HttpRequest
-from django.contrib.auth.models import User
 import json
 
 from .views import *

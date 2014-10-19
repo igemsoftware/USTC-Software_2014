@@ -4,7 +4,8 @@ import unittest
 import random
 import sys
 from django.http.request import HttpRequest
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
+from mongoengine.django.auth import User
 import json
 
 from .views import *

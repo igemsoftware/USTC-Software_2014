@@ -8,7 +8,7 @@ import bson
 from dict2xml import dict2xml
 from func_box import *
 from decorators import project_verified, logged_in, project_verified_exclude_get, logged_in_exclude_get
-from projects.models import Project
+from projects.models import ProjectFile
 from IGEMServer.settings import db_write, db_read
 from django.http import QueryDict
 
@@ -35,15 +35,15 @@ def add_node(request):
             # all the information is valid(including the group)
             node_id = db_write.node.insert(json.loads(request.POST['info']))
             noderef_id = db_write.node_ref.insert(
-                {'pid': int(request.POST['pid']) if 'pid' in request.POST.keys() else 0,
+                {'pid': ObjectId(request.POST['pid']) if 'pid' in request.POST.keys() else 0,
                  'x': float(request.POST['x']) if 'x' in request.POST.keys() else '0',
                  'y': float(request.POST['y']) if 'y' in request.POST.keys() else '0',
                 }
             )
 
-            prj_id = db_read.project.find_one({'pid': int(request.POST['pid'])})
+            prj_id = db_read.project.find_one({'pid': ObjectId(request.POST['pid'])})
             if prj_id is None:
-                prj_id = db_write.project.insert({'pid': int(request.POST['pid']), 'node': [], 'link': []})
+                prj_id = db_write.project.insert({'pid': ObjectId(request.POST['pid']), 'node': [], 'link': []})
                 prj_id = db_read.project.find_one({'_id': prj_id})
             else:
                 pass
@@ -95,7 +95,7 @@ def get_del_addref_node(request, **kwargs):
             DELETE A REF IN COLLECTION<node_ref>
         '''
         paras = request.POST
-        project = db_read.project.find_one({'pid': int(paras['pid'])})
+        project = db_read.project.find_one({'pid': ObjectId(paras['pid'])})
         noderef = db_read.node_ref.find_one({'_id': ObjectId(kwargs['ID'])})
 
         # not found
@@ -128,17 +128,17 @@ def get_del_addref_node(request, **kwargs):
             return HttpResponse("{'status':'error', 'reason':'object not found'}")
 
         # node exists
-        noderef_id = db_write.node_ref.insert({'pid': int(paras['pid']) if 'pid' in paras.keys() else 0,
+        noderef_id = db_write.node_ref.insert({'pid': ObjectId(paras['pid']) if 'pid' in paras.keys() else 0,
                                          'x': paras['x'] if 'x' in paras.keys() else '0',
                                          'y': paras['y'] if 'y' in paras.keys() else '0',
                                          'node_id': node['_id']}
         )
 
         if noderef_id:
-            prj_id = db_read.project.find_one({'pid': int(request.POST['pid'])})
+            prj_id = db_read.project.find_one({'pid': ObjectId(request.POST['pid'])})
             if prj_id is None:
                 prj_id = db_write.project.insert({
-                    'pid': int(request.POST['pid']),
+                    'pid': ObjectId(request.POST['pid']),
                     'node': [],
                     'link': [],
                 }
@@ -339,7 +339,7 @@ def add_link(request):
             link_id = db_write.link.insert(json.loads(request.POST['info']))
             linkref_id = db_write.link_ref.insert(
                 {
-                    'pid': int(request.POST['pid']) if 'pid' in request.POST.keys() else 0,
+                    'pid': ObjectId(request.POST['pid']) if 'pid' in request.POST.keys() else 0,
                 }
             )
 
@@ -353,9 +353,9 @@ def add_link(request):
                                                               'id1': ObjectId(request.POST['id1']),
                                                               'id2': ObjectId(request.POST['id2'])}})
 
-            prj_id = db_read.project.find_one({'pid': int(request.POST['pid'])})
+            prj_id = db_read.project.find_one({'pid': ObjectId(request.POST['pid'])})
             if prj_id is None:
-                prj_id = db_write.project.insert({'pid': int(request.POST['pid']), 'node': [], 'link': []})
+                prj_id = db_write.project.insert({'pid': ObjectId(request.POST['pid']), 'node': [], 'link': []})
                 prj_id = db_read.project.find_one({'_id': prj_id})
             else:
                 pass
@@ -399,7 +399,7 @@ def get_del_addref_link(request, **kwargs):
             DELETE A REF IN COLLECTION<link_ref>
         '''
         paras = request.POST
-        project = db_read.project.find_one({'pid': int(paras['pid'])})
+        project = db_read.project.find_one({'pid': ObjectId(paras['pid'])})
         linkref = db_read.link_ref.find_one({'_id': ObjectId(kwargs['ID'])})
 
         # not found
@@ -434,16 +434,16 @@ def get_del_addref_link(request, **kwargs):
         # link exists
         linkref_id = db_write.link_ref.insert(
             {
-                'pid': int(paras['pid']) if 'pid' in paras.keys() else 0,
+                'pid': ObjectId(paras['pid']) if 'pid' in paras.keys() else 0,
                 'link_id': ObjectId(kwargs['ID']),
                 'id1': ObjectId(paras['id1']),
                 'id2': ObjectId(paras['id2'])
             }
         )
         if linkref_id:
-            prj_id = db_read.project.find_one({'pid': int(request.POST['pid'])})
+            prj_id = db_read.project.find_one({'pid': ObjectId(request.POST['pid'])})
             if prj_id is None:
-                prj_id = db_write.project.insert({'pid': int(request.POST['pid']), 'node': [], 'link': []})
+                prj_id = db_write.project.insert({'pid': ObjectId(request.POST['pid']), 'node': [], 'link': []})
                 prj_id = db_read.project.find_one({'_id': prj_id})
             else:
                 pass
@@ -590,7 +590,7 @@ def search_json_link(request):
 @project_verified
 def get_project(request, **kwargs):
     if request.method == 'GET':
-        pid = int(kwargs['pid'])
+        pid = ObjectId(kwargs['pid'])
         project = db_read.project.find_one({'pid': pid})
         if project is None:
             return HttpResponse("{'status': 'error','reason':'project not found'}")
@@ -633,7 +633,7 @@ def get_project(request, **kwargs):
 @logged_in
 @project_verified
 def test_prj(request):
-    prj = Project.objects.get(pk=request.POST['pid'])
+    prj = ProjectFile.objects.get(pk=ObjectId(request.POST['pid']))
     return HttpResponse(prj.name + ' ' + prj.author.username)
 
 

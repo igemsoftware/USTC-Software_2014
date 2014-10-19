@@ -1,16 +1,17 @@
 __author__ = 'feiyicheng'
 
 from django.shortcuts import HttpResponse, HttpResponsePermanentRedirect
-from django.contrib.auth import authenticate
-from django.contrib.auth.tokens import default_token_generator
-from django.contrib.auth.models import User
-from rest_framework.authtoken.models import Token
+# from django.contrib.auth.models import User
+from mongoengine.django.auth import User
+# from rest_framework.authtoken.models import Token
+from my_auth.models import Token_mongo
 from django.core.exceptions import ObjectDoesNotExist, MultipleObjectsReturned
 import json
 from urllib import urlencode
 from OAuthClient import OAuthClientGoogle
 from socialoauth import SocialSites, SocialAPIError
 from .settings import SOCIALOAUTH_SITES
+from my_auth.models import genPassword
 
 
 def login_start_google(request):
@@ -61,8 +62,8 @@ def login_complete_google(request):
     if user:
         data = {
             'status': 'success',
-            'token': str(token),
-            'uid': user.pk,
+            'token': token.token,
+            'uid': str(user.pk),
             'googleid': user.username,
         }
     else:
@@ -118,8 +119,8 @@ def login_complete_baidu(request):
     if user:
         data = {
             'status': 'success',
-            'token': str(token),
-            'uid': user.pk,
+            'token': token.token,
+            'uid': str(user.pk),
             'baiduName': profile['username'],
         }
     else:
@@ -140,7 +141,7 @@ def _get_user_and_token(profile):
 
     user, created = User.objects.get_or_create(username=profile['username'])
     _update_user(user, profile)
-    token, created = Token.objects.get_or_create(user=user)
+    token, created = Token_mongo.objects.get_or_create(user=user, token=genPassword(20))
     return (user, token) if user else (None, None)
 
 

@@ -7,8 +7,6 @@ concise enough for anyone who wants to implement their own functions to custom t
 __author__ = 'feiyicheng'
 import json
 from bson.objectid import ObjectId
-from dict2xml import dict2xml
-from projects.models import Project
 from func_box import *
 
 
