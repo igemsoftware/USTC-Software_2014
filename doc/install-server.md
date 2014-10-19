@@ -8,7 +8,7 @@ docker run -d -p 8080 dockerfile/python-runtime
 docker run --name nginxex -v /some/nginx.conf:/etc/nginx.conf:ro -d nginx
 
 
-apt-get install mysql-server libmysqld-dev python python-dev python-pip mongodb git
+apt-get install libmysqld-dev python python-dev python-pip mongodb git libpq-dev
 
 pip install django MySQL-python django-social-auth dict2xml pymongo djangorestframework
 
