@@ -1,18 +1,14 @@
 # BioPano
 
-Designed specifically for biological research, BioPano is a software platform targeted for visualisation of biological relationships as well as cooperative net-building. You can set up your own network of biological relationship by adding information about genetic regulation and metabolic system to the network we already provided for you. More Information please irefer to [our website](http://www.biopano.org)
+Designed specifically for biological research, BioPano is a software platform targeted for visualisation of biological relationships as well as cooperative net-building. You can set up your own network of biological relationship by adding information about genetic regulation and metabolic system to the network we already provided for you. More Information please irefer to our [website](http://www.biopano.org)
 
 ## Installation
 
-### client(windows)
+### client for windows & OS X
 
-Download the latest version in exe format from our [website](http://www.biopano.org). Just run it!
+View the [release](https://github.com/igemsoftware/USTC-Software_2014/releases) pages, download the corresponding platform software. Just run it!
 
-### client(OS X)
-
-Download the latest version in air format from our [website](http://www.biopano.org). Then install the [Adobe AIR Runtime](http://get.adobe.com/air/). At last, run the .air file
-
-### client(Linux)
+### client for Linux
 
 We are sorry that we DO NOT provide a Linux version, because Adobe AIR Runtime for Linux is out of date for a long time. But you can run the .exe file with [WINE](https://www.winehq.org).
 
