@@ -14,8 +14,8 @@ We are sorry that we DO NOT provide a Linux version, because Adobe AIR Runtime f
 
 ### server
 
-We do not recommend users to build at local Biopano server, for one of the main advantages of Biopano is data sharing. However, for special cases such as intranet, you could use the docker repository we provide to deploy a Biopano server rapidly. We encapsulate basic databases to offer powerful basic biological data support for your intranet server.
-Please refer to [installation for server](./doc/install-server.md)
+We do not recommend users to build a local Biopano server, for one of the main advantages of Biopano is data sharing. However, for special cases such as intranet, you could use the docker repository we provide to deploy a Biopano server rapidly. We encapsulate basic databases to offer powerful basic biological data support for your intranet server.
+Please refer to [installation for server(developing)](./doc/install-server.md)
 
 ## Features
 
@@ -89,6 +89,10 @@ Code Platform: [GitLab](http://dev/biopano.org/)
 ## For Developer
 
 Biopano server is written by python, using Django Framework. The client is written by ActionScript. We use Git as our version control system. Welcome to participate in the development!
+
+* [server git repository](http://dev.biopano.org/igem-ustc_software/igemserver)
+* [client git repository](http://dev.biopano.org/igem-ustc_software/biopanoclient)
+* [documentation git repository](http://dev.biopano.org/igem-ustc_software/biopanodoc)
 
 ## Contact Us
 
