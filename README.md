@@ -73,7 +73,7 @@ Code Platform: [GitLab](http://dev/biopano.org/)
 * Shensen Zhao <zss@biopano.org>
 * Long Zhou <zl@biopano.org>
 * Yifan Gao <gyf@biopano.org>
-* Gloden Boss <jzy@biopano.org>
+* Golden Boss <jzy@biopano.org>
 * Taixin Lin <ltx@biopano.org>
 * Longzhi Gan <glz@biopano.org>
 * Yichen Fei <fyc@biopano.org>
