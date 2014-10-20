@@ -10,7 +10,7 @@ docker run --name nginxex -v /some/nginx.conf:/etc/nginx.conf:ro -d nginx
 
 apt-get install libmysqld-dev python python-dev python-pip mongodb git libpq-dev
 
-pip install django MySQL-python django-social-auth dict2xml pymongo djangorestframework mongoengine biopython
+pip install django MySQL-python django-social-auth dict2xml pymongo djangorestframework mongoengine biopython socialoauth
 
 CREATE USER 'master'@'localhost' IDENTIFIED BY 'SyntheticBiology';
 
