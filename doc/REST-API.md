@@ -10,7 +10,7 @@ All the following API(expect OAUTH) must have Authorization parameter in Http He
 
 
 
->The default response is in json, if you want the response in other format, please add parameter "format=XML", "format=YAML", etc. 
+>The default response is in Json, if you want the response in other format, please add parameter "format=XML", "format=YAML", etc. 
 
 If anything goes south, you will get a error response:
 	
@@ -20,14 +20,15 @@ If anything goes south, you will get a error response:
 	}
 
 ## DIRECTORY
-
+	
+	
 	POST	/auth/oauth/(baidu|google)/login
 	GET		/auth/oauth/(baidu|google)/complete&...
 	#GET    /user/<uid>
 	
 	
-	GET		/project/  # list my project
-	POST	/project/  # add
+	GET		/project/project/  # list my project
+	POST	/project/project/  # add
 	
 	GET		/project/<pid>  # login
 	PUT     /project/<pid>  # modify
@@ -48,9 +49,9 @@ If anything goes south, you will get a error response:
 >GET		/data/(node|link)/<ref_id>/link
 @zhaosensen
 	
-	POST	/search/(node|link)
-	POST	/search/user
-	POST	/search/project
+	POST	/search/(node|link)/
+	POST	/search/user/
+	POST	/search/project/
 	
 	POST	/algorithm/shortestpath
 	POST	/algorithm/blastn
@@ -61,7 +62,7 @@ request:
 
 	POST /auth/oauth/(baidu|google)/login
 
-When the user login in successfully, the pages will redict to the /auth/oauth/<baidu|google>/complete
+When the user login in successfully, the pages will redirect to the /auth/oauth/<baidu|google>/complete
 
 ## OAUTH COMPLETE
 
@@ -76,14 +77,14 @@ success :
 	 	"token": "16517d0809f225b7b65a79ef1dc8c552441bf58a", 
 	 	"uid": 8,
 	 	"googleid": "zhoulong6@gmail.com",
-	 	[或者"baiduid": "347238434"]
+	 	[OR "baiduid": "347238434"]
 	}	
 	
 ## LIST PROJECT
 
 request:
 
-	GET .org/project/ (**没有s**)
+	GET /project/project/
 
 response:
 
@@ -100,7 +101,7 @@ response:
 
 request:
 
-	POST .org/project/
+	POST /project/project/
 	
 	prj_name:<string>
 	[species:<string>]
@@ -118,7 +119,7 @@ response:
 
 request:
 
-	GET .org/project/<pid>
+	GET /project/<pid>/
 
 success response:
 
@@ -142,7 +143,7 @@ success response:
 
 request:
 
-	DELETE .org/project/<pid>
+	DELETE /project/<pid>/
 
 response:
 
@@ -153,8 +154,8 @@ response:
 ## MODIFY PROJECT
 request:
 	
-	PUT .org/project/<pid>
-	request体(类似POST):
+	PUT /project/<pid>/
+	request body:
 	
 	name : ...,
 	species: ...,
@@ -166,7 +167,7 @@ request:
 
 request:
 
-	POST .org/project/<pid>/collaborator
+	POST /project/<pid>/collaborator
 	uid:<uid>
 
 response:
@@ -179,7 +180,7 @@ response:
 
 request:
 
-	DELETE .org/project/<pid>/collaborator/<uid>
+	DELETE /project/<pid>/collaborator/<uid>
 
 response:
 
@@ -192,7 +193,7 @@ response:
 
 request:
 	
-	POST .org/auth/logout
+	POST /auth/logout/
 
 response:
 
@@ -206,7 +207,7 @@ response:
 
 request:
 
-	GET /data/(node|link)/<ref_id>
+	GET /data/(node|link)/<ref_id>/
 
 response:
 
@@ -229,7 +230,7 @@ request:
 	}
 	x: 123.123131
 	y: 321314.324
-	pid: 12
+	pid: basfji3458113dsfnmsdjkf
 	
 	----
 	PS:
@@ -249,7 +250,7 @@ request:
 
 	PUT /data/(node|link)/<node\link_id>/
 	
-	pid: 23
+	pid: basfji3458113dsfnmsdjkf
 	x: 123.123
 	y: -213.231
 	
@@ -323,14 +324,14 @@ response:
 		results:
 		[
 			{
-				'_id':'53f455e1af4bd63ddccee4a3',
+				'_id': '53f455e1af4bd63ddccee4a3',
 				'NAME':'ehrL',
 				'TYPE':'Gene',
 				'....':'...'
 
 			},
 			{
-				'_id':'53f455e1af4bd63ddccee4a4'
+				'_id': '53f455e1af4bd63ddccee4a4'
 				'NAME':'thrA',
 				'TYPE':'Gene',
 				'....':'...'
@@ -387,7 +388,7 @@ explain:
 
 ### ex3
 
-only return ID, NAME and TYPE fileds
+only return ID, NAME and TYPE fields
 
 request:
 
@@ -406,7 +407,7 @@ request:
 
 ### ex4
 
-return all fileds except NAME
+return all fields except NAME
 
 request:
 
@@ -457,7 +458,7 @@ request:
 	POST /search/project
 	query: <query>
 	
-	PS: query must conform the json format, and all the fields are shown as following:
+	PS: query must conform the Json format, and all the fields are shown as following:
 	 'name','author','authorid',
 	
 response:
