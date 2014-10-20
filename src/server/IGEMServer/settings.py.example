@@ -84,7 +84,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 GOOGLE_OAUTH2_CLIENT_ID = '803598705759-nuc4bd5cm9k0ng4u91m9fa3pr05158k9.apps.googleusercontent.com'  # os.environ['GOOGLE_OAUTH2_CLIENT_ID']
-GOOGLE_OAUTH2_CLIENT_SECRET = ''  # os.environ['GOOGLE_OAUTH2_CLIENT_SECRET']
+GOOGLE_OAUTH2_CLIENT_SECRET = 'OlSa44n2HuYPfXyGPoCsXEeb'  # os.environ['GOOGLE_OAUTH2_CLIENT_SECRET']
 # GOOGLE_WHITE_LISTED_DOMAINS = ['ailuropoda.org']
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -109,7 +109,7 @@ WSGI_APPLICATION = 'IGEMServer.wsgi.application'
 #         'NAME': 'backend_master',  # Or path to database file if using sqlite3.
 #         # The following settings are not used with sqlite3:
 #         'USER': 'master',
-#         'PASSWORD': '',
+#         'PASSWORD': 'SyntheticBiology',
 #         'HOST': 'mysql',  # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
 #         'PORT': '3306',  # Set to empty string for default.
 #     }
@@ -143,21 +143,21 @@ TEMPLATE_DIRS = (
 
 config_igemserver_local = {
     'CLIENT_ID': '646625069486-lf2c4fimrnv6eqpgt6qltv0g2vnnhuch.apps.googleusercontent.com',
-    'CLIENT_SECRET': '',
+    'CLIENT_SECRET': 'TFSAw1GMa_ZVY6Yr5sbLylL0',
     'REDIRECT_URL': 'http://127.0.0.1:8000/auth/oauth/google/complete/',
     'BASE_URL': r'https://accounts.google.com/o/oauth2/',
 }
 
 config_igemserver = {
     'CLIENT_ID': '774241676936-9j12b72mdoio97liq0ihps57107ja7l3.apps.googleusercontent.com',
-    'CLIENT_SECRET': '',
+    'CLIENT_SECRET': 'ELErpdA3rvOrN4FVdXPf5eTB',
     'REDIRECT_URL': 'http://api.biopano.org/auth/oauth/google/complete/',
     'BASE_URL': r'https://accounts.google.com/o/oauth2/',
 }
 
 config_qq = {
     'CLIENT_ID': '101152562',
-    'CLIENT_SECRET': '',
+    'CLIENT_SECRET': 'f9076c2757efaaeee614fc3c83997918',
     'REDIRECT_URL': 'http://feiyicheng.server.ailuropoda.org/auth/oauth/qq/complete/',
     'BASE_URL': r'https://graph.qq.com/oauth2.0/',
 }
