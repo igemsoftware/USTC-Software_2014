@@ -1,6 +1,6 @@
 # BioPano
 
-Designed specifically for biological research, BioPano is a software platform targeted for visualisation of biological relationships as well as cooperative net-building. You can set up your own network of biological relationship by adding information about genetic regulation and metabolic system to the network we already provided for you. More Information please refer to our [website](http://www.biopano.org)
+Designed specifically for biological research, BioPano is a software platform targeted for visualisation of biological relationships as well as cooperative net-building. You can set up your own network of biological relationship by adding information about genetic regulation and metabolic system to the network we already provided for you. More Information please refer to our [website](http://www.biopano.org).
 
 ## Installation
 

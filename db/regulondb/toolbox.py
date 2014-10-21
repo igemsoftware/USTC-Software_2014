@@ -109,6 +109,7 @@ def savedict(dic, typ, collection):
             return -1
 
         exec "db.%s.insert(dic)" % (collection, )
+        del dic
         db.count.update({'type': 'node'}, {'$inc': {'value': 1}})  # nodecount +1
     elif collection == 'link':
         count = int(db.count.find_one({'type': 'link'})['value'])
@@ -118,6 +119,7 @@ def savedict(dic, typ, collection):
         dic['NODE1'] = None
         dic['NODE2'] = None
         exec "db.%s.insert(dic)" % (collection, )
+        del dic
         db.count.update({'type': 'link'}, {'$inc': {'value': 1}})  # linkcount +1
     elif collection == 'product':
         count = int(db.count.find_one({'type': 'product'})['value'])
@@ -128,6 +130,7 @@ def savedict(dic, typ, collection):
         if dic['TYPE'] == 'small RNA':
             dic['TYPE'] = 'sRNA'
         exec "db.%s.insert(dic)" % (collection, )
+        del dic
         db.count.update({'type': 'product'}, {'$inc': {'value': 1}})  # productcount +1
 
         # sRNA and tRNA and rRNA
@@ -139,6 +142,7 @@ def savedict(dic, typ, collection):
             dic['ID'] = nodecount + 1
             dic['TYPE'] = TYPE
             exec "db.%s.insert(dic)" % (collection, )
+            del dic
         db.count.update({'type': 'node'}, {'$inc': {'value': 1}})  # nodecount +1
     else:
         return
