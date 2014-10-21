@@ -96,7 +96,6 @@ def main(request):
 
 
 def blast_fasta_create():
-    db = MongoClient()['igemdata_new']
     fp = r'/tmp/sequence.fasta'
     file = open(fp, 'w')
     text_list = []

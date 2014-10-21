@@ -121,7 +121,6 @@ def Astar(src, to, k):
 
 
 def build_store():
-	db = MongoClient()['igemdata_new']
 	db.drop_collection('boost_store')
 	db.drop_collection('node_pool')
 	db.drop_collection('link_pool')
@@ -166,7 +165,6 @@ def a_star(request):
 		start_time = datetime.now()
 
 		# boost by database saving
-		db = MongoClient()['igemdata_new']
 		information = db.boost_store.find_one({})
 		#if (information is None) or (information['last_update_time'] != datetime.now().day):
 
