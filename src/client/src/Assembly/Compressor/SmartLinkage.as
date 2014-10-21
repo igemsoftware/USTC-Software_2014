@@ -28,7 +28,7 @@ package Assembly.Compressor
 			compressedCanvas=new CompressedLineSpace();
 			
 			compressedCanvas.addEventListener(MouseEvent.MOUSE_DOWN,Down_evt);
-			compressedCanvas.addEventListener(MouseEvent.RIGHT_CLICK,R_Down_evt);
+			compressedCanvas.addEventListener(MouseEvent.RIGHT_MOUSE_UP,R_Down_evt);
 			floatCanvas.cacheAsBitmap=true;
 			
 			linePicker.restore();
@@ -48,6 +48,7 @@ package Assembly.Compressor
 					break;
 				}
 			}
+			event.stopPropagation();
 		}
 		
 		protected function R_Down_evt(event:MouseEvent):void

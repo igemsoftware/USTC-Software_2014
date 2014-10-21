@@ -3,9 +3,9 @@ package GUI.ContextSheet{
 	import flash.display.Sprite;
 	import flash.events.Event;
 	
-	import GUI.FlexibleWidthObject;
+	import GUI.Assembly.FlexibleWidthObject;
 	
-	import Style.Tween;
+	import UserInterfaces.Style.Tween;
 	
 	
 	

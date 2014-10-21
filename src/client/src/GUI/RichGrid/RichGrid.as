@@ -12,7 +12,7 @@ package GUI.RichGrid
 	
 	import GUI.Scroll.Scroll;
 	
-	import Style.FontPacket;
+	import UserInterfaces.Style.FontPacket;
 	
 	import fl.controls.CheckBox;
 	import fl.events.ListEvent;
@@ -50,7 +50,7 @@ package GUI.RichGrid
 		private var autoHeight:Boolean=false;
 		private var sortAble:Boolean;
 		
-		public function RichGrid(editable=false,selectable=false,multiSelection=false,sortable=true,autoheight=false){
+		public function RichGrid(editable=false,selectable=false,multiSelection=false,sortable=true,autoheight=false,html=false,double=false){
 			edit=editable
 			multi=multiSelection;
 			sortAble=sortable;
@@ -64,7 +64,7 @@ package GUI.RichGrid
 				});
 			}
 			
-			sheet=new Table(editable,selectable,multiSelection,autoheight);
+			sheet=new Table(editable,selectable,multiSelection,true,html,double);
 			
 			
 			addChild(back);
@@ -119,6 +119,7 @@ package GUI.RichGrid
 			if(allselectCheck!=null){
 				allselectCheck.selected=false; 
 			}
+			scroll.negativeRedraw();
 		}
 		public function get dataProvider():Array{
 			return sheet.dataProvider;

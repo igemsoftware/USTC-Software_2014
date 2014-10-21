@@ -5,8 +5,8 @@ import os
 from xml.etree import ElementTree as ET
 import CONSTANT
 from bson import ObjectId
+from CONSTANT import db
 
-db = MongoClient()[CONSTANT.DATABASE]
 data_path = './other/data/'
 #data_path = './data/'
 log_path = './log/uniprot_no_protein_list.txt'

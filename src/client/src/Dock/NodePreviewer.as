@@ -17,7 +17,7 @@ package Dock{
 		
 		public var aimX:Number;
 		
-		private var displayBoard:SkinBox=new SkinBox();
+		private var displayBoard:SkinBox=new SkinBox(W,H);
 		private var _sample:NodeSample=new NodeSample();
 		
 		private var _id:String,_nam:String,_tp:String;
@@ -32,8 +32,6 @@ package Dock{
 			
 			_sample.x=W/2;
 			_sample.y=H/2+5;
-			
-			displayBoard.setSize(W,H)
 			
 			addChild(displayBoard);
 			addChild(_sample);

@@ -3,8 +3,8 @@ package GUI.Windows{
 	import flash.display.Sprite;
 	import flash.events.Event;
 	
-	import Style.FilterPacket;
-	import Style.Tween;
+	import UserInterfaces.Style.FilterPacket;
+	import UserInterfaces.Style.Tween;
 	
 	
 	public class WindowSpace{
@@ -25,15 +25,26 @@ package GUI.Windows{
 			halfArea.graphics.drawRoundRect(2,2,w/2-4,h-4,10,10);
 			halfArea.filters=[FilterPacket.blueGlow];
 		}
-		public static function addWindow(tar,closefunction=null):void{
+		public static function addWindow(tar,openfunction=null,closefunction=null):void{
 			if(!windowSpace.contains(tar)){
 				windowSpace.addChild(tar);
+				
 				tar.addEventListener("focused",chg_focus);
-				tar.addEventListener("destory",destoryBoard);
+				
+				if(openfunction==null){
+					Tween.OpenWindow(tar);
+				}else{
+					openfunction();
+				}
+				
 				if(closefunction==null){
 					tar.addEventListener("close",defaultFadeoutWindow);
 				}else{
-					tar.addEventListener("close",closefunction);
+					tar.addEventListener("close",close);
+					function close(e):void{
+						tar.removeEventListener("close",close);
+						closefunction();
+					}
 				}
 			
 				if (tar.hasOwnProperty("flexable")&&tar.flexable) {
@@ -42,7 +53,31 @@ package GUI.Windows{
 					tar.addEventListener("startDrag",startDragBoard_evt);
 				}
 			}else{
-				windowSpace.swapChildren(tar,windowSpace.getChildAt(windowSpace.numChildren-1))
+				windowSpace.addChild(tar);
+				Tween.EmphasizeWindow(tar);
+			}
+		}
+		
+		public static function FloatWindow(tar):void{
+			if(!windowSpace.contains(tar)){
+				windowSpace.addChild(tar);
+				
+				tar.addEventListener("focused",chg_focus);
+
+				Tween.floatIn(tar);
+
+				tar.addEventListener("close",defaultFloatdownWindow);
+			
+			}else{
+				windowSpace.addChild(tar);
+			}
+		}
+		
+		public static function addMask(tar,level=null):void{
+			if(level==null){
+				windowSpace.addChild(tar);
+			}else{
+				windowSpace.addChildAt(tar,windowSpace.getChildIndex(level));
 			}
 		}
 		
@@ -64,14 +99,15 @@ package GUI.Windows{
 			}
 		}
 		protected static function chg_focus(e):void{
-			windowSpace.swapChildren(e.target,windowSpace.getChildAt(windowSpace.numChildren-1));
-		}
-		protected static function destoryBoard(e):void{
-			removeWindow(e.target);
+			windowSpace.addChild(e.target);
 		}
 		protected static function defaultFadeoutWindow(e):void{
 			e.target.removeEventListener("close",defaultFadeoutWindow);
-			Tween.fadeOut(e.target);
+			Tween.CloseWindow(e.target);
+		}
+		protected static function defaultFloatdownWindow(e):void{
+			e.target.removeEventListener("close",defaultFloatdownWindow);
+			Tween.FloatDownWindow(e.target);
 		}
 		protected static function startDragBoard_evt(event:Event):void{
 			windowSpace.addEventListener(Event.ENTER_FRAME,testEdge);

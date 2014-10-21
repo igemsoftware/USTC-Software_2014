@@ -12,9 +12,9 @@ package GUI.RichUI
 	import flash.text.TextFieldAutoSize;
 	import flash.text.TextFormat;
 	
-	import Style.ColorMixer;
-	import Style.FontPacket;
-
+	import UserInterfaces.Style.ColorMixer;
+	import UserInterfaces.Style.FontPacket;
+	
 	public class RichButton extends Sprite
 	{
 		public static const INDEPENDENT:int=0;
@@ -32,7 +32,8 @@ package GUI.RichUI
 		private var bt_icon:*;
 		public var LabelDistance:Number=5;
 		private var highLighted:Boolean=false;
-
+		private var sus:Loading_Cricle;
+		
 		public function RichButton(type=INDEPENDENT,w=100,h=25)
 		{
 			Type=type;
@@ -41,9 +42,9 @@ package GUI.RichUI
 			labelfield.selectable=false;
 			labelfield.autoSize=TextFieldAutoSize.LEFT;
 			labelfield.text="";
-
+			
 			addChild(buttonBase);
-
+			
 			setSize(w, h);
 			
 			addEventListener(MouseEvent.MOUSE_OVER, function (e):void{redraw(1)});
@@ -51,7 +52,7 @@ package GUI.RichUI
 			addEventListener(MouseEvent.MOUSE_DOWN, function (e):void{redraw(2)});
 			addEventListener(MouseEvent.MOUSE_UP, function (e):void{redraw(1)});
 		}
-
+		
 		public function setIcon(icon,rev=false,upsidedown=false,rotate=0):void{
 			if (bt_icon!=null&&contains(bt_icon)) {
 				removeChild(bt_icon);
@@ -80,7 +81,7 @@ package GUI.RichUI
 				addChild(bt_icon);
 			}
 		}
-
+		
 		public function set focused(b:Boolean):void{
 			highLighted=b;
 			redraw(0)
@@ -94,18 +95,43 @@ package GUI.RichUI
 		{
 			labelfield.setTextFormat(s, 0, labelfield.length);
 		}
-
+		
 		public function set label(s):void
 		{
 			labelfield.text=s;
 			addChild(labelfield);
+			rangeLabel();
 		}
-
+		
 		public function get label():String
 		{
 			return labelfield.text;
 		}
-
+		
+		public function suspend():void{
+			if(sus==null){
+				sus=new Loading_Cricle();
+				sus.mouseEnabled=false;
+			}
+			addChild(sus);
+			sus.x=Width/2;
+			sus.y=Height/2;
+			labelfield.visible=false;
+			mouseEnabled=false;
+		}
+		
+		public function unsuspend():void{
+			
+			if(sus!=null&&contains(sus)){
+				removeChild(sus);
+				sus=null;
+			}
+			
+			labelfield.visible=true;
+			mouseEnabled=true;
+		}
+		
+		
 		public function redraw(state:int):void
 		{
 			var line_color:uint;
@@ -173,31 +199,37 @@ package GUI.RichUI
 			}
 			
 			buttonBase.graphics.endFill();
-
+			
 		}
-
+		
 		public function setSize(w:Number, h:Number):void
 		{
 			Width=w;
 			Height=h;
 			redraw(0);
+			rangeLabel();
+			
+		}
+		
+		public function rangeLabel():void
+		{
 			if(labelfield.text==""&&bt_icon!=null){
-				bt_icon.x=w/2;
-				bt_icon.y=h/2;
+				bt_icon.x=Width/2;
+				bt_icon.y=Height/2;
 				if(contains(labelfield)){
 					removeChild(labelfield);
 				}
 			}else	if (bt_icon!=null) {
 				var tw:Number=bt_icon.width+labelfield.width+LabelDistance;
 				
-				bt_icon.x=w/2+bt_icon.width/2-tw/2;
-				bt_icon.y=h/2;
+				bt_icon.x=Width/2+bt_icon.width/2-tw/2;
+				bt_icon.y=Height/2;
 				labelfield.x=bt_icon.x+bt_icon.width/2+LabelDistance;
 				labelfield.y=Height / 2 - labelfield.height / 2;
 				
 			}else{
 				labelfield.y=Height / 2 - labelfield.height / 2;
-				labelfield.x=w/2-labelfield.width/2;
+				labelfield.x=Width/2-labelfield.width/2;
 			}
 			
 		}

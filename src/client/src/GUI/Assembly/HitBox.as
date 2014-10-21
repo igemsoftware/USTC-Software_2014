@@ -1,7 +1,6 @@
 package GUI.Assembly{
 	import flash.display.Shape;
 	
-	import GUI.FlexibleLayoutObject;
 	
 	public class HitBox extends Shape implements FlexibleLayoutObject{
 		

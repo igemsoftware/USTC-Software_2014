@@ -5,9 +5,9 @@ package GUI.Assembly
 	import flash.events.MouseEvent;
 	import flash.text.TextField;
 	
-	import Style.FilterPacket;
-	import Style.FontPacket;
-	import Style.Tween;
+	import UserInterfaces.Style.FilterPacket;
+	import UserInterfaces.Style.FontPacket;
+	import UserInterfaces.Style.Tween;
 	
 
 	public class IconButton extends Sprite{

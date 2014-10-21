@@ -4,10 +4,9 @@ package Geometry
 	import flash.display.Sprite;
 	import flash.geom.Point;
 	
-	import Assembly.Canvas.I3DPlate;
 	import Assembly.Compressor.CompressedLine;
 	
-	
+
 	public class DrawArrow extends Sprite
 	{
 		
@@ -19,11 +18,12 @@ package Geometry
 			var startArrowType:uint=line.skindata.startArrowType;
 			var endArrowType:uint=line.skindata.endArrowType;
 			
-			_draw(tar,start,end,color,lineType,startArrowType,endArrowType);
+			_draw(tar,start,end,color,lineType,startArrowType,endArrowType,line.DoubleDirec);
 			
 		}
-		public static function _draw(tar,start,end,color,lineType,startArrowType,endArrowType):void{
+		public static function _draw(tar,start,end,color,lineType,startArrowType,endArrowType,doubledirec):void{
 			
+		
 			var alpha:Number;
 			var alpha2:Number;
 			var a1:Point=new Point();
@@ -31,7 +31,7 @@ package Geometry
 			var a3:Point=new Point();
 			var a4:Point=new Point();
 			var theta:Number=0.4;
-			var len:Number=8*I3DPlate.scaleXY+4
+			var len:Number=12;
 			var theta1:Number;
 			var theta2:Number;
 			var theta3:Number;
@@ -102,7 +102,7 @@ package Geometry
 					var coord2:Vector.<Number>=new Vector.<Number>();
 					coord2.push(end.x, end.y, a1.x, a1.y, a2.x, a2.y, end.x, end.y);
 					
-					
+
 					tar.beginFill(color);
 					tar.drawPath(command2, coord2);
 					tar.endFill();
@@ -128,6 +128,7 @@ package Geometry
 					tar.drawPath(command3, coord3);
 					break;
 			}
+			if(doubledirec){
 			
 			switch(startArrowType){
 				case 0:
@@ -167,12 +168,12 @@ package Geometry
 					command33.push(1, 2, 2, 2);
 					var coord33:Vector.<Number>=new Vector.<Number>();
 					coord33.push(start.x, start.y, a3.x, a3.y, a4.x, a4.y, start.x, start.y);
-					
+
 					tar.beginFill(color);
 					tar.drawPath(command33, coord33);
 					tar.endFill();
 					break;
-				
+					
 				case 3:
 					alpha2=Math.atan2(end.x - start.x, end.y - start.y);
 					theta3=alpha + 1.5 * Math.PI - theta;
@@ -191,6 +192,7 @@ package Geometry
 					coord22.push(start.x, start.y, a3.x, a3.y, a4.x, a4.y, start.x, start.y);
 					tar.drawPath(command22, coord22);
 					break;
+			}
 			}
 		}
 	}

@@ -2,7 +2,7 @@ package GUI.Scroll{
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
-	import Style.Tween;
+	import UserInterfaces.Style.Tween;
 
 	public class scrollBar extends Sprite{
 		private const NARROW_WIDTH:uint=6;

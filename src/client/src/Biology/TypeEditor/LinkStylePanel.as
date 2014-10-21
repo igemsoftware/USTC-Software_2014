@@ -41,8 +41,8 @@ package Biology.TypeEditor
 		public function LinkStylePanel(){
 		///////init
 			LineChooser=new RichComboBox(RichComboBox.MIDDLE);
-			endArrowChooser=new RichComboBox(RichComboBox.RIGHT_EDGE);
 			startArrowChooser=new RichComboBox(RichComboBox.LEFT_EDGE,true);
+			endArrowChooser=new RichComboBox(RichComboBox.RIGHT_EDGE);
 			
 			LineChooser.dataProvider=SymbolType.LineTypes;
 			startArrowChooser.dataProvider=SymbolType.ArrowTypes;
@@ -84,7 +84,7 @@ package Biology.TypeEditor
 			editType.skindata.stroke=slider.value;
 			editType.skindata.lineType=LineChooser.selectedItem.value;
 			editType.skindata.startArrowType=startArrowChooser.selectedItem.value;
-			editType.skindata.endArrowType=endArrowChooser.selectedItem.value;
+			editType.skindata.endArrowType=startArrowChooser.selectedItem.value;
 			_sample.showSample(editType);
 		}
 		

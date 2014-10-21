@@ -151,7 +151,6 @@ private static function recordMultiNodeExistance(arr:Array,status:int):ByteArray
 		for each (node in arr) {
 			
 			_encodedMap.writeUTF(node.ID);
-			_encodedMap.writeUTF(node.refID);
 			_encodedMap.writeUTF(node.Name);
 			
 			_encodedMap.writeDouble(node.remPosition[0]);
@@ -159,9 +158,12 @@ private static function recordMultiNodeExistance(arr:Array,status:int):ByteArray
 			
 			_encodedMap.writeUTF(node.Type.Type);
 			
-
-			_encodedMap.writeUTF(node.detail);
-		
+			if(node.detail!=null){
+				_encodedMap.writeUTF(node.detail);
+			}else{
+				_encodedMap.writeUTF("");
+			}
+			
 			for each (arrow in node.Arrowlist) {
 				arrows[arrow.ID]=arrow;
 			}
@@ -174,14 +176,13 @@ private static function recordMultiNodeExistance(arr:Array,status:int):ByteArray
 			_encodedMap.writeUTF(arrow.ID);
 			
 			_encodedMap.writeUTF(arrow.Name);
-			_encodedMap.writeUTF(arrow.refID);
 			
 			_encodedMap.writeUTF((arrow.linkObject[0] as CompressedNode).ID);
 			_encodedMap.writeUTF((arrow.linkObject[1] as CompressedNode).ID);
 			
 			_encodedMap.writeUTF(arrow.Type.Type);
 			
-			_encodedMap.writeUTF(arrow.detail);
+			_encodedMap.writeBoolean(arrow.DoubleDirec);
 		}
 		
 		_encodedMap.position=4;
@@ -201,7 +202,6 @@ private static function recordLineExistance(arrow:CompressedLine,status:int):Byt
 	
 	_encodedMap.writeUTF(arrow.ID);
 	if(status==DELETE_LINE){
-		_encodedMap.writeUTF(arrow.refID);
 		_encodedMap.writeUTF(arrow.Name);
 		
 		_encodedMap.writeUTF((arrow.linkObject[0] as CompressedNode).ID);
@@ -209,7 +209,13 @@ private static function recordLineExistance(arrow:CompressedLine,status:int):Byt
 		
 		_encodedMap.writeUTF(arrow.Type.Type);
 		
-		_encodedMap.writeUTF(arrow.detail);
+		_encodedMap.writeBoolean(arrow.DoubleDirec);
+		/*for later version ,this will be added
+		if(arrow.detail!=null){
+		_encodedMap.writeUTF(node.detail);
+		}else{
+		_encodedMap.writeUTF("");
+		}*/
 	}
 	return _encodedMap;
 }
@@ -222,7 +228,11 @@ private static function recordNodeDetail(node:CompressedNode):ByteArray{
 	_encodedMap.writeUTF(node.Name);
 	_encodedMap.writeUTF(node.Type.Type);
 	
-	_encodedMap.writeUTF(node.detail);
+	if(node.detail!=null){
+		_encodedMap.writeUTF(node.detail);
+	}else{
+		_encodedMap.writeUTF("");
+	}
 	
 	return _encodedMap;
 }
@@ -232,13 +242,18 @@ private static function recordLineDetail(arrow:CompressedLine):ByteArray{
 	_encodedMap.writeInt(EDIT_LINE);
 	
 	_encodedMap.writeUTF(arrow.ID);
-	_encodedMap.writeUTF(arrow.Name);
+	_encodedMap.writeUTF(arrow.Name);		
 	_encodedMap.writeUTF(arrow.Type.Type);
 	
-	//for later version ,this will be added 
-	//now added
-	_encodedMap.writeUTF(arrow.detail);
-
+	
+	/*for later version ,this will be added
+	if(arrow.detail!=null){
+	_encodedMap.writeUTF(node.detail);
+	}else{
+	_encodedMap.writeUTF("");
+	}*/
+	
+	
 	return _encodedMap;
 }
 
@@ -337,14 +352,16 @@ public static function rewind():void{
 			var nodes:int=encodedStep.readInt();
 			for (var j:int = 0; j < nodes; j++) 
 			{
-				node=Net.loadCompressedBlock(encodedStep.readUTF(),encodedStep.readUTF(),encodedStep.readUTF(),encodedStep.readDouble(),encodedStep.readDouble(),encodedStep.readUTF(),encodedStep.readUTF());
+				node=Net.loadCompressedBlock(encodedStep.readUTF(),encodedStep.readUTF(),encodedStep.readDouble(),encodedStep.readDouble(),encodedStep.readUTF(),encodedStep.readUTF());
 				
 				tmpArr.push(node);
 			}
 			
 			
 			while(encodedStep.bytesAvailable>0){
-				Net.loadLink(encodedStep.readUTF(),encodedStep.readUTF(),encodedStep.readUTF(),Block_space[encodedStep.readUTF()],Block_space[encodedStep.readUTF()],encodedStep.readUTF(),encodedStep.readUTF());
+				{
+					Net.loadLink(encodedStep.readUTF(),encodedStep.readUTF(),Block_space[encodedStep.readUTF()],Block_space[encodedStep.readUTF()],encodedStep.readUTF(),encodedStep.readBoolean());
+				}
 			}
 			OperationQueue[currentStep]=recordMultiNodeExistance(tmpArr,ADD_NODE);
 			
@@ -383,7 +400,7 @@ public static function rewind():void{
 		case DELETE_LINE: //to add
 		{
 			
-			arrow=Net.loadLink(encodedStep.readUTF(),encodedStep.readUTF(),encodedStep.readUTF(),Block_space[encodedStep.readUTF()],Block_space[encodedStep.readUTF()],encodedStep.readUTF(),encodedStep.readUTF());
+			arrow=Net.loadLink(encodedStep.readUTF(),encodedStep.readUTF(),Block_space[encodedStep.readUTF()],Block_space[encodedStep.readUTF()],encodedStep.readUTF(),encodedStep.readBoolean());
 			
 			OperationQueue[currentStep]=recordLineExistance(arrow,ADD_LINE);	
 			
@@ -398,8 +415,7 @@ public static function rewind():void{
 			arrow.Name=encodedStep.readUTF();
 			
 			arrow.Type=LinkTypeInit.LinkTypeList[encodedStep.readUTF()];
-			
-			arrow.detail=encodedStep.readUTF();
+			//node.detail=encodedStep.readUTF();
 			
 			Net.RedrawFocus(arrow);
 			

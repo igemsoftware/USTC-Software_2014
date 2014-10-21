@@ -4,7 +4,7 @@ package GUI.RadioButton
 	import flash.display.Sprite;
 	import flash.events.MouseEvent;
 	
-	import Style.FilterPacket;
+	import UserInterfaces.Style.FilterPacket;
 	
 	public class GlowRadioIcon extends Sprite
 	{

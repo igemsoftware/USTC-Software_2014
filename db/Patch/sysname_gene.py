@@ -2,8 +2,7 @@ __author__ = 'Beibeihome'
 
 from pymongo import *
 import CONSTANT
-
-db = MongoClient()[CONSTANT.DATABASE]
+from CONSTANT import db
 
 
 def base_name_to_uni(database_name):

@@ -2,7 +2,7 @@ package GUI.Assembly{
 	import flash.text.TextField;
 	import flash.text.TextFieldAutoSize;
 	
-	import Style.FontPacket;
+	import UserInterfaces.Style.FontPacket;
 	
 	
 	public class LinkTextField extends TextField{

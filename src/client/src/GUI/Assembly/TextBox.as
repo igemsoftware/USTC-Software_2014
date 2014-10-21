@@ -7,7 +7,7 @@ package GUI.Assembly{
 	
 	import GUI.Scroll.Scroll;
 	
-	import Style.FontPacket;
+	import UserInterfaces.Style.FontPacket;
 
 	public class TextBox{
 		public function TextBox(){

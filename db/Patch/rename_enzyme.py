@@ -3,12 +3,12 @@ __author__ = 'Beibeihome'
 from pymongo import *
 import CONSTANT
 import bson
+from CONSTANT import db
 
 ## 2014/8/28
 ## This Patch change attribute in kegg database that NAME to ENTRY, NAME_KEGG to NAME
 ## After Patch, Version = 1.1.1.0
 
-db = MongoClient()[CONSTANT.DATABASE]
 log_path = './log/rename_enzyme.txt'
 enzyme_log = './log/edited_enzyme_log.txt'
 multi_gene_log = open('./log/with_multigene_enzyme.txt', 'w+')

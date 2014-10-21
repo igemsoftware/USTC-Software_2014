@@ -7,8 +7,6 @@ package IvyBoard
 	
 	import Layout.GlobalLayoutManager;
 	
-	import LoginAccount.ProjectDetailPanel;
-	
 	public class Ivy
 	{
 
@@ -20,7 +18,6 @@ package IvyBoard
 		public var attribe_panel:AttribPanel=new AttribPanel();
 		public var expand_panel:ExpandPanel=new ExpandPanel();
 		public var layout_panel:LayoutPanel=new LayoutPanel();
-		public var project_panel:ProjectDetailPanel=new ProjectDetailPanel();
 		
 		public var show:Boolean=false;
 		private var remPannel:String;
@@ -44,7 +41,7 @@ package IvyBoard
 							],"Add Node");
 							break;
 						}
-						case "Connect":
+						case "Info":
 						{
 							Board.loadPanel([
 								{label:"Connection",Object:attribe_panel},
@@ -59,14 +56,6 @@ package IvyBoard
 							],"Layout");
 							break;
 						}
-						case "Info":
-						{
-							Board.loadPanel([
-								{label:"Project Information",Object:project_panel}
-							],"Connection");
-							break;
-						}
-						
 					}
 				}
 			})

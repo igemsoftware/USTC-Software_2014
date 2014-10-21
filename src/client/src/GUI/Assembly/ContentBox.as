@@ -1,6 +1,5 @@
 package GUI.Assembly{
 	import flash.display.Sprite;
-	import GUI.FlexibleLayoutObject;
 	
 	
 	public class ContentBox extends Sprite implements FlexibleLayoutObject {

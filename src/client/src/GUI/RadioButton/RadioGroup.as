@@ -2,11 +2,11 @@ package GUI.RadioButton
 {
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
-
+	
 	public class RadioGroup extends EventDispatcher
 	{
 		public var SelectedMember:*
-			
+		
 		public function RadioGroup()
 		{
 		}
@@ -17,6 +17,11 @@ package GUI.RadioButton
 				}
 				dispatchEvent(new Event(Event.CHANGE));
 				SelectedMember=member;
+			}
+		}
+		public function clearSelection():void{
+			if(SelectedMember!=null){
+				SelectedMember.selected=false;
 			}
 		}
 	}

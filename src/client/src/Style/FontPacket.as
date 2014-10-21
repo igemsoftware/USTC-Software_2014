@@ -13,7 +13,6 @@ package Style{
 		public static var BlackTitleTextLv2:TextFormat=new TextFormat("微软雅黑",19,0x000000);
 		
 		public static var ContentText:TextFormat=new TextFormat("微软雅黑",16,0x000000);
-		ContentText.leading=4;	
 		
 		public static var WhiteContentText:TextFormat=new TextFormat("微软雅黑",16,0xffffff);
 		
@@ -28,8 +27,6 @@ package Style{
 		public static var DisabledContentText:TextFormat=new TextFormat("微软雅黑",16,0xcccccc);
 		
 		public static var HintText:TextFormat=new TextFormat("微软雅黑",18,0xffffff);
-		
-		public static var LabelHintText:TextFormat=new TextFormat("微软雅黑",14,0x666666);
 		
 		public static var HighDensityText:TextFormat=new TextFormat("微软雅黑",14,0x000000);
 		

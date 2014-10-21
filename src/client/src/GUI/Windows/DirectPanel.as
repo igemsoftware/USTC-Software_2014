@@ -9,10 +9,10 @@ package GUI.Windows{
 	import flash.geom.Matrix;
 	import flash.text.TextField;
 	
-	import Style.ColorMixer;
-	import Style.FilterPacket;
-	import Style.FontPacket;
-	import Style.Tween;
+	import UserInterfaces.Style.ColorMixer;
+	import UserInterfaces.Style.FilterPacket;
+	import UserInterfaces.Style.FontPacket;
+	import UserInterfaces.Style.Tween;
 	
 	
 	public class DirectPanel extends Sprite{

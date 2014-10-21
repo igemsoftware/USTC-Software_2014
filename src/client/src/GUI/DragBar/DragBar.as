@@ -3,9 +3,9 @@ package GUI.DragBar{
 	import flash.events.MouseEvent;
 	import flash.geom.Rectangle;
 	
-	import IEvent.ScaleEvent;
+	import Kernel.Events.ScaleEvent;
 	
-	import Assembly.Canvas.Net;
+	import Kernel.SmartCanvas.Canvas.Net;
 
 	public class DragBar extends Sprite{
 		public var drager:ScaleDrager=new ScaleDrager();

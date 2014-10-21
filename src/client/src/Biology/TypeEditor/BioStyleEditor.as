@@ -21,6 +21,7 @@ package Biology.TypeEditor{
 	import Layout.GlobalLayoutManager;
 	import Layout.LayoutManager;
 	
+	import Assembly.FocusCircle;
 	import Assembly.Canvas.Net;
 	
 	import Style.ColorMixer;
@@ -45,7 +46,7 @@ package Biology.TypeEditor{
 		private var _list:RichList=new RichList();
 		private var _title:TitleTextField=new TitleTextField("Choose a type");
 		
-
+		private var focusCir:FocusCircle=new FocusCircle(35);
 		
 		private var dp:DataProvider;
 		
@@ -70,6 +71,8 @@ package Biology.TypeEditor{
 			lineBackUp=LinkTypeInit.LinktypeProvider;
 			lineApplyData=LinkTypeInit.LinktypeProvider;
 			
+			focusCir.visible=false;
+			
 			nodebtn.label="Node";
 			linkbtn.label="Link";
 			
@@ -91,6 +94,8 @@ package Biology.TypeEditor{
 			//addChild(_box);
 			addChild(_list);
 			addChild(_title);
+			addChild(focusCir);
+			
 	
 			setSize(500,330);
 			
@@ -135,6 +140,7 @@ package Biology.TypeEditor{
 				(LinkTypeInit.LinkTypeList[LItem.Type] as LinkType).copyLinkType(LItem);
 			}
 			Net.ShapeRedraw();
+			GlobalVaribles.eventDispatcher.dispatchEvent(new Event("SampleRedraw"));
 		}
 		
 		private var _mode:int=0;
@@ -151,15 +157,14 @@ package Biology.TypeEditor{
 					nodebtn.focused=true;
 					linkbtn.focused=false;
 					
-					addChild(_nodePanel.focusCir);
 					addChild(_nodePanel._sample);
 					addChild(_nodePanel);
-					
+					addChild(focusCir);
 					
 					_list.selectedIndex=currentNodeType;
 				}else{
-					if(contains(_nodePanel.focusCir)){
-						removeChild(_nodePanel.focusCir);
+					if(contains(focusCir)){
+						removeChild(focusCir);
 						removeChild(_nodePanel);
 						removeChild(_nodePanel._sample);
 					}
@@ -176,8 +181,10 @@ package Biology.TypeEditor{
 				}
 				if(_list.selectedItem!=null){
 					_title.text=_list.selectedItem.label;
+					focusCir.visible=true;
 				}else{
 					_title.text="Choose a type"
+					focusCir.visible=false;
 				}
 			}
 		}
@@ -187,14 +194,16 @@ package Biology.TypeEditor{
 				
 				_title.text=e.item.label;
 				
+				focusCir.visible=true;
+				
 				currentNodeType=e.index;
-				
-				
 				
 				_nodePanel.showType(e.item as NodeType);
 				
 			}else{
 				_title.text=e.item.label;
+				
+				focusCir.visible=false;
 				
 				currentLineType=e.index;
 				
@@ -228,8 +237,8 @@ package Biology.TypeEditor{
 			LayoutManager.setHorizontalLayout(this,"center",LIST_WIDTH/2+4,4,0,nodebtn,linkbtn);
 			LayoutManager.setHorizontalLayout(this,"center",(w+LIST_WIDTH)/2,h-30,10,ok_b,apply_b,cancel_b);
 			
-			_nodePanel.focusCir.x=_nodePanel._sample.x=_linePanel._sample.x=(w+LIST_WIDTH)/2;
-			_nodePanel.focusCir.y=_nodePanel._sample.y=_linePanel._sample.y=_title.height+10+_box2.height/2;
+			focusCir.x=_nodePanel._sample.x=_linePanel._sample.x=(w+LIST_WIDTH)/2;
+			focusCir.y=_nodePanel._sample.y=_linePanel._sample.y=_title.height+10+_box2.height/2;
 			
 			_boxRange.setSize(w,h);
 			_box.setSize(LIST_WIDTH,h);

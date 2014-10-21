@@ -21,7 +21,7 @@ package FunctionPanel{
 	import algorithm.SelectArray;
 	
 	
-	public class TypePanel extends Sprite{
+	public class typePanel extends Sprite{
 		private const W:uint=250;
 		private const H:uint=320;
 		
@@ -31,7 +31,7 @@ package FunctionPanel{
 		public var cel_b:RichButton=new RichButton();
 		private var Target:*;
 		
-		public function TypePanel(tar){
+		public function typePanel(tar){
 			Target=tar;
 			
 			if (tar.constructor==CompressedNode) {

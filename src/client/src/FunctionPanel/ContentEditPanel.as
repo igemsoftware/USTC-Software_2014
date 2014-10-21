@@ -3,30 +3,32 @@ package FunctionPanel
 	import flash.display.Sprite;
 	import flash.events.Event;
 	
-	import Assembly.Compressor.CompressedLine;
-	
 	import GUI.ContextSheet.ContextSheet;
 	import GUI.ContextSheet.ContextSheetItem;
 	import GUI.RichGrid.RichGrid;
 	import GUI.RichUI.RichTextField;
 	
+	import Assembly.Compressor.CompressedNode;
+	
 	public class ContentEditPanel extends Sprite
 	{
 		public var cts:ContextSheet=new ContextSheet();
-		public var rtg:RichGrid=new RichGrid(true,true,false,false,true);
+		public var rtg:RichGrid=new RichGrid(true);
 		public var rtf:RichTextField=new RichTextField();
 		
 		public var Height:Number;
 		
-		public var Target:*;
+		public var Target:CompressedNode;
 		private var Width:Number;
 		
-		public function ContentEditPanel(tar)
+		public function ContentEditPanel(tar:CompressedNode)
 		{
 			
 			Target=tar;
 			
 			setContent();
+			
+			rtg.setSize(100,250);
 			
 			addChild(cts);
 			
@@ -44,37 +46,37 @@ package FunctionPanel
 			var t:Array=[];
 			var tmpJson:Object=JSON.parse(Target.detail);
 			for (var s:String in tmpJson) {
-				if (s=="Description") {
+				if (s=="Information") {
 					rtf.text=tmpJson[s];
-				}else if(s!="NAME"&&s!="TYPE"){
+				}else {
 					t.push({Feature:s,Description:tmpJson[s]});
 				}
 			}
 			rtg.dataProvider=t;
 			rtg.columns=["Feature","Description"];
 			rtg.columnWidths=[200,200];
-			var a1:ContextSheetItem=new ContextSheetItem("Description",rtf);
+			var a1:ContextSheetItem=new ContextSheetItem("Instruction",rtf);
 			conArray.push(a1);
 			
 			cts.contextSheetList=conArray;
 		}
 		
 		public function get json():String{
+			var rs:String='{';
 			var ta:Array=rtg.dataProvider;
-			
-			var saveObj:Object=new Object();
 			for (var i:int = 0; i < ta.length; i++) {
-				
-				saveObj[ta[i].Feature]=ta[i].Description;
-
+				rs+='"'+ta[i].Feature+'":"'+ta[i].Description+'"';
+				if (i!=ta.length-1) {
+					rs+=','
+				}
 			}
+			var loadtext:String=rtf.text;
+			loadtext=loadtext.split('\"').join('\\"');
+			rs+=',"Information":"'+loadtext+'"'
+			rs+='}';
 			
-			saveObj["NAME"]=Target.Name;
-			saveObj["TYPE"]=Target.Type.Type;
-			
-			saveObj["Description"]=rtf.text;
-			
-			return JSON.stringify(saveObj);
+			trace(rs);
+			return rs;
 		}
 		public function setSize(w:Number):void{
 			Width=w;

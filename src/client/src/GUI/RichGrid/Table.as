@@ -12,7 +12,7 @@ package GUI.RichGrid
 	
 	import GUI.Assembly.FocusRect;
 	
-	import Style.FontPacket;
+	import UserInterfaces.Style.FontPacket;
 	
 	import fl.controls.CheckBox;
 	
@@ -47,16 +47,23 @@ package GUI.RichGrid
 		private var selectable:Boolean=false;
 		private var multiSelection:Boolean=false;
 		private var autoHeight:Boolean=false;
+		private var Html:Boolean;
+		private var DoubleClick:Boolean;
 		
 		private var _selectedIndex:int;
 		
 		public var selectedItem:Object;
 		public var selectedItems:Array=[];
 		
+		private var sortcol:int;
+		private var sortdirct:Boolean;
+		public var Height:int;
 		
-		public function Table(edit=false,select=false,multi=false,autoheight=false)
+		public function Table(edit=false,select=false,multi=false,autoheight=false,html=false,doubleClick=false)
 		{
 			
+			DoubleClick=doubleClick;
+			Html=html
 			editable=edit;
 			selectable=edit|select;
 			multiSelection=multi;
@@ -135,6 +142,7 @@ package GUI.RichGrid
 		}
 		
 		public function set dataProvider(d:Array):void{
+			
 			db=d;
 			selectedIndex=-1;
 			selectedItem=null;
@@ -187,7 +195,6 @@ package GUI.RichGrid
 							if(e.currentTarget.selected){
 								selectedItems.push(db[Number(e.currentTarget.name)]);
 								addChildAt(highLightSpace[Number(e.currentTarget.name)],0);
-								
 							}else{
 								removeChild(highLightSpace[Number(e.currentTarget.name)]);
 								selectedItems.splice(
@@ -244,17 +251,25 @@ package GUI.RichGrid
 							
 						}
 						
-						textSpace[id].addEventListener(FocusEvent.FOCUS_IN,focus_evt);
-						textSpace[id].addEventListener(MouseEvent.DOUBLE_CLICK,focus_evt);
+						textSpace[id].addEventListener(MouseEvent.CLICK,focus_evt);
+						if(DoubleClick){
+							textSpace[id].addEventListener(MouseEvent.DOUBLE_CLICK,focus_evt);
+							textSpace[id].doubleClickEnabled=true
+						}
 						textSpace[id].addEventListener(MouseEvent.ROLL_OVER,hit_evt);
 						
-						textSpace[id].doubleClickEnabled=true
+						
 						
 					}
 					textSpace[id].width=clw[j];
 					textSpace[id].y=curH;
 					textSpace[id].x=curW;
-					textSpace[id].text=db[i][cl[j]];
+					
+					if(Html){
+						textSpace[id].htmlText=db[i][cl[j]];
+					}else{
+						textSpace[id].text=db[i][cl[j]];
+					}
 					textSpace[id].height=textSpace[id].textHeight+4;
 					
 					if(maxH<textSpace[id].height)maxH=textSpace[id].height;
@@ -329,6 +344,7 @@ package GUI.RichGrid
 				
 				contentHeight+=addingMark.height+5;
 			}
+			Height=contentHeight;
 			
 		}
 		
@@ -413,11 +429,7 @@ package GUI.RichGrid
 			moveHit.height=rowHeight[hit_R];
 			moveHit.width=contentWidth;
 		}
-		
-		
-		private var sortcol:int;
-		private var sortdirct:Boolean;
-		
+
 		
 		public function sortOnColumn(n:int):void{
 			if(sortcol!=n){

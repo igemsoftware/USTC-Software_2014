@@ -29,7 +29,7 @@ package Style{
 			if(	AniList[tar.ID]==null){
 				AniList[tar.ID]=tar;
 				AniBufferNum++;
-				//trace("[TweenX]:Current Animation:",AniBufferNum);
+				trace("[TweenX]:Current Animation:",AniBufferNum);
 				if(!AniProcessor.hasEventListener(Event.ENTER_FRAME)){
 					runtime=getTimer();
 					AniProcessor.addEventListener(Event.ENTER_FRAME,gliding);
@@ -44,7 +44,7 @@ package Style{
 				if(	AniList[node.ID]==null){
 					AniList[node.ID]=node;
 					AniBufferNum++;
-					//trace("[TweenX]:Current Animation:",AniBufferNum);
+					trace("[TweenX]:Current Animation:",AniBufferNum);
 					if(!AniProcessor.hasEventListener(Event.ENTER_FRAME)){
 						runtime=getTimer();
 						AniProcessor.addEventListener(Event.ENTER_FRAME,gliding);
@@ -82,7 +82,7 @@ package Style{
 					cmpList.push(node);
 					delete AniList[node.ID];
 					AniBufferNum--;
-					//trace("[TweenX]:Current Animation:",AniBufferNum);
+					trace("[TweenX]:Current Animation:",AniBufferNum);
 				}
 				
 				node.x=node.Position[0]*I3DPlate.scaleXY;

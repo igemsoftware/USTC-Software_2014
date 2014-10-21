@@ -14,11 +14,10 @@ package Assembly.Compressor
 		
 		///////////Saving Attribution
 		public var ID:String;
-		public var refID:String="";
 		public var Name:String;
 		private var _Type:NodeType;
 		
-		public var detail:String="";
+		public var detail:String;
 		
 		public var Position:Vector.<Number>=new <Number>[0,0];
 		public var aimPosition:Vector.<Number>=new <Number>[0,0];
@@ -27,7 +26,7 @@ package Assembly.Compressor
 		public var centerRadius:Number=200;
 		
 		//////////Cloud
-		public var CloudState:int;
+		public var state:int;
 		
 		/////////////Runtime
 		
@@ -44,20 +43,20 @@ package Assembly.Compressor
 		public var TextMap:BitmapData=new BitmapData(1,1);
 		public var textX:Number=0,textY:Number=0;
 		
-		public var isLoadingDetail:Boolean=false;
-		
 		public var Edges:int=0;
 		
 		
 		//////Linkage
 		public var Linklist:Array=[];
+		public var LinkOutlist:Array=[];
+		public var LinkInlist:Array=[];
 		public var Arrowlist:Array=[];
 		
-
+		//////Tree
 		public var centerBlock:CompressedNode;
 		
 		
-		public function CompressedNode(id:String,titl:String,biotype:NodeType,px:Number,py:Number,_detail=null){
+		public function CompressedNode(id:String,titl:String,biotype:NodeType,px:Number,py:Number,det=null){
 			x=px*I3DPlate.scaleXY;
 			y=py*I3DPlate.scaleXY;
 			
@@ -69,7 +68,7 @@ package Assembly.Compressor
 			Type=biotype;
 			skindata=biotype.skindata;
 			
-			detail=_detail;
+			detail=det;
 		}
 		
 		public function get Type():NodeType{

@@ -5,19 +5,16 @@
 	import flash.ui.ContextMenu;
 	import flash.ui.ContextMenuItem;
 	
-	import Assembly.Canvas.Net;
-	import Assembly.Compressor.CompressedNode;
-	import Assembly.ExpandThread.ExpandManager;
-	import Assembly.ProjectHolder.GxmlContainer;
-	import Assembly.ProjectHolder.SyncManager;
-	
 	import Biology.Types.NodeType;
 	
-	import FunctionPanel.DetailDispatcher;
-	import FunctionPanel.TypePanel;
+	import FunctionPanel.typePanel;
 	
 	import GUI.Windows.Panel;
 	import GUI.Windows.WindowSpace;
+	
+	import Assembly.ProjectHolder.GxmlContainer;
+	import Assembly.Canvas.Net;
+	import Assembly.Compressor.CompressedNode;
 	
 	
 	public class BioBlock extends Node {
@@ -75,21 +72,18 @@
 				
 				var menu_Expand:ContextMenuItem=new ContextMenuItem("Expand",true);
 				
-				var menu_detail:ContextMenuItem=new ContextMenuItem("Detail",true);
-				
 				var menu_post:ContextMenuItem=new ContextMenuItem("Upload");
 				
-				BlockMenu.customItems=[menu_rem,menu_ctp,menu_del,menu_cen,menu_SelectAll,menu_Expand,menu_post,menu_detail];
+				BlockMenu.customItems=[menu_rem,menu_ctp,menu_del,menu_cen,menu_SelectAll,menu_Expand];
 				
 				menu_del.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT,toDestory);
 				menu_rem.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT,edit_text);
 				menu_SelectAll.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT,selectAll);
 				menu_cen.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT,centerlize);
 				menu_ctp.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT,changeTyp);
-				menu_detail.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT,openDetail);
-				menu_post.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT,function (e):void{SyncManager.SyncNode(NodeLink)});
+				menu_post.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT,function (e):void{GxmlContainer.Post(NodeLink)});
 				menu_Expand.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT,function (e):void{
-					ExpandManager.Expand(NodeLink,ExpandManager.EXPAND);
+					GxmlContainer.Expand(NodeLink);
 				});
 				BlockMenu.display(stage,stage.mouseX,stage.mouseY);
 			}else{
@@ -126,7 +120,7 @@
 		protected function changeTyp(event:ContextMenuEvent):void{
 		
 			if(tPanel==null){
-				tPanel=new Panel("Choose type",new TypePanel(this.NodeLink),stage.stageWidth/2,stage.stageHeight/2)
+				tPanel=new Panel("Choose type",new typePanel(this.NodeLink),stage.stageWidth/2,stage.stageHeight/2)
 			}
 			WindowSpace.addWindow(tPanel);
 		}

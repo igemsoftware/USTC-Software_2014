@@ -5,8 +5,6 @@ package LoginAccount
 	import flash.net.URLRequest;
 	import flash.net.URLRequestHeader;
 	
-	import Layout.ReminderManager;
-	
 	public class AuthorizedURLLoader extends URLLoader
 	{
 		
@@ -30,7 +28,6 @@ package LoginAccount
 				
 				
 					if(chk.status=="error"){
-						ReminderManager.remind(chk.reason);
 						dispatchEvent(new AuthorizeEvent(AUTHORIZE_FAILED,chk.reason));
 						e.stopImmediatePropagation();
 					}

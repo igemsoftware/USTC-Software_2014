@@ -1,6 +1,7 @@
 package LoginAccount
 {
 	import flash.display.Sprite;
+	import flash.events.Event;
 	
 	import Assembly.ProjectHolder.ProjectManager;
 	
@@ -9,7 +10,8 @@ package LoginAccount
 	import GUI.Assembly.SkinBox;
 	import GUI.Scroll.Scroll;
 	
-	public class CoWorkerList extends Sprite implements FlexibleLayoutObject{
+	public class CoWorkerList extends Sprite implements FlexibleLayoutObject
+	{
 		
 		private var Align:int=5;
 		
@@ -20,21 +22,27 @@ package LoginAccount
 		private var Width:Number;
 		private var Height:Number;
 		
-		public function CoWorkerList(){
-			
+		public function CoWorkerList()
+		{
 			addChild(back);
 			addChild(scroll);
 			
-
+			setSize(250,140);
 		}
 		
 		
 		public function flushWorkerList():void{
 			
 			workerSpace=[];
-			for (var i:int = 0; i < ProjectManager.co_works.length; i++){
-				var cw:CoWorkerInfo=new CoWorkerInfo(CoWorkerInfo.NONE,ProjectManager.co_works[i])
+			for (var i:int = 0; i < ProjectManager.co_works.length; i++) 
+			{
+				var cw:CoWorkerInfo=new CoWorkerInfo(i,ProjectManager.co_works[i].Name,ProjectManager.co_works[i].image)
 				workerSpace.push(cw);
+				
+				cw.addEventListener("destory",function (e):void{
+					flushWorkerList();
+					dispatchEvent(new Event("changed"));
+				});
 			}
 			
 			Height=Math.min(ProjectManager.co_works.length*65+5,400-y);
@@ -67,7 +75,7 @@ package LoginAccount
 		public function setSize(w:Number, h:Number):void
 		{
 			Height=Math.min(ProjectManager.co_works.length*65+5,400-y);
-			Width=w;
+			Width=w
 			
 			back.setSize(Width,h);
 			scroll.setSize(Width,h);

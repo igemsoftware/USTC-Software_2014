@@ -2,7 +2,6 @@ package Assembly.Compressor{
 	import flash.concurrent.Mutex;
 	import flash.display.Sprite;
 	import flash.events.Event;
-	import flash.geom.Rectangle;
 	import flash.system.MessageChannel;
 	import flash.system.Worker;
 	import flash.utils.ByteArray;
@@ -47,14 +46,6 @@ package Assembly.Compressor{
 				var right:int=originBytes.readInt();
 				var buttom:int=originBytes.readInt();
 				
-				var sleft:int=originBytes.readInt();
-				var stop:int=originBytes.readInt();
-				var sright:int=originBytes.readInt();
-				var sbuttom:int=originBytes.readInt();
-				
-				var aimw:int=sright-sleft;
-				var aimh:int=sbuttom-stop;
-				
 				_data=new BitMapGraphics(right-left+1,buttom-top+1,true,0);
 				
 				_data.lock();
@@ -73,15 +64,15 @@ package Assembly.Compressor{
 				
 				returnImage.length=0;
 				
-				returnImage.writeInt(sleft);
+				returnImage.writeInt(left);
 				
-				returnImage.writeInt(stop);
+				returnImage.writeInt(top);
 				
-				returnImage.writeInt(aimw);
+				returnImage.writeInt(_data.width);
 				
-				returnImage.writeInt(aimh);
+				returnImage.writeInt(_data.height);
 				
-				_data.copyPixelsToByteArray(new Rectangle(sleft-left,stop-top,aimw,aimh),returnImage);
+				_data.copyPixelsToByteArray(_data.rect,returnImage);
 				
 				//			trace("[Compressor]:Copy Complete")
 				

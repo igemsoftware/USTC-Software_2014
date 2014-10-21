@@ -2,9 +2,7 @@ __author__ = 'beibeihome'
 
 from pymongo import *
 import bson
-
-db = MongoClient()['igemdata_new']
-
+from CONSTANT import db
 
 def setLink(doc1, doc2, type1, type2):
 	if not type1:

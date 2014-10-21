@@ -1,5 +1,5 @@
 ﻿package Assembly.Canvas {
-
+	
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.KeyboardEvent;
@@ -8,32 +8,30 @@
 	import flash.ui.Keyboard;
 	import flash.utils.getTimer;
 	
-	import Assembly.YelloCircle;
+	import Biology.NodeTypeInit;
+	
+	import IEvent.FocusItemEvent;
+	
+	import Layout.GlobalLayoutManager;
+	import Layout.Sorpotions.Navigator;
+	import FunctionPanel.PerspectiveViewer;
+	
 	import Assembly.BioParts.BioArrow;
 	import Assembly.BioParts.BioBlock;
+	import Assembly.ProjectHolder.GxmlContainer;
+	import Assembly.YelloCircle;
 	import Assembly.Compressor.CompressedLine;
 	import Assembly.Compressor.CompressedNode;
 	import Assembly.Compressor.SmartCanvas;
 	import Assembly.Compressor.SmartLinkage;
-	import Assembly.Compressor.TextMapLoader;
-	import Assembly.ProjectHolder.GxmlContainer;
-	
-	import Biology.Types.LinkType;
-	
-	import Biology.LinkTypeInit;
-	import Biology.NodeTypeInit;
-	
-	import FunctionPanel.PerspectiveViewer;
-	
-	import IEvent.FocusItemEvent;
-	
-	import Layout.Sorpotions.Navigator;
 	
 	import Style.AniContainer;
 	import Style.Tween;
 	import Style.TweenX;
 	
 	import algorithm.Center_Cal;
+	import Assembly.ProjectHolder.GxmlContainer;
+	import Assembly.YelloCircle;
 	
 	
 	public class Net extends GxmlContainer {
@@ -66,7 +64,7 @@
 		private static var CurrentBlock:BioBlock;
 		
 		///////ADD Block
-		include"Net_Node.as"
+		include"Net_Block.as"
 		/////Link
 		include"Net_Link.as"
 		////////Center View
@@ -262,13 +260,7 @@
 			
 			/////This is a time when node is a Instance but not floated
 			
-			setfocus(tar,false,false);
-		}
-		
-		public static function toCenterPosition():void{
-			var rect:Rectangle=plate.getBounds(plate);
-			
-			Tween.GlideNet(-rect.width/2-rect.left,-rect.height/2-rect.top);
+			setfocus(tar);
 		}
 		
 		public static function restore():void{

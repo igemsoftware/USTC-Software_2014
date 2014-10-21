@@ -2,7 +2,7 @@ package GUI.Assembly
 {
 	import flash.display.Shape;
 	
-	import Style.FilterPacket;
+	import UserInterfaces.Style.FilterPacket;
 	
 	public class FocusRect extends Shape
 	{

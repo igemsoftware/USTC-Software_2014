@@ -5,9 +5,7 @@
 	import flash.events.EventDispatcher;
 	import flash.events.MouseEvent;
 	import flash.text.TextField;
-	
-	import Assembly.Compressor.CompressedNode;
-	import Assembly.ExpandThread.ExpandManager;
+	import flash.utils.getTimer;
 	
 	import GUI.Assembly.LabelTextField;
 	import GUI.RichGrid.RichGrid;
@@ -15,6 +13,10 @@
 	
 	import IEvent.ExpandEvent;
 	import IEvent.FocusItemEvent;
+	
+	import Assembly.ProjectHolder.GxmlContainer;
+	import Assembly.Compressor.CompressedNode;
+	import Assembly.ExpandThread.ExpandManager;
 	
 	import Style.FontPacket;
 	
@@ -71,7 +73,37 @@
 				});
 			})
 			
-			ExpandButton.addEventListener(MouseEvent.CLICK,ExpandButton_clickHandler);
+			ExpandButton.addEventListener(MouseEvent.CLICK,function (e):void{
+				receiver=ExpandManager.Expand(target);
+				removeChild(ExpandButton);
+				addChild(loadingMark);
+				receiver.addEventListener(ExpandEvent.EXPAND_COMPLETE,function (e:ExpandEvent):void{
+					var table:Array=[];
+					var label:String;
+					if(e.ExpandList.length>0){
+						for (var i:int = 0; i < e.ExpandList.length; i++) {
+							if(e.ExpandList[i].DIRECT==1){
+								label=" → "+e.ExpandList[i].NAME
+							}else{
+								label=" ← "+e.ExpandList[i].NAME
+							}
+							table.push({External_Links:label,LinkID:e.ExpandList[i]});
+						}
+						grid.dataProvider=table;
+						addChild(grid);
+						if(contains(loadingMark)){
+							removeChild(loadingMark);
+						}
+						Height=grid.y+grid.Height+5;
+					}else{
+						addChild(hint);
+						Height=hint.y+hint.height+5;
+					}
+					dispatchEvent(new Event("redrawed"));
+				},false,0,true);
+				
+				
+			});
 			
 			
 			ExpandButton.y=title.height+5;
@@ -85,7 +117,7 @@
 				for (var i:int = 0; i < grid.selectedItems.length; i++) {
 					tmparr.push(grid.selectedItems[i].LinkID);
 				}
-				ExpandManager.Explode(target,tmparr);
+				GxmlContainer.Explode(target,tmparr);
 				remlength=grid.selectedItems.length;
 			}
 		}
@@ -130,40 +162,6 @@
 			}
 			if(contains(ExpandButton)){
 				Height=ExpandButton.y+ExpandButton.height+5;
-			}
-		}
-		
-		protected function ExpandButton_clickHandler(event:MouseEvent):void{
-			// TODO Auto-generated method stub
-			receiver=ExpandManager.Expand(target,ExpandManager.SEARCHLINES);
-			
-			if(receiver!=null){
-				removeChild(ExpandButton);
-				addChild(loadingMark);
-				receiver.addEventListener(ExpandEvent.EXPAND_COMPLETE,function (e:ExpandEvent):void{
-					var table:Array=[];
-					var label:String;
-					if(e.ExpandList.length>0){
-						for (var i:int = 0; i < e.ExpandList.length; i++) {
-							if(e.ExpandList[i].DIRECT==1){
-								label=" → "+e.ExpandList[i].NAME
-							}else{
-								label=" ← "+e.ExpandList[i].NAME
-							}
-							table.push({External_Links:label,LinkID:e.ExpandList[i]});
-						}
-						grid.dataProvider=table;
-						addChild(grid);
-						if(contains(loadingMark)){
-							removeChild(loadingMark);
-						}
-						Height=grid.y+grid.Height+5;
-					}else{
-						addChild(hint);
-						Height=hint.y+hint.height+5;
-					}
-					dispatchEvent(new Event("redrawed"));
-				},false,0,true);
 			}
 		}
 	}

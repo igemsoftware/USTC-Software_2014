@@ -15,9 +15,6 @@ package Dock
 	import flash.ui.Keyboard;
 	import flash.utils.getTimer;
 	
-	import Assembly.Canvas.Net;
-	import Assembly.ProjectHolder.GxmlContainer;
-	
 	import GUI.RadioButton.GlowRadioIcon;
 	import GUI.RadioButton.RadioGroup;
 	import GUI.RichGrid.RichList;
@@ -25,11 +22,13 @@ package Dock
 	
 	import Layout.GlobalLayoutManager;
 	
+	import Assembly.ProjectHolder.GxmlContainer;
+	import Assembly.Canvas.Net;
+	
 	import Style.FontPacket;
 	import Style.Tween;
 	
 	import fl.controls.List;
-	import fl.events.ListEvent;
 	
 	public class SearchingPad extends Sprite{
 		
@@ -81,8 +80,8 @@ package Dock
 			addChild(search_b);
 			addChild(web_b);
 			addChild(ResultHint);
-			addChild(list);
 			addChild(Box2);
+			addChild(list);
 			addChild(SearchHint);
 			addChild(webIndecator);
 			addChild(SearchText);
@@ -97,32 +96,27 @@ package Dock
 			web_b.addEventListener(MouseEvent.CLICK,function (e):void{chgMode(true)});
 			
 			SearchText.addEventListener(Event.CHANGE,chg_evt);
-			list.addEventListener(ListEvent.ITEM_CLICK,choose_evt);
+			list.addEventListener(MouseEvent.CLICK,choose_evt);
 			
 			addEventListener(MouseEvent.MOUSE_DOWN,setFocus);
 			
 		}
 		
 		public function setFocus(event:MouseEvent=null):void{
-			
-			if(!focused){
-				focused=true
-				
-				Tween.smoothIn(list);
-				Tween.smoothIn(search_b);
-				Tween.smoothIn(web_b);
-				Tween.smoothIn(ResultHint);
-				stage.focus=SearchText;
-				flushList();
-				stage.removeEventListener(KeyboardEvent.KEY_UP,key_mon);
-				stage.addEventListener(KeyboardEvent.KEY_UP,key_mon);
-				stage.addEventListener(MouseEvent.MOUSE_DOWN,checkFocus);
-				hided=false;
-			}
+			Tween.smoothIn(list);
+			Tween.smoothIn(search_b);
+			Tween.smoothIn(web_b);
+			Tween.smoothIn(ResultHint);
+			stage.focus=SearchText;
+			flushList();
+			stage.removeEventListener(KeyboardEvent.KEY_UP,key_mon);
+			stage.addEventListener(KeyboardEvent.KEY_UP,key_mon);
+			stage.addEventListener(MouseEvent.MOUSE_DOWN,checkFocus);
+			hided=false;
 		}
 		
 		private function hideBox():void{
-			if (focused) {
+			if (ch!=0) {
 				Tween.fadeOut(list);
 				Tween.fadeOut(search_b);
 				Tween.fadeOut(web_b);
@@ -133,7 +127,6 @@ package Dock
 				stage.removeEventListener(KeyboardEvent.KEY_UP,key_mon);
 				stage.removeEventListener(MouseEvent.MOUSE_DOWN,checkFocus);
 				hided=true;
-				focused=false
 			}
 		}
 		
@@ -180,7 +173,7 @@ package Dock
 			tick++;
 			
 		}
-		protected function choose_evt(event:ListEvent):void{
+		protected function choose_evt(event:MouseEvent):void{
 			if (web_b.selected) {
 				if (GxmlContainer.Block_space[list.selectedItem.id]==null) {
 					preview.GiveNode(list.selectedItem.id,list.selectedItem.label,list.selectedItem.type);
@@ -253,15 +246,15 @@ package Dock
 			}else{
 				ResultHint.visible=false;
 				Tween.smoothIn(list);
-				showHeight=list.contentHeight;
-				
+				showHeight=list.rowHeight*(list.dataProvider.length);
+				list.setSize(Width-5,showHeight);
 				
 				if (showHeight>400) {
 					showHeight=400;
 				}
-				list.setSize(Width-10,showHeight);
 				
 				TweenHeight(showHeight+60);
+				list.dispatchEvent(new Event("redrawed"));
 			}
 		}
 		private function webSearch():void{
@@ -358,11 +351,13 @@ package Dock
 			
 			ResultHint.width=w;
 			ResultHint.autoSize="center";
+			
+			list.setSize(w-5,list.height);
+			list.setSize(w-5,300);
 		}
 		
 		private var ah:Number,ch:Number;
 		private var hided:Boolean=true;
-		private var focused:Boolean;
 		public function TweenHeight(h):void{
 			ah=h;
 			removeEventListener(Event.ENTER_FRAME,TweenScaling);
@@ -370,14 +365,14 @@ package Dock
 			
 		}
 		private function TweenScaling(e):void{
-			boxSetSize((ah+ch*2)/3,false);
+			boxSetSize((ah+ch*2)/3);
 			if (Math.abs(ah-ch)<0.4) {
 				ch=ah;
-				boxSetSize(ah,false);
+				boxSetSize(ah);
 				removeEventListener(Event.ENTER_FRAME,TweenScaling);
 			}
 		}
-		private function boxSetSize(h,setList=true):void{
+		private function boxSetSize(h):void{
 			ch=h;
 			Box.graphics.clear();
 			
@@ -391,7 +386,7 @@ package Dock
 				Box.graphics.moveTo(Width/2,-h+Math.min(50,h-5));
 				Box.graphics.lineTo(Width/2,-h+5);
 			}
-				
+			list.setSize(Width-10,Math.max(h-60,5));
 			list.y=-h+60;
 			web_b.y=-h+30;
 			search_b.y=-h+30;

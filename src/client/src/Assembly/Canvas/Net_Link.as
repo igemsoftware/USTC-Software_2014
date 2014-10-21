@@ -1,6 +1,7 @@
-import Assembly.BioParts.BioArrow;
+import Biology.Types.LinkType;
 
 import Biology.LinkTypeInit;
+
 
 // ActionScript file
 private static var trylinking:Boolean=false;
@@ -15,10 +16,17 @@ private static function tryLink2(e):void {
 	
 	if (trylinking) {
 		if (e.target!=CurrentBlock) {
+			for each(var node:CompressedNode in CurrentBlock.NodeLink.LinkOutlist) {
+				if (e.target.NodeLink==node) {
+					endtryLink();
+					return;
+				}
+			}
 			setfocus(link(CurrentBlock.NodeLink,e.target.NodeLink));
 		}
 		CurrentBlock=null;
 	}
+	
 	endtryLink();
 }
 
@@ -40,31 +48,39 @@ private static function flushline(e:MouseEvent):void{
 }
 
 public static function link(obj1:CompressedNode,obj2:CompressedNode,type:String="Default"):CompressedLine {
-	
-	obj1.Linklist[obj2.ID]=obj2;
-	obj2.Linklist[obj1.ID]=obj1;
-	
-	var rID:String=String((new Date).getTime());
-	
-	var arrow:CompressedLine=Linker_space[rID]=new CompressedLine(rID,LinkTypeInit.LinkTypeList[type].label,obj1,obj2,LinkTypeInit.LinkTypeList[type]);
-	
-	LineSpace.AddChild(RealizeLine(arrow));
-	
-	arrow.detail=JSON.stringify({
-		NAME:LinkTypeInit.LinkTypeList[type].label,
-		TYPE:type,
-		Description:"Add your descriptions here by clicking <b>EDIT</b>!"
-	});
-	
-	//////Change type here
-	obj1.Arrowlist[rID]=arrow;
-	obj2.Arrowlist[rID]=arrow;
-	
-	obj1.Edges++;
-	obj2.Edges++;
-	
-	PerspectiveViewer.refreshPerspective();
-	
+	obj1.LinkOutlist[obj2.ID]=obj2;
+	obj2.LinkInlist[obj1.ID]=obj1;
+	var rev:Boolean=false;
+	for each(var arrow:CompressedLine in obj1.Arrowlist) {
+		if (obj2==arrow.linkObject[0]) {
+			rev=true;
+			break;
+		}
+	}
+	if (rev) {
+		arrow.DoubleDirec=true;
+		LineSpace.flushChild(arrow);
+	}else {
+		obj1.Linklist[obj2.ID]=obj2;
+		obj2.Linklist[obj1.ID]=obj1;
+		
+		var rID:String=String((new Date).getTime());
+		
+		arrow=Linker_space[rID]=new CompressedLine(rID,LinkTypeInit.LinkTypeList[type].label,obj1,obj2,LinkTypeInit.LinkTypeList[type]);
+		
+		RealizeLine(arrow);
+		
+		LineSpace.AddChild(RealizeLine(arrow));
+		
+		//////Change type here
+		obj1.Arrowlist[rID]=arrow;
+		obj2.Arrowlist[rID]=arrow;
+		
+		obj1.Edges++;
+		obj2.Edges++;
+		
+		PerspectiveViewer.refreshPerspective();
+	}
 	
 	Navigator.refreshMap();
 	
@@ -87,13 +103,20 @@ public static function WakeLine(line:CompressedLine):void{
 	LineSpace.wakeLine(line);
 }
 
-public static function loadLink(id:String,refID:String,nam:String,obj1:CompressedNode,obj2:CompressedNode,type="Default",detail=null,picked=false):CompressedLine {
+public static function loadLink(id:String,nam:String,obj1:CompressedNode,obj2:CompressedNode,type="Default",doubleDirec=false,picked=false):CompressedLine {
 	if(obj1==null||obj2==null){
 		trace("Try Link Before Node Created");
 		trace("\t",id);
 	}else if(obj1.Linklist[obj2.ID]==null){
+		obj1.LinkOutlist[obj2.ID]=obj2;
+		obj2.LinkInlist[obj1.ID]=obj1;
 		obj1.Linklist[obj2.ID]=obj2;
 		obj2.Linklist[obj1.ID]=obj1;
+		
+		if (doubleDirec) {
+			obj2.LinkOutlist[obj1.ID]=obj1;
+			obj1.LinkInlist[obj2.ID]=obj2;
+		}
 		
 		var typ:LinkType;
 		if(LinkTypeInit.LinkTypeList[type]==null){
@@ -102,15 +125,9 @@ public static function loadLink(id:String,refID:String,nam:String,obj1:Compresse
 			typ=LinkTypeInit.LinkTypeList[type];
 		}
 		
-		if(nam==null){
-			if(LinkTypeInit.LinkTypeList[type]!=null){
-				nam=LinkTypeInit.LinkTypeList[type].label
-			}else{
-				nam=type;
-			}
-		}
-		var arrow:CompressedLine=Linker_space[id]=new CompressedLine(id,nam,obj1,obj2,typ,detail);
-		arrow.refID=refID;
+		var arrow:CompressedLine=Linker_space[id]=new CompressedLine(id,nam,obj1,obj2,typ);
+		
+		arrow.DoubleDirec=doubleDirec;
 		
 		if(picked){
 			LineSpace.pickMultiLines([arrow]);

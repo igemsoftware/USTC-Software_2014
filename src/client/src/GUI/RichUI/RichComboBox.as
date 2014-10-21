@@ -4,9 +4,8 @@ package GUI.RichUI{
 	import flash.events.MouseEvent;
 	import flash.geom.Point;
 	
-	
-	import Layout.GlobalLayoutManager;
-	import Layout.FrontCoverSpace;
+	import UserInterfaces.GlobalLayout.FrontCoverSpace;
+	import UserInterfaces.GlobalLayout.GlobalLayoutManager;
 	
 	
 	public class RichComboBox extends Sprite{
@@ -23,7 +22,14 @@ package GUI.RichUI{
 		public var Rev:Boolean;
 		private var _data:Array;
 		
-		public function RichComboBox(type=INDEPENDENT,rev=false){
+		private var showLabel:Boolean;
+		private var showIcon:Boolean;
+		
+		public function RichComboBox(type=INDEPENDENT,ShowL=true,ShowI=true,rev=false){
+			
+			showLabel=ShowL;
+			showIcon=ShowI;
+			
 			Rev=rev;
 			button=new RichButton(type);
 			button.addEventListener(MouseEvent.CLICK,function (e):void{
@@ -34,8 +40,8 @@ package GUI.RichUI{
 					var locPoint:Point=new Point();
 					var absPoint:Point=localToGlobal(locPoint);
 					locPoint.x=0;
-					if (absPoint.y+list.height>GlobalLayoutManager.StageHeight) {
-						locPoint.y=-list.height;
+					if (absPoint.y+list.Height>GlobalLayoutManager.StageHeight&&absPoint.y-list.Height>0) {
+						locPoint.y=-list.Height;
 					}else {
 						locPoint.y=button.height;
 					}
@@ -45,19 +51,31 @@ package GUI.RichUI{
 				}
 			});
 			list.addEventListener(MouseEvent.CLICK,function (e):void{
-				button.setIcon(list.selectedItem.icon,Rev);
+				if(list.selectedItem.icon!=null&&list.selectedItem.icon.constructor==Class){
+					button.setIcon(list.selectedItem.icon,Rev);
+				}else{
+					
+					button.label=list.selectedItem.label;
+				}
 				_selectedIndex=list.selectedIndex;
 				selectedItem=list.selectedItem;
 				FrontCoverSpace.removeChild(list);
 				dispatchEvent(new Event(Event.CHANGE));
 			});
+			
 			addEventListener(Event.REMOVED_FROM_STAGE,function (e):void{
 				FrontCoverSpace.removeChild(list);
 			})
+			
 			addChild(button);
 		}
 		public function set selectedIndex(n:int):void{
-			button.setIcon(_data[n].icon,Rev);
+			if(showIcon&&_data[n].icon!=null&&_data[n].icon.constructor==Class){
+				button.setIcon(_data[n].icon,Rev);
+			}
+			if(showLabel){
+				button.label=_data[n].label;
+			}
 			selectedItem=_data[n];
 			_selectedIndex=n;
 		}
@@ -67,7 +85,7 @@ package GUI.RichUI{
 		
 		public function set dataProvider(arr:Array):void{
 			_data=arr;
-			list.setIconField(arr,Rev);
+			list.setIconField(arr,showLabel,showIcon,Rev);
 		}
 		public function setSize(w:Number,h:Number):void{
 			list.setSize(w);

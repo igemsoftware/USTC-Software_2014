@@ -1,14 +1,11 @@
 package GUI.Scroll{
-	import flash.desktop.IFilePromise;
 	import flash.display.Shape;
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import flash.text.TextField;
-	
-	import mx.core.mx_internal;
-	
-	import GUI.FlexibleLayoutObject;
+		
+	import GUI.Assembly.FlexibleLayoutObject;
 	
 	
 	public class Scroll extends Sprite implements FlexibleLayoutObject{
@@ -18,6 +15,7 @@ package GUI.Scroll{
 		public  var Height:Number; 
 		private var ScrollBar:scrollBar;
 		private var hitTest:Shape=new Shape();
+		private var Width:Number=100;
 		
 		public function Scroll(target=null,w=200,h=200){
 			masker.graphics.beginFill(0);
@@ -51,9 +49,19 @@ package GUI.Scroll{
 				addChildAt(Content,getChildIndex(masker));
 				addEventListener(Event.ENTER_FRAME,Roll);
 				Content.addEventListener("redrawed",negativeRedraw);
+				
+				if (Content.constructor==TextField) {
+					Content.width=Width-5;
+				}else if(Content.hasOwnProperty("setSize")){
+					Content.setSize(Width-5);
+				}
+				scrolling();
+				
 			}
 		}
 		public function negativeRedraw(e=null):void{
+			
+			
 			ScrollBar.setSize();
 			scrolling();
 		}
@@ -117,21 +125,33 @@ package GUI.Scroll{
 		}
 		
 		public function setSize(w:Number,h:Number):void{
-			masker.width=w+1;
-			masker.height=h;
-			hitTest.width=w;
-			hitTest.height=h;
-			ScrollBar.x=w+1;
-			Height=h;
-			if (Content!=null) {
-				if (Content.constructor==TextField) {
-					Content.width=w-5;
-				}else if(Content.hasOwnProperty("setSize")){
-					Content.setSize(w-5);
+			
+			if(Width!=w){
+				Width=w;
+				Height=h;
+				masker.width=w+1;
+				masker.height=h;
+				hitTest.width=w;
+				hitTest.height=h;
+				ScrollBar.x=w+1;
+				Height=h;
+				if (Content!=null) {
+					if (Content.constructor==TextField) {
+						Content.width=w-5;
+					}else if(Content.hasOwnProperty("setSize")){
+						Content.setSize(w-5);
+					}
 				}
+				ScrollBar.setSize(h-2);
+				scrolling();
+			}else if(Height!=h){
+				masker.height=h;
+				hitTest.height=h;
+				Height=h;
+				ScrollBar.setSize(h-2);
+				scrolling();
 			}
-			ScrollBar.setSize(h-2);
-			scrolling();
+			
 		}
 	}
 }

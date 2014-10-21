@@ -6,15 +6,15 @@ package Assembly.BioParts{
 	import flash.events.KeyboardEvent;
 	import flash.events.MouseEvent;
 	import flash.ui.Keyboard;
-	import flash.utils.getTimer;
-	
-	import Assembly.Canvas.Net;
-	import Assembly.Compressor.CompressedLine;
-	import Assembly.ProjectHolder.GxmlContainer;
 	
 	import GUI.Assembly.LabelField;
 	
-	public class Arrow extends Sprite{
+	import Assembly.ProjectHolder.GxmlContainer;
+	import Assembly.Canvas.Net;
+	import Assembly.Compressor.CompressedLine;
+	import Assembly.IFocusableObject;
+	
+	public class Arrow extends Sprite implements IFocusableObject{
 		public const LINE_COLOR:uint=0xffffff;
 		public const HIGHLIGHT_LINE_COLOR:uint=0xffff00;
 		public const DIM_LINE_COLOR:uint=0xffffff;
@@ -38,27 +38,7 @@ package Assembly.BioParts{
 			
 			addEventListener(MouseEvent.MOUSE_DOWN,focus_evt);
 			
-			addEventListener(MouseEvent.MOUSE_UP,mouseUp_evt);
-			
 		}
-		
-		private var downed:Boolean;
-		private var Click_tick:int=0;
-		protected function mouseUp_evt(event:MouseEvent):void {
-			if (downed) {
-				
-				downed=false;
-				
-				var dt:int=getTimer()-Click_tick;
-				Click_tick=getTimer();
-				trace(dt);
-				if (dt<300) {
-					trace("Trans_DoubleClick");
-					dispatchEvent(new MouseEvent(MouseEvent.DOUBLE_CLICK));
-				}
-			}
-		}
-		
 		public function set label(t:String):void{
 			title.text=t;
 		}
@@ -69,17 +49,16 @@ package Assembly.BioParts{
 		
 		protected function focus_evt(event:MouseEvent):void
 		{
-			downed=true
 			dispatchEvent(new Event("ClickOn"));
 			setFocus();
 			event.stopPropagation();	
 		}
-		public function setFocus(ani=false):void{
+		public function setFocus():void{
 			focused=true;
 			DrawSkin(HIGHLIGHT_LINE_COLOR);
 		}
 		
-		public function loseFocus(ani=false):void{
+		public function loseFocus():void{
 			focused=false;
 			DrawSkin();
 			if(title.selectable){

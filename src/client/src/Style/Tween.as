@@ -1,6 +1,8 @@
 package Style{
 	import flash.events.Event;
+	import flash.events.MouseEvent;
 	import flash.geom.Point;
+	import flash.text.engine.TabAlignment;
 	
 	import Assembly.Canvas.I3DPlate;
 	import Assembly.Canvas.Net;
@@ -8,7 +10,6 @@ package Style{
 	import GUI.Windows.FreeWindow;
 	
 	import Layout.GlobalLayoutManager;
-	import Layout.Sorpotions.Navigator;
 
 	public class Tween{
 		
@@ -104,9 +105,7 @@ package Style{
 			if (Math.abs(I3DPlate.plate.y-Net.ani_container.aimy)<0.5&&Math.abs(I3DPlate.plate.x-Net.ani_container.aimx)<0.5) {
 				I3DPlate.movePlateTo(Net.ani_container.aimx,Net.ani_container.aimy);
 				Net.ani_container.removeEventListener(Event.ENTER_FRAME,sgliding);
-				
 			}
-			Navigator.refreshRange();
 		}
 		
 		public static function zoomIn(tar):void{
@@ -129,7 +128,7 @@ package Style{
 		}
 		private static function zoomingFocus(e):void{
 			e.target.scaleX=e.target.scaleY=(e.target.scaleX*3+1)/4;
-			e.target.alpha=1/e.target.scaleX/e.target.scaleX;
+			e.target.alpha=1/e.target.scaleX;
 			if (Math.abs(e.target.scaleX-1)<0.01) {
 				e.target.scaleX=e.target.scaleY=1;
 				e.target.alpha=1;
@@ -139,7 +138,7 @@ package Style{
 		
 		public static function zoomOutFocus(tar):void{
 			if (tar.scaleX<=1) {
-				tar.scaleX=1;
+				tar.scaleX=1.01;
 			}
 			
 			tar.removeEventListener(Event.ENTER_FRAME,zoomingFocus);
@@ -147,9 +146,9 @@ package Style{
 			tar.addEventListener(Event.ENTER_FRAME,zoomingOutFocus);
 		}
 		private static function zoomingOutFocus(e):void{
-			e.target.scaleX=e.target.scaleY=e.target.scaleX*1.1;
-			e.target.alpha/=1.5;
-			if (e.target.scaleX>3) {
+			e.target.scaleX=e.target.scaleY=Math.pow(e.target.scaleX,1.6);
+			e.target.alpha-=0.1;
+			if (e.target.scaleX>2.6) {
 				e.target.scaleX=e.target.scaleY=1;
 				e.target.parent.removeChild(e.target);
 				e.target.alpha=1;
@@ -285,8 +284,6 @@ package Style{
 			}
 		}
 		
-		
-		////////////Window
 		
 		public static function DeployWindowFromNet(win:FreeWindow,x,y,w,h):void{
 			

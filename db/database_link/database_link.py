@@ -26,7 +26,7 @@ class Gene_Enzyme_link(Document):
 
 
 def main():
-    connect(CONSTANT.DATABASE)
+    connect('igemdata_new', host='mongodb://product:bXYtvBHrSdbuTMETSVO4VTWGl0oeddBHp3hPNsUbEZOEpRFLcqgaYAjHRirnSI@us-ce-0:27017,cn-ah-0:27017,cn-bj-0:27017', replicaSet='replset')
     enzyme_list = node.objects.filter(TYPE='Enzyme')
     count_saved = 0
     count_searched = 0

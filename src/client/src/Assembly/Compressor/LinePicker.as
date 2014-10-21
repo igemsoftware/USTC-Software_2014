@@ -5,15 +5,11 @@ package Assembly.Compressor{
 	import flash.display.BitmapData;
 	import flash.display.Sprite;
 	import flash.events.Event;
-	import flash.geom.Point;
 	import flash.system.MessageChannel;
 	import flash.system.Worker;
 	import flash.system.WorkerDomain;
 	import flash.utils.ByteArray;
-	
-	import Assembly.Canvas.I3DPlate;
-	
-	import Layout.GlobalLayoutManager;
+	import flash.utils.getTimer;
 	
 	public class LinePicker extends Sprite{
 		
@@ -69,28 +65,21 @@ package Assembly.Compressor{
 				
 				if(returnMutex.tryLock()){
 					
-					//	trace("[LinePicker]:EnterLock");
+				//	trace("[LinePicker]:EnterLock");
 					returnBytes.position=0;	
 					
 					x=returnBytes.readInt();
 					y=returnBytes.readInt();
 					
-					var w:int=returnBytes.readInt();
-					var h:int=returnBytes.readInt();
+					_data=new BitmapData(returnBytes.readInt(),returnBytes.readInt(),true,0);
 					
-					if(w>0&&h>0){
-						_data=new BitmapData(w,h,true,0);
-						
-						_data.setPixels(_data.rect,returnBytes);
-						
-					}else{
-						_data=new BitmapData(1,1,true,0);
-					}
+					_data.setPixels(_data.rect,returnBytes);
+					
 					_map.bitmapData=_data;
 					
 					returnMutex.unlock();
 					
-					//	trace("[LinePicker]:unlock return");
+				//	trace("[LinePicker]:unlock return");
 				}
 			}
 		}
@@ -128,11 +117,6 @@ package Assembly.Compressor{
 				originBytes.writeInt(right);
 				originBytes.writeInt(buttom);
 				
-				originBytes.writeInt(left);
-				originBytes.writeInt(top);
-				originBytes.writeInt(right);
-				originBytes.writeInt(buttom);
-				
 				for each (var line:CompressedLine in pickedLines) {
 					if(line.SX<left)left=line.SX;
 					if(line.SX>right)right=line.SX;
@@ -158,7 +142,7 @@ package Assembly.Compressor{
 				}
 				
 				
-				if(hasLine){
+				if(hasLine>0){
 					
 					originBytes.position=0;
 					
@@ -166,18 +150,6 @@ package Assembly.Compressor{
 					originBytes.writeInt(top);
 					originBytes.writeInt(right);
 					originBytes.writeInt(buttom);
-					
-					var spt:Point=new Point(0,0);
-					
-					var ept:Point=new Point(GlobalLayoutManager.StageWidth,GlobalLayoutManager.StageHeight);
-					
-					spt=I3DPlate.plate.globalToLocal(spt);
-					ept=I3DPlate.plate.globalToLocal(ept);
-					
-					originBytes.writeInt(Math.max(left,spt.x));
-					originBytes.writeInt(Math.max(top,spt.y));
-					originBytes.writeInt(Math.min(right,ept.x));
-					originBytes.writeInt(Math.min(buttom,ept.y));
 					
 					drawMutex.unlock();
 					

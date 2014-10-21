@@ -2,6 +2,7 @@ __author__ = 'Beibeihome'
 
 from pymongo import *
 import CONSTANT
+from CONSTANT import db
 
 
 ## 2014/8/22
@@ -11,7 +12,6 @@ import CONSTANT
 INIT_COUNTER_NUM_SERVER = 1
 INIT_COUNTER_NUM_CLIENT = 0
 INIT_LOCATION = 0
-db = MongoClient()[CONSTANT.DATABASE]
 
 
 def create_noderef_coll():
@@ -25,7 +25,7 @@ def create_noderef_coll():
 
     content_list = []
     for log in log_list:
-        content = {'node_id': log['_id'], 'x': INIT_LOCATION, 'y': INIT_LOCATION, 'pid': 1}
+        content = {'node_id': log['_id'], 'x': INIT_LOCATION, 'y': INIT_LOCATION}
         # In Kegg database, we use NAME_KEGG as NAME in index table
         if log['TYPE'] in ['Enzyme', 'Compound']:
             if 'NAME_KEGG' in log.keys():
@@ -54,7 +54,7 @@ def create_linkref_coll():
 
     content_list = []
     for log in log_list:
-        content = {'link_id': log['_id'], 'id1': log['NODE1'], 'id2': log['NODE2'], 'pid': 1}
+        content = {'link_id': log['_id'], 'id1': log['NODE1'], 'id2': log['NODE2']}
         content_list.append(content)
 
     ref_log_id_list = db.link_ref.insert(content_list)

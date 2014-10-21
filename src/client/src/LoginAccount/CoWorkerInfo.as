@@ -1,11 +1,11 @@
 package LoginAccount
 {
 	import flash.display.Bitmap;
-	import flash.display.Shape;
+	import flash.display.BitmapData;
 	import flash.display.Sprite;
 	import flash.events.Event;
 	
-	import Assembly.ProjectHolder.WorkerInfo;
+	import Assembly.ProjectHolder.ProjectManager;
 	
 	import GUI.FlexibleWidthObject;
 	import GUI.Assembly.LabelTextField;
@@ -17,10 +17,6 @@ package LoginAccount
 		private const cardH:int=60;
 		private const cardAlign:int=5;
 		
-		public static const INFO_ADD:int=0;
-		public static const INFO_REMOVE:int=1;
-		public static const NONE:int=2;
-		
 		
 		private var back:SkinBox=new SkinBox();
 		
@@ -28,50 +24,28 @@ package LoginAccount
 		private var box2:SkinBox=new SkinBox();
 		private var img:Bitmap=new Bitmap(null,"auto",true);
 		private var NameLabel:LabelTextField=new LabelTextField(" ");
-		private var operateIcon:*;
+		private var del:Icon_ADD_COWORKER=new Icon_ADD_COWORKER();
 		
 		public var num:int;
-		public var workerinfo:WorkerInfo;
 		
 		
-		public function CoWorkerInfo(type,work:WorkerInfo)
+		public function CoWorkerInfo(i,nam:String,pic:BitmapData)
 		{
+			num=i;
 			
-			switch(type)
-			{
-				case INFO_ADD:
-				{
-					operateIcon=new Icon_ADD_COWORKER();
-					break;
-				}
-				case INFO_REMOVE:
-				{
-					operateIcon=new Icon_REMOVE_COWORKER();
-					break;
-				}
-				case NONE:
-				{
-					operateIcon=new Shape();
-					break;
-				}
-
-			}
-			
-			workerinfo=work
-			
-			img.bitmapData=work.image;
-			NameLabel.text=work.Name;
+			img.bitmapData=pic;
+			NameLabel.text=nam;
 			
 			addChild(back);
 			addChild(box);
 			addChild(box2);
 			addChild(img);
 			addChild(NameLabel);
-			addChild(operateIcon);
+			addChild(del);
 			
-			operateIcon.addEventListener("click",function (e):void{
-				
-				dispatchEvent(new Event("clicked"));
+			del.addEventListener("click",function (e):void{
+				ProjectManager.co_works.splice(num,1);
+				dispatchEvent(new Event("destory"));
 			});
 		}
 		
@@ -85,11 +59,11 @@ package LoginAccount
 			
 			
 			NameLabel.y=cardH/2-NameLabel.height/2;
-			operateIcon.y=cardH/2;
+			del.y=cardH/2;
 			
 			NameLabel.x=img.x+img.width+cardAlign;
 			
-			operateIcon.x=w-operateIcon.width/2-cardAlign;
+			del.x=w-del.width/2-cardAlign;
 			
 			img.mask=box2;
 			

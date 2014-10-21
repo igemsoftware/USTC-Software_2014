@@ -6,12 +6,12 @@ package GUI.ContextSheet{
 	import flash.text.TextField;
 	import flash.text.TextFormat;
 	
-	import GUI.FlexibleWidthObject;
+	import GUI.Assembly.FlexibleWidthObject;
 	import GUI.Assembly.NetLoader;
 	
-	import Style.FilterPacket;
-	import Style.FontPacket;
-	import Style.Tween;
+	import UserInterfaces.Style.FilterPacket;
+	import UserInterfaces.Style.FontPacket;
+	import UserInterfaces.Style.Tween;
 	
 	public class ContextSheetItem extends Sprite implements FlexibleWidthObject{
 		

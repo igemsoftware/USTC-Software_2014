@@ -78,7 +78,7 @@ class Module(DynamicDocument):
 def main():
     #This path is based on manage.py
     BASEPATH = './kegg/module/'
-    connect(CONSTANT.DATABASE)
+    connect('igemdata_new', host='mongodb://product:bXYtvBHrSdbuTMETSVO4VTWGl0oeddBHp3hPNsUbEZOEpRFLcqgaYAjHRirnSI@us-ce-0:27017,cn-ah-0:27017,cn-bj-0:27017', replicaSet='replset')
     #save the paths of .cvs files
     paths = []
     for filelist in os.listdir(BASEPATH):

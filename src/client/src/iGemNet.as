@@ -1,4 +1,5 @@
 package{
+	import flash.desktop.NativeApplication;
 	import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
 	import flash.events.Event;
@@ -6,54 +7,75 @@ package{
 	import flash.net.SharedObject;
 	import flash.ui.Keyboard;
 	
-	import Assembly.Canvas.I3DPlate;
-	import Assembly.ProjectHolder.FileHolder;
-	import Assembly.ProjectHolder.GxmlContainer;
+	import Kernel.SmartCanvas.Canvas.FreePlate;
+	import Kernel.ProjectHolder.FileHolder;
+	import Kernel.ProjectHolder.GxmlContainer;
 	
-	import Biology.LinkTypeInit;
-	import Biology.NodeTypeInit;
+	import Kernel.Biology.LinkTypeInit;
+	import Kernel.Biology.NodeTypeInit;
 	
 	import GUI.Windows.WindowSpace;
 	
-	import Layout.GlobalLayoutManager;
+	import UserInterfaces.GlobalLayout.GlobalLayoutManager;
 	
-	import Style.FontPacket;
+	import Kernel.SmartLayout.LayoutRunner;
+	
+	import UserInterfaces.Style.FontPacket;
 	
 	import fl.managers.StyleManager;
-	import SmartLayout.LayoutRunner;
+	import GUI.Assembly.IMouseCursor;
+	import Kernel.Assembly.ServerMon;
 	
 	
 	public class iGemNet extends GlobalLayoutManager{
 		
-		/*Init Statics*/	
+		
+		///Init NodeType
+		///@see NodeTypeInit.as
 		new NodeTypeInit();
+		
+		///Init LinkType
+		///@see LinkTypeInit.as
 		new LinkTypeInit();
 		
+		///Init MouseCursor
+		///@see IMouseCursor.as
 		new IMouseCursor();
+		
+		///Init Layour Runner
+		///@see LayoutRunner.as
+		new LayoutRunner();
+		
+		///Init server monitor
+		///@see ServerMon.as
+		new ServerMon();
 		
 		/*Show Init Logo:*/
 		//new LOGO();
 		
-		/*Show Version*/
+		///Window Title 
+		public static const Title:String="BioPanorama Release Candidate @ iGEM Software 2014";
 		
-		public static const Version:String="BioPano 2.975 ProjectOnCloud 1003";
-		public static const Title:String="BioPanorama 2.975 @ iGEM Software 2014";
-		
+		///Local appearciation storage <for option>
 		public var User_Data:SharedObject;
 		
-		new LayoutRunner;
-		
+		///Version check for local storage, if the version is lower than ForceVersion, some of the data may needs to be modified. <for updates>
+		public const ForceVersion:String="3.1";
 		
 		public function iGemNet(){
 			
+			///For back stage processes. true means these processes will quit when the main Program quit.
+			NativeApplication.nativeApplication.autoExit=true;
 			
+			///set window title
 			stage.nativeWindow.title=Title;
 			
-			/////User Appreciation
+			
+			/////below handles local user appreciation storage
 			
 			User_Data=SharedObject.getLocal("UserAppreciation");
 			
-			if(User_Data.data.valid!=null){
+			if(User_Data.data.valid==ForceVersion){
 				
 				GlobalVaribles.showIconMap=User_Data.data.showIconMap;
 				
@@ -65,13 +87,18 @@ package{
 					WindowSpace.addWindow(GlobalLayoutManager.fpsViewer);
 				}
 				
-				I3DPlate.grid.visible=User_Data.data.showGrid;
+				FreePlate.grid.visible=User_Data.data.showGrid;
 				
+				///These two are account information
 				GlobalVaribles.token=User_Data.data.token;
+				
+				GlobalVaribles.userName=User_Data.data.userName;
 				
 			}else{
 				
-				User_Data.data.valid=true;
+				new LinkTypeInit(true);
+				
+				User_Data.data.valid=ForceVersion;
 				
 				User_Data.data.showIconMap=true;
 				
@@ -83,9 +110,14 @@ package{
 				
 				User_Data.data.showGrid=true;
 				
+				///These two are account information
 				User_Data.data.token="";
+				
+				User_Data.data.userName=""
 			}
 			
+			
+			///Save user appreciation when exiting
 			stage.addEventListener(Event.DEACTIVATE,function (e):void{
 				
 				User_Data.data.LeftHabit=GlobalVaribles.LeftHabit;
@@ -96,37 +128,39 @@ package{
 				
 				User_Data.data.showFPS=WindowSpace.contains(GlobalLayoutManager.fpsViewer);;
 				
-				User_Data.data.showGrid=I3DPlate.grid.visible;
+				User_Data.data.showGrid=FreePlate.grid.visible;
 				
-				////////Token
+				///These two are account information
 				User_Data.data.token=GlobalVaribles.token;
+				
+				User_Data.data.userName=GlobalVaribles.userName;
 			});
 			
-			////////////
 			
-			stage.frameRate=36;
-			stage.scaleMode=StageScaleMode.NO_SCALE;
-			stage.align=StageAlign.TOP_LEFT;
-			stage.addEventListener(Event.RESIZE,setStage);
+			///Below set the stage attribution
+			stage.frameRate=36;												//Max frameRate
+			stage.scaleMode=StageScaleMode.NO_SCALE;		//Scale mode, stage scale shouldn't change
+			stage.align=StageAlign.TOP_LEFT;								//Layout from left-top.
+			stage.addEventListener(Event.RESIZE,setStage);			//re-arrange layout when window scale is changed.
 			
-			stage.addEventListener(KeyboardEvent.KEY_DOWN,key_listener);
+			stage.addEventListener(KeyboardEvent.KEY_DOWN,key_listener);		//listener for hot key.
 			
 			/*stage.addEventListener(MouseEvent.MOUSE_MOVE,function (e):void{
 				
 				trace(e.target);
 			});*/
-			////////Style
 			
+			
+			///Style for Flash UI Components
 			StyleManager.setStyle("textFormat", FontPacket.LabelText);
-			
-			new ServerMon();
-			
+
 			super();
 		}
 
+		
 		protected function key_listener(e:KeyboardEvent):void
-		{
-			//ctrl+F
+		{			
+			/**Listener for ctrl-based hot keys*/
 			if(e.ctrlKey&&e.keyCode==Keyboard.F){
 				searchBar.setFocus();
 			}
@@ -146,7 +180,12 @@ package{
 				GxmlContainer.New();
 			}
 		}
+		
 		public static function setWindowLabel():void{
+			/**for setting window label, used for showing current file
+			 * @see Kernel.ProjectHolder.FileHolder
+			 * */
+			
 			if(FileHolder.currentFile!=null){
 				if(GxmlContainer.modified){
 					TheNet.stage.nativeWindow.title=Title+" - "+FileHolder.currentFile.name+"*";

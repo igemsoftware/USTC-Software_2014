@@ -2,13 +2,13 @@ package Assembly.Compressor
 {
 	import flash.display.Graphics;
 	
-	import Assembly.BioParts.BioArrow;
-	import Assembly.Canvas.I3DPlate;
-	
 	import Biology.Types.LinkSkinData;
 	import Biology.Types.LinkType;
 	
 	import Geometry.DrawArrow;
+	
+	import Assembly.BioParts.BioArrow;
+	import Assembly.Canvas.I3DPlate;
 
 	public class CompressedLine
 	{
@@ -19,11 +19,9 @@ package Assembly.Compressor
 		private var _Type:LinkType;
 		public var Name:String;
 		public var ID:String;
-		public var refID:String="";
+		public var DoubleDirec:Boolean=false;
 		
 		public var skindata:LinkSkinData;
-		
-		public var detail:String=""
 		
 		//////////Runtime
 		public var Instance:BioArrow;
@@ -36,27 +34,20 @@ package Assembly.Compressor
 		
 		public var x:Number,y:Number;
 		
-		public var modified:Boolean=false;
-
-		public function CompressedLine(id:String ,nam:String,obj1:CompressedNode,obj2:CompressedNode,type:LinkType,_detail:String=null)
+		public function CompressedLine(id:String ,nam:String,obj1:CompressedNode,obj2:CompressedNode,type:LinkType)
 		{
 			Name=nam;
 			ID=id;
 			linkObject = [obj1,obj2];
 			Type=type;
 			skindata=type.skindata;
-			detail=_detail;
 			setLine();
-		}
-		
-		public function get ContentURL():String{
-			return GlobalVaribles.LINK_INTERFACE+ID+"/";
 		}
 		
 		public function get Type():LinkType{
 			return _Type;
 		}
-		
+
 		public function set Type(value:LinkType):void{
 			_Type = value;
 			skindata=value.skindata;

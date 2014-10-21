@@ -13,70 +13,33 @@ package
 	public class Workers
 	{
 		
-		[Embed(source="../workerswfs/Layout/Sorpotions/NavigatorTrackingThread.swf", mimeType="application/octet-stream")]
-		private static var Layout_Sorpotions_NavigatorTrackingThread_ByteClass:Class;
 		
-		[Embed(source="../workerswfs/Assembly/ExpandThread/LoaderThread.swf", mimeType="application/octet-stream")]
-		private static var Platform_LoaderThread_LoaderThread_ByteClass:Class;
+		[Embed(source="../workerswfs/UserInterfaces/Sorpotions/NavigatorTrackingThread.swf", mimeType="application/octet-stream")]
+		private static var UserInterfaces_Sorpotions_NavigatorTrackingThread_ByteClass:Class;
 		
-		[Embed(source="../workerswfs/Assembly/Compressor/Compressor.swf", mimeType="application/octet-stream")]
-		private static var Platform_Compressor_Compressor_ByteClass:Class;
+		[Embed(source="../workerswfs/Kernel/SmartCanvas/PickThread.swf", mimeType="application/octet-stream")]
+		private static var Kernel_SmartCanvas_PickThread_ByteClass:Class;
 		
-		[Embed(source="../workerswfs/SmartLayout/BackStage.swf", mimeType="application/octet-stream")]
-		private static var SmartLayout_BackStage_ByteClass:Class;
+		[Embed(source="../workerswfs/Kernel/SmartLayout/LayoutThread.swf", mimeType="application/octet-stream")]
+		private static var Kernel_SmartLayout_LayoutThread_ByteClass:Class;
 		
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		public static function get Layout_Sorpotions_NavigatorTrackingThread():ByteArray
+		public static function get UserInterfaces_Sorpotions_NavigatorTrackingThread():ByteArray
 		{
-			return new Layout_Sorpotions_NavigatorTrackingThread_ByteClass();
+			return new UserInterfaces_Sorpotions_NavigatorTrackingThread_ByteClass();
 		}
 		
-		public static function get Platform_LoaderThread_LoaderThread():ByteArray
+		public static function get Kernel_SmartCanvas_PickThread():ByteArray
 		{
-			return new Platform_LoaderThread_LoaderThread_ByteClass();
+			return new Kernel_SmartCanvas_PickThread_ByteClass();
 		}
 		
-		public static function get Platform_Compressor_Compressor():ByteArray
+		public static function get Kernel_SmartLayout_LayoutThread():ByteArray
 		{
-			return new Platform_Compressor_Compressor_ByteClass();
+			return new Kernel_SmartLayout_LayoutThread_ByteClass();
 		}
-		
-		public static function get SmartLayout_BackStage():ByteArray
-		{
-			return new SmartLayout_BackStage_ByteClass();
-		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		

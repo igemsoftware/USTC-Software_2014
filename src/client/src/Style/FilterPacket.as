@@ -14,8 +14,6 @@ package Style
 		public static var ThinHightLightGlow:GlowFilter=new GlowFilter(0x3399ff,1,3,3,1,2);
 		public static var TextGlow:GlowFilter=new GlowFilter(0x000000,1,5,5,2,2);
 		
-		public static var WhiteGlow:GlowFilter=new GlowFilter(0xffffff,1,20,20,2,2);
-		
 		public function FilterPacket()
 		{
 		}

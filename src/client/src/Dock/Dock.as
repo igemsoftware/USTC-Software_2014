@@ -7,8 +7,6 @@ package Dock{
 	import flash.geom.Point;
 	
 	import Assembly.ProjectHolder.GxmlContainer;
-	import Assembly.ProjectHolder.ProjectManager;
-	import Assembly.ProjectHolder.SyncManager;
 	
 	import Biology.TypeEditor.BioStyleEditor;
 	
@@ -47,13 +45,11 @@ package Dock{
 		public var layoutButton:IconButton=new IconButton(Icon_Layout,"Layout");
 		public var Biotype:IconButton=new IconButton(Icon_design,"Design");
 		public var login_b:IconButton=new IconButton(ICON_Login,"Login");
-		public var sync_b:IconButton=new IconButton(Icon_SYNC,"Sync");
-		public var upload_b:IconButton=new IconButton(Icon_upload,"Share");
 		
 		public var per_b:IconButton=new IconButton(Icon_Perspective,"Perspective View");
 		public var FullScreen:IconButton=new IconButton(Icon_FullScreen,"Full Screen");
 		
-		public var DockList:Array=[new_b,load_b,save_b,saveAs_b,back_b,forward_b,revert_b,per_b,print,option,layoutButton,Biotype,login_b,sync_b,upload_b,FullScreen];
+		public var DockList:Array=[new_b,load_b,save_b,saveAs_b,back_b,forward_b,revert_b,per_b,print,option,layoutButton,Biotype,login_b,FullScreen];
 		
 		public var Width:int;
 		
@@ -100,12 +96,10 @@ package Dock{
 			
 			option.addEventListener("click",opt_evt);
 			login_b.addEventListener("click",function (e):void{
+				loginPane.refreshLoginStatus();
 				loginlatin.showAt(login_b);
+				
 			});
-			
-			sync_b.addEventListener(MouseEvent.CLICK,SyncManager.SYNC);
-			upload_b.addEventListener(MouseEvent.CLICK,upload_evt);
-			
 			Biotype.addEventListener(MouseEvent.CLICK,function (e):void{
 				if (designPanel==null) {
 					designPanel=new Panel("BioType Editor",new BioStyleEditor());
@@ -127,11 +121,6 @@ package Dock{
 					FullScreen.label="Full Screen"
 				}
 			});
-		}
-		
-		protected function upload_evt(event:MouseEvent):void
-		{
-			ProjectManager.Upload();
 		}
 		
 		protected function opt_evt(event:MouseEvent):void

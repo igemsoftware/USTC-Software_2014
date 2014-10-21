@@ -9,12 +9,12 @@ package GUI.IconSheet
 	import flash.net.URLRequest;
 	import flash.text.TextField;
 	
-	import GUI.FlexibleWidthObject;
+	import GUI.Assembly.FlexibleWidthObject;
 	
-	import Geometry.DrawBitMap;
+	import Kernel.Geometry.DrawBitMap;
 	
-	import Style.FontPacket;
-	import Style.Tween;
+	import UserInterfaces.Style.FontPacket;
+	import UserInterfaces.Style.Tween;
 	
 	public class IconSheet extends Sprite implements FlexibleWidthObject{
 		

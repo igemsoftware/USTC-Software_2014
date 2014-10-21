@@ -29,10 +29,10 @@ package GUI.RichGrid
 		
 		private var masker:Shape=new Shape();
 		
-		public function RichList(key:String="label",editable=false,selectable=false){
+		public function RichList(key:String="label",editable=false,selectable=false,double=false){
 			edit=editable
 			
-			sheet=new Table(editable,selectable);
+			sheet=new Table(editable,selectable,false,false,false,double);
 			
 			sheet.columns=[key];
 			scroll=new Scroll(sheet);

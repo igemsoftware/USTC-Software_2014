@@ -9,8 +9,8 @@ package GUI.Assembly
 	import flash.text.TextFieldAutoSize;
 	import flash.text.TextFieldType;
 	
-	import Style.ColorPacket;
-	import Style.FontPacket;
+	import UserInterfaces.Style.ColorPacket;
+	import UserInterfaces.Style.FontPacket;
 	
 	public class LabelField extends Sprite
 	{

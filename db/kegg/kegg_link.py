@@ -3,8 +3,7 @@ from Modules.kegg_parse import *
 from pymongo import *
 from bson.objectid import ObjectId
 import CONSTANT
-
-db = MongoClient()[CONSTANT.DATABASE]
+from CONSTANT import db
 
 
 class count(Document):

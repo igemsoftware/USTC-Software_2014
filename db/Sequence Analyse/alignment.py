@@ -3,10 +3,10 @@ __author__ = 'Beibeihome'
 import os
 import pymongo
 import CONSTANT
+from CONSTANT import db
 
 
 def main():
-    db = pymongo.Connection()[CONSTANT.DATABASE]
     fp = './BLAST/sequence.fasta'
     file = open(fp, 'w')
     text_list = []

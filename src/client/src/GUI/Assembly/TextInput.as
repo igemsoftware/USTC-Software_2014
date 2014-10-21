@@ -7,11 +7,11 @@ package GUI.Assembly{
 	import flash.events.KeyboardEvent;
 	import flash.text.TextField;
 	import flash.text.TextFieldType;
+	import flash.ui.Keyboard;
 	
-	import GUI.FlexibleLayoutObject;
 	import GUI.Scroll.Scroll;
 	
-	import Style.FontPacket;
+	import UserInterfaces.Style.FontPacket;
 	
 	
 	
@@ -65,6 +65,7 @@ package GUI.Assembly{
 			}else{
 				
 				addChild(_textf);
+				_textf.addEventListener(KeyboardEvent.KEY_DOWN,Enter_mon);
 			}
 			
 			if(searchBar){
@@ -108,10 +109,18 @@ package GUI.Assembly{
 			
 		}
 		
+		protected function Enter_mon(event:KeyboardEvent):void
+		{
+			if(event.keyCode==Keyboard.ENTER){
+				dispatchEvent(new Event("Enter"))
+			}
+		}
+		
 		public function set hintText(s:String):void{
 			if(hintTF==null){
 				hintTF=new TextField();
 				hintTF.x=2;
+				hintTF.y=Height/2-12;
 				hintTF.defaultTextFormat=FontPacket.LabelHintText;
 				hintTF.mouseEnabled=false;
 				hintTF.autoSize="left";
@@ -122,15 +131,18 @@ package GUI.Assembly{
 		
 		public function setSize(w:Number, h:Number):void
 		{
-			
 			if(scroll!=null){
 				_textf.width=w;
-				_textf.height=_textf.textHeight+5;
+				_textf.height=Math.max(_textf.textHeight+5,h);
 				scroll.setSize(w,h);
-				
 			}else{
+				_textf.y=h/2-12;
+				if(hintTF!=null){
+					hintTF.y=h/2-12;
+				}
 				_textf.width=int(w);
 				_textf.height=int(h);
+				
 			}
 			
 			Width=w;
@@ -154,6 +166,15 @@ package GUI.Assembly{
 		
 		public function set text(s:String):void{
 			_textf.text=s;
+			if(s!=""){
+				if(hintTF!=null){
+					hintTF.visible=false;
+				}
+			}else{
+				if(hintTF!=null){
+					hintTF.visible=true;
+				}
+			}
 		}
 		
 		public function get textHeight():Number{

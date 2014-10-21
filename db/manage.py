@@ -6,16 +6,12 @@ from pymongo import *
 from mongoengine import *
 from regulondb import *
 from Modules.kegg_parse import node
-import CONSTANT
+from CONSTANT import db
 
 
 OVERWRITE = True
-db = MongoClient()[CONSTANT.DATABASE]
-
 
 def count():
-    client = MongoClient()
-    db = client[CONSTANT.DATABASE]
     db.drop_collection('count')
     db.count.insert({'type': 'node', 'value': 0})
     db.count.insert({'type': 'link', 'value': 0})
@@ -64,7 +60,6 @@ def kegg_reaction():
 
 def kegg_reaction_function_link():
     path = './kegg/mm_parse.py'
-    db = MongoClient()[CONSTANT.DATABASE]
     db.drop_collection('module__function_link')
     #order = 'python ' + path
     #os.system(order)
@@ -136,14 +131,15 @@ def blast_setup():
     os.system(order)
 
 
+def project_init():
+    path = './Patch/project_init.py'
+
 def sigma_link():
     path = './Patch/sigma_link.py'
     execfile(path, {})
 
 
 def rebuild():
-    client = MongoClient()
-    db = client[CONSTANT.DATABASE]
     if OVERWRITE:
         for collection in db.collection_names():
             if collection != 'system.indexes':
@@ -194,19 +190,12 @@ def rebuild():
     print 'Fishing patch built in August 22'
     patch2()
 
+    print 'Initial project information'
+    project_init()
+
 
 def main():
     rebuild()
-    #patch2()
-    #kegg_node(0)
-    #kegg_reaction_function_link()
-    #database_link()
-    #patch1()
-    #kegg_connect()
-    #kegg_reaction()
 
-
-#blast_setup()
 main()
-#alignment_data()
-#rename_enzyme()
+

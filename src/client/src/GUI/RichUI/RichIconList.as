@@ -5,8 +5,8 @@ package GUI.RichUI{
 	import flash.events.MouseEvent;
 	import flash.text.TextField;
 	
-	import Style.FontPacket;
-	import Style.Tween;
+	import UserInterfaces.Style.FontPacket;
+	import UserInterfaces.Style.Tween;
 	
 	public class RichIconList extends Sprite{
 		
@@ -26,7 +26,7 @@ package GUI.RichUI{
 			addChild(Base);
 		}
 		
-		public function setIconField(arr:Array,rev=false):void
+		public function setIconField(arr:Array,showLabel=true,showIcon=true,rev=false):void
 		{
 			removeChildren(1);
 			Data=arr;
@@ -60,16 +60,24 @@ package GUI.RichUI{
 					selectedIndex=e.target.tabIndex;
 				})
 				
-				var tmpIcon:*=new arr[i].icon();
-				if (rev) {
-					tmpIcon.scaleX=-1;
+				var tmpIcon:*
+				if(arr[i].icon!=null&&showIcon){
+					tmpIcon=new arr[i].icon();
+					if (rev) {
+						tmpIcon.scaleX=-1;
+					}
+					tmpIcon.mouseEnabled=false;
+				}else{
+					tmpIcon=null;
 				}
-				tmpIcon.mouseEnabled=false;
-			
+				
 				iconData.push({icon:tmpIcon,label:tmpLabel,labelButton:tmpButton});
 				
 				addChild(tmpButton);
-				addChild(tmpIcon);
+				if(showLabel)addChild(tmpLabel);
+				if(showIcon)addChild(tmpIcon);
+				
+				
 			}
 			setSize();
 		}		
@@ -87,10 +95,20 @@ package GUI.RichUI{
 			Base.graphics.lineStyle(0,0xaaaaaa,1);
 			for (var i:int = 0; i < iconData.length; i++) {
 				
-				var dh:int=int(Math.max(iconData[i].icon.height,minHeight));
+				var dh:int
+				if(iconData[i].icon!=null){
+					dh=int(Math.max(iconData[i].icon.height,minHeight));
+				}else{
+					dh=25;
+				}
 				
-				iconData[i].icon.x=w/2;
-				iconData[i].icon.y=currentHeight+dh/2;
+				iconData[i].label.x=0
+				iconData[i].label.y=currentHeight
+				
+				if(iconData[i].icon!=null){
+					iconData[i].icon.x=w/2;
+					iconData[i].icon.y=currentHeight+dh/2;
+				}
 				
 				iconData[i].labelButton.width=w;
 				iconData[i].labelButton.height=dh+4;
@@ -104,7 +122,7 @@ package GUI.RichUI{
 				Base.graphics.moveTo(2,currentHeight-2);
 				Base.graphics.lineTo(w-2,currentHeight-2);
 			}
-			
+			Height=currentHeight;
 			Base.graphics.beginFill(0xffffff,0.9);
 			Base.graphics.drawRect(0,0,w,currentHeight);
 			Base.graphics.endFill();

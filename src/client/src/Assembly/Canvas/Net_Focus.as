@@ -5,9 +5,9 @@ import Assembly.Compressor.CompressedNode;
 
 // ActionScript file
 //////Focus Manager
-public static function setfocus(tar,multi=false,ani=true):void {
+public static function setfocus(tar,multi=false):void {
 	
-	tar.Instance.setFocus(ani);
+	tar.Instance.setFocus();
 	
 	if(multi){
 		////////Must be CompressedNode
@@ -19,7 +19,7 @@ public static function setfocus(tar,multi=false,ani=true):void {
 			PickList[tar.ID]=tar.Instance;
 			BlockSpace.PopUp(tar.Instance);
 		}else{
-			PickList[tar.ID].loseFocus(ani);
+			PickList[tar.ID].loseFocus();
 			delete PickList[tar.ID];
 			return;
 		}
@@ -28,7 +28,7 @@ public static function setfocus(tar,multi=false,ani=true):void {
 		
 		for each (var node:BioBlock in PickList) {
 			if(node!=tar.Instance){
-				node.loseFocus(ani);
+				node.loseFocus();
 				BlockSpace.compressChild(node);
 			}
 		}
@@ -58,9 +58,9 @@ private static function KillAllFocus(e=null):void {
 		cancel_centerView();
 	}else{
 		for each (var node:BioBlock in PickList) {
-			node.loseFocus(true);
+			PickList[node.NodeLink.ID].loseFocus();
+			delete PickList[node.NodeLink.ID];
 		}
-		PickList=[];
 		
 		if(focusedLine!=null){
 			focusedLine.loseFocus();

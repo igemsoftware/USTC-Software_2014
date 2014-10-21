@@ -15,7 +15,7 @@ package Biology.TypeEditor
 		{
 			
 		}
-		public function showSample(tp:LinkType):void{
+		public function showSample(tp:LinkType,dbdir:Boolean=false):void{
 			graphics.clear();
 			
 			
@@ -28,7 +28,7 @@ package Biology.TypeEditor
 			
 			graphics.lineStyle(tp.skindata.stroke,tp.skindata.lineColor);
 				
-			DrawArrow._draw(graphics,start,end,color,lineType,startArrowType,endArrowType);
+			DrawArrow._draw(graphics,start,end,color,lineType,startArrowType,endArrowType,dbdir);
 			}
 		}
 	}

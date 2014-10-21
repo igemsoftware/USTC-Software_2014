@@ -6,10 +6,7 @@ from Modules import convert_to_mongodb
 from regulondb import generate_product_collection
 from regulondb import add_ref, add_refs_father, import_data_link, import_data_node, initiate
 import pymongo
-import CONSTANT
-
-conn = pymongo.Connection()
-db = conn[CONSTANT.DATABASE]
+from CONSTANT import db
 
 
 print 'initiate database'

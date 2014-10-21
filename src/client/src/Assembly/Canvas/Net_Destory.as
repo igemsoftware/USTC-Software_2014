@@ -72,6 +72,16 @@ public static function DestoryLink(line:CompressedLine):void {
 	
 	delete line.linkObject[1].Linklist[line.linkObject[0].ID];
 	
+	////////obj1: 
+	delete line.linkObject[1].LinkInlist[line.linkObject[0].ID];
+	
+	delete line.linkObject[1].LinkOutlist[line.linkObject[0].ID];
+	
+	////////obj0
+	delete line.linkObject[0].LinkInlist[line.linkObject[1].ID];
+	
+	delete line.linkObject[0].LinkOutlist[line.linkObject[1].ID];
+	
 	if (centerView) {
 		if (line.linkObject[0].centerBlock==centeredBlock||line.linkObject[1].centerBlock==centeredBlock) {
 			DragClose();

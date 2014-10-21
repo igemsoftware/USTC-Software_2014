@@ -4,8 +4,8 @@ package GUI.ColorChooser{
 	import flash.events.MouseEvent;
 	import flash.geom.Point;
 	
-	import Layout.FrontCoverSpace;
-	import Layout.GlobalLayoutManager;
+	import UserInterfaces.GlobalLayout.FrontCoverSpace;
+	import UserInterfaces.GlobalLayout.GlobalLayoutManager;
 	
 	import fl.events.ColorPickerEvent;
 	

@@ -6,9 +6,9 @@ package GUI.Windows{
 	import flash.events.MouseEvent;
 	import flash.text.TextField;
 	
-	import Style.FilterPacket;
-	import Style.FontPacket;
-	import Style.Tween;
+	import UserInterfaces.GlobalLayout.GlobalLayoutManager;
+	import UserInterfaces.Style.FilterPacket;
+	import UserInterfaces.Style.FontPacket;
 	
 	
 	public class Panel extends Sprite{
@@ -17,27 +17,33 @@ package GUI.Windows{
 		public var backGround:Sprite=new Sprite();
 		public var backGroundShadow:Shape=new Shape();
 		private var closeButton:close_button=new close_button();
-		public var aimY:Number;
 		public var Content:*;
 		public var flexable:Boolean=false;
 		
+		public var Height:Number,Width:Number;
+		
 		private var SX:Number,SY:Number;
 		
-		public function Panel(nam,Target:Object,sx=300,sy=300){
-			var w:Number,h:Number;
+		public function Panel(nam,Target:Object,sx=null,sy=null){
+			
+			
+			if(sx==null){
+				sx=GlobalLayoutManager.StageWidth/2
+				sy=GlobalLayoutManager.StageHeight/2
+			}
 			
 			this.cacheAsBitmap=true;
 			
 			Content=Target;
 			
 			if(Target.hasOwnProperty("Height")){
-				SY=sy-Content.Height/2;
+				SY=sy-Content.Height/2-30;
 			}else{
-				SY=sy-Content.height/2;
+				SY=sy-Content.height/2-30;
 			}
 			SX=sx-Content.width/2;
 			this.x=SX;
-			aimY=SY;
+			this.y=SY;
 			
 			title.x=title.y=9;
 			title.defaultTextFormat=FontPacket.WhiteTitleText;
@@ -57,24 +63,22 @@ package GUI.Windows{
 			addChild(title);
 			
 			if(Content.hasOwnProperty("Width")){
-				w=Content.Width;
+				Width=Content.Width;
 			}else{
-				w=Content.width;
+				Width=Content.width;
 			}
 			
 			if(Content.hasOwnProperty("Height")){
-				h=Content.Height;
+				Height=Content.Height;
 			}else{
-				h=Content.height;
+				Height=Content.height;
 			}
 				
-			setSize(w+9,h+title.height+15);
+			setSize(Width+9,Height+title.height+15);
 			
 			addEventListener(MouseEvent.MOUSE_DOWN,focus_evt);
 			this.addEventListener(MouseEvent.MOUSE_DOWN,draging);
 			Target.addEventListener("close",close);
-			Target.addEventListener("closeDelay",close_delay);
-			Tween.floatIn(this);
 		}
 		
 		protected function focus_evt(event:MouseEvent):void{
@@ -101,23 +105,10 @@ package GUI.Windows{
 			closeButton.y=10;
 		}
 		protected function close(e):void{
-			Tween.floatOut(this);
+			dispatchEvent(new Event("close"));
 		}
 		
-		protected function close_delay(e):void{
-			addEventListener(Event.ENTER_FRAME,tick_evt);
-			Content.addEventListener("close",close);
-			Content.addEventListener("closeDelay",close_delay);
-		}
-		private var ticks:uint=0;
-		protected function tick_evt(event:Event):void{
-			ticks++;
-			if (ticks>50) {
-				Tween.floatOut(this);
-				removeEventListener(Event.ENTER_FRAME,tick_evt);
-			}
-		}
-		
+	
 		protected function draging(event:MouseEvent):void{
 			if (event.target==backGround) {
 				this.startDrag();

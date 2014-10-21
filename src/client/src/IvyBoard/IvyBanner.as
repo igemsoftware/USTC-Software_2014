@@ -14,9 +14,8 @@ package IvyBoard
 		
 		private var RGroup:RadioGroup=new RadioGroup();
 		private var Icon_Add:GlowRadioIcon=new GlowRadioIcon(Icon_add,RGroup);
-		private var Icon_Connect:GlowRadioIcon=new GlowRadioIcon(Icon_Linkage,RGroup);
+		private var Icon_Inf:GlowRadioIcon=new GlowRadioIcon(Icon_Linkage,RGroup);
 		private var Icon_Edit:GlowRadioIcon=new GlowRadioIcon(Icon_edit,RGroup);
-		private var Icon_Inf:GlowRadioIcon=new GlowRadioIcon(Icon_info,RGroup);
 		
 		private var Banner_back:IvyBannerBack=new IvyBannerBack();
 		public var panel:String;
@@ -25,13 +24,11 @@ package IvyBoard
 			addChild(Banner_back);
 			addChild(Icon_Add);
 			addChild(Icon_Inf);
-			addChild(Icon_Connect);
 			addChild(Icon_Edit);
-			Icon_Connect.y=Icon_Add.y=Icon_Inf.y=Icon_Edit.y=29;
+			Icon_Add.y=Icon_Inf.y=Icon_Edit.y=29;
 			Icon_Add.x=30
-			Icon_Connect.x=90
+			Icon_Inf.x=90
 			Icon_Edit.x=150;
-			Icon_Inf.x=210;
 			
 			Icon_Add.addEventListener(MouseEvent.CLICK,function (e):void{
 				panel="Add";
@@ -40,10 +37,6 @@ package IvyBoard
 			
 			Icon_Edit.addEventListener(MouseEvent.CLICK,function (e):void{
 				panel="Edit";
-				dispatchEvent(new Event(Event.CHANGE));
-			})
-			Icon_Connect.addEventListener(MouseEvent.CLICK,function (e):void{
-				panel="Connect";
 				dispatchEvent(new Event(Event.CHANGE));
 			})
 			Icon_Inf.addEventListener(MouseEvent.CLICK,function (e):void{

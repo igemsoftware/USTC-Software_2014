@@ -5,25 +5,31 @@ package Assembly.BioParts
 	import flash.events.FocusEvent;
 	import flash.events.KeyboardEvent;
 	import flash.events.MouseEvent;
+	import flash.net.URLLoaderDataFormat;
+	import flash.net.URLRequest;
 	import flash.ui.Keyboard;
 	
-	import Assembly.FocusCircle;
-	import Assembly.Canvas.I3DPlate;
-	import Assembly.Canvas.Net;
-	import Assembly.Compressor.CompressedLine;
-	import Assembly.ProjectHolder.GxmlContainer;
-	
-	import FunctionPanel.DetailDispatcher;
+	import FunctionPanel.WindowsDispatcher;
 	
 	import Geometry.DrawBitMap;
 	import Geometry.DrawNode;
 	
+	import Layout.ReminderManager;
 	import Layout.Sorpotions.Navigator;
-
+	
+	import Assembly.ProjectHolder.GxmlContainer;
+	import Assembly.Canvas.I3DPlate;
+	import Assembly.Canvas.Net;
+	import Assembly.Compressor.CompressedLine;
 	
 	import Style.Tween;
 	import Style.TweenX;
-
+	import Assembly.FocusCircle;
+	import LoginAccount.AuthorizedURLLoader;
+	import LoginAccount.AuthorizeEvent;
+	
+	
+	
 	/*
 	Node:
 	This part include functions of :
@@ -41,6 +47,7 @@ package Assembly.BioParts
 		private const DISABLED_COLOR:uint=0xaaaaaa;
 		private const EDIT_COLOR:uint=0xffff99;
 		private const ICON_CIRILE_COLOR:uint=0x9999dd;
+		private var isLoadingDetail:Boolean=false;
 		
 		public function Node(){
 			addChild(block_base);
@@ -60,7 +67,7 @@ package Assembly.BioParts
 		
 		public function ready(edit=true):void{
 			block_base.addEventListener(MouseEvent.MOUSE_DOWN,Down_evt);
-			block_base.addEventListener(MouseEvent.DOUBLE_CLICK,openDetail);
+			block_base.addEventListener(MouseEvent.DOUBLE_CLICK,detail_handle);
 			addEventListener(MouseEvent.CLICK,Click_evt);
 			
 			if (edit) {
@@ -68,10 +75,39 @@ package Assembly.BioParts
 			}
 		}
 		
-		protected function openDetail(e):void{
-			DetailDispatcher.LauchDetail(NodeLink)
-		}
 		
+		protected function detail_handle(e):void{
+			
+			if (NodeLink.detail==null||NodeLink.detail=="") {
+				
+				if(NodeLink.ID.length==24){
+					if(!isLoadingDetail){
+						var loader:AuthorizedURLLoader=new AuthorizedURLLoader(new URLRequest(NodeLink.ContentURL));
+						isLoadingDetail=true;
+						loader.dataFormat = URLLoaderDataFormat.TEXT;
+						loader.addEventListener(Event.COMPLETE,function (event):void{
+							trace(event.target.data);
+							NodeLink.detail=String(event.target.data);
+							WindowsDispatcher.LaunchJSONContent(NodeLink.detail,true,NodeLink);
+							isLoadingDetail=false;
+						});
+						loader.addEventListener(AuthorizeEvent.AUTHORIZE_FAILED,function (event:AuthorizeEvent):void{
+							ReminderManager.remind(event.status);	
+							NodeLink.detail='{"NAME":"'+NodeLink.Name+'","TYPE":"'+NodeLink.Type.label+'","Information":"Failed loading detail from Cloud, Hit Edit to add your information."}'
+							WindowsDispatcher.LaunchJSONContent(NodeLink.detail,true,NodeLink);
+							isLoadingDetail=false;
+						});
+						trace(NodeLink.ContentURL);
+					}
+					
+				}else{
+					NodeLink.detail='{"NAME":"'+NodeLink.Name+'","TYPE":"'+NodeLink.Type.label+'","Information":"Add your Information here by hiting <b>EDIT</b>!"}'
+					WindowsDispatcher.LaunchJSONContent(NodeLink.detail,true,NodeLink);
+				}
+			}else{
+				WindowsDispatcher.LaunchJSONContent(NodeLink.detail,true,NodeLink);
+			}
+		}
 		////Key Mon
 		private function key_mon(e:KeyboardEvent):void{
 			if (e.keyCode==Keyboard.ENTER) {
@@ -120,19 +156,16 @@ package Assembly.BioParts
 		}
 		
 		/////Focus Manager
-		public function setFocus(ani=false):void{
+		override public function setFocus():void{
 			if (!focused) {
-				focusCircle=new FocusCircle(NodeLink.skindata.radius/2*I3DPlate.scaleXY);
+				focusCircle=new FocusCircle(NodeLink.skindata.radius/2*I3DPlate.scaleXY+8);
 				focusCircle.x=this.x;
 				focusCircle.y=this.y;
-				
-				if(ani){
-					focusCircle.scaleX=focusCircle.scaleY=3;
-					Tween.zoomFocus(focusCircle);
-				}
+				focusCircle.scaleX=focusCircle.scaleY=2.6;
 				
 				Net.bottom.addChild(focusCircle);
 				
+				Tween.zoomFocus(focusCircle);
 				focused=true;
 			}
 		}
@@ -141,12 +174,10 @@ package Assembly.BioParts
 			Net.setfocus(NodeLink,e.shiftKey);
 		}
 		
-		public function loseFocus(ani=false):void {
+		override public function loseFocus():void {
 			focused=false;
-			if (focusCircle!=null&&ani) {
+			if (focusCircle!=null) {
 				Tween.zoomOutFocus(focusCircle);
-			}else{
-				focusCircle.parent.removeChild(focusCircle);
 			}
 			focusCircle=null;
 			if(title.selectable){
@@ -224,7 +255,7 @@ package Assembly.BioParts
 			}
 			
 			if (focusCircle!=null) {
-				focusCircle.redraw(NodeLink.skindata.radius/2*I3DPlate.scaleXY);
+				focusCircle.redraw(NodeLink.skindata.radius/2*I3DPlate.scaleXY+8);
 			}
 		}
 		public function redraw():void {

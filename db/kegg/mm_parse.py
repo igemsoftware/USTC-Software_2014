@@ -5,6 +5,7 @@ import re
 from mongoengine import *
 import pymongo
 import CONSTANT
+from CONSTANT import db
 
 
 class Module_Function_link(Document):
@@ -14,12 +15,11 @@ class Module_Function_link(Document):
 
 
 def delete_module():
-    db = pymongo.MongoClient()[CONSTANT.DATABASE]
     db.node.remove({'TYPE': 'Module'})
 
 
 def parse():
-    connect(CONSTANT.DATABASE)
+    connect('igemdata_new', host='mongodb://product:bXYtvBHrSdbuTMETSVO4VTWGl0oeddBHp3hPNsUbEZOEpRFLcqgaYAjHRirnSI@us-ce-0:27017,cn-ah-0:27017,cn-bj-0:27017', replicaSet='replset')
     PATH = './kegg/module/mm.txt'
     fp = file(PATH, 'rU')
     #function dict save the informatino between function and module
@@ -42,8 +42,6 @@ def parse():
 
 
 def main():
-    client = pymongo.MongoClient()
-    db = client[CONSTANT.DATABASE]
     count = 0
     for log in db.module__function_link.find():
         #module_list = db.kegg_node.find({'TYPE': 'Module'})

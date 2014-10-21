@@ -1,5 +1,5 @@
 ﻿package IvyBoard {
-	
+
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
@@ -14,9 +14,9 @@
 	import Assembly.Compressor.CompressedNode;
 	
 	import Style.FontPacket;
-	
+
 	public class AttribPanel extends Sprite{
-		
+
 		private var title:TextField=new TextField();
 		private var grid:RichGrid=new RichGrid(false,false);
 		
@@ -30,12 +30,12 @@
 		public var Label:String="Connection"
 		
 		public function AttribPanel():void {
-			
+
 			title.y=0;
 			title.selectable=false;
 			title.autoSize="left";
 			title.defaultTextFormat=FontPacket.WhiteMediumTitleText;
-			
+
 			
 			grid.columns=["Link"];
 			grid.rowHeight=22;
@@ -66,7 +66,7 @@
 			title.text="USTCsoftware";
 			grid.dataProvider=[];
 		}
-		
+
 		public function showAttrib(obj):void {
 			var table:Array=[];
 			
@@ -78,7 +78,9 @@
 				var tb1:Array=[];
 				var tb2:Array=[];
 				for each(var arrow:CompressedLine in obj.Arrowlist) {
-					if (arrow.linkObject[0]==obj) {
+					if (arrow.DoubleDirec) {
+						tb1.push({Link:arrow.linkObject[0].Name+" ↔"+arrow.linkObject[1].Name,Item:arrow});
+					}else if (arrow.linkObject[0]==obj) {
 						tb1.push({Link:arrow.linkObject[0].Name+" → "+arrow.linkObject[1].Name,Item:arrow});
 					} else {
 						tb2.push({Link:arrow.linkObject[1].Name+" ← "+arrow.linkObject[0].Name,Item:arrow});
@@ -86,8 +88,11 @@
 				} 
 				table=tb1.concat(tb2);
 			} else {
-				
-				title.text=obj.linkObject[0].Name+" → "+obj.linkObject[1].Name;
+				if (obj.DoubleDirec) {
+					title.text=obj.linkObject[0].Name+" ↔ "+obj.linkObject[1].Name;
+				}else {
+					title.text=obj.linkObject[0].Name+" → "+obj.linkObject[1].Name;
+				}
 				
 				table.push({Link:obj.linkObject[0].Name,Item:obj.linkObject[0]});
 				table.push({Link:obj.linkObject[1].Name,Item:obj.linkObject[1]});
@@ -102,5 +107,5 @@
 			Height=240+55;
 		}
 	}
-	
+
 }

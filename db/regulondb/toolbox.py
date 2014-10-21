@@ -5,11 +5,10 @@ import re
 import pymongo
 import xlrd
 import CONSTANT
+from pymongo.mongo_replica_set_client import MongoReplicaSetClient
 
-
-conn = pymongo.Connection()
-db = conn[CONSTANT.DATABASE]
-
+client = MongoReplicaSetClient('mongodb://product:bXYtvBHrSdbuTMETSVO4VTWGl0oeddBHp3hPNsUbEZOEpRFLcqgaYAjHRirnSI@us-ce-0:27017,cn-ah-0:27017,cn-bj-0:27017', replicaSet='replset')
+db = client[CONSTANT.DATABASE]
 
 def get_base_path():
     return raw_input("input base path:")

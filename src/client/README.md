@@ -1,4 +1,0 @@
-BioPano
-=======
-
-User Desktop Application

@@ -3,8 +3,7 @@ __author__ = 'Beibeihome'
 from pymongo import *
 import CONSTANT
 from bson import ObjectId
-
-db = MongoClient()[CONSTANT.DATABASE]
+from CONSTANT import db
 
 
 def setLink(doc1, doc2, type1, type2):

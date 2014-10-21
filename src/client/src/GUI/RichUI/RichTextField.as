@@ -9,7 +9,7 @@ package GUI.RichUI
 	import flash.text.TextFieldType;
 	import flash.text.TextFormat;
 	
-	import Style.FontPacket;
+	import UserInterfaces.Style.FontPacket;
 	
 	import fl.controls.ColorPicker;
 	import fl.controls.ComboBox;

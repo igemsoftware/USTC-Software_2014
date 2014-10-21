@@ -11,10 +11,13 @@ package Assembly.BioParts
 	
 	import Layout.Sorpotions.Navigator;
 	
+	import Assembly.Canvas.I3DPlate;
 	import Assembly.Canvas.Net;
 	import Assembly.Compressor.CompressedNode;
-
+	
+	import Style.Tween;
 	import Assembly.FocusCircle;
+	import Assembly.IFocusableObject;
 	
 	/*
 	author ZLstudio
@@ -23,7 +26,7 @@ package Assembly.BioParts
 	Including following Parts:
 	Linkage,  DragingUP/Down Tween,  MouseEvent Listeners
 	*/
-	public class DisplayNodeObject extends Sprite{
+	public class DisplayNodeObject extends Sprite implements IFocusableObject{
 		
 		public var title:LabelField=new LabelField();
 		
@@ -184,5 +187,11 @@ package Assembly.BioParts
 		}
 		
 		protected function Click_evt(e:MouseEvent):void {}
+		public function loseFocus():void {
+			
+		}
+		public function setFocus():void {
+			
+		}
 	}
 }

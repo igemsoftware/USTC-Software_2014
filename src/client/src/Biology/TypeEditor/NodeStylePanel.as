@@ -12,8 +12,6 @@ package Biology.TypeEditor
 	import flash.net.FileFilter;
 	import flash.utils.ByteArray;
 	
-	import Assembly.FocusCircle;
-	
 	import Biology.Types.NodeType;
 	import Biology.Types.SymbolType;
 	
@@ -32,8 +30,6 @@ package Biology.TypeEditor
 	
 	public class NodeStylePanel extends Sprite implements FlexibleWidthObject
 	{
-		public var focusCir:FocusCircle=new FocusCircle(35);
-		
 		private var editType:NodeType;
 		
 		public var _sample:NodeSample=new NodeSample();
@@ -57,8 +53,6 @@ package Biology.TypeEditor
 		private var IconPath:String;
 		
 		public function NodeStylePanel(){
-			
-			focusCir.visible=false;
 			
 			slider.width=150;
 			slider.minimum=10;
@@ -126,9 +120,6 @@ package Biology.TypeEditor
 			
 			IconMap=editType.icon;
 			
-			focusCir.visible=true;
-			focusCir.redraw(type.skindata.radius/2)
-			
 			_sample.showSample(editType);
 		}
 		
@@ -140,8 +131,6 @@ package Biology.TypeEditor
 			editType.skindata.radius=slider.value;
 			editType.skindata.shape=shapeChooser.selectedItem.value;
 			editType.iconScale=slider.value*1.1/Math.max(IconMap.height,IconMap.width);
-			
-			focusCir.redraw(slider.value/2)
 			
 			_sample.showSample(editType);
 		}
