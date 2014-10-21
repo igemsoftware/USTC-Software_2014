@@ -13,6 +13,7 @@ import os
 from pymongo import MongoClient
 from pymongo.mongo_replica_set_client import MongoReplicaSetClient
 from mongoengine import register_connection, connect
+from pymongo import ReadPreference
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -50,8 +51,10 @@ INSTALLED_APPS = (
 
 AUTH_USER_MODEL = 'mongo_auth.MongoUser'
 MONGOENGINE_USER_DOCUMENT = 'mongoengine.django.auth.User'
-connect('igemdata_new', host='mongodb://product:passwd@us-ce-0:27017,cn-ah-0:27017,cn-bj-0:27017', replicaSet='replset')
-client = MongoReplicaSetClient('mongodb://product:passwd@us-ce-0:27017,cn-ah-0:27017,cn-bj-0:27017', replicaSet='repset')
+
+mongodb_connect_uri = 'mongodb://product:passwd@us-ce-0:27017,cn-ah-0:27017,cn-bj-0:27017'
+connect('igemdata_new', host=mongodb_connect_uri, replicaSet='replset', read_preference=ReadPreference.NEAREST)
+client = MongoReplicaSetClient(mongodb_connect_uri, replicaSet='replset', read_preference=ReadPreference.NEAREST)
 db = client.igemdata_new
 
 
