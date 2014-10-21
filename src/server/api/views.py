@@ -176,7 +176,7 @@ def get_del_addref_node(request, **kwargs):
             # the node exists
             node_dic = node
             if 'author' in node_dic.keys():
-                    node_dic['author'] = User.objects.get(pk=node_dic['author'])['username']
+                    node_dic['author'] = User.objects.get(pk=node_dic['author']).username
             for key in node_dic.keys():
                 if isinstance(node_dic[key], bson.objectid.ObjectId):
                     node_dic[key] = str(node_dic[key])
@@ -306,7 +306,7 @@ def search_json_node(request):
             results_data = []
             for result in results:
                 if 'author' in result.keys():
-                    result['author'] = User.objects.get(pk=result['author'])['username']
+                    result['author'] = User.objects.get(pk=result['author']).username
                 for key in result.keys():
                     if isinstance(result[key], bson.objectid.ObjectId):
                         result[key] = str(result[key])
@@ -315,6 +315,7 @@ def search_json_node(request):
                         for refid in result[key]:
                             newrefs.append(str(refid))
                         result[key] = newrefs
+
                 results_data.append(result)
 
             data = json.dumps({'result': results_data})
@@ -480,7 +481,7 @@ def get_del_addref_link(request, **kwargs):
             # the node exists
             link_dic = link
             if 'author' in link_dic.keys():
-                    link_dic['author'] = User.objects.get(pk=link_dic['author'])['username']
+                    link_dic['author'] = User.objects.get(pk=link_dic['author']).username
             for key in link_dic.keys():
                 if isinstance(link_dic[key], bson.objectid.ObjectId):
                     link_dic[key] = str(link_dic[key])
@@ -580,7 +581,7 @@ def search_json_link(request):
             results_data = []
             for result in results:
                 if 'author' in result.keys():
-                    result['author'] = User.objects.get(pk=result['author'])['username']
+                    result['author'] = User.objects.get(pk=result['author']).username
                 for key in result.keys():
                     if isinstance(result[key], bson.objectid.ObjectId):
                         result[key] = str(result[key])
