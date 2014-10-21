@@ -88,6 +88,32 @@ def del_project(request, *args, **kwargs):
         if user.is_authenticated():
             if _is_author(prj_id, user):
                 # the user operating is the author of the project, he/she has the power to delete id
+                project = db.project.find_one({'pid': ObjectId(prj_id)})
+                if project is None:
+                    return HttpResponse("{'status':'error', 'reason':'project matching prj_id not found'}")
+                # delete link and linkrefs
+                for linkref in project['link']:
+                    linkref = db.link_ref.find_one({'_id': linkref})
+                    if linkref is None:
+                        return HttpResponse("{'status':'error', 'reason':'link ref not found'}")
+                    link = db.link.find_one({'_id': linkref['link_id']})
+                    if link is None:
+                        return HttpResponse("{'status':'error', 'reason':'link not found'}")
+
+                    db.link.update({'_id': link['-id']}, {'$pull': {"link": linkref['_id']}})
+                    db.link_ref.delete({'_id': linkref['_id']})
+                # delete node and noderefs
+                for noderef in project['node']:
+                    noderef = db.node_ref.find_one({'_id': noderef})
+                    if noderef is None:
+                        return HttpResponse("{'status':'error', 'reason':'node ref not found'}")
+                    node = db.node.find_one({'_id': noderef['node_id']})
+                    if node is None:
+                        return HttpResponse("{'status':'error', 'reason':'node not found'}")
+
+                    db.node.update({'_id': node['-id']}, {'$pull': {"node": noderef['_id']}})
+                    db.node_ref.delete({'_id': noderef['_id']})
+                # delete the project itself
                 ProjectFile.objects.get(pk=ObjectId(prj_id)).delete()
                 return HttpResponse("{'status':'success'}")
 

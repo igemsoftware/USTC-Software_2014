@@ -9,7 +9,7 @@ from dict2xml import dict2xml
 from func_box import *
 from decorators import project_verified, logged_in, project_verified_exclude_get, logged_in_exclude_get
 from projects.models import ProjectFile
-from IGEMServer.settings import db, db
+from IGEMServer.settings import db
 from django.http import QueryDict
 
 
@@ -54,8 +54,11 @@ def add_node(request):
                 return HttpResponse("{'status':'error', 'reason':'insert failed'}")
 
             # add refs between two records
+
             db.node.update({'_id': node_id}, {'$push': {'REF': noderef_id}}, True)
+            db.node.update({'_id': node_id}, {'$set': {'author': request.user['_id']}}, True)
             db.node_ref.update({'_id': noderef_id}, {'$set': {'node_id': node_id}})
+
 
             # return the _id of this user's own record of this node
             data = {
@@ -247,7 +250,7 @@ def search_json_node(request):
             filterinstance = json.loads(request.POST['fields'])
         except KeyError:
             # set a default value
-            filterinstance = {'_id': 1, 'NAME': 1, 'TYPE': 1}
+            filterinstance = {'_id': 1, 'NAME': 1, 'TYPE': 1, 'author': 1}
         except ValueError:
             return HttpResponse("{'status':'error', 'reason':'filter not conform to JSON format'}")
 
@@ -276,10 +279,8 @@ def search_json_node(request):
                 queryinstance[key] = new
 
         # vague search
-        # for key in queryinstance.keys():
-        # if key == 'NAME' or key == "TYPE":
-        # queryinstance[key] = {"$regex": queryinstance[key]}
-        results = db.node.find(queryinstance, filterinstance).limit(limit)
+
+        results = db.node.find(queryinstance, filterinstance).limit(limit).sort({"REF": -1})
 
         if 'format' in request.POST.keys():
             # noinspection PyDictCreation
@@ -349,7 +350,9 @@ def add_link(request):
 
             # add refs between two records
             db.link.update({'_id': link_id}, {'$push': {'REF': linkref_id}}, True)
+            db.link.update({'_id': link_id}, {'$set': {'author': request.user['_id']}}, True)
             db.link_ref.update({'_id': linkref_id}, {'$set': {'link_id': link_id,
+
                                                               'id1': ObjectId(request.POST['id1']),
                                                               'id2': ObjectId(request.POST['id2'])}})
 
@@ -520,7 +523,7 @@ def search_json_link(request):
             filterinstance = json.loads(request.POST['fields'])
         except KeyError:
             # set a default value
-            filterinstance = {'TYPE1': 1, 'TYPE2': 1, '_id': 1}
+            filterinstance = {'TYPE1': 1, 'TYPE2': 1, '_id': 1, 'author': 1}
         except ValueError:
             return HttpResponse("{'status':'error', 'reason':'filter not conform to JSON format'}")
 
@@ -548,6 +551,7 @@ def search_json_link(request):
                     new.append(item)
                 queryinstance[key] = new
         results = db.link.find(queryinstance, filterinstance).limit(limit)
+        results = db.link.find(queryinstance, filterinstance).limit(limit).sort({'REF': -1})
 
         if 'format' in request.POST.keys():
             if request.POST['format'] == 'xml':

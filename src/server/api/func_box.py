@@ -3,8 +3,8 @@ __author__ = 'feiyicheng'
 
 def validate_node(dic):
     """
-    :param dic: the information of the node to be added
-    :return:True or false
+    @param dic: the information of the node to be added
+    @return:True or false
     """
     if (not 'NAME' in dic) or (not 'TYPE' in dic):
         return False
@@ -13,8 +13,8 @@ def validate_node(dic):
 
 def validate_link(dic):
     """
-    :param dic: the information of the link to be added
-    :return:True or false
+    @param dic: the information of the link to be added
+    @return:True or false
     """
     return True
 
