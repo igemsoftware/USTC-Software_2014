@@ -51,7 +51,7 @@ def project_verified(func):
             return func(request, *args, **kwargs)
         else:
             try:
-                prj = ProjectFile.objects.get(pk=ObjectId(['pid']))
+                prj = ProjectFile.objects.get(pk=ObjectId(data['pid']))
             except ObjectDoesNotExist:
                 return HttpResponse("{'status':'error', 'reason':'cannot find a project matching given pid'}")
             else:
@@ -110,7 +110,7 @@ def project_verified_exclude_get(func):
         else:
             try:
                 prj = ProjectFile.objects.get(pk=ObjectId(data['pid']))
-                
+
             except ObjectDoesNotExist:
                 return HttpResponse("{'status':'error', 'reason':'cannot find a project matching given pid'}")
             else:
