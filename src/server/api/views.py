@@ -175,8 +175,6 @@ def get_del_addref_node(request, **kwargs):
         else:
             # the node exists
             node_dic = node
-            if 'author' in node_dic.keys():
-                    node_dic['author'] = User.objects.get(pk=node_dic['author']).username
             for key in node_dic.keys():
                 if isinstance(node_dic[key], bson.objectid.ObjectId):
                     node_dic[key] = str(node_dic[key])
@@ -187,7 +185,13 @@ def get_del_addref_node(request, **kwargs):
                         newrefs.append(str(refid))
                     node_dic[key] = newrefs
 
-            return HttpResponse(json.dumps(node_dic))
+            result_copy = node_dic.copy()
+            if 'author' in result_copy.keys():
+                result_copy['author'] = User.objects.get(pk=result_copy['author']).username
+
+
+
+            return HttpResponse(json.dumps(result_copy))
 
     elif request.method == 'PATCH':
         '''
@@ -283,7 +287,7 @@ def search_json_node(request):
 
         # vague search
 
-        results = db.node.find(queryinstance, filterinstance).sort([('REF', -1), ]).limit(limit)
+        results = db.node.find(queryinstance, filterinstance).sort([('REF', -1) ]).limit(limit)
 
         if 'format' in request.POST.keys():
             # noinspection PyDictCreation
@@ -305,8 +309,7 @@ def search_json_node(request):
         else:
             results_data = []
             for result in results:
-                if 'author' in result.keys():
-                    result['author'] = User.objects.get(pk=result['author']).username
+
                 for key in result.keys():
                     if isinstance(result[key], bson.objectid.ObjectId):
                         result[key] = str(result[key])
@@ -316,7 +319,11 @@ def search_json_node(request):
                             newrefs.append(str(refid))
                         result[key] = newrefs
 
-                results_data.append(result)
+                result_copy = result.copy()
+                if 'author' in result_copy.keys():
+                    result_copy['author'] = User.objects.get(pk=result_copy['author']).username
+
+                results_data.append(result_copy)
 
             data = json.dumps({'result': results_data})
 
@@ -492,7 +499,11 @@ def get_del_addref_link(request, **kwargs):
                         newrefs.append(str(refid))
                     link_dic[key] = newrefs
 
-            return HttpResponse(json.dumps(link_dic))
+            result_copy = link_dic.copy()
+            if 'author' in result_copy.keys():
+                result_copy['author'] = User.objects.get(pk=result_copy['author']).username
+
+            return HttpResponse(json.dumps(result_copy))
 
     else:
         # method incorrect
@@ -559,7 +570,7 @@ def search_json_link(request):
                     new.append(item)
                 queryinstance[key] = new
         results = db.link.find(queryinstance, filterinstance).limit(limit)
-        results = db.link.find(queryinstance, filterinstance).sort([('REF', -1), ]).limit(limit)
+        results = db.link.find(queryinstance, filterinstance).sort([('NAME', 1), ('REF', -1)]).limit(limit)
 
         if 'format' in request.POST.keys():
             if request.POST['format'] == 'xml':
@@ -580,8 +591,6 @@ def search_json_link(request):
         else:
             results_data = []
             for result in results:
-                if 'author' in result.keys():
-                    result['author'] = User.objects.get(pk=result['author']).username
                 for key in result.keys():
                     if isinstance(result[key], bson.objectid.ObjectId):
                         result[key] = str(result[key])
@@ -590,7 +599,12 @@ def search_json_link(request):
                         for refid in result[key]:
                             newrefs.append(str(refid))
                         result[key] = newrefs
-                results_data.append(result)
+
+                result_copy = result.copy()
+                if 'author' in result_copy.keys():
+                    result_copy['author'] = User.objects.get(pk=result_copy['author']).username
+
+                results_data.append(result_copy)
             data = json.dumps({'result': results_data})
 
         return HttpResponse(data)
