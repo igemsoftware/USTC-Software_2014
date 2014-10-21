@@ -280,7 +280,7 @@ def search_json_node(request):
 
         # vague search
 
-        results = db.node.find(queryinstance, filterinstance).sort({'REF': -1}).limit(limit)
+        results = db.node.find(queryinstance, filterinstance).sort([{'REF': -1},]).limit(limit)
 
         if 'format' in request.POST.keys():
             # noinspection PyDictCreation
@@ -551,7 +551,7 @@ def search_json_link(request):
                     new.append(item)
                 queryinstance[key] = new
         results = db.link.find(queryinstance, filterinstance).limit(limit)
-        results = db.link.find(queryinstance, filterinstance).sort({'REF': -1}).limit(limit)
+        results = db.link.find(queryinstance, filterinstance).sort([{'REF': -1},]).limit(limit)
 
         if 'format' in request.POST.keys():
             if request.POST['format'] == 'xml':
