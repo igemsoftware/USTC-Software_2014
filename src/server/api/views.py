@@ -10,6 +10,7 @@ from func_box import *
 from decorators import project_verified, logged_in, project_verified_exclude_get, logged_in_exclude_get
 from projects.models import ProjectFile
 from IGEMServer.settings import db
+from mongoengine.django.auth import User
 from django.http import QueryDict
 
 
@@ -174,6 +175,8 @@ def get_del_addref_node(request, **kwargs):
         else:
             # the node exists
             node_dic = node
+            if 'author' in node_dic.keys():
+                    node_dic['author'] = User.objects.get(pk=node_dic['author'])['username']
             for key in node_dic.keys():
                 if isinstance(node_dic[key], bson.objectid.ObjectId):
                     node_dic[key] = str(node_dic[key])
@@ -302,6 +305,8 @@ def search_json_node(request):
         else:
             results_data = []
             for result in results:
+                if 'author' in result.keys():
+                    result['author'] = User.objects.get(pk=result['author'])['username']
                 for key in result.keys():
                     if isinstance(result[key], bson.objectid.ObjectId):
                         result[key] = str(result[key])
@@ -474,6 +479,8 @@ def get_del_addref_link(request, **kwargs):
         else:
             # the node exists
             link_dic = link
+            if 'author' in link_dic.keys():
+                    link_dic['author'] = User.objects.get(pk=link_dic['author'])['username']
             for key in link_dic.keys():
                 if isinstance(link_dic[key], bson.objectid.ObjectId):
                     link_dic[key] = str(link_dic[key])
@@ -572,6 +579,8 @@ def search_json_link(request):
         else:
             results_data = []
             for result in results:
+                if 'author' in result.keys():
+                    result['author'] = User.objects.get(pk=result['author'])['username']
                 for key in result.keys():
                     if isinstance(result[key], bson.objectid.ObjectId):
                         result[key] = str(result[key])
