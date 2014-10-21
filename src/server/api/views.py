@@ -189,7 +189,7 @@ def get_del_addref_node(request, **kwargs):
             if 'author' in result_copy.keys():
                 result_copy['author'] = User.objects.get(pk=result_copy['author']).username
             result_copy['cite'] = len(result_copy['REF'])
-            
+
             return HttpResponse(json.dumps(result_copy))
 
     elif request.method == 'PATCH':
@@ -256,7 +256,7 @@ def search_json_node(request):
             filterinstance = json.loads(request.POST['fields'])
         except KeyError:
             # set a default value
-            filterinstance = {'_id': 1, 'NAME': 1, 'TYPE': 1, 'author': 1}
+            filterinstance = {'_id': 1, 'NAME': 1, 'TYPE': 1, 'author': 1, 'REF': 1}
         except ValueError:
             return HttpResponse("{'status':'error', 'reason':'filter not conform to JSON format'}")
 
@@ -541,7 +541,7 @@ def search_json_link(request):
             filterinstance = json.loads(request.POST['fields'])
         except KeyError:
             # set a default value
-            filterinstance = {'TYPE1': 1, 'TYPE2': 1, '_id': 1, 'author': 1}
+            filterinstance = {'TYPE1': 1, 'TYPE2': 1, '_id': 1, 'author': 1, 'REF': 1}
         except ValueError:
             return HttpResponse("{'status':'error', 'reason':'filter not conform to JSON format'}")
 
