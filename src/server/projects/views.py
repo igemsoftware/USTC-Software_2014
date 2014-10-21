@@ -11,7 +11,7 @@ import json
 from .models import ProjectFile
 from decorators import logged_in
 from django.http import QueryDict
-from IGEMServer.settings import db_write
+from IGEMServer.settings import db
 from bson.objectid import ObjectId
 
 
@@ -247,7 +247,7 @@ def list_or_create(request, *args, **kwargs):
                     else:
                         exec("new_prj.{0} = paras['{1}']".format(key, key))
                         new_prj.save()
-                db_write.project.insert({'pid': new_prj.pk, 'node': [], 'link': []})
+                db.project.insert({'pid': new_prj.pk, 'node': [], 'link': []})
 
                 return HttpResponse("{'status':'success','pid':'%s'}" % (str(new_prj.pk), ))
         except AttributeError:

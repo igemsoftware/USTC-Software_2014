@@ -6,9 +6,9 @@ from django.http import QueryDict
 import bson
 import json
 import urllib
+from IGEMServer.settings import db
 
-
-db = MongoClient()['igemdata_new']
+# db = MongoClient()['igemdata_new']
 
 
 def look_around(request, **kwargs):
