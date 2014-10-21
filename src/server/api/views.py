@@ -188,9 +188,8 @@ def get_del_addref_node(request, **kwargs):
             result_copy = node_dic.copy()
             if 'author' in result_copy.keys():
                 result_copy['author'] = User.objects.get(pk=result_copy['author']).username
-
-
-
+            result_copy['cite'] = len(result_copy['REF'])
+            
             return HttpResponse(json.dumps(result_copy))
 
     elif request.method == 'PATCH':
@@ -321,7 +320,7 @@ def search_json_node(request):
                 result_copy = result.copy()
                 if 'author' in result_copy.keys():
                     result_copy['author'] = User.objects.get(pk=result_copy['author']).username
-
+                result_copy['cite'] = len(result_copy['REF'])
                 results_data.append(result_copy)
 
             data = json.dumps({'result': results_data})
@@ -501,6 +500,7 @@ def get_del_addref_link(request, **kwargs):
             result_copy = link_dic.copy()
             if 'author' in result_copy.keys():
                 result_copy['author'] = User.objects.get(pk=result_copy['author']).username
+            result_copy['cite'] = len(result_copy['REF'])
 
             return HttpResponse(json.dumps(result_copy))
 
@@ -602,6 +602,7 @@ def search_json_link(request):
                 result_copy = result.copy()
                 if 'author' in result_copy.keys():
                     result_copy['author'] = User.objects.get(pk=result_copy['author']).username
+                result_copy['cite'] = len(result_copy['REF'])
 
                 results_data.append(result_copy)
             data = json.dumps({'result': results_data})
