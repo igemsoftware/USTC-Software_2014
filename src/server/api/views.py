@@ -56,7 +56,7 @@ def add_node(request):
             # add refs between two records
 
             db.node.update({'_id': node_id}, {'$push': {'REF': noderef_id}}, True)
-            db.node.update({'_id': node_id}, {'$set': {'author': request.user['_id']}}, True)
+            db.node.update({'_id': node_id}, {'$set': {'author': request.user.pk}}, True)
             db.node_ref.update({'_id': noderef_id}, {'$set': {'node_id': node_id}})
 
 
@@ -350,7 +350,7 @@ def add_link(request):
 
             # add refs between two records
             db.link.update({'_id': link_id}, {'$push': {'REF': linkref_id}}, True)
-            db.link.update({'_id': link_id}, {'$set': {'author': request.user['_id']}}, True)
+            db.link.update({'_id': link_id}, {'$set': {'author': request.user.pk}}, True)
             db.link_ref.update({'_id': linkref_id}, {'$set': {'link_id': link_id,
 
                                                               'id1': ObjectId(request.POST['id1']),
