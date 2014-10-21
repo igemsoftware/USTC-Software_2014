@@ -5,6 +5,7 @@ from pymongo import *
 from datetime import *
 import bson
 import json
+from IGEMServer.settings import db
 
 
 def MakeArray(n):
@@ -22,7 +23,6 @@ class state:
 			return x.g>self.g
 		return x.f>self.f
 
-db = MongoClient()['igemdata_new']
 
 q = Queue()
 pq = PriorityQueue()

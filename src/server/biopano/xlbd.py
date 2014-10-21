@@ -5,10 +5,10 @@ import json
 from datetime import *
 from Bio.Blast.Applications import NcbiblastnCommandline
 import os
+from IGEMServer.settings import db
 
 
 BLAST_PATH = r'/tmp/blast'
-db = MongoClient()['igemdata_new']
 
 ## unused after using blast
 '''
