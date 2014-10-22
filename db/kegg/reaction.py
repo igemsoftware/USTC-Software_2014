@@ -75,10 +75,10 @@ def to_dict(fp):
 def save_to_database(dic, Doc):
     d = Doc()
     ##ID counter operation
-    counter = count.objects.filter(type='node')[0]
-    d.ID = counter['value']
-    counter['value'] += 1
-    counter.save()
+    #counter = count.objects.filter(type='node')[0]
+    #d.ID = counter['value']
+    #counter['value'] += 1
+    #counter.save()
 
     for key in dic.keys():
         if key == 'ENTRY':

@@ -34,7 +34,7 @@ package Kernel.SmartLayout{
 			workerToMain = Worker.current.getSharedProperty("BackStageToMain");
 			
 			mainToWorker.addEventListener(Event.CHANNEL_MESSAGE,onMainToWorker);
-					
+			
 		}
 		
 		protected function onMainToWorker(event:Event):void
@@ -113,23 +113,29 @@ package Kernel.SmartLayout{
 					
 					for (j = i+1; j < Nodes.length; j++){
 						
-							node2=Nodes[j];
-
-							dx=node1.x - node2.x;
-							dy=node1.y - node2.y;
-							d=Math.sqrt(dx*dx + dy*dy);
-							
-							var d3:Number=q/d/d/d;
-							
-							fx=dx*d3;
-							fy=dy*d3;
-							
-							Force[node1.ID].x+=fx;
-							Force[node1.ID].y+=fy;
-							
-							Force[node2.ID].x-=fx;
-							Force[node2.ID].y-=fy;
-
+						node2=Nodes[j];
+						
+						dx=node1.x - node2.x;
+						dy=node1.y - node2.y;
+						d=Math.sqrt(dx*dx + dy*dy);
+						
+						var d3:Number
+					
+						d3=q/d/d/d;
+						fx=dx*d3;
+						fy=dy*d3;
+						
+						if(isNaN(fx)){
+							fy=Math.random()*10;
+								fx=Math.random()*10;
+						}
+						
+						Force[node1.ID].x+=fx;
+						Force[node1.ID].y+=fy;
+						
+						Force[node2.ID].x-=fx;
+						Force[node2.ID].y-=fy;
+						
 					}
 				}
 				

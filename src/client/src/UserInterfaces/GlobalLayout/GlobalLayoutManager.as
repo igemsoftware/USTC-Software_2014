@@ -51,6 +51,8 @@ package UserInterfaces.GlobalLayout{
 		private var aimX:Number;
 		private var aimAlpha:Number;
 		
+		public static var showGuide:Boolean=false;
+		
 		public function GlobalLayoutManager(){
 			
 			BackGround.color=BackGroundColor;
@@ -78,6 +80,17 @@ package UserInterfaces.GlobalLayout{
 			addChild(ReminderManager.ReminderSpace);
 			
 			addChild(AskManager.askbar);
+			if(showGuide){
+				var guiding:guider=new guider();
+				addChild(guiding);
+				guiding.addEventListener(MouseEvent.CLICK,function (e):void{
+					if(guiding.currentFrame==6){
+						removeChild(guiding);
+					}
+					guiding.nextFrame();
+					
+				})
+			}
 		
 			BackGround.backGround.addEventListener(Event.COMPLETE,setStage);
 			

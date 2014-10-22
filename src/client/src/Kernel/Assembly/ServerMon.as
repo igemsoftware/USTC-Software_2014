@@ -15,7 +15,7 @@ package Kernel.Assembly
 	public class ServerMon
 	{
 		
-		private var ServerMon:URLMonitor=new URLMonitor(new URLRequest(GlobalVaribles.SERVER_ADDRESS));
+		private static var ServerMon:URLMonitor=new URLMonitor(new URLRequest("http://"+GlobalVaribles.SERVER_ADDRESS));
 		
 		public function ServerMon()
 		{

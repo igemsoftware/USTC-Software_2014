@@ -41,7 +41,7 @@ package{
 		
 		protected function tick_evt(event:Event):void{
 			ticks++;
-			if (ticks>172) {
+			if (ticks>36) {
 				win.stage.removeEventListener(Event.ENTER_FRAME,tick_evt);
 				win.close();
 			}

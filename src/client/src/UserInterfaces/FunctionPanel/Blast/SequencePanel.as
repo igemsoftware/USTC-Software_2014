@@ -43,7 +43,7 @@ package UserInterfaces.FunctionPanel.Blast
 			addChild(samp);
 			
 			
-			post_bn.label="Blast";
+			post_bn.label="BLAST";
 			post_bn.setSize(60,30);
 			
 			post_bn.addEventListener(MouseEvent.CLICK,post);

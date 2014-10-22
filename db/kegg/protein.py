@@ -68,10 +68,6 @@ class Protein(DynamicDocument):
         self.DEFINITION = text.split('[')[0].strip()
 
     def data_save(self, dict):
-        id_database = count.objects.filter(type='node')[0]
-        self._id = id_database['value']
-        id_database['value'] += 1
-        id_database.save()
         self.TYPE = 'Protein'
         for key in dict:
             text = dict[key]

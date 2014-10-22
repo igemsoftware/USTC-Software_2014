@@ -7,24 +7,21 @@ package{
 	import flash.net.SharedObject;
 	import flash.ui.Keyboard;
 	
-	import Kernel.SmartCanvas.Canvas.FreePlate;
-	import Kernel.ProjectHolder.FileHolder;
-	import Kernel.ProjectHolder.GxmlContainer;
-	
-	import Kernel.Biology.LinkTypeInit;
-	import Kernel.Biology.NodeTypeInit;
-	
+	import GUI.Assembly.IMouseCursor;
 	import GUI.Windows.WindowSpace;
 	
-	import UserInterfaces.GlobalLayout.GlobalLayoutManager;
-	
+	import Kernel.Assembly.ServerMon;
+	import Kernel.Biology.LinkTypeInit;
+	import Kernel.Biology.NodeTypeInit;
+	import Kernel.ProjectHolder.FileHolder;
+	import Kernel.ProjectHolder.GxmlContainer;
+	import Kernel.SmartCanvas.Canvas.FreePlate;
 	import Kernel.SmartLayout.LayoutRunner;
 	
+	import UserInterfaces.GlobalLayout.GlobalLayoutManager;
 	import UserInterfaces.Style.FontPacket;
 	
 	import fl.managers.StyleManager;
-	import GUI.Assembly.IMouseCursor;
-	import Kernel.Assembly.ServerMon;
 	
 	
 	public class iGemNet extends GlobalLayoutManager{
@@ -50,11 +47,11 @@ package{
 		///@see ServerMon.as
 		new ServerMon();
 		
-		/*Show Init Logo:*/
-		//new LOGO();
+		///Show Init Logo:
+		new LOGO();
 		
 		///Window Title 
-		public static const Title:String="BioPanorama Release Candidate @ iGEM Software 2014";
+		public static const Title:String="BioPano Release @ iGEM Software 2014";
 		
 		///Local appearciation storage <for option>
 		public var User_Data:SharedObject;
@@ -74,8 +71,9 @@ package{
 			/////below handles local user appreciation storage
 			
 			User_Data=SharedObject.getLocal("UserAppreciation");
-			
+
 			if(User_Data.data.valid==ForceVersion){
+				
 				
 				GlobalVaribles.showIconMap=User_Data.data.showIconMap;
 				
@@ -95,6 +93,8 @@ package{
 				GlobalVaribles.userName=User_Data.data.userName;
 				
 			}else{
+				
+				GlobalLayoutManager.showGuide=true;
 				
 				new LinkTypeInit(true);
 				

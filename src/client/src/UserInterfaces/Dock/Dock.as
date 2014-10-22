@@ -73,7 +73,7 @@ package UserInterfaces.Dock{
 		
 		private var KShortPanel:Panel;
 		
-		private var ASearcher:Panel;
+		private var ASearcher:Panel
 		
 		
 		public function Dock(){

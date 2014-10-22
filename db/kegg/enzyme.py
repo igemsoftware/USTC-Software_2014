@@ -61,10 +61,6 @@ class Enzyme(DynamicDocument):
             self.GENES = gene_list
 
     def data_save(self, dict):
-        id_database = count.objects.filter(type='node')[0]
-        self.ID = id_database['value']
-        id_database['value'] += 1
-        id_database.save()
         self.TYPE = 'Enzyme'
         for key in dict:
             text = dict[key]

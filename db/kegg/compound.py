@@ -56,10 +56,6 @@ class Compound(DynamicDocument):
         self.REFERENCE = text
 
     def data_save(self, dict):
-        id_database = count.objects.filter(type='node')[0]
-        self.ID = id_database['value']
-        id_database['value'] += 1
-        id_database.save()
         self.TYPE = 'Compound'
         for key in dict:
             text = dict[key]

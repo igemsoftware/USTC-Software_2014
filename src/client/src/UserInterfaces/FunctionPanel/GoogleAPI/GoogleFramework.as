@@ -47,7 +47,7 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 			googleP.searchbn.label="Search";
 			googleP.searchbn.setSize(60,30);
 			
-			searchtxt.hintText="Google Scholar";
+			searchtxt.hintText="by Google Scholar";
 			
 			searchtxt.addEventListener("Enter",search);
 			

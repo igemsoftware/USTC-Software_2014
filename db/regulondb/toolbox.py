@@ -130,6 +130,7 @@ def savedict(dic, typ, collection):
         if dic['TYPE'] == 'small RNA':
             dic['TYPE'] = 'sRNA'
         exec "db.%s.insert(dic)" % (collection, )
+        dic.pop('_id')
         db.count.update({'type': 'product'}, {'$inc': {'value': 1}})  # productcount +1
 
         # sRNA and tRNA and rRNA
@@ -142,7 +143,6 @@ def savedict(dic, typ, collection):
             dic['TYPE'] = TYPE
             exec "db.%s.insert(dic)" % (collection, )
         db.count.update({'type': 'node'}, {'$inc': {'value': 1}})  # nodecount +1
-        del dic
     else:
         return
 

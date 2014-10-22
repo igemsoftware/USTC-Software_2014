@@ -15,6 +15,7 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher
 	import GUI.RichUI.RichButton;
 	import GUI.RichUI.RichComboBox;
 	
+	import Kernel.Assembly.CheckerURLLoader;
 	import Kernel.Biology.NodeTypeInit;
 	
 	import UserInterfaces.GlobalLayout.LayoutManager;
@@ -22,7 +23,6 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher
 	
 	import fl.controls.CheckBox;
 	import fl.events.ListEvent;
-	import Kernel.Assembly.CheckerURLLoader;
 	
 	public class AdvancedSearcher extends Sprite
 	{
@@ -114,7 +114,7 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher
 			var searchRequest:URLRequest=new URLRequest(GlobalVaribles.SEARCH_INTERFACE);
 			
 			var SearchJson_AND:Array=[]
-				
+			
 			var keys:Array=[];
 			
 			if(!Prescise.selected&&!Prescise_Title.selected){
@@ -177,9 +177,16 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher
 			var results:Array=JSON.parse(event.target.data).result;
 			trace(event.target.data);
 			for each(var item:Object in  results){
-				if (String(item._id).length==24) {
-					res.push({Name:item.NAME,Type:item.TYPE,Source:item.author,Cited:item.cite,id:item._id});
+				var pushobj:Object=new Object();
+				pushobj={Name:item.NAME,Type:item.TYPE,id:item._id}
+				pushobj.Source=item.author;
+				pushobj.Cited=item.cite;
+				if(item.author!=null){
+					pushobj.Source=item.author;
+				}else{
+					pushobj.Source="";
 				}
+				res.push(pushobj);
 			}
 			
 			grid.dataProvider=res;

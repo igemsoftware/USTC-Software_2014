@@ -40,12 +40,6 @@ def main():
                 for gene in gene_list:
                     gene_enzyme_link = Gene_Enzyme_link()
 
-                    #count operatation
-                    count_database = count.objects.filter(type='link')[0]
-                    gene_enzyme_link.ID = count_database['value']
-                    count_database.value += 1
-                    count_database.save()
-
                     gene_enzyme_link.NODE1 = gene
                     gene_enzyme_link.NODE2 = enzyme
                     gene_enzyme_link.save()
