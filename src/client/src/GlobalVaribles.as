@@ -93,7 +93,7 @@ package
 		///These are varibles for Login, include two OauthLogin URL
 		///see Class: OauthLogin
 		public static const BaiduLogin:OauthLogin=new OauthLogin("baidu","http://openapi.baidu.com/oauth/2.0/authorize?");
-		public static const GoogleLogin:OauthLogin=new OauthLogin("google","https://accounts.google.com/ServiceLogin");
+		public static const GoogleLogin:OauthLogin=new OauthLogin("google","https://accounts.google.com/");
 		public static var token:String;
 		public static var userName:String; 
 
