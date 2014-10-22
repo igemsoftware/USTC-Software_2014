@@ -1,19 +1,14 @@
-# docker run --name mysqlex --link biopano:mysql -e MYSQL_ROOT_PASSWORD=SyntheticBiology -d mysql
-docker run --name mysqlex -e MYSQL_ROOT_PASSWORD=mysecretpassword -v /srv/biopano/mysql:/var/lib/mysql -d mysql
+## Methods a
 
-docker run --name mongoex --link biopano:mongo -d mongo
+run this command in Linux(tested in Ubuntu 14.04.1 LTS)
 
-docker run -d -p 8080 dockerfile/python-runtime
+	sudo apt-get install libmysqld-dev python python-dev python-pip mongodb git libpq-dev
+	sudo pip install django dict2xml pymongo djangorestframework mongoengine biopython socialoauth
+	cd /path/to/sources
+	python manager.py runserver
+	
+## Methods b
 
-docker run --name nginxex -v /some/nginx.conf:/etc/nginx.conf:ro -d nginx
+use docker to auto-run it.
 
-
-apt-get install libmysqld-dev python python-dev python-pip mongodb git libpq-dev
-
-pip install django MySQL-python django-social-auth dict2xml pymongo djangorestframework mongoengine biopython socialoauth
-
-CREATE USER 'master'@'localhost' IDENTIFIED BY 'SyntheticBiology';
-
-CREATE DATABASE IF NOT EXISTS `backend_master` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`;
-
-GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, LOCK TABLES ON `backend_master`.* TO 'master'@'localhost';
+Docker repository: [https://registry.hub.docker.com/u/gaoyifan/biopano-server/](https://registry.hub.docker.com/u/gaoyifan/biopano-server/)

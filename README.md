@@ -59,8 +59,6 @@ When you have already got the entire view and want to know more about the detail
 
 Software Usage: [User Manual](http://www.biopano.org/biopanohelp.pdf)
 
-API: [REST API Documentation](./doc/REST-API.md)
-
 bug tracker: [YouTrack](http://bug.biopano.org/)
 
 Continuous Integration System: [Jenkins](http://ci.biopano.org/)
@@ -93,6 +91,14 @@ Biopano server is written by python, using Django Framework. The client is writt
 * [server git repository](http://dev.biopano.org/igem-ustc_software/igemserver)
 * [client git repository](http://dev.biopano.org/igem-ustc_software/biopanoclient)
 * [documentation git repository](http://dev.biopano.org/igem-ustc_software/biopanodoc)
+
+### build a client
+
+Please follow [this page](./doc/client-build.md).
+
+### the API Documentation
+
+refer to [the doc](./doc/REST-API.md)
 
 ## Contact Us
 
