@@ -188,7 +188,10 @@ def get_del_addref_node(request, **kwargs):
             result_copy = node_dic.copy()
             if 'author' in result_copy.keys():
                 result_copy['author'] = User.objects.get(pk=result_copy['author']).username
-            result_copy['cite'] = len(result_copy['REF'])
+            try:
+                result_copy['cite'] = len(result_copy['REF'])
+            except:
+                result_copy['cite'] = 0
 
             return HttpResponse(json.dumps(result_copy))
 
