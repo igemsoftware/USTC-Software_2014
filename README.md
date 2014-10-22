@@ -63,7 +63,7 @@ bug tracker: [YouTrack](http://bug.biopano.org/)
 
 Continuous Integration System: [Jenkins](http://ci.biopano.org/)
 
-Code Platform: [GitLab](http://dev/biopano.org/)
+Code Platform: [GitLab](http://dev.biopano.org/)
 
 ## Members of the Team
 
