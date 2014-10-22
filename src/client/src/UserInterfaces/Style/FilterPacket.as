@@ -3,6 +3,9 @@ package UserInterfaces.Style
 	import flash.filters.BlurFilter;
 	import flash.filters.GlowFilter;
 
+	/**
+	 * this is a class to unify all the filter used in the program
+	 */
 	public class FilterPacket
 	{
 		

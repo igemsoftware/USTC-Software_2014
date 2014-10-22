@@ -12,7 +12,9 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 	import UserInterfaces.GlobalLayout.LayoutManager;
 	import UserInterfaces.Style.FontPacket;
 	import Kernel.Assembly.CheckerURLLoader;
-	
+	/**
+	 * the framework of google scholar panel
+	 */
 	public class GoogleFramework extends Sprite
 	{
 	
@@ -30,7 +32,10 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 		
 		private var nodataHint:LabelTextField=new LabelTextField("No result found");
 		private var Loader:CheckerURLLoader=new CheckerURLLoader();
-		
+		/**
+		 * the framework of google scholar panel
+		 * @param searchstr the string to search
+		 */
 		public function GoogleFramework(searchStr="")
 		{
 			

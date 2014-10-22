@@ -25,7 +25,9 @@ package UserInterfaces.FunctionPanel.KShortest
 	import UserInterfaces.Style.Tween;
 	
 	import fl.events.ListEvent;
-	
+	/**
+	 * to find the first k shortest way between two nodes
+	 */
 	public class KShortest extends Sprite
 	{
 		public var searchbn:RichButton=new RichButton(0,60,30);
@@ -45,7 +47,12 @@ package UserInterfaces.FunctionPanel.KShortest
 		//private var 
 		
 		private static var pre:KShortestNodePreviewer=new KShortestNodePreviewer();
-		
+		/**
+		 * to find the first k shortest way between two nodes
+		 * <object_id> means the id of objective data.   you can replace string like '54abd652987a55fee' to <object_id>
+			the format is [ [<object_id>,<object_id>,<object_id>,.....], [<object_id>,<object_id>,....], .....]
+			is a list of list of object_id, each list inside is a path, more front,more short 
+		 */
 		public function KShortest(){
 			
 			/*<object_id> means the id of objective data.   you can replace string like '54abd652987a55fee' to <object_id>
@@ -123,8 +130,10 @@ package UserInterfaces.FunctionPanel.KShortest
 		}
 		
 		private var Loader:URLLoader=new URLLoader();
-		private var toPick:int;
-		
+		private var toPick:int=1;
+		/**
+		 * post input data to back end when mouse click
+		 */
 		protected function post(event:MouseEvent):void
 		{
 			grid.dataProvider=[];
@@ -153,7 +162,9 @@ package UserInterfaces.FunctionPanel.KShortest
 				ReminderManager.remind("You need to select two nodes from project")
 			}
 		}
-		
+		/**
+		 * to show node
+		 */
 		protected function shownode(e:Event):void{
 			var id:String;
 			id=e.target.data;
@@ -181,7 +192,9 @@ package UserInterfaces.FunctionPanel.KShortest
 			
 			searchbn.unsuspend();
 		}
-		
+		/**
+		 * to handle the change event
+		 */
 		protected function GlobalVaribles_Focus_ChangeHandler(event:FocusItemEvent=null):void
 		{
 			GlobalVaribles.FocusEventDispatcher.removeEventListener(FocusItemEvent.FOCUS_CHANGE,GlobalVaribles_Focus_ChangeHandler);

@@ -17,18 +17,21 @@ package UserInterfaces.FunctionPanel.Blast
 	
 	
 	
-	
+	/**
+	 * the sequence finder using blast
+	 */
 	public class SequencePanel extends Sprite
 	{
-		
+		///hit box
 		private var hitA:HitBox=new HitBox();
+		///input sequence
 		public var sequence:TextInput=new TextInput(false,true);;
 		
-		
+		///post button
 		private var post_bn:RichButton=new RichButton(0,60,30);
-		
+		///the sequence  label
 		private var seq_label:LabelTextField=new LabelTextField("Input DNA Sequence:");
-		
+		///sample node
 		private var samp:MultiNodePreviewer=new MultiNodePreviewer();
 		public var Height:Number;
 		

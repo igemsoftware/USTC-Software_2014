@@ -6,16 +6,20 @@ package UserInterfaces.FunctionPanel.Detail
 	import GUI.Assembly.FlexibleWidthObject;
 	import GUI.Assembly.HitBox;
 	import GUI.RichGrid.RichGrid;
-	
+	/**
+	 * subdetail panel
+	 */
 	public class SubDetailPane extends Sprite implements FlexibleWidthObject
 	{
-		
+		///background
 		private var back:HitBox=new HitBox();
 		
 		public var Height:int;
 		
 		private var grid:RichGrid=new RichGrid(false,true,false,false,true);
-		
+		/**
+		 * subdetail panel
+		 */
 		public function SubDetailPane(tar)
 		{
 			
@@ -29,7 +33,9 @@ package UserInterfaces.FunctionPanel.Detail
 			
 		}
 		
-		
+		/**
+		 * to set the content
+		 */
 		public function setContent(tar):void{
 			
 			

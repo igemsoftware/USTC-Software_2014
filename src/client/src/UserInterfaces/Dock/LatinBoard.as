@@ -11,7 +11,9 @@ package UserInterfaces.Dock
 	import UserInterfaces.GlobalLayout.GlobalLayoutManager;
 	
 	import UserInterfaces.Style.FilterPacket;
-	
+	/**
+	 * the framework of each panel 
+	 */
 	public class LatinBoard extends Sprite
 	{
 		public var Align:int=5;
@@ -32,14 +34,18 @@ package UserInterfaces.Dock
 				aimY=GlobalLayoutManager.StageHeight-GlobalLayoutManager.DOCK_HEIGHT-Height-4;
 			})
 		}
-		
+		/**
+		 * fade out the board
+		 */
 		protected function outtest(e):void{
 			
 			if(!hitTestPoint(stage.mouseX,stage.mouseY)&&e.target!=target&&!FrontCoverSpace.coverSpace.hitTestPoint(stage.mouseX,stage.mouseY)){
 				toclose()
 			}
 		}
-		
+		/**
+		 * close the panel
+		 */
 		private function toclose(e=null):void{
 			stage.removeEventListener(MouseEvent.MOUSE_DOWN,outtest);
 			target.filters=[];
@@ -102,7 +108,9 @@ package UserInterfaces.Dock
 			redraw();
 			
 		}
-		
+		/**
+		 * reset location
+		 */
 		public function resetLocation():void{
 			aimY=GlobalLayoutManager.StageHeight-GlobalLayoutManager.DOCK_HEIGHT-Height-4;
 			if(target!=null){

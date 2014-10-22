@@ -21,7 +21,9 @@
 	import UserInterfaces.GlobalLayout.LayoutManager;
 	
 	import UserInterfaces.Style.FontPacket;
-	
+	/**
+	 * this is the attribution panel
+	 */
 	public class AttribPanel extends Sprite{
 		
 		private var hint:LabelTextField=new LabelTextField("No Exteral Link");

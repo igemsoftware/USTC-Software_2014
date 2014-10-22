@@ -35,7 +35,7 @@ package
 		///APIs to backend:
 		
 		///sever used
-		public static const SERVER_ADDRESS:String="master.biopano.org";
+		public static const SERVER_ADDRESS:String="api.biopano.org";
 		public static var ServerAvailable:Boolean=false;
 		
 		///These are Interfaces for cloud function

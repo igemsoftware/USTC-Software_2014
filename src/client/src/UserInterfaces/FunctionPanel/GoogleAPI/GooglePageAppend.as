@@ -4,6 +4,9 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 	
 	import UserInterfaces.Style.Tween;
 
+	/**
+	 * to append to google page
+	 */
 	public class GooglePageAppend extends Sprite
 	{
 	
@@ -35,13 +38,17 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 			
 		}
 		
-		
+		/**
+		 * smooth in
+		 */
 		public function unsuspend():void
 		{
 			Tween.smoothIn(arrow);
 			
 		}
-		
+		/**
+		 * smooth out
+		 */
 		public function suspend():void
 		{
 			Tween.fadeOut(arrow);

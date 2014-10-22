@@ -16,7 +16,9 @@ package UserInterfaces.FunctionPanel.BioBrick
 	import UserInterfaces.GlobalLayout.LayoutManager;
 	
 	import UserInterfaces.Style.FontPacket;
-	
+	/**
+	 * biobrick assist panel
+	 */
 	public class BioBrickHelper extends Sprite
 	{
 		
@@ -66,7 +68,9 @@ package UserInterfaces.FunctionPanel.BioBrick
 			var urlreq:URLRequest=new URLRequest(igem.part_url)
 			navigateToURL(urlreq,"_self");
 		}
-		
+		/**
+		 * search event
+		 */
 		protected function search(event):void
 		{
 			if(searchtxt.text.length>4&&searchbn.mouseEnabled){
@@ -87,7 +91,9 @@ package UserInterfaces.FunctionPanel.BioBrick
 				});
 			}
 		}
-		
+		/**
+		 * push search results
+		 */
 		protected function pushN(event:Event):void
 		{
 			nodataHint.visible=true;
@@ -96,7 +102,9 @@ package UserInterfaces.FunctionPanel.BioBrick
 
 			grid.dataProvider=[];
 		}
-		
+		/**
+		 * push each result
+		 */
 		protected function push(event:Event):void
 		{
 			nodataHint.visible=false;

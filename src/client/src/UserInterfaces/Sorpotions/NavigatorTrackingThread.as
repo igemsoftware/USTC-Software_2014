@@ -7,7 +7,9 @@ package UserInterfaces.Sorpotions{
 	import flash.system.Worker;
 	import flash.utils.ByteArray;
 	
-	
+	/**
+	 * an independent theread to redraw
+	 */
 	public class NavigatorTrackingThread extends Sprite{
 		
 		protected var image:BitmapData;

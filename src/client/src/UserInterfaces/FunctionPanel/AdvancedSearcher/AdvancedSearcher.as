@@ -4,6 +4,7 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher
 	import flash.events.Event;
 	import flash.events.IOErrorEvent;
 	import flash.events.MouseEvent;
+	import flash.html.HTMLLoader;
 	import flash.net.URLRequest;
 	import flash.net.URLRequestMethod;
 	import flash.net.URLVariables;
@@ -23,7 +24,10 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher
 	
 	import fl.controls.CheckBox;
 	import fl.events.ListEvent;
-	
+	import Kernel.Assembly.CheckerURLLoader;
+	/**
+	 * this class allows you to search the node using further options
+	 */
 	public class AdvancedSearcher extends Sprite
 	{
 		
@@ -49,7 +53,7 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher
 		
 		private var nodataHint:LabelTextField=new LabelTextField("No result found");
 		private var Loader:CheckerURLLoader=new CheckerURLLoader();
-		
+		//private var Loader:HTMLLoader=new HTMLLoader();
 		private var Samp:SearchResPreviewer=new SearchResPreviewer();
 		
 		public function AdvancedSearcher()
@@ -103,7 +107,9 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher
 			setSize(500,400)
 		}
 		
-		
+		/**
+		 * search event
+		 */
 		private function search(e):void{
 			
 			if (searchtxt.text.length<1) {
@@ -160,7 +166,8 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher
 			
 			Loader.addEventListener(Event.COMPLETE,Loader_CMP,false,0,true)
 			
-			Loader.addEventListener(IOErrorEvent.IO_ERROR,IOreport,false,0,true)
+			Loader.addEventListener(IOErrorEvent.IO_ERROR,IOreport,false,0,true);
+
 		}
 		
 		protected function IOreport(event:IOErrorEvent):void
@@ -168,7 +175,9 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher
 			// TODO Auto-generated method stub
 			searchbn.unsuspend();
 		}
-		
+		/**
+		 * load the search results
+		 */
 		protected function Loader_CMP(event:Event):void
 		{
 			
@@ -180,7 +189,11 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher
 				var pushobj:Object=new Object();
 				pushobj={Name:item.NAME,Type:item.TYPE,id:item._id}
 				pushobj.Source=item.author;
-				pushobj.Cited=item.cite;
+				if(item.cite!=null){
+					pushobj.Cited=item.cite;
+				}else{
+					pushobj.Cited="";
+				}
 				if(item.author!=null){
 					pushobj.Source=item.author;
 				}else{
@@ -198,7 +211,9 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher
 			}
 			searchbn.unsuspend();
 		}
-		
+		/**
+		 * redraw
+		 */
 		public function setSize(w:Number,h:Number):void{
 			
 			searchtxt.setSize(w-180,30)

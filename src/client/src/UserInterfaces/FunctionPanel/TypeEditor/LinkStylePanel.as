@@ -19,7 +19,9 @@ package UserInterfaces.FunctionPanel.TypeEditor
 	import Kernel.Biology.Types.SymbolType;
 	
 	
-	
+	/**
+	 * the panel to edit the style of the links
+	 */
 	public class LinkStylePanel extends Sprite implements FlexibleWidthObject
 	{
 		
@@ -65,7 +67,10 @@ package UserInterfaces.FunctionPanel.TypeEditor
 			slider.addEventListener(SliderEvent.CHANGE,sampleRedraw);
 			lineColor.addEventListener(ColorPickerEvent.CHANGE,sampleRedraw);
 		}
-		
+		/**
+		 * to show the type of the link
+		 * @param type the type of the link
+		 */
 		public function showType(type:LinkType):void{
 			
 			editType=type;
@@ -79,6 +84,9 @@ package UserInterfaces.FunctionPanel.TypeEditor
 			_sample.showSample(editType);
 		}
 		
+		/**
+		 * to redraw the sample
+		 */
 		private function sampleRedraw(e=null):void{
 			if(editType!=null){
 				editType.skindata.lineColor=lineColor.color;

@@ -26,6 +26,9 @@ package UserInterfaces.IvyBoard.IvyPanels
 	import Kernel.ProjectHolder.CoworkerManager.CoWorkerList;
 	import Kernel.ProjectHolder.CoworkerManager.CoWorkerPanel;
 	
+	/** 
+	 * this is the panel which shows the project detail
+	 */
 	public class ProjectDetailPanel extends Sprite
 	{
 		

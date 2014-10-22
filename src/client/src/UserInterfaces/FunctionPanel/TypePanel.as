@@ -20,7 +20,9 @@ package UserInterfaces.FunctionPanel{
 	
 	import Kernel.Assembly.SelectArray;
 	
-	
+	/**
+	 * a panel to set the type of the node
+	 */
 	public class TypePanel extends Sprite{
 		private const W:uint=250;
 		private const H:uint=320;
@@ -31,6 +33,10 @@ package UserInterfaces.FunctionPanel{
 		public var cel_b:RichButton=new RichButton();
 		private var Target:*;
 		
+		/**
+		 * a panel to set the type
+		 * @param tar the target to set type
+		 */
 		public function TypePanel(tar){
 			Target=tar;
 			
@@ -66,7 +72,9 @@ package UserInterfaces.FunctionPanel{
 				stage.focus=searchT;
 			});
 		}
-		
+		/**
+		 * to listen to keybroad event
+		 */
 		protected function key_mon(event:KeyboardEvent):void{
 			if (event.keyCode==13) {
 				if (grid.selectedItem!=null) {
@@ -74,7 +82,9 @@ package UserInterfaces.FunctionPanel{
 				}
 			}
 		}
-		
+		/**
+		 * to set the type
+		 */
 		protected function setType_evt(event=null):void{
 			
 			if(Target.constructor==CompressedNode){
@@ -91,11 +101,16 @@ package UserInterfaces.FunctionPanel{
 			dispatchEvent(new Event("close"));
 		}
 		
+		/**
+		 * when close the panel
+		 */
 		protected function close_evt(event:MouseEvent):void{
 			Target.Instance.tPanel=null;
 			dispatchEvent(new Event("close"));
 		}
-		
+		/**
+		 * search
+		 */
 		private function search1(e):void {
 			var stable:Array = SelectArray.searchArray(NodeTypeInit.BiotypeList,"label",searchT.text);
 			grid.dataProvider = stable;

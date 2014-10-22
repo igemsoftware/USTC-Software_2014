@@ -11,6 +11,10 @@ package UserInterfaces.Style{
 	import Kernel.SmartCanvas.CompressedLine;
 	import Kernel.SmartCanvas.CompressedNode;
 	
+
+	/**
+	 * this is a class of all effects
+	 */
 	public class TweenX {
 		
 		private static var AniProcessor:Sprite=new Sprite();

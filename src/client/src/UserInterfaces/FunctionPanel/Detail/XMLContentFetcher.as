@@ -7,11 +7,17 @@ package UserInterfaces.FunctionPanel.Detail
 	import GUI.ContextSheet.ContextSheet;
 	import GUI.ContextSheet.ContextSheetItem;
 
+	/**
+	 * fetch content from XML
+	 */
 	public class XMLContentFetcher
 	{
 		
 		public function XMLContentFetcher(){
 		}
+		/**
+		 * fetch from xml
+		 */
 		public static function fetch(xml:XML):ContextSheet{
 			var consheet:ContextSheet=new ContextSheet();
 			var conArray:Array=[];
@@ -42,6 +48,9 @@ package UserInterfaces.FunctionPanel.Detail
 			consheet.contextSheetList=conArray;
 			return consheet;
 		}
+		/**
+		 * fetch content as text
+		 */
 		public static function fetchAStext(xml:XML):String{
 			var res:String="";
 			trace(xml);
@@ -62,6 +71,9 @@ package UserInterfaces.FunctionPanel.Detail
 			}
 			return res;
 		}
+		/**
+		 * save as xml
+		 */
 		public static function saveASXML(str:String):XML{
 			trace(str);
 			var xmlChild:XMLList=XMLList(str)

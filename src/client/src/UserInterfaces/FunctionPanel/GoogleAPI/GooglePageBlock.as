@@ -7,6 +7,9 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 	
 	import UserInterfaces.Style.FontPacket;
 
+	/**
+	 * the google page block
+	 */
 	public class GooglePageBlock extends Sprite
 	{
 		
@@ -18,7 +21,14 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 		private var citeText:TextField=new TextField();
 		
 		private var back:Shape=new Shape();
-		
+		/**
+		 * set up google page block
+		 * @param t title
+		 * @param u url
+		 * @param a author
+		 * @param abs abstract
+		 * @param cit cite
+		 */
 		public function GooglePageBlock(t,u,a,abs,cit){
 			
 			cacheAsBitmap=true;
@@ -54,6 +64,9 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 			addChild(citeText);
 			
 		}
+		/**
+		 * redraw
+		 */
 		public function setSize(w):void{
 			titleText.x=titleText.y=5;
 			titleText.width=w-10;

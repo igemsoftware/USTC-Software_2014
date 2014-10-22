@@ -2,19 +2,18 @@ package UserInterfaces.IvyBoard.IvyPanels
 {
 	import flash.display.Sprite;
 	import flash.events.MouseEvent;
-	
-	import Kernel.SmartCanvas.Parts.BioNode;
-	import Kernel.SmartCanvas.Canvas.Net;
-	import Kernel.SmartCanvas.CompressedNode;
-	import Kernel.ProjectHolder.GxmlContainer;
+	import flash.system.Capabilities;
 	
 	import GUI.Assembly.LabelTextField;
 	import GUI.RichUI.RichButton;
 	
-	import UserInterfaces.GlobalLayout.LayoutManager;
-	
+	import Kernel.ProjectHolder.GxmlContainer;
+	import Kernel.SmartCanvas.CompressedNode;
+	import Kernel.SmartCanvas.Canvas.Net;
+	import Kernel.SmartCanvas.Parts.BioNode;
 	import Kernel.SmartLayout.LayoutRunner;
 	
+	import UserInterfaces.GlobalLayout.LayoutManager;
 	import UserInterfaces.Style.TweenX;
 	
 	import fl.controls.CheckBox;
@@ -468,7 +467,17 @@ package UserInterfaces.IvyBoard.IvyPanels
 			
 			LayoutManager.setHorizontalLayout(this, LayoutManager.LAYOUT_ALIGN_LEFT, 20, 370, 0, globalLayouHint);
 			LayoutManager.setHorizontalLayout(this, LayoutManager.LAYOUT_ALIGN_CENTER, w / 2, 400, 0, Mag);
-			LayoutManager.setHorizontalLayout(this, LayoutManager.LAYOUT_ALIGN_CENTER, w / 2, 450, 0,OpenCL_b);
+			
+			var systemName:String = Capabilities.os;
+			if(systemName.indexOf("Windows")!=-1)
+			{
+				LayoutManager.setHorizontalLayout(this, LayoutManager.LAYOUT_ALIGN_CENTER, w / 2, 450, 0,OpenCL_b);
+			}
+			else if(systemName.indexOf("Mac OS") != -1)
+			{
+				LayoutManager.setHorizontalLayout(this, LayoutManager.LAYOUT_ALIGN_CENTER, w / 2, 450, 0,OpenCL_b);
+			}
+			
 			
 			
 		}

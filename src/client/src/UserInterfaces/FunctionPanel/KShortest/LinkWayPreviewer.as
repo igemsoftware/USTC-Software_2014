@@ -17,7 +17,9 @@ package UserInterfaces.FunctionPanel.KShortest{
 	
 	import UserInterfaces.Style.FontPacket;
 	
-	
+	/**
+	 * to preview the linked way
+	 */
 	public class LinkWayPreviewer extends Sprite{
 		
 		public var aimX:Number;
@@ -34,7 +36,9 @@ package UserInterfaces.FunctionPanel.KShortest{
 		private var dg:LabelTextField=new LabelTextField("Route :");
 		private var Width:Number;
 		
-		
+		/**
+		 * to preview the linked way
+		 */
 		public function LinkWayPreviewer(){
 			
 			addChild(displayBoard);	
@@ -59,7 +63,9 @@ package UserInterfaces.FunctionPanel.KShortest{
 			LoadLinkWay_b.addEventListener(MouseEvent.CLICK,LoadRoute_evt);
 			
 		}
-		
+		/**
+		 * the event to load the route
+		 */
 		protected function LoadRoute_evt(event:MouseEvent):void
 		{
 			if(GxmlContainer.Node_Space[nodes[0].ID]!=null&&GxmlContainer.Node_Space[nodes[nodes.length-1].ID]!=null){
@@ -80,6 +86,10 @@ package UserInterfaces.FunctionPanel.KShortest{
 				ReminderManager.remind("Import failed because the edges no longer exist");
 			}
 		}
+		/**
+		 * give the n nodes
+		 * @param arr the array which saves the nodes
+		 */
 		public function GiveNodes(arr:Array):void{
 			nodes=[];
 			for (var i:int = 0; i < arr.length; i++) {
@@ -89,6 +99,9 @@ package UserInterfaces.FunctionPanel.KShortest{
 			LoadLinkWay_b.visible=true;
 			redraw();
 		}
+		/**
+		 * clear all
+		 */
 		public function clear():void{
 			graphics.clear();
 			removeChildren(3);

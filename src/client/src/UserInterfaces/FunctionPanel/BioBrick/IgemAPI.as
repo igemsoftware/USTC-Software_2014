@@ -5,7 +5,9 @@ package UserInterfaces.FunctionPanel.BioBrick
 	import Kernel.Assembly.CheckerURLLoader;
 	
 	
-	
+	/**
+	 * this class is used to process the xml get from the igem official website
+	 */
 	public class IgemAPI extends CheckerURLLoader
 	{
 		
@@ -20,7 +22,9 @@ package UserInterfaces.FunctionPanel.BioBrick
 		
 		public var text:String
 		
-		
+		/**
+		 * search the url
+		 */
 		public function IgemAPI(str:String)
 		{
 			var url:URLRequest=new URLRequest("http://parts.igem.org/cgi/xml/part.cgi?part="+str);
@@ -29,7 +33,9 @@ package UserInterfaces.FunctionPanel.BioBrick
 			
 			
 		}
-		
+		/**
+		 * search the url
+		 */
 		public function search(str:String):void
 		{
 			var url:URLRequest=new URLRequest("http://parts.igem.org/cgi/xml/part.cgi?part="+str);
@@ -37,7 +43,9 @@ package UserInterfaces.FunctionPanel.BioBrick
 			addEventListener(Event.COMPLETE,showdata);
 		}
 		
-		
+		/**
+		 * get the result and show data
+		 */
 		protected function showdata(event:Event):void
 		{
 			if(data.indexOf("Part name not found")!=-1){

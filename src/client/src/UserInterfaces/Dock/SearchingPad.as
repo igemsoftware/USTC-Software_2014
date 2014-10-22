@@ -29,7 +29,9 @@ package UserInterfaces.Dock
 	
 	import fl.controls.List;
 	import fl.events.ListEvent;
-	
+	/**
+	 * the searching pad panel
+	 */
 	public class SearchingPad extends Sprite{
 		
 		public var SearchText:TextField=new TextField();
@@ -103,7 +105,9 @@ package UserInterfaces.Dock
 			addEventListener(MouseEvent.MOUSE_DOWN,setFocus);
 			
 		}
-		
+		/**
+		 * set focus to when clicking the mouse
+		 */
 		public function setFocus(event:MouseEvent=null):void{
 			
 			if(!focused){
@@ -123,7 +127,9 @@ package UserInterfaces.Dock
 				dispatchEvent(new Event("FocusIn"));
 			}
 		}
-		
+		/**
+		 * hide the searching box
+		 */
 		private function hideBox():void{
 			if (focused) {
 				Tween.fadeOut(list);
@@ -141,7 +147,9 @@ package UserInterfaces.Dock
 				dispatchEvent(new Event("FocusOut"));
 			}
 		}
-		
+		/**
+		 * set key mode
+		 */
 		protected function key_mon(event:KeyboardEvent):void
 		{
 			trace(event.keyCode);
@@ -153,7 +161,9 @@ package UserInterfaces.Dock
 				event.stopPropagation();
 			}
 		}
-		
+		/**
+		 * check the focus
+		 */
 		protected function checkFocus(event:MouseEvent):void
 		{
 			if (!this.hitTestPoint(stage.mouseX,stage.mouseY)) {
@@ -161,6 +171,9 @@ package UserInterfaces.Dock
 			}
 		}
 		private var tick:int;
+		/**
+		 * change the mode
+		 */
 		private function chgMode(n):void{
 			Loader=new URLLoader();
 			
@@ -175,6 +188,9 @@ package UserInterfaces.Dock
 			}
 			mode=n;
 		}
+		/**
+		 * get web tick and process
+		 */
 		protected function webtick(event:Event):void
 		{
 			if(tick>15){
@@ -185,6 +201,9 @@ package UserInterfaces.Dock
 			tick++;
 			
 		}
+		/**
+		 * the choose event
+		 */
 		protected function choose_evt(event:ListEvent):void{
 			if (web_b.selected) {
 				if (GxmlContainer.Node_Space[list.selectedItem.id]==null) {
@@ -215,7 +234,9 @@ package UserInterfaces.Dock
 				Net.Centerlize(list.selectedItem.Item);
 			}
 		}
-		
+		/**
+		 * the event when mode change
+		 */
 		protected function chg_evt(event):void{
 			preview.dispatchEvent(new Event("close"));
 			setFocus();
@@ -240,7 +261,9 @@ package UserInterfaces.Dock
 				localSearch();
 			}
 		}
-		
+		/**
+		 * flush the list
+		 */
 		public function flushList():void{
 			var showHeight:Number;
 			if (list.dataProvider.length==0) {
@@ -271,6 +294,9 @@ package UserInterfaces.Dock
 				TweenHeight(showHeight+60);
 			}
 		}
+		/**
+		 * web search mode
+		 */
 		private function webSearch():void{
 			
 			if (SearchText.text.length<2) {
@@ -303,11 +329,16 @@ package UserInterfaces.Dock
 			
 			Loader.addEventListener(IOErrorEvent.IO_ERROR,IOreport,false,0,true);
 		}
-		
+		/**
+		 * IO report
+		 */
 		protected function IOreport(event:IOErrorEvent):void
 		{
 			ResultHint.text="Server unavailable";
 		}
+		/**
+		 * loader compare
+		 */
 		protected function Loader_CMP(event:Event):void{
 			
 			if(mode&&!hided){
@@ -322,7 +353,9 @@ package UserInterfaces.Dock
 				searchResult=res;
 			}
 		}
-		
+		/**
+		 * local search
+		 */
 		private function localSearch():void{
 			searchResult=GxmlContainer.search(SearchText.text);
 		}
@@ -330,6 +363,9 @@ package UserInterfaces.Dock
 			list.dataProvider=db;
 			flushList();
 		}
+		/**
+		 * refresh the searching pad
+		 */
 		public function setSize(w,h):void{
 			Width=w;
 			Height=h;
@@ -369,12 +405,18 @@ package UserInterfaces.Dock
 		private var ah:Number,ch:Number;
 		private var hided:Boolean=true;
 		public var focused:Boolean;
+		/** 
+		 * show height smoothly
+		 */
 		public function TweenHeight(h):void{
 			ah=h;
 			removeEventListener(Event.ENTER_FRAME,TweenScaling);
 			addEventListener(Event.ENTER_FRAME,TweenScaling);
 			
 		}
+		/**
+		 * scale the dock smoothly
+		 */
 		private function TweenScaling(e):void{
 			boxSetSize((ah+ch*2)/3,false);
 			if (Math.abs(ah-ch)<0.4) {
@@ -383,6 +425,9 @@ package UserInterfaces.Dock
 				removeEventListener(Event.ENTER_FRAME,TweenScaling);
 			}
 		}
+		/**
+		 * set the size of the box
+		 */
 		private function boxSetSize(h,setList=true):void{
 			ch=h;
 			Box.graphics.clear();

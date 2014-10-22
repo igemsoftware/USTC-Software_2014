@@ -16,7 +16,9 @@ package UserInterfaces.IvyBoard.IvyPanels
 	
 	import UserInterfaces.Style.ColorMixer;
 	import UserInterfaces.Style.FontPacket;
-	
+	/**
+	 * show information of all nodes
+	 */
 	public class QuickINF extends Sprite
 	{
 		

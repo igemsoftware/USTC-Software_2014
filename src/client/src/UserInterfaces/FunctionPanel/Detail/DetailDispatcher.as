@@ -23,7 +23,9 @@ package UserInterfaces.FunctionPanel.Detail
 	import UserInterfaces.LoginAccount.AuthorizedURLLoader;
 	
 	import UserInterfaces.Style.Tween;
-	
+	/**
+	 * load detail from online database
+	 */
 	public class DetailDispatcher
 	{
 		
@@ -50,7 +52,9 @@ package UserInterfaces.FunctionPanel.Detail
 				LaunchJSONContent(tar,true);
 			}
 		}
-		
+		/**
+		 * when fail to load detail
+		 */
 		private static function loadfailed(tar):void{
 			AskManager.ask("Fail to load detail from online database, do you want to edit it yourself?",function ():void{
 				tar.detail={
@@ -64,7 +68,9 @@ package UserInterfaces.FunctionPanel.Detail
 			},false);
 		}
 		
-		
+		/**
+		 * launch content from json
+		 */
 		public static function LaunchJSONContent(tar:*,editable):void{
 			
 			//tar: CompressedLine/CompressNode

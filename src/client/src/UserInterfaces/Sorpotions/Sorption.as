@@ -7,7 +7,9 @@ package UserInterfaces.Sorpotions{
 	import GUI.Assembly.FlexibleLayoutObject;
 	
 	import UserInterfaces.Style.FontPacket;
-	
+	/**
+	 * this is a class to let things cling to other things
+	 */
 	public class Sorption extends Sprite implements FlexibleLayoutObject {
 		
 		private var frame:Sprite=new Sprite();

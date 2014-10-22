@@ -25,7 +25,9 @@ package UserInterfaces.Sorpotions{
 	import Kernel.SmartCanvas.CompressedNode;
 	import Kernel.ProjectHolder.GxmlContainer;
 	
-	
+	/**
+	 * a navigator of all the nodes on the screen
+	 */
 	public class Navigator extends Sprite implements FlexibleLayoutObject,IActivationObject {
 		
 		private static var frame:Sprite=new Sprite();
@@ -91,7 +93,9 @@ package UserInterfaces.Sorpotions{
 			});
 			
 		}
-		
+		/**
+		 * to initialize worker
+		 */
 		private function init_worker():void{
 			DrawThread= WorkerDomain.current.createWorker(Workers.UserInterfaces_Sorpotions_NavigatorTrackingThread);
 			
@@ -166,7 +170,9 @@ package UserInterfaces.Sorpotions{
 		public static function refreshMap():void{
 			tofresh=true;
 		}
-		
+		/**
+		 * refresh map
+		 */
 		public static function refreshMap_delay():void{
 			if (tofresh&&!locked&&Target.width>0){
 				
@@ -233,6 +239,9 @@ package UserInterfaces.Sorpotions{
 		
 		private static var generateMap:Bitmap=new Bitmap()
 		
+			/**
+			 * generate map from json
+			 */
 		public static function generateMapFromJSON(json:String,tar:Bitmap,pw:int,ph:int):void{
 			
 			generateMap=tar;
@@ -367,6 +376,9 @@ package UserInterfaces.Sorpotions{
 			centerX=cx;
 			centerY=cy;
 		}
+		/** 
+		 * refresh location
+		 */
 		public static function refreshLocation():void{
 			if (actived&&scale>0) {
 				Range.graphics.clear();
@@ -380,7 +392,9 @@ package UserInterfaces.Sorpotions{
 			}
 			
 		}
-		
+		/**
+		 * refresh range
+		 */
 		public static function refreshRange():void{
 			var rect:Rectangle=Target.getRect(Target);
 			

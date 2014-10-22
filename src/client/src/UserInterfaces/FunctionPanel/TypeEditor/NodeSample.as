@@ -6,7 +6,9 @@ package UserInterfaces.FunctionPanel.TypeEditor{
 	import Kernel.Geometry.DrawBitMap;
 	import Kernel.Geometry.DrawNode;
 	
-	
+	/**
+	 * a sample of selected node style
+	 */
 	public class NodeSample extends Sprite {
 		
 		public function NodeSample()
