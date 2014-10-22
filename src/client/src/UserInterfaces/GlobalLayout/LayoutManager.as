@@ -11,15 +11,6 @@ package UserInterfaces.GlobalLayout{
 		public function LayoutManager(){
 		}
 		
-		/**
-		 * set horizontal layout
-		 * @param tar the target
-		 * @param align select layout
-		 * @param x dx
-		 * @param y y 
-		 * @param dw delta width
-		 * @param args the things to align
-		 */
 		public static function setHorizontalLayout(tar,align,x,y,dw,...args):void{
 			var currentW:Number=0;
 			var i:int;
@@ -96,16 +87,6 @@ package UserInterfaces.GlobalLayout{
 			}
 			
 		}
-		
-		/**
-		 * set horizontal layout
-		 * @param tar the target
-		 * @param align select layout
-		 * @param x x
-		 * @param y dy 
-		 * @param dh delta height
-		 * @param args the things to align
-		 */
 		public static function setVerticalLayout(tar,align,x,y,dh,...args):void{
 			var currentH:int=0;
 			var i:int;
@@ -203,9 +184,6 @@ package UserInterfaces.GlobalLayout{
 			}
 			
 		}
-		/**
-		 * to unify the scale of things to align
-		 */
 		public static function UnifyScale(w:Number,h:Number,...args):void{
 			for (var i:int = 0; i < args.length; i++) {
 				args[i].setSize(w,h);

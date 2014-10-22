@@ -9,20 +9,14 @@ package UserInterfaces.AskManager
 	
 	import UserInterfaces.Style.FontPacket;
 	import UserInterfaces.Style.Tween;
-	/**
-	 * a dialog box for you to choose "yes","no",and"cancel"
-	 */
+	
 	public class AskBar extends Sprite
 	{
-		///height
 		private const H:int=40;
-		///ask  text
+		
 		public var asktext:TextField=new TextField();
-		///ok button
 		public var ok_b:RichButton=new RichButton(RichButton.LEFT_EDGE);
-		///no button
 		public var no_b:RichButton=new RichButton(RichButton.MIDDLE);
-		///cancel button
 		public var cn_b:RichButton=new RichButton(RichButton.RIGHT_EDGE);
 		public var roll_y:Number=0;
 		
@@ -45,18 +39,12 @@ package UserInterfaces.AskManager
 			LayoutManager.UnifyScale(60,30,ok_b,cn_b,no_b);
 			
 		}
-		/**
-		 * show the dialog
-		 * @param msg the message
-		 */
+		
 		public function ask(msg,showC):void{
 			asktext.text=msg;
 			setSize(asktext.width+60*(2+Number(showC))+20,showC);
 		}
-		/**
-		 * redraw the dialog
-		 * @param w width
-		 */
+		
 		public function setSize(w:Number,showC):void
 		{
 			graphics.clear();
@@ -80,16 +68,12 @@ package UserInterfaces.AskManager
 				LayoutManager.setHorizontalLayout(this,LayoutManager.LAYOUT_ALIGN_RIGHT,w/2-5,5,0,ok_b,no_b);
 			}
 		}
-		/**
-		 * show dialog
-		 */
+		
 		public function show():void{
 			roll_y=-1
 			Tween.smoothRoll(this);
 		}
-		/**
-		 * dialog fade out
-		 */
+		
 		public function out():void
 		{
 			roll_y=-H-1;

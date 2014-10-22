@@ -18,9 +18,7 @@ package UserInterfaces.FunctionPanel.Detail
 	
 	import UserInterfaces.Style.ColorMixer;
 	import UserInterfaces.Style.FontPacket;
-	/**
-	 * major detail panel
-	 */
+	
 	public class MajorDetailPane extends Sprite implements FlexibleWidthObject
 	{
 		
@@ -34,9 +32,7 @@ package UserInterfaces.FunctionPanel.Detail
 		public var Height:int=120;
 		
 		private var _box2:Shape=new Shape();
-		/**
-		 * major detail panel
-		 */
+		
 		public function MajorDetailPane(tar:*)
 		{
 			_box2.graphics.clear();
@@ -68,9 +64,7 @@ package UserInterfaces.FunctionPanel.Detail
 			addChild(_nodesample);
 			addChild(_linesample);
 		}
-		/**
-		 * redraw
-		 */
+		
 		public function setSize(w:Number):void{
 			
 			_box2.y=10;

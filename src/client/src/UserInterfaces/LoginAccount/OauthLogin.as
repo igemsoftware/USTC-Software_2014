@@ -8,9 +8,7 @@ package UserInterfaces.LoginAccount
 		
 		public var OAuthUrl:String;
 		public var CompleteUrl:String;
-		/**
-		 * oauth login
-		 */
+		
 		public function OauthLogin(site:String,chk:String)
 		{
 			OAuthSite=site;

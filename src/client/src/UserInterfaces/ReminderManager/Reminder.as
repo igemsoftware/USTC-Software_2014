@@ -8,9 +8,6 @@ package UserInterfaces.ReminderManager
 	
 	import UserInterfaces.Style.FontPacket;
 
-	/**
-	 * to remind message
-	 */
 	public class Reminder extends Sprite
 	{
 		

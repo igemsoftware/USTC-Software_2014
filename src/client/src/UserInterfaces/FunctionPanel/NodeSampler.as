@@ -7,9 +7,6 @@ package UserInterfaces.FunctionPanel
 	
 	import GUI.Assembly.LabelTextField;
 
-	/**
-	 * this is an overview of the project
-	 */
 	public class NodeSampler extends Sprite
 	{
 		
@@ -18,9 +15,7 @@ package UserInterfaces.FunctionPanel
 		public var _text:LabelTextField=new LabelTextField("");
 		
 		public var evaT:LabelTextField=new LabelTextField("");
-		/**
-		 * this is an overview of the project
-		 */
+		
 		public function NodeSampler(nam:String,type:String,id:String,eva:String="")
 		{
 			Type=type;

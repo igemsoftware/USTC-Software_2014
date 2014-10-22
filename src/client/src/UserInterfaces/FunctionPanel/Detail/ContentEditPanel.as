@@ -9,16 +9,11 @@ package UserInterfaces.FunctionPanel.Detail
 	import GUI.ContextSheet.ContextSheetItem;
 	import GUI.RichGrid.RichGrid;
 	import GUI.RichUI.RichTextField;
-	/**
-	 * the panel to edit the content of a node
-	 */
+	
 	public class ContentEditPanel extends Sprite
 	{
-		///content sheet
 		public var cts:ContextSheet=new ContextSheet();
-		///rich grid
 		public var rtg:RichGrid=new RichGrid(true,true,false,false,true);
-		///rich text field
 		public var rtf:RichTextField=new RichTextField();
 		
 		public var Height:Number;
@@ -41,9 +36,7 @@ package UserInterfaces.FunctionPanel.Detail
 				dispatchEvent(new Event("redrawed"));
 			});
 		}
-		/**
-		 * set the content of the grid
-		 */
+		
 		public function setContent():void{
 			var conArray:Array=[];
 			var a0:ContextSheetItem=new ContextSheetItem("Detail",rtg);
@@ -65,9 +58,7 @@ package UserInterfaces.FunctionPanel.Detail
 			
 			cts.contextSheetList=conArray;
 		}
-		/**
-		 * get information from json
-		 */
+		
 		public function get json():Object{
 			var ta:Array=rtg.dataProvider;
 			
@@ -85,9 +76,6 @@ package UserInterfaces.FunctionPanel.Detail
 			
 			return saveObj;
 		}
-		/**
-		 * redraw
-		 */
 		public function setSize(w:Number):void{
 			Width=w;
 			cts.setSize(w);

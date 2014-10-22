@@ -17,9 +17,7 @@ package UserInterfaces.LoginAccount{
 	import UserInterfaces.GlobalLayout.LayoutManager;
 	
 	import UserInterfaces.Style.Tween;
-	/**
-	 * the login panel
-	 */
+	
 	public class LoginPanel extends Sprite implements FlexibleLayoutObject{
 		
 		private var BaiduButton:RichButton=new RichButton();
@@ -42,9 +40,7 @@ package UserInterfaces.LoginAccount{
 		private var loginFail:Login_Fail=new Login_Fail();
 		
 		
-		/**
-		 * the login panel
-		 */
+		
 		public function LoginPanel()
 		{
 			
@@ -99,18 +95,14 @@ package UserInterfaces.LoginAccount{
 			BaiduButton.addEventListener("destory",desItem);
 			GoogleButton.addEventListener("destory",desItem);
 		}
-		/**
-		 * remove item
-		 */
+		
 		protected function desItem(event:Event):void
 		{
 			if(contains(event.target as DisplayObject)){
 				removeChild(event.target as DisplayObject);
 			}
 		}
-		/**
-		 * reset
-		 */
+		
 		public function reset():void{
 			if(contains(loginFail)){
 				removeChild(loginFail);
@@ -142,9 +134,6 @@ package UserInterfaces.LoginAccount{
 			
 		}
 		
-		/**
-		 * login check
-		 */
 		public function loginCheck(str:String,oauth:OauthLogin):void{
 			var urlloader:URLLoader=new URLLoader(new URLRequest(str));
 			urlloader.addEventListener(Event.COMPLETE,function (e):void{
@@ -192,9 +181,7 @@ package UserInterfaces.LoginAccount{
 			}
 		}
 		
-		/**
-		 * to login
-		 */
+		
 		public function Login(Oauth:OauthLogin):void{
 			
 			addChildAt(loginWait,getChildIndex(loginAsk));
@@ -238,9 +225,7 @@ package UserInterfaces.LoginAccount{
 			});
 			tLoader.addEventListener(IOErrorEvent.IO_ERROR,fail);
 		}
-		/**
-		 * when login fail
-		 */
+		
 		private function fail(e=null):void{
 			addChild(loginFail);
 			Tween.smoothIn(loginFail);

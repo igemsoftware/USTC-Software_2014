@@ -17,10 +17,7 @@ package UserInterfaces.ReminderManager
 		{
 			
 		}
-		/**
-		 * remind message
-		 * @param msg message
-		 */
+		
 		public static function remind(msg):void{
 			var rem:Reminder=new Reminder(msg);
 			
@@ -47,9 +44,6 @@ package UserInterfaces.ReminderManager
 			rollRems();
 		}
 		
-		/**
-		 * to roll reminder list
-		 */
 		private static function rollRems():void
 		{
 			for (var i:int = 0; i < ReminderList.length; i++) 
@@ -60,9 +54,6 @@ package UserInterfaces.ReminderManager
 				ReminderSpace.addEventListener(Event.ENTER_FRAME,TweenRolling);
 			}
 		}
-		/**
-		 * tween the rolling
-		 */
 		private static function TweenRolling(e):void{
 			for (var i:int = 0; i < ReminderList.length; i++)
 			{

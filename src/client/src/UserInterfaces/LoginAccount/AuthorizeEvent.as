@@ -2,9 +2,6 @@ package UserInterfaces.LoginAccount
 {
 	import flash.events.Event;
 	
-	/**
-	 * authorized event
-	 */
 	public class AuthorizeEvent extends Event
 	{
 		

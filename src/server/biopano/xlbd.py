@@ -134,7 +134,7 @@ def blast_fasta_create():
 
 
 def check_blast_fasta(rebuild_flat):
-    if not os.path.exists(BLAST_PATH) or rebuild_flat:
+    if not os.path.exists(BLAST_PATH) or not os.path.exists(BLAST_PATH + '/ustc_blast') or rebuild_flat:
         blast_fasta_create()
         order = 'makeblastdb -in /tmp/sequence.fasta -dbtype nucl -title ustc_blast -parse_seqids -out /tmp/blast/ustc_blast'
         os.system(order)

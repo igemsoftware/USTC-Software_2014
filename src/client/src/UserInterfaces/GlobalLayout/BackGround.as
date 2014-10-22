@@ -12,18 +12,12 @@ package UserInterfaces.GlobalLayout{
 	
 	import UserInterfaces.Style.ColorMixer;
 
-	/**
-	 * the background of the stage
-	 */
 	public class BackGround{
 		public static var backGround:Sprite=new Sprite();
 		private static var picloader:Loader;
 		private static var pic:Bitmap;
 		private static var Browser:File;
 	
-		/**
-		 * set background picture
-		 */
 		public static function SetBackGroundPic():void{
 			Browser=new File();
 			Browser.browseForOpen("Choose background picture",[new FileFilter("JPEG","*.jpg"),new FileFilter("PNG","*.png")]);
@@ -38,9 +32,7 @@ package UserInterfaces.GlobalLayout{
 				Browser=null;
 			});
 		}
-		/**
-		 * to smooth hte picture
-		 */
+		
 		protected static function Smooth(event:Event):void{
 			backGround.removeChildren(0);
 			var data:BitmapData=new BitmapData(picloader.content.width,picloader.content.height);
@@ -54,9 +46,7 @@ package UserInterfaces.GlobalLayout{
 			
 			picloader=null;
 		}
-		/**
-		 * set the color of the background
-		 */
+		
 		public static function set color(s):void{
 			backGround.removeChildren(0);
 			backGround.graphics.clear();

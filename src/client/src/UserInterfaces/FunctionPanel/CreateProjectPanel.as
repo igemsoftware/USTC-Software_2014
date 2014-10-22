@@ -21,9 +21,6 @@ package UserInterfaces.FunctionPanel
 	
 	import UserInterfaces.LoginAccount.AuthorizedURLLoader;
 
-	/**
-	 * this is a panel to create a new  project
-	 */
 	public class CreateProjectPanel extends Sprite
 	{
 		
@@ -38,11 +35,7 @@ package UserInterfaces.FunctionPanel
 		private var hitA:HitBox=new HitBox(hint.width+10,hint.height+60);
 		
 		private var upload:Boolean=false;
-		/**
-		 * this is a panel to create a new  project
-		 * @param defNam project name
-		 * @param upld uploaded
-		 */
+		
 		public function CreateProjectPanel(defNam:String,upld=false)
 		{
 			
@@ -65,9 +58,7 @@ package UserInterfaces.FunctionPanel
 			upload=upld;
 			
 		}
-		/**
-		 * the event when click the button
-		 */
+		
 		protected function click_evt(event):void
 		{
 			if(pro_name.text.length>0&&ok_b.mouseEnabled){

@@ -9,9 +9,7 @@ package UserInterfaces.FunctionPanel.Blast{
 	import UserInterfaces.FunctionPanel.NodeSampler;
 	
 	
-	/**
-	 * show multi nodes
-	 */
+	
 	public class MultiNodePreviewer extends Sprite{
 		
 		private var displayBoard:SkinBox=new SkinBox();
@@ -27,9 +25,7 @@ package UserInterfaces.FunctionPanel.Blast{
 		
 		private var No_res_hint:LabelTextField=new LabelTextField("No result");
 		
-		/**
-		 * the previewer
-		 */
+		
 		public function MultiNodePreviewer(){
 			
 			addChild(displayBoard);	
@@ -52,9 +48,6 @@ package UserInterfaces.FunctionPanel.Blast{
 			Error_Value.x=3
 			
 		}
-		/**
-		 * give the node
-		 */
 		public function GiveNodes(arr:Array):void{
 			nodes=[];
 			if(arr.length==0){
@@ -67,9 +60,7 @@ package UserInterfaces.FunctionPanel.Blast{
 			}
 			redraw();
 		}
-		/**
-		 * clear the result
-		 */
+		
 		public function clear():void{
 			removeChildren(4);
 			No_res_hint.visible=false;

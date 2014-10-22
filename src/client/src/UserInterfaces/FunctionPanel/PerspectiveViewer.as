@@ -18,9 +18,7 @@ package UserInterfaces.FunctionPanel{
 	import Kernel.Assembly.SelectArray;
 	
 	import fl.events.ListEvent;
-	/**
-	 * this is a panel to show the perspective view
-	 */
+	
 	public class PerspectiveViewer extends Sprite implements FlexibleLayoutObject{
 		
 		private static var grid:RichGrid=new RichGrid();
@@ -31,9 +29,7 @@ package UserInterfaces.FunctionPanel{
 		
 		grid.columns=["Type","Name","Edges"];
 		grid.columnWidths=[90,300,60];
-		/**
-		 * this is a panel to show the perspective view
-		 */
+		
 		public function PerspectiveViewer()
 		{
 			setSize(550,300);
@@ -49,9 +45,7 @@ package UserInterfaces.FunctionPanel{
 			grid.addEventListener(ListEvent.ITEM_CLICK,choose_evt);
 			
 		}
-		/**
-		 * to search the name
-		 */
+		
 		protected function search(event:Event):void
 		{
 			var stable:Array = SelectArray.searchArray(Data,"Name",NameSearcher.text);
@@ -64,9 +58,6 @@ package UserInterfaces.FunctionPanel{
 		public static function addPerspective(ID):void{
 			
 		}
-		/**
-		 * to refresh the panel
-		 */
 		public static function refreshPerspective(e=null):void{
 			
 			if(grid.stage!=null){

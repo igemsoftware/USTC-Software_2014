@@ -35,7 +35,7 @@ package
 		///APIs to backend:
 		
 		///sever used
-		public static const SERVER_ADDRESS:String="api.biopano.org";
+		public static const SERVER_ADDRESS:String="master.biopano.org";
 		public static var ServerAvailable:Boolean=false;
 		
 		///These are Interfaces for cloud function
@@ -93,7 +93,7 @@ package
 		///These are varibles for Login, include two OauthLogin URL
 		///see Class: OauthLogin
 		public static const BaiduLogin:OauthLogin=new OauthLogin("baidu","http://openapi.baidu.com/oauth/2.0/authorize?");
-		public static const GoogleLogin:OauthLogin=new OauthLogin("google","https://accounts.google.com/");
+		public static const GoogleLogin:OauthLogin=new OauthLogin("google","https://accounts.google.com/ServiceLogin");
 		public static var token:String;
 		public static var userName:String; 
 

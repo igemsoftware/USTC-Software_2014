@@ -2,9 +2,6 @@ package UserInterfaces.AskManager
 {
 	import flash.events.MouseEvent;
 
-	/**
-	 *  event processing 
-	 */
 	public class AskManager
 	{
 		public static var askbar:AskBar=new AskBar();
@@ -15,9 +12,7 @@ package UserInterfaces.AskManager
 		public function AskManager()
 		{
 		}
-		/**
-		 * process the event when clicked a button
-		 */
+		
 		public static function ask(msg:String,res:Function,res_n:Function,showCancel=true):void{
 			askbar.ask(msg,showCancel);
 			respose=res;
@@ -34,9 +29,7 @@ package UserInterfaces.AskManager
 			}
 			askbar.show();
 		}
-		/**
-		 * when clicked no
-		 */
+		
 		protected static function no_ask(event:MouseEvent):void
 		{
 			askbar.no_b.removeEventListener(MouseEvent.CLICK,respose_n);
@@ -45,18 +38,13 @@ package UserInterfaces.AskManager
 			askbar.out();
 		}
 		
-		/**
-		 * when click cancel
-		 */
 		protected static function can_ask(event:MouseEvent):void
 		{
 			askbar.ok_b.removeEventListener(MouseEvent.CLICK,resposer);
 			askbar.no_b.removeEventListener(MouseEvent.CLICK,respose_n);
 			askbar.out();
 		}
-		/**
-		 * remove event listener
-		 */
+		
 		protected static function resposer(event:MouseEvent):void
 		{
 			askbar.ok_b.removeEventListener(MouseEvent.CLICK,resposer);

@@ -11,9 +11,7 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher{
 	import UserInterfaces.FunctionPanel.NodeSampler;
 	import UserInterfaces.FunctionPanel.TypeEditor.NodeSample;
 	
-	/**
-	 * search result previewer
-	 */
+	
 	public class SearchResPreviewer extends Sprite{
 		
 		private var displayBoard:SkinBox=new SkinBox();
@@ -55,9 +53,6 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher{
 			})
 			
 		}
-		/**
-		 * give the sample node
-		 */
 		public function GiveNode(node):void{
 
 			sampNode.showSample(NodeTypeInit.BiotypeList[node.Type]);
@@ -69,9 +64,7 @@ package UserInterfaces.FunctionPanel.AdvancedSearcher{
 			_nam=node.Name;
 			_tp=node.Type;
 		}
-		/**
-		 * redraw
-		 */
+		
 		public function setSize(w:Number):void{
 			
 			_text.width=w-_text.x-5;

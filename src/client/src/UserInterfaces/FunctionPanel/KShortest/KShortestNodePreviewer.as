@@ -33,9 +33,7 @@ package UserInterfaces.FunctionPanel.KShortest{
 		
 		private var dx:int=10;
 		
-		/**
-		 * the preview link of k-shortest
-		 */
+		
 		public function KShortestNodePreviewer(){
 			
 			addChild(displayBoard);	
@@ -66,10 +64,6 @@ package UserInterfaces.FunctionPanel.KShortest{
 			});
 			
 		}
-		/**
-		 * to show nodes
-		 * @param n1 node1
-		 */
 		public function GiveNode1(n1:CompressedNode=null):void{
 			if(node1!=null&&contains(node1)){
 				removeChild(node1)
@@ -90,11 +84,6 @@ package UserInterfaces.FunctionPanel.KShortest{
 				
 			}
 		}
-
-		/**
-		 * to show nodes
-		 * @param n1 node2
-		 */
 		public function GiveNode2(n2:CompressedNode=null):void{
 			if(node2!=null&&contains(node2)){
 				removeChild(node2)
@@ -113,9 +102,7 @@ package UserInterfaces.FunctionPanel.KShortest{
 				node2.x=Width/2+105-dx;
 			}
 		}
-		/**
-		 * redraw
-		 */
+		
 		public function setSize(w:Number):void{
 			Width=w;
 			banner.y=55;

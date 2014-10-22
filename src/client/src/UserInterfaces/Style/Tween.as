@@ -13,9 +13,6 @@ package UserInterfaces.Style{
 	import UserInterfaces.GlobalLayout.GlobalLayoutManager;
 	import UserInterfaces.Sorpotions.Navigator;
 
-	/**
-	 * this is a class of all the graphics effects used
-	 */
 	public class Tween{
 		
 		public static function fadeOut(tar):void{

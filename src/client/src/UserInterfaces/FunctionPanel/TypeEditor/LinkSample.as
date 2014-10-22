@@ -7,9 +7,7 @@ package UserInterfaces.FunctionPanel.TypeEditor
 	
 	import Kernel.Geometry.DrawArrow;
 	
-	/**
-	 * a sample line of chosen style
-	 */
+	
 	public class LinkSample extends Sprite
 	{
 		private var wid:int=30;

@@ -9,9 +9,7 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 	import GUI.RichUI.RichButton;
 	
 	import UserInterfaces.Style.Tween;
-	/**
-	 * google page
-	 */
+	
 	public class GooglePage extends Sprite
 	{
 		
@@ -26,9 +24,7 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 		public var searchbn:RichButton=new RichButton(RichButton.RIGHT_EDGE);
 		
 		private var appender:GooglePageAppend=new GooglePageAppend();
-		/**
-		 * set mouse event
-		 */
+		
 		public function GooglePage(){
 			appender.visible=false;
 			addChild(appender);
@@ -37,9 +33,7 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 				appendSearch();
 			});
 		}
-		/**
-		 * clear result
-		 */
+		
 		public function clear():void{
 			
 			removeChildren(1);
@@ -49,10 +43,6 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 			appender.visible=false;
 			
 		}
-		
-		/**
-		 * append block to it
-		 */
 		public function appendBlock(block:GooglePageBlock):void{
 			
 			addChild(block);
@@ -81,14 +71,10 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 		
 		
 		private var n:int=0,searchStr:String;
-		/**
-		 *  search string 
-		 * @param str the string to search
-		 */
 		public function search(str):void{
 			clear();
 			var url:URLRequest=new URLRequest("http://scholar.google.com/scholar?q="+str+"&hl=en");
-			trace(url.url);
+			
 			searchbn.suspend();
 			
 			html.load(url);
@@ -97,13 +83,11 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 			n=0;
 			
 		}
-		/**
-		 * append to search result
-		 */
+		
 		public function appendSearch():void{
 			n+=10;
 			var url:URLRequest=new URLRequest("http://scholar.google.com/scholar?start="+n+"&q="+searchStr+"&hl=en");
-			trace(url.url);
+			
 			searchbn.suspend();
 			
 			html.load(url);
@@ -112,9 +96,7 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 			appender.suspend();
 
 		}
-		/**
-		 * to show data 
-		 */
+		
 		protected function showdata(event:Event):void
 		{
 			trace("Google Receive")
@@ -178,10 +160,9 @@ package UserInterfaces.FunctionPanel.GoogleAPI
 				var d:int;
 				a=tmptitle.indexOf("a href=\"",1)+8;
 				b=tmptitle.indexOf("\"",a);
-				var url:String=tmptitle.slice(a,b-1);
-				
 				d=b=tmptitle.indexOf(">",b);
 				c=tmptitle.indexOf("</a>",b);
+				var url:String=tmptitle.slice(a,b-1);
 				var title:String=tmptitle.slice(d+1,c);
 				
 				

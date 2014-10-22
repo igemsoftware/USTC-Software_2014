@@ -94,7 +94,7 @@ package{
 				
 			}else{
 				
-				showGuide=true;
+				GlobalLayoutManager.showGuide=true;
 				
 				new LinkTypeInit(true);
 				

@@ -6,9 +6,6 @@ package UserInterfaces.GlobalLayout
 	import flash.text.TextFieldAutoSize;
 	import flash.utils.getTimer;
 
-	/**
-	 * show the frames per second
-	 */
 	public class FPSviewer extends Sprite
 	{
 		
@@ -25,9 +22,7 @@ package UserInterfaces.GlobalLayout
 			time=getTimer();
 		}
 		
-		/**
-		 * count
-		 */
+		
 		protected function cont(event:Event):void
 		{
 			frames++;

@@ -10,9 +10,7 @@ package UserInterfaces.Dock{
 	import GUI.Assembly.SkinBox;
 	
 	import Kernel.SmartCanvas.Canvas.Net;
-	/**
-	 * show a preview of a sample node
-	 */
+	
 	public class NodePreviewer extends Sprite{
 		
 		public const W:int=120,H:int=130;
@@ -48,9 +46,6 @@ package UserInterfaces.Dock{
 				dispatchEvent(new Event("close"));
 			})
 		}
-		/**
-		 * give the node
-		 */
 		public function GiveNode(id:String,nam:String,tp:String):void{
 			_tp=tp;
 			_nam=nam;

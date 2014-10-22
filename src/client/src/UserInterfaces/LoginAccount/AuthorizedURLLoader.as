@@ -7,9 +7,6 @@ package UserInterfaces.LoginAccount
 	import UserInterfaces.ReminderManager.ReminderManager;
 	import Kernel.Assembly.CheckerURLLoader;
 	
-	/**
-	 * the authorized url loader
-	 */
 	public class AuthorizedURLLoader extends CheckerURLLoader
 	{
 		

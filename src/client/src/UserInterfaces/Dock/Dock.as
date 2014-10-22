@@ -26,9 +26,7 @@ package UserInterfaces.Dock{
 	import UserInterfaces.GlobalLayout.GlobalLayoutManager;
 	import UserInterfaces.LoginAccount.LoginPanel;
 	import UserInterfaces.LoginAccount.ProjectManagePanel;
-	/**
-	 * dock panel at the bottom of the software
-	 */
+	
 	public class Dock extends Sprite{
 		
 		
@@ -77,9 +75,7 @@ package UserInterfaces.Dock{
 		
 		private var ASearcher:Panel
 		
-		/**
-		 * dock panel
-		 */
+		
 		public function Dock(){
 			
 			
@@ -206,9 +202,7 @@ package UserInterfaces.Dock{
 			p.projectionCenter=new Point(cx,cy);
 			back.transform.perspectiveProjection=p;
 		}
-		/**
-		 * refresh dock
-		 */
+		
 		public function setSize(w:Number):void{
 			Width=w;
 			back.setSize(w);

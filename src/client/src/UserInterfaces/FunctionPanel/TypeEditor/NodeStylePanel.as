@@ -29,9 +29,7 @@ package UserInterfaces.FunctionPanel.TypeEditor
 	import fl.events.SliderEvent;
 	
 	
-	/**
-	 * this is a panel to edit node style
-	 */
+	
 	public class NodeStylePanel extends Sprite implements FlexibleWidthObject
 	{
 		public var focusCir:FocusCircle=new FocusCircle(35);
@@ -57,9 +55,7 @@ package UserInterfaces.FunctionPanel.TypeEditor
 		private var slider_text1:LabelTextField=new LabelTextField("60");
 		private var slider_label:LabelTextField=new LabelTextField("Radius:");
 		private var IconPath:String;
-		/**
-		 * this is a panel to edit node style
-		 */
+		
 		public function NodeStylePanel(){
 			
 			focusCir.visible=false;
@@ -135,9 +131,7 @@ package UserInterfaces.FunctionPanel.TypeEditor
 			
 			_sample.showSample(editType);
 		}
-		/**
-		 * to redraw the sample
-		 */
+		
 		private function sampleRedraw(e=null):void{
 			
 			if(editType!=null){

@@ -10,16 +10,11 @@ package UserInterfaces.IvyBoard.IvyPanels
 	
 	import Kernel.SmartCanvas.Canvas.Net;
 
-	/**
-	 * this is the panel to add node to stage
-	 */
 	public class AddPanel extends Sprite
 	{
 		
 		private var Sheet:SampleSheet=new SampleSheet(200);
-		/**
-		 * this is the panel to add node to stage
-		 */
+		
 		public function AddPanel()
 		{
 			Sheet.iconField=NodeTypeInit.BiotypeIndexList;

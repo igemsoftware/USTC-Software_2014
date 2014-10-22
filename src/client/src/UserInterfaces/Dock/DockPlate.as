@@ -3,9 +3,7 @@ package UserInterfaces.Dock
 	import flash.display.Sprite;
 	
 	import UserInterfaces.GlobalLayout.GlobalLayoutManager;
-/**
- * the graphics of dock panel
- */
+
 	public class DockPlate extends Sprite{
 		
 		

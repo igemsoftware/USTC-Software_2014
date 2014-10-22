@@ -18,9 +18,7 @@ package UserInterfaces.Dock{
 	import fl.controls.CheckBox;
 	import fl.events.ColorPickerEvent;
 	
-	/**
-	 * the option panel
-	 */
+	
 	public class OptionPanel extends Sprite{
 		
 		private var backPIC:RichButton=new RichButton();

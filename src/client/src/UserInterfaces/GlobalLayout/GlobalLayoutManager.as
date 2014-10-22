@@ -21,9 +21,6 @@ package UserInterfaces.GlobalLayout{
 	import UserInterfaces.Sorpotions.Sorption;
 	import UserInterfaces.Style.Tween;
 	
-	/**
-	 * this is a manager of globallayout
-	 */
 	public class GlobalLayoutManager extends Sprite{
 		
 		public static var fpsViewer:FPSviewer=new FPSviewer();
@@ -53,10 +50,9 @@ package UserInterfaces.GlobalLayout{
 		private var aimWidth:int;
 		private var aimX:Number;
 		private var aimAlpha:Number;
-		public var showGuide:Boolean=false;
-		/**
-		 * this is a manager of globallayout
-		 */
+		
+		public static var showGuide:Boolean=false;
+		
 		public function GlobalLayoutManager(){
 			
 			BackGround.color=BackGroundColor;
@@ -119,9 +115,7 @@ package UserInterfaces.GlobalLayout{
 			});
 		}
 	
-		/**
-		 * to show the ivybroad
-		 */
+		
 		public function showIvy(e=null):void{
 			addChildAt(Ivy.Board,getChildIndex(searchBar)+1);
 			SlideBoard(stage.stageWidth-IVY_WIDTH);
@@ -132,10 +126,6 @@ package UserInterfaces.GlobalLayout{
 				 TheNet.addEventListener(MouseEvent.CLICK,hideIvy);
 			}
 		}
-		
-		/**
-		 * to hide the ivybroad
-		 */
 		public function hideIvy(e=null):void{
 			if (!ShowPanels) {
 				SlideBoard(stage.stageWidth+1);
@@ -151,24 +141,14 @@ package UserInterfaces.GlobalLayout{
 				}
 			}
 		}
-		/**
-		 * to show the slide broad
-		 */
 		public function SlideBoard(ax):void{
 			Ivy.Board.aimX=ax;
 			Tween.Slide(Ivy.Board);
 		}
-		
-		/**
-		 * event when layout change
-		 */
 		protected function chg_layout_evt(event:Event):void{
 			ShowPanels=!ShowPanels;
 			SwapWorkSpace(ShowPanels);
 		}
-		/**
-		 * to swap work space
-		 */
 		public function SwapWorkSpace(show:Boolean):void{
 			if (show){
 				R3Droll_pos=0;
@@ -210,10 +190,6 @@ package UserInterfaces.GlobalLayout{
 		private function R3DRoll():void {
 			addEventListener(Event.ENTER_FRAME,R3Droll);
 		}
-		
-		/**
-		 * 3D ratation
-		 */
 		private function R3Droll(e):void {
 			if (Math.abs(R3Droll_pos-control_panel.back.rotationX)>0.02) {
 				control_panel.x = (aimX+control_panel.x * 2) / 3;
@@ -244,10 +220,6 @@ package UserInterfaces.GlobalLayout{
 			}
 			TheNet.setSize(stage.stageWidth,stage.stageHeight);
 		}
-		
-		/**
-		 * set stage
-		 */
 		public function setStage(e=null) :void{
 			
 			AskManager.askbar.x=stage.stageWidth/2;

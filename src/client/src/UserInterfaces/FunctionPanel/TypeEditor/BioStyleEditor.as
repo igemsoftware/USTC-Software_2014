@@ -23,9 +23,7 @@ package UserInterfaces.FunctionPanel.TypeEditor{
 	import fl.data.DataProvider;
 	import fl.events.ListEvent;
 	
-	/**
-	 * this class is used to edit the display style of different types pf nodes
-	 */
+	
 	public class BioStyleEditor extends Sprite implements FlexibleLayoutObject{
 		private const LIST_WIDTH:int=160;
 		
@@ -60,9 +58,7 @@ package UserInterfaces.FunctionPanel.TypeEditor{
 		public var lineApplyData:Array;
 		
 		public var Height:int;
-		/**
-		 * to edit the display style of different types pf nodes
-		 */
+		
 		public function BioStyleEditor(){
 			backUpData=NodeTypeInit.BiotypeProvider;
 			nodeApplyData=NodeTypeInit.BiotypeProvider;
@@ -116,9 +112,7 @@ package UserInterfaces.FunctionPanel.TypeEditor{
 			
 			Mode=1;
 		}
-		/**
-		 * to apply node and link data
-		 */
+		
 		protected function applyData(backUp=false):void{
 			var aimNodeData:Array;
 			var aimLineData:Array;
@@ -183,9 +177,7 @@ package UserInterfaces.FunctionPanel.TypeEditor{
 				}
 			}
 		}
-		/**
-		 * set the selected item
-		 */
+		
 		private function setSelection(e:ListEvent):void{
 			if(e.item.constructor==NodeType){
 				

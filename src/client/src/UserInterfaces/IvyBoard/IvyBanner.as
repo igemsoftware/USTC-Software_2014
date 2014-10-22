@@ -10,9 +10,6 @@ package UserInterfaces.IvyBoard
 	import UserInterfaces.Style.AniContainer;
 	import UserInterfaces.Style.Tween;
 
-	/**
-	 * this is a banner that countains the buttons
-	 */
 	public class IvyBanner extends Sprite
 	{
 		

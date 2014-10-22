@@ -2,9 +2,7 @@ package UserInterfaces.FunctionPanel.Detail{
 	
 	import GUI.ContextSheet.ContextSheet;
 	import GUI.ContextSheet.ContextSheetItem;
-	/**
-	 * fetch content from json
-	 */
+	
 	public class JSONContentFetcher{
 
 		public static function fetch(tar:*):ContextSheet{
