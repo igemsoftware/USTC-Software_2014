@@ -320,7 +320,10 @@ def search_json_node(request):
                 result_copy = result.copy()
                 if 'author' in result_copy.keys():
                     result_copy['author'] = User.objects.get(pk=result_copy['author']).username
-                result_copy['cite'] = len(result_copy['REF'])
+                try:
+                    result_copy['cite'] = len(result_copy['REF'])
+                except:
+                    result_copy['cite'] = 0
                 results_data.append(result_copy)
 
             data = json.dumps({'result': results_data})
