@@ -93,8 +93,6 @@ def save_to_database(dic, Doc):
 
 
 def main():
-    connect('igemdata_new', host='mongodb://product:bXYtvBHrSdbuTMETSVO4VTWGl0oeddBHp3hPNsUbEZOEpRFLcqgaYAjHRirnSI@us-ce-0:27017,cn-ah-0:27017,cn-bj-0:27017', replicaSet='replset')
-
     basepath = './kegg/reaction'
     paths = get_dirs(basepath)
     filecount = 0

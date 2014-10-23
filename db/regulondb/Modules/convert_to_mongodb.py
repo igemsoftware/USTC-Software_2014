@@ -4,6 +4,7 @@ from mongoengine import *
 import re
 import os
 import xlrd
+import CONSTANT
 
 #DynamicClass
 class Node(DynamicDocument):
@@ -71,7 +72,6 @@ def standardized(strin):
     return re_replace.sub('_', strin)
 
 def main():
-    connect('igemdata')
     basepath = './node'
 
     paths = get_dirs(basepath)
@@ -115,7 +115,6 @@ def main():
 
 
 def main_2():
-    connect('igemdata')
     basepath = './father'
     paths = get_dirs(basepath)
     for path in paths:

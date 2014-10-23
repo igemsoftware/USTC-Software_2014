@@ -3,9 +3,8 @@ __author__ = 'Beibeihome'
 from pymongo import *
 import CONSTANT
 import json
+from CONSTANT import db
 
-
-db = MongoClient()[CONSTANT.DATABASE]
 fp = open(CONSTANT.LOG_PATH, 'w+')
 fp_not_found = open('log/not_found_list.txt', 'w+')
 

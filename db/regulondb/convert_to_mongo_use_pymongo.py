@@ -174,7 +174,6 @@ def main_2():
                     tag = tag + 1
 
 def main_3():
-    connect(CONSTANT.DATABASE)
     basepath = './regulondb/father'
     paths = get_dirs(basepath)
     for path in paths:

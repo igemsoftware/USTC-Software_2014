@@ -19,7 +19,6 @@ def delete_module():
 
 
 def parse():
-    connect('igemdata_new', host='mongodb://product:bXYtvBHrSdbuTMETSVO4VTWGl0oeddBHp3hPNsUbEZOEpRFLcqgaYAjHRirnSI@us-ce-0:27017,cn-ah-0:27017,cn-bj-0:27017', replicaSet='replset')
     PATH = './kegg/module/mm.txt'
     fp = file(PATH, 'rU')
     #function dict save the informatino between function and module

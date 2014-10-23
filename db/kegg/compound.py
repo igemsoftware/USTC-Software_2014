@@ -73,8 +73,6 @@ class Compound(DynamicDocument):
 
 class c_importing_thread(threading.Thread): #The timer class is derived from the class threading.Thread
 
-    connect('igemdata_new', host='mongodb://product:bXYtvBHrSdbuTMETSVO4VTWGl0oeddBHp3hPNsUbEZOEpRFLcqgaYAjHRirnSI@us-ce-0:27017,cn-ah-0:27017,cn-bj-0:27017', replicaSet='replset')
-
     def __init__(self, path_list, num):
         threading.Thread.__init__(self)
         self.path_list = path_list
@@ -101,7 +99,6 @@ class c_importing_thread(threading.Thread): #The timer class is derived from the
 def main():
     BASEPATH = './kegg/compound/'
     #BASEPATH = './compound/'
-    connect('igemdata_new', host='mongodb://product:bXYtvBHrSdbuTMETSVO4VTWGl0oeddBHp3hPNsUbEZOEpRFLcqgaYAjHRirnSI@us-ce-0:27017,cn-ah-0:27017,cn-bj-0:27017', replicaSet='replset')
     #save the paths of .cvs files
     paths = []
     for filelist in os.listdir(BASEPATH):
