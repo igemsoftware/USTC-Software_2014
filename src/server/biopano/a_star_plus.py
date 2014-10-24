@@ -166,7 +166,8 @@ def a_star(request):
 
 		# boost by database saving
 		information = db.boost_store.find_one({})
-		#if (information is None) or (information['last_update_time'] != datetime.now().day):
+		if 'rebuild' in request.POST.keys() and request.POST['rebuild'] == 'True':
+			build_store()
 
 		#	build_store()
 		#build_store()

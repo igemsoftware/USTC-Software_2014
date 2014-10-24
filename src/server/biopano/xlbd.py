@@ -200,7 +200,7 @@ def blast(request):
         stdout, stderr = cline()
         result_list = id_parse(stdout)
         result_list = json.dumps(result_list)
-        #os.remove(fasta_path)
+        os.remove(fasta_path)
         test_fp = open(BLAST_PATH + '/stdout.txt', 'w')
         test_fp.write(stdout + '\n\n' + stderr)
         test_fp.close()
