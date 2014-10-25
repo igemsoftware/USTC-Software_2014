@@ -1,4 +1,4 @@
-__author__ = 'feiyicheng'
+__author__ = "feiyicheng"
 
 import json
 from django.shortcuts import HttpResponse
@@ -22,60 +22,60 @@ def add_node(request):
 
     node data should be passed in with the POST method with the following format:
 
-    "info":<query>  ,query is in JSON format
+    'info':<query>  ,query is in JSON format
 
     @param request: django request object
     @return: success prompt or error information
     """
-    if request.method == "POST":
-        '''
+    if request.method == 'POST':
+        """
             add a node id collection <node>
             request.POST is all information of the node
-        '''
-        if validate_node(json.loads(request.POST['info'])):
+        """
+        if validate_node(json.loads(request.POST["info"])):
             # all the information is valid(including the group)
-            node_id = db.node.insert(json.loads(request.POST['info']))
+            node_id = db.node.insert(json.loads(request.POST["info"]))
             noderef_id = db.node_ref.insert(
-                {'pid': ObjectId(request.POST['pid']) if 'pid' in request.POST.keys() else 0,
-                 'x': float(request.POST['x']) if 'x' in request.POST.keys() else '0',
-                 'y': float(request.POST['y']) if 'y' in request.POST.keys() else '0',
+                {"pid": ObjectId(request.POST["pid"]) if "pid" in request.POST.keys() else 0,
+                 "x": float(request.POST["x"]) if "x" in request.POST.keys() else "0",
+                 "y": float(request.POST["y"]) if "y" in request.POST.keys() else "0",
                 }
             )
 
-            prj_id = db.project.find_one({'pid': ObjectId(request.POST['pid'])})
+            prj_id = db.project.find_one({"pid": ObjectId(request.POST["pid"])})
             if prj_id is None:
-                prj_id = db.project.insert({'pid': ObjectId(request.POST['pid']), 'node': [], 'link': []})
-                prj_id = db.project.find_one({'_id': prj_id})
+                prj_id = db.project.insert({"pid": ObjectId(request.POST["pid"]), "node": [], "link": []})
+                prj_id = db.project.find_one({"_id": prj_id})
             else:
                 pass
-            db.project.update({'_id': prj_id['_id']}, {'$push': {'node': noderef_id}}, True)
+            db.project.update({"_id": prj_id["_id"]}, {"$push": {"node": noderef_id}}, True)
 
             # fail to insert into database
             if not node_id or not noderef_id:
-                return HttpResponse("{'status':'error', 'reason':'insert failed'}")
+                return HttpResponse('{"status":"error", "reason":"insert failed"}')
 
             # add refs between two records
 
-            db.node.update({'_id': node_id}, {'$push': {'REF': noderef_id}}, True)
-            db.node.update({'_id': node_id}, {'$set': {'author': request.user.pk}}, True)
-            db.node_ref.update({'_id': noderef_id}, {'$set': {'node_id': node_id}})
+            db.node.update({"_id": node_id}, {"$push": {"REF": noderef_id}}, True)
+            db.node.update({"_id": node_id}, {"$set": {"author": request.user.pk}}, True)
+            db.node_ref.update({"_id": noderef_id}, {"$set": {"node_id": node_id}})
 
 
-            # return the _id of this user's own record of this node
+            # return the _id of this user"s own record of this node
             data = {
-                'status': 'success',
-                'ref_id': str(noderef_id),
-                'id': str(node_id),
+                "status": "success",
+                "ref_id": str(noderef_id),
+                "id": str(node_id),
             }
             return HttpResponse(json.dumps(data))
 
         else:
             # node info is incorrect
-            return HttpResponse('{"status":"error", "reason":"node info invalid"}')
+            return HttpResponse("{'status':'error', 'reason':'node info invalid'}")
 
     else:
         # not using method POST
-        return HttpResponse('{"status":"error", "reason":"pls use method POST"}')
+        return HttpResponse("{'status':'error', 'reason':'pls use method POST'}")
 
 
 @logged_in_exclude_get
@@ -89,88 +89,88 @@ def get_del_addref_node(request, **kwargs):
         3. PUT: make a copy(actually a ref) that belongs to the project which the user is working on.
         4. PATCH: merely modify the x, y coordinates of specific node
 
-    @param kwargs: kwarg['id'] is the object_id or ref_id
+    @param kwargs: kwarg["id"] is the object_id or ref_id
     @param request: django request object
     @type request: django.http.request
     @return: success prompt or error information
     """
-    if request.method == 'DELETE':
-        '''
+    if request.method == "DELETE":
+        """
             DELETE A REF IN COLLECTION<node_ref>
-        '''
+        """
         paras = request.POST
-        project = db.project.find_one({'pid': ObjectId(paras['pid'])})
-        noderef = db.node_ref.find_one({'_id': ObjectId(kwargs['ID'])})
+        project = db.project.find_one({"pid": ObjectId(paras["pid"])})
+        noderef = db.node_ref.find_one({"_id": ObjectId(kwargs["ID"])})
 
         # not found
         if noderef is None:
-            return HttpResponse("{'status':'error', 'reason':'no record match that id'}")
+            return HttpResponse('{"status":"error", "reason":"no record match that id"}')
         if project is None:
-            return HttpResponse("{'status':'error', 'reason':'project not found'}")
+            return HttpResponse('{"status":"error", "reason":"project not found"}')
 
         # remove ref in specific node record
-        db.node.update({'_id': noderef['node_id']}, {'$pull': {"REF": noderef['_id']}})
+        db.node.update({"_id": noderef["node_id"]}, {"$pull": {'REF': noderef["_id"]}})
 
         # remove node_ref record
-        db.node_ref.remove({'_id': noderef['_id']})
-        db.project.update({'_id': project['_id']}, {'$pull': {"node": noderef['_id']}})
+        db.node_ref.remove({"_id": noderef["_id"]})
+        db.project.update({"_id": project["_id"]}, {"$pull": {'node': noderef["_id"]}})
 
-        return HttpResponse("{'status': 'success'}")
+        return HttpResponse('{"status": "success"}')
 
-    elif request.method == 'PUT':
-        '''
+    elif request.method == "PUT":
+        """
             add a ref record in collection <node_ref>
-        '''
+        """
         paras = request.POST
         try:
-            node = db.node.find_one({'_id': ObjectId(kwargs['ID'])})
+            node = db.node.find_one({"_id": ObjectId(kwargs["ID"])})
         except KeyError:
-            return HttpResponse("{'status':'error', 'reason':'key <_id> does not exist'}")
+            return HttpResponse('{"status":"error", "reason":"key <_id> does not exist"}')
 
         # not found
         if node is None:
-            return HttpResponse("{'status':'error', 'reason':'object not found'}")
+            return HttpResponse('{"status":"error", "reason":"object not found"}')
 
         # node exists
-        noderef_id = db.node_ref.insert({'pid': ObjectId(paras['pid']) if 'pid' in paras.keys() else 0,
-                                         'x': paras['x'] if 'x' in paras.keys() else '0',
-                                         'y': paras['y'] if 'y' in paras.keys() else '0',
-                                         'node_id': node['_id']}
+        noderef_id = db.node_ref.insert({"pid": ObjectId(paras["pid"]) if "pid" in paras.keys() else 0,
+                                         "x": paras["x"] if "x" in paras.keys() else "0",
+                                         "y": paras["y"] if "y" in paras.keys() else "0",
+                                         "node_id": node["_id"]}
         )
 
         if noderef_id:
-            prj_id = db.project.find_one({'pid': ObjectId(request.POST['pid'])})
+            prj_id = db.project.find_one({"pid": ObjectId(request.POST["pid"])})
             if prj_id is None:
                 prj_id = db.project.insert({
-                    'pid': ObjectId(request.POST['pid']),
-                    'node': [],
-                    'link': [],
+                    "pid": ObjectId(request.POST["pid"]),
+                    "node": [],
+                    "link": [],
                 }
                 )
-                prj_id = db.project.find_one({'_id': prj_id})
+                prj_id = db.project.find_one({"_id": prj_id})
             else:
                 pass
-            db.project.update({'_id': prj_id['_id']}, {'$push': {'node': noderef_id}}, True)
+            db.project.update({"_id": prj_id["_id"]}, {"$push": {"node": noderef_id}}, True)
 
-            data = {'status': 'success', 'ref_id': str(noderef_id)}
+            data = {"status": "success", "ref_id": str(noderef_id)}
             return HttpResponse(json.dumps(data))
         else:
-            return HttpResponse("{'status':'error', 'reason':'fail to insert data into database'}")
+            return HttpResponse('{"status":"error", "reason":"fail to insert data into database"}')
 
-    elif request.method == 'GET':
-        '''
+    elif request.method == "GET":
+        """
         get the detail info of a record
-        :param kwargs: kwargs['_id'] is the object id in collection node
-        '''
-        BANNED_ATTRI = {'_id': 0, 'REF': 0, 'REF_COUNT': 0, 'ID': 0, 'FATHER': 0, 'CHILD': 0}
+        :param kwargs: kwargs["_id"] is the object id in collection node
+        """
+        BANNED_ATTRI = {"_id": 0, "REF": 0, "REF_COUNT": 0, "ID": 0, "FATHER": 0, "CHILD": 0}
         try:
-            node = db.node.find_one({'_id': ObjectId(kwargs['ID'])}, BANNED_ATTRI)
+            node = db.node.find_one({"_id": ObjectId(kwargs["ID"])}, BANNED_ATTRI)
         except KeyError:
-            return HttpResponse("{'status':'error', 'reason':'key <_id> does not exist'}")
+            return HttpResponse('{"status":"error", "reason":"key <_id> does not exist"}')
 
         if node is None:
             # not found
-            return HttpResponse("{'status':'error', 'reason':'object not found'}")
+            return HttpResponse('{"status":"error", "reason":"object not found"}')
 
         else:
             # the node exists
@@ -195,37 +195,37 @@ def get_del_addref_node(request, **kwargs):
 
             return HttpResponse(json.dumps(result_copy))
 
-    elif request.method == 'PATCH':
-        '''
+    elif request.method == "PATCH":
+        """
         update merely the position(x,y) of the node
         :param request.PATCH: a dict with keys(token, username, info), info is also a dict with keys(x, y, ref_id)
-        :return data: {'status': 'success'} if everything goes right
-        '''
+        :return data: {"status": "success"} if everything goes right
+        """
         paras = request.POST
         # try:
-        x = paras['x']
-        y = paras['y']
-        old_ref_id = kwargs['ID']
+        x = paras["x"]
+        y = paras["y"]
+        old_ref_id = kwargs["ID"]
         #except KeyError:
-        #    return HttpResponse("{'status': 'error','reason':'your info should include keys: x, y, ref_id'}")
+        #    return HttpResponse('{"status": "error","reason":"your info should include keys: x, y, ref_id"}')
 
         # x,y should be able to convert to a float number
         try:
             fx = float(x)
             fy = float(y)
         except ValueError:
-            return HttpResponse("{'status': 'error','reason':'the x, y value should be float'}")
+            return HttpResponse('{"status": "error","reason":"the x, y value should be float"}')
 
-        node = db.node_ref.find_one({'_id': ObjectId(old_ref_id)})
+        node = db.node_ref.find_one({"_id": ObjectId(old_ref_id)})
         if not node:
-            return HttpResponse("{'status': 'error','reason':'unable to find the record matching ref_id given'}")
+            return HttpResponse('{"status": "error","reason":"unable to find the record matching ref_id given"}')
         else:
-            db.node_ref.update({'_id': ObjectId(old_ref_id)}, {'$set': {'x': x, 'y': y}})
-            return HttpResponse("{'status': 'success}")
+            db.node_ref.update({"_id": ObjectId(old_ref_id)}, {"$set": {"x": x, "y": y}})
+            return HttpResponse('{"status": "success}')
 
     else:
         # method incorrect
-        return HttpResponse("{'status': 'error','reason':'pls use method DELETE/PUT/GET/PATCH '}")
+        return HttpResponse('{"status": "error","reason":"pls use method DELETE/PUT/GET/PATCH "}')
 
 
 def search_json_node(request):
@@ -234,66 +234,66 @@ def search_json_node(request):
     User passes in a json query using POST method, and this method will return the
     results of this single searching.
 
-    User can use the "$limit" "$or" "$and" paras to apply a complex searching.
+    User can use the '$limit' '$or' '$and' paras to apply a complex searching.
     all paras can be seen in U{http://docs.mongodb.org/manual/}
 
     @param request: django request object
     @return: the results of the query or error information
     """
-    if request.method == 'POST':
-        ''' POST: {
-            'spec': <json query>,
-            'fields': <filter in json format>,
-            'skip': <INTEGER>,
-            'limit': <the max amount to return(INTEGER)>
+    if request.method == "POST":
+        """ POST: {
+            "spec": <json query>,
+            "fields": <filter in json format>,
+            "skip": <INTEGER>,
+            "limit": <the max amount to return(INTEGER)>
         }
-        '''
+        """
 
         # try if query conform to JSON format
         try:
-            queryinstance = json.loads(request.POST['spec'])
+            queryinstance = json.loads(request.POST["spec"])
         except ValueError:
-            return HttpResponse("{'status':'error', 'reason':'query not conform to JSON format'}")
+            return HttpResponse('{"status":"error", "reason":"query not conform to JSON format"}')
 
         try:
-            filterinstance = json.loads(request.POST['fields'])
+            filterinstance = json.loads(request.POST["fields"])
         except KeyError:
             # set a default value
-            filterinstance = {'_id': 1, 'NAME': 1, 'TYPE': 1, 'author': 1, 'REF': 1}
+            filterinstance = {"_id": 1, "NAME": 1, "TYPE": 1, "author": 1, "REF": 1}
         except ValueError:
-            return HttpResponse("{'status':'error', 'reason':'filter not conform to JSON format'}")
+            return HttpResponse("{'status': 'error', 'reason': 'filter not conform to JSON format'}")
 
         try:
-            limit = int(request.POST['limit'])
-            skip = int(request.POST['skip'])
+            limit = int(request.POST["limit"])
+            skip = int(request.POST["skip"])
         except KeyError:
             # set a default value
             limit = 20
             skip = 0
         except ValueError:
-            return HttpResponse("{'status':'error', 'reason':'limit/skip must be a integer'}")
+            return HttpResponse('{"status":"error", "reason":"limit/skip must be a integer"}')
 
         # handle _id (string-->ObjectId)
 
         for key in queryinstance.keys():
-            if '_id' == key:
+            if "_id" == key:
                 queryinstance[key] = ObjectId(queryinstance[key])
                 continue
             if isinstance(queryinstance[key], list):
                 new = []
                 for item in queryinstance[key]:
-                    if '_id' in item.keys():
-                        item['_id'] = ObjectId(item['_id'])
+                    if "_id" in item.keys():
+                        item["_id"] = ObjectId(item["_id"])
                     new.append(item)
                 queryinstance[key] = new
 
         # vague search
 
-        results = db.node.find(queryinstance, filterinstance).sort([('NAME', 1), ('REF', -1)]).limit(limit)
+        results = db.node.find(queryinstance, filterinstance).sort([("NAME", 1), ("REF", -1)]).limit(limit)
 
-        if 'format' in request.POST.keys():
+        if "format" in request.POST.keys():
             # noinspection PyDictCreation
-            if request.POST['format'] == 'xml':
+            if request.POST["format"] == "xml":
                 # Pack data into xml format
                 lists = []
                 for item in results:
@@ -302,9 +302,9 @@ def search_json_node(request):
                         newitem[key] = item[key]
                     lists.append(newitem)
                 inss = {}
-                inss['result'] = lists
+                inss["result"] = lists
                 final = {}
-                final['results'] = inss
+                final["results"] = inss
                 data = dict2xml(final)
             else:
                 data = None
@@ -329,13 +329,13 @@ def search_json_node(request):
                     result_copy['cite'] = 0
                 results_data.append(result_copy)
 
-            data = json.dumps({'result': results_data})
+            data = json.dumps({"result": results_data})
 
         return HttpResponse(data)
 
     else:
         # method is not POST
-        return HttpResponse("{'status':'error', 'reason':'pls use POST method'}")
+        return HttpResponse('{"status":"error", "reason":"pls use POST method"}')
 
 
 @logged_in
@@ -345,57 +345,57 @@ def add_link(request):
 
     node data should be passed in with the POST method with the following format:
 
-    "info":<query>  ,query is in JSON format
+    'info':<query>  ,query is in JSON format
 
     @param request: django request object
     @return: success prompt or error information
     """
-    if request.method == "POST":
+    if request.method == 'POST':
         # request.POST is all information of the link
-        if validate_link(json.loads(request.POST['info'])):
+        if validate_link(json.loads(request.POST["info"])):
             # all the information is valid(including the group)
-            link_id = db.link.insert(json.loads(request.POST['info']))
+            link_id = db.link.insert(json.loads(request.POST["info"]))
             linkref_id = db.link_ref.insert(
                 {
-                    'pid': ObjectId(request.POST['pid']) if 'pid' in request.POST.keys() else 0,
+                    "pid": ObjectId(request.POST["pid"]) if "pid" in request.POST.keys() else 0,
                 }
             )
 
             # fail to insert into database
             if not link_id or not linkref_id:
-                return HttpResponse("{'status':'error', 'reason':'insert failed'}")
+                return HttpResponse('{"status":"error", "reason":"insert failed"}')
 
             # add refs between two records
-            db.link.update({'_id': link_id}, {'$push': {'REF': linkref_id}}, True)
-            db.link.update({'_id': link_id}, {'$set': {'author': request.user.pk}}, True)
-            db.link_ref.update({'_id': linkref_id}, {'$set': {'link_id': link_id,
+            db.link.update({"_id": link_id}, {"$push": {"REF": linkref_id}}, True)
+            db.link.update({"_id": link_id}, {"$set": {"author": request.user.pk}}, True)
+            db.link_ref.update({"_id": linkref_id}, {"$set": {"link_id": link_id,
 
-                                                              'id1': ObjectId(request.POST['id1']),
-                                                              'id2': ObjectId(request.POST['id2'])}})
+                                                              "id1": ObjectId(request.POST["id1"]),
+                                                              "id2": ObjectId(request.POST["id2"])}})
 
-            prj_id = db.project.find_one({'pid': ObjectId(request.POST['pid'])})
+            prj_id = db.project.find_one({"pid": ObjectId(request.POST["pid"])})
             if prj_id is None:
-                prj_id = db.project.insert({'pid': ObjectId(request.POST['pid']), 'node': [], 'link': []})
-                prj_id = db.project.find_one({'_id': prj_id})
+                prj_id = db.project.insert({"pid": ObjectId(request.POST["pid"]), "node": [], "link": []})
+                prj_id = db.project.find_one({"_id": prj_id})
             else:
                 pass
-            db.project.update({'_id': prj_id['_id']}, {'$push': {'link': linkref_id}}, True)
+            db.project.update({"_id": prj_id["_id"]}, {"$push": {"link": linkref_id}}, True)
 
-            # return the _id of this user's own record of this link
+            # return the _id of this user"s own record of this link
             data = {
-                'status': 'success',
-                'ref_id': str(linkref_id),
-                'id': str(link_id),
+                "status": "success",
+                "ref_id": str(linkref_id),
+                "id": str(link_id),
             }
             return HttpResponse(json.dumps(data))
 
         else:
             # link info is incorrect
-            return HttpResponse('{"status":"error", "reason":"link info invalid"}')
+            return HttpResponse("{'status':'error', 'reason':'link info invalid'}")
 
     else:
         # method is not POST
-        return HttpResponse('{"status":"error", "reason":"pls use POST method"}')
+        return HttpResponse("{'status':'error', 'reason':'pls use POST method'}")
 
 
 @logged_in_exclude_get
@@ -409,90 +409,90 @@ def get_del_addref_link(request, **kwargs):
         3. PUT: make a copy(actually a ref) that belongs to the project which the user is working on.
         4. PATCH: merely modify the x, y coordinates of specific node
 
-    @param kwargs: kwarg['id'] is the object_id or ref_id
+    @param kwargs: kwarg["id"] is the object_id or ref_id
     @param request: django request object
     @type request: django.http.request
     @return: success prompt or error information
     """
-    if request.method == 'DELETE':
-        '''
+    if request.method == "DELETE":
+        """
             DELETE A REF IN COLLECTION<link_ref>
-        '''
+        """
         paras = request.POST
-        project = db.project.find_one({'pid': ObjectId(paras['pid'])})
-        linkref = db.link_ref.find_one({'_id': ObjectId(kwargs['ID'])})
+        project = db.project.find_one({"pid": ObjectId(paras["pid"])})
+        linkref = db.link_ref.find_one({"_id": ObjectId(kwargs["ID"])})
 
         # not found
         if linkref is None:
-            return HttpResponse("{'status':'error', 'reason':'no record match that id'}")
+            return HttpResponse('{"status":"error", "reason":"no record match that id"}')
         if project is None:
-            return HttpResponse("{'status':'error', 'reason':'project not found'}")
+            return HttpResponse('{"status":"error", "reason":"project not found"}')
 
         # remove ref in specific node record
-        db.link.update({'_id': linkref['link_id']}, {'$pull': {"REF": linkref['_id']}})
+        db.link.update({"_id": linkref["link_id"]}, {"$pull": {'REF': linkref["_id"]}})
 
         # remove node_ref record
-        db.link_ref.remove({'_id': linkref['_id']})
-        db.project.update({'_id': project['_id']}, {'$pull': {"link": linkref['_id']}})
+        db.link_ref.remove({"_id": linkref["_id"]})
+        db.project.update({"_id": project["_id"]}, {"$pull": {'link': linkref["_id"]}})
 
-        return HttpResponse("{'status': 'success'}")
+        return HttpResponse('{"status": "success"}')
 
-    elif request.method == 'PUT':
-        '''
+    elif request.method == "PUT":
+        """
             add a ref record in collection <node_ref>
-        '''
+        """
         paras = request.POST
         try:
-            link = db.link.find_one({'_id': ObjectId(kwargs['ID'])})
+            link = db.link.find_one({"_id": ObjectId(kwargs["ID"])})
         except KeyError:
-            return HttpResponse("{'status':'error', 'reason':'key <_id> does not exist'}")
+            return HttpResponse('{"status":"error", "reason":"key <_id> does not exist"}')
 
         # not found
         if link is None:
-            return HttpResponse("{'status':'error', 'reason':'object not found'}")
+            return HttpResponse('{"status":"error", "reason":"object not found"}')
 
         # link exists
         linkref_id = db.link_ref.insert(
             {
-                'pid': ObjectId(paras['pid']) if 'pid' in paras.keys() else 0,
-                'link_id': ObjectId(kwargs['ID']),
-                'id1': ObjectId(paras['id1']),
-                'id2': ObjectId(paras['id2'])
+                "pid": ObjectId(paras["pid"]) if "pid" in paras.keys() else 0,
+                "link_id": ObjectId(kwargs["ID"]),
+                "id1": ObjectId(paras["id1"]),
+                "id2": ObjectId(paras["id2"])
             }
         )
         if linkref_id:
-            prj_id = db.project.find_one({'pid': ObjectId(request.POST['pid'])})
+            prj_id = db.project.find_one({"pid": ObjectId(request.POST["pid"])})
             if prj_id is None:
-                prj_id = db.project.insert({'pid': ObjectId(request.POST['pid']), 'node': [], 'link': []})
-                prj_id = db.project.find_one({'_id': prj_id})
+                prj_id = db.project.insert({"pid": ObjectId(request.POST["pid"]), "node": [], "link": []})
+                prj_id = db.project.find_one({"_id": prj_id})
             else:
                 pass
-            db.project.update({'_id': prj_id['_id']}, {'$push': {'link': linkref_id}}, True)
+            db.project.update({"_id": prj_id["_id"]}, {"$push": {"link": linkref_id}}, True)
 
-            data = {'status': 'success', 'ref_id': str(linkref_id)}
+            data = {"status": "success", "ref_id": str(linkref_id)}
             return HttpResponse(json.dumps(data))
         else:
-            return HttpResponse("{'status':'error', 'reason':'insert failed'}")
+            return HttpResponse('{"status":"error", "reason":"insert failed"}')
 
-    elif request.method == 'GET':
-        '''
+    elif request.method == "GET":
+        """
         get the detail info of a record
-        '''
-        BANNED_ATTRI = {'_id': 0, 'REF': 0, 'REF_COUNT': 0, 'ID': 0}
+        """
+        BANNED_ATTRI = {"_id": 0, "REF": 0, "REF_COUNT": 0, "ID": 0}
         try:
-            link = db.link.find_one({'_id': ObjectId(kwargs['ID'])}, BANNED_ATTRI)
+            link = db.link.find_one({"_id": ObjectId(kwargs["ID"])}, BANNED_ATTRI)
         except KeyError:
-            return HttpResponse("{'status':'error', 'reason':'key <_id> does not exist'}")
+            return HttpResponse('{"status":"error", "reason":"key <_id> does not exist"}')
 
         if link is None:
             # not found
-            return HttpResponse("{'status':'error', 'reason':'object not found'}")
+            return HttpResponse('{"status":"error", "reason":"object not found"}')
 
         else:
             # the node exists
             link_dic = link
-            if 'author' in link_dic.keys():
-                    link_dic['author'] = User.objects.get(pk=link_dic['author']).username
+            if "author" in link_dic.keys():
+                    link_dic["author"] = User.objects.get(pk=link_dic["author"]).username
             for key in link_dic.keys():
                 if isinstance(link_dic[key], bson.objectid.ObjectId):
                     link_dic[key] = str(link_dic[key])
@@ -504,15 +504,15 @@ def get_del_addref_link(request, **kwargs):
                     link_dic[key] = newrefs
 
             result_copy = link_dic.copy()
-            if 'author' in result_copy.keys():
-                result_copy['author'] = User.objects.get(pk=result_copy['author']).username
-            result_copy['cite'] = len(result_copy['REF'])
+            if "author" in result_copy.keys():
+                result_copy["author"] = User.objects.get(pk=result_copy["author"]).username
+            result_copy["cite"] = len(result_copy["REF"])
 
             return HttpResponse(json.dumps(result_copy))
 
     else:
         # method incorrect
-        return HttpResponse("{'status': 'error','reason':'pls use method DELETE/PUT '}")
+        return HttpResponse('{"status": "error","reason":"pls use method DELETE/PUT "}')
 
 
 # @login_required
@@ -522,63 +522,63 @@ def search_json_link(request):
     User passes in a json query using POST method, and this method will return the
     results of this single searching.
 
-    User can use the "$limit" "$or" "$and" paras to apply a complex searching.
+    User can use the '$limit' '$or' '$and' paras to apply a complex searching.
     all paras can be seen in U{http://docs.mongodb.org/manual/}
 
     @param request: django request object
     @return: the results of the query or error information
     """
-    if request.method == 'POST':
-        ''' POST: {
-            'spec': <json query>,
-            'fields': <filter in json format>,
-            'skip': <INTEGER>,
-            'limit': <the max amount to return(INTEGER)>
+    if request.method == "POST":
+        """ POST: {
+            "spec": <json query>,
+            "fields": <filter in json format>,
+            "skip": <INTEGER>,
+            "limit": <the max amount to return(INTEGER)>
         }
-        '''
+        """
 
         # try if query conform to JSON format
         try:
-            queryinstance = json.loads(request.POST['spec'])
+            queryinstance = json.loads(request.POST["spec"])
         except ValueError:
-            return HttpResponse("{'status':'error', 'reason':'query not conform to JSON format'}")
+            return HttpResponse('{"status":"error", "reason":"query not conform to JSON format"}')
 
         try:
-            filterinstance = json.loads(request.POST['fields'])
+            filterinstance = json.loads(request.POST["fields"])
         except KeyError:
             # set a default value
-            filterinstance = {'TYPE1': 1, 'TYPE2': 1, '_id': 1, 'author': 1, 'REF': 1}
+            filterinstance = {"TYPE1": 1, "TYPE2": 1, "_id": 1, "author": 1, "REF": 1}
         except ValueError:
-            return HttpResponse("{'status':'error', 'reason':'filter not conform to JSON format'}")
+            return HttpResponse('{"status":"error", "reason":"filter not conform to JSON format"}')
 
         try:
-            limit = int(request.POST['limit'])
-            skip = int(request.POST['skip'])
+            limit = int(request.POST["limit"])
+            skip = int(request.POST["skip"])
         except KeyError:
             # set a default value
             limit = 20
             skip = 0
         except ValueError:
-            return HttpResponse("{'status':'error', 'reason':'limit must be a integer'}")
+            return HttpResponse('{"status":"error", "reason":"limit must be a integer"}')
 
         # handle _id (string-->ObjectId)
 
         for key in queryinstance.keys():
-            if '_id' == key:
+            if "_id" == key:
                 queryinstance[key] = ObjectId(queryinstance[key])
                 continue
             if isinstance(queryinstance[key], list):
                 new = []
                 for item in queryinstance[key]:
-                    if '_id' in item.keys():
-                        item['_id'] = ObjectId(item['_id'])
+                    if "_id" in item.keys():
+                        item["_id"] = ObjectId(item["_id"])
                     new.append(item)
                 queryinstance[key] = new
         results = db.link.find(queryinstance, filterinstance).limit(limit)
-        results = db.link.find(queryinstance, filterinstance).sort([('REF', -1), ]).limit(limit)
+        results = db.link.find(queryinstance, filterinstance).sort([("REF", -1), ]).limit(limit)
 
-        if 'format' in request.POST.keys():
-            if request.POST['format'] == 'xml':
+        if "format" in request.POST.keys():
+            if request.POST["format"] == "xml":
                 # Pack data into xml format
                 lists = []
                 for item in results:
@@ -587,9 +587,9 @@ def search_json_link(request):
                         newitem[key] = item[key]
                     lists.append(newitem)
                 inss = {}
-                inss['result'] = lists
+                inss["result"] = lists
                 final = {}
-                final['results'] = inss
+                final["results"] = inss
                 data = dict2xml(final)
             else:
                 data = None
@@ -606,68 +606,68 @@ def search_json_link(request):
                         result[key] = newrefs
 
                 result_copy = result.copy()
-                if 'author' in result_copy.keys():
-                    result_copy['author'] = User.objects.get(pk=result_copy['author']).username
-                result_copy['cite'] = len(result_copy['REF'])
+                if "author" in result_copy.keys():
+                    result_copy["author"] = User.objects.get(pk=result_copy["author"]).username
+                result_copy["cite"] = len(result_copy["REF"])
 
                 results_data.append(result_copy)
-            data = json.dumps({'result': results_data})
+            data = json.dumps({"result": results_data})
 
         return HttpResponse(data)
 
     else:
         # method is not POST
-        return HttpResponse("{'status':'error', 'reason':'pls use POST method'}")
+        return HttpResponse('{"status":"error", "reason":"pls use POST method"}')
 
 
 @logged_in
 @project_verified
 def get_project(request, **kwargs):
-    if request.method == 'GET':
-        pid = ObjectId(kwargs['pid'])
-        project = db.project.find_one({'pid': pid})
+    if request.method == "GET":
+        pid = ObjectId(kwargs["pid"])
+        project = db.project.find_one({"pid": pid})
         if project is None:
-            return HttpResponse("{'status': 'error','reason':'project not found'}")
+            return HttpResponse('{"status": "error","reason":"project not found"}')
         nodeset = []
         linkset = []
-        for noderef_id in project['node']:
-            noderef = db.node_ref.find_one({'_id': noderef_id})
-            node_id = noderef['node_id']
-            node = db.node.find_one({'_id': node_id})
+        for noderef_id in project["node"]:
+            noderef = db.node_ref.find_one({"_id": noderef_id})
+            node_id = noderef["node_id"]
+            node = db.node.find_one({"_id": node_id})
             data = {
-                '_id': str(node_id),
-                'ref_id': str(noderef_id),
-                'NAME': node['NAME'],
-                'TYPE': node['TYPE'],
-                'x': noderef['x'],
-                'y': noderef['y'],
+                "_id": str(node_id),
+                "ref_id": str(noderef_id),
+                "NAME": node["NAME"],
+                "TYPE": node["TYPE"],
+                "x": noderef["x"],
+                "y": noderef["y"],
             }
             nodeset.append(data)
-        for linkref_id in project['link']:
-            linkref = db.link_ref.find_one({'_id': linkref_id})
-            link_id = linkref['link_id']
-            link = db.link.find_one({'_id': link_id})
+        for linkref_id in project["link"]:
+            linkref = db.link_ref.find_one({"_id": linkref_id})
+            link_id = linkref["link_id"]
+            link = db.link.find_one({"_id": link_id})
             data = {
-                '_id': str(link_id),
-                'ref_id': str(linkref_id),
-                'TYPE': link['TYPE'],
-                'id1': str(linkref['id1']),
-                'id2': str(linkref['id2']),
+                "_id": str(link_id),
+                "ref_id": str(linkref_id),
+                "TYPE": link["TYPE"],
+                "id1": str(linkref["id1"]),
+                "id2": str(linkref["id2"]),
             }
-            if 'NAME' in link.keys():
-                data['NAME'] = link['NAME']
+            if "NAME" in link.keys():
+                data["NAME"] = link["NAME"]
             linkset.append(data)
 
-        data = {'status': 'success', 'node': nodeset, 'link': linkset}
+        data = {"status": "success", "node": nodeset, "link": linkset}
         return HttpResponse(json.dumps(data))
     else:
-        return HttpResponse("{'status': 'error','reason':'pls use method GET'}")
+        return HttpResponse('{"status": "error","reason":"pls use method GET"}')
 
 
 @logged_in
 @project_verified
 def test_prj(request):
-    prj = ProjectFile.objects.get(pk=ObjectId(request.POST['pid']))
-    return HttpResponse(prj.name + ' ' + prj.author.username)
+    prj = ProjectFile.objects.get(pk=ObjectId(request.POST["pid"]))
+    return HttpResponse(prj.name + " " + prj.author.username)
 
 

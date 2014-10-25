@@ -1,4 +1,4 @@
-__author__ = 'feiyicheng'
+__author__ = "feiyicheng"
 
 # from rest_framework.authtoken.models import Token
 from mongoengine.django.auth import User, AnonymousUser
@@ -19,14 +19,14 @@ def logged_in(func):
         # try:
         if isinstance(request.user, AnonymousUser):
             # user not logged in
-            return HttpResponse("{'status':'error','reason':'this operation need the user to be logged in'}")
+            return HttpResponse('{"status":"error","reason":"this operation need the user to be logged in"}')
         elif isinstance(request.user, User):
             # user already logged in
             return func(request, *args, **kwargs)
         else:
-            raise TypeError('user type should be either User or AnonymousUser')
+            raise TypeError("user type should be either User or AnonymousUser")
             # except AttributeError:
-            # raise AttributeError('request does not has attribute user')
+            # raise AttributeError("request does not has attribute user")
 
     wrap.__doc__ = func.__doc__
     wrap.__name__ = func.__name__
@@ -37,28 +37,28 @@ def logged_in(func):
 def project_verified(func):
     """ a decorator that identify the project
 
-    the request body should be in JSON format with a key names "pid", and this decorator
-    will verify the project with pid with the user logged in.If "pid" is not provided or
+    the request body should be in JSON format with a key names 'pid', and this decorator
+    will verify the project with pid with the user logged in.If 'pid' is not provided or
     the project pid represents do not match the logged-in user, it will return Error with
     some error information
 
-    @param func: a method tha needs to verify the user's group
+    @param func: a method tha needs to verify the user"s group
     """
 
     def wrap(request, *args, **kwargs):
         data = QueryDict(request.body)
-        if 'pid' not in data.keys():
+        if "pid" not in data.keys():
             return func(request, *args, **kwargs)
         else:
             try:
-                prj = ProjectFile.objects.get(pk=ObjectId(data['pid']))
+                prj = ProjectFile.objects.get(pk=ObjectId(data["pid"]))
             except ObjectDoesNotExist:
-                return HttpResponse("{'status':'error', 'reason':'cannot find a project matching given pid'}")
+                return HttpResponse('{"status":"error", "reason":"cannot find a project matching given pid"}')
             else:
                 if request.user == prj.author or request.user in prj.collaborators:
                     return func(request, *args, **kwargs)
                 else:
-                    return HttpResponse("{'status':'error', 'reason':'the project cannot match the user logged in'}")
+                    return HttpResponse('{"status":"error", "reason":"the project cannot match the user logged in"}')
 
     wrap.__doc__ = func.__doc__
     wrap.__name__ = func.__name__
@@ -76,17 +76,17 @@ def logged_in_exclude_get(func):
         try:
             if isinstance(request.user, AnonymousUser):
                 # user not logged in
-                if request.method == 'GET':
+                if request.method == "GET":
                     return func(request, *args, **kwargs)
                 else:
-                    return HttpResponse("{'status':'error','reason':'this operation need the user to be logged in'}")
+                    return HttpResponse('{"status":"error","reason":"this operation need the user to be logged in"}')
             elif isinstance(request.user, User):
                 # user already logged in
                 return func(request, *args, **kwargs)
             else:
-                raise TypeError('user type should be either User or AnonymousUser')
+                raise TypeError("user type should be either User or AnonymousUser")
         except AttributeError:
-            raise AttributeError('request does not has attribute user')
+            raise AttributeError("request does not has attribute user")
 
 
     wrap.__doc__ = func.__doc__
@@ -102,22 +102,22 @@ def project_verified_exclude_get(func):
     """
 
     def wrap(request, *args, **kwargs):
-        if request.method == 'GET':
+        if request.method == "GET":
             return func(request, *args, **kwargs)
         data = QueryDict(request.body)
-        if 'pid' not in data.keys():
+        if "pid" not in data.keys():
             return func(request, *args, **kwargs)
         else:
             try:
-                prj = ProjectFile.objects.get(pk=ObjectId(data['pid']))
+                prj = ProjectFile.objects.get(pk=ObjectId(data["pid"]))
 
             except ObjectDoesNotExist:
-                return HttpResponse("{'status':'error', 'reason':'cannot find a project matching given pid'}")
+                return HttpResponse('{"status":"error", "reason":"cannot find a project matching given pid"}')
             else:
                 if request.user == prj.author or request.user in prj.collaborators:
                     return func(request, *args, **kwargs)
                 else:
-                    return HttpResponse("{'status':'error', 'reason':'the project cannot match the user logged in'}")
+                    return HttpResponse('{"status":"error", "reason":"the project cannot match the user logged in"}')
 
     wrap.__doc__ = func.__doc__
     wrap.__name__ = func.__name__

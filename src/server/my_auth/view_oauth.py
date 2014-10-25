@@ -1,4 +1,4 @@
-__author__ = 'feiyicheng'
+__author__ = "feiyicheng"
 
 from django.shortcuts import HttpResponse, HttpResponsePermanentRedirect
 # from django.contrib.auth.models import User
@@ -21,15 +21,15 @@ def login_start_google(request):
     oauthclientgoogle = OAuthClientGoogle()
 
     authorization_code_req = {
-        'response_type': 'code',
-        'client_id': oauthclientgoogle.CLIENT_ID,
-        'redirect_uri': oauthclientgoogle.REDIRECT_URL,
-        'scope': r'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email',
-        'state': 'something'
+        "response_type": "code",
+        "client_id": oauthclientgoogle.CLIENT_ID,
+        "redirect_uri": oauthclientgoogle.REDIRECT_URL,
+        "scope": r"https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email",
+        "state": "something"
     }
 
-    URL = oauthclientgoogle.BASE_URL + "auth?%s" % urlencode(authorization_code_req)
-    # return HttpResponse("{'url':'%s'}" % (URL,))
+    URL = oauthclientgoogle.BASE_URL + 'auth?%s' % urlencode(authorization_code_req)
+    # return HttpResponse('{"url":"%s"}' % (URL,))
     return HttpResponsePermanentRedirect(URL)
 
 
@@ -42,34 +42,34 @@ def login_complete_google(request):
 
     oauthclientgoogle = OAuthClientGoogle()
 
-    print('get code from google')
+    print("get code from google")
     # get tokens
 
     para = request.GET
 
     tokens = oauthclientgoogle.retrieve_tokens(para)
     # print(str(tokens))
-    access_token = tokens['access_token']
+    access_token = tokens["access_token"]
 
     profile = oauthclientgoogle.get_info(access_token)
     # print(str(profile))
-    profile['username'] = profile['email']
-    profile['uid'] = profile['email']
+    profile["username"] = profile["email"]
+    profile["uid"] = profile["email"]
     # login the user
-    # return HttpResponse('profile get\n' + str(profile))
+    # return HttpResponse("profile get\n" + str(profile))
 
     (user, token) = _get_user_and_token(profile)
     if user:
         data = {
-            'status': 'success',
-            'token': token.token,
-            'uid': str(user.pk),
-            'googleid': user.username,
+            "status": "success",
+            "token": token.token,
+            "uid": str(user.pk),
+            "googleid": user.username,
         }
     else:
         data = {
-            'status': 'error',
-            'reason': 'cannot find or create user, pls contact us',
+            "status": "error",
+            "reason": "cannot find or create user, pls contact us",
         }
 
     return HttpResponse(json.dumps(data))
@@ -79,7 +79,7 @@ def login_start_baidu(request):
     """ a method that loads config and redirect to Google
     """
 
-    site = SocialSites(SOCIALOAUTH_SITES).get_site_object_by_name('baidu')
+    site = SocialSites(SOCIALOAUTH_SITES).get_site_object_by_name("baidu")
     authorize_url = site.authorize_url
     return HttpResponsePermanentRedirect(authorize_url)
 
@@ -91,42 +91,42 @@ def login_complete_baidu(request):
 
     """
 
-    code = request.GET.get('code')
+    code = request.GET.get("code")
     if not code:
         data = {
-            'status': 'error',
-            'reason': 'cannot find or create user, pls contact us',
+            "status": "error",
+            "reason": "cannot find or create user, pls contact us",
         }
         return HttpResponse(json.dumps(data))
-    site = SocialSites(SOCIALOAUTH_SITES).get_site_object_by_name('baidu')
+    site = SocialSites(SOCIALOAUTH_SITES).get_site_object_by_name("baidu")
 
     try:
         site.get_access_token(code)
     except SocialAPIError as e:
         data = {
-            'status': 'error',
-            'reason': e.error_msg,
+            "status": "error",
+            "reason": e.error_msg,
         }
         return HttpResponse(json.dumps(data))
 
     profile = dict()
-    profile['username'] = site.name
-    profile['uid'] = site.uid
-    profile['given_name'] = ''
-    profile['family_name'] = ''
-    profile['email'] = ''
+    profile["username"] = site.name
+    profile["uid"] = site.uid
+    profile["given_name"] = ""
+    profile["family_name"] = ""
+    profile["email"] = ""
     (user, token) = _get_user_and_token(profile)
     if user:
         data = {
-            'status': 'success',
-            'token': token.token,
-            'uid': str(user.pk),
-            'baiduName': profile['username'],
+            "status": "success",
+            "token": token.token,
+            "uid": str(user.pk),
+            "baiduName": profile["username"],
         }
     else:
         data = {
-            'status': 'error',
-            'reason': 'cannot find or create user, pls contact us',
+            "status": "error",
+            "reason": "cannot find or create user, pls contact us",
         }
     return HttpResponse(json.dumps(data))
 
@@ -139,7 +139,7 @@ def _get_user_and_token(profile):
     :return: it will be a tuple of (user, token) if everything goes right, otherwise None
     """
 
-    user, created = User.objects.get_or_create(username=profile['username'])
+    user, created = User.objects.get_or_create(username=profile["username"])
     _update_user(user, profile)
     token, created = Token_mongo.objects.get_or_create(user=user, token=genPassword(20))
     return (user, token) if user else (None, None)
@@ -153,9 +153,9 @@ def _update_user(user, profile):
     :return: None
     """
     try:
-        user.first_name = profile['given_name']
-        user.last_name = profile['family_name']
-        user.email = profile['email']
+        user.first_name = profile["given_name"]
+        user.last_name = profile["family_name"]
+        user.email = profile["email"]
     except AttributeError, e:
         raise e
     except KeyError, e:
