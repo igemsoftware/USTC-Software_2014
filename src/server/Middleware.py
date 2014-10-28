@@ -77,7 +77,8 @@ class TokenMiddleware(object):
         return None
 
     def process_response(self, request, response):
-        response.content = response.content.replace("'", "`")
+        newcontent = response.content.replace("'", "`")
+        response.content = newcontent
         return None
 
 
