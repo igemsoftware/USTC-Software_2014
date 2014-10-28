@@ -254,6 +254,8 @@ def search_json_node(request):
             queryinstance = json.loads(request.POST["spec"])
         except ValueError:
             return HttpResponse('{"status":"error", "reason":"query not conform to JSON format"}')
+        except KeyError:
+            return HttpResponse('{"status":"error", "reason":"POST should include the key spec"}')
 
         try:
             filterinstance = json.loads(request.POST["fields"])
@@ -542,6 +544,9 @@ def search_json_link(request):
             queryinstance = json.loads(request.POST["spec"])
         except ValueError:
             return HttpResponse('{"status":"error", "reason":"query not conform to JSON format"}')
+        except KeyError:
+            return HttpResponse('{"status":"error", "reason":"POST should include the key spec"}')
+
 
         try:
             filterinstance = json.loads(request.POST["fields"])

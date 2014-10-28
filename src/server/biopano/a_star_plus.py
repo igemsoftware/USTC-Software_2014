@@ -229,8 +229,8 @@ def a_star(request):
 		time_point['SPFA'] = SPFA_time - convert_time
 
 		path_list = []
-		for j in Astar(s, t, k):
-			# not founded
+		for j in Astar(s, t, k):jj
+
 			if j == -1:
 				break
 
@@ -252,8 +252,9 @@ def a_star(request):
 		Astar_time = datetime.now()
 		time_point['Astar'] = Astar_time - SPFA_time
 		result_text = json.dumps(path_list)
+		result_text.replace("'", "`")
 		return HttpResponse(result_text)
 
 	elif request.method != 'GET':
-		return HttpResponse("{'status':'error', 'reason':'only POST method setting'}")
+		return HttpResponse('{"status":"error", "reason":"only POST method setting"}')
 
