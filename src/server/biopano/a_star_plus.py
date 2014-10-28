@@ -254,7 +254,7 @@ def a_star(request):
         Astar_time = datetime.now()
         time_point["Astar"] = Astar_time - SPFA_time
         result_text = json.dumps(path_list)
-        result_text = result_text.replace("'", "`")
+        # result_text = result_text.replace("'", "`")
         return HttpResponse(result_text)
 
     elif request.method != "GET":
