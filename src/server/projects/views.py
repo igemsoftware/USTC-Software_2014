@@ -194,7 +194,7 @@ def add_or_del_collaborator(request, *args, **kwargs):
         if not prj_id:
             return HttpResponse('{"status":"error", "reason":"prj_id should be a integer"}')
 
-        uid = int(kwargs["uid"])
+        uid = kwargs["uid"]
 
         if not _is_author(prj_id, user):
             # the user is not the author of the project
@@ -213,7 +213,7 @@ def add_or_del_collaborator(request, *args, **kwargs):
         else:
             return HttpResponse('{"status":"error", "reason":"user not logged in"}')
     else:
-        return HttpResponse('{"status":"error", "reason":"method not correct(should be DELETE)"}')
+        return HttpResponse('{"status":"error", "reason":"method not correct(should be DELETE or POST)"}')
 
 
 @logged_in
